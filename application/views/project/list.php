@@ -82,8 +82,8 @@
                                                         <i class="fas fa-money-bill-wave"></i> &nbsp;
                                                         <h6>Prix</h6>
                                                         <?php if ($record->prix == 0){echo "Gratuit";}else{echo $record->prix.' DT';} ?>
-                                                            </small>
-                                                    </div>
+                                                          
+                                          </div>
                                         </div>
                                     </div>
                                 </div>
