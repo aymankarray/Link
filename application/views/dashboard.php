@@ -139,15 +139,13 @@
                 </style>
                 <div class="d-flex flex-column">
                     <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
-                        <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $membre->userId ?>" class="d-flex align-items-center border-bottom ">
+                        <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $membre->userId ?>" class="d-flex align-items-center border-bottom">
                             <div class="mr-3">
                                 <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="pro-turtle" alt="user">
                             </div>
                             <div class="w-100">
                                 <div class="d-flex justify-content-between">
-
-                                    <h6 class="text-body "><?php echo $membre->name ?></h6>
-
+                                    <h5 class="text-body "><?php echo $membre->name ?></h5>
                                     <p class="text-muted ">
                                         <?php echo $membre->scores ?> Points</p>
                                 </div>
@@ -170,7 +168,7 @@
                 <div class="d-flex justify-content-between align-items-baseline mb-2">
                     <h6 class="card-title mb-0">Classement des clubs </h6>
                     <span class="text-muted"><b> Dernière mise à jour : </b>
-               <!--   <?php echo $LastRaitingClub->createdDate ; ?>  -->
+                 <?php echo $LastRaitingClub->createdDate ; ?>  
                   </span>
                 </div>
                 <div class="table-responsive" style="height:820px ;overflow:auto;">
