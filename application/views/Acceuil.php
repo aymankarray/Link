@@ -80,7 +80,7 @@
                                        <hr>
 
                                        <br>
-                                          Je veux joinde
+                                       <!--                                          Je veux joinde
                                           <input type="radio" name="r1"id="r1"> une photo
                                           <input type="radio" name="r1" id="r2"> un lien
 
@@ -101,7 +101,7 @@
                                              </div>
                                           </li>
                                       
-                                         
+                                          -->
                                           <!--
                                           <li class="col-md-6 mb-3">
                                              <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/09.png" alt="icon" class="img-fluid"> Feeling/Activity</div>
