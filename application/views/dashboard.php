@@ -146,9 +146,9 @@
                             <div class="w-100">
                                 <div class="d-flex justify-content-between">
 
-                                    <h6 class="text-body mb-2"><?php echo $membre->name ?></h6>
+                                    <h6 class="text-body "><?php echo $membre->name ?></h6>
 
-                                    <p class="text-muted tx-12">
+                                    <p class="text-muted ">
                                         <?php echo $membre->scores ?> Points</p>
                                 </div>
                                <small>
