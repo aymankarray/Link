@@ -174,7 +174,7 @@
                   </span>
                 </div>
                 <div class="table-responsive" style="height:600px ;overflow:auto;">
-                    <table class="table table-hover mb-0" id="dtVerticalScrollExample">
+                    <table class="table" id="dtVerticalScrollExample">
                         <thead>
                             <tr>
                                 <th class="pt-0">#</th>
@@ -196,7 +196,7 @@
                                     <td>
                                        <small> <?php echo $club->scores ?></small>
                                     </td>
-                                    <td></td>
+                                   
                                 </tr>
                                 <?php } }else { echo "Il y a pas de données";} ?>
                         </tbody>
