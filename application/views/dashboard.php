@@ -139,7 +139,7 @@
                 </style>
                 <div class="d-flex flex-column">
                     <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
-                        <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $membre->userId ?>" class="d-flex align-items-center border-bottom pb-3">
+                        <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $membre->userId ?>" class="d-flex align-items-center border-bottom ">
                             <div class="mr-3">
                                 <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="pro-turtle" alt="user">
                             </div>
