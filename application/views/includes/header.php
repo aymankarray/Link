@@ -686,10 +686,10 @@
                <nav class="iq-sidebar-menu">
                   <ul id="iq-sidebar-toggle" class="iq-menu">
                      <li>
-                        <a href="<?php echo base_url() ?>/Posts/Acceuil" class="iq-waves-effect"><i class="las la-newspaper"></i><span>Acceuil</span></a>
+                        <a href="<?php echo base_url() ?>Posts/Acceuil" class="iq-waves-effect"><i class="las la-newspaper"></i><span>Acceuil</span></a>
                      </li>
                      <li>
-                        <a href="<?php echo base_url() ?>/dashboard" class="iq-waves-effect"><i class="las la-newspaper"></i><span>Dashboard</span></a>
+                        <a href="<?php echo base_url() ?>dashboard" class="iq-waves-effect"><i class="las la-newspaper"></i><span>Dashboard</span></a>
                      </li>
                      <li>
                         <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $clubID ?>" class="iq-waves-effect"><i class="las la-users"></i><span>Mon club</span></a>
