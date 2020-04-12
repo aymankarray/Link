@@ -374,7 +374,9 @@
                            </ul>
                         </div>
                      </div>
-                     <
+                   
+
+                   <!--  
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
@@ -447,6 +449,8 @@
                            </ul>
                         </div>
                      </div>
+
+                  -->
                   </div>
                   <div class="col-sm-12 text-center">
                      <img src="<?php echo base_url() ;  ?>images/page-img/page-load-loader.gif" alt="loader" style="height: 100px;">
@@ -457,17 +461,3 @@
 
 
 
-<script>
-$(document).ready(function(){
-
-
-  $("#r1").click(function(){
-    $("lien").hide();
-    $("tof").show();
-  });
-  $("#r2").click(function(){
-    $("lien").show();
-    $("tof").hide();
-  });
-});
-</script>
