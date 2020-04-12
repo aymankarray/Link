@@ -151,9 +151,11 @@
                                     <p class="text-muted tx-12">
                                         <?php echo $membre->scores ?> Points</p>
                                 </div>
+                                </small>
                                 <p class="text-muted tx-13">Club Tunivisions
                                     <?php echo $membre->clubName ?>
                                 </p>
+                            </div>
                             </div>
                         </a>
                         <?php }  }else { echo "Il y a pas de données";} ?>
@@ -185,13 +187,13 @@
                             <?php $c=0 ; if(!empty($RateClub)){ foreach ($RateClub as $club ) { ?>
                                 <tr <?php if ($club->clubID == $MyclubID) { echo 'bgcolor="#ADD8E6" '; }?> >
                                     <td>
-                                        <?php $c++ ; echo $c ?>
+                                        <small> <?php $c++ ; echo $c ?></small>
                                     </td>
                                     <td>
-                                        <?php echo $club->name ?>
+                                        <small><?php echo $club->name ?></small>
                                     </td>
                                     <td>
-                                        <?php echo $club->scores ?>
+                                       <small> <?php echo $club->scores ?></small>
                                     </td>
                                     <td></td>
                                 </tr>
