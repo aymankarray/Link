@@ -151,10 +151,11 @@
                                     <p class="text-muted tx-12">
                                         <?php echo $membre->scores ?> Points</p>
                                 </div>
-                                </small>
+                               <small>
                                 <p class="text-muted tx-13">Club Tunivisions
                                     <?php echo $membre->clubName ?>
                                 </p>
+                                </small>
                             </div>
                             </div>
                         </a>
