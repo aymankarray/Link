@@ -1,54 +1,29 @@
-
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/dropify/dist/dropify.min.css">
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/simplemde/simplemde.min.css">
-<!-- partial -->
-
-        <div class="row inbox-wrapper">
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-lg-3 email-aside border-lg-right">
-                    <div class="aside-content">
-                      <div class="aside-header">
-                        <button class="navbar-toggle" data-target=".aside-nav" data-toggle="collapse" type="button">
-                          <span class="icon"><i data-feather="chevron-down"></i></span>
-                        </button>
-                        <span class="title text-muted font-weight-bold">Projet</span>
-                        <p class="text-muted"></p>
-                      </div>
-                      <div class="aside-compose"><a class="btn btn-primary btn-block" href="<?php echo base_url() ; ?>Project/addNew">Nouveau projet</a></div>
-                      <div class="aside-nav collapse">
-                        <ul class="nav">
-                          <li><a href="<?php echo base_url() ; ?>Project/projectListingbyClub"><span class="icon"><i data-feather="inbox"></i></span>Nos projets<span class="badge badge-danger-muted text-white font-weight-bold float-right">2</span></a></li>
-                           <?php  if  ($role ==1  ||  ($role == 3  && $cellule=='Gestion des talents' )) { ?>
-                          <li class=""><a href="<?php echo base_url() ; ?>Evaluation/evaluationListing"><span class="icon"><i data-feather="mail"></i></span>Evaluations</a></li>
-                          <?php } ?>
-                        </ul>
-                        
-                        
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-lg-9 email-content">
-                    <div class="email-head">
-                      <div class="email-head-title d-flex align-items-center">
-                        <span data-feather="edit" class="icon-md mr-2"></span>
-                        Noveau projet
-                      </div>
-                    </div>
-                    <div class="container">
-                        
-                     <?php $this->load->helper("form"); ?>
+<div id="content-page" class="content-page">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="iq-card">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Declation du projet</h4>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <div class="dropdown show">
+                                
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <div class="table-responsive">
+                              <?php $this->load->helper("form"); ?>
                     <form role="form"  id="addproject" action="<?php echo base_url() ?>Project/addNewP" method="post" role="form"  enctype="multipart/form-data">
                         
 
 
-                            <div class="row">
+                           
 
-
-                            <br>
+                    
                             <div class="row">
                                 <div class="col-md-12">                                
                                     <div class="form-group">
@@ -225,7 +200,7 @@
 
                                                     <div class="form-check form-check-flat form-check-primary">
                                                       <label class="form-check-label">
-                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>  class="form-check-input">
+                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>"  class="form-check-input">
                                                       <?php  echo   $record->name ; ?> 
                                                       </label>
                                                     </div>
@@ -251,7 +226,7 @@
 
                                                     <div class="form-check form-check-flat form-check-primary">
                                                       <label class="form-check-label">
-                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>  class="form-check-input">
+                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>"  class="form-check-input">
                                                       <?php  echo   $record->name ; ?> 
                                                       </label>
                                                     </div>
@@ -276,7 +251,7 @@
 
                                                     <div class="form-check form-check-flat form-check-primary">
                                                       <label class="form-check-label">
-                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>  class="form-check-input">
+                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>"  class="form-check-input">
                                                       <?php  echo   $record->name ; ?> 
                                                       </label>
                                                     </div>
@@ -301,7 +276,7 @@
 
                                                     <div class="form-check form-check-flat form-check-primary">
                                                       <label class="form-check-label">
-                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>  class="form-check-input">
+                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>"  class="form-check-input">
                                                       <?php  echo   $record->name ; ?> 
                                                       </label>
                                                     </div>
@@ -331,50 +306,11 @@
                             <br>
                         </div>
                     </form>
-
-                    </div>
+                              
+                           </div>
+                        </div>
+                     </div>
                   </div>
-            
-                </div>
-              </div>
+               </div>
             </div>
-          </div>
-        </div>
-
-
-
-
-    <script>  
-                function readURL(input) {
-                  if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-                    
-                    reader.onload = function(e) {
-                      $('#preview-img').attr('src', e.target.result);
-                    }
-                    
-                    reader.readAsDataURL(input.files[0]);
-                  }
-                }
-
-                $("#image_file").change(function() {
-                  readURL(this);
-                });
-    </script>
-
-
-
-    <script src="<?php echo base_url() ?>assets/vendors/dropify/dist/dropify.min.js"></script>
-    <script type="text/javascript">
-      $('.dropify').dropify();
-    </script>
-
-    !-- plugin js for this page -->
-  <script src="<?php echo base_url() ?>assets/vendors/tinymce/tinymce.min.js"></script>
-  <script src="<?php echo base_url() ?>assets/vendors/simplemde/simplemde.min.js"></script>
-  <script src="<?php echo base_url() ?>assets/vendors/ace-builds/src-min/ace.js"></script>
-  <script src="<?php echo base_url() ?>assets/vendors/ace-builds/src-min/theme-chaos.js"></script>
-  <!-- end plugin js for this page -->
-
-
-  <script src="<?php echo base_url() ?>assets/js/tinymce.js"></script>
+         </div>

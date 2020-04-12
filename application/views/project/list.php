@@ -12,7 +12,11 @@
         <img src="<?php echo base_url() ;  ?>images/page-img/profile-bg6.jpg" class="img-fluid w-100 rounded rounded" alt="profile-bg">
         <div class="title-on-header">
             <div class="data-block">
-                <h2>Evenement</h2>
+                <h2>Evenement
+                    <?php  if ($role ==1  ||  $role == 3) { ?>
+                    <a class="btn btn-primary btn-block" href="<?php echo base_url() ; ?>Project/addNew">Nouveau projet</a>
+                    <?php } ?>
+                </h2>
             </div>
         </div>
     </div>
