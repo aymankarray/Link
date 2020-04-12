@@ -3,7 +3,7 @@
         object-fit: cover;
         object-position: 50% 50%;
         width: 100%;
-        height: 150px;
+        height: 200px;
     }
 </style>
 
@@ -69,17 +69,16 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                             <?php if($record->eventFB!='' ) { ?>
-                                                <a href="<?php  echo $record->eventFB; ?>" &nbsp; <span> <img src="<?php echo base_url() ?>images/icon/08.png" class="img-fluid rounded" alt="facebook"> </h6>
-                   </a>
+                                                <a href="<?php  echo $record->eventFB; ?>"> &nbsp;  <img src="<?php echo base_url() ?>images/icon/08.png" class="img-fluid rounded" alt="facebook"> </h6>  </a>
                                                 <?php } ?>
                                         </div>
                                         <div class="col-md-4">
                                             <i class="fas fa-map-marker-alt"></i> &nbsp;
                                             <h6>Local </h6>
                                             <?php  echo $record->local; ?>
-                                                < </div>
+                                        </div>
 
-                                                    <div class="col-md-4">
+                                        <div class="col-md-4">
                                                         <i class="fas fa-money-bill-wave"></i> &nbsp;
                                                         <h6>Prix</h6>
                                                         <?php if ($record->prix == 0){echo "Gratuit";}else{echo $record->prix.' DT';} ?>
