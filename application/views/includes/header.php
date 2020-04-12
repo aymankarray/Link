@@ -1,4 +1,6 @@
-<html lang="en"><head><link href="https://daibusee.com/wp-content/simple-line-icons/2.03.32/simple-line-icons.min.css" rel="stylesheet" type="text/css" crossorigin="anonymous"><script type="text/javascript" src="https://iqonic.design/injected/cashery.js"></script>
+<html lang="en">
+<head>
+
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
