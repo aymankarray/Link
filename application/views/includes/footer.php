@@ -22,24 +22,24 @@
       <!-- Footer END -->
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
-      <script defer src="<?php echo base_url() ;  ?>assets/js/popper.min.js"></script>
-      <script  defer src="<?php echo base_url() ;  ?>assets/js/bootstrap.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/popper.min.js"></script>
+      <script   src="<?php echo base_url() ;  ?>assets/js/bootstrap.min.js"></script>
       <!-- Appear JavaScript -->
-      <script  defer src="<?php echo base_url() ;  ?>assets/js/jquery.appear.js"></script>
+      <script   src="<?php echo base_url() ;  ?>assets/js/jquery.appear.js"></script>
       <!-- Countdown JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/countdown.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/countdown.min.js"></script>
       <!-- Counterup JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/waypoints.min.js"></script>
-      <script defer src="<?php echo base_url() ;  ?>assets/js/jquery.counterup.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/waypoints.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/jquery.counterup.min.js"></script>
       <!-- Wow JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/wow.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/wow.min.js"></script>
       <!-- Apexcharts JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/apexcharts.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/apexcharts.js"></script>
       <!-- Slick JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/slick.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/slick.min.js"></script>
       <!-- Select2 JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/select2.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/select2.min.js"></script>
       <!-- Owl Carousel JavaScript -->
       <script defer src="<?php echo base_url() ;  ?>assets/js/owl.carousel.min.js"></script>
       <!-- Magnific Popup JavaScript -->

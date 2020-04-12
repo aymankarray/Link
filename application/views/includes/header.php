@@ -4,7 +4,7 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Tunivisions Link </title>
+      <title>Tunivisions Link</title>
       <!-- Favicon -->
       <link rel="shortcut icon" href="<?php echo base_url() ;  ?>images/icon.svg">
       <!-- Bootstrap CSS -->
@@ -15,6 +15,8 @@
       <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/style.css">
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/responsive.css">
+
+      
    <style type="text/css">
     .apexcharts-canvas {
   position: relative;
