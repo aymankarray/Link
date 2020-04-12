@@ -13,7 +13,7 @@
         <div class="title-on-header">
             <div class="data-block">
                 <h2>Evenement
-                    <?php  if ($role ==1  ||  $role == 3) { ?>
+                    <?php  if ($role ==1  ||  $role == 3  || $SA == 1   ) { ?>
                     <a class="btn btn-primary btn-block" href="<?php echo base_url() ; ?>Project/addNew">Nouveau projet</a>
                     <?php } ?>
                 </h2>
