@@ -157,7 +157,7 @@
                                 </p>
                                 </small>
                             </div>
-                            </div>
+                           
                         </a>
                         <?php }  }else { echo "Il y a pas de données";} ?>
                 </div>
