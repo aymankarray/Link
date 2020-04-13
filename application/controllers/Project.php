@@ -104,7 +104,7 @@ class Project extends BaseController {
                  'banner' => $file_name ,
                  'type' => $type ,
                  'Titre' => $Titre , 
-                 'description' => $Description , 
+                 'description' => NL2BR($Description) , 
                  'startDate' => $debut , 
                  'endDate' => $fin , 
                  'cible' => $cible ,
