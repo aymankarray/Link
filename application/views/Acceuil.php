@@ -21,7 +21,7 @@
                            <div class="iq-card-body" data-toggle="modal" data-target="#post-modal">
                               <div class="d-flex align-items-center">
                                  <div class="user-img">
-                                    <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="avatar-60 rounded-circle">
+                                    <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle ">
                                  </div>
                                  <form class="post-text ml-3 w-100" action="javascript:void();">
                                     <input type="text" name="postText" class="form-control rounded" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " style="border:none;">
@@ -143,7 +143,7 @@
                               <div class="user-post-data">
                                  <div class="d-flex flex-wrap">
                                     <div class="media-support-user-img mr-3">
-                                       <img class="rounded-circle img-fluid" src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="">
+                                       <img class="alligator-turtle " src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="">
                                     </div>
                                     <div class="media-support-info mt-2">
                                        <h5 class="mb-0 d-inline-block"><a href="#" class=""><?php echo $record->name?></a></h5>
@@ -300,15 +300,18 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
-                           <ul class="media-story m-0 p-0">
-                              <style type="text/css">
-                                    .actu-turtle {
-                                                    object-fit: cover;
-                                                    object-position: 50% 50%;
-                                                    width: 100%;
-                                                    height: 50px;
-                                                  }
-                             </style>
+                           <ul class="m-0 p-0">
+                            <style type="text/css">
+                                            .actu-turtle {
+                                        object-fit: cover;
+                                        object-position: 50% 50%;
+                                    
+                                        border-radius: 20%;
+
+                                        width: 75px;
+                                        height: 55px;
+                                      }
+                            </style>
 
                               <?php foreach ($ActuRecords as $record ) { ?>
                               <li class="d-flex mb-4 align-items-center">
@@ -359,7 +362,7 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
-                           <ul class="media-story m-0 p-0">
+                           <ul class="m-0 p-0">
                               <?php foreach ($projectRecords as $projets ) { ?>
                               <li class="d-flex mb-4 align-items-center ">
                                  <img src="https://www.tunivisions.link/uploads/projet/<?php echo $projets->banner ?>" class="actu-turtle"  alt="item-image">

@@ -738,7 +738,20 @@
                      <ul class="navbar-nav ml-auto navbar-list">
                         <li>
                            <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $MyUserId ; ?>" class="iq-waves-effect d-flex align-items-center">
-                              <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" class="img-fluid rounded-circle mr-3 avatar" alt="<?php echo $name ?>">
+                            <style type="text/css">
+                                            .alligator-turtle {
+                                        object-fit: cover;
+                                        object-position: 50% 50%;
+                                    
+                                        border-radius: 20%;
+
+                                        width: 55px;
+                                        height: 55px;
+                                      }
+                            </style>
+    
+                              <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" class="alligator-turtle  mr-3 " alt="<?php echo $name ?>">
+                             
                               <div class="caption">
                                  <p class="mb-0 line-height"><?php echo $name ?></p>
                               </div>
