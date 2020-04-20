@@ -9,7 +9,7 @@ require APPPATH . '/libraries/BaseController.php';
  * @version : 1.1
  * @since : 15 November 2016
  */
-class Autorisation extends BaseController
+class Autorisation extends  CI_Controller
 {
     /**
      * This is default constructor of the class
