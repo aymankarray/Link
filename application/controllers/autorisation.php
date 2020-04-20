@@ -25,9 +25,11 @@ class Autorisation extends  CI_Controller
     public function auto($cin)
     {
 
-                $data['autos'] = $this->user_model->auto($cin);
+                $data['autos'] = $this->user_model->auto($cin) ;
          
-            $this->view('auto',$data);
+               
+
+                $this->load->view('auto', $data);
          
          
     }

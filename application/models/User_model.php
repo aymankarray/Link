@@ -558,12 +558,17 @@ function auto ($cin){
         
         $this->db->select(' BaseTbl.nom , BaseTbl.cin , BaseTbl.adresse , BaseTbl.region , BaseTbl.gov  , BaseTbl.datecin  , BaseTbl.moto ');
         $this->db->from('tbl_auto as BaseTbl');
-                 $this->db->where('BaseTbl.cin = ',$cin);
+
+        $w = '%'.$cin.'%' ; 
+
+        $this->db->where('BaseTbl.cin Like ' , $cin );
+
         $query = $this->db->get();
         
         return $query->row();
-}
 
+
+}
 
 }
 
