@@ -26,40 +26,38 @@ class Posts extends BaseController {
     }
     
 
-public function Acceuil()
-		        {
+    public function Acceuil()
+    {
+         $data['ActuRecords'] = $this->actualite_model->actuListing();
+         $data['projectRecords'] = $this->project_model->projectListing();
+         $data  ['postRecords'] =  $this->posts_model->postsListing(); ; 
+         $this->loadViews("Acceuil", $this->global, $data, NULL);   
+    }
 
 
-		        	    $data['ActuRecords'] = $this->actualite_model->actuListing();
-		        	     $data['projectRecords'] = $this->project_model->projectListing();
-		               $data  ['postRecords'] =  $this->posts_model->postsListing(); ; 
-
-		                $this->loadViews("Acceuil", $this->global, $data, NULL);   
-		        }
-
-
- public function addNewP()
-                {
-
-                    $postText = $this->input->post('postText');
+    public function Post($post)
+    {
+        $data  ['postRecords'] =  $this->posts_model->post($post) ; 
+        $data['commentsRecords'] = $this->project_model->CommentsListing();
+        $this->loadViews("Acceuil", $this->global, $data, NULL);   
+    }
 
 
-                $postInfo = array(        
-                 'Content' => NL2BR($postText) ,
-                 'userId ' => $this->vendorId ,
-                 'DatePosted '=> date('Y-m-d H:i:s') ,
-                     );
-                
+    public function addNewP()
+    {
+        $postText = $this->input->post('postText');
+        $postInfo = array(        
+           'Content' => NL2BR($postText) ,
+           'userId ' => $this->vendorId ,
+           'DatePosted '=> date('Y-m-d H:i:s') ,
+       );
+        $result = $this->posts_model->addNewPost($postInfo);
 
-                
-                $result = $this->posts_model->addNewPost($postInfo);
-                
-                     redirect('/Posts/Acceuil');
-
-                }
-
-                
+        redirect('/Posts/Acceuil');
+    }
 
 
-		
+
+
+
 }

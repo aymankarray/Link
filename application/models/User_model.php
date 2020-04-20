@@ -261,10 +261,7 @@ class User_model extends CI_Model
             $this->db->where("isDeleted", 0);
             $this->db->where('cellule =', $cellule );
             $this->db->where('ClubID =', $clubID );
-
-
-            $query = $this->db->get();
-            
+            $query = $this->db->get();         
             return $query->result();
         }
 
@@ -284,9 +281,7 @@ class User_model extends CI_Model
         $this->db->select("name");
         $this->db->from("tbl_users");
         $this->db->where("email", $email);   
-      
         $query = $this->db->get();
-
          return $query->row();
     }
 
@@ -553,6 +548,17 @@ function bonus (){
         $this->db->from('tbl_users as BaseTbl');
         $this->db->where('BaseTbl.createdDtm < ','2019-11-01' );
                 
+        $query = $this->db->get();
+        
+        return $query->row();
+}
+
+
+function auto ($cin){
+        
+        $this->db->select('BaseTbl.userId , BaseTbl.nom , BaseTbl.cin , BaseTbl. , BaseTbl.adresse , BaseTbl.region , BaseTbl.gov  , BaseTbl.datecin  , BaseTbl.moto ');
+        $this->db->from('tbl_auto as BaseTbl');
+                 $this->db->where('BaseTbl.cin = ',$cin);
         $query = $this->db->get();
         
         return $query->row();
