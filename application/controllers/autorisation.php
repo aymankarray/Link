@@ -9,7 +9,7 @@ require APPPATH . '/libraries/BaseController.php';
  * @version : 1.1
  * @since : 15 November 2016
  */
-class autorisation extends BaseController
+class Autorisation extends BaseController
 {
     /**
      * This is default constructor of the class
@@ -22,7 +22,7 @@ class autorisation extends BaseController
 
     }
 
-    public function index($cin)
+    public function auto($cin)
     {
 
                 $data['autos'] = $this->user_model->auto($cin);
