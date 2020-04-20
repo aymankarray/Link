@@ -27,7 +27,7 @@ class Autorisation extends BaseController
 
                 $data['autos'] = $this->user_model->auto($cin);
          
-            $this->view('auto',$data)
+            $this->view('auto',$data);
          
          
     }
