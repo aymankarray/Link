@@ -1,4 +1,5 @@
 
+<?php if($autos->cin != '' ){ ?>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 
@@ -15,8 +16,7 @@
 			<p><img src="https://tunivisions-foundation.org/wp-content/uploads/2017/12/logo-foundation.png" alt="" width="25%"  /></p>
 			<p>&nbsp;</p>
 			<h3>&nbsp;</h3>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
+
 
 			<h3 style="text-align: right;">الموضوع : مطلب ترخيص جولان للمشاركة في حملة تبرعات</h3>
 <br>
@@ -34,7 +34,7 @@
 <br>
 <?php if ($autos->moto !='' ){?>
 
-السياراة رقم <?php echo $autos->moto ?>
+السيارة رقم<?php echo $autos->moto ?>
 
 <?php } ?>
 <br>
@@ -45,10 +45,11 @@
 	.right {
   position: absolute;
   right: 0px;
-  width: 300px;
+  width: 1000px;
 
   padding: 40px;
 }
+
 </style>
 
 
@@ -62,32 +63,43 @@
 			</h4>
 			
 			<br>
-<br><br><br>	
+		
 			<h3 style="text-align: right;">&nbsp;</h3>
-			<h4 style="text-align: right;">مع كل شكر و التقدير</h3>
+			<h4 style="text-align: right;">مع كل شكر و التقدير</h4>
 			<h3 style="text-align: right;">&nbsp;</h3>		
 
-			<div class="right"  style="background-image: url('<?php echo base_url() ?>image/signature.JPG');width: 320px;position: right;">
+			
+	
+			
+			
+			<img src="<?php echo base_url() ?>image/signature.JPG" width="1000px" class="right"  alt="Your text" />
 
-			<br><br>
-			<br><br>
-			<h5 style="text-align: right;">بشير الخليفي</h3>
-			<h5 style="text-align: right;">المنسق الوطني </h3>
-			<h3 style="text-align: right;">&nbsp;</h3>
-			<h3 style="text-align: right;">&nbsp;</h3>
-			<h3 style="text-align: right;">&nbsp;</h3>
-						<br><br>
-			<br><br>
-			</div>
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
+
+
+
+
+				<br><br><br><br><br><br><br><br>
+
+
+
+
+
+		
+
+
 			<br>
 			<p>&nbsp;</p>
-			<blockquote>
+		
+				<br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br>
 			<p><strong>Association Tunivisions</strong><br />association soumise &agrave; la loi tunisienne<br />JORT n&deg; 44 du 13 avril 2017 &ndash; 2017402672 APSF1 p,2553<br /><br /><strong>Phone :</strong>&nbsp;58 642 584 |&nbsp;<strong>Mail :</strong>&nbsp;tunivisionsfoundation@gmail.com<br /><strong>Si&egrave;ge social :</strong>&nbsp;Association Tunivisions , 32 B (2eme &eacute;tage) centre Millenium route de la Marsa, Tunisie.</p>
-			</blockquote>
+		
+			</div>
 
 </div>
 <div class="col-md-2" ></div>
 </div>
+
+<?php } else{ ?>
+
+	<?php echo "CIN INTROUVABLE  !!!! ";  } ?>
