@@ -1,14 +1,23 @@
+<div id="content-page" class="content-page">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="iq-card">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Declation du projet</h4>
+                           </div>
+                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                              <div class="dropdown show">
+                                
+                                 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <div class="table-responsive">
 
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/dropify/dist/dropify.min.css">
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/simplemde/simplemde.min.css">
-<!-- partial -->
-
-        <div class="row inbox-wrapper">
-          <div class="col-lg-12">
-            <div class="card">
-              <div class="card-body">
-                
-                 <table class="table dataTable no-footer" style="width: 100%" >
+                                <table class="table dataTable no-footer" style="width: 100%" >
                    <thead>
                      <th>Date </th>
                      <th>Club </th>
@@ -134,57 +143,12 @@
                   </tbody>
              
             </table>
-
-                  
-              </div>
+               
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-
-
-
-
-    <script>  
-                function readURL(input) {
-                  if (input.files && input.files[0]) {
-                    var reader = new FileReader();
-                    
-                    reader.onload = function(e) {
-                      $('#preview-img').attr('src', e.target.result);
-                    }
-                    
-                    reader.readAsDataURL(input.files[0]);
-                  }
-                }
-
-                $("#image_file").change(function() {
-                  readURL(this);
-                });
-    </script>
-
-
-
-    <script src="<?php echo base_url() ?>assets/vendors/dropify/dist/dropify.min.js"></script>
-    <script type="text/javascript">
-      $('.dropify').dropify();
-    </script>
-
-
-  <script src="<?php echo base_url() ?>assets/vendors/tinymce/tinymce.min.js"></script>
-  <script src="<?php echo base_url() ?>assets/vendors/simplemde/simplemde.min.js"></script>
-  <script src="<?php echo base_url() ?>assets/vendors/ace-builds/src-min/ace.js"></script>
-  <script src="<?php echo base_url() ?>assets/vendors/ace-builds/src-min/theme-chaos.js"></script>
-  <!-- end plugin js for this page -->
-
-
-  <script src="<?php echo base_url() ?>assets/js/tinymce.js"></script>
-
-
-            <link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <script defer src="<?php echo base_url() ?>assets/vendors/datatables.net/jquery.dataTables.js"></script>
-  <script defer src="<?php echo base_url() ?>assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-  <script type="text/javascript">
-      $(document).ready( function () {
-    $('table').DataTable();
-} );
-  </script>
+         </div>
