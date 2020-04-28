@@ -55,6 +55,23 @@ class Project extends BaseController {
 
 
 
+        public function ScoringProjectListing()
+                {
+                        $titre='' ;
+                        $titre = $this->input->post('titre');
+                        $data['titre'] = $titre;
+                        $this->load->model('project_model');
+                        
+                        $data['projectRecords'] = $this->project_model->ScoringProjectListing($titre);
+                        
+                        $this->global['pageTitle'] = 'CodeInsect : club  Listing';
+                        $this->global['active'] = 'projects';
+                        
+                        $this->loadViews("project/old", $this->global, $data, NULL);   
+                }
+
+
+
 		public function projectDetails($projectID)
 		        {
 
