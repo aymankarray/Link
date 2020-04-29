@@ -122,7 +122,7 @@
                       <?php  }else if($record->statut  == 'fini' && $record->valider  == ''  ){  ?>
                       
                          <a class="btn btn-primary btn-sm mr-2" href="<?php echo base_url()?>Score_club/PNoter/<?php echo $record->projectId ;  ?>" >
-                               A Valider 
+                               Valider 
                             </a>
                          
                       <?php }else if($record->statut  == 'fini' && $record->valider  == 'Valider'  ) { ?>
