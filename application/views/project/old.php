@@ -70,7 +70,7 @@
                               
                       </h6>
                       le  :  <?php echo $record->startDate  ?> 
-                                
+                                <br>
                                 <?php echo $record->type  ?><br>
                                
 
