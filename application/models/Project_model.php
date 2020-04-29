@@ -57,7 +57,8 @@ class Project_model extends CI_Model
 
 
         $this->db->where('Evaluations.validBy = 0 and Evaluations.doBy != 0 ') ;
-     
+        
+        $this->db->order_by('Evaluations.doDate ASC ') ;
         
   
 
