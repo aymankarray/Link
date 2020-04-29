@@ -115,7 +115,7 @@
                       <?php  } ?>
                     </td>
 
-                    <td>
+                    <td width="5%">
                        <?php  if($record->statut  == 'En Attend' ){  ?>
 
                       <?php  }else if($record->statut  == 'fini' && $record->valider  == ''  ){  ?>
