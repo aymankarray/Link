@@ -43,7 +43,7 @@ class Project_model extends CI_Model
      function ScoringProjectListing($serchText)
     {
          $this->db->select('BaseTbl.projectId , BaseTbl.description , BaseTbl.startDate , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description descP ,  BaseTbl.local ,BaseTbl.banner , Evaluations.valider , Evaluer.name dobyName ,  Scores.score , Evaluations.statut , Scores.affectedBy , Valider.name validName 
-            , Evaluations.album , Evaluations.afterMovie , BaseTbl.eventFB');
+            , Evaluations.album , Evaluations.afterMovie , BaseTbl.eventFB , Evaluations.doDate');
         
         $this->db->from('tbl_project as BaseTbl');
         $this->db->join('tbl_club as Clubs', 'Clubs.clubID = BaseTbl.ClubID', 'LEFT');
