@@ -119,9 +119,9 @@
                        <?php  if($record->statut  == 'En Attend' ){  ?>
 
                       <?php  }else if($record->statut  == 'fini' && $record->valider  == ''  ){  ?>
-                        <h6>
+                        <h6 class="badge badge-warning" >
                          <a href="<?php echo base_url()?>Score_club/PNoter/<?php echo $record->projectId ;  ?>" >
-                              <span class="badge badge-warning"> A Valider </span>
+                               A Valider 
                             </a>
                           </h6>
                       <?php }else if($record->statut  == 'fini' && $record->valider  == 'Valider'  ) { ?>
