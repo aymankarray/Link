@@ -23,7 +23,7 @@
                      <th>Club </th>
                      <th>Projet </th>
                      <th>Evaluation </th>
-                     <th>Validation </th>
+                     <th width="5%" >Validation </th>
                    </thead>
                    <tbody>
                    
@@ -115,7 +115,7 @@
                       <?php  } ?>
                     </td>
 
-                    <td width="5%">
+                    <td >
                        <?php  if($record->statut  == 'En Attend' ){  ?>
 
                       <?php  }else if($record->statut  == 'fini' && $record->valider  == ''  ){  ?>
