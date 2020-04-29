@@ -108,7 +108,7 @@
                       <?php  if($record->statut  == 'En Attend' ){  ?>
                               <span class="badge badge-warning ">En cours </span>
                       <?php }else{ ?>
-                            <span class="badge badge-success ">Validé par  : <?php echo $record->dobyName ?></span>
+                            <h6 class="badge badge-primary">Validé par  : <?php echo $record->dobyName ?></h6>
                             <?php if($record->eventFB != '') { ?><br><a href="<?php echo $record->eventFB ?> ">Event facebook </a><?php } ?>
                             <?php if($record->album != '') { ?><br><a href="<?php echo $record->album ?> ">Album photo </a><?php } ?>
                             <?php if($record->afterMovie != '') { ?><br><a href="<?php echo $record->afterMovie ?> ">After movie </a><?php } ?>
@@ -119,9 +119,11 @@
                        <?php  if($record->statut  == 'En Attend' ){  ?>
 
                       <?php  }else if($record->statut  == 'fini' && $record->valider  == ''  ){  ?>
+                        <h6>
                          <a href="<?php echo base_url()?>Score_club/PNoter/<?php echo $record->projectId ;  ?>" class="kt-widget__title">
-                              <span class="badge badge-danger "> A Valider </span>
+                              <span class="badge badge-warning"> A Valider </span>
                             </a>
+                          </h6>
                       <?php }else if($record->statut  == 'fini' && $record->valider  == 'Valider'  ) { ?>
                             
 
