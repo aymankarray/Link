@@ -17,7 +17,7 @@
                         <div class="iq-card-body">
                            <div class="table-responsive">
 
-                                <table class="table dataTable no-footer" style="width: 100%" >
+                                <table class="table dataTable no-footer" style="width: cover" >
                    <thead>
                      <th>Date </th>
                      <th>Club </th>
