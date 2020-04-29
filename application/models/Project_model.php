@@ -56,7 +56,7 @@ class Project_model extends CI_Model
 
 
 
-        $this->db->where('NOW() > BaseTbl.endDate AND validName == NULL ') ;
+        $this->db->where('Evaluations.validBy = 0 and Evaluations.doBy != 0 ') ;
      
         
   
