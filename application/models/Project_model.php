@@ -27,7 +27,7 @@ class Project_model extends CI_Model
 
 
         $this->db->where('NOW() > BaseTbl.endDate ') ;
-     
+        
         
   
 

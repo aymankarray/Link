@@ -19,7 +19,7 @@
 
                                 <table class="table dataTable no-footer" style="width: cover" >
                    <thead>
-                     <th>Date </th>
+                     
                      <th>Club </th>
                      <th>Projet </th>
                      <th>Evaluation </th>
@@ -34,13 +34,7 @@
                   ?>
                   <tr>
 
-                    <td>
-                               
-                    <?php 
-                               $date = new DateTime($record->doDate);
-                            
-                              echo $date->format('d/m/Y');       ?>  
-                    </td>
+
 
 
                     
@@ -75,6 +69,7 @@
                                   
                               
                       </h6>
+                      le  :  <?php echo $record->startDate  ?> 
                                 
                                 <?php echo $record->type  ?><br>
                                
@@ -109,6 +104,12 @@
                               <span class="badge badge-warning ">En cours </span>
                       <?php }else{ ?>
                             <a> Evalué par  : <?php echo $record->dobyName ?></a>
+                            <br>
+                            le :                     <?php 
+                               $date = new DateTime($record->doDate);
+                            
+                              echo $date->format('d/m/Y');       ?>  
+                              <hr>
                             <?php if($record->eventFB != '') { ?><br><a href="<?php echo $record->eventFB ?> ">Event facebook </a><?php } ?>
                             <?php if($record->album != '') { ?><br><a href="<?php echo $record->album ?> ">Album photo </a><?php } ?>
                             <?php if($record->afterMovie != '') { ?><br><a href="<?php echo $record->afterMovie ?> ">After movie </a><?php } ?>
@@ -120,7 +121,7 @@
 
                       <?php  }else if($record->statut  == 'fini' && $record->valider  == ''  ){  ?>
                       
-                         <a class="badge badge-warning" href="<?php echo base_url()?>Score_club/PNoter/<?php echo $record->projectId ;  ?>" >
+                         <a class="btn btn-primary btn-sm mr-2" href="<?php echo base_url()?>Score_club/PNoter/<?php echo $record->projectId ;  ?>" >
                                A Valider 
                             </a>
                          
