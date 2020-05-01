@@ -745,8 +745,8 @@
                                     
                                         border-radius: 20%;
 
-                                        width: 55px;
-                                        height: 55px;
+                                        width: 40px;
+                                        height: 40px;
                                       }
                             </style>
     
