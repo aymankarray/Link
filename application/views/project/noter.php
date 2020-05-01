@@ -144,7 +144,7 @@
                          
 
                             <label> Titre  </label>
-                            <select name="titre">
+                            <select name="titre" class="form-control">
                               <option value="Participation : ">Participation</option>
                               <option value="Organisation : ">Organisation</option>
                             </select> 
@@ -153,7 +153,7 @@
                             <label> Remarque </label>
                             <textarea class="form-control"  name="remarque"  value="<?php echo $scoreClub->remarque ?>" ></textarea>
                             <label>Badges</label>
-                            <select name="badge">
+                            <select name="badge"  class="form-control" >
                               <?php 
                               foreach ($BadgesRecords as $badge ) 
                               { 
