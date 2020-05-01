@@ -1,3 +1,5 @@
+<div id="content-page" class="content-page">
+            <div class="container">
 
 			<link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/mdi/css/materialdesignicons.min.css">
 			
@@ -288,3 +290,5 @@
         </div> <!-- row -->
 
 
+</div>
+</div>
