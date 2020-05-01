@@ -246,9 +246,9 @@
                   
                 </div>
                 <div class="table-responsive">
-                    <div class="row" >
+                    <span>
                       <?php echo $projectInfo->description ?>
-                    </div>
+                    </span>
                     <div >
                       <a href="<?php echo $evaluations->album ; ?>">Album photo </a>
                       <br>
