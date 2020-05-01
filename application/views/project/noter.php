@@ -225,7 +225,7 @@
                    ?>
                   <a href="#" class="d-flex align-items-center border-bottom pb-3">
                     <div class="mr-3">
-                      <img src="<?php echo base_url() ?>Uploads/avatar/<?php echo $res->avatar ?>" class="rounded-circle wd-35" alt="user">
+                      <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $res->avatar ?>" class="rounded-circle wd-35" alt="user">
                     </div>
                     <div class="w-100">
                       <div class="d-flex justify-content-between">
