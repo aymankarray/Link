@@ -148,7 +148,7 @@
                                 <div class="col-md-12">                                
                                             <div class="form-group">
                                                 <label for="fname">Lien album photo</label>
-                                               <input type="url" name="album" class="form-control" id="album" required />
+                                               <input type="url" name="album" class="form-control" id="album" pattern="http://www\.facebook\.com\/(.+)\posts\/(.+)|https://www\.facebook\.com\/(.+)\posts\/(.+)" required />
                                     </div>   
                                 </div>
                                 <div class="col-md-12">                                

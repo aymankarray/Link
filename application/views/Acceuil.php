@@ -143,7 +143,7 @@
                               <div class="user-post-data">
                                  <div class="d-flex flex-wrap">
                                     <div class="media-support-user-img mr-3">
-                                       <img class="alligator-turtle " src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="">
+                                       <img class="alligator-turtle " src="https://tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>"  alt="">
                                     </div>
                                     <div class="media-support-info mt-2">
                                        <h5 class="mb-0 d-inline-block"><a href="#" class=""><?php echo $record->name?></a></h5>
