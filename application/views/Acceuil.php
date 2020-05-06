@@ -146,7 +146,7 @@
                                        <img class="alligator-turtle " src="https://tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>"  alt="">
                                     </div>
                                     <div class="media-support-info mt-2">
-                                       <h5 class="mb-0 d-inline-block"><a href="#" class=""><?php echo $record->name?></a></h5>
+                                       <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" class=""><?php echo $record->name?></a></h5>
                                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
                                        <p class="mb-0 text-primary"><?php echo $record->DatePosted?></p>
                                     </div>
