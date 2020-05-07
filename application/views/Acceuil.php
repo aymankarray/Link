@@ -209,7 +209,7 @@
                                  </div>
                               </div>
                               <div class="mt-3" >
-                                 <p  id="post<?php echo $record->postId ?>"  >
+                                 <p   >
                                     <?php 
 
                                                                                  // The Regular Expression filter
@@ -231,10 +231,9 @@
 
                                           }
 
-                                          if ($reg_exUrl != Null){ }
-
-
-                                    ?></p>
+                                    ?>
+                                       
+                                    </p>
 
                               </div>
                               
