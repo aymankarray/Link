@@ -141,7 +141,7 @@
                     <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
                         <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $membre->userId ?>" class="d-flex align-items-center border-bottom">
                             <div class="mr-3">
-                                <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle  mr-3 " alt="user">
+                                <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle  mr-3" alt="user">
                             </div>
                             <div class="w-100">
                                 <div class="d-flex justify-content-between">

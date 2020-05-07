@@ -74,7 +74,18 @@
 
                                           
                                         <textarea id="textarea"  class="form-control rounded" name="postText" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " row="10"; style="resize: none;" required ></textarea>
-                                          
+                                           
+                                           <script type="text/javascript">
+                                                 function convert()
+                                                 {
+                                                  var text=document.getElementById("textarea").value;
+                                                  var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                                                  var text1=text.replace(exp, "<a href='$1'>$1</a>");
+                                                  var exp2 =/(^|[^\/])(www\.[\S]+(\b|$))/gim;
+                                                  document.getElementById("converted_url").innerHTML=text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
+                                                 }
+                                               </script>
+
                                           
                                        </div>
                                        <hr>
@@ -125,7 +136,7 @@
                                        
                                        <hr>
                                        
-                                       <button type="submit" class="btn btn-primary d-block w-100 mt-3">Post</button>
+                                       <button type="submit" onclick="convert();" class="btn btn-primary d-block w-100 mt-3">Post</button>
                                     </div>
                                  </div>
                               </div>
@@ -197,9 +208,18 @@
                                     </div>
                                  </div>
                               </div>
-                              <div class="mt-3">
-                                 <p><?php echo $record->Content ?></p>
-                                 
+                              <div class="mt-3" >
+                                 <p  id="post<?php echo $record->postId ?>" ><?php echo $record->Content ?></p>
+                                    <script type="text/javascript">
+                                                 function convert()
+                                                 {
+                                                  var text= "<?php echo $record->Content ?>" ;
+                                                  var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                                                  var text1=text.replace(exp, "<a href='$1'>$1</a>");
+                                                  var exp2 =/(^|[^\/])(www\.[\S]+(\b|$))/gim;
+                                                  document.getElementById("converted_url").innerHTML=text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
+                                                 }
+                                               </script>
                               </div>
                               
                               <div class="comment-area mt-3">
