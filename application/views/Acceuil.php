@@ -272,13 +272,12 @@
                                                 <?php   
 
                                                 $url = base_url().'Posts/Comments/'.$record->postId;
-                                                echo $url ;
+                                  
                                                 $content = file_get_contents($url); 
-                                                echo $content ;
+                                            
 
-                                                
                                                 $json = json_decode($content, true);
-                                                 print_r($json);    
+                                                 echo ($json);    
 
                                                    echo count($json) ;
                                                ?>  
