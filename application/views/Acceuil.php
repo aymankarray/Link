@@ -1,10 +1,9 @@
 <?php   
 
-                                                $url = base_url().'Posts/Comments/4';
+                                                $url = base_url().'Posts/Comments/'.$record->postId;
                                   
                                                 $content = file_get_contents($url); 
                                             
-                                                   echo ($content); 
 
                                                 $json = json_decode($content, true);
                                                     
