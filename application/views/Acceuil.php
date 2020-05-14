@@ -275,9 +275,10 @@
                                   
                                                 $content = file_get_contents($url); 
                                             
+                                                   echo ($content); 
 
                                                 $json = json_decode($content, true);
-                                                 echo ($json);    
+                                                    
 
                                                    echo count($json) ;
                                                ?>  
