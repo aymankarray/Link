@@ -56,7 +56,7 @@
                                   
                            </div>
                            <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="post-modalLabel" aria-hidden="true" style="display: none;">
-                              <form action="<?php echo base_url()?>Posts/addNewP" method="post" >
+                              <form action="<?php echo base_url()?>Posts/addNewP"   method="post" enctype="multipart/form-data"  >
                               <div class="modal-dialog" role="document">
                                  <div class="modal-content">
                                     <div class="modal-header">
@@ -91,10 +91,10 @@
                                        <hr>
 
                                        <br>
-                                       <!--                                          Je veux joinde
-                                          <input type="radio" name="r1"id="r1"> une photo
-                                          <input type="radio" name="r1" id="r2"> un lien
-
+                                                                            
+                                          <input type="file" name="photo"  > 
+                               
+                  <!--  
                                       
                                        <ul class="d-flex flex-wrap align-items-center list-inline m-0 p-0">
                                            <li class="col-md-12 mb-3" id="lien" style="display: none;"> 
@@ -215,9 +215,17 @@
                                           $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
                                           $text = $record->Content ;
                                           if(preg_match($reg_exUrl, $text, $url)) {
-                                                 echo preg_replace($reg_exUrl, "<a href=".$url[0].">".$url[0]."</a> ", $text);
+                                                 echo preg_replace($reg_exUrl, "<a href=".$url[0]." target=_blank >".$url[0]."</a> ", $text);
                                           } else {
                                                  echo $text;
+                                          }
+
+                                          if ($reg_exUrl = "(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*" ) { ?>
+
+                                             
+                                            
+                                          
+                                          <?php
                                           }
 
                                     ?>
@@ -279,7 +287,8 @@
                                  </div>
                                  <hr>
                                  <ul class="post-comments p-0 m-0">
-                                    <!--
+                                    <?php foreach ($variable as $key => $value) {  ?>     
+                                    
                                     <li class="mb-2">
                                        <div class="d-flex flex-wrap">
                                           <div class="user-img">
@@ -289,16 +298,15 @@
                                              <h6>Monty Carlo</h6>
                                              <p class="mb-0">Lorem ipsum dolor sit amet</p>
                                              <div class="d-flex flex-wrap align-items-center comment-activity">
-                                                <a href="javascript:void();">like</a>
-                                                <a href="javascript:void();">reply</a>
-                                               
+                                             
                                                 <span> 5 min </span>
                                              </div>
                                           </div>
                                        </div>
                                     </li>
-                                    -->
+                                    <?php  }    ?>                                 
                                  </ul>
+                                 <!--
                                  <form class="comment-text d-flex align-items-center mt-3" action="javascript:void(0);">
                                     <input type="text" class="form-control rounded">
                                     <div class="comment-attagement d-flex">
@@ -307,6 +315,7 @@
                                        <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
                                     </div>
                                  </form>
+                              -->
                               </div>
                            </div>
                         </div>
