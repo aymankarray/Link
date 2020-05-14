@@ -288,10 +288,11 @@
                                  <hr>
                                  <ul class="post-comments p-0 m-0">
 
-                                    <?php                     
+                                    <?php   
+                                    $variable = json_decode(  base_url().'/Posts/Comments'.$record->postId , true);                  
                                     if(!empty($variable))
                                      { 
-                                     foreach ($variable as $key => $value) {  ?>     
+                                     foreach ($variable as $key ) {  ?>     
                                     
                                     <li class="mb-2">
                                        <div class="d-flex flex-wrap">

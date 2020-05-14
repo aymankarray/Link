@@ -39,7 +39,9 @@ class Posts extends BaseController {
 
         public function Comments($postId)
     {
-         $data  ['postRecords'] =  $this->posts_model->CommentsListing($postId) ;
+        header('Content-Type: application/json');
+            echo json_encode( $this->posts_model->CommentsListing($postId) , JSON_PRETTY_PRINT);
+       
     }
 
 
