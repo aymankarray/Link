@@ -290,7 +290,7 @@
 
                                     <?php   
 
-                                    echo base_url().'/Posts/Comments'.$record->postId  ;
+                                    echo base_url().'Posts/Comments/'.$record->post  ;
 
                                     $variable = json_decode(  base_url().'Posts/Comments/'.$record->postId , true);                  
                                     if(!empty($variable))
