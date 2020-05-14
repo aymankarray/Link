@@ -270,9 +270,12 @@
                                           <div class="dropdown">
                                              <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
                                                 <?php   
-                                                   $json = file_get_contents(base_url().'Posts/Comments/'.$record->postId) ;
-                                                   $variable = json_decode($json); 
-                                                   echo count($variable) ;
+
+                                                $url = base_url().'Posts/Comments/'.$record->postId;
+                                                $content = file_get_contents($url); 
+                                                $json = json_decode($content, true);
+
+                                                   echo count($json) ;
                                                ?>  
                                               Commentaires
                                              </span>
@@ -296,10 +299,11 @@
                                     
                         <?php 
                            
+                           echo $json ;
 
-                                    if(!empty($variable))
+                                    if(!empty($json))
                                      { 
-                                     foreach ($variable as $key ) {  ?>     
+                                     foreach ($json as $key ) {  ?>     
                                     
                                     <li class="mb-2">
                                        <div class="d-flex flex-wrap">
