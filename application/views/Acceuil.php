@@ -269,6 +269,11 @@
                                        <div class="total-comment-block">
                                           <div class="dropdown">
                                              <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                                <?php   
+                                                   $json = file_get_contents(base_url().'Posts/Comments/'.$record->postId) ;
+                                                   $variable = json_decode($json); 
+                                                   echo count($variable) ;
+                                               ?>  
                                               Commentaires
                                              </span>
                                              <div class="dropdown-menu">
@@ -288,16 +293,8 @@
                                  <hr>
                                  <ul class="post-comments p-0 m-0">
 
-                                    <?php   
-
-
-
-                                    $json = file_get_contents(base_url().'Posts/Comments/'.$record->postId) ;
-
-            
-
-                                    $variable = json_decode($json); 
-
+                                    
+                        <?php 
                            
 
                                     if(!empty($variable))
