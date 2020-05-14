@@ -1,6 +1,6 @@
 <?php   
 
-                                                $url = base_url().'Posts/Comments/'.$record->postId;
+                                                $url = base_url().'Posts/Comments/4';
                                   
                                                 $content = file_get_contents($url); 
                                             
