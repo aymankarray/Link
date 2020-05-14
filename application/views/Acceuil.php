@@ -292,7 +292,7 @@
 
                                     echo base_url().'/Posts/Comments'.$record->postId  ;
 
-                                    $variable = json_decode(  base_url().'/Posts/Comments'.$record->postId , true);                  
+                                    $variable = json_decode(  base_url().'Posts/Comments/'.$record->postId , true);                  
                                     if(!empty($variable))
                                      { 
                                      foreach ($variable as $key ) {  ?>     
