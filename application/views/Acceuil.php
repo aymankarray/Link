@@ -2,10 +2,8 @@
 
                                                 $url = base_url().'Posts/Comments/4';
                                   
-                                                $content = file_get_contents($url); 
-                                            
 
-                                                $json = json_decode($content, true);
+                                                $json = json_decode( base_url().'Posts/Comments/4' , true);
                                                     
 
                                                    echo count($json) ;
