@@ -287,6 +287,10 @@
                                  </div>
                                  <hr>
                                  <ul class="post-comments p-0 m-0">
+
+                                    <?php                     
+                                    if(!empty($variable))
+                                     { 
                                     <?php foreach ($variable as $key => $value) {  ?>     
                                     
                                     <li class="mb-2">
@@ -304,7 +308,7 @@
                                           </div>
                                        </div>
                                     </li>
-                                    <?php  }    ?>                                 
+                                    <?php  } }    ?>                                 
                                  </ul>
                                  <!--
                                  <form class="comment-text d-flex align-items-center mt-3" action="javascript:void(0);">

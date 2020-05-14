@@ -56,14 +56,20 @@ class Posts_model extends CI_Model
 
     function CommentsListing($postId)
     {
-        $this->db->select('BaseTbl.commentId , BaseTbl.Content , BaseTbl.userId  , BaseTbl.DateCommented , User.name , User.avatar ');
+        $this->db->select('BaseTbl.commentId , BaseTbl.content , BaseTbl.userId  , BaseTbl.createdDTM , BaseTbl.createdDTM  ,  User.name , User.avatar ');
         $this->db->from('tbl_comment as BaseTbl');
         $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
         $this->db->where('BaseTbl.postId  =  ' , $postId ) ;
-        $this->db->order_by('BaseTbl.DateCommented DESC ');
+        $this->db->order_by('BaseTbl.createdDTM DESC ');
         $query = $this->db->get();
         $result = $query->result();        
         return $result;
     }
+
+
+
+
+
+
 
 }
