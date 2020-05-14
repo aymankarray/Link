@@ -292,11 +292,11 @@
 
 
 
-                                    $json = file_get_contents(base_url().'Posts/Comments/'.$record->postId ) ;
+                                    $json = file_get_contents(base_url().'Posts/Comments/'.$record->postId) ;
 
-                                    echo $json ;
+            
 
-                                    $variable = json_decode(  $json  , true); 
+                                    $variable = json_decode($json); 
 
                            
 
