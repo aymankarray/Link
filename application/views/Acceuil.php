@@ -291,7 +291,7 @@
                                     <?php                     
                                     if(!empty($variable))
                                      { 
-                                    <?php foreach ($variable as $key => $value) {  ?>     
+                                     foreach ($variable as $key => $value) {  ?>     
                                     
                                     <li class="mb-2">
                                        <div class="d-flex flex-wrap">
