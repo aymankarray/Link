@@ -298,7 +298,7 @@
 
                                     $variable = json_decode(  $json  , true); 
 
-                                    echo $variable ;
+                           
 
                                     if(!empty($variable))
                                      { 
