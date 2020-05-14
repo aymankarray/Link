@@ -32,7 +32,7 @@ class Posts extends BaseController {
          $data['projectRecords'] = $this->project_model->projectListing();
          
          $data  ['postRecords'] =  $this->posts_model->postsListing();
-
+         $data['variable']   ;
          $this->loadViews("Acceuil", $this->global, $data, NULL);   
     }
 
