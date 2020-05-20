@@ -882,6 +882,7 @@
                         </div>
                         
                           <?php    }  ?>
+                          <!--
                         <div class="media align-items-center">
                            <div class="iq-profile-avatar">
                               <img class="rounded-circle avatar-50" src="images/user/02.jpg" alt="">
