@@ -139,7 +139,7 @@
                 </style> 
                 <table  class="table table-dark" >
                                 <thead>
-                                        <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
+                                        <?php $c=-1 ; c++ ; ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
                                           <tr>
                                             <th rowspan="2" > <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle  mr-3" alt="user"> </th>
                                             <th> <small><small><?php echo $membre->name ?> 
