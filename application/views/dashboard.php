@@ -225,10 +225,10 @@
                     <table class="table table-dark table-hover"  id="dtVerticalScrollExample">
                         <thead>
                             <tr>
-                                <th class="pt-0">#</th>
-                                <th class="pt-0">Club</th>
+                                <th >#</th>
+                                <th >Club</th>
                                 <th></th>
-                                <th class="pt-0">Score</th>
+                                <th >Score</th>
 
                             </tr>
                         </thead>
