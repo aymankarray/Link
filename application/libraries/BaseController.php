@@ -131,6 +131,8 @@ class BaseController extends CI_Controller {
 		$headerInfo['notifRecords'] = $this->notification_model->NotificationListing($this->vendorId) ;
         $headerInfo['notifRecordsNumber'] = count($this->notification_model->NotificationNoSeenListing($this->vendorId)) ;
         $headerInfo['FreindRequest'] = $this->user_model->linkRequest($this->vendorId) ;
+
+         $headerInfo['ConnrectedUser'] =  $this->login_model->lastLogins() ;
         
         $this->load->view('includes/header', $headerInfo);
         $this->load->view($viewName, $pageInfo);

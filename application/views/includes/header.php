@@ -867,18 +867,21 @@
 
                      <div class="media-height p-3">
                       <h5>En ligne</h5>
-                       <!--
+                       
+                        <?php foreach ($ConnrectedUser as $key ) {
+                          
+                   ?>
                         <div class="media align-items-center mb-4">
                            <div class="iq-profile-avatar status-online">
                               <img class="rounded-circle avatar-50" src="images/user/01.jpg" alt="">
                            </div>
                            <div class="media-body ml-3">
-                              <h6 class="mb-0"><a href="#">Anna Sthesia</a></h6>
-                              <p class="mb-0">Admin</p>
+                              <h6 class="mb-0"><a href="#"><?php echo $key->name ; ?></a></h6>
+                              <p class="mb-0">En ligne avec <?php echo $key->platform ; ?></p>
                            </div>
                         </div>
                         
-                        
+                          <?php    }  ?>
                         <div class="media align-items-center">
                            <div class="iq-profile-avatar">
                               <img class="rounded-circle avatar-50" src="images/user/02.jpg" alt="">
