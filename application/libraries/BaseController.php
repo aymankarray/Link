@@ -125,6 +125,8 @@ class BaseController extends CI_Controller {
     
     	$this->load->model('notification_model');
     	$this->load->model('user_model');
+    	$this->load->model('login_model');
+    	
 
     	$headerInfo['MyUserId'] = $this->vendorId ; 
 
