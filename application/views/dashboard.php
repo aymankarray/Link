@@ -137,7 +137,7 @@
                         height: 40px;
                     }
                 </style> 
-                <table  class="table table-dark" >
+                <table  class="table table-dark table-hover" >
                           
                                         <?php  if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
                                           <tr>
