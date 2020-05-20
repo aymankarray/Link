@@ -157,7 +157,7 @@ class Login_model extends CI_Model
         $this->db->order_by('BaseTbl.id', 'DESC');
         $query = $this->db->get('tbl_last_login as BaseTbl');
 
-        return $query->row();
+        return $query->result();  
     }
 
 }
