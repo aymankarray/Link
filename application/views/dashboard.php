@@ -136,7 +136,21 @@
                         width: 40px;
                         height: 40px;
                     }
-                </style>
+                </style> 
+                <table  class="table-hover" >
+                                <thead>
+                                        <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
+                                          <tr>
+                                            <th rowspan="2" > <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle  mr-3" alt="user"> </th>
+                                            <th> <h5 class="text-body "><?php echo $membre->name ?></h5> </th>
+                                            <th> <p class="text-muted "><?php echo $membre->scores ?> Points</p> </th>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="2">Club Tunivisions <?php echo $membre->clubName ?></td>
+                                          </tr>
+                                        </thead>
+
+                </table>
                 <div class="d-flex flex-column">
                     <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
                         <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $membre->userId ?>" class="d-flex align-items-center border-bottom">
