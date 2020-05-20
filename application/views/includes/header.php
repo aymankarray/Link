@@ -873,7 +873,7 @@
                    ?>
                         <div class="media align-items-center mb-4">
                            <div class="iq-profile-avatar status-online">
-                              <img class="rounded-circle avatar-50" src="images/user/01.jpg" alt="">
+                              <img class="alligator-turtle" src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="">
                            </div>
                            <div class="media-body ml-3">
                               <h6 class="mb-0"><a href="#"><?php echo $key->name ; ?></a></h6>
