@@ -866,7 +866,7 @@
                   <div class="iq-card-body p-0">
 
                      <div class="media-height p-3">
-                      <h5>En ligne</h5>
+                     
                        
                         <?php foreach ($ConnrectedUser as $key ) {
                           
