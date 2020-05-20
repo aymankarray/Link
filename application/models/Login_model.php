@@ -139,6 +139,27 @@ class Login_model extends CI_Model
 
         return $query->row();
     }
+
+
+
+
+     /**
+     * This function is used to get last login info by user id
+     * @param number $userId : This is user id
+     * @return number $result : This is query result
+     */
+    function lastLogins()
+    {
+        $this->db->select('BaseTbl.createdDtm');
+
+        $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.userId','left');
+        $this->db->where('BaseTbl.createdDtm  > CURDATE()  ');
+        $this->db->order_by('BaseTbl.id', 'DESC');
+        $query = $this->db->get('tbl_last_login as BaseTbl');
+
+        return $query->row();
+    }
+
 }
 
 ?>

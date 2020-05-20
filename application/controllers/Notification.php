@@ -31,7 +31,7 @@ class Notification extends CI_Controller
 
         $result2 = $this->notification_model->getNotifInfo($notifId) ;
 
-  redirect ( $result2->url ) ;
+      redirect ( $result2->url ) ;
     }
 
 }

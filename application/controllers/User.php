@@ -802,11 +802,21 @@ class User extends BaseController
         return $return;
     }
 
-
-    function bonus() {
-  
-        print_r($this->user_model->bonus() ) ;
+    /**
+     * This function is used to check whether email already exist or not
+     * @param {string} $email : This is users email
+     */
+    function usersConnected()
+    {
+       header('Content-Type: application/json');
+            echo json_encode( $this->Login_model->lastLogins() , JSON_PRETTY_PRINT);
+         
     }
+
+
+
+
+
 
 }
 
