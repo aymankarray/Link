@@ -149,7 +149,7 @@
                                             <td colspan="2">Club Tunivisions <?php echo $membre->clubName ?></td>
                                           </tr>
                                         </thead>
-
+                                        <?php }  }else { echo "Il y a pas de données";} ?>
                 </table>
                 <div class="d-flex flex-column">
                     <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
