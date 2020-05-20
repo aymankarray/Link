@@ -140,10 +140,11 @@
                 <table  class="table table-dark table-hover" >
                           <th>
                           </th>
+
                           <th>
-                            Tunimateur
                           </th>
                           <th>
+                            Tunimateur
                           </th>
                           <th>
                             Score
