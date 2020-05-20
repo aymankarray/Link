@@ -150,12 +150,12 @@ class Login_model extends CI_Model
      */
     function lastLogins()
     {
-        $this->db->select(' Users.avatar , Users.name  , BaseTbl.platform , Users.createdDtm ');
+        $this->db->select(' Users.avatar , Users.name  , BaseTbl.platform , BaseTbl.createdDtm ');
 
         $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.userId','left');
-        $this->db->where(' DAY(Users.createdDtm) = DAY(NOW()) ');
-        $this->db->where(' MONTH(Users.createdDtm) = MONTH(NOW()) ');
-        $this->db->where(' YEAR(Users.createdDtm) = YEAR(NOW()) ');
+        $this->db->where(' DAY(BaseTbl.createdDtm) = DAY(NOW()) ');
+        $this->db->where(' MONTH(BaseTbl.createdDtm) = MONTH(NOW()) ');
+        $this->db->where(' YEAR(BaseTbl.createdDtm) = YEAR(NOW()) ');
         $this->db->order_by('BaseTbl.id', 'ASC');
         $query = $this->db->get('tbl_last_login as BaseTbl');
 
