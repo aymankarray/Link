@@ -866,7 +866,7 @@
                   <div class="iq-card-body p-0">
 
                      <div class="media-height p-3">
-                     <h5><?php echo count($ConnrectedUser) ; ?> Tunimateurs connecté </h5>
+                     <h5><?php echo count($ConnrectedUser) ; ?> Tunimateurs connectés </h5>
                      <hr>
                        
                         <?php foreach ($ConnrectedUser as $key ) {
