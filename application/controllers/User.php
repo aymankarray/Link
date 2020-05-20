@@ -27,7 +27,7 @@ class User extends BaseController
         $this->load->model('notification_model');
         $this->load->model('finance_model');
         $this->load->model('Tfm_part_model');
-        $this->load->model('ressource_model');*
+        $this->load->model('ressource_model');
         $this->load->model('login_model');
         
         $this->isLoggedIn();   
