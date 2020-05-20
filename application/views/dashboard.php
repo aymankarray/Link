@@ -144,7 +144,9 @@
                             Tunimateur
                           </th>
                           <th>
-                            Sco
+                          </th>
+                          <th>
+                            Score
                           </th>
                                         <?php  if(!empty($RateMember)){ $c=1 ;   foreach ($RateMember as $membre ) { ?>
                                           <tr>
