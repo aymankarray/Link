@@ -144,7 +144,7 @@
                             Tunimateur
                           </th>
                           <th>
-                            Score
+                            Sco
                           </th>
                                         <?php  if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
                                           <tr>
@@ -215,8 +215,8 @@
                  <?php echo $LastRaitingClub->createdDate ; ?>  
                   </span>
                 </div>
-                <div  class="table table-dark table-hover" style="height:620px ;overflow:auto;">
-                    <table class="table" id="dtVerticalScrollExample">
+                <div class="table-responsive" style="height:620px ;overflow:auto;">
+                    <table class="table table-dark table-hover"  id="dtVerticalScrollExample">
                         <thead>
                             <tr>
                                 <th class="pt-0">#</th>
