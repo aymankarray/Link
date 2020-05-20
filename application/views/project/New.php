@@ -152,14 +152,16 @@
                               <div class="col-md-6">                                
                                     <div class="form-group">
                                         <label for="fname">Date debut</label>
-                                        <input type="datetime-local" class="form-control "  min="<?php echo date('Y-m-d').'T00:00' ?>"   id="debut" name="debut"  required >
+                                        <!-- min="<?php echo date('Y-m-d').'T00:00' ?>" -->
+                                        <input type="datetime-local" class="form-control "    id="debut" name="debut"  required >
                                     </div>
                                 </div>
 
                               <div class="col-md-6">                                
                                     <div class="form-group">
                                         <label for="fname">Date fin</label>
-                                        <input type="datetime-local" class="form-control" min="<?php echo date('Y-m-d').'T00:00' ?>"   id="fin" name="fin"  required >
+                                        <!-- min="<?php echo date('Y-m-d').'T00:00' ?>" -->
+                                        <input type="datetime-local" class="form-control"    id="fin" name="fin"  required >
                                     </div>
                               </div>
                             
