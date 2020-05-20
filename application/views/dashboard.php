@@ -138,7 +138,14 @@
                     }
                 </style> 
                 <table  class="table table-dark table-hover" >
-                          
+                          <th>
+                          </th>
+                          <th>
+                            Tunimateur
+                          </th>
+                          <th>
+                            Score
+                          </th>
                                         <?php  if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
                                           <tr>
 
