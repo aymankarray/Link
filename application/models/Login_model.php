@@ -153,7 +153,7 @@ class Login_model extends CI_Model
         $this->db->select('Users.name  , BaseTbl.platform , Users.createdDtm ');
 
         $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.userId','left');
-        $this->db->where('DATE(BaseTbl.createdDtm ) >= DATE(NOW())  ');
+        $this->db->where('DATE(BaseTbl.createdDtm ) = DATE(NOW())  ');
         $this->db->order_by('BaseTbl.id', 'DESC');
         $query = $this->db->get('tbl_last_login as BaseTbl');
 
