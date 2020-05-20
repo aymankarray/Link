@@ -32,7 +32,7 @@ class Evaluation extends BaseController {
 	public function evaluationListing()
 		        {
 
-              if( $this->role == 1 || ($this->role == 3 && $this->role == 'Gestion des talents') ) 
+              if(  $ this->SA == 1 || $this->role == 1 || ($this->role == 3 && $this->role == 'Gestion des talents') ) 
               
               {
       						$this->load->library('pagination');
