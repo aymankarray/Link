@@ -67,7 +67,7 @@
                       
                         <td>              
                                         <a class="kt-user-card-v2__name" href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" >
-                                        <small> <?php echo $record->name ?> </small>
+                                        <small><small> <?php echo $record->name ?> </small></small>
                                         </a>
                                         <br>                              
                                         <span class="kt-user-card-v2__desc">
