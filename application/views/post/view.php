@@ -178,7 +178,7 @@
                                        <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
                                        <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
                                        -->
-                                       <input type="submit" class="btn btn-light" value="commenter" required />
+                                       <input type="submit" class="ri-link mr-3 btn btn-light" value="commenter" required />
                                     </div>
                                  </form>
                             
