@@ -21,9 +21,9 @@
                     <div class="col-md-6"> 
                         <h2><?php echo $actuInfo->titre ?>       </h2>
                         <hr>
-                        <p style="line-height: 1.6;">
+                        <div style="line-height: 1.6;">
                         <?php echo $actuInfo->description ?>
-                        <p>
+                        </div>
                    </div>
                     <div class="col-md-6"> 
                          <img src="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" class="img-fluid w-100 rounded rounded" alt="profile-bg">
