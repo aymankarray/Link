@@ -58,7 +58,7 @@ table {
                     <?php } else { ?>
                         <button type="button" name="" id="<?php echo $record->userId ?>" class="btn btn-primary"><i data-feather="activity"  ></i> Link</button>
                     <?php }  }?>
-                   <a href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>"> <button type="button" class="btn">visiter</button></a>
+                   <a href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>"> <button type="button" class="btn btn-primary btn-block">visiter</button></a>
                   </div>
                   
             
