@@ -112,19 +112,19 @@
                         </td>
                         
                         <td> 
-                            <small>
+                           
                         <?php if($record->isDeleted == 0) { ?>
-                            <span class="btn btn-success" > Approuvé </span>
+                            <span class="btn btn-Primary" > <small> Approuvé  </small></span>
                         <?php }   ?>
                         <?php if($record->isDeleted == 1) { ?>
-                            <span class="btn btn-warning" > non approuvé </span>
+                            <span class="btn btn-warning" > <small> non approuvé </small> </span>
                         <?php } ?>
 
                         <?php  if($record->isDeleted == 2) {  ?>
-                            <span class="btn btn-danger" > bloqué </span>
+                            <span class="btn btn-danger" > <small> bloqué </small> </span>
                         <?php } ?>
      
-                            </small>
+                           
                         </td>
                        
 
