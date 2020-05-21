@@ -78,7 +78,7 @@ class Posts extends BaseController {
            'postId' => $postId 
 
        );
-        $result = $this->posts_model->addNewComment($postInfo);
+        $result = $this->posts_model->addNewComment($commentInfo);
 
         redirect('/Posts/post/'.$postId);
     }
