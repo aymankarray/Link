@@ -70,8 +70,9 @@ class Actualite_model extends CI_Model
      */
     function actuById($actuId)
     {
-        $this->db->select('BaseTbl.actuId , BaseTbl.titre , BaseTbl.description , BaseTbl.image , BaseTbl.lien' );
+        $this->db->select('BaseTbl.actuId , BaseTbl.titre , BaseTbl.description , BaseTbl.image , BaseTbl.lien , BaseTbl.createdDate , Users.name , Users.userId ' );
         $this->db->from('tbl_actu as BaseTbl');
+        $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy');
         $this->db->where('BaseTbl.actuID', $actuId);
         $query = $this->db->get();
         
