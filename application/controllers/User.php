@@ -19,7 +19,9 @@ class User extends BaseController
         parent::__construct();
         $this->load->model('evaluation_model');
         $this->load->model('user_model');
-        $this->load->model('scores_model');  
+        $this->load->model('scores_model'); 
+        $this->load->model('Scores_club_model');  
+        
         $this->load->model('club_model'); 
         $this->load->model('project_model');   
         $this->load->model('Image_upload_model');
@@ -69,7 +71,7 @@ class User extends BaseController
         $count = $this->finance_model->financeListing($this->clubID);
         $data['bilancount'] = count($count)  ; 
         $data["TFMVALID"] = $this->Tfm_part_model->TFMValid($this->vendorId) ;
-        $data['projectRecords'] = $this->project_model->projectListing();
+        $data['projectRecords'] = $this->Scores_club_model->scoreValiderListing() ;
          
         $this->global['active'] = 'dash';
     

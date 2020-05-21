@@ -48,6 +48,46 @@ class Scores_club_model extends CI_Model
     }
 
 
+        /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function scoreValiderListing()
+    {
+        $this->db->select('BaseTbl.score_clubID , Project.titre , BaseTbl.clubID , BaseTbl.remarque , BaseTbl.titre , BaseTbl.score sc , BaseTbl.affectedBy ');
+        $this->db->from('tbl_score_club as BaseTbl');
+        $this->db->join('tbl_project as Project', 'Project.projectId = BaseTbl.projectId', 'LEFT');
+        $this->db->where('BaseTbl.affectedBy != 0 ' );
+        $query = $this->db->get();
+
+         return $result = $query->result();  
+    }
+
+
+        /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function scoreValiderByCLubListing($clubID)
+    {
+        $this->db->select('BaseTbl.score_clubID , Project.titre , BaseTbl.clubID , BaseTbl.remarque , BaseTbl.titre , BaseTbl.score sc , BaseTbl.affectedBy ');
+        $this->db->from('tbl_score_club as BaseTbl');
+        $this->db->join('tbl_project as Project', 'Project.projectId = BaseTbl.projectId', 'LEFT');
+        $this->db->where('BaseTbl.affectedBy != 0 ' );
+        $this->db->where('Project.clubID =  ', $clubID );
+        $query = $this->db->get();
+
+         return $result = $query->result();  
+    }
+
+
+
 
     /**
      * This function is used to add new user to system

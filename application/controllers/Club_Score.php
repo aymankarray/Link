@@ -29,17 +29,10 @@ class Actu extends BaseController {
 		             	$this->global['active'] = 'scoring';
 		                $this->loadViews("evaluation/list", $this->global, $data, NULL);     
 		        }
+	
+	
 
-
-	public function addNew()
-		        {
-		                
-		                $this->global['pageTitle'] = 'CodeInsect : club  Listing';
-		           		$this->global['active'] = 'actu';
-		        		$this->loadViews("actu/new", $this->global, Null, NULL); 
-		        		  
-		          
-		        }  
+  
 
 
     
