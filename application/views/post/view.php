@@ -154,14 +154,14 @@
                                     <li class="mb-2">
                                        <div class="d-flex flex-wrap">
                                           <div class="user-img">
-                                             <img class="actu-turtle"  alt="item-image">
+                                             <img class="actu-turtle" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
                                           </div>
                                           <div class="comment-data-block ml-3">
-                                             <h6>Monty Carlo</h6>
-                                             <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                             <h6><?php echo $key->name ; ?></h6>
+                                             <p class="mb-0"><?php echo $key->content ; ?></p>
                                              <div class="d-flex flex-wrap align-items-center comment-activity">
                                              
-                                                <span> 5 min </span>
+                                                <span> <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </span>
                                              </div>
                                           </div>
                                        </div>
