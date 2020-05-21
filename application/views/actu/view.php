@@ -1,11 +1,4 @@
-<style type="text/css">
-    .alligator-turtle {
-        object-fit: cover;
-        object-position: 50% 50%;
-        width: 100%;
-        height: 200px;
-    }
-</style>
+
 
 <div class="header-for-bg">
     <div class="background-header position-relative">
