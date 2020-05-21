@@ -7,8 +7,8 @@
                            <div class="iq-card-body">
                               <div class="user-post-data">
                                  <div class="d-flex flex-wrap">
-                                    <div class="media-support-user-img mr-3">
-                                       <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $postRecords->avatar ?>"  alt="">
+                                    <div class=" mr-3">
+                                       <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $postRecords->avatar ?>" >
                                     </div>
                                     <div class="media-support-info mt-2">
                                        <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $postRecords->userId ?>" class="alligator-turtle  mr-3" ><?php echo $postRecords->name?></a></h5>
@@ -154,10 +154,11 @@
                                     <li class="mb-2">
                                        <div class="d-flex flex-wrap">
                                           <div class="user-img">
-                                             <img class="actu-turtle" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
+                                             <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
                                           </div>
                                           <div class="comment-data-block ml-3">
                                              <h6><?php echo $key->name ; ?></h6>
+                                             <hr>
                                              <p class="mb-0"><?php echo $key->content ; ?></p>
                                              <div class="d-flex flex-wrap align-items-center comment-activity">
                                              
