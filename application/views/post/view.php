@@ -151,7 +151,7 @@
                                      { 
                                      foreach ($commentsRecords as $key ) {  ?>     
                                     
-                                    <li class="mb-2">
+                                    <li class="mb-2" style="background-color: aliceblue ">
                                        <div class="d-flex flex-wrap">
                                           <div class="user-img">
                                              <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
