@@ -2,7 +2,7 @@
 
 <div class="header-for-bg">
     <div class="background-header position-relative">
-        <img src="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" class="img-fluid w-100 rounded rounded" alt="profile-bg">
+       
         <div class="title-on-header">
             <div class="data-block">
                 <h2><?php echo $actuInfo->titre ?>
@@ -16,8 +16,14 @@
 <div id="content-page" class="content-page">
     <div class="container">
                 <div class="row card">
+                    
 
-                   <?php echo $actuInfo->description ?>
+                    <div class="col-md-6"> 
+                        <?php echo $actuInfo->description ?>
+                   </div>
+                    <div class="col-md-6"> 
+                         <img src="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" class="img-fluid w-100 rounded rounded" alt="profile-bg">
+                   </div>
 
 
 
