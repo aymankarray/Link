@@ -15,13 +15,13 @@
 
 <div id="content-page" class="content-page">
     <div class="container">
-                <div class="row card">
+                <div class="row ">
                     
 
                     <div class="col-md-6"> 
                         <?php echo $actuInfo->description ?>
                    </div>
-                    <div class="col-md-6"> 
+                    <div class="col-md-4"> 
                          <img src="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" class="img-fluid w-100 rounded rounded" alt="profile-bg">
                    </div>
 
