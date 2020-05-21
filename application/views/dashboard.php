@@ -93,7 +93,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6 col-md-12 col-xl-5">
-                                            <h3 class="mb-2"><?php echo $projets ; ?></h3>
+                                            <h3 class="mb-2"><?php echo $projets+300  ; ?></h3>
                                         </div>
                                     </div>
                                 </div>
