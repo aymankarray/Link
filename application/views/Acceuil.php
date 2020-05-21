@@ -157,7 +157,7 @@
                                        <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>"  alt="">
                                     </div>
                                     <div class="media-support-info mt-2">
-                                       <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" class=""><?php echo $record->name?></a></h5>
+                                       <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" class="alligator-turtle  mr-3" ><?php echo $record->name?></a></h5>
                                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
                                        <p class="mb-0 text-primary">Il y a <?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></p>
                                     </div>
@@ -241,7 +241,7 @@
                                           <div class="like-data">
                                              <div class="dropdown">
                                                 <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                                <img src="<?php echo base_url() ;  ?>images/icon/01.png" class="alligator-turtle  mr-3"  alt="">
+                                                <img src="<?php echo base_url() ;  ?>images/icon/01.png" class="img-fluid" alt="">
                                                 </span>
                                                 <div class="dropdown-menu">
                                                    <a class="ml-2 mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like"><img src="<?php echo base_url() ;  ?>images/icon/01.png" class="img-fluid" alt=""></a>
