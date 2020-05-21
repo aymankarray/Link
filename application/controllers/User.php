@@ -809,7 +809,7 @@ class User extends BaseController
      */
     function usersConnected()
     {   
-                        header('Content-Type: application/json');
+            header('Content-Type: application/json');
             echo json_encode( $this->login_model->lastLogins() , JSON_PRETTY_PRINT);
          
     }

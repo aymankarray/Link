@@ -879,7 +879,20 @@
                      <div class="media-height p-3">
                      <h5><?php echo count($ConnrectedUser) ; ?> Tunimateurs connectés </h5>
                      <hr>
-                       
+                     <?php 
+                     function xTimeAgo ($oldTime, $newTime) {
+                      $timeCalc = strtotime($newTime) – strtotime($oldTime);
+
+                      if ($timeCalc > (60*60*24)) {$timeCalc = round($timeCalc/60/60/24) . ” days ago”;}
+                      else if ($timeCalc > (60*60)) {$timeCalc = round($timeCalc/60/60) . ” hours ago”;}
+                      else if ($timeCalc > 60) {$timeCalc = round($timeCalc/60) . ” minutes ago”;}
+                      else if ($timeCalc > 0) {$timeCalc .= ” seconds ago”;}
+
+                      return $timeCalc;
+                      }
+
+                      ?>
+
                         <?php foreach ($ConnrectedUser as $key ) {
                           
                    ?>
@@ -889,7 +902,9 @@
                            </div>
                            <div class="media-body ml-3">
                               <h6 class="mb-0"><a href="#"><?php echo $key->name ; ?></a></h6>
-                              <p class="mb-0">En ligne avec <?php echo $key->platform ; ?></p>
+                              <p class="mb-0">il y a <?php echo xTimeAgo($key->createdDtm,NOW()) ; ?></p>
+                              <p class="mb-0">via <?php echo $key->platform ; ?></p>
+
                            </div>
                         </div>
                         

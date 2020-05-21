@@ -156,7 +156,7 @@ class Login_model extends CI_Model
         $this->db->where(' DAY(BaseTbl.createdDtm) = DAY(NOW()) ');
         $this->db->where(' MONTH(BaseTbl.createdDtm) = MONTH(NOW()) ');
         $this->db->where(' YEAR(BaseTbl.createdDtm) = YEAR(NOW()) ');
-        $this->db->where(' HOUR(BaseTbl.createdDtm) > HOUR(NOW()) - 2 ');
+        $this->db->where(' HOUR(BaseTbl.createdDtm) > HOUR(NOW()) - 5 ');
         $this->db->group_by('BaseTbl.userId');
         $this->db->order_by('BaseTbl.id', 'DESC');
         $query = $this->db->get('tbl_last_login as BaseTbl');
