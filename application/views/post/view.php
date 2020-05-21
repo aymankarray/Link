@@ -11,7 +11,7 @@
                                        <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $postRecords->avatar ?>" >
                                     </div>
                                     <div class="media-support-info mt-2">
-                                       <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $postRecords->userId ?>"  ><?php echo $postRecords->name?></a></h5>
+                                       <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $postRecords->userId ?>"  ><?php echo $postRecords->name ?></a></h5>
                                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
                                        <p class="mb-0 text-primary">Il y a <?php echo xTimeAgo($postRecords->DatePosted,date('Y-m-d H:i:s')) ; ?></p>
                                     </div>
@@ -170,8 +170,8 @@
                                     <?php  } }    ?>                                 
                                  </ul>
                                 
-                                 <form class="comment-text d-flex align-items-center mt-3" action="javascript:void(0);">
-                                    <input type="text" class="form-control rounded">
+                                 <form class="comment-text d-flex align-items-center mt-3" action="<?php echo base_url().'Posts/addNewComment'.$postRecords->postId ?>">
+                                    <input type="text" name="comment" class="form-control rounded">
                                     <div class="comment-attagement d-flex">
                                       <!-- 
                                        <a href="javascript:void();"><i class="ri-link mr-3"></i></a>

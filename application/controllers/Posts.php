@@ -68,6 +68,23 @@ class Posts extends BaseController {
 
 
 
+     public function addNewComment($postId)
+    {
+        $comment = $this->input->post('comment');
+        $commentInfo = array(        
+           'content' => NL2BR($comment) ,
+           'userId ' => $this->vendorId ,
+           'createdDTM '=> date('Y-m-d H:i:s') ,
+           'postId' => $postId 
+
+       );
+        $result = $this->posts_model->addNewComment($postInfo);
+
+        redirect('/Posts/post/'.$postId);
+    }
+
+
+
 
 
 }

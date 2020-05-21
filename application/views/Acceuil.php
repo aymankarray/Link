@@ -159,7 +159,7 @@
                                     <div class="media-support-info mt-2">
                                        <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" class="alligator-turtle  mr-3" ><?php echo $record->name?></a></h5>
                                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
-                                       <p class="mb-0 text-primary">Il y a <?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></p>
+                                       <p class="mb-0 text-primary"><a href="<?php echo base_url().'Posts/post/'.$record->postId ?>"><?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></a></p>
                                     </div>
                                     <div class="iq-card-post-toolbar">
                                        <div class="dropdown">

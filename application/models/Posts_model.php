@@ -67,8 +67,7 @@ class Posts_model extends CI_Model
     }
 
 
-
-
+   
 
 
 
