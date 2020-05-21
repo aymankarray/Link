@@ -67,6 +67,8 @@ class Club extends BaseController {
 			        $data['userRecords'] = $this->user_model->userListingByclub($this->vendorId,$clubId);
 			        $data["RatingMembers"] = $this->scores_model-> RaitingUsersByClubTop5($clubId) ; 
 
+			        
+
 
 			    	$this->global['active'] = 'myClub';   
 			    	$this->global['clubN'] = $clubId;    

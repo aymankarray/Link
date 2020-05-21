@@ -48,7 +48,7 @@
                         <div class="iq-card-body profile-page p-0">
                            <div class="profile-header">
                               <div class="cover-container">
-                                 <img src="https://scontent.ftun3-1.fna.fbcdn.net/v/t1.0-9/69821656_880672415637786_7990683763971457024_o.png?_nc_cat=106&_nc_ohc=ZSbbBML7_bAAQn-smaSlN-7t5GFYkdOiVFaQqa5aQ8JLumCn4LjJ4d5jA&_nc_ht=scontent.ftun3-1.fna&oh=c89735e9bf57c3d076d757071ff04e65&oe=5EAB140C" alt="profile-bg" class="rounded img-fluid">
+                                 <img src="https://scontent.ftun3-1.fna.fbcdn.net/v/t1.0-9/81382847_979373362434357_6461190259974602752_o.jpg?_nc_cat=107&_nc_sid=dd9801&_nc_ohc=ySMht8WD2hcAX_sBEaQ&_nc_ht=scontent.ftun3-1.fna&oh=df5db533c03c02c8bccdea2b199ba44b&oe=5EED1F4A" alt="profile-bg" class="rounded img-fluid">
                                  <ul class="header-nav d-flex flex-wrap justify-end p-0 m-0">
                                     <li><a href="javascript:void();"><i class="ri-pencil-line"></i></a></li>
                                     <li><a href="javascript:void();"><i class="ri-settings-4-line"></i></a></li>
@@ -424,7 +424,7 @@
                                              <a class="nav-link" data-toggle="pill" href="#family">Bureau Executif</a>
                                           </li>
                                           <li>
-                                             <a class="nav-link" data-toggle="pill" href="#work">Work and Education</a>
+                                             <a class="nav-link" data-toggle="pill" href="#work">Historique de scoring</a>
                                           </li>
                                           <li>
                                              <a class="nav-link" data-toggle="pill" href="#lived">Places You've Lived</a>
@@ -526,65 +526,24 @@
                                              </ul>
                                           </div>
                                           <div class="tab-pane fade" id="work" role="tabpanel">
-                                             <h4 class="mb-3">Work</h4>
+                                             <h4 class="mb-3">Scoring</h4>
                                              <ul class="suggestions-lists m-0 p-0">
+                                                
+                                                <?php foreach ($scoreByClub as $key ) {
+                                                  ?>
+                                               
                                                 <li class="d-flex mb-4 align-items-center">
-                                                   <div class="user-img img-fluid"><i class="ri-add-fill"></i></div>
+                                                    <div class="user-img img-fluid"><i class="ri-add-fill"></i></div>
                                                    <div class="media-support-info ml-3">
-                                                      <h6>Add Work Place</h6>
+                                                      <h6> <?php echo $key->titre  ?> </h6>
                                                    </div>
+                                                   <div class="edit-relation"><a ><?php echo $key->scores  ?> Points </a></div>
                                                 </li>
-                                                <li class="d-flex mb-4 align-items-center">
-                                                   <div class="user-img img-fluid"><img src="<?php echo base_url() ;  ?>images/user/01.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                                   <div class="media-support-info ml-3">
-                                                      <h6>Themeforest</h6>
-                                                      <p class="mb-0">Web Designer</p>
-                                                   </div>
-                                                   <div class="edit-relation"><a href="javascript:void();"><i class="ri-edit-line mr-2"></i>Edit</a></div>
-                                                </li>
-                                                <li class="d-flex mb-4 align-items-center">
-                                                   <div class="user-img img-fluid"><img src="<?php echo base_url() ;  ?>images/user/02.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                                   <div class="media-support-info ml-3">
-                                                      <h6>iqonicdesign</h6>
-                                                      <p class="mb-0">Web Developer</p>
-                                                   </div>
-                                                   <div class="edit-relation"><a href="javascript:void();"><i class="ri-edit-line mr-2"></i>Edit</a></div>
-                                                </li>
-                                                <li class="d-flex mb-4 align-items-center">
-                                                   <div class="user-img img-fluid"><img src="<?php echo base_url() ;  ?>images/user/03.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                                   <div class="media-support-info ml-3">
-                                                      <h6>W3school</h6>
-                                                      <p class="mb-0">Designer</p>
-                                                   </div>
-                                                   <div class="edit-relation"><a href="javascript:void();"><i class="ri-edit-line mr-2"></i>Edit</a></div>
-                                                </li>
+                                                <?php  } ?>
+
                                              </ul>
-                                             <h4 class="mb-3">Professional Skills</h4>
-                                             <ul class="suggestions-lists m-0 p-0">
-                                                <li class="d-flex mb-4 align-items-center">
-                                                   <div class="user-img img-fluid"><i class="ri-add-fill"></i></div>
-                                                   <div class="media-support-info ml-3">
-                                                      <h6>Add Professional Skills</h6>
-                                                   </div>
-                                                </li>
-                                             </ul>
-                                             <h4 class="mt-3 mb-3">College</h4>
-                                             <ul class="suggestions-lists m-0 p-0">
-                                                <li class="d-flex mb-4 align-items-center">
-                                                   <div class="user-img img-fluid"><i class="ri-add-fill"></i></div>
-                                                   <div class="media-support-info ml-3">
-                                                      <h6>Add College</h6>
-                                                   </div>
-                                                </li>
-                                                <li class="d-flex mb-4 align-items-center">
-                                                   <div class="user-img img-fluid"><img src="<?php echo base_url() ;  ?>images/user/01.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                                   <div class="media-support-info ml-3">
-                                                      <h6>Lorem ipsum</h6>
-                                                      <p class="mb-0">USA</p>
-                                                   </div>
-                                                   <div class="edit-relation"><a href="javascript:void();"><i class="ri-edit-line mr-2"></i>Edit</a></div>
-                                                </li>
-                                             </ul>
+                                          
+                                             
                                           </div>
                                           <div class="tab-pane fade" id="lived" role="tabpanel">
                                              <h4 class="mb-3">Current City and Hometown</h4>
