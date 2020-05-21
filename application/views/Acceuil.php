@@ -61,7 +61,7 @@
                                  <div class="modal-content">
                                     <div class="modal-header">
                                        <div class="user-img">
-                                             <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="avatar-60 rounded-circle img-fluid">
+                                             <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle">
                                           </div>
 
                                        <h5 class="modal-title" id="post-modalLabel">Créer une publication</h5>
@@ -153,7 +153,7 @@
                            <div class="iq-card-body">
                               <div class="user-post-data">
                                  <div class="d-flex flex-wrap">
-                                    <div class="media-support-user-img mr-3">
+                                    <div class="">
                                        <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>"  alt="">
                                     </div>
                                     <div class="media-support-info mt-2">
@@ -161,6 +161,7 @@
                                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
                                        <p class="mb-0 text-primary"><a href="<?php echo base_url().'Posts/post/'.$record->postId ?>"><?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></a></p>
                                     </div>
+                                    <!--
                                     <div class="iq-card-post-toolbar">
                                        <div class="dropdown">
                                           <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
@@ -206,6 +207,7 @@
                                           </div>
                                        </div>
                                     </div>
+                                       -->
                                  </div>
                               </div>
                               <div class="mt-3" >

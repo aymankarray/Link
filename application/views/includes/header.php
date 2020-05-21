@@ -698,7 +698,22 @@
   background: rgba(0, 0, 0, .5);
   border-radius: 4px;
 }
-</style></head>
+</style>
+
+
+                            <style type="text/css">
+                                            .alligator-turtle {
+                                        object-fit: cover;
+                                        object-position: 50% 50%;
+                                    
+                                        border-radius: 20%;
+
+                                        width: 55px;
+                                        height: 55px;
+                                      }
+                            </style>
+
+</head>
    <body class="sidebar-main-active right-column-fixed">
       <!-- loader Start -->
       <div id="loading" style="display: none;">
@@ -762,17 +777,7 @@
                      <ul class="navbar-nav ml-auto navbar-list">
                         <li>
                            <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $MyUserId ; ?>" class="iq-waves-effect d-flex align-items-center">
-                            <style type="text/css">
-                                            .alligator-turtle {
-                                        object-fit: cover;
-                                        object-position: 50% 50%;
-                                    
-                                        border-radius: 20%;
 
-                                        width: 40px;
-                                        height: 40px;
-                                      }
-                            </style>
     
                               <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" class="alligator-turtle  mr-3 " alt="<?php echo $name ?>">
                              
@@ -910,6 +915,8 @@
                         </div>
                         
                           <?php    }  ?>
+                          <hr>
+
                           <!--
                         <div class="media align-items-center">
                            <div class="iq-profile-avatar">
