@@ -1,4 +1,11 @@
 
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+  
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+
+
 <style type="text/css">
     
     .content-loader tr td {
@@ -25,7 +32,7 @@
                                 <h6 class="card-title"></h6>
                                    
                 
-                    <table id="example" class="table dataTable no-footer" style="width: cover" >
+                    <table id="example" class=" display table dataTable no-footer" style="width: cover" >
                     <thead>
                     <tr>
                        
@@ -135,7 +142,7 @@
   <script defer src="<?php echo base_url() ?>assets/vendors/datatables.net/jquery.dataTables.js"></script>
   <script defer src="<?php echo base_url() ?>assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
   <script type="text/javascript">
-      $(document).ready( function () {
-    $('table').DataTable();
-} );
+            $(document).ready( function () {
+                $('#example').DataTable();
+            } );
   </script>
