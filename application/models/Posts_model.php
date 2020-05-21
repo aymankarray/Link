@@ -56,7 +56,7 @@ class Posts_model extends CI_Model
 
     function CommentsListing($postId)
     {
-        $this->db->select('BaseTbl.commentId , BaseTbl.content , BaseTbl.userId  , BaseTbl.createdDTM , BaseTbl.createdDTM  ,  User.name , User.avatar ');
+        $this->db->select('BaseTbl.commentId , BaseTbl.content , BaseTbl.userId  , BaseTbl.createdDTM , BaseTbl.createdDTM  ,  User.name , User.avatar , User.userId comUserId ');
         $this->db->from('tbl_comment as BaseTbl');
         $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
         $this->db->where('BaseTbl.postId  =  ' , $postId ) ;

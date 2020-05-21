@@ -11,7 +11,7 @@
                                        <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $postRecords->avatar ?>" >
                                     </div>
                                     <div class="media-support-info mt-2">
-                                       <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $postRecords->userId ?>" class="alligator-turtle  mr-3" ><?php echo $postRecords->name?></a></h5>
+                                       <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $postRecords->userId ?>"  ><?php echo $postRecords->name?></a></h5>
                                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
                                        <p class="mb-0 text-primary">Il y a <?php echo xTimeAgo($postRecords->DatePosted,date('Y-m-d H:i:s')) ; ?></p>
                                     </div>
@@ -157,12 +157,12 @@
                                              <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
                                           </div>
                                           <div class="comment-data-block ml-3">
-                                             <h6><?php echo $key->name ; ?></h6>
-                                             <hr>
+                                             <h5><a href="https://tunivisions.link/User/ProfileShow/<?php echo $key->comUserId ?>"  > <?php echo $key->name ; ?> </a></h5>
+                                            
                                              <p class="mb-0"><?php echo $key->content ; ?></p>
                                              <div class="d-flex flex-wrap align-items-center comment-activity">
                                              
-                                                <span> <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </span>
+                                                <span class="text-primary" > <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </span>
                                              </div>
                                           </div>
                                        </div>
