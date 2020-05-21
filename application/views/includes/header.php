@@ -738,7 +738,7 @@
                   </div>
                   <div class="iq-search-bar">
                      <form action="<?php echo base_url() ?>User/userListing2" class="searchbox">
-                        <input type="text" class="text search-input" placeholder="Chercher">
+                        <input type="text" class="text search-input" placeholder="Chercher" name="searchText" >
                         
                      </form>
                   </div>

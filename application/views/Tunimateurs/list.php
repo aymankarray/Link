@@ -27,7 +27,10 @@ table {
 
 </style>
 
-<div class="row">
+<div id="content-page" class="content-page">
+    <div class="container">
+        <div class="row">
+
               
                
             <?php foreach($userRecords as $record ) { ?>
@@ -60,7 +63,7 @@ table {
             <?php   } ?>
 
               
- </div>
+ </div></div></div>
 
 
  <script type="text/javascript">
