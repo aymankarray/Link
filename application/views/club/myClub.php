@@ -537,7 +537,7 @@
                                                    <div class="media-support-info ml-3">
                                                       <h6> <?php echo $key->titre  ?> </h6>
                                                    </div>
-                                                   <div class="edit-relation"><a ><?php echo $key->scores  ?> Points </a></div>
+                                                   <div class="edit-relation"><a ><?php echo $key->score  ?> Points </a></div>
                                                 </li>
                                                 <?php  } ?>
 
