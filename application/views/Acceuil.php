@@ -367,12 +367,14 @@
 
                               <?php foreach ($ActuRecords as $record ) { ?>
                               <li class="d-flex mb-4 align-items-center">
-                                 <a href="<?php echo base_url().'Actu/show/'.$record->actuID ?>" ><h5>
+                                 <a href="<?php echo base_url().'Actu/show/'.$record->actuID ?>" >
                                   <img src="https://www.tunivisions.link/uploads/Actu/<?php echo $record->image ?>" class="actu-turtle">
-                               </a>
-                               
+                                 </a>
+
                                  <div class="stories-data ml-3">
-                                    <a href="<?php echo base_url().'Actu/show/'.$record->actuID ?>" ><h5><?php 
+                                    <h5>
+                                       <a href="<?php echo base_url().'Actu/show/'.$record->actuID ?>" >
+                                       <?php 
                                                         $string = strip_tags( $record->titre  );
                                                         if (strlen($string) > 25){
 
@@ -386,8 +388,10 @@
                                                             }
 
                                                          echo $string ;
-                                                         ?>  </h5>
-                                       </a>
+                                                         ?>  
+                                           </a>                  
+                                       </h5>
+                                      
                                     <p class="mb-0">
                                                       <?php 
                                                         $string = strip_tags( $record->description  );
