@@ -15,7 +15,7 @@
 
 <div id="content-page" class="content-page">
     <div class="container">
-                <div class="row ">
+                <div class="row" style="background-color: white ">
                     
                  
                     <div class="col-md-6"> 
