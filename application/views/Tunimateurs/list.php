@@ -36,7 +36,7 @@ table {
             <?php foreach($userRecords as $record ) { ?>
                <div class="col-md-3 card" style="background-color:#E4EFFF;
                                                   border:1px solid #9FC6FF;
-                                                  padding:5px;
+                                                  padding:16px;
                                                   /*arrondir les coins en haut à gauche et en bas à droite*/
                                                   -moz-border-radius:10px 0;
                                                   -webkit-border-radius:10px 0;
