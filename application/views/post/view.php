@@ -63,7 +63,7 @@
                                  </div>
                               </div>
                               <div class="mt-3" >
-                                 <p   >
+                                 <p  style="font-size: 12" >
                                     <?php 
 
                                           $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
