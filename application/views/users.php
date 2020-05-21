@@ -41,7 +41,7 @@
                         <th>Nom et prénom</th>
                         <th>Club</th>
                         <th>Contact</th>
-                        <th></th>
+                        <th>Inscription </th>
                         <th>Actif</th>
                         
                     </tr>
