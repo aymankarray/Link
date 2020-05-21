@@ -17,7 +17,7 @@
     <div class="container">
                 <div class="row ">
                     
-
+                 <h2><?php echo $actuInfo->titre ?>       </h2>
                     <div class="col-md-6"> 
                         <?php echo $actuInfo->description ?>
                    </div>
@@ -26,16 +26,12 @@
                    </div>
 
 
-                   
+
 
 
                     <div class="col-md-6"> 
                         
                         publié le : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->createdDate ?> </a>
-
-                    </div>
-
-                    <div class="col-md-6"> 
                         
                         par : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->name ?> </a>
 
