@@ -367,9 +367,24 @@
 
                               <?php foreach ($ActuRecords as $record ) { ?>
                               <li class="d-flex mb-4 align-items-center">
-                                 <img src="https://www.tunivisions.link/uploads/Actu/<?php echo $record->image ?>" class="actu-turtle">
+                                 <a href="<?php echo base_url().'Actu/show/'.$record->actuID ?>" >
+                                  <img src="https://www.tunivisions.link/uploads/Actu/<?php echo $record->image ?>" class="actu-turtle">
                                  <div class="stories-data ml-3">
-                                    <h5><?php echo $record->titre ?></h5>
+                                    <h5><?php 
+                                                        $string = strip_tags( $record->titre  );
+                                                        if (strlen($string) > 25){
+
+                                                            // truncate string
+                                                            $stringCut = substr($string, 0, 25);
+                                                            $endPoint = strrpos($stringCut, ' ');
+
+                                                            //if the string doesn't contain any space then it will cut without word basis.
+                                                            $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                            $string .= '... ';
+                                                            }
+
+                                                         echo $string ;
+                                                         ?>  </h5>
                                     <p class="mb-0">
                                                       <?php 
                                                         $string = strip_tags( $record->description  );
@@ -389,6 +404,7 @@
 
                                     </p>
                                  </div>
+                                 </a>
                               </li>
                               <?php } ?>
                               
