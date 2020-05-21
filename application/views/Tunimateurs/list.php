@@ -34,13 +34,10 @@ table {
               
                
             <?php foreach($userRecords as $record ) { ?>
-               <div class="col-md-3 card" style="
-                                                  border:1px solid black ;
-                                                  padding:16px;
+               <div class="col-md-3 card" style=" border:1px solid black ;
+                                                  padding:16px 16px 16px 16px;
                                                   /*arrondir les coins en haut à gauche et en bas à droite*/
-                                                  -moz-border-radius:10px 0;
-                                                  -webkit-border-radius:10px 0;
-                                                  border-radius:10px 0; " >
+                                                  border-radius:10px  " >
                   <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>" class="card-img-top alligator-turtle" alt="...">
                   <div class="card-body">
                    
