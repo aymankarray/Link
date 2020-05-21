@@ -28,12 +28,12 @@
 
 
 
-              <label for="fname">Description</label>
+              <label for="fname">Description </label>
               <textarea class="form-control" id="summernote" name="description" rows="18">
               </textarea>
 
-              <label for="fname">Lien</label>
-              <input type="url" class="form-control" id="lien" name="lien"  >
+              <label for="fname">Embeded Code </label>
+              <input type="textarea" class="form-control" id="lien" name="lien"  row="20" >
 
  
                                        
