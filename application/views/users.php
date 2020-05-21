@@ -69,7 +69,7 @@
                                         </a>
                                         <br>                              
                                         <span class="kt-user-card-v2__desc">
-                                        <?php echo $record->role ?> <?php echo $record->cellule ?>  
+                                        <small>  <small>  <?php echo $record->role ?> <?php echo $record->cellule ?>  </small></small>
                                         </span>                            
                                     </div>                      
                                 
@@ -85,7 +85,7 @@
                                     </div>                          
                                     <div class="kt-user-card-v2__details">                              
                                         <a class="kt-user-card-v2__name" href="#">
-                                            <?php echo $record->ClubName ?></td>
+                                          <small> <?php echo $record->ClubName ?> </small> </td>
                                         </a>                              
                                     </div>                      
                                 </div>
@@ -102,8 +102,11 @@
                          </td>
 
                         <td>
+                            <small><small>
+
                            parrin : <?php echo $record->parrain ?><br>
                            date d'inscription : <?php echo $record->createdDtm ?>
+                       </small></small>
                         </td>
                         
                         <td> 
