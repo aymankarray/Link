@@ -370,6 +370,7 @@
                                  <a href="<?php echo base_url().'Actu/show/'.$record->actuID ?>" ><h5>
                                   <img src="https://www.tunivisions.link/uploads/Actu/<?php echo $record->image ?>" class="actu-turtle">
                                </a>
+                               
                                  <div class="stories-data ml-3">
                                     <a href="<?php echo base_url().'Actu/show/'.$record->actuID ?>" ><h5><?php 
                                                         $string = strip_tags( $record->titre  );
