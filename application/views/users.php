@@ -106,8 +106,8 @@
                         <td>
                             <small><small>
 
-                           parrin : <?php echo $record->parrain ?><br>
-                           date d'inscription : <?php echo $record->createdDtm ?>
+                           parrin : <a class="kt-user-card-v2__name" href="https://tunivisions.link/User/ProfileShow/<?php echo $record->p_userId ?>" > <?php echo $record->parrain ?></a><br>
+                           date d'inscription :<a> <?php echo $record->createdDtm ?></a>
                        </small></small>
                         </td>
                         
