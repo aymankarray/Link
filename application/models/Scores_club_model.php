@@ -60,7 +60,7 @@ class Scores_club_model extends CI_Model
         $this->db->select('BaseTbl.score_clubID , Project.titre , BaseTbl.clubID , BaseTbl.remarque , BaseTbl.titre , BaseTbl.score sc , BaseTbl.affectedBy ');
         $this->db->from('tbl_score_club as BaseTbl');
         $this->db->join('tbl_project as Project', 'Project.projectId = BaseTbl.projectId', 'LEFT');
-        $this->db->where('BaseTbl.affectedBy != 0 ' );
+        $this->db->where('BaseTbl.projectId != 0 ' );
         $query = $this->db->get();
 
          return $result = $query->result();  
