@@ -17,8 +17,9 @@
     <div class="container">
                 <div class="row ">
                     
-                 <h2><?php echo $actuInfo->titre ?>       </h2>
+                 
                     <div class="col-md-6"> 
+                        <h2><?php echo $actuInfo->titre ?>       </h2>
                         <?php echo $actuInfo->description ?>
                    </div>
                     <div class="col-md-6"> 
