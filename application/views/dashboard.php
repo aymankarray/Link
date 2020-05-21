@@ -242,7 +242,7 @@
                                     </td>
                                     <td>
                                         
-                                            <?php echo $club->name ?> 
+                                           <small> <?php echo $club->name ?></small> 
 
 
                                     </td>
