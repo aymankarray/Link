@@ -1,4 +1,6 @@
-<div class="row">  
+<div id="content-page" class="content-page">
+    <div class="container">
+                <div class="row" style="background-color: white ">
       <div class="card col-md-12" >
  <?php $this->load->helper("form"); ?>
         <form role="form" id="addproject" action="<?php echo base_url() ?>Actu/addNewA" method="post" role="form"  enctype="multipart/form-data">
@@ -39,4 +41,6 @@
 
         </div>
 
+      </div>
+    </div>
 </div>
