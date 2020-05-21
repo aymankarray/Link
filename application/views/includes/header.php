@@ -902,7 +902,7 @@
                            </div>
                            <div class="media-body ml-3">
                               <h6 class="mb-0"><a href="#"><?php echo $key->name ; ?></a></h6>
-                              <p class="mb-0">il y a <?php echo xTimeAgo($key->createdDtm,Date()) ; ?></p>
+                              <p class="mb-0">il y a <?php echo xTimeAgo($key->createdDtm,date('Y-m-d H:i:s')) ; ?></p>
                               <p class="mb-0">via <?php echo $key->platform ; ?></p>
 
                            </div>
