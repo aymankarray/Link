@@ -222,7 +222,7 @@
                  <?php echo $LastRaitingClub->createdDate ; ?>  
                   </span>
                 </div>
-                <div class="table-responsive" style="height:800px ;overflow:auto;">
+                <div class="table-responsive" style="height:900px ;overflow:auto;">
                     <table class="table table-dark table-hover"  id="dtVerticalScrollExample">
                         <thead>
                             <tr>
