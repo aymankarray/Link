@@ -79,21 +79,10 @@
 
                         </td>
                         <td>
-
-                            <span style="width: 145px;">
-                                <div class="kt-user-card-v2">
-                                    <div class="kt-user-card-v2__pic">
-                                        
-                                    </div>                          
-                                    <div class="kt-user-card-v2__details">                              
                                         <a class="kt-user-card-v2__name" href="#">
                                           <small> <?php echo $record->ClubName ?> </small> </td>
-                                        </a>                              
-                                    </div>                      
-                                </div>
-                            </span>
-
-
+                                        </a>                            
+                                                     
                         </td>
                         
                         
