@@ -21,7 +21,7 @@
                     <div class="col-md-6"> 
                         <h2><?php echo $actuInfo->titre ?>       </h2>
                         <hr>
-                        <div style="line-height: 3;">
+                        <div style="line-height: 1.8;">
                         <?php echo $actuInfo->description ?>
                         </div>
                    </div>
