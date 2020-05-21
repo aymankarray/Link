@@ -241,7 +241,7 @@
                                           <div class="like-data">
                                              <div class="dropdown">
                                                 <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                                <img src="<?php echo base_url() ;  ?>images/icon/01.png" class="img-fluid" alt="">
+                                                <img src="<?php echo base_url() ;  ?>images/icon/01.png" class="alligator-turtle  mr-3"  alt="">
                                                 </span>
                                                 <div class="dropdown-menu">
                                                    <a class="ml-2 mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like"><img src="<?php echo base_url() ;  ?>images/icon/01.png" class="img-fluid" alt=""></a>
