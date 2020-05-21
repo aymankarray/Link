@@ -1,4 +1,16 @@
+<?php 
+                     function xTimeAgo ($oldTime, $newTime) {
+                      $timeCalc = strtotime($newTime) - strtotime($oldTime);
 
+                      if ($timeCalc > (60*60*24)) {$timeCalc = round($timeCalc/60/60/24) . " jours";}
+                      else if ($timeCalc > (60*60)) {$timeCalc = round($timeCalc/60/60) . " heures";}
+                      else if ($timeCalc > 60) {$timeCalc = round($timeCalc/60) . " minutes";}
+                      else if ($timeCalc > 0) {$timeCalc .= " seconds";}
+
+                      return $timeCalc;
+                      }
+
+                      ?>
 <style type="text/css">
    #upload{
     display:none
@@ -159,7 +171,7 @@
                                     <div class="media-support-info mt-2">
                                        <h5 class="mb-0 d-inline-block"><a href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" class=""><?php echo $record->name?></a></h5>
                                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
-                                       <p class="mb-0 text-primary"><?php echo $record->DatePosted?></p>
+                                       <p class="mb-0 text-primary">Il y a <?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></p>
                                     </div>
                                     <div class="iq-card-post-toolbar">
                                        <div class="dropdown">
