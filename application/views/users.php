@@ -2,9 +2,9 @@
 <div id="content-page" class="content-page">
             <div class="container">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
-  
+<script defer type="text/javascript"  src="https://code.jquery.com/jquery-3.5.1.js"></script>  
 <script defer type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
-<script defer type="text/javascript"  src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
 
 
 <style type="text/css">
@@ -114,7 +114,7 @@
                         <td> 
                            
                         <?php if($record->isDeleted == 0) { ?>
-                            <span class="btn btn-Primary" > <small> Approuvé  </small></span>
+                            <span class="btn btn-Info" > <small> Approuvé  </small></span>
                         <?php }   ?>
                         <?php if($record->isDeleted == 1) { ?>
                             <span class="btn btn-warning" > <small> non approuvé </small> </span>
