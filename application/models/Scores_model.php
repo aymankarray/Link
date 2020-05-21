@@ -42,7 +42,7 @@ class Scores_model extends CI_Model
             , Evaluations.album , Evaluations.afterMovie , BaseTbl.eventFB');
         
         $this->db->from('tbl_project as BaseTbl');
-        $this->db->join('tbl_club as Clubs', 'Clubs.clubID = BaseTbl.ClubID AND  BaseTbl.ClubID = '.$clubID , 'LEFT');
+        $this->db->join('tbl_club as Clubs', 'Clubs.clubID = BaseTbl.ClubID ', 'LEFT');
 
         $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
         $this->db->join('tbl_score_club as Scores', 'Evaluations.score_clubID = Scores.score_clubID', 'LEFT');
@@ -50,8 +50,8 @@ class Scores_model extends CI_Model
         $this->db->join('tbl_users as Valider ', 'Valider.userId = Evaluations.validBy', 'LEFT');
          $this->db->join('tbl_users as Evaluer ', 'Evaluer.userId = Evaluations.doBy', 'LEFT');
 
-
-
+        $this->db->where(' BaseTbl.ClubID = ' , $clubID  ) ;
+       
         $this->db->where('NOW() > BaseTbl.endDate ') ;
         $this->db->where('Evaluations.validBy != 0 ') ;
         
