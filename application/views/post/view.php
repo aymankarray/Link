@@ -170,7 +170,7 @@
                                     <?php  } }    ?>                                 
                                  </ul>
                                 
-                                 <form class="comment-text d-flex align-items-center mt-3" action="<?php echo base_url().'Posts/addNewComment'.$postRecords->postId ?>">
+                                 <form class="comment-text d-flex align-items-center mt-3" method="post" action="<?php echo base_url().'Posts/addNewComment'.$postRecords->postId ?>">
                                     <input type="text" name="comment" class="form-control rounded">
                                     <div class="comment-attagement d-flex">
                                       <!-- 
@@ -178,7 +178,7 @@
                                        <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
                                        <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
                                        -->
-                                       <input type="submit" class="" value="commenter" />
+                                       <input type="submit" class="btn btn-light mb-3" value="commenter" required />
                                     </div>
                                  </form>
                             
