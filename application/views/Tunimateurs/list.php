@@ -37,7 +37,7 @@ table {
                <div class="col-md-3 card" style=" border:1px solid black ;
                                                   padding:16px 16px 16px 16px;
                                                   /*arrondir les coins en haut à gauche et en bas à droite*/
-                                                  border-radius:10%  " >
+                                                  border-radius:5%  " >
                   <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>" class="card-img-top alligator-turtle" alt="...">
                   <div class="card-body">
                    
