@@ -157,7 +157,7 @@
                                              <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
                                           </div>
                                           <div class="comment-data-block ml-3">
-                                             <h5><a href="https://tunivisions.link/User/ProfileShow/<?php echo $key->comUserId ?>" class="text-primary"  > <?php echo $key->name ; ?> </a></h5>
+                                             <h6><a href="https://tunivisions.link/User/ProfileShow/<?php echo $key->comUserId ?>" class="text-primary"  > <?php echo $key->name ; ?> </a></h6>
                                             
                                              <p class="mb-0"><?php echo $key->content ; ?></p>
                                              <div class="d-flex flex-wrap align-items-center comment-activity">
@@ -173,10 +173,12 @@
                                  <form class="comment-text d-flex align-items-center mt-3" action="javascript:void(0);">
                                     <input type="text" class="form-control rounded">
                                     <div class="comment-attagement d-flex">
-                                      <!-- <a href="javascript:void();"><i class="ri-link mr-3"></i></a>
+                                      <!-- 
+                                       <a href="javascript:void();"><i class="ri-link mr-3"></i></a>
                                        <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
                                        <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
                                        -->
+                                       <input type="submit" class="btn btn-primary" value="commenter" />
                                     </div>
                                  </form>
                             
