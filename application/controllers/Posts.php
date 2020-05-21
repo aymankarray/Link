@@ -45,11 +45,11 @@ class Posts extends BaseController {
     }
 
 
-    public function Post($post)
+    public function post($post)
     {
-        $data  ['postRecords'] =  $this->posts_model->post($post) ; 
-        $data['commentsRecords'] = $this->project_model->CommentsListing();
-        $this->loadViews("Acceuil", $this->global, $data, NULL);   
+        $data  ['postRecords'] =  $this->posts_model->postById($post) ; 
+        $data['commentsRecords'] = $this->project_model->CommentsListing($post);
+        $this->loadViews("post/view", $this->global, $data, NULL);   
     }
 
 

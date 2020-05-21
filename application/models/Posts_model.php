@@ -42,7 +42,7 @@ class Posts_model extends CI_Model
    }
 
 
-   function post($postId)
+   function postById($postId)
    {
         $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId  , BaseTbl.DatePosted , User.name , User.avatar ');
         $this->db->from('tbl_post as BaseTbl');
