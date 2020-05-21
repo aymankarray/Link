@@ -60,12 +60,14 @@
                     <tr>
                        
                         <td>
+                            <small>
                             <?php echo $record->userId ?>
+                            </small>
                         </td>
                       
                         <td>              
-                                        <a class="kt-user-card-v2__name" href="#">
-                                         <?php echo $record->name ?>
+                                        <a class="kt-user-card-v2__name" href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" >
+                                        <small> <?php echo $record->name ?> </small>
                                         </a>
                                         <br>                              
                                         <span class="kt-user-card-v2__desc">
@@ -110,7 +112,7 @@
                         </td>
                         
                         <td> 
-
+                            <small>
                         <?php if($record->isDeleted == 0) { ?>
                             <span class="btn btn-success" > Approuvé </span>
                         <?php }   ?>
@@ -122,7 +124,7 @@
                             <span class="btn btn-danger" > bloqué </span>
                         <?php } ?>
      
-            
+                            </small>
                         </td>
                        
 
