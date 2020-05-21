@@ -170,7 +170,7 @@
                                     <?php  } }    ?>                                 
                                  </ul>
                                 
-                                 <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment'.$postRecords->postId ?>">
+                                 <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$postRecords->postId ?>">
                                     <input type="text" name="comment" class="form-control rounded" required>
                                     <div class="comment-attagement d-flex">
                                       
