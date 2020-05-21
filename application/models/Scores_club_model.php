@@ -57,12 +57,30 @@ class Scores_club_model extends CI_Model
      */
     function scoreValiderListing()
     {
-        $this->db->select('BaseTbl.score_clubID , BaseTbl.clubID , BaseTbl.remarque , BaseTbl.titre , BaseTbl.score sc , BaseTbl.affectedBy ');
-        $this->db->from('tbl_score_club as BaseTbl');
-            $this->db->where('BaseTbl.projectId != 0 ' );
-        $query = $this->db->get();
+         $this->db->select('BaseTbl.projectId , BaseTbl.description , BaseTbl.startDate , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description descP ,  BaseTbl.local ,BaseTbl.banner , Evaluations.valider , Evaluer.name dobyName ,  Scores.score , Evaluations.statut , Scores.affectedBy , Valider.name validName 
+            , Evaluations.album , Evaluations.afterMovie , BaseTbl.eventFB');
+        
+        $this->db->from('tbl_project as BaseTbl');
+        $this->db->join('tbl_club as Clubs', 'Clubs.clubID = BaseTbl.ClubID', 'LEFT');
 
-         return $result = $query->result();  
+        $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
+        $this->db->join('tbl_score_club as Scores', 'Evaluations.score_clubID = Scores.score_clubID', 'LEFT');
+
+        $this->db->join('tbl_users as Valider ', 'Valider.userId = Evaluations.validBy', 'LEFT');
+         $this->db->join('tbl_users as Evaluer ', 'Evaluer.userId = Evaluations.doBy', 'LEFT');
+
+
+
+        $this->db->where('NOW() > BaseTbl.endDate ') ;
+        $this->db->where('Evaluations.validBy != 0 ') ;
+        
+        
+  
+
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
     }
 
 
