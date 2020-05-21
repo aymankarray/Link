@@ -87,7 +87,7 @@
                                           <p class="mb-0"><?php
                                           $s = 0 ;
                                            foreach ($scoreByClub as $scores ) {
-                                               $s = $s + $scores->scores ;
+                                               $s = $s + $scores->score ;
                                                 }
                                                 echo $s ;
                                            ?></p>
