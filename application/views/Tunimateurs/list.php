@@ -50,16 +50,10 @@ table {
                   </div>
                  
                     
-                  <div class="btn-group" role="group" aria-label="Basic example">
-                    <?php foreach ($FreindRequest as $fr ) {
-                      if ( $fr->userId == $record->userId )
-                     { ?>
-                        <a type="button" name="Accepte"  class="btn btn-warning"><i data-feather="activity"  ></i> Accepte</a>   
-                    <?php } else { ?>
-                        <button type="button" name="" id="<?php echo $record->userId ?>" class="btn btn-primary"><i data-feather="activity"  ></i> Link</button>
-                    <?php }  }?>
+        
+
                    <a href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>"> <button type="button" class="btn btn-primary btn-block">visiter</button></a>
-                  </div>
+           
                   
             
                 </div>
