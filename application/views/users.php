@@ -95,8 +95,11 @@
                         </td>
                         
                         
-                        <td><?php echo $record->email ?><br>
-                        <?php echo $record->mobile ?> </td>
+                        <td>
+                            <A HREF="mailto:<?php echo $record->email ?>"><i class="ri-mail-fill"></i></A> 
+                            <a href="tel:<?php echo $record->mobile ?>"><i class="ri-phone-fill"></i></i></a>
+                            <a href="<?php echo $record->facebook ?>"><i class="ri-facebook-box-fill"></i></i></i></a>
+                         </td>
 
                         <td>
                            parrin : <?php echo $record->parrain ?><br>
