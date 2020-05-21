@@ -1,5 +1,5 @@
 <style type="text/css">
-    .alligator-turtle {
+    .alligator-event {
         object-fit: cover;
         object-position: 50% 50%;
         width: 100%;
@@ -35,7 +35,7 @@
                     <div class="iq-card rounded iq-card-block iq-card-stretch iq-card-height">
                         <div class="event-images">
                             
-                         <img src="https://www.tunivisions.link/uploads/projet/<?php echo $record->banner; ?>" class="alligator-turtle " alt="">
+                         <img src="https://www.tunivisions.link/uploads/projet/<?php echo $record->banner; ?>" class="alligator-event" alt="">
           
                         </div>
                         <div class="iq-card-body">
