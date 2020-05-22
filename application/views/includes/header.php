@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="fr">
 <?php 
                      function xTimeAgo ($oldTime, $newTime) {
                       $timeCalc = strtotime($newTime) - strtotime($oldTime);
