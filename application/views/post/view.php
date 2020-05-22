@@ -125,7 +125,7 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                                 <button type="button" name="like"  id="<?php echo $postRecords->postId ?>"  > 
+                                                 <button type="button" class="likebtn"  id="<?php echo $postRecords->postId ?>"  > 
                                                   j'aime 
                                                 </button> 
                                             

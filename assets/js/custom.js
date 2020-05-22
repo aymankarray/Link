@@ -501,8 +501,8 @@ Index Of Script
         Like
         * -----------------------------------------------------------------*/
         jQuery(document).ready(function() {
-            jQuery().on('click', '.todo-task-lists li', function() {
-                alert (this.id)
+            jQuery().on('click', '.likebtn', function() {
+                alert (this.id); 
             })
         });
 
