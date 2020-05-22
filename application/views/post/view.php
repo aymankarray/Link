@@ -193,8 +193,10 @@
 <script type="text/javascript">
    function like(clicked_id) {
 
+         var link = <?php echo base_url() ?>+"Posts/Like/"+clicked_id ; 
+         
      $.ajax({
-        url: <?php echo base_url() ?>+'Posts/Like/'+clicked_id ,
+        url: link ,
         type:'post',
         success:function(){
             alert("worked  "+<?php echo base_url() ?>+"Posts/Like/"+clicked_id);
