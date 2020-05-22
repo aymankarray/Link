@@ -197,6 +197,7 @@
       
       function like (clickid) {
          alert(clickid) ; 
+         $('#'+clickid).hide() ;  
       }
 
 </script>
