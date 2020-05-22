@@ -50,6 +50,7 @@ class Posts extends BaseController {
         $data  ['postRecords'] =  $this->posts_model->postById($post) ; 
         $data['commentsRecords'] = $this->posts_model->CommentsListing($post);
         $data['likeRecords'] = $this->posts_model->likesListing($post);
+        $data['likeCheck'] = $this->posts_model->likeCheck($post,$this->vendorId);
         $this->loadViews("post/view", $this->global, $data, NULL);   
     }
 

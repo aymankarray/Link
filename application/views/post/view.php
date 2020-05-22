@@ -97,10 +97,15 @@
                                       
                                        <div class="total-comment-block">
                                           
-                                            <a class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords) ?> j'aime </a>
-                                            
-                                            <b id="Liked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aime </b>
+                                          <?php if empty($likeCheck) {  ?>
+                                            <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" >  <?php echo count($likeRecords) ?> <i class='ri-heart-2-fill'></i> j'aimes </p>
+                                            <b id="Liked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aimes </b>
+                                            <?php } if !empty($likeCheck) {  ?>
+                                            <b id="PLiked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aimes </b>
+                                             <?php }   ?>
+
                                              &nbsp; 
+
                                              <?php if  (count($commentsRecords) ==  0) {  ?>
                                                 <b  class='btn btn-outline-primary rounded-pill mb-3' >
                                                    <?php echo count($commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
