@@ -97,11 +97,11 @@
                                       
                                        <div class="total-comment-block">
                                           
-                                            <a class="btn text-primary"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords) ?> j'aime </a>
+                                            <a class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords) ?> j'aime </a>
                                             
-                                            <b id="Liked<?php echo $postRecords->postId ?>" class='btn text-primary mr-3' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aime </b>
+                                            <b id="Liked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aime </b>
                                              &nbsp; 
-                                             <b  class='btn text-primary mr-3' >
+                                             <b  class='btn text-primary ' >
                                               <?php echo count($commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                            </b>
                                              
