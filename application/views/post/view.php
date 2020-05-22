@@ -194,7 +194,7 @@
    function like(clicked_id) {
 
          var link = <?php echo base_url() ?>+"Posts/Like/"+clicked_id ; 
-         
+         alert(<?php echo base_url() ?>+"Posts/Like/"+clicked_id ) ;
      $.ajax({
         url: link ,
         type:'post',
