@@ -53,7 +53,7 @@
                             <?php echo $record->members ; ?> </small>
                         </td>
                         <td>
-                          <small>
+                   
                            
                             <?php if($record->facebook != ''){ ?>
 
@@ -62,8 +62,7 @@
 
                             if($record->email != ''){ ?>
 
-                             <br>
-
+                         
                               <a href="<?php echo $record->email ?>"><i class="ri-facebook-box-fill"></i></i></i></a>  
 
                             <?php } ?>
@@ -71,7 +70,7 @@
                             
                            
                            
-                          </small>
+                      
 
                        
                        
