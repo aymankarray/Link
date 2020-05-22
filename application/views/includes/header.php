@@ -835,8 +835,10 @@
                                     <div class="bg-primary p-3">
                                        <h5 class="mb-0 text-white">Notification<small class="badge  badge-light float-right pt-1"></small></h5>
                                     </div>
-                                    
-                                    <!--
+                                    <?php foreach ($notifRecords as $key ) {
+                                      ?>
+                                   
+                                   
                                     <div class="iq-friend-request">
                                        <div class="iq-sub-card iq-sub-card-big d-flex align-items-center justify-content-between">
                                           <div class="d-flex align-items-center">
@@ -854,7 +856,7 @@
                                           </div>
                                        </div>
                                     </div>
-                                      --> 
+                                       <?php foreach ($notifRecords as $key )  } ?>
 
                                     <div class="text-center">
                                        <a href="#" class="mr-3 btn text-primary">Voir plus</a>
