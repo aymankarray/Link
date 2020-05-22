@@ -116,7 +116,7 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                          <input type="button" class="likebtn"  id="<?php echo $postRecords->postId ?>" value = "j'aime" > 
+                                          <a href="#"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > j'aime </a>  
                                                    
                                                 
                                             
@@ -193,3 +193,10 @@
             </div>
 </div>
 
+<script type="text/javascript">
+      
+      function like (clickid) {
+         alert(clickid) ; 
+      }
+
+</script>

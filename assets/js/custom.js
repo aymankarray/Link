@@ -497,11 +497,6 @@ Index Of Script
             });
         }
 
-         /*------------------------------------------------------------------
-        Like
-        * -----------------------------------------------------------------*/
-        jQuery(document).ready(function() {
-            jQuery().on('click', '.likebtn', function() { alert (this.id); })
         
 
 
