@@ -191,10 +191,10 @@
 </div>
 
 <script type="text/javascript">
-   function like () {
+   function like (clicked_id) {
 
-
-   var url = '<?php echo base_url()?>Posts/like/';
+ 
+   var url = <?php echo base_url()?>+'Posts/like/'+clicked_id ;
       $.ajax({
           url: url,
           type: 'POST',
