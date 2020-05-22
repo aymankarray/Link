@@ -55,7 +55,9 @@ class Club extends BaseController {
 					$data["scoreByClub"] = $this->scores_model->ScoreClub($clubId);
 			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
 			        $data["bureauExe"] = $this->club_model->BureauListing($clubId);
-			        $data["ProjectByClub"] = $this->project_model->projectListingByClub($clubId);
+			        $data["ProjectByClub"] = $this->project_model->projectListingByClubPost($clubId);
+			        $data["CountProjectByClub"] = Count($this->project_model->projectListingByClub($clubId));
+
 			        $data["members"] = $this->user_model->userListingByclubINFO($clubId) ;
 			        $data["membersCount"] =count($this->user_model->userListingByclub($this->vendorId,$clubId)) ;
 			 		$count = $this->user_model->userListing($this->vendorId);
@@ -65,7 +67,7 @@ class Club extends BaseController {
 			        $data["evenement"] = count($this->project_model->projectListingByType('Evenement',$clubId));
 			        $data["couver"] = count($this->project_model->projectListingByType('Couverture Mediatique',$clubId));
 			        $data['userRecords'] = $this->user_model->userListingByclub($this->vendorId,$clubId);
-			        
+
 			        $data["RatingMembers"] = $this->scores_model-> RaitingUsersByClubV($clubId) ; 
 
 			        

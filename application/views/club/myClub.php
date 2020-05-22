@@ -76,7 +76,7 @@
                                     <ul class="social-data-block d-flex align-items-center justify-content-between list-inline p-0 m-0">
                                        <li class="text-center pl-3">
                                           <h6>Projet</h6>
-                                          <p class="mb-0"><?php echo count($ProjectByClub) ?></p>
+                                          <p class="mb-0"><?php echo $CountProjectByClub ?></p>
                                        </li>
                                        <li class="text-center pl-3">
                                           <h6>Membres</h6>
