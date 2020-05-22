@@ -198,7 +198,10 @@
         type:'post',
         success:function(){
             alert("worked");
-        }
+        },
+         error: function(){
+            alert("error");
+        },
     });
         
       
