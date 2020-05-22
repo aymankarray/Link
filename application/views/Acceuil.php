@@ -257,43 +257,51 @@
                                                 <b  class='btn btn-outline-primary rounded-pill mb-3' >
                                                    <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
-                                             <?php } if  (count($commentsRecords) >  0 ){ ?>
+                                             <?php } if  (count($record->commentsRecords) >  0 ){ ?>
                                              <b  class='btn mb-3 btn-primary rounded-pill' >
                                                    <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
                                              <?php } ?> 
 
                                           </div>
-                                          
+
                                  </div>
                                  <hr>
                                  <ul class="post-comments p-0 m-0">
 
                                     
-                        <?php 
+                 
                            
-                           echo $json ;
+                           
 
-                                    if(!empty($json))
-                                     { 
-                                     foreach ($json as $key ) {  ?>     
                                     
-                                    <li class="mb-2">
+                                    
+                                     <?php 
+                           
+                   
+
+                                    if(!empty($record->commentsRecords))
+                                     { 
+                                     foreach ($record->commentsRecords as $key ) {  ?>     
+                                    
+                                    <li class="mb-2" style="background-color: aliceblue ">
                                        <div class="d-flex flex-wrap">
                                           <div class="user-img">
-                                             <img class="actu-turtle"  alt="item-image">
+                                             <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
                                           </div>
                                           <div class="comment-data-block ml-3">
-                                             <h6>Monty Carlo</h6>
-                                             <p class="mb-0">Lorem ipsum dolor sit amet</p>
+                                             <h6><a href="https://tunivisions.link/User/ProfileShow/<?php echo $key->comUserId ?>" class="text-primary"  > <?php echo $key->name ; ?> </a></h6>
+                                            
+                                             <p class="mb-0"><?php echo $key->content ; ?></p>
                                              <div class="d-flex flex-wrap align-items-center comment-activity">
                                              
-                                                <span> 5 min </span>
+                                                <span class="text-primary" > <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </span>
                                              </div>
                                           </div>
                                        </div>
                                     </li>
-                                    <?php  } }    ?>                                 
+                                    <?php  } }    ?>    
+                                                                  
                                  </ul>
                                  <!--
                                  <form class="comment-text d-flex align-items-center mt-3" action="javascript:void(0);">
