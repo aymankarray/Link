@@ -1,13 +1,4 @@
 
-<script type="text/javascript">
-
-      jQuery(document).ready(function(){
-       jQuery$("button").click(function(){
-          jQuery(this).hide();
-        });
-      });
-             
-</script>
 
 
 <div id="content-page" class="content-page">
