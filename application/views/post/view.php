@@ -191,7 +191,7 @@
 </div>
 
 <script type="text/javascript">
-   function like(clicked_id) {
+   function like() {
 
          var link = <?php echo base_url() ?>+"Posts/Like/"+clicked_id ; 
          alert(<?php echo base_url() ?>+"Posts/Like/"+clicked_id ) ;
