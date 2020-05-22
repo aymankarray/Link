@@ -1,9 +1,9 @@
 
 <script type="text/javascript">
 
-      $(document).ready(function(){
-        $("button").click(function(){
-          $(this).hide();
+      jQuery(document).ready(function(){
+       jQuery$("button").click(function(){
+          jQuery(this).hide();
         });
       });
              
