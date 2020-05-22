@@ -97,7 +97,8 @@
                                       
                                        <div class="total-comment-block">
                                           <?php echo count($likeRecords) ?>
-                                            <a class="text-primary"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > j'aime </a>
+                                            <a class="text-primary"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > <i class='ri-heart-2-fill'></i> j'aime </a>
+                                            <b id="Liked<?php echo $postRecords->postId ?>" class='text-primary' > <i class='ri-heart-2-fill'></i> J'aime </b>
                                              <a href   >
                                               <?php echo count($commentsRecords) ?> Commentaires
                                            </a>
@@ -170,9 +171,9 @@
          $.ajax({
             url: link , 
             success: function(result){
-            $('#'+clickid).html( "<b> <i class='ri-heart-2-fill'></i> J'aime </b>" );
-            $('#'+clickid).disable();
-            }
+            $('#'+clickid).hide();
+            $('#Liked'+clickid).show();
+                        }
             });
 
            
