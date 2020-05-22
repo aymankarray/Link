@@ -792,7 +792,7 @@
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="search-toggle iq-waves-effect" href="#"><i class="ri-group-line"></i></a>
+                           <a class="search-toggle iq-waves-effect" href="#"><i class="ri-message-2-line"></i></a>
                            <div class="iq-sub-dropdown iq-sub-dropdown-large">
                               <div class="iq-card shadow-none m-0">
                                  <div class="iq-card-body p-0 ">
@@ -846,14 +846,11 @@
                                                 <img class="avatar-40 rounded" src="images/user/04.jpg" alt="">
                                              </div>
                                              <div class="media-body ml-3">
-                                                <h6 class="mb-0 ">Marsha Mello</h6>
+                                                <h6 class="mb-0 ">text</h6>
                                                 <p class="mb-0">15  friends</p>
                                              </div>
                                           </div>
-                                          <div class="d-flex align-items-center">
-                                             <a href="javascript:void();" class="mr-3 btn btn-primary rounded">Confirm</a>
-                                             <a href="javascript:void();" class="mr-3 btn btn-secondary rounded">Delete Request</a>                                    
-                                          </div>
+
                                        </div>
                                     </div>
                                        <?php } ?>
