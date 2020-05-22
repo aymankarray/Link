@@ -98,7 +98,7 @@ class Project_model extends CI_Model
         return $result;
     }
 
-    function projectListingByClubPost($clubID)
+    function projectListingByClub($clubID)
     {
          $this->db->select('Users.userId , BaseTbl.projectId , BaseTbl.startDate , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName , BaseTbl.description descP ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description ,  BaseTbl.local ,BaseTbl.banner , Users.name , Users.avatar ');
         $this->db->from('tbl_project as BaseTbl');
