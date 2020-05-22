@@ -17,7 +17,7 @@
                         <div class="iq-card-body profile-page p-0">
                            <div class="profile-header">
                               <div class="cover-container">
-                                 <img src="https://scontent.ftun3-1.fna.fbcdn.net/v/t1.0-9/81382847_979373362434357_6461190259974602752_o.jpg?_nc_cat=107&_nc_ohc=dw5BIDn6ESsAQnicy4-j9tuz3aYeovi8Soh5PblzvZrhwrysvPDyzC4sw&_nc_ht=scontent.ftun3-1.fna&oh=c120a4486d217f6ca641d9447aa4407a&oe=5EA7A436" alt="profile-bg" class="rounded img-fluid">
+                                 <img src="https://scontent.ftun3-1.fna.fbcdn.net/v/t1.0-9/79385061_951733981864962_3787148526337654784_o.jpg?_nc_cat=107&_nc_sid=dd9801&_nc_ohc=4ZmEDOHWD8IAX_208AJ&_nc_ht=scontent.ftun3-1.fna&oh=aac7c6637b936148262d2f18ae14e7de&oe=5EEFBE0C" alt="profile-bg" class="rounded img-fluid">
                                  <ul class="header-nav d-flex flex-wrap justify-end p-0 m-0">
                                     <li><a href="javascript:void();"><i class="ri-pencil-line"></i></a></li>
                                     <li><a href="javascript:void();"><i class="ri-settings-4-line"></i></a></li>
