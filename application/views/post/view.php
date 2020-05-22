@@ -191,7 +191,7 @@
 </div>
 
 <script type="text/javascript">
-   function like() {
+   
 
       $("button").click(function() {
           alert(this.id); // or alert($(this).attr('id'));
@@ -202,5 +202,5 @@
         
       
 
-      }
+     
 </script>
