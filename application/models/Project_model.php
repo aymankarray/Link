@@ -98,7 +98,7 @@ class Project_model extends CI_Model
         return $result;
     }
 
-    function projectListingByClub($clubID)
+    function projectListingByClubPost($clubID)
     {
          $this->db->select('Users.userId , BaseTbl.projectId , BaseTbl.startDate , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName , BaseTbl.description descP ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description ,  BaseTbl.local ,BaseTbl.banner , Users.name , Users.avatar ');
         $this->db->from('tbl_project as BaseTbl');
@@ -106,6 +106,23 @@ class Project_model extends CI_Model
         $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.createBy', 'LEFT');
         $this->db->where('Clubs.clubID' , $clubID ) ;        
         $this->db->order_by('BaseTbl.endDate','DESC');
+
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+    }
+
+
+    function projectListingByClubPost($clubID)
+    {
+         $this->db->select('Users.userId , BaseTbl.projectId , BaseTbl.startDate , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName , BaseTbl.description descP ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description ,  BaseTbl.local ,BaseTbl.banner , Users.name , Users.avatar ');
+        $this->db->from('tbl_project as BaseTbl');
+        $this->db->join('tbl_club as Clubs', 'Clubs.clubID = BaseTbl.ClubID', 'LEFT');
+        $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.createBy', 'LEFT');
+        $this->db->where('Clubs.clubID' , $clubID ) ;        
+        $this->db->order_by('BaseTbl.endDate','DESC');
+        $this->db->limit(5);
 
         $query = $this->db->get();
         
