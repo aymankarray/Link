@@ -725,20 +725,22 @@
                                              <div class="row">
                                                 
                                       <table  class="table table-dark table-hover" >
-                          <th>
-                          </th>
+                                         <th>
+                                        </th>
+                                        <th>
+                                        </th>
 
-                          <th>
-                          </th>
-                          <th>
-                            Tunimateur
-                          </th>
-                          <th>
-                            Score
-                          </th>
+                                        <th>
+                                        </th>
+                                        <th>
+                                          Tunimateur
+                                        </th>
+                                        <th>
+                                          Score
+                                        </th>
                                         <?php  if(!empty($RatingMembers)){ $c=1 ;   foreach ($RatingMembers as $membre ) { ?>
                                           <tr>
-
+                                            <td  > <h5> <?php echo $c ?> </h5> </td>
                                             <td  > <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle " alt="user"> </td>
 
                                             <td>
