@@ -19,7 +19,7 @@ class Notification extends CI_Controller
     }
 
 
-    public index()  { 
+    public function index()  { 
 
         $data  ['notifRecords'] =  $this->notification_model->NotificationListing($this->vendorId);
         
