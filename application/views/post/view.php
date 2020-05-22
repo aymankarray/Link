@@ -196,14 +196,8 @@
 <script type="text/javascript">
       
       function like (clickid) {
-         alert(clickid) ; 
-         $('#'+clickid).function(){
-
-            alert("<?php echo base_url()?>Post/Like/"+clickid ) ;
-
-
-
-      
+         alert("<?php echo base_url()?>Post/Like/"+clickid ) ; 
+         $('#'+clickid).hide() ;  
       }
-   }
+
 </script>
