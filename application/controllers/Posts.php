@@ -33,14 +33,14 @@ class Posts extends BaseController {
          
          $data  ['postRecords'] =  $this->posts_model->postsListing();
         
-            foreach ($data  ['postRecords'] as $key ) {
+            foreach ($data['postRecords'] as $key ) {
 
 
-                $key = ([
-                        'commentsRecords'              => $this->posts_model->CommentsListing($key->postId),
-                        'likeRecords'               => $this->posts_model->likesListing($key->postId),
-                        'likeCheck'            => $this->posts_model->likeCheck($key->postId,$this->vendorId),
-                    ]);
+                
+                        $key->commentsRecords              = $this->posts_model->CommentsListing($key->postId),
+                        $key->likeRecords             = $this->posts_model->likesListing($key->postId),
+                         $key->likeCheck          = $this->posts_model->likeCheck($key->postId,$this->vendorId),
+                
                 
             }
 
