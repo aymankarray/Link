@@ -22,7 +22,7 @@
       <!-- Footer END -->
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script async   src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
+      <script    src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
       <script   src="<?php echo base_url() ;  ?>assets/js/popper.min.js"></script>
       <script    src="<?php echo base_url() ;  ?>assets/js/bootstrap.min.js"></script>
       <!-- Appear JavaScript -->
@@ -39,7 +39,7 @@
       <!-- Slick JavaScript -->
       <script  src="<?php echo base_url() ;  ?>assets/js/slick.min.js"></script>
       <!-- Select2 JavaScript -->
-      <script defer  src="<?php echo base_url() ;  ?>assets/js/select2.min.js"></script>
+      <script   src="<?php echo base_url() ;  ?>assets/js/select2.min.js"></script>
       <!-- Owl Carousel JavaScript -->
       <script  src="<?php echo base_url() ;  ?>assets/js/owl.carousel.min.js"></script>
       <!-- Magnific Popup JavaScript -->
