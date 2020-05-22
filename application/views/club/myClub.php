@@ -740,7 +740,7 @@
                                         </th>
                                         <?php  if(!empty($RatingMembers)){ $c=1 ;   foreach ($RatingMembers as $membre ) { ?>
                                           <tr>
-                                            <td  > <h5> <?php echo $c ?> </h5> </td>
+                                            <td  > <p style="font-size: 16 "> <?php echo $c ?> </p> </td>
                                             <td  > <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle " alt="user"> </td>
 
                                             <td>
