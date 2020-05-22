@@ -149,7 +149,13 @@
                                              <p class="mb-0"><?php echo $key->content ; ?></p>
                                              <div class="d-flex flex-wrap align-items-center comment-activity">
                                              
-                                                <span class="text-primary" > <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </span>
+                                                <span class="text-primary" > <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> 
+
+                                                 </span>
+                                                 .
+                                                 <?php if ($userId == $key->userId ){  ?>
+                                                 <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $key->commentId ?>" onclick="deleteComment(this.id)" > supprimer </p>
+                                                 <?php } ?>
                                              </div>
                                           </div>
                                        </div>
@@ -190,6 +196,24 @@
             $('#'+clickid).hide();
             $('#Liked'+clickid).show();
                         }
+            });
+
+           
+      }
+
+</script>
+
+
+<script type="text/javascript">
+      
+      function deleteComment (clickid) {
+         link  = "<?php echo base_url()?>Posts/deleteComment/"+clickid  ; 
+
+         $.ajax({
+            url: link , 
+            success: function(result){
+            $('#'+clickid).hide();
+               }
             });
 
            

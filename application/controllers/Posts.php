@@ -93,6 +93,12 @@ class Posts extends BaseController {
         redirect('/Posts/post/'.$postId);
     }
 
+    public function deleteComment($commentId)
+    {
+        $result = $this->posts_model->deleteComment($commentId);
+        return $result ; 
+    }
+
 
      public function Like($postId)
     {

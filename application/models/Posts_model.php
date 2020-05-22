@@ -30,6 +30,16 @@ class Posts_model extends CI_Model
     }
 
 
+    function deleteComment($commentId)
+    {
+        
+        $this->db->where('commentId', $commentId);
+        $delete_id = $this->db->delete('tbl_comment');
+         
+        return $delete_id;
+    }
+
+
     function postsListing()
     {
        $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId  , BaseTbl.DatePosted , User.name , User.avatar ');
