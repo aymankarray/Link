@@ -92,6 +92,7 @@
                                  <div class="d-flex justify-content-between align-items-center">
                                     <div class="like-block position-relative d-flex align-items-center">
                                        <div class="d-flex align-items-center">
+                                          <!--
                                           <div class="like-data">
                                              <div class="dropdown">
                                                 <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
@@ -108,10 +109,11 @@
                                                 </div>
                                              </div>
                                           </div>
+                                            -->
                                           <div class="total-like-block ml-2 mr-3">
                                              <div class="dropdown">
                                                 <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                                 j'aime
+                                                 <a href id="<?php echo $postRecords->postId ?>" onclick="like(this)" >  j'aime </a>
                                                 </span>
                                                 <div class="dropdown-menu">
                                                    <a class="dropdown-item" href="#"></a>
@@ -191,3 +193,22 @@
                   </div>
             </div>
 </div>
+
+<script type="text/javascript">
+   function like () {
+
+
+   var url = '<?php echo base_url()?>Posts/like/';
+      $j.ajax({
+          url: url,
+          type: 'POST',
+          dataType: 'jsonp', 
+          success : function() { 
+              alert('Hello'); 
+          },
+          error : function(jqXHR, textStatus, errorThrown) {
+              alert('Error: '+jqXHR.status);
+          } // <-- remove the trailing comma you had here
+      });
+      }
+</script>
