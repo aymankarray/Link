@@ -195,7 +195,7 @@
 
 
    var url = '<?php echo base_url()?>Posts/like/';
-      $j.ajax({
+      $.ajax({
           url: url,
           type: 'POST',
           dataType: 'jsonp', 
