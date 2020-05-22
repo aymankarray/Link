@@ -22,9 +22,9 @@
       <!-- Footer END -->
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script  src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
-      <script  src="<?php echo base_url() ;  ?>assets/js/popper.min.js"></script>
-      <script   src="<?php echo base_url() ;  ?>assets/js/bootstrap.min.js"></script>
+      <script defer  src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
+      <script defer  src="<?php echo base_url() ;  ?>assets/js/popper.min.js"></script>
+      <script  defer  src="<?php echo base_url() ;  ?>assets/js/bootstrap.min.js"></script>
       <!-- Appear JavaScript -->
       <script   src="<?php echo base_url() ;  ?>assets/js/jquery.appear.js"></script>
       <!-- Countdown JavaScript -->
@@ -39,19 +39,19 @@
       <!-- Slick JavaScript -->
       <script  src="<?php echo base_url() ;  ?>assets/js/slick.min.js"></script>
       <!-- Select2 JavaScript -->
-      <script  src="<?php echo base_url() ;  ?>assets/js/select2.min.js"></script>
+      <script defer  src="<?php echo base_url() ;  ?>assets/js/select2.min.js"></script>
       <!-- Owl Carousel JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/owl.carousel.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/owl.carousel.min.js"></script>
       <!-- Magnific Popup JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/jquery.magnific-popup.min.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/jquery.magnific-popup.min.js"></script>
       <!-- Smooth Scrollbar JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/smooth-scrollbar.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/smooth-scrollbar.js"></script>
       <!-- lottie JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/lottie.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/lottie.js"></script>
       <!-- Chart Custom JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/chart-custom.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/chart-custom.js"></script>
       <!-- Custom JavaScript -->
-      <script defer src="<?php echo base_url() ;  ?>assets/js/custom.js"></script>
+      <script  src="<?php echo base_url() ;  ?>assets/js/custom.js"></script>
 
 
    
