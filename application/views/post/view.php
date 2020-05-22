@@ -193,7 +193,7 @@
 <script type="text/javascript">
    
 
-      $("button").click(function() {
+      jQuery("button").click(function() {
           alert(this.id); // or alert($(this).attr('id'));
       });
 
