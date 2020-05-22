@@ -427,10 +427,10 @@
                                              <a class="nav-link" data-toggle="pill" href="#work">Historique de scoring</a>
                                           </li>
                                           <li>
-                                             <a class="nav-link" data-toggle="pill" href="#lived">Places You've Lived</a>
+                                             <a class="nav-link" data-toggle="pill" href="#lived"> </a>
                                           </li>
                                           <li>
-                                             <a class="nav-link" data-toggle="pill" href="#details">Details About You</a>
+                                             <a class="nav-link" data-toggle="pill" href="#details"> </a>
                                           </li>
                                        </ul>
                                     </div>
