@@ -194,17 +194,8 @@
    function like(clicked_id) {
 
  
-   var url = <?php echo base_url()?>+'Posts/like/'+clicked_id ;
-      $.ajax({
-          url: url,
-          type: 'POST',
-          dataType: 'jsonp', 
-          success : function() { 
-              alert('Hello'); 
-          },
-          error : function(jqXHR, textStatus, errorThrown) {
-              alert('Error: '+jqXHR.status);
-          } // <-- remove the trailing comma you had here
-      });
+         alert(clicked_id) ;
+      
+
       }
 </script>
