@@ -116,7 +116,7 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                          <a   id="toLike<?php echo $postRecords->postId ?>" onclick="like(this.id)" > j'aime </a>  
+                                          <a class="text-primary">  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > j'aime </a>  
                                                    
                                                 
                                             
@@ -202,6 +202,7 @@
             url: link , 
             success: function(result){
             $('#'+clickid).html( "<b> <i class='ri-heart-2-fill'></i> J'aime </b>" );
+            $('#'+clickid).disable();
             }
             });
 
