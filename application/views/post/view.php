@@ -194,13 +194,13 @@
    function like(clicked_id) {
 
      $.ajax({
-        url:'<?php echo base_url() ?>Posts/Like/'+clicked_id ,
+        url: <?php echo base_url() ?>+'Posts/Like/'+clicked_id ,
         type:'post',
         success:function(){
-            alert("worked");
+            alert("worked  "+<?php echo base_url() ?>+"Posts/Like/"+clicked_id);
         },
          error: function(){
-            alert("error");
+            alert("error  "+<?php echo base_url() ?>+"Posts/Like/"+clicked_id);
         },
     });
         
