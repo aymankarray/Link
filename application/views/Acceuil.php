@@ -241,7 +241,7 @@
                                     <div class="total-comment-block">
                                           
                                           <?php if (!empty($record->likeCheck)) {  ?>
-                                           <b id="PLiked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords) ?> J'aimes </b>
+                                           <b id="PLiked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords) ?> J'aimes </b>
 
                                             <?php } else {  ?>
                                             
