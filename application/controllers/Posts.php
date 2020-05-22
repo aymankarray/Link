@@ -37,9 +37,9 @@ class Posts extends BaseController {
 
 
                 
-                        $key->commentsRecords              = $this->posts_model->CommentsListing($key->postId),
-                        $key->likeRecords             = $this->posts_model->likesListing($key->postId),
-                         $key->likeCheck          = $this->posts_model->likeCheck($key->postId,$this->vendorId),
+                        $key->commentsRecords              = $this->posts_model->CommentsListing($key->postId);
+                        $key->likeRecords             = $this->posts_model->likesListing($key->postId);
+                         $key->likeCheck          = $this->posts_model->likeCheck($key->postId,$this->vendorId);
                 
                 
             }
