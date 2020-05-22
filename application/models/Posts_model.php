@@ -99,7 +99,7 @@ class Posts_model extends CI_Model
         $this->db->where('BaseTbl.userId  =  ' , $userId ) ;$
         $this->db->order_by('BaseTbl.createDTM ASC');
         $query = $this->db->get();
-        $result = $query->row();        
+        $result = $query->result();        
         return $result;
     }
 
