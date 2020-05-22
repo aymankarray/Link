@@ -20,15 +20,11 @@
                <table id="example" class="table dataTable no-footer"  style="width:100%" >
                     <thead>
                     <tr>
-                        
                         <th>Faculté</th>
                         <th>Secteur</th>
                         <th>Président</th>
                         <th>Membres</th>
                         <th>Contact</th>
-     
-
-                   
                     </tr>
                     </thead>
                     <tbody>
@@ -57,7 +53,25 @@
                             <?php echo $record->members ; ?> </small>
                         </td>
                         <td>
-                            <?php if($record->facebook != ''){ echo $record->facebook ?> <?php } if($record->email != ''){ ?> <br> <a href ="<?php echo $record->email ?>">Facebook</a><?php } ?>
+                          <small>
+                           
+                            <?php if($record->facebook != ''){ ?>
+
+                                <A HREF="mailto:<?php echo $record->facebook ?>"><i class="ri-mail-fill"></i></A> 
+                            <?php } 
+
+                            if($record->email != ''){ ?>
+
+                             <br>
+
+                              <a href="<?php echo $record->email ?>"><i class="ri-facebook-box-fill"></i></i></i></a>  
+
+                            <?php } ?>
+
+                            
+                           
+                           
+                          </small>
 
                        
                        
