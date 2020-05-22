@@ -254,11 +254,11 @@
                                              &nbsp; 
 
                                              <?php if  (count($record->commentsRecords) ==  0) {  ?>
-                                                <b  class='btn btn-outline-primary rounded-pill mb-3' >
+                                                <b  class='btn btn-outline-primary rounded-pill mb-3' onclick="location.href = '<?php echo base_url().'Posts/post/'.$record->likeRecords ?>';"  >
                                                    <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
                                              <?php } if  (count($record->commentsRecords) >  0 ){ ?>
-                                             <b  class='btn mb-3 btn-primary rounded-pill' >
+                                             <b  class='btn mb-3 btn-primary rounded-pill' onclick="location.href = '<?php echo base_url().'Posts/post/'.$record->likeRecords ?>';" >
                                                    <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
                                              <?php } ?> 
