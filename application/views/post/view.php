@@ -198,8 +198,18 @@
       function like (clickid) {
          alert(clickid) ; 
          $('#'+clickid).function(){
-            
-         } ;  
-      }
 
+
+
+            $.ajax({
+                type: "POST",
+                url: "<?php echo base_url()?>Post/Like/"+clickid ,
+                data: dataString,
+                success: function() {
+                  $('#'+clickid).Hide() ; 
+                  };
+                }); 
+
+      
+      }
 </script>
