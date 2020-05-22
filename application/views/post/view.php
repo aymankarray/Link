@@ -196,10 +196,10 @@
 <script type="text/javascript">
       
       function like (clickid) {
-         like  = "<?php echo base_url()?>Post/Like/"+clickid  ; 
+         link  = "<?php echo base_url()?>Post/Like/"+clickid  ; 
 
          $.ajax({
-            url: "demo_test.txt", 
+            url: link , 
             success: function(result){
             $('#'+clickid).hide() ;
             }
