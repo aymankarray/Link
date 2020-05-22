@@ -116,7 +116,7 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                          <a href="#"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > j'aime </a>  
+                                          <a href="#"  id="toLike<?php echo $postRecords->postId ?>" onclick="like(this.id)" > j'aime </a>  
                                                    
                                                 
                                             
@@ -201,7 +201,7 @@
          $.ajax({
             url: link , 
             success: function(result){
-            $('#'+clickid).hide() ;
+            $('#toLike'+clickid).hide() ;
             }
             });
 
