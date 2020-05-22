@@ -42,19 +42,19 @@
                        
                         <td>
                           <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $record->clubID ?>" target="_blank"   >
-                           <?php echo $record->name ?>
+                           <small><?php echo $record->name ?>
                          </a>
                         </td>
                         <td>
-                            <?php echo $record->city ?>
+                            <small><?php echo $record->city ?></small>
                         </td>
                         <td>
                           <a href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>" target="_blank"   >
-                           <?php echo $record->P ?>
+                          <small> <?php echo $record->P ?></small>
                          </a>
                         </td>
                         <td>
-                            <?php echo $record->members ; ?> 
+                            <?php echo $record->members ; ?> </small>
                         </td>
                         <td>
                             <?php if($record->facebook != ''){ echo $record->facebook ?> <?php } if($record->email != ''){ ?> <br> <a href ="<?php echo $record->email ?>">Facebook</a><?php } ?>

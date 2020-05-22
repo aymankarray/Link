@@ -535,7 +535,7 @@
                                                 <li class="d-flex mb-4 align-items-center">
                                                     <div class="user-img img-fluid"><i class="ri-add-fill"></i></div>
                                                    <div class="media-support-info ml-3">
-                                                      <h6> <?php echo $key->titre  ?> </h6>
+                                                      <h6> <?php echo $key->titre  ?> <small> <?php echo $key->titre  ?> </small> </h6>
                                                    </div>
                                                    <div class="edit-relation"><a ><?php echo $key->score  ?> Points </a></div>
                                                 </li>
