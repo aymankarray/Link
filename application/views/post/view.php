@@ -112,11 +112,11 @@
                                             -->
                                           <div class="total-like-block ml-2 mr-3">
                                              
-                                               
+                                               <form  id="myForm" method="post" name="myForm">
                                                  <button class="btn" id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > 
                                                   j'aime 
                                                </button>
-                                            
+                                            </form>
                                             
                                           </div>
                                        </div>
@@ -193,8 +193,14 @@
 <script type="text/javascript">
    function like(clicked_id) {
 
- 
-         alert(clicked_id) ;
+     $.ajax({
+        url:'<?php echo base_url() ?>Posts/Like/'+clicked_id ,
+        type:'post',
+        success:function(){
+            alert("worked");
+        }
+    });
+        
       
 
       }
