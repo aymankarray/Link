@@ -138,7 +138,7 @@
                                      { 
                                      foreach ($commentsRecords as $key ) {  ?>     
                                     
-                                    <li class="mb-2" style="background-color: aliceblue ">
+                                    <li  id="C<?php echo $key->commentId ?>" class="mb-2" style="background-color: aliceblue ">
                                        <div class="d-flex flex-wrap">
                                           <div class="user-img">
                                              <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
@@ -212,7 +212,7 @@
          $.ajax({
             url: link , 
             success: function(result){
-            $('#'+clickid).hide();
+            $('#C'+clickid).hide();
                }
             });
 
