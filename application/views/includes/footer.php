@@ -22,9 +22,9 @@
       <!-- Footer END -->
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script defer  src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
-      <script defer  src="<?php echo base_url() ;  ?>assets/js/popper.min.js"></script>
-      <script  defer  src="<?php echo base_url() ;  ?>assets/js/bootstrap.min.js"></script>
+      <script async   src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
+      <script   src="<?php echo base_url() ;  ?>assets/js/popper.min.js"></script>
+      <script    src="<?php echo base_url() ;  ?>assets/js/bootstrap.min.js"></script>
       <!-- Appear JavaScript -->
       <script   src="<?php echo base_url() ;  ?>assets/js/jquery.appear.js"></script>
       <!-- Countdown JavaScript -->
