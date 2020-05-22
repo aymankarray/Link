@@ -42,7 +42,7 @@
                     <td>
                   
                          <b>
-                                    <?php echo $record->ClubName ?>
+                                <small>    <?php echo $record->ClubName ?> </small>
                                   </b>
                       </td>
 
@@ -69,9 +69,9 @@
                                   
                               
                       </h6>
-                      le  :  <?php echo $record->startDate  ?> 
+                      <small>le  :  <?php echo $record->startDate  ?> </small>
                                 <br>
-                                <?php echo $record->type  ?><br>
+                         <small>       <?php echo $record->type  ?> </small><br>
                                
 
                                 <?php if ($record->cible=='Publique' )
@@ -84,11 +84,11 @@
                                  
                                     else if ( $record->cible=='Only tunimateur' ){ ?>
                                         <i class="flaticon-users"></i>
-                                <?php } ?>
+                                <?php } ?></small>
 
                               
 
-                                <?php  echo $record->cible ?>
+                                <?php  echo $record->cible ?></small>
                  
 
                                 <br>
@@ -100,6 +100,7 @@
                     </td>
                     
                     <td>
+                      <small> 
                       <?php  if($record->statut  == 'En Attend' ){  ?>
                               <span class="badge badge-warning ">En cours </span>
                       <?php }else{ ?>
@@ -114,9 +115,11 @@
                             <?php if($record->album != '') { ?><br><a href="<?php echo $record->album ?> ">Album photo </a><?php } ?>
                             <?php if($record->afterMovie != '') { ?><br><a href="<?php echo $record->afterMovie ?> ">After movie </a><?php } ?>
                       <?php  } ?>
+                    </small>
                     </td>
 
                     <td >
+
                        <?php  if($record->statut  == 'En Attend' ){  ?>
 
                       <?php  }else if($record->statut  == 'fini' && $record->valider  == ''  ){  ?>
@@ -135,6 +138,7 @@
                             
                             
                       <?php  } ?>
+
                     </td>
                     
    
