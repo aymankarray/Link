@@ -32,8 +32,17 @@ class Posts extends BaseController {
          $data['projectRecords'] = $this->project_model->projectListing();
          
          $data  ['postRecords'] =  $this->posts_model->postsListing();
-         $data['variable']  = NULL  ;
-         $this->loadViews("Acceuil", $this->global, $data, NULL);   
+        
+            foreach ($data  ['postRecords'] as $key ) {
+                $key['commentsRecords'] = $this->posts_model->CommentsListing($key->postId);
+                $key['likeRecords'] = $this->posts_model->likesListing($key->postId);
+                $key['likeCheck'] = $this->posts_model->likeCheck($key->postId,$this->vendorId);
+            }
+
+            header('Content-Type: application/json');
+            echo json_encode( $data  ['postRecords']  , JSON_PRETTY_PRINT);
+
+        // $this->loadViews("Acceuil", $this->global, $data, NULL);   
     }
 
 
