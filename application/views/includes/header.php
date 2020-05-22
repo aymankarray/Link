@@ -827,28 +827,38 @@
                               </div>
                            </div>
                         </li>
-                        <li class="nav-item iq-show">
-                          <a class="search-toggle iq-waves-effect" href="#"><i class="ri-notification-line"></i>></a>
-                           <div class="iq-sub-dropdown">
+                         <li class="nav-item">
+                           <a class="search-toggle iq-waves-effect" href="#"><i class="ri-notification-line"></i></i></a>
+                           <div class="iq-sub-dropdown iq-sub-dropdown-large">
                               <div class="iq-card shadow-none m-0">
                                  <div class="iq-card-body p-0 ">
                                     <div class="bg-primary p-3">
-                                       <h5 class="mb-0 text-white">Notifications<small class="badge  badge-light float-right pt-1">4</small></h5>
+                                       <h5 class="mb-0 text-white">Notification<small class="badge  badge-light float-right pt-1"></small></h5>
                                     </div>
-
-                                    <a href="#" class="iq-sub-card">
-                                       <div class="media align-items-center">
-                                          <div class="">
-                                             <img class="avatar-40 rounded" src="images/user/01.jpg" alt="">
+                                    
+                                    <!--
+                                    <div class="iq-friend-request">
+                                       <div class="iq-sub-card iq-sub-card-big d-flex align-items-center justify-content-between">
+                                          <div class="d-flex align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/04.jpg" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Marsha Mello</h6>
+                                                <p class="mb-0">15  friends</p>
+                                             </div>
                                           </div>
-                                          <div class="media-body ml-3">
-                                             <h6 class="mb-0 ">Emma Watson Bni</h6>
-                                             <small class="float-right font-size-12">Just Now</small>
-                                             <p class="mb-0">95 MB</p>
+                                          <div class="d-flex align-items-center">
+                                             <a href="javascript:void();" class="mr-3 btn btn-primary rounded">Confirm</a>
+                                             <a href="javascript:void();" class="mr-3 btn btn-secondary rounded">Delete Request</a>                                    
                                           </div>
                                        </div>
-                                    </a>
-                                    
+                                    </div>
+                                      --> 
+
+                                    <div class="text-center">
+                                       <a href="#" class="mr-3 btn text-primary">Voir plus</a>
+                                    </div>
                                  </div>
                               </div>
                            </div>
