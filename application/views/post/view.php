@@ -103,7 +103,7 @@
                                              &nbsp; 
                                              <b  class='btn text-primary mr-3' >
                                               <?php echo count($commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
-                                           </a>
+                                           </b>
                                              
                                              
                                           </div>
