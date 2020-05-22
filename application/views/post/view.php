@@ -1,3 +1,21 @@
+
+<script type="text/javascript">
+
+
+   jQuery(document).ready(function(){
+      jQuery("button").click(function() {
+          alert(this.id); // or alert($(this).attr('id'));
+      });
+   });   
+         
+    
+        
+      
+
+     
+</script>
+
+
 <div id="content-page" class="content-page">
             <div class="container">
                <div class="row">
@@ -113,9 +131,9 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                                 <button class="btn likebtn" id="<?php echo $postRecords->postId ?>"  > 
+                                                 <a href="" name="like"  id="<?php echo $postRecords->postId ?>"  > 
                                                   j'aime 
-                                               </button>
+                                                </a> 
                                             
                                             
                                           </div>
@@ -190,17 +208,3 @@
             </div>
 </div>
 
-<script type="text/javascript">
-   
-
-      jQuery("button").click(function() {
-          alert(this.id); // or alert($(this).attr('id'));
-      });
-
-         
-    
-        
-      
-
-     
-</script>
