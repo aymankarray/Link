@@ -44,6 +44,26 @@ class Notification_model extends CI_Model
         return $result;
     }
 
+
+        /**
+     * This function is used to get the user listing count
+     * @return array $result : This is result
+     */
+    function NotificationListingHome($userID)
+    {
+         $this->db->select('BaseTbl.notifId , BaseTbl.text , BaseTbl.dateNotif , BaseTbl.seen , BaseTbl.type  ');
+        $this->db->from('tbl_notif as BaseTbl');
+
+        $this->db->where('BaseTbl.userId =', $userID );
+        $this->db->order_by('BaseTbl.dateNotif DESC'  );
+        $this->db->limit(5);
+
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+    }
+
  /**
      * This function is used to get the user listing count
      * @return array $result : This is result

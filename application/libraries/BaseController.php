@@ -130,7 +130,7 @@ class BaseController extends CI_Controller {
 
     	$headerInfo['MyUserId'] = $this->vendorId ; 
 
-		$headerInfo['notifRecords'] = $this->notification_model->NotificationListing($this->vendorId) ;
+		$headerInfo['notifRecords'] = $this->notification_model->NotificationListingHome($this->vendorId) ;
         $headerInfo['notifRecordsNumber'] = count($this->notification_model->NotificationNoSeenListing($this->vendorId)) ;
         $headerInfo['FreindRequest'] = $this->user_model->linkRequest($this->vendorId) ;
 

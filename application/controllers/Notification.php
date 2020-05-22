@@ -18,6 +18,14 @@ class Notification extends CI_Controller
         $this->load->model('notification_model');
     }
 
+
+    public index()  { 
+
+        $data  ['notifRecords'] =  $this->notification_model->NotificationListing($this->vendorId);
+        
+         $this->loadViews("notification/list", $this->global, $data, NULL);   
+    }
+
     public function notifSeen($notifId)  {
 
 
@@ -33,6 +41,10 @@ class Notification extends CI_Controller
 
       redirect ( $result2->url ) ;
     }
+
+
+
+        
 
 }
 
