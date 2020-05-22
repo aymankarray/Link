@@ -238,65 +238,33 @@
                               
                               <div class="comment-area mt-3">
                                  <div class="d-flex justify-content-between align-items-center">
-                                    <div class="like-block position-relative d-flex align-items-center">
-                                       <div class="d-flex align-items-center">
-                                          <div class="like-data">
-                                             <div class="dropdown">
-                                                <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                                <img src="<?php echo base_url() ;  ?>images/icon/01.png" class="img-fluid" alt="">
-                                                </span>
-                                                <div class="dropdown-menu">
-                                                   <a class="ml-2 mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Like"><img src="<?php echo base_url() ;  ?>images/icon/01.png" class="img-fluid" alt=""></a>
-                                                   <a class="mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Love"><img src="<?php echo base_url() ;  ?>images/icon/02.png" class="img-fluid" alt=""></a>
-                                                   <a class="mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Happy"><img src="<?php echo base_url() ;  ?>images/icon/03.png" class="img-fluid" alt=""></a>
-                                                   <a class="mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="HaHa"><img src="<?php echo base_url() ;  ?>images/icon/04.png" class="img-fluid" alt=""></a>
-                                                   <a class="mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Think"><img src="<?php echo base_url() ;  ?>images/icon/05.png" class="img-fluid" alt=""></a>
-                                                   <a class="mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Sade"><img src="<?php echo base_url() ;  ?>images/icon/06.png" class="img-fluid" alt=""></a>
-                                                   <a class="mr-2" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Lovely"><img src="<?php echo base_url() ;  ?>images/icon/07.png" class="img-fluid" alt=""></a>
-                                                </div>
-                                             </div>
-                                          </div>
-                                          <div class="total-like-block ml-2 mr-3">
-                                             <div class="dropdown">
-                                                <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                                 j'aime
-                                                </span>
-                                                <div class="dropdown-menu">
-                                                   <a class="dropdown-item" href="#"></a>
-                                                   
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                       <div class="total-comment-block">
-                                          <div class="dropdown">
-                                             <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                                <?php   
+                                    <div class="total-comment-block">
+                                          
+                                          <?php if (!empty($record->likeCheck)) {  ?>
+                                           <b id="PLiked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords) ?> J'aimes </b>
 
-                                                $url = base_url().'Posts/Comments/'.$record->postId;
-                                  
-                                                $content = file_get_contents($url); 
+                                            <?php } else {  ?>
                                             
-                                                $json = json_decode($content, true);
-                                                    
 
-                                                   
-                                               ?>  
-                                              Commentaires
-                                             </span>
-                                             <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#"></a>
-                                                
-                                             </div>
+
+                                             <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" >  <?php echo count($record->likeRecords) ?> <i class='ri-heart-2-fill'></i> j'aimes </p>
+                                            <b id="Liked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aimes </b>
+                                             <?php }   ?>
+
+                                             &nbsp; 
+
+                                             <?php if  (count($record->commentsRecords) ==  0) {  ?>
+                                                <b  class='btn btn-outline-primary rounded-pill mb-3' >
+                                                   <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
+                                                 </b>
+                                             <?php } if  (count($commentsRecords) >  0 ){ ?>
+                                             <b  class='btn mb-3 btn-primary rounded-pill' >
+                                                   <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
+                                                 </b>
+                                             <?php } ?> 
+
                                           </div>
-                                       </div>
-                                    </div>
-                                    <!--
-                                    <div class="share-block d-flex align-items-center feather-icon mr-3">
-                                       <a href="javascript:void();"><i class="ri-share-line"></i>
-                                       <span class="ml-1">99 Share</span></a>
-                                    </div>
-                                    -->
+                                          
                                  </div>
                                  <hr>
                                  <ul class="post-comments p-0 m-0">
@@ -540,4 +508,20 @@
          </div>
 
 
+<script type="text/javascript">
+      
+      function like (clickid) {
+         link  = "<?php echo base_url()?>Posts/Like/"+clickid  ; 
 
+         $.ajax({
+            url: link , 
+            success: function(result){
+            $('#'+clickid).hide();
+            $('#Liked'+clickid).show();
+                        }
+            });
+
+           
+      }
+
+</script>
