@@ -113,7 +113,7 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                                 <button class="btn" id="<?php echo $postRecords->postId ?>" onclick="like(this)" > 
+                                                 <button class="btn" id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > 
                                                   j'aime 
                                                </button>
                                             
@@ -191,7 +191,7 @@
 </div>
 
 <script type="text/javascript">
-   function like (clicked_id) {
+   function like(clicked_id) {
 
  
    var url = <?php echo base_url()?>+'Posts/like/'+clicked_id ;
