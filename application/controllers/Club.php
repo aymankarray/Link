@@ -66,7 +66,7 @@ class Club extends BaseController {
 			        $data["couver"] = count($this->project_model->projectListingByType('Couverture Mediatique',$clubId));
 			        $data['userRecords'] = $this->user_model->userListingByclub($this->vendorId,$clubId);
 			        
-			        $data["RatingMembers"] = $this->scores_model-> RaitingUsersByClub($clubId) ; 
+			        $data["RatingMembers"] = $this->scores_model-> RaitingUsersByClubV($clubId) ; 
 
 			        
 
