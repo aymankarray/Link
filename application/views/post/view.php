@@ -196,7 +196,7 @@
 <script type="text/javascript">
       
       function like (clickid) {
-         link  = "<?php echo base_url()?>Post/Like/"+clickid  ; 
+         link  = "<?php echo base_url()?>Posts/Like/"+clickid  ; 
 
          $.ajax({
             url: link , 
