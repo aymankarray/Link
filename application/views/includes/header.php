@@ -856,7 +856,7 @@
                                           </div>
                                        </div>
                                     </div>
-                                       <?php foreach ($notifRecords as $key )  } ?>
+                                       <?php } ?>
 
                                     <div class="text-center">
                                        <a href="#" class="mr-3 btn text-primary">Voir plus</a>
