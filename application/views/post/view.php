@@ -111,15 +111,11 @@
                                           </div>
                                             -->
                                           <div class="total-like-block ml-2 mr-3">
-                                             <div class="dropdown">
-                                                <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                             <
+                                               
                                                  <a href id="<?php echo $postRecords->postId ?>" onclick="like(this)" >  j'aime </a>
-                                                </span>
-                                                <div class="dropdown-menu">
-                                                   <a class="dropdown-item" href="#"></a>
-                                                   
-                                                </div>
-                                             </div>
+                                            
+                                            
                                           </div>
                                        </div>
                                        <div class="total-comment-block">
