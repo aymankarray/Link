@@ -153,7 +153,7 @@
 
                                                  </span>
                                                  .
-                                                 <?php if ($userID == $key->userId ){  ?>
+                                                 <?php if ($userId == $key->userId ){  ?>
                                                  <a class="text"  id="<?php echo $key->commentId ?>" onclick="deleteComment(this.id)" > supprimer </a>
                                                  <?php } ?>
                                              </div>
