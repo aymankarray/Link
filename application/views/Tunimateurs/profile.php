@@ -316,62 +316,21 @@
                             <a href="<?php echo base_url().'Posts/post/'.$record->postId ?>"><?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></a>
                         </p>
                     </div>
-                    <!--
-                                    <div class="iq-card-post-toolbar">
-                                       <div class="dropdown">
-                                          <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                          <i class="ri-more-fill"></i>
-                                          </span>
-                                          <div class="dropdown-menu m-0 p-0">
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-save-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Save Post</h6>
-                                                      <p class="mb-0">Add this to your saved items</p>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Hide Post</h6>
-                                                      <p class="mb-0">See fewer posts like this.</p>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-user-unfollow-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Unfollow User</h6>
-                                                      <p class="mb-0">Stop seeing posts but stay friends.</p>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Notifications</h6>
-                                                      <p class="mb-0">Turn on notifications for this post</p>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                       -->
                 </div>
             </div>
             <div class="mt-3">
                 <p style="font-size: 13;">
                     <?php 
 
-                                          $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
-                                          $text = $record->Content ; if(preg_match($reg_exUrl, $text, $url)) { echo preg_replace($reg_exUrl, "<a href=".$url[0]." target="_blank">".$url[0]."</a> ", $text); } else { echo $text; } if
-                    ($reg_exUrl = "(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*" ) { ?>
+                  $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+                  $text = $record->Content ; 
+                  if(preg_match($reg_exUrl, $text, $url)) {
+                     
+                     echo preg_replace($reg_exUrl, "<a href=".$url[0]." target="_blank">".$url[0]."</a> ", $text);
+                      } 
+                  else
+                      { echo $text; } 
+                   if ($reg_exUrl = "(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*" ) { ?>
 
                     <?php
                                           }
