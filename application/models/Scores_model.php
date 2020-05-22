@@ -97,7 +97,7 @@ class Scores_model extends CI_Model
         $this->db->from('memberscoring as  BaseTbl');
         $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId' ,'left');      
         $this->db->where('User.clubID = ' , $clubId) ;
-        $this->db->where('User.isDelete = 0 '); 
+        $this->db->where('User.isDeleted = 0 '); 
         $this->db->order_by('scores', 'DESC');
 
         $this->db->group_by('BaseTbl.userID');  
