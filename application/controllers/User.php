@@ -31,6 +31,7 @@ class User extends BaseController
         $this->load->model('Tfm_part_model');
         $this->load->model('ressource_model');
         $this->load->model('login_model');
+        $this->load->model('posts_model')
         
         $this->isLoggedIn();   
     }
