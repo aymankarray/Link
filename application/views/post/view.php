@@ -113,7 +113,7 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                                 <button class="btn" id="<?php echo $postRecords->postId ?>" onclick="like()" > 
+                                                 <button class="btn likebtn" id="<?php echo $postRecords->postId ?>"  > 
                                                   j'aime 
                                                </button>
                                             
@@ -193,8 +193,11 @@
 <script type="text/javascript">
    function like() {
 
-         var link = <?php echo base_url() ?>+"Posts/Like/"+clicked_id ; 
-         alert(<?php echo base_url() ?>+"Posts/Like/"+clicked_id ) ;
+      $(".likebtn").click(function() {
+          alert(this.id); // or alert($(this).attr('id'));
+      });
+
+         
      $.ajax({
         url: link ,
         type:'post',
