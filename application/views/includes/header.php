@@ -846,8 +846,8 @@
                                                 <img class="avatar-40 rounded" src="images/user/04.jpg" alt="">
                                              </div>
                                              <div class="media-body ml-3">
-                                                <h6 class="mb-0 ">text</h6>
-                                                <p class="mb-0">15  friends</p>
+                                                <h6 class="mb-0 "><?php echo $key->text ; ?></h6>
+                                                <p class="mb-0">Il y a <?php echo xTimeAgo($key->dateNotif,date('Y-m-d H:i:s')) ; ?> </p>
                                              </div>
                                           </div>
 
