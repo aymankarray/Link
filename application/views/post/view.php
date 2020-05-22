@@ -116,7 +116,7 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                          <a class="text-primary">  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > j'aime </a>  
+                                          <a class="text-primary"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > j'aime </a>  
                                                    
                                                 
                                             
