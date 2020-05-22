@@ -133,12 +133,12 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <!--
+                                    
                                     <div class="share-block d-flex align-items-center feather-icon mr-3">
                                        <a href="javascript:void();"><i class="ri-share-line"></i>
-                                       <span class="ml-1">99 Share</span></a>
+                                       <span class="ml-1"><?php echo count($likeRecords) ?> j'aime</span></a>
                                     </div>
-                                    -->
+                                   
                                  </div>
                                  <hr>
                                  <ul class="post-comments p-0 m-0">
