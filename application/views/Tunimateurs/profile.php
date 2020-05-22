@@ -260,7 +260,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <div class="user-img">
-                                <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle" />
+                                <img src="https://tunivisions.link/uploads/avatar/<?php echo $userInfo->avatar ?>" alt="userimg" class="alligator-turtle" />
                             </div>
 
                             <h5 class="modal-title" id="post-modalLabel">Créer une publication</h5>
@@ -268,7 +268,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="d-flex align-items-center">
-                                <textarea id="textarea" class="form-control rounded" name="postText" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " row="10" ; style="resize: none;" required></textarea>
+                                <textarea id="textarea" class="form-control rounded" name="postText" placeholder="Que voulez-vous dire, <?php echo $userInfo->name ?> ? " row="10" ; style="resize: none;" required></textarea>
 
                                 <script type="text/javascript">
                                     function convert() {
