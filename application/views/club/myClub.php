@@ -724,29 +724,55 @@
                                           <div class="iq-card-body p-0">
                                              <div class="row">
                                                 
-                                      <?php
-                                       $i = 1 ;
-                                       foreach($RatingMembers as $record ) { ?>  
+                                      <table  class="table table-dark table-hover" >
+                          <th>
+                          </th>
 
-                                                <div class="col-md-6 col-lg-3 mb-3">
-                                                   <div class="user-images position-relative overflow-hidden">
-                                                      <a href="#">
-                                                      <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>"  class="img-fluid rounded" alt="Responsive image">
-                                                      </a>
-                                                      <div class="image-hover-data">
-                                                         <div class="product-elements-icon">
-                                                            <ul class="d-flex align-items-center m-0 p-0 list-inline">
-                                                               <li><a href="#" class="pr-3 text-white"> <?php echo $i ?> <i class="ri-thumb-up-line"></i> </a></li>
-                                                               <li><a href="#" class="pr-3 text-white"> <?php echo $record->scores ?> <i class="ri-chat-3-line"></i> </a></li>
-                                                               <li><a href="#" class="pr-3 text-white">  <i class="ri-share-forward-line"></i> </a></li>
-                                                            </ul>
-                                                         </div>
-                                                      </div>
-                                                      <a href="#" class="image-edit-btn" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit or Remove"><i class="ri-edit-2-fill"></i></a>
-                                                   </div>
-                                                </div>
-                                          <?php
-                                                   }  ?>        
+                          <th>
+                          </th>
+                          <th>
+                            Tunimateur
+                          </th>
+                          <th>
+                            Score
+                          </th>
+                                        <?php  if(!empty($RatingMembers)){ $c=1 ;   foreach ($RatingMembers as $membre ) { ?>
+                                          <tr>
+
+                                            <td  > <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle " alt="user"> </td>
+
+                                            <td>
+                                                <?php   if ($c== 1) { ?>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 7a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm0 3.5l-1.323 2.68-2.957.43 2.14 2.085-.505 2.946L12 17.25l2.645 1.39-.505-2.945 2.14-2.086-2.957-.43L12 10.5zm1-8.501L18 2v3l-1.363 1.138A9.935 9.935 0 0 0 13 5.049L13 2zm-2 0v3.05a9.935 9.935 0 0 0-3.636 1.088L6 5V2l5-.001z" fill="rgba(241,196,14,1)"/></svg>
+
+                                            <?php } else if ($c== 2) { ?>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 7a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm0 3.5l-1.323 2.68-2.957.43 2.14 2.085-.505 2.946L12 17.25l2.645 1.39-.505-2.945 2.14-2.086-2.957-.43L12 10.5zm1-8.501L18 2v3l-1.363 1.138A9.935 9.935 0 0 0 13 5.049L13 2zm-2 0v3.05a9.935 9.935 0 0 0-3.636 1.088L6 5V2l5-.001z" fill="rgba(149,164,166,1)"/></svg>
+
+                                            <?php } else if ($c== 3) { ?>
+
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 7a8 8 0 1 1 0 16 8 8 0 0 1 0-16zm0 3.5l-1.323 2.68-2.957.43 2.14 2.085-.505 2.946L12 17.25l2.645 1.39-.505-2.945 2.14-2.086-2.957-.43L12 10.5zm1-8.501L18 2v3l-1.363 1.138A9.935 9.935 0 0 0 13 5.049L13 2zm-2 0v3.05a9.935 9.935 0 0 0-3.636 1.088L6 5V2l5-.001z" fill="rgba(155,77,9,1)"/></svg>
+
+                                            <?php   }  ?>
+                                            </td>
+                                            <td>
+                                             <small><small>
+
+                                            
+                                            <span>
+                                            <?php echo $membre->name ?> <br>
+                                            <small><small><?php echo $membre->clubName ?></small></small>
+                                            </span>
+
+                                            </small></small> </td>
+
+                                            <td> <p class="text-muted "><small><small><?php echo $membre->scores ?> Points</small></p> </td>
+                                          </tr>
+                                          
+                                        </thead>
+                                        <?php $c= $c + 1 ;  }   }else { echo "Il y a pas de données";} ?>
+                </table>        
                                                 
                                              </div>
                                           </div>
