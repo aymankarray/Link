@@ -67,6 +67,14 @@ class Posts_model extends CI_Model
     }
 
 
+     function addNewLike($likeInfo)
+    {
+        $this->db->trans_start();
+        $this->db->insert('tbl_like', $likeInfo);
+        $insert_id = $this->db->insert_id();
+        $this->db->trans_complete();  
+        return $insert_id;
+    }
 
 
 

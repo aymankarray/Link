@@ -84,6 +84,21 @@ class Posts extends BaseController {
     }
 
 
+     public function Like($postId)
+    {
+        
+        $likeInfo = array(        
+           'userId ' => $this->vendorId ,
+           'createdDTM '=> date('Y-m-d H:i:s') ,
+           'postId' => $postId 
+
+       );
+        $result = $this->posts_model->addNewLike($likeInfo) ;
+
+        redirect('/Posts/post/'.$postId);
+    }
+
+
 
 
 
