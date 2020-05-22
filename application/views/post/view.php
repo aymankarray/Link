@@ -105,7 +105,7 @@
                                                 <b  class='btn btn-outline-primary rounded-pill mb-3' >
                                                    <?php echo count($commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
-                                             <?php } if  (count($commentsRecords) >  0 ) ?>
+                                             <?php } if  (count($commentsRecords) >  0 ){ ?>
                                              <b  class='btn mb-3 btn-primary rounded-pill' >
                                                    <?php echo count($commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
