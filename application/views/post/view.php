@@ -131,9 +131,9 @@
                                           <div class="total-like-block ml-2 mr-3">
                                              
                                                
-                                                 <a href="" name="like"  id="<?php echo $postRecords->postId ?>"  > 
+                                                 <button type="button" name="like"  id="<?php echo $postRecords->postId ?>"  > 
                                                   j'aime 
-                                                </a> 
+                                                </button> 
                                             
                                             
                                           </div>
