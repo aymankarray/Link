@@ -9,7 +9,7 @@
                      </div>
                   </div>
                   <div class="col-sm-12">
-                     <?php foreach ($notifRecords as $key ) {                        ?>
+                     <?php foreach ($notifRecordss as $key ) {                        ?>
                      <div class="iq-card">
                         <div class="iq-card-body">
                            <ul class="notification-list m-0 p-0">
