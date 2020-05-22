@@ -154,7 +154,7 @@
                                                  </span>
                                                  .
                                                  <?php if ($userId == $key->userId ){  ?>
-                                                 <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $key->commentId ?>" onclick="deleteComment(this.id)" > supprimer </p>
+                                                 <a class="text"  id="<?php echo $key->commentId ?>" onclick="deleteComment(this.id)" > supprimer </a>
                                                  <?php } ?>
                                              </div>
                                           </div>
