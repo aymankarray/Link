@@ -344,11 +344,11 @@ class User_model extends CI_Model
 
 
 
-     /**
+    /**
      * This function is used to add new user to system
      * @return number $insert_id : This is last inserted id
      */
-    function linkRequest($reciver)
+   /*  function linkRequest($reciver)
     {
          $this->db->select(' Sender.userId , Sender.name , Sender.avatar ,  BaseTbl.Addeddate , BaseTbl.statut ');
         $this->db->from('tbl_freinds as BaseTbl');
@@ -361,6 +361,7 @@ class User_model extends CI_Model
         $result = $query->result();        
         return $result;  
     }
+    */
     
     /**
      * This function used to get user information by id
