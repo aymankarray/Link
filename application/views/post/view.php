@@ -96,11 +96,12 @@
                                     <div class="like-block position-relative d-flex align-items-center">
                                       
                                        <div class="total-comment-block">
-                                          <?php echo count($likeRecords) ?>
-                                            <a class="text-primary"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > <i class='ri-heart-2-fill'></i> j'aime </a>
+                                          
+                                            <a class="btn text-primary"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords) ?> j'aime </a>
                                             
-                                            <b id="Liked<?php echo $postRecords->postId ?>" class='text-primary mr-3' style="display: none" > <i class='ri-heart-2-fill'></i> J'aime </b>
-                                             <b  class='text-primary mr-3' >
+                                            <b id="Liked<?php echo $postRecords->postId ?>" class='btn text-primary mr-3' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aime </b>
+                                             &nbsp; 
+                                             <b  class='btn text-primary mr-3' >
                                               <?php echo count($commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                            </a>
                                              
