@@ -688,6 +688,14 @@ class User extends BaseController
     {
         $data["userInfo"] = $this->user_model->getUserInfoWithRole($userId);
         $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId);
+         $data  ['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
+        
+            foreach ($data['postRecords'] as $key ) {                
+                        $key->commentsRecords              = $this->posts_model->CommentsListing($key->postId);
+                        $key->likeRecords             = $this->posts_model->likesListing($key->postId);
+                         $key->likeCheck          = $this->posts_model->likeCheck($key->postId,$this->vendorId);
+                  }
+
         
         $this->global['pageTitle'] = 'CodeInsect : Change Password';
          $this->global['active'] = 'profile' ;

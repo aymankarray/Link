@@ -214,245 +214,245 @@
                                  <div class="col-lg-8">
                                        
              <div class="col-sm-12">
-                   <div id="post-modal-data" class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                       <div class="iq-card-header d-flex justify-content-between">
-                           <div class="iq-header-title">
-                               <h4 class="card-title">Créer une publication</h4>
-                           </div>
-                       </div>
-                       <div class="iq-card-body" data-toggle="modal" data-target="#post-modal">
-                           <div class="d-flex align-items-center">
-                               <div class="user-img">
-                                   <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle" />
-                               </div>
-                               <form class="post-text ml-3 w-100" action="javascript:void();">
-                                   <input type="text" name="postText" class="form-control rounded" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " style="border: none;" />
-                               </form>
-                           </div>
-                           <hr />
+    <div id="post-modal-data" class="iq-card iq-card-block iq-card-stretch iq-card-height">
+        <div class="iq-card-header d-flex justify-content-between">
+            <div class="iq-header-title">
+                <h4 class="card-title">Créer une publication</h4>
+            </div>
+        </div>
+        <div class="iq-card-body" data-toggle="modal" data-target="#post-modal">
+            <div class="d-flex align-items-center">
+                <div class="user-img">
+                    <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle" />
+                </div>
+                <form class="post-text ml-3 w-100" action="javascript:void();">
+                    <input type="text" name="postText" class="form-control rounded" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " style="border: none;" />
+                </form>
+            </div>
+            <hr />
 
-                           <ul class="post-opt-block d-flex align-items-center list-inline m-0 p-0">
-                               <li class="iq-bg-primary rounded p-2 pointer mr-3"></li>
-                               <!--
-                                                <li class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/08.png" alt="icon" class="img-fluid"> Tag Friend</li>
-                                                <li class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/09.png" alt="icon" class="img-fluid"> Feeling/Activity</li>
-                                                <li class="iq-bg-primary rounded p-2 pointer">
-                                                   <div class="iq-card-header-toolbar d-flex align-items-center">
-                                                      <div class="dropdown">
-                                                         <span class="dropdown-toggle" id="post-option" data-toggle="dropdown">
-                                                         <i class="ri-more-fill"></i>
-                                                         </span>
-                                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="post-option" style="">
-                                                            <a class="dropdown-item" href="#">Check in</a>
-                                                            <a class="dropdown-item" href="#">Live Video</a>
-                                                            <a class="dropdown-item" href="#">Gif</a>
-                                                            <a class="dropdown-item" href="#">Watch Party</a>
-                                                            <a class="dropdown-item" href="#">Play with Friend</a>
-                                                         </div>
-                                                      </div>
+            <ul class="post-opt-block d-flex align-items-center list-inline m-0 p-0">
+                <li class="iq-bg-primary rounded p-2 pointer mr-3"></li>
+                <!--
+                                 <li class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/08.png" alt="icon" class="img-fluid"> Tag Friend</li>
+                                 <li class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/09.png" alt="icon" class="img-fluid"> Feeling/Activity</li>
+                                 <li class="iq-bg-primary rounded p-2 pointer">
+                                    <div class="iq-card-header-toolbar d-flex align-items-center">
+                                       <div class="dropdown">
+                                          <span class="dropdown-toggle" id="post-option" data-toggle="dropdown">
+                                          <i class="ri-more-fill"></i>
+                                          </span>
+                                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="post-option" style="">
+                                             <a class="dropdown-item" href="#">Check in</a>
+                                             <a class="dropdown-item" href="#">Live Video</a>
+                                             <a class="dropdown-item" href="#">Gif</a>
+                                             <a class="dropdown-item" href="#">Watch Party</a>
+                                             <a class="dropdown-item" href="#">Play with Friend</a>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </li>-->
+            </ul>
+        </div>
+        <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="post-modalLabel" aria-hidden="true" style="display: none;">
+            <form action="<?php echo base_url()?>Posts/addNewP" method="post" enctype="multipart/form-data">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="user-img">
+                                <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle" />
+                            </div>
+
+                            <h5 class="modal-title" id="post-modalLabel">Créer une publication</h5>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="ri-close-fill"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="d-flex align-items-center">
+                                <textarea id="textarea" class="form-control rounded" name="postText" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " row="10" ; style="resize: none;" required></textarea>
+
+                                <script type="text/javascript">
+                                    function convert() {
+                                        var text = document.getElementById("textarea").value;
+                                        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi;
+                                        var text1 = text.replace(exp, "<a href='$1'>$1</a>");
+                                        var exp2 = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
+                                        document.getElementById("converted_url").innerHTML = text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
+                                    }
+                                </script>
+                            </div>
+                            <hr />
+
+                            <br />
+
+                            <input type="file" name="photo" />
+
+                            <hr />
+
+                            <button type="submit" onclick="convert();" class="btn btn-primary d-block w-100 mt-3">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<?php   if (!empty($postRecords)) {    foreach ($postRecords as $record ) {  ?>
+
+<div class="col-sm-12">
+    <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+        <div class="iq-card-body">
+            <div class="user-post-data">
+                <div class="d-flex flex-wrap">
+                    <div class="">
+                        <img class="alligator-turtle mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>" alt="" />
+                    </div>
+                    <div class="media-support-info mt-2">
+                        <h5 class="mb-0 d-inline-block">
+                            <a href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" class="alligator-turtle mr-3"><?php echo $record->name?></a>
+                        </h5>
+                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
+                        <p class="mb-0 text-primary">
+                            <a href="<?php echo base_url().'Posts/post/'.$record->postId ?>"><?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></a>
+                        </p>
+                    </div>
+                    <!--
+                                    <div class="iq-card-post-toolbar">
+                                       <div class="dropdown">
+                                          <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                          <i class="ri-more-fill"></i>
+                                          </span>
+                                          <div class="dropdown-menu m-0 p-0">
+                                             <a class="dropdown-item p-3" href="#">
+                                                <div class="d-flex align-items-top">
+                                                   <div class="icon font-size-20"><i class="ri-save-line"></i></div>
+                                                   <div class="data ml-2">
+                                                      <h6>Save Post</h6>
+                                                      <p class="mb-0">Add this to your saved items</p>
                                                    </div>
-                                                </li>-->
-                           </ul>
-                       </div>
-                       <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="post-modalLabel" aria-hidden="true" style="display: none;">
-                           <form action="<?php echo base_url()?>Posts/addNewP" method="post" enctype="multipart/form-data">
-                               <div class="modal-dialog" role="document">
-                                   <div class="modal-content">
-                                       <div class="modal-header">
-                                           <div class="user-img">
-                                               <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle" />
-                                           </div>
-
-                                           <h5 class="modal-title" id="post-modalLabel">Créer une publication</h5>
-                                           <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="ri-close-fill"></i></button>
-                                       </div>
-                                       <div class="modal-body">
-                                           <div class="d-flex align-items-center">
-                                               <textarea id="textarea" class="form-control rounded" name="postText" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " row="10" ; style="resize: none;" required></textarea>
-
-                                               <script type="text/javascript">
-                                                   function convert() {
-                                                       var text = document.getElementById("textarea").value;
-                                                       var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi;
-                                                       var text1 = text.replace(exp, "<a href='$1'>$1</a>");
-                                                       var exp2 = /(^|[^\/])(www\.[\S]+(\b|$))/gim;
-                                                       document.getElementById("converted_url").innerHTML = text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
-                                                   }
-                                               </script>
-                                           </div>
-                                           <hr />
-
-                                           <br />
-
-                                           <input type="file" name="photo" />
-
-                                           <hr />
-
-                                           <button type="submit" onclick="convert();" class="btn btn-primary d-block w-100 mt-3">Post</button>
-                                       </div>
-                                   </div>
-                               </div>
-                           </form>
-                       </div>
-                   </div>
-               </div>
-
-               <?php   if (!empty($postRecords)) {    foreach ($postRecords as $record ) {  ?>
-
-               <div class="col-sm-12">
-                   <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                       <div class="iq-card-body">
-                           <div class="user-post-data">
-                               <div class="d-flex flex-wrap">
-                                   <div class="">
-                                       <img class="alligator-turtle mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>" alt="" />
-                                   </div>
-                                   <div class="media-support-info mt-2">
-                                       <h5 class="mb-0 d-inline-block">
-                                           <a href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" class="alligator-turtle mr-3"><?php echo $record->name?></a>
-                                       </h5>
-                                       <p class="mb-0 d-inline-block">a mise à jour son statut</p>
-                                       <p class="mb-0 text-primary">
-                                           <a href="<?php echo base_url().'Posts/post/'.$record->postId ?>"><?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></a>
-                                       </p>
-                                   </div>
-                                   <!--
-                                                   <div class="iq-card-post-toolbar">
-                                                      <div class="dropdown">
-                                                         <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                                         <i class="ri-more-fill"></i>
-                                                         </span>
-                                                         <div class="dropdown-menu m-0 p-0">
-                                                            <a class="dropdown-item p-3" href="#">
-                                                               <div class="d-flex align-items-top">
-                                                                  <div class="icon font-size-20"><i class="ri-save-line"></i></div>
-                                                                  <div class="data ml-2">
-                                                                     <h6>Save Post</h6>
-                                                                     <p class="mb-0">Add this to your saved items</p>
-                                                                  </div>
-                                                               </div>
-                                                            </a>
-                                                            <a class="dropdown-item p-3" href="#">
-                                                               <div class="d-flex align-items-top">
-                                                                  <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
-                                                                  <div class="data ml-2">
-                                                                     <h6>Hide Post</h6>
-                                                                     <p class="mb-0">See fewer posts like this.</p>
-                                                                  </div>
-                                                               </div>
-                                                            </a>
-                                                            <a class="dropdown-item p-3" href="#">
-                                                               <div class="d-flex align-items-top">
-                                                                  <div class="icon font-size-20"><i class="ri-user-unfollow-line"></i></div>
-                                                                  <div class="data ml-2">
-                                                                     <h6>Unfollow User</h6>
-                                                                     <p class="mb-0">Stop seeing posts but stay friends.</p>
-                                                                  </div>
-                                                               </div>
-                                                            </a>
-                                                            <a class="dropdown-item p-3" href="#">
-                                                               <div class="d-flex align-items-top">
-                                                                  <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
-                                                                  <div class="data ml-2">
-                                                                     <h6>Notifications</h6>
-                                                                     <p class="mb-0">Turn on notifications for this post</p>
-                                                                  </div>
-                                                               </div>
-                                                            </a>
-                                                         </div>
-                                                      </div>
+                                                </div>
+                                             </a>
+                                             <a class="dropdown-item p-3" href="#">
+                                                <div class="d-flex align-items-top">
+                                                   <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
+                                                   <div class="data ml-2">
+                                                      <h6>Hide Post</h6>
+                                                      <p class="mb-0">See fewer posts like this.</p>
                                                    </div>
-                                                      -->
-                               </div>
-                           </div>
-                           <div class="mt-3">
-                               <p style="font-size: 13;">
-                                   <?php 
-
-                                                         $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
-                                                         $text = $record->Content ; if(preg_match($reg_exUrl, $text, $url)) { echo preg_replace($reg_exUrl, "<a href=".$url[0]." target="_blank">".$url[0]."</a> ", $text); } else { echo $text; } if
-                                   ($reg_exUrl = "(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*" ) { ?>
-
-                                   <?php
-                                                         }
-
-                                                   ?>
-                               </p>
-                           </div>
-
-                           <div class="comment-area mt-3">
-                               <div class="d-flex justify-content-between align-items-center">
-                                   <div class="total-comment-block">
-                                       <?php if (!empty($record->likeCheck)) { ?>
-                                       <b id="PLiked<?php echo $record->postId ?>" class="btn mb-3 btn-primary rounded-pill">
-                                           <i class="ri-heart-2-fill"></i>
-                                           <?php echo count($record->likeRecords) ?> J'aimes
-                                       </b>
-
-                                       <?php } else {  ?>
-
-                                       <p class="btn btn-outline-primary rounded-pill mb-3" id="<?php echo $record->postId ?>" onclick="like(this.id)"><?php echo count($record->likeRecords) ?> <i class="ri-heart-2-fill"></i> j'aimes</p>
-                                       <b id="Liked<?php echo $record->postId ?>" class="btn mb-3 btn-primary rounded-pill" style="display: none;">
-                                           <i class="ri-heart-2-fill"></i>
-                                           <?php echo count($record->likeRecords)+ 1 ?> J'aimes
-                                       </b>
-                                       <?php }   ?>
-
-                                       &nbsp;
-
-                                       <?php if  (count($record->commentsRecords) == 0) { ?>
-                                       <b class="btn btn-outline-primary rounded-pill mb-3" onclick="location.href = '<?php echo base_url().'Posts/post/'.$record->postId ?>';">
-                                           <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
-                                       </b>
-                                       <?php } if  (count($record->commentsRecords) > 0 ){ ?>
-                                       <b class="btn mb-3 btn-primary rounded-pill" onclick="location.href = '<?php echo base_url().'Posts/post/'.$record->postId ?>';">
-                                           <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
-                                       </b>
-                                       <?php } ?>
-                                   </div>
-                               </div>
-                               <hr />
-                               <ul class="post-comments p-0 m-0">
-                                   <?php 
-                                          
-                                  
-
-                                                   if(!empty($record->commentsRecords)) { foreach ($record->commentsRecords as $key ) { ?>
-
-                                   <li class="mb-2" style="background-color: aliceblue;">
-                                       <div class="d-flex flex-wrap">
-                                           <div class="user-img">
-                                               <img class="alligator-turtle mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>" />
-                                           </div>
-                                           <div class="comment-data-block ml-3">
-                                               <h6>
-                                                   <a href="https://tunivisions.link/User/ProfileShow/<?php echo $key->comUserId ?>" class="text-primary"> <?php echo $key->name ; ?> </a>
-                                               </h6>
-
-                                               <p class="mb-0"><?php echo $key->content ; ?></p>
-                                               <div class="d-flex flex-wrap align-items-center comment-activity">
-                                                   <span class="text-primary"> <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </span>
-                                               </div>
-                                           </div>
+                                                </div>
+                                             </a>
+                                             <a class="dropdown-item p-3" href="#">
+                                                <div class="d-flex align-items-top">
+                                                   <div class="icon font-size-20"><i class="ri-user-unfollow-line"></i></div>
+                                                   <div class="data ml-2">
+                                                      <h6>Unfollow User</h6>
+                                                      <p class="mb-0">Stop seeing posts but stay friends.</p>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                             <a class="dropdown-item p-3" href="#">
+                                                <div class="d-flex align-items-top">
+                                                   <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
+                                                   <div class="data ml-2">
+                                                      <h6>Notifications</h6>
+                                                      <p class="mb-0">Turn on notifications for this post</p>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          </div>
                                        </div>
-                                   </li>
-                                   <?php  } }    ?>
-                               </ul>
-                               <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$record->postId ?>">
-                                   <input type="text" name="comment" class="form-control rounded" required />
-                                   <div class="comment-attagement d-flex">
-                                       <a href="#" onclick="document.getElementById('commentF').submit();"><i class="ri-link mr-3"></i></a>
-                                       <!-- 
-                                                      <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
-                                                      <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
-                                                     -->
-                                   </div>
-                               </form>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-               <?php } } ?>
+                                    </div>
+                                       -->
+                </div>
+            </div>
+            <div class="mt-3">
+                <p style="font-size: 13;">
+                    <?php 
+
+                                          $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+                                          $text = $record->Content ; if(preg_match($reg_exUrl, $text, $url)) { echo preg_replace($reg_exUrl, "<a href=".$url[0]." target="_blank">".$url[0]."</a> ", $text); } else { echo $text; } if
+                    ($reg_exUrl = "(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*" ) { ?>
+
+                    <?php
+                                          }
+
+                                    ?>
+                </p>
+            </div>
+
+            <div class="comment-area mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="total-comment-block">
+                        <?php if (!empty($record->likeCheck)) { ?>
+                        <b id="PLiked<?php echo $record->postId ?>" class="btn mb-3 btn-primary rounded-pill">
+                            <i class="ri-heart-2-fill"></i>
+                            <?php echo count($record->likeRecords) ?> J'aimes
+                        </b>
+
+                        <?php } else {  ?>
+
+                        <p class="btn btn-outline-primary rounded-pill mb-3" id="<?php echo $record->postId ?>" onclick="like(this.id)"><?php echo count($record->likeRecords) ?> <i class="ri-heart-2-fill"></i> j'aimes</p>
+                        <b id="Liked<?php echo $record->postId ?>" class="btn mb-3 btn-primary rounded-pill" style="display: none;">
+                            <i class="ri-heart-2-fill"></i>
+                            <?php echo count($record->likeRecords)+ 1 ?> J'aimes
+                        </b>
+                        <?php }   ?>
+
+                        &nbsp;
+
+                        <?php if  (count($record->commentsRecords) == 0) { ?>
+                        <b class="btn btn-outline-primary rounded-pill mb-3" onclick="location.href = '<?php echo base_url().'Posts/post/'.$record->postId ?>';">
+                            <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
+                        </b>
+                        <?php } if  (count($record->commentsRecords) > 0 ){ ?>
+                        <b class="btn mb-3 btn-primary rounded-pill" onclick="location.href = '<?php echo base_url().'Posts/post/'.$record->postId ?>';">
+                            <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
+                        </b>
+                        <?php } ?>
+                    </div>
+                </div>
+                <hr />
+                <ul class="post-comments p-0 m-0">
+                    <?php 
+                           
+                   
+
+                                    if(!empty($record->commentsRecords)) { foreach ($record->commentsRecords as $key ) { ?>
+
+                    <li class="mb-2" style="background-color: aliceblue;">
+                        <div class="d-flex flex-wrap">
+                            <div class="user-img">
+                                <img class="alligator-turtle mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>" />
+                            </div>
+                            <div class="comment-data-block ml-3">
+                                <h6>
+                                    <a href="https://tunivisions.link/User/ProfileShow/<?php echo $key->comUserId ?>" class="text-primary"> <?php echo $key->name ; ?> </a>
+                                </h6>
+
+                                <p class="mb-0"><?php echo $key->content ; ?></p>
+                                <div class="d-flex flex-wrap align-items-center comment-activity">
+                                    <span class="text-primary"> <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <?php  } }    ?>
+                </ul>
+                <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$record->postId ?>">
+                    <input type="text" name="comment" class="form-control rounded" required />
+                    <div class="comment-attagement d-flex">
+                        <a href="#" onclick="document.getElementById('commentF').submit();"><i class="ri-link mr-3"></i></a>
+                        <!-- 
+                                       <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
+                                       <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
+                                      -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<?php } } ?>
 
 
 
