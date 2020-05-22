@@ -54,7 +54,7 @@ class Posts extends BaseController {
 
 
     public function post($post)
-    {   $userId = $this->vendorId ; 
+    {   $data  ['userId'] = $this->vendorId ; 
         $data  ['postRecords'] =  $this->posts_model->postById($post) ; 
         $data['commentsRecords'] = $this->posts_model->CommentsListing($post);
         $data['likeRecords'] = $this->posts_model->likesListing($post);
