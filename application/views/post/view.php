@@ -203,7 +203,7 @@
             url: link , 
             success: function(result){
             $('#ToLike'+clickid).hide() ;
-            $('#Liked'+clickid).show() ;
+         
             }
             });
 
