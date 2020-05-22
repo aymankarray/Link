@@ -1,18 +1,12 @@
 
 <script type="text/javascript">
 
-
-   jQuery(document).ready(function(){
-      jQuery("button").click(function() {
-          alert(this.id); // or alert($(this).attr('id'));
+      $(document).ready(function(){
+        $("button").click(function(){
+          $(this).hide();
+        });
       });
-   });   
-         
-    
-        
-      
-
-     
+             
 </script>
 
 
