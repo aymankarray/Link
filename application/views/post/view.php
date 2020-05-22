@@ -201,7 +201,7 @@
          $.ajax({
             url: link , 
             success: function(result){
-            $('#toLike'+clickid).hide() ;
+            $('#'+clickid).text( "<b> <i class='ri-heart-2-fill'></i> J'aime </b>" );
             }
             });
 
