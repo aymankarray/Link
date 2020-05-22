@@ -97,7 +97,7 @@
                                       
                                        <div class="total-comment-block">
                                           
-                                          <?php if !empty($likeCheck) {  ?>
+                                          <?php if (!empty($likeCheck)) {  ?>
                                            <b id="PLiked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aimes </b>
 
                                             <?php } else {  ?>
