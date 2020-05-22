@@ -241,14 +241,14 @@
                                     <div class="total-comment-block">
                                           
                                           <?php if (!empty($record->likeCheck)) {  ?>
-                                           <b id="PLiked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords) ?> J'aimes </b>
+                                           <b id="PLiked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords) ?> J'aimes </b>
 
                                             <?php } else {  ?>
                                             
 
 
                                              <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $postRecords->postId ?>" onclick="like(this.id)" >  <?php echo count($record->likeRecords) ?> <i class='ri-heart-2-fill'></i> j'aimes </p>
-                                            <b id="Liked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($likeRecords)+ 1 ?> J'aimes </b>
+                                            <b id="Liked<?php echo $postRecords->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords)+ 1 ?> J'aimes </b>
                                              <?php }   ?>
 
                                              &nbsp; 
