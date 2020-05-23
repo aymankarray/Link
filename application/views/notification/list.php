@@ -14,7 +14,7 @@
                         <div class="iq-card-body">
                            <ul class="notification-list m-0 p-0">
                               <li class="d-flex align-items-center">
-                                 <div class="user-img img-fluid"><img src="images/user/14.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
+                                 <div class="user-img img-fluid"><img  alt="story-img" class="rounded-circle avatar-40"></div>
                                  <div class="media-support-info ml-3">
                                     <h6><?php echo $key->text ?></h6>
                                     <p class="mb-0">Il y a <?php echo xTimeAgo($key->dateNotif,date('Y-m-d H:i:s')) ; ?> </p>
