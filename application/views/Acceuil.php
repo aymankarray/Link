@@ -92,7 +92,7 @@
 
                                        <br>
                                                                             
-                                          <input class="dropify" type="file" name="photo"  > 
+                                          <input class="dropify" data-height="500"  type="file" name="photo"  > 
                                
                   <!--  
                                       
