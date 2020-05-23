@@ -60,11 +60,22 @@ $cellule = $userInfo->cellule;
                                     </div>
                                  </div>
                                  <div class="iq-card-body">
+                                     <style type="text/css">
+                                            .alligator-editprofile {
+                                                 object-fit: cover;
+                                                 object-position: 50% 50%;
+                                             
+                                                 border-radius: 20%;
+
+                                                 width: 100px;
+                                                 height: 100px;
+                                               }
+                                     </style>
                                     <form>
                                        <div class="form-group row align-items-center">
                                           <div class="col-md-12">
                                              <div class="profile-img-edit">
-                                                <img class="alligator-turtle  " style="width: cover" src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="profile-pic">
+                                                <img class="alligator-editprofile  " style="width: cover" src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="profile-pic">
                                                 <div class="p-image">
                                                    <i class="ri-pencil-line upload-button"></i>
                                                    <input class="file-upload" type="file" accept="image/*"/>
