@@ -91,8 +91,8 @@
                                        <hr>
 
                                        <br>
-                                                                            
-                                          <input class="dropify" data-height="500"  type="file" name="photo"  > 
+                                                                             
+                                          <input class="dropify-fr" data-height="500" data-max-file-size="500K" data-max-height="800"  type="file" name="photo"  > 
                                
                   <!--  
                                       
