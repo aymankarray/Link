@@ -107,7 +107,11 @@
                                                       <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-success"></i></span>
                                                    </div>
                                                    <div class="chat-sidebar-name">
-                                                      <h6 class="mb-0"><?php echo $key->nom ?></h6>
+                                                      <h6 class="mb-0">
+                                                         <?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            echo $keyCP->name.',' ;
+                                                         }?
+                                                      </h6>
                                                       <span>  </span>
                                                    </div>
                                                    <div class="chat-meta float-right text-center mt-2 mr-1">
