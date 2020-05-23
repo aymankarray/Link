@@ -14,7 +14,7 @@
                                           </div>
                                           <div class="chat-caption">
                                              <h5 class="mb-0"><?php echo $name ?></h5>
-                                             <p class="m-0"><?php echo $roleText.' '.$cellule ?><</p>
+                                             <p class="m-0"><?php echo $role_text.' '.$cellule ?><</p>
                                           </div>
                                           <button type="submit" class="close-btn-res p-3"><i class="ri-close-fill"></i></button>
                                        </div>
@@ -29,7 +29,7 @@
                                                    <h4><?php echo $name ?></h4>
                                                 </div>
                                                 <div class="user-desc">
-                                                   <p><?php echo $roleText ?></p>
+                                                   <p><?php echo $role_text ?></p>
                                                 </div>
                                              </div>
                                              <hr>
