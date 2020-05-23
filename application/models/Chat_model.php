@@ -66,7 +66,7 @@ class Chat_model extends CI_Model
         $this->db->from('tbl_message as BaseTbl');
         $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.senderId');
         $this->db->order_by('BaseTbl.createDTM','DESC'); 
-        $this->db->where ('BaseTbl.disscussionId = ', $disscussionId ); 
+        $this->db->where ('BaseTbl.disscussionId = ', $disscussionID ); 
         $this->db->limit(100);      
         $query = $this->db->get();
         
