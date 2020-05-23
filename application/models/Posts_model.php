@@ -42,7 +42,7 @@ class Posts_model extends CI_Model
 
     function postsListing()
     {
-       $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId  , BaseTbl.DatePosted , User.name , User.avatar ');
+       $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId , BaseTbl.photo   , BaseTbl.DatePosted , User.name , User.avatar ');
        $this->db->from('tbl_post as BaseTbl');
        $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
        $this->db->order_by('BaseTbl.DatePosted DESC ');
@@ -55,7 +55,7 @@ class Posts_model extends CI_Model
 
    function postsListingbyUser($userId)
     {
-       $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId  , BaseTbl.DatePosted , User.name , User.avatar ');
+       $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId , BaseTbl.photo  , BaseTbl.DatePosted , User.name , User.avatar ');
        $this->db->from('tbl_post as BaseTbl');
        $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
        $this->db->where('BaseTbl.userId = ', $userId);
@@ -68,7 +68,7 @@ class Posts_model extends CI_Model
 
    function postById($postId)
    {
-        $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId  , BaseTbl.DatePosted , User.name , User.avatar ');
+        $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId , BaseTbl.photo  , BaseTbl.DatePosted , User.name , User.avatar ');
         $this->db->from('tbl_post as BaseTbl');
         $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
         $this->db->where('BaseTbl.postId  =  ' , $postId ) ;

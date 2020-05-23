@@ -68,7 +68,12 @@ class Posts extends BaseController {
         $postText = $this->input->post('postText');
         $photo = $this->input->post('postText');
 
-        $file_name = 'Post_'.$name.'_'.$_FILES['file']['name'];
+
+
+
+        $result = $this->posts_model->addNewPost($postInfo); 
+
+        $file_name = 'Post_'.$result.'_'.$name.'_'.$_FILES['file']['name'];
                 $file_tmp = $_FILES['file']['tmp_name'];
                 
                 $file_destination = 'uploads/post/' . $file_name;
@@ -81,7 +86,7 @@ class Posts extends BaseController {
            'userId ' => $this->vendorId ,
            'DatePosted '=> date('Y-m-d H:i:s') ,
        );
-        $result = $this->posts_model->addNewPost($postInfo);
+        
 
         redirect('/Posts/Acceuil');
     }

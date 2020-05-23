@@ -235,6 +235,12 @@
                                     </p>
 
                               </div>
+                              <?php if ($record->photo != Null ) { ?>
+                              <div class="user-post">
+                                 <a href="javascript:void();">
+                                    <img src="<?php echo base_url() ?>uploads/post/<?php echo $record->photo ?>g" alt="post-image" class="img-fluid rounded w-100"></a>
+                              </div>
+                           <?php }  ?>
                               
                               <div class="comment-area mt-3">
                                  <div class="d-flex justify-content-between align-items-center">
