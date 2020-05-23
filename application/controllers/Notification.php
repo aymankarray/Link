@@ -17,6 +17,7 @@ class Notification extends BaseController
     {
         parent::__construct();
         $this->load->model('notification_model');
+        $this->isLoggedIn(); 
     }
 
 
