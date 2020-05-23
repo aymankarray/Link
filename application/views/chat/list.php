@@ -10,7 +10,7 @@
                                     <div class="chat-search pt-3 pl-3">
                                        <div class="d-flex align-items-center">
                                           <div class="chat-profile mr-3">
-                                             <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatat ?>" alt="chat-user" class="avatar-60 ">
+                                             <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="chat-user" class="avatar-60 ">
                                           </div>
                                           <div class="chat-caption">
                                              <h5 class="mb-0"><?php echo $name ?></h5>
@@ -23,7 +23,7 @@
                                              <button type="submit" class="close-popup p-3"><i class="ri-close-fill"></i></button>
                                              <div class="user text-center mb-4">
                                                 <a class="avatar m-0">
-                                                <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatat ?>" alt="avatar">
+                                                <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="avatar">
                                                 </a>
                                                 <div class="user-name mt-4">
                                                    <h4><?php echo $name ?></h4>
