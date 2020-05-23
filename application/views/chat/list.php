@@ -134,7 +134,8 @@
                                              <button id="chat-start" class="btn bg-white mt-3">Chatter avec les tunimateurs</button>
                                           </div>
                                        </div>
-<?php foreach ($ChatRecords as $key ) {
+                                       
+                                       <?php foreach ($ChatRecords as $key ) {
                                             
                                           ?>
 
