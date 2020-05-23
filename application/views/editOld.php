@@ -75,7 +75,7 @@ $cellule = $userInfo->cellule;
                                        <div class="form-group row align-items-center">
                                           <div class="col-md-12">
                                              <div class="profile-img-edit">
-                                                <img class="alligator-editprofile  " style="width: cover" src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="profile-pic">
+                                                <img class="alligator-editprofile" id="imgLogo" style="width: cover" src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="profile-pic">
                                                 <div class="p-image">
                                                    <i class="ri-pencil-line upload-button"></i>
                                                    <input class="file-upload" type="file" accept="image/*" onchange="readURL(this)"onchange="readURL(this)" />
