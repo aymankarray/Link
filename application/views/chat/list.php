@@ -157,7 +157,10 @@
                                                       <i class="ri-menu-3-line"></i>
                                                    </div>
                                                    <div class="avatar chat-user-profile m-0 mr-3">
-                                                      <img src="images/user/05.jpg" alt="avatar" class="avatar-50 ">
+                                                         <?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            if( $keyCP->userId != $userId ){ ?>
+                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="alligator-turtle">
+                                                         <?php  } } ?>
                                                       <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-success"></i></span>
                                                    </div>
                                                    <h5 class="mb-0">
