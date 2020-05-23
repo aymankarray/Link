@@ -38,7 +38,7 @@ class Chat_model extends CI_Model
      */
     function ChatPartListing($disscussionId)
     {
-        $this->db->select('BaseTbl.tbl_disscussion_partId , BaseTbl.createDTM , BaseTbl.disscussionId , Users.name ');
+        $this->db->select('BaseTbl.tbl_disscussion_partId , BaseTbl.createDTM , BaseTbl.disscussionId , Users.name , Users.UserId');
         $this->db->from('tbl_disscussion_part as BaseTbl');
         $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.userId');
         $this->db->where ('BaseTbl.disscussionId = ', $disscussionId ); 
