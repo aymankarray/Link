@@ -42,7 +42,7 @@ class Chat extends BaseController {
                                                              'createDTM' => date('Y-m-d H:i:s') , 
                                                              'senderId' => $this->vendorId ,
                                                              'disscussionId' => $disscussionId ,
-                                                             'text' =>  $this->input->post('message');
+                                                             'text' =>  $this->input->post('message')
                                                              );                                           
                        return   $this->chat_model->addNew($messageInfo) ;
 
