@@ -100,7 +100,7 @@
                                             
                                           ?>
                                           <li>
-                                             <a data-toggle="pill" href="#chatbox<?php echo $key->disscussionId ?>" class="active">
+                                             <a data-toggle="pill" href="#chatbox<?php echo $key->disscussionId ?>" >
                                                 <div class="d-flex align-items-center">
                                                    <div class="avatar mr-2">
                                                       <img src="images/user/06.jpg" alt="chatuserimage" class="avatar-50 ">
