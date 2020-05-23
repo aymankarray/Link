@@ -78,7 +78,13 @@ $cellule = $userInfo->cellule;
                                                 <img class="alligator-editprofile  " style="width: cover" src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="profile-pic">
                                                 <div class="p-image">
                                                    <i class="ri-pencil-line upload-button"></i>
-                                                   <input class="file-upload" type="file" accept="image/*"/>
+                                                   <input class="file-upload" type="file" accept="image/*" onchange="readURL(this)"onchange="readURL(this)" />
+                                                   <script type="text/javascript">
+                                                      readURL(this) {
+                                                         document.getElementById("imgLogo").src = this;   
+                                                      }
+                                                      
+                                                   </script>
                                                 </div>
                                              </div>
                                           </div>
