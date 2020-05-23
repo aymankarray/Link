@@ -173,7 +173,10 @@
                                                       <button type="submit" class="close-popup p-3"><i class="ri-close-fill"></i></button>
                                                       <div class="user mb-4">
                                                          <a class="avatar m-0">
-                                                         <img src="images/user/05.jpg" alt="avatar">
+                                                         ?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            if( $keyCP->userId != $userId ){ ?>
+                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="alligator-turtle">
+                                                         <?php  } } ?>
                                                          </a>
                                                          <div class="user-name mt-4">
                                                             <h4>Bni Jordan</h4>
@@ -239,7 +242,10 @@
                                              <div class="chat chat-left">
                                                 <div class="chat-user">
                                                    <a class="avatar m-0">
-                                                   <img src="images/user/05.jpg" alt="avatar" class="avatar-35 ">
+                                                   ?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            if( $keyCP->userId != $userId ){ ?>
+                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="alligator-turtle">
+                                                         <?php  } } ?>
                                                    </a>
                                                    <span class="chat-time mt-1"><?php echo $keyM->createDTM ?></span>
                                                 </div>
