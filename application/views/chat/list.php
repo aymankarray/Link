@@ -245,10 +245,8 @@
                                              <div class="chat chat-left">
                                                 <div class="chat-user">
                                                    <a class="avatar m-0">
-                                                   <?php foreach ($key->ChatPartListing as $keyCP ) {
-                                                            if( $keyCP->userId != $userId ){ ?>
-                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="alligator-turtle">
-                                                         <?php  } } ?>
+                                                     <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyM->avatar ?>" alt="chatuserimage" class="alligator-turtle">
+                                                         
                                                    </a>
                                                    <span class="chat-time mt-1"><?php echo $keyM->createDTM ?></span>
                                                 </div>
@@ -259,11 +257,11 @@
                                                 </div>
                                              </div>
                                                 <?php  } ?>
-                                                <?php if ($keyM->senderId != $userId) {   ?>
+                                                <?php if ($keyM->senderId == $userId) {   ?>
                                              <div class="chat">
                                                 <div class="chat-user">
                                                    <a class="avatar m-0">
-                                                   <img src="images/user/1.jpg" alt="avatar" class="avatar-35 ">
+                                                   <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyM->avatar ?>" alt="chatuserimage" class="alligator-turtle">
                                                    </a>
                                                    <span class="chat-time mt-1"><?php echo $keyM->createDTM ?></span>
                                                 </div>
