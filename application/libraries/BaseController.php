@@ -137,7 +137,7 @@ class BaseController extends CI_Controller {
 
         $headerInfo['ChatRecords'] = $this->chat_model->ChatListing($this->vendorId,5) ;
 
-			    	    	foreach ($data['ChatRecords'] as $key ) {                
+			    	    	foreach ($headerInfo['ChatRecords'] as $key ) {                
 				                        $key->ChatPartListing             = $this->chat_model->ChatPartListing($key->disscussionId);
 				                        $key->messageListing              = $this->chat_model->messageListing($key->disscussionId) ; 
 				                  }
