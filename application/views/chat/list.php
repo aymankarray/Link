@@ -103,7 +103,11 @@
                                              <a data-toggle="pill" href="#chatbox<?php echo $key->disscussionId ?>" >
                                                 <div class="d-flex align-items-center">
                                                    <div class="avatar mr-2">
-                                                      <img src="images/user/06.jpg" alt="chatuserimage" class="avatar-50 ">
+                                                      <?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            if( $keyCP->userId != $userId ){ ?>
+                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="chatuserimage" class="avatar-50 ">
+                                                         <?php  } } ?>
+                                                      
                                                       <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-success"></i></span>
                                                    </div>
                                                    <div class="chat-sidebar-name">
