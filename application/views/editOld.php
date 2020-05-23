@@ -78,13 +78,28 @@ $cellule = $userInfo->cellule;
                                                 <img class="alligator-editprofile" id="imgLogo" style="width: cover" src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="profile-pic">
                                                 <div class="p-image">
                                                    <i class="ri-pencil-line upload-button"></i>
-                                                   <input class="file-upload" type="file" accept="image/*" onchange="readURL(this)"onchange="readURL(this)" />
-                                                   <script type="text/javascript">
-                                                      readURL(this) {
-                                                         document.getElementById("imgLogo").src = this;   
-                                                      }
-                                                      
-                                                   </script>
+                                                   <input class="file-upload" id="inputFile" type="file" accept="image/*" onchange="readURL(this)"onchange="readURL(this)" />
+                                                   <script>
+                                                       $(function () {
+                                                           $("#inputFile").change(function () {
+                                                               readURL(this);
+                                                           });
+                                                       });
+
+
+                                                       function readURL(input) {
+                                                           if (input.files && input.files[0]) {
+                                                               var reader = new FileReader();
+
+                                                               reader.onload = function (e) {
+                                                                   //alert(e.target.result);
+                                                                   $('#imgLogo').attr('src', e.target.result);
+                                                               }
+
+                                                               reader.readAsDataURL(input.files[0]);
+                                                           }
+                                                       }
+                                                   </script> 
                                                 </div>
                                              </div>
                                           </div>
