@@ -808,13 +808,13 @@
                                           <div class="d-flex align-items-center">
                                              <div class="">
                                                 <?php foreach ($key->ChatPartListing as $keyCP ) {
-                                                            if( $keyCP->userId != $userId ){ ?>
+                                                            if( $keyCP->userId != $MyUserId ){ ?>
                                                                <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="alligator-turtle">
                                                          <?php  } } ?>
                                              </div>
                                              <div class="media-body ml-3">
                                                 <h6 class="mb-0 "><?php foreach ($key->ChatPartListing as $keyCP ) {
-                                                            if( $keyCP->userId != $userId ){
+                                                            if( $keyCP->userId != $MyUserId ){
                                                                echo $keyCP->name.',' ;
                                                             }
                                                          } ?></h6>
