@@ -173,7 +173,7 @@
                                                       <button type="submit" class="close-popup p-3"><i class="ri-close-fill"></i></button>
                                                       <div class="user mb-4">
                                                          <a class="avatar m-0">
-                                                         ?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                         <?php foreach ($key->ChatPartListing as $keyCP ) {
                                                             if( $keyCP->userId != $userId ){ ?>
                                                                <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="alligator-turtle">
                                                          <?php  } } ?>
