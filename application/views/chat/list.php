@@ -248,7 +248,7 @@
                                                      <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyM->avatar ?>" alt="chatuserimage" class="alligator-turtle">
                                                          
                                                    </a>
-                                                   <span class="chat-time mt-1"><?php echo $keyM->createDTM ?></span>
+                                                   <span class="chat-time mt-1"><?php echo xTimeAgo($keyM->createDTM,date('Y-m-d H:i:s')) ; ?></span>
                                                 </div>
                                                 <div class="chat-detail">
                                                    <div class="chat-message">
@@ -263,7 +263,7 @@
                                                    <a class="avatar m-0">
                                                    <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyM->avatar ?>" alt="chatuserimage" class="alligator-turtle">
                                                    </a>
-                                                   <span class="chat-time mt-1"><?php echo $keyM->createDTM ?></span>
+                                                   <span class="chat-time mt-1"><?php echo xTimeAgo($keyM->createDTM,date('Y-m-d H:i:s')) ; ?></span>
                                                 </div>
                                                 <div class="chat-detail">
                                                    <div class="chat-message">
