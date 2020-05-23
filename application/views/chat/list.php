@@ -109,7 +109,9 @@
                                                    <div class="chat-sidebar-name">
                                                       <h6 class="mb-0">
                                                          <?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            if( $keyCP->userId != $userId ){
                                                             echo $keyCP->name.',' ;
+                                                            }
                                                          } ?>
                                                       </h6>
                                                       <span>  </span>
@@ -154,7 +156,13 @@
                                                       <img src="images/user/05.jpg" alt="avatar" class="avatar-50 ">
                                                       <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-success"></i></span>
                                                    </div>
-                                                   <h5 class="mb-0"><</h5>
+                                                   <h5 class="mb-0">
+                                                         <?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            if( $keyCP->userId != $userId ){
+                                                            echo $keyCP->name.',' ;
+                                                            }
+                                                         } ?>
+                                                   </h5>
                                                 </div>
                                                 <div class="chat-user-detail-popup scroller">
                                                    <div class="user-profile text-center">

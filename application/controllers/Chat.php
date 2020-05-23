@@ -16,7 +16,9 @@ class Chat extends BaseController {
 			    }
 
 				public function chatListing()
-			    {
+			    {	
+
+			    		$data['userId']  = $this->vendorId ; 
 
 			    	    $data['ChatRecords'] = $this->chat_model->ChatListing($this->vendorId) ;
 
