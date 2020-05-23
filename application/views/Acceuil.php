@@ -92,7 +92,7 @@
 
                                        <br>
                                                                              
-                                          <input class="dropify-fr" data-height="500" data-max-file-size="500K" data-max-height="2000"  type="file" name="photo"  > 
+                                          <input class="dropify-fr" data-height="500" data-max-file-size="250K" data-max-height="2000"  type="file" name="file"  > 
                                
                   <!--  
                                       
