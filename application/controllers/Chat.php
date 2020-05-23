@@ -38,7 +38,7 @@ class Chat extends BaseController {
 			    		
 
                       $messageInfo = array(        
-                                                             'senderId' => 'La Foundationa publier une nouveauté' ,
+                                                            
                                                              'createDTM' => date('Y-m-d H:i:s') , 
                                                              'senderId' => $this->vendorId ,
                                                              'disscussionId' => $disscussionId ,

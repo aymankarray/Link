@@ -277,7 +277,7 @@
                                                <?php  } ?>  
                                           </div>
                                           <div class="chat-footer p-3 bg-white">
-                                             <form class="d-flex align-items-center" action="<?php echo base_url().'Chat/addMessage/'.$key->disscussionId ?>">
+                                             <form class="d-flex align-items-center" method="post" action="<?php echo base_url().'Chat/addMessage/'.$key->disscussionId ?>">
                                                 <div class="chat-attagement d-flex">
                                                    <a href="javascript:void();"><i class="fa fa-smile-o pr-3" aria-hidden="true"></i></a>
                                                    <a href="javascript:void();"><i class="fa fa-paperclip pr-3" aria-hidden="true"></i></a>
