@@ -41,7 +41,7 @@ class Chat_model extends CI_Model
         $this->db->select('BaseTbl.tbl_disscussion_partId , BaseTbl.createDTM , BaseTbl.disscussionId');
         $this->db->from('tbl_disscussion_part as BaseTbl');
         $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.userId');
-        $this->db->where ('tbl_disscussion_part.disscussionId = ', $disscussionId ); 
+        $this->db->where ('BaseTbl.disscussionId = ', $disscussionId ); 
         $this->db->order_by('BaseTbl.createdDate','DESC');
             
         $query = $this->db->get();
