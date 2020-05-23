@@ -139,7 +139,7 @@
                                             
                                           ?>
 
-                                       <div class="tab-pane fade" id="chatbox1" role="tabpanel">
+                                       <div class="tab-pane fade" id="chatbox<?php echo $key->disscussionId ?>" role="tabpanel">
                                           <div class="chat-head">
                                              <header class="d-flex justify-content-between align-items-center bg-white pt-3 pr-3 pb-3">
                                                 <div class="d-flex align-items-center">
