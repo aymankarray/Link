@@ -110,7 +110,7 @@
                                                       <h6 class="mb-0">
                                                          <?php foreach ($key->ChatPartListing as $keyCP ) {
                                                             if( $keyCP->userId != $userId ){
-                                                            echo $keyCP->name.',' ;
+                                                               echo $keyCP->name.',' ;
                                                             }
                                                          } ?>
                                                       </h6>
@@ -159,7 +159,7 @@
                                                    <h5 class="mb-0">
                                                          <?php foreach ($key->ChatPartListing as $keyCP ) {
                                                             if( $keyCP->userId != $userId ){
-                                                            echo $keyCP->name.',' ;
+                                                               echo $keyCP->name.',' ;
                                                             }
                                                          } ?>
                                                    </h5>
