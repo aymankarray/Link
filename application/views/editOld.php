@@ -63,7 +63,7 @@ $cellule = $userInfo->cellule;
                                     <form>
                                        <div class="form-group row align-items-center">
                                           <div class="col-md-12">
-                                             <div class="profile-img-edit">
+                                             <div class="alligator-turtle ">
                                                 <img class="profile-pic" s src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>"  alt="profile-pic">
                                                 <div class="p-image">
                                                    <i class="ri-pencil-line upload-button"></i>
@@ -207,7 +207,7 @@ $cellule = $userInfo->cellule;
                               <div class="iq-card">
                                  <div class="iq-card-header d-flex justify-content-between">
                                     <div class="iq-header-title">
-                                       <h4 class="card-title">Manage Contact</h4>
+                                       <h4 class="card-title">Contact</h4>
                                     </div>
                                  </div>
                                  <div class="iq-card-body">
