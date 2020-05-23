@@ -463,13 +463,13 @@
                                                    <h6>Email</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">Bnijohn@gmail.com</p>
+                                                   <p class="mb-0"><?php echo $userInfo->email ;?></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>Mobile</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">(001) 4544 565 456</p>
+                                                   <p class="mb-0"><?php if($SA == 1 ){echo $userInfo->mobile} ;?></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>Address</h6>
@@ -501,19 +501,19 @@
                                                    <h6>Birth Date</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">24 January</p>
+                                                   <p class="mb-0"><?php echo $userInfo->birthday ;?></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>Birth Year</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">1994</p>
+                                                   <p class="mb-0"><?php echo $userInfo->birthday ;?></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>Gender</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">Female</p>
+                                                   <p class="mb-0"><?php echo $userInfo->sexe ;?></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>interested in</h6>
@@ -525,7 +525,7 @@
                                                    <h6>language</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">English, French</p>
+                                                   <p class="mb-0">Arabe , francais ,Anglais</p>
                                                 </div>
                                              </div>
                                           </div>
