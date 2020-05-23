@@ -95,17 +95,7 @@ class Actu extends BaseController {
 		                     );
 
 			   		   $resultat = $this->actualite_model->addNew($actuInfo);
-			   		   foreach ($this->user_model->userListing($this->vendorId) as $record ) {
-			   		   $notifInfo = array(        
-                                                             'text' => 'La Foundationa publier une nouveauté' ,
-                                                             'dateNotif' => date('Y-m-d H:i:s') , 
-                                                             'seen' => 'no' , 
-                                                             'type' => 'Actualite',
-                                                             'userId' => $record->userId ,
-                                                             'url' => '/Actu/Show/'. $resultat
-                                                             );                                           
-                          $this->notification_model->addNewNotificaition($notifInfo) ;
-						}
+			   		   
 
 		        		  
 		        		}
