@@ -28,7 +28,7 @@
       <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/style.css">
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/responsive.css">
-
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/dropify.min.css">
             <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151434993-1"></script>
       <script>
