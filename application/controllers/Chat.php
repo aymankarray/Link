@@ -20,7 +20,7 @@ class Chat extends BaseController {
 
 			    		$data['userId']  = $this->vendorId ; 
 
-			    	    $data['ChatRecords'] = $this->chat_model->ChatListing($this->vendorId) ;
+			    	    $data['ChatRecords'] = $this->chat_model->ChatListing($this->vendorId,100) ;
 
 			    	    	foreach ($data['ChatRecords'] as $key ) {                
 				                        $key->ChatPartListing             = $this->chat_model->ChatPartListing($key->disscussionId);

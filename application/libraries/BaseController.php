@@ -126,6 +126,7 @@ class BaseController extends CI_Controller {
     	$this->load->model('notification_model');
     	$this->load->model('user_model');
     	$this->load->model('login_model');
+    	$this->load->model('chat_model');
     	
 
     	$headerInfo['MyUserId'] = $this->vendorId ; 
@@ -133,6 +134,13 @@ class BaseController extends CI_Controller {
 		$headerInfo['notifRecords'] = $this->notification_model->NotificationListingHome($this->vendorId) ;
         $headerInfo['notifRecordsNumber'] = count($this->notification_model->NotificationNoSeenListing($this->vendorId)) ;
         
+
+        $headerInfo['ChatRecords'] = $this->chat_model->ChatListing($this->vendorId,5) ;
+
+			    	    	foreach ($data['ChatRecords'] as $key ) {                
+				                        $key->ChatPartListing             = $this->chat_model->ChatPartListing($key->disscussionId);
+				                        $key->messageListing              = $this->chat_model->messageListing($key->disscussionId) ; 
+				                  }
 
          $headerInfo['ConnrectedUser'] =  $this->login_model->lastLogins() ;
         

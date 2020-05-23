@@ -800,25 +800,31 @@
                                        <h5 class="mb-0 text-white">Messages<small class="badge  badge-light float-right pt-1"></small></h5>
                                     </div>
                                     
-                                    <!--
+                                   <?php foreach ($ChatRecords as $key ) {
+                                            
+                                          ?>
                                     <div class="iq-friend-request">
                                        <div class="iq-sub-card iq-sub-card-big d-flex align-items-center justify-content-between">
                                           <div class="d-flex align-items-center">
                                              <div class="">
-                                                <img class="avatar-40 rounded" src="images/user/04.jpg" alt="">
+                                                <?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            if( $keyCP->userId != $userId ){ ?>
+                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="alligator-turtle">
+                                                         <?php  } } ?>
                                              </div>
                                              <div class="media-body ml-3">
-                                                <h6 class="mb-0 ">Marsha Mello</h6>
+                                                <h6 class="mb-0 "><?php foreach ($key->ChatPartListing as $keyCP ) {
+                                                            if( $keyCP->userId != $userId ){
+                                                               echo $keyCP->name.',' ;
+                                                            }
+                                                         } ?></h6>
                                                 <p class="mb-0">15  friends</p>
                                              </div>
                                           </div>
-                                          <div class="d-flex align-items-center">
-                                             <a href="javascript:void();" class="mr-3 btn btn-primary rounded">Confirm</a>
-                                             <a href="javascript:void();" class="mr-3 btn btn-secondary rounded">Delete Request</a>                                    
-                                          </div>
+                                          
                                        </div>
                                     </div>
-                                      --> 
+                                     <?php  } ?>
 
                                     <div class="text-center">
                                        <a href="#" class="mr-3 btn text-primary">Voir plus</a>
