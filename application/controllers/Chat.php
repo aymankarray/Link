@@ -32,6 +32,23 @@ class Chat extends BaseController {
 
 				}
 
+			 public function addMessage($disscussionId)
+			    {	
+
+			    		
+
+                      $messageInfo = array(        
+                                                             'senderId' => 'La Foundationa publier une nouveauté' ,
+                                                             'createDTM' => date('Y-m-d H:i:s') , 
+                                                             'senderId' => $this->vendorId ,
+                                                             'disscussionId' => $disscussionId ,
+                                                             'text' =>  $this->input->post('message');
+                                                             );                                           
+                       return   $this->chat_model->addNew($messageInfo) ;
+
+				}
+
+
 
 
 
