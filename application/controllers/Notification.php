@@ -20,7 +20,7 @@ class Notification extends BaseController
     }
 
 
-    public function index()  { 
+    public function notifs()  { 
 
         $data  ['notifRecordss'] =  $this->notification_model->NotificationListing($this->vendorId);
         
