@@ -10,11 +10,11 @@
                                     <div class="chat-search pt-3 pl-3">
                                        <div class="d-flex align-items-center">
                                           <div class="chat-profile mr-3">
-                                             <img src="images/user/1.jpg" alt="chat-user" class="avatar-60 ">
+                                             <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatat ?>" alt="chat-user" class="avatar-60 ">
                                           </div>
                                           <div class="chat-caption">
                                              <h5 class="mb-0"><?php echo $name ?></h5>
-                                             <p class="m-0"><?php echo $role ?></p>
+                                             <p class="m-0"><?php echo $roleText.' '.$cellule ?><</p>
                                           </div>
                                           <button type="submit" class="close-btn-res p-3"><i class="ri-close-fill"></i></button>
                                        </div>
@@ -23,13 +23,13 @@
                                              <button type="submit" class="close-popup p-3"><i class="ri-close-fill"></i></button>
                                              <div class="user text-center mb-4">
                                                 <a class="avatar m-0">
-                                                <img src="images/user/1.jpg" alt="avatar">
+                                                <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatat ?>" alt="avatar">
                                                 </a>
                                                 <div class="user-name mt-4">
                                                    <h4><?php echo $name ?></h4>
                                                 </div>
                                                 <div class="user-desc">
-                                                   <p><?php echo $role ?></p>
+                                                   <p><?php echo $roleText ?></p>
                                                 </div>
                                              </div>
                                              <hr>
@@ -95,67 +95,35 @@
                                        </ul>
                                        <h5 class="mt-3">Private Channels</h5>
                                        <ul class="iq-chat-ui nav flex-column nav-pills">
+                                          
+                                          <?php foreach ($ChatRecords as $key ) {
+                                            
+                                          ?>
                                           <li>
-                                             <a data-toggle="pill" href="#chatbox3" class="active">
+                                             <a data-toggle="pill" href="#chatbox<?php echo $key->disscussionId ?>" class="active">
                                                 <div class="d-flex align-items-center">
                                                    <div class="avatar mr-2">
-                                                      <img src="images/user/07.jpg" alt="chatuserimage" class="avatar-50 ">
-                                                      <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-warning"></i></span>
-                                                   </div>
-                                                   <div class="chat-sidebar-name">
-                                                      <h6 class="mb-0">Designer</h6>
-                                                      <span>There are many </span>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                          </li>
-                                          <li>
-                                             <a data-toggle="pill" href="#chatbox4" class="">
-                                                <div class="d-flex align-items-center">
-                                                   <div class="avatar mr-2">
-                                                      <img src="images/user/08.jpg" alt="chatuserimage" class="avatar-50 ">
+                                                      <img src="images/user/06.jpg" alt="chatuserimage" class="avatar-50 ">
                                                       <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-success"></i></span>
                                                    </div>
                                                    <div class="chat-sidebar-name">
-                                                      <h6 class="mb-0">Developer</h6>
-                                                      <span>passages of Lorem</span>
+                                                      <h6 class="mb-0"><?php echo $key->nom ?></h6>
+                                                      <span>  </span>
+                                                   </div>
+                                                   <div class="chat-meta float-right text-center mt-2 mr-1">
+                                                      <!--
+                                                      <div class="chat-msg-counter bg-primary text-white">10</div>
+                                                      <span class="text-nowrap">10 min</span>
+                                                      -->
                                                    </div>
                                                 </div>
                                              </a>
                                           </li>
-                                          <li>
-                                             <a data-toggle="pill" href="#chatbox5" class="">
-                                                <div class="d-flex align-items-center">
-                                                   <div class="avatar mr-2">
-                                                      <img src="images/user/09.jpg" alt="chatuserimage" class="avatar-50 ">
-                                                      <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-info"></i></span>
-                                                   </div>
-                                                   <div class="chat-sidebar-name">
-                                                      <h6 class="mb-0">Testing Team</h6>
-                                                      <span>Lorem Ipsum used</span>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                          </li>
+
+                                          <?php  } ?>
+
                                        </ul>
-                                       <h5 class="mt-3">Direct Message</h5>
-                                       <ul class="iq-chat-ui nav flex-column nav-pills">
-                                          <li>
-                                             <a data-toggle="pill" href="#chatbox6" class="">
-                                                <div class="d-flex align-items-center">
-                                                   <div class="avatar mr-2">
-                                                      <img src="images/user/10.jpg" alt="chatuserimage" class="avatar-50 ">
-                                                      <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-dark"></i></span>
-                                                   </div>
-                                                   <div class="chat-sidebar-name">
-                                                      <h6 class="mb-0">Paul Molive</h6>
-                                                      <span>translation by</span>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                          </li>
-                                          
-                                       </ul>
+                                       
                                     </div>
                                  </div>
                                  <div class="col-lg-9 chat-data p-0 chat-data-right">

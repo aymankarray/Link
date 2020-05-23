@@ -18,9 +18,9 @@ class Chat extends BaseController {
 				public function chatListing()
 			    {
 
-			    	    $data['reservationRecords'] = $this->chat_model->ChatListing($this->vendorId) ;
+			    	    $data['ChatRecords'] = $this->chat_model->ChatListing($this->vendorId) ;
 
-			    	    	foreach ($data['reservationRecords'] as $key ) {                
+			    	    	foreach ($data['ChatRecords'] as $key ) {                
 				                        $key->ChatPartListing             = $this->chat_model->ChatPartListing($key->disscussionId);
 				                        $key->messageListing              = $this->chat_model->messageListing($key->disscussionId) ; 
 				                  }
