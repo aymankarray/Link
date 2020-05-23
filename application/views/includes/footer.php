@@ -53,6 +53,50 @@
       <!-- Custom JavaScript -->
       <script  src="<?php echo base_url() ;  ?>assets/js/custom.js"></script>
       <script src="<?php echo base_url() ;  ?>assets/js/dropify.min.js"></script>
+      <script type="text/javascript">
+         
+            $(document).ready(function(){
+                // Basic
+                $('.dropify').dropify();
+
+                // Translated
+                $('.dropify-fr').dropify({
+                    messages: {
+                        default: 'Glissez-déposez un fichier ici ou cliquez',
+                        replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                        remove:  'Supprimer',
+                        error:   'Désolé, le fichier trop volumineux'
+                    }
+                });
+
+                // Used events
+                var drEvent = $('#input-file-events').dropify();
+
+                drEvent.on('dropify.beforeClear', function(event, element){
+                    return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+                });
+
+                drEvent.on('dropify.afterClear', function(event, element){
+                    alert('File deleted');
+                });
+
+                drEvent.on('dropify.errors', function(event, element){
+                    console.log('Has Errors');
+                });
+
+                var drDestroy = $('#input-file-to-destroy').dropify();
+                drDestroy = drDestroy.data('dropify')
+                $('#toggleDropify').on('click', function(e){
+                    e.preventDefault();
+                    if (drDestroy.isDropified()) {
+                        drDestroy.destroy();
+                    } else {
+                        drDestroy.init();
+                    }
+                })
+            });
+        
+      </script>
 
    
 <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;">
