@@ -110,7 +110,7 @@
                                                       <h6 class="mb-0">
                                                          <?php foreach ($key->ChatPartListing as $keyCP ) {
                                                             echo $keyCP->name.',' ;
-                                                         }?
+                                                         } ?>
                                                       </h6>
                                                       <span>  </span>
                                                    </div>
