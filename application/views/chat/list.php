@@ -10,7 +10,7 @@
                                     <div class="chat-search pt-3 pl-3">
                                        <div class="d-flex align-items-center">
                                           <div class="chat-profile mr-3">
-                                             <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="chat-user" class="avatar-60 ">
+                                             <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="chat-user" class="alligator-turtle" >
                                           </div>
                                           <div class="chat-caption">
                                              <h5 class="mb-0"><?php echo $name ?></h5>
@@ -23,7 +23,7 @@
                                              <button type="submit" class="close-popup p-3"><i class="ri-close-fill"></i></button>
                                              <div class="user text-center mb-4">
                                                 <a class="avatar m-0">
-                                                <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="avatar">
+                                                <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="avatar" class="alligator-turtle" >
                                                 </a>
                                                 <div class="user-name mt-4">
                                                    <h4><?php echo $name ?></h4>
@@ -105,7 +105,7 @@
                                                    <div class="avatar mr-2">
                                                       <?php foreach ($key->ChatPartListing as $keyCP ) {
                                                             if( $keyCP->userId != $userId ){ ?>
-                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="avatar-50 ">
+                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="alligator-turtle">
                                                          <?php  } } ?>
                                                       
                                                       <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-success"></i></span>
