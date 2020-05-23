@@ -15,10 +15,10 @@ class Chat_model extends CI_Model
      */
     function ChatListing($userId)
     {
-        $this->db->select('BaseTbl.disscussionId , BaseTbl.createDTM , BaseTbl.hote , BaseTbl.nom , BaseTbl.createdBy , BaseTbl.createdDate , Users.name , Users.userId ');
+        $this->db->select('BaseTbl.disscussionId , BaseTbl.createDTM , BaseTbl.hote , BaseTbl.nom  , Users.name , Users.userId ');
         $this->db->from('tbl_disscussion as BaseTbl');
         $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.hote');
-        $this->db->join('tbl_disscussion_part as Parts','Users.UserId = BaseTbl.hote');
+        $this->db->join('tbl_disscussion_part as Parts','Parts.disscussionId = BaseTbl.disscussionId');
         $this->db->where ('Parts.userId = ', $userId );
         $this->db->order_by('BaseTbl.lastUpdate','DESC'); 
         $this->db->limit(100);      
