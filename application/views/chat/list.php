@@ -105,7 +105,7 @@
                                                    <div class="avatar mr-2">
                                                       <?php foreach ($key->ChatPartListing as $keyCP ) {
                                                             if( $keyCP->userId != $userId ){ ?>
-                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="chatuserimage" class="avatar-50 ">
+                                                               <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $keyCP->avatar ?>" alt="chatuserimage" class="avatar-50 ">
                                                          <?php  } } ?>
                                                       
                                                       <span class="avatar-status"><i class="ri-checkbox-blank-circle-fill text-success"></i></span>
