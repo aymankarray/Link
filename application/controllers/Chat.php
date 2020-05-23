@@ -1,6 +1,8 @@
 
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php if(!defined('BASEPATH')) exit('No direct script access allowed');
+
+require APPPATH . '/libraries/BaseController.php';
+
 
 class Chat extends BaseController {
 
@@ -16,7 +18,7 @@ class Chat extends BaseController {
 				public function chatListing()
 			    {
 
-			    	    $data['reservationRecords'] = $this->chat_model->ChatListing() ;
+			    	    $data['reservationRecords'] = $this->chat_model->ChatListing($this->vendorId) ;
 
 			    	    	foreach ($data['reservationRecords'] as $key ) {                
 				                        $key->ChatPartListing             = $this->chat_model->ChatPartListing($key->disscussionId);
