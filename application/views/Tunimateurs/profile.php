@@ -469,7 +469,7 @@
                                                    <h6>Mobile</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php if($SA == 1 ){echo $userInfo->mobile} ;?></p>
+                                                   <p class="mb-0"><?php if($SA == 1 ){echo $userInfo->mobile ;} ?></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>Address</h6>
