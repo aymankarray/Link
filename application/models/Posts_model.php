@@ -30,13 +30,12 @@ class Posts_model extends CI_Model
     }
 
 
-    function deleteComment($commentId)
+    function deleteComment($commentInfo, $commentId)
     {
+         $this->db->where('commentId', $commentId);
+        $this->db->update('tbl_comment', $commentInfo);
         
-        $this->db->where('commentId', $commentId);
-        $delete_id = $this->db->delete('tbl_comment');
-         
-        return $delete_id;
+        return TRUE;
     }
 
 
@@ -45,6 +44,7 @@ class Posts_model extends CI_Model
        $this->db->select('BaseTbl.postId , BaseTbl.Content , BaseTbl.userId , BaseTbl.photo   , BaseTbl.DatePosted , User.name , User.avatar ');
        $this->db->from('tbl_post as BaseTbl');
        $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
+       $this->db->where('BaseTbl.isDeleted', 0 );
        $this->db->order_by('BaseTbl.DatePosted DESC ');
        $this->db->limit('10');
        $query = $this->db->get();

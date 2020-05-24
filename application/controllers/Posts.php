@@ -113,7 +113,12 @@ class Posts extends BaseController {
 
     public function deleteComment($commentId)
     {
-        $result = $this->posts_model->deleteComment($commentId);
+
+
+        $commentInfo = array(        
+           'isDeleted' => 1 ,
+       );
+        $result = $this->posts_model->deleteComment($commentInfo,$commentId);
         return $result ; 
     }
 
