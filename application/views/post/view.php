@@ -94,10 +94,10 @@
 
                               </div>
 
-                              <?php if ($record->photo != 'Post___' ) { ?>
+                              <?php if ($postRecords->photo != 'Post___' ) { ?>
                               <div class="user-post">
                                  <a href="javascript:void();">
-                                    <img src="<?php echo base_url() ?>uploads/post/<?php echo $record->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
+                                    <img src="<?php echo base_url() ?>uploads/post/<?php echo $postRecords->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
                               </div>
                            <?php }  ?>
                               
