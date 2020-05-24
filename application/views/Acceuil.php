@@ -7,6 +7,7 @@
 
 
 
+
 <div id="content-page" class="content-page">
             <div class="container">
                <div class="row">
@@ -233,6 +234,17 @@
                               </div>
                               <?php if ($record->photo != 'Post___' ) { ?>
                               <div class="user-post">
+
+                                     <script type="text/javascript">
+      $('document').ready(function(){
+        $('div.content').embedly({
+          maxWidth: 450,
+          wmode: 'transparent',
+          method: 'after'       
+        });
+      });
+    </script>
+
                                  <a href="javascript:void();">
                                     <img src="<?php echo base_url() ?>uploads/post/<?php echo $record->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
                               </div>
