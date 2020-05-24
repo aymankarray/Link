@@ -167,7 +167,7 @@
                                           <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
                                           <i class="ri-more-fill"></i>
                                           </span>
-                                         <?php if ($userId == $key->userId ){  ?>
+                                         <?php if ($userId == $record->userId ){  ?>
                                           <div class="dropdown-menu m-0 p-0">
                                              <a class="dropdown-item p-3"  >
                                                 <div class="d-flex align-items-top">
