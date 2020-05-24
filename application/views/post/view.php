@@ -40,7 +40,7 @@
                                                    </div>
                                                 </div>
                                              </a>
-                                             <a class="dropdown-item p-3" id="<?php echo $record->postId ?>" onclick="deleteP(this.id)" >
+                                             <a class="dropdown-item p-3" id="<?php echo $postRecords->postId ?>" onclick="deleteP(this.id)" >
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
                                                    <div class="data ml-2">
@@ -50,7 +50,7 @@
                                                 </div>
                                              </a>
                                              <?php } else { ?>
-                                             <a class="dropdown-item p-3" id="<?php echo $record->postId ?>" onclick="deleteP(this.id)" >
+                                             <a class="dropdown-item p-3" id="<?php echo $postRecords->postId ?>" onclick="deleteP(this.id)" >
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
                                                    <div class="data ml-2">
@@ -174,7 +174,7 @@
                                  </ul>
                                 
                                  <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$postRecords->postId ?>">
-                                    <input type="text" name="comment" class="form-control rounded" required>
+                                    <input type="text" name="comment<?php echo $postRecords->postId ?>" class="form-control rounded" required>
                                     <div class="comment-attagement d-flex">
                                       
                                        <a href="#" onclick="document.getElementById('commentF').submit();" ><i class="ri-link mr-3"></i></a>
