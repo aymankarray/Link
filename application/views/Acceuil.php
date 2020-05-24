@@ -235,7 +235,7 @@
                                     </p>
 
                               </div>
-                              <?php if ($record->photo != '' ) { ?>
+                              <?php if ($record->photo != 'Post___' ) { ?>
                               <div class="user-post">
                                  <a href="javascript:void();">
                                     <img src="<?php echo base_url() ?>uploads/post/<?php echo $record->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
