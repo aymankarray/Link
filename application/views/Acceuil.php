@@ -294,7 +294,7 @@
                                                                   
                                  </ul>
                                  <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$record->postId ?>">
-                                    <input type="text" name="comment" class="form-control rounded" style="background-color: aliceblue " required>
+                                    <input type="text" name="comment" class="form-control rounded" placeholder="votre commentaire " style="background-color: aliceblue " required>
                                     <div class="comment-attagement d-flex">
                                       
                                        <a href="#" onclick="document.getElementById('commentF').submit();" ><i class="ri-link mr-3"></i></a>
