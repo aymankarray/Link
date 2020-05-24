@@ -123,6 +123,17 @@ class Posts extends BaseController {
     }
 
 
+        public function deletePost($postId)
+    {
+
+        $postInfo = array(        
+           'isDeleted' => 1 ,
+       );
+        $result = $this->posts_model->deletePost($postInfo,$postId);
+        return $result ; 
+    }
+
+
      public function Like($postId)
     {
         

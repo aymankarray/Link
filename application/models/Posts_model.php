@@ -20,23 +20,7 @@ class Posts_model extends CI_Model
     }
 
 
-    function addNewComment($CommentInfo)
-    {
-        $this->db->trans_start();
-        $this->db->insert('tbl_comment', $CommentInfo);
-        $insert_id = $this->db->insert_id();
-        $this->db->trans_complete();  
-        return $insert_id;
-    }
 
-
-    function deleteComment($commentInfo, $commentId)
-    {
-         $this->db->where('commentId', $commentId);
-        $this->db->update('tbl_comment', $commentInfo);
-        
-        return TRUE;
-    }
 
 
     function postsListing()
@@ -76,6 +60,36 @@ class Posts_model extends CI_Model
         return $query->row();
     }
 
+        function deletePost($postInfo, $postId)
+    {
+         $this->db->where('postId', $postId);
+        $this->db->update('tbl_post', $postInfo);
+        
+        return TRUE;
+    }
+
+
+
+
+/************************ End Comments *****************************/
+
+    function addNewComment($CommentInfo)
+    {
+        $this->db->trans_start();
+        $this->db->insert('tbl_comment', $CommentInfo);
+        $insert_id = $this->db->insert_id();
+        $this->db->trans_complete();  
+        return $insert_id;
+    }
+
+
+    function deleteComment($commentInfo, $commentId)
+    {
+         $this->db->where('commentId', $commentId);
+        $this->db->update('tbl_comment', $commentInfo);
+        
+        return TRUE;
+    }
 
 
     function CommentsListing($postId)
@@ -90,7 +104,8 @@ class Posts_model extends CI_Model
         return $result;
     }
 
-
+/************************ End Comments *****************************/
+/************************ LIKES *****************************/
      function addNewLike($likeInfo)
     {
         $this->db->trans_start();
@@ -127,7 +142,7 @@ class Posts_model extends CI_Model
         return $result;
     }
 
-
+/************************ END LIKES *****************************/
 
 
 }

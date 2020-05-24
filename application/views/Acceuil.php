@@ -148,7 +148,7 @@
 
                      <?php   if (!empty($postRecords)) {    foreach ($postRecords as $record ) {  ?>
 
-                     <div class="col-sm-12">
+                     <div id ="post<?php echo $record->postId ?>" class="col-sm-12">
                         <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                            <div class="iq-card-body">
                               <div class="user-post-data">
@@ -168,7 +168,7 @@
                                           <i class="ri-more-fill"></i>
                                           </span>
                                           <div class="dropdown-menu m-0 p-0">
-                                             <a class="dropdown-item p-3" href="#">
+                                             <a class="dropdown-item p-3" href="#" id="<?php echo $record->postId ?>" onclick="deleteP(this.id)" >
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
                                                    <div class="data ml-2">
@@ -519,6 +519,21 @@
             success: function(result){
             $('#'+clickid).hide();
             $('#Liked'+clickid).show();
+                        }
+            });
+
+           
+      }
+
+
+       function deleteP (clickid) {
+         link  = "<?php echo base_url()?>Posts/deletePost/"+clickid  ; 
+
+         $.ajax({
+            url: link , 
+            success: function(result){
+            $('#Post'+clickid).hide();
+ 
                         }
             });
 
