@@ -161,7 +161,7 @@
                                        <p class="mb-0 d-inline-block">a mise à jour son statut</p>
                                        <p class="mb-0 text-primary"><a href="<?php echo base_url().'Posts/post/'.$record->postId ?>"><?php echo xTimeAgo($record->DatePosted,date('Y-m-d H:i:s')) ; ?></a></p>
                                     </div>
-                                    <!--
+                                    
                                     <div class="iq-card-post-toolbar">
                                        <div class="dropdown">
                                           <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
@@ -207,7 +207,7 @@
                                           </div>
                                        </div>
                                     </div>
-                                       -->
+                                      
                                  </div>
                               </div>
                               <div class="mt-3" >

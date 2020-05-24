@@ -69,7 +69,7 @@ class Posts extends BaseController {
         $photo = $this->input->post('postText');
 
 
-                $file_name = 'Post_'.$result.'_'.$name.'_'.$_FILES['file']['name'];
+                $file_name = 'Post__'.$name.'_'.$_FILES['file']['name'];
                 $file_tmp = $_FILES['file']['tmp_name'];
                 
                 $file_destination = 'uploads/post/' . $file_name;
