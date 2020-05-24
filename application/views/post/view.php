@@ -23,44 +23,47 @@
                                           <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
                                           <i class="ri-more-fill"></i>
                                           </span>
+                                          <div class="iq-card-post-toolbar">
+                                       <div class="dropdown">
+                                          <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
+                                          <i class="ri-more-fill"></i>
+                                          </span>
+                                         
                                           <div class="dropdown-menu m-0 p-0">
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-save-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Save Post</h6>
-                                                      <p class="mb-0">Add this to your saved items</p>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Hide Post</h6>
-                                                      <p class="mb-0">See fewer posts like this.</p>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-user-unfollow-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Unfollow User</h6>
-                                                      <p class="mb-0">Stop seeing posts but stay friends.</p>
-                                                   </div>
-                                                </div>
-                                             </a>
-                                             <a class="dropdown-item p-3" href="#">
+                                             <?php if ($userId == $postRecords->userId ){  ?>
+                                             <a class="dropdown-item p-3"  >
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
                                                    <div class="data ml-2">
-                                                      <h6>Notifications</h6>
-                                                      <p class="mb-0">Turn on notifications for this post</p>
+                                                      <h6>Modifier</h6>
+                                                      <p class="mb-0">modifier le contenu de ce post</p>
                                                    </div>
                                                 </div>
                                              </a>
+                                             <a class="dropdown-item p-3" id="<?php echo $record->postId ?>" onclick="deleteP(this.id)" >
+                                                <div class="d-flex align-items-top">
+                                                   <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
+                                                   <div class="data ml-2">
+                                                      <h6>Supprimer</h6>
+                                                      <p class="mb-0">Ajouter au Corbeille</p>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                             <?php } else { ?>
+                                             <a class="dropdown-item p-3" id="<?php echo $record->postId ?>" onclick="deleteP(this.id)" >
+                                                <div class="d-flex align-items-top">
+                                                   <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
+                                                   <div class="data ml-2">
+                                                      <h6>Signaler</h6>
+                                                      <p class="mb-0">Signaler ce post </p>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          <?php }  ?>
                                           </div>
+                                         
+                                       </div>
+                                    </div>
                                        </div>
                                     </div>
                                  </div>
@@ -90,6 +93,13 @@
                                     </p>
 
                               </div>
+
+                              <?php if ($record->photo != 'Post___' ) { ?>
+                              <div class="user-post">
+                                 <a href="javascript:void();">
+                                    <img src="<?php echo base_url() ?>uploads/post/<?php echo $record->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
+                              </div>
+                           <?php }  ?>
                               
                               <div class="comment-area mt-3">
                                  <div class="d-flex justify-content-between align-items-center">
