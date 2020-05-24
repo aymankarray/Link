@@ -167,8 +167,9 @@
                                           <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
                                           <i class="ri-more-fill"></i>
                                           </span>
-                                         <?php if ($userId == $record->userId ){  ?>
+                                         
                                           <div class="dropdown-menu m-0 p-0">
+                                             <?php if ($userId == $record->userId ){  ?>
                                              <a class="dropdown-item p-3"  >
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
@@ -187,9 +188,19 @@
                                                    </div>
                                                 </div>
                                              </a>
-                                            
+                                             <?php } else { ?>
+                                             <a class="dropdown-item p-3" id="<?php echo $record->postId ?>" onclick="deleteP(this.id)" >
+                                                <div class="d-flex align-items-top">
+                                                   <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
+                                                   <div class="data ml-2">
+                                                      <h6>Supprimer</h6>
+                                                      <p class="mb-0">Ajouter au Corbeille</p>
+                                                   </div>
+                                                </div>
+                                             </a>
+                                          <?php }  ?>
                                           </div>
-                                          <?php } ?>
+                                         
                                        </div>
                                     </div>
                                       
