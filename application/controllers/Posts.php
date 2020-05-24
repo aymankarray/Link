@@ -28,6 +28,7 @@ class Posts extends BaseController {
 
     public function Acceuil()
     {
+        $data  ['userId'] = $this->vendorId ; 
          $data['ActuRecords'] = $this->actualite_model->actuListing();
          $data['projectRecords'] = $this->project_model->projectListing();
          

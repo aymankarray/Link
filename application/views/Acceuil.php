@@ -274,7 +274,7 @@
                                      { 
                                      foreach ($record->commentsRecords as $key ) {  ?>     
                                     
-                                    <li class="mb-2" style="background-color: aliceblue ">
+                                    <li class="mb-2" style="background-color: #FFD4D7  ">
                                        <div class="d-flex flex-wrap">
                                           <div class="user-img">
                                              <img class="alligator-turtle  mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>"  >
@@ -294,7 +294,7 @@
                                                                   
                                  </ul>
                                  <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$record->postId ?>">
-                                    <input type="text" name="comment" class="form-control rounded" placeholder="votre commentaire " style="background-color: aliceblue " required>
+                                    <input type="text" name="comment" class="form-control rounded" placeholder="votre commentaire " style="background-color: #FFD4D7 " required>
                                     <div class="comment-attagement d-flex">
                                       
                                        <a href="#" onclick="document.getElementById('commentF').submit();" ><i class="ri-link mr-3"></i></a>
