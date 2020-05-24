@@ -298,6 +298,12 @@
                                              <div class="d-flex flex-wrap align-items-center comment-activity">
                                              
                                                 <span class="text-primary" > <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </span>
+
+                                                                                                 .
+                                                 <?php if ($userId == $key->userId ){  ?>
+                                                 <a class="text"  id="<?php echo $key->commentId ?>" onclick="deleteComment(this.id)" > <i class="ri-delete-bin-line"></i> supprimer </a>
+                                                 <?php } ?>
+
                                              </div>
                                           </div>
                                        </div>
