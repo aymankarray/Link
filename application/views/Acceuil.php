@@ -167,6 +167,7 @@
                                           <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
                                           <i class="ri-more-fill"></i>
                                           </span>
+                                         <?php if ($userId == $key->userId ){  ?>
                                           <div class="dropdown-menu m-0 p-0">
                                              <a class="dropdown-item p-3"  >
                                                 <div class="d-flex align-items-top">
@@ -186,7 +187,7 @@
                                                    </div>
                                                 </div>
                                              </a>
-                                             
+                                             <?php } ?>
                                              
                                           </div>
                                        </div>
@@ -294,11 +295,11 @@
                                                                   
                                  </ul>
                                  <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$record->postId ?>">
-                                    <input type="text" name="comment" class="form-control rounded" placeholder="votre commentaire " style="background-color: #FFF0F1  " required>
+                                    <input type="text" name="comment<?php echo $record->postId ?>" class="form-control rounded" placeholder="votre commentaire " style="background-color: #FFF0F1  " required>
                                     <div class="comment-attagement d-flex">
-                                      
-                                       <a href="#" onclick="document.getElementById('commentF').submit();" ><i class="ri-link mr-3"></i></a>
+
                                        <!-- 
+                                       <a href="#" onclick="document.getElementById('commentF').submit();" ><i class="ri-link mr-3"></i></a>
                                        <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
                                        <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
                                       -->

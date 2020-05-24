@@ -46,13 +46,6 @@ class Posts extends BaseController {
     }
 
 
-        public function Comments($postId)
-    {
-        header('Content-Type: application/json');
-            echo json_encode( $this->posts_model->CommentsListing($postId) , JSON_PRETTY_PRINT);
-       
-    }
-
 
     public function post($post)
     {   $data  ['userId'] = $this->vendorId ; 
@@ -99,7 +92,7 @@ class Posts extends BaseController {
 
      public function addNewComment($postId)
     {
-        $comment = $this->input->post('comment');
+        $comment = $this->input->post('comment'.$postId);
         $commentInfo = array(        
            'content' => NL2BR($comment) ,
            'userId ' => $this->vendorId ,
