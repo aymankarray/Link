@@ -170,10 +170,10 @@
                                           <div class="dropdown-menu m-0 p-0">
                                              <a class="dropdown-item p-3" href="#">
                                                 <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-save-line"></i></div>
+                                                   <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
                                                    <div class="data ml-2">
-                                                      <h6>Save Post</h6>
-                                                      <p class="mb-0">Add this to your saved items</p>
+                                                      <h6>Modifier</h6>
+                                                      <p class="mb-0">modifier le contenu de ce post</p>
                                                    </div>
                                                 </div>
                                              </a>
@@ -181,8 +181,8 @@
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
                                                    <div class="data ml-2">
-                                                      <h6>Hide Post</h6>
-                                                      <p class="mb-0">See fewer posts like this.</p>
+                                                      <h6>Supprimer</h6>
+                                                      <p class="mb-0">Ajouter au Corbeille</p>
                                                    </div>
                                                 </div>
                                              </a>
@@ -195,15 +195,7 @@
                                                    </div>
                                                 </div>
                                              </a>
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Notifications</h6>
-                                                      <p class="mb-0">Turn on notifications for this post</p>
-                                                   </div>
-                                                </div>
-                                             </a>
+                                             
                                           </div>
                                        </div>
                                     </div>
