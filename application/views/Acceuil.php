@@ -193,8 +193,8 @@
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
                                                    <div class="data ml-2">
-                                                      <h6>Supprimer</h6>
-                                                      <p class="mb-0">Ajouter au Corbeille</p>
+                                                      <h6>Signaler</h6>
+                                                      <p class="mb-0">Signaler ce post </p>
                                                    </div>
                                                 </div>
                                              </a>
