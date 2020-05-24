@@ -186,15 +186,7 @@
                                                    </div>
                                                 </div>
                                              </a>
-                                             <a class="dropdown-item p-3" href="#">
-                                                <div class="d-flex align-items-top">
-                                                   <div class="icon font-size-20"><i class="ri-user-unfollow-line"></i></div>
-                                                   <div class="data ml-2">
-                                                      <h6>Unfollow User</h6>
-                                                      <p class="mb-0">Stop seeing posts but stay friends.</p>
-                                                   </div>
-                                                </div>
-                                             </a>
+                                             
                                              
                                           </div>
                                        </div>
@@ -302,7 +294,7 @@
                                                                   
                                  </ul>
                                  <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$record->postId ?>">
-                                    <input type="text" name="comment" class="form-control rounded" required>
+                                    <input type="text" name="comment" class="form-control rounded" style="background-color: aliceblue " required>
                                     <div class="comment-attagement d-flex">
                                       
                                        <a href="#" onclick="document.getElementById('commentF').submit();" ><i class="ri-link mr-3"></i></a>
