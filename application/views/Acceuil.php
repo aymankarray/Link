@@ -543,6 +543,20 @@
            
       }
 
+      
+      function deleteComment (clickid) {
+         link  = "<?php echo base_url()?>Posts/deleteComment/"+clickid  ; 
+
+         $.ajax({
+            url: link , 
+            success: function(result){
+            $('#C'+clickid).hide();
+               }
+            });
+
+           
+      }
+
 
        function deleteP (clickid) {
          link  = "<?php echo base_url()?>Posts/deletePost/"+clickid  ; 

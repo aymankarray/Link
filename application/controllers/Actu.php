@@ -13,7 +13,7 @@ class Actu extends BaseController {
         $this->load->model('actualite_model');
 		$this->load->model('notification_model');
         
-        $this->isLoggedIn();   
+  
     }
     
 

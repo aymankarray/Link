@@ -197,7 +197,7 @@
 
 <script type="text/javascript">
       
-      function like (clickid) {
+  function like (clickid) {
          link  = "<?php echo base_url()?>Posts/Like/"+clickid  ; 
 
          $.ajax({
@@ -211,10 +211,6 @@
            
       }
 
-</script>
-
-
-<script type="text/javascript">
       
       function deleteComment (clickid) {
          link  = "<?php echo base_url()?>Posts/deleteComment/"+clickid  ; 
@@ -224,6 +220,21 @@
             success: function(result){
             $('#C'+clickid).hide();
                }
+            });
+
+           
+      }
+
+
+       function deleteP (clickid) {
+         link  = "<?php echo base_url()?>Posts/deletePost/"+clickid  ; 
+
+         $.ajax({
+            url: link , 
+            success: function(result){
+            $('#post'+clickid).hide();
+ 
+                        }
             });
 
            
