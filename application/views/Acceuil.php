@@ -168,7 +168,7 @@
                                           <i class="ri-more-fill"></i>
                                           </span>
                                           <div class="dropdown-menu m-0 p-0">
-                                             <a class="dropdown-item p-3" href="#"  >
+                                             <a class="dropdown-item p-3"  >
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
                                                    <div class="data ml-2">
@@ -177,7 +177,7 @@
                                                    </div>
                                                 </div>
                                              </a>
-                                             <a class="dropdown-item p-3" href="#" id="<?php echo $record->postId ?>" onclick="deleteP(this.id)" >
+                                             <a class="dropdown-item p-3" id="<?php echo $record->postId ?>" onclick="deleteP(this.id)" >
                                                 <div class="d-flex align-items-top">
                                                    <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
                                                    <div class="data ml-2">
@@ -532,7 +532,7 @@
          $.ajax({
             url: link , 
             success: function(result){
-            $('#Post'+clickid).hide();
+            $('#post'+clickid).hide();
  
                         }
             });
