@@ -39,7 +39,33 @@
         gtag('config', 'UA-151434993-1');
       </script>
 
+      <!-- Fire Base-->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
 
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDfVVw527MNJjPNlERuAh80SGUMfcKwIkM",
+            authDomain: "tunivisions-link.firebaseapp.com",
+            databaseURL: "https://tunivisions-link.firebaseio.com",
+            projectId: "tunivisions-link",
+            storageBucket: "tunivisions-link.appspot.com",
+            messagingSenderId: "272644001004",
+            appId: "1:272644001004:web:dec9a355751019710c69c9",
+            measurementId: "G-9ESX0NM8CG"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+      
       
    <style type="text/css">
     .apexcharts-canvas {
