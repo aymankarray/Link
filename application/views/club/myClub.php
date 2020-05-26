@@ -232,6 +232,7 @@
                                                       <p class="mb-0"><?php echo $PBC->endDate ?></p>
                                                    </div>
                                                    <div class="iq-card-post-toolbar">
+                                                    <!--
                                                       <div class="dropdown">
                                                          <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
                                                          <i class="ri-more-fill"></i>
@@ -284,10 +285,12 @@
                                                             </a>
                                                          </div>
                                                       </div>
+                                                    -->
                                                    </div>
                                                 </div>
                                              </div>
                                              <div class="user-post">
+                                                <h4><?php echo $PBC->description ?></h4>
                                                 <p class="comment-text">
                                                  <?php echo $PBC->description ?>
                                                 </p>
