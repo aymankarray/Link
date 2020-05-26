@@ -74,6 +74,7 @@ class BaseController extends CI_Controller {
 		
 		if (! isset ( $isLoggedIn ) || $isLoggedIn != TRUE) {
 			$this->global ['name'] = '';
+			$this->global ['clubID'] = '';
 		} else {
 			$this->role = $this->session->userdata ( 'role' );
 			$this->vendorId = $this->session->userdata ( 'userId' );

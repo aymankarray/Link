@@ -899,6 +899,7 @@
                         
                      </ul>
                     <?php } ?>
+                    
                       <ul class="navbar-list">
                         <li>
                            <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
