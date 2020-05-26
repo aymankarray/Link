@@ -35,7 +35,7 @@
       <!-- Wow JavaScript -->
       <script  src="<?php echo base_url() ;  ?>assets/js/wow.min.js"></script>
       <!-- Apexcharts JavaScript -->
-      <script  src="<?php echo base_url() ;  ?>assets/js/apexcharts.js"></script>
+      <script defer  src="<?php echo base_url() ;  ?>assets/js/apexcharts.js"></script>
       <!-- Slick JavaScript -->
       <script  src="<?php echo base_url() ;  ?>assets/js/slick.min.js"></script>
       <!-- Select2 JavaScript -->
