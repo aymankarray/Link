@@ -351,34 +351,6 @@
         var options = {
   chart: {
     type: 'area',
-    zoom: {
-            type: 'x',
-            enabled: true,
-            autoScaleYaxis: true
-          },
-    toolbar: {
-            autoSelected: 'zoom'
-          },
-          dataLabels: {
-          enabled: false
-        },
-        markers: {
-          size: 0,
-        },
-        title: {
-          text: 'Stock Price Movement',
-          align: 'left'
-        },
-        fill: {
-          type: 'gradient',
-          gradient: {
-            shadeIntensity: 1,
-            inverseColors: false,
-            opacityFrom: 0.5,
-            opacityTo: 0,
-            stops: [0, 90, 100]
-          },
- 
   },
   series: [{
     name: 'Projets',
