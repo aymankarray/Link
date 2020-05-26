@@ -339,7 +339,7 @@
     data: [   
     <?php foreach ($projetsStat as $key ) { 
                 $date = new DateTime($key->dateS); 
-        echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+        echo '{ x: "'.date_format( $date , 'm-Y').'" , y: '. $key->Cproject.' } , ' ;  } ?>
          ]
   }
   ],xaxis: {
@@ -352,7 +352,7 @@ var chart = new ApexCharts(document.querySelector("#chart2"), options);
 
 chart.render();
 
-
+/*
 
  var options2 = {
           series: [<?php foreach ($projetsStatType as $key ) {  echo  $key->Cproject .','; } ?> ],
@@ -376,5 +376,7 @@ chart.render();
 
         var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
         chart2.render();
+
+*/
 
 </script>
