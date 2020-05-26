@@ -29,7 +29,7 @@
                     <div class="col-md-6"> 
                         <h2><?php echo $actuInfo->titre ?>       </h2>
                         <hr>
-                        <div style="line-height: 1.8;">
+                        <div style="line-height: 2;font-size: 16">
                         <?php echo $actuInfo->description ?>
                         </div>
                    </div>
