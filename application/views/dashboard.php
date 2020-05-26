@@ -361,7 +361,7 @@
          ]
   }
   ],xaxis: {
-    type: "datetime"
+    type: "date",
   }
 
 }
