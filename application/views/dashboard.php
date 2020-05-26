@@ -325,7 +325,17 @@
             </div>
         </div>
     </div>
+</div>
+<!-- row -->
 
+
+
+<!-- row -->
+
+            </div>
+        </div>
+    </div>
+    <!-- row -->
 
     <div class="row">
     
@@ -339,54 +349,56 @@
 
 </div>
 
+</div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script type="text/javascript">
         var options = {
-              chart: {
-                type: 'bar',
-              },
-              series: [{
-                name: 'Projets',
-                data: [   
-                <?php foreach ($projetsStat as $key ) { 
-                            $date = new DateTime($key->dateS); 
-                    echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
-                     ]
-              }
-              ],xaxis: {
-                type: "date",
-              }
+  chart: {
+    type: 'bar',
+  },
+  series: [{
+    name: 'Projets',
+    data: [   
+    <?php foreach ($projetsStat as $key ) { 
+                $date = new DateTime($key->dateS); 
+        echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+         ]
+  }
+  ],xaxis: {
+    type: "date",
+  }
 
+}
+
+var chart = new ApexCharts(document.querySelector("#chart2"), options);
+
+chart.render();
+
+
+
+ var options2 = {
+          series: [<?php foreach ($projetsStatType as $key ) {  echo  $key->Cproject .','; } ?> ],
+          chart: {
+          width: 380,
+          type: 'pie',
+        },
+        labels: [<?php foreach ($projetsStatType as $key ) {  echo  '"'.$key->type .'",' ; }  ?> ],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
             }
+          }
+        }]
+        };
 
-            var chart = new ApexCharts(document.querySelector("#chart2"), options);
-
-            chart.render();
-
-</script>
-<script type="text/javascript">
-
-             var options2 = {
-                      series: [<?php foreach ($projetsStatType as $key ) {  echo  $key->Cproject .','; } ?> ],
-                      chart: {
-                      width: 380,
-                      type: 'pie',
-                    },
-                    labels: [<?php foreach ($projetsStatType as $key ) {  echo  '"'.$key->type .'",' ; }  ?> ],
-                    responsive: [{
-                      breakpoint: 480,
-                      options: {
-                        chart: {
-                          width: 200
-                        },
-                        legend: {
-                          position: 'bottom'
-                        }
-                      }
-                    }]
-                    };
-
-                    var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
-                    chart2.render();
+        var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+        chart2.render();
 
 </script>
