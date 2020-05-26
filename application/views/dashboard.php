@@ -10,7 +10,7 @@
                             <div class="card" style="background-color: #343a40; " >
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0 " style="color: #fff" >Clubs Senior</h6>
+                                        <h6 class="card-title mb-0 " style="color: #fff" ><i class="ri-group-fill mr-3"></i> Clubs Senior</h6>
                                         <div class="dropdown mb-2">
                                         </div>
                                     </div>
@@ -21,7 +21,7 @@
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff">Clubs Junior</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-group-2-fill mr-3"></i>Clubs Junior</h6>
                                         <div class="dropdown mb-2">
                                         </div>
                                     </div>
@@ -70,7 +70,7 @@
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-ancient-gate-fill mr-3 "></i> Membres Alumni</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-building-3-fill mr-3"></i> Membres Alumni</h6>
                                         <div class="dropdown mb-2">
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@
                             <div class="card" style="background-color: #343a40;color: #fff " >
                                 
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff">Projets</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-archive-fill mr-3"></i> Projets</h6>
                                         <div class="dropdown mb-2">
                                         </div>
                                     </div>
@@ -96,6 +96,7 @@
                                             <h3 class="mb-2" style="color: #fff" ><?php echo $projets+250  ; ?></h3>
                                         </div>
                                     </div>
+                                    <hr>
                                 </div>
                             </div>
                         </div>
