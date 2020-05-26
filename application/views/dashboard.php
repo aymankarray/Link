@@ -354,16 +354,10 @@
   },
   series: [{
     name: 'Projets',
-    data: [<?php foreach ($projetsStat as $key ) {
-        echo $key->Cproject.',' ;
-    }
-
-    ]
+    data: [<?php foreach ($projetsStat as $key ) {echo $key->Cproject.',' ;  }?>]
   }],
   xaxis: {
-    categories: [<?php foreach ($projetsStat as $key ) {
-        echo $key->dateS.',' ;
-    }]
+    categories: [<?php foreach ($projetsStat as $key ) { echo $key->dateS.',' ;?>}]
   }
 }
 
