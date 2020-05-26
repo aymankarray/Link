@@ -376,12 +376,12 @@ chart.render();
 
 
  var options2 = {
-          series: [<?php foreach ($projetsStat as $key ) {  echo  $key->Cproject .',' } ?> ],
+          series: [<?php foreach ($projetsStat as $key ) {  echo  $key->Cproject .','; } ?> ],
           chart: {
           width: 380,
           type: 'pie',
         },
-        labels: [<?php foreach ($projetsStat as $key ) {  echo  $key->type .',' }  ?> ],
+        labels: [<?php foreach ($projetsStat as $key ) {  echo  $key->type .',' ; }  ?> ],
         responsive: [{
           breakpoint: 480,
           options: {
