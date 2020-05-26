@@ -234,30 +234,7 @@
                                         </thead>
                                         <?php $c= $c + 1 ;  }   }else { echo "Il y a pas de données";} ?>
                 </table>
-                <!--
-                <div class="d-flex flex-column">
-                    <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
-                        <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $membre->userId ?>" class="d-flex align-items-center border-bottom">
-                            <div class="mr-3">
-                                <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle  mr-3" alt="user">
-                            </div>
-                            <div class="w-100">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="text-body "><?php echo $membre->name ?></h5>
-                                    <p class="text-muted ">
-                                        <?php echo $membre->scores ?> Points</p>
-                                </div>
-                               <small>
-                                <p class="text-muted tx-13">Club Tunivisions
-                                    <?php echo $membre->clubName ?>
-                                </p>
-                                </small>
-                            </div>
-                           
-                        </a>
-                        <?php }  }else { echo "Il y a pas de données";} ?>
-                </div>
-            -->
+               
             </div>
         </div>
     </div>
@@ -329,6 +306,17 @@
 <!-- row -->
 
 
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div id="chart"></div>
+            </div>
+
+            <div class="col-md-4">
+                <div id="chart2"></div>
+            </div>
+
+        </div>
 
 <!-- row -->
 
@@ -337,17 +325,7 @@
     </div>
     <!-- row -->
 
-    <div class="row">
     
-    <div class="col-md-12">
-        <div id="chart"></div>
-    </div>
-
-    <div class="col-md-4">
-        <div id="chart2"></div>
-    </div>
-
-</div>
 
 </div>
 </div>
