@@ -488,7 +488,7 @@
                                              <h4 class="mb-3">Président</h4>
                                              <ul class="suggestions-lists m-0 p-0">
                                                                                                 <?php foreach ($bureauExe as $b ) {
-                                          if($b->role == 'Président'){
+                                          if($b->role == 1 || $b->role == 2 ){
                                     ?>
 
 
@@ -508,7 +508,7 @@
                                              <ul class="suggestions-lists m-0 p-0">
                                                 
                                                 <?php foreach ($bureauExe as $b ) {
-                                                      if($b->role != 'Président'){
+                                                      if($b->role != 1 || $b->role != 2 ){
                                                 ?>
 
 
