@@ -21,7 +21,7 @@ class Project extends BaseController {
 		               
 		                $searchText='' ;
 		                $data['projectRecords'] = $this->project_model->projectListing();
-                          $this->global['pageTitle'] = 'CodeInsect : club  Listing';
+                          $this->global['pageTitle'] = 'Projets ';
 		                  $this->global['active'] = 'projects';
 		                $this->loadViews("project/list", $this->global, $data, NULL);   
 		        }
@@ -31,7 +31,7 @@ class Project extends BaseController {
                 {
                         $searchText='' ;
                         $data['projectRecords'] = $this->project_model->projectListingByClub($this->clubID);
-                        $this->global['pageTitle'] = 'CodeInsect : club  Listing';
+                        $this->global['pageTitle'] = 'Projets ';
                         $this->global['active'] = 'projects';
                         $this->loadViews("project/ourProject", $this->global, $data, NULL);   
                 }
@@ -47,8 +47,8 @@ class Project extends BaseController {
                         
                         $data['projectRecords'] = $this->project_model->projectOldListing($titre);
                         
-                        $this->global['pageTitle'] = 'CodeInsect : club  Listing';
-                        $this->global['active'] = 'projects';
+                        $this->global['pageTitle'] = 'Projets ';
+                        
                         
                         $this->loadViews("project/old", $this->global, $data, NULL);   
                 }
@@ -64,7 +64,7 @@ class Project extends BaseController {
                         
                         $data['projectRecords'] = $this->project_model->ScoringProjectListing($titre);
                         
-                        $this->global['pageTitle'] = 'CodeInsect : club  Listing';
+                        $this->global['pageTitle'] = 'Scoring ';
                         $this->global['active'] = 'projects';
                         
                         $this->loadViews("project/old", $this->global, $data, NULL);   
@@ -82,8 +82,7 @@ class Project extends BaseController {
 
                         $data['resource'] = $this->ressource_model->ressourceListingByProject($projectID);
                         
-		                $this->global['pageTitle'] = 'CodeInsect : club  Listing';
-		             $this->global['active'] = 'projects';
+                        $this->global['pageTitle'] = $data["projectInfo"]->titre ;
 		                $this->loadViews("project/view", $this->global, $data, NULL);   
 		        }
 				
@@ -93,8 +92,10 @@ class Project extends BaseController {
 			            $data['roles'] = $this->user_model->getUserRoles();
 			            $data['clubs'] = $this->user_model->getClubs();
                         $data['members'] = $this->user_model->userListingByclub($this->vendorId,$this->clubID);
-                         $this->global['active'] = 'project';
-			            $this->global['pageTitle'] = 'CodeInsect : Add New User';
+
+                       $this->global['pageTitle'] = 'Ajouter un projet ';
+
+
 			            $this->loadViews("project/New", $this->global, $data, NULL);
 			    }
 
