@@ -816,11 +816,11 @@
                         </li>
                         <li>
                            <a href="<?php echo base_url() ?>" class="iq-waves-effect d-flex align-items-center">
-                           <i class="ri-home-line"></i>
+                           <i class="ri-home-4-fill"></i>
                            </a>
                         </li>
                         <li class="nav-item">
-                           <a class="search-toggle iq-waves-effect" href="#"><i class="ri-message-2-line"></i></a>
+                           <a class="search-toggle iq-waves-effect" href="#"><i class="ri-question-answer-fill"></i></a>
                            <div class="iq-sub-dropdown iq-sub-dropdown-large">
                               <div class="iq-card shadow-none m-0">
                                  <div class="iq-card-body p-0 ">
@@ -862,7 +862,7 @@
                            </div>
                         </li>
                          <li class="nav-item">
-                           <a class="search-toggle iq-waves-effect" href="#"><i class="ri-notification-line"></i></i></a>
+                           <a class="search-toggle iq-waves-effect" href="#"><i class="ri-notification-4-fill"></i></a>
                            <div class="iq-sub-dropdown iq-sub-dropdown-large">
                               <div class="iq-card shadow-none m-0">
                                  <div class="iq-card-body p-0 ">
