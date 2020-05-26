@@ -99,7 +99,7 @@ class Scores_club_model extends CI_Model
         
         $this->db->from('tbl_project as BaseTbl');
 
-        $this->db->groupe_by('dateS');
+        $this->db->group_by('dateS');
         $this->db->order_by('dateS ASC');
         
 
