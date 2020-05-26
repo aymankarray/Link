@@ -293,7 +293,7 @@
                                                 </p>
                                                 <a href="javascript:void();"><img src="https://www.tunivisions.link/uploads/projet/<?php echo $PBC->banner ?>" alt="post-image" class="img-fluid w-100"></a>
                                              </div>
-                                             <!--
+                                            
                                              <div class="comment-area mt-3">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                    <div class="like-block position-relative d-flex align-items-center">
@@ -354,6 +354,7 @@
                                                    </div>
                                                 </div>
                                                 <hr>
+                                                <!--
                                                 <ul class="post-comments p-0 m-0">
                                                    <li class="mb-2">
                                                       <div class="d-flex flex-wrap">
@@ -390,6 +391,9 @@
                                                       </div>
                                                    </li>
                                                 </ul>
+
+                                                -->
+                                                <!--  
                                                 <form class="comment-text d-flex align-items-center mt-3" action="javascript:void(0);">
                                                    <input type="text" class="form-control rounded">
                                                    <div class="comment-attagement d-flex">
@@ -397,11 +401,13 @@
                                                       <a href="javascript:void();"><i class="ri-user-smile-line mr-3"></i></a>
                                                       <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
                                                    </div>
-                                                </form>
+                                                </form>-->
+                                             
+
                                              </div>
-                                         
+
                                           </div>
-                                            -->
+                                         
                                           
                                           
                                        </div>
