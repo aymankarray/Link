@@ -294,7 +294,7 @@
                                                 <p class="comment-text">
                                                  <?php echo $PBC->description ?>
                                                 </p>
-                                                <?php if (PBC->banner != ''){?>
+                                                <?php if ($PBC->banner != ''){ ?>
                                                 <a href="javascript:void();"><img src="https://www.tunivisions.link/uploads/projet/<?php echo $PBC->banner ?>" alt="post-image" class="img-fluid w-100"></a>
                                                 <?php }  ?>
                                              </div>
