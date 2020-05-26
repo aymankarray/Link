@@ -350,7 +350,7 @@
 <script type="text/javascript">
         var options = {
   chart: {
-    type: 'area',
+    type: 'bar',
   },
   series: [{
     name: 'Projets',
