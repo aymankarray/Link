@@ -96,8 +96,9 @@
                                             <h3 class="mb-2" style="color: #fff" ><?php echo $projets+250  ; ?></h3>
                                         </div>
                                     </div>
-                                    <hr>
+                                   
                                 </div>
+                                 <hr>
                             </div>
                         </div>
 
