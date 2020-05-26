@@ -100,14 +100,14 @@
                             <div class="card" style="background-color: #343a40;color: #fff " >
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-home-smile-2-fill mr-3"></i>Membres Junior</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-archive-fill mr-3"></i> Projets</h6>
                                         <div class="dropdown mb-2">
 
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6 col-md-12 col-xl-5">
-                                            <h3 class="mb-2" style="color: #fff" ><?php echo $tunimateursAppJ ;?></h3>
+                                            <h3 class="mb-2" style="color: #fff" ><?php echo $projets ;?></h3>
                                         </div>
                                         <div class="col-6 col-md-12 col-xl-7">
                                             <div id="sparklinePie"></div>
@@ -116,14 +116,14 @@
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff" ><i class="ri-building-2-fill mr-3"></i>Membres Senior</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff" ><i class="ri-building-2-fill mr-3"></i></h6>
                                         <div class="dropdown mb-2">
 
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6 col-md-12 col-xl-5">
-                                            <h3 class="mb-2" style="color: #fff"><?php echo $tunimateursApp ;?></h3>
+                                            <h3 class="mb-2" style="color: #fff"></h3>
                                         </div>
                                         <div class="col-6 col-md-12 col-xl-7">
                                             <div id="sparklinePie"></div>
@@ -133,13 +133,13 @@
                                     <hr>
 
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-building-3-fill mr-3"></i> Membres Alumni</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"></h6>
                                         <div class="dropdown mb-2">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6 col-md-12 col-xl-5">
-                                            <h3 class="mb-2" style="color: #fff"><?php echo $tunimateursAppA ; ?></h3>
+                                            <h3 class="mb-2" style="color: #fff"></h3>
                                         </div>
                                     </div>
                                 </div>
