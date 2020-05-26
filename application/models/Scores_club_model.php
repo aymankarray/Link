@@ -95,7 +95,7 @@ class Scores_club_model extends CI_Model
      */
     function scoreValiderStatsListing()
     {
-         $this->db->select('count(BaseTbl.projectId) Cproject , DATE_FORMAT(BaseTbl.startDate, "%Y-%m-%d ") as dateS ' );
+         $this->db->select('count(BaseTbl.projectId) Cproject , DATE_FORMAT(BaseTbl.startDate, "%Y-%m ") as dateS ' );
         
         $this->db->from('tbl_project as BaseTbl');
 
