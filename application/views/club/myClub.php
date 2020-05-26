@@ -293,6 +293,7 @@
                                                 </p>
                                                 <a href="javascript:void();"><img src="https://www.tunivisions.link/uploads/projet/<?php echo $PBC->banner ?>" alt="post-image" class="img-fluid w-100"></a>
                                              </div>
+                                             <!--
                                              <div class="comment-area mt-3">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                    <div class="like-block position-relative d-flex align-items-center">
@@ -398,6 +399,7 @@
                                                    </div>
                                                 </form>
                                              </div>
+                                           -->
                                           </div>
                                           
                                           
