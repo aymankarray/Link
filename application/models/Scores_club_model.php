@@ -95,25 +95,13 @@ class Scores_club_model extends CI_Model
      */
     function scoreValiderStatsListing()
     {
-         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.description , BaseTbl.startDate  dateS  , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description descP ,  BaseTbl.local ,BaseTbl.banner , Evaluations.valider , Evaluer.name dobyName ,  Scores.score , Evaluations.statut , Scores.affectedBy , Valider.name validName 
-            , Evaluations.album , Evaluations.afterMovie , BaseTbl.eventFB');
+         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.startDate  dateS ' );
         
         $this->db->from('tbl_project as BaseTbl');
-        $this->db->join('tbl_club as Clubs', 'Clubs.clubID = BaseTbl.ClubID', 'LEFT');
 
-        $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
-        $this->db->join('tbl_score_club as Scores', 'Evaluations.score_clubID = Scores.score_clubID', 'LEFT');
-
-        $this->db->join('tbl_users as Valider ', 'Valider.userId = Evaluations.validBy', 'LEFT');
-         $this->db->join('tbl_users as Evaluer ', 'Evaluer.userId = Evaluations.doBy', 'LEFT');
-
-
-
-        $this->db->where('NOW() > BaseTbl.endDate ') ;
-        $this->db->where('Evaluations.validBy != 0 ') ;
         
         $this->db->order_by('dateS ASC');
-        $this->db->group_by('Day(dateS) , MONTH(dateS) ,  Year (dateS)  ');
+        
 
         $query = $this->db->get();
         
