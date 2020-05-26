@@ -330,10 +330,10 @@
 
 <div class="row">
     
-    <div class="col-md-12">
+    <div class="col-md-8">
         <div id="chart"></div>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-4">
         <div id="chart2"></div>
     </div>
 
@@ -356,6 +356,7 @@
                       chart: {
                         type: 'bar',
                       },
+                      width: 380,
                       series: [{
                         name: 'Projets',
                         data: [   
