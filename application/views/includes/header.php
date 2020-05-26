@@ -799,7 +799,9 @@
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                   <i class="ri-menu-3-line"></i>
                   </button>
+
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <?php if ($name != '') { ?>
                      <ul class="navbar-nav ml-auto navbar-list">
                         <li>
                            <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $MyUserId ; ?>" class="iq-waves-effect d-flex align-items-center">
@@ -808,7 +810,7 @@
                               <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" class="alligator-turtle  mr-3 " alt="<?php echo $name ?>">
                              
                               <div class="caption">
-                                 <p class="mb-0 line-height"><?php echo $name ?></p>
+                                 <p class="mb-0 line-height"> <?php echo $name ?></p>
                               </div>
                            </a>
                         </li>
@@ -896,6 +898,7 @@
                         </li>
                         
                      </ul>
+                    <?php } ?>
                       <ul class="navbar-list">
                         <li>
                            <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
