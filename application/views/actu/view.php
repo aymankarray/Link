@@ -5,7 +5,7 @@
 <meta property="og:title"              content="<?php echo $actuInfo->titre ?> " />
 <meta property="og:description"        content="<?php echo $actuInfo->description ?> " />
 <meta property="og:image"              content="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" />
-<title><?php echo $actuInfo->titre ?></title>
+
 </head>
 
 <div class="header-for-bg">

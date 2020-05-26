@@ -26,7 +26,7 @@ class Actu extends BaseController {
  					      	$count = $this->actualite_model->actuListing();
             			$data['count'] = count($count)  ; 
 
-		                $this->global['pageTitle'] = 'CodeInsect : club  Listing';
+		                $this->global['pageTitle'] = 'Actualités';
 		            	$this->global['active'] = 'actu';
 		            	/*
 		                $this->loadViews("actualite/list", $this->global, $data, NULL);   
@@ -64,7 +64,7 @@ class Actu extends BaseController {
 	public function addNew()
 		        {
 		                
-		                $this->global['pageTitle'] = 'CodeInsect : club  Listing';
+		                $this->global['pageTitle'] = 'Actualités';
 		           		$this->global['active'] = 'actu';
 		        		$this->loadViews("actu/new", $this->global, Null, NULL); 
 		        		  
@@ -105,9 +105,9 @@ class Actu extends BaseController {
 
 				public function Show($actuId)
 		        {
-		                
-		                $this->global['pageTitle'] = 'CodeInsect : club  Listing';
-		           		 $data['actuInfo'] =  $this->actualite_model->actuById($actuId);
+		                $data['actuInfo'] =  $this->actualite_model->actuById($actuId);
+		                 $this->global['pageTitle'] = $data['actuInfo']->titre  ;
+		           		 
 		           		 $this->global['active'] = 'actu';
 		        		 $this->loadViews("actu/view", $this->global, $data  , NULL); 
 		        		  
