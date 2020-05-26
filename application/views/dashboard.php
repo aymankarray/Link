@@ -357,7 +357,6 @@
     data: [<?php foreach ($projetsStat as $key ) {echo $key->Cproject.',' ;  }?>]
   }],
   xaxis: {
-    labels: {format: 'MM/YYYY',  
     categories: [<?php foreach ($projetsStat as $key ) { $date = new DateTime($key->dateS); echo date_format( $date , 'm/Y').',' ;} ?>]
   }
 }
