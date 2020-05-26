@@ -224,7 +224,7 @@
                                              <div class="user-post-data p-3">
                                                 <div class="d-flex flex-wrap">
                                                    <div class="media-support-user-img mr-3">
-                                                      <img class="avatar" src="https://www.tunivisions.link/uploads/avatar/<?php echo $PBC->avatar ?>"  alt="">
+                                                      <img class="alligator-turtle  mr-3 "  src="https://www.tunivisions.link/uploads/avatar/<?php echo $PBC->avatar ?>"  alt="">
                                                    </div>
                                                    <div class="media-support-info mt-2">
                                                       <h5 class="mb-0 d-inline-block"><a href="#" class=""><?php echo $PBC->name ?></a></h5>
@@ -535,7 +535,7 @@
                                                 <li class="d-flex mb-4 align-items-center">
                                                     <div class="user-img img-fluid"><i class="ri-add-fill"></i></div>
                                                    <div class="media-support-info ml-3">
-                                                      <h6> <?php echo $key->titre  ?> <small> <?php echo $key->titre  ?> </small> </h6>
+                                                      <h6><small class="text-primary"> <?php echo $key->projectId  ?><small> <b> <?php echo $key->titre  ?></b><small class="text-primary" > startDate  </small></h6>
                                                    </div>
                                                    <div class="edit-relation"><a ><?php echo $key->score  ?> Points </a></div>
                                                 </li>
