@@ -121,7 +121,7 @@ class Scores_club_model extends CI_Model
      */
     function scoreValiderStatsbyTypeListing()
     {
-         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.typeS ' );
+         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.type ' );
         
         $this->db->from('tbl_project as BaseTbl');
 

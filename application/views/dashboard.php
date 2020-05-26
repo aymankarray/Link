@@ -384,7 +384,7 @@
           width: 380,
           type: 'pie',
         },
-        labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->typeS.'",' ;  } ?>],
+        labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->type.'",' ;  } ?>],
         responsive: [{
           breakpoint: 480,
           options: {
