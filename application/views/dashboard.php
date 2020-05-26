@@ -312,9 +312,7 @@
                 <div id="chart"></div>
             </div>
 
-            <div class="col-md-4">
-                <div id="chart2"></div>
-            </div>
+            
 
         </div>
 
