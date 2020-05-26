@@ -74,8 +74,46 @@ class Scores_club_model extends CI_Model
         $this->db->where('NOW() > BaseTbl.endDate ') ;
         $this->db->where('Evaluations.validBy != 0 ') ;
         
-        
+        $this->db->order_by('BaseTbl.startDate ASC')
   
+
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+    }
+
+
+
+
+         /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function scoreValiderStatsListing()
+    {
+         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.description , CONVERT(BaseTbl.startDate, GETDATE()) dateS  , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description descP ,  BaseTbl.local ,BaseTbl.banner , Evaluations.valider , Evaluer.name dobyName ,  Scores.score , Evaluations.statut , Scores.affectedBy , Valider.name validName 
+            , Evaluations.album , Evaluations.afterMovie , BaseTbl.eventFB');
+        
+        $this->db->from('tbl_project as BaseTbl');
+        $this->db->join('tbl_club as Clubs', 'Clubs.clubID = BaseTbl.ClubID', 'LEFT');
+
+        $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
+        $this->db->join('tbl_score_club as Scores', 'Evaluations.score_clubID = Scores.score_clubID', 'LEFT');
+
+        $this->db->join('tbl_users as Valider ', 'Valider.userId = Evaluations.validBy', 'LEFT');
+         $this->db->join('tbl_users as Evaluer ', 'Evaluer.userId = Evaluations.doBy', 'LEFT');
+
+
+
+        $this->db->where('NOW() > BaseTbl.endDate ') ;
+        $this->db->where('Evaluations.validBy != 0 ') ;
+        
+        $this->db->order_by('dateS ASC');
+        $this->db->group_by('dateS');
 
         $query = $this->db->get();
         

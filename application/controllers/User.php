@@ -59,7 +59,8 @@ class User extends BaseController
         $data["clubscountS"] = count($this->club_model->clubListingS() )  ;
         $data["clubscountJ"] = count($this->club_model->clubListingJ() )  ;
 
-        $data["projets"] = count($this->Scores_club_model->scoreValiderListing() ) ;
+        $data["projets"] = $this->Scores_club_model->scoreValiderListing()  ;
+        $data["projetsStat"] = $this->Scores_club_model->scoreValiderStatsListing()  ;
         $data["RateClub"] = $this->scores_model->RaitingClub()   ;
         $data["LastRaitingClub"] = $this->scores_model->LastRaitingClub()   ;
         $data["RateMember"] = $this->scores_model->RaitingUsers()   ;

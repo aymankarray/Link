@@ -109,7 +109,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6 col-md-12 col-xl-5">
-                                            <h3 class="mb-2" style="color: #fff" ><?php echo $projets + 220 ;?></h3>
+                                            <h3 class="mb-2" style="color: #fff" ><?php echo count($projets) + 220 ;?></h3>
                                         </div>
                                         <div class="col-6 col-md-12 col-xl-7">
                                             <div id="sparklinePie"></div>
@@ -353,11 +353,17 @@
     type: 'line'
   },
   series: [{
-    name: 'sales',
-    data: [30,40,35,50,49,60,70,91,125]
+    name: 'Projets',
+    data: [<?php foreach ($projetsStat as $key ) {
+        echo $key->Cproject',' ;
+    }
+
+    ]
   }],
   xaxis: {
-    categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
+    categories: [<?php foreach ($projetsStat as $key ) {
+        echo $key->dateS',' ;
+    }]
   }
 }
 
