@@ -810,7 +810,7 @@
                               <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" class="alligator-turtle  mr-3 " alt="<?php echo $name ?>">
                              
                               <div class="caption">
-                                 <p class="mb-0 line-height"> <?php echo $name ?></p>
+                                 <b class="mb-0 line-height"> <?php echo $name ?></b>
                               </div>
                            </a>
                         </li>
@@ -899,7 +899,7 @@
                         
                      </ul>
                     <?php } ?>
-                    
+
                       <ul class="navbar-list">
                         <li>
                            <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
