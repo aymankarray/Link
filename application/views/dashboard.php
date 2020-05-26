@@ -311,7 +311,7 @@
 
                                             <?php   }  ?>
 
-                                    </small>
+                           
                                     </td>
                                     <td>
                                        <small> <?php echo $club->scores ?></small>
@@ -325,29 +325,18 @@
             </div>
         </div>
     </div>
-</div>
-<!-- row -->
 
-<div class="row">
+
+    <div class="row">
     
     <div class="col-md-12">
         <div id="chart"></div>
     </div>
-    
+
     <div class="col-md-4">
         <div id="chart2"></div>
     </div>
 
-</div>
-
-<!-- row -->
-
-            </div>
-        </div>
-    </div>
-    <!-- row -->
-
-</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
