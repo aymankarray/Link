@@ -333,6 +333,10 @@
     <div class="col-md-12">
         <div id="chart"></div>
     </div>
+    <div class="col-md-12">
+        <div id="chart"></div>
+    </div>
+
 
 </div>
 
