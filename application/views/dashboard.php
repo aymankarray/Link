@@ -330,8 +330,11 @@
 
 <div class="row">
     
-    <div class="col-md-12">
+    <div class="col-md-8">
         <div id="chart"></div>
+    </div>
+        <div class="col-md-4">
+        <div id="chart2"></div>
     </div>
 
 </div>
@@ -366,8 +369,33 @@
 
 }
 
-var chart = new ApexCharts(document.querySelector("#chart"), options);
+var chart = new ApexCharts(document.querySelector("#chart2"), options);
 
 chart.render();
+
+
+
+ var options2 = {
+          series: [<?php foreach ($projetsStat as $key ) {  echo  $key->Cproject .',' } ?> ],
+          chart: {
+          width: 380,
+          type: 'pie',
+        },
+        labels: [<?php foreach ($projetsStat as $key ) {  echo  $key->type .',' }  ?> ],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+        };
+
+        var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+        chart2.render();
 
 </script>

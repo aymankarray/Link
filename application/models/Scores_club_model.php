@@ -119,6 +119,32 @@ class Scores_club_model extends CI_Model
      * @param number $segment : This is pagination limit
      * @return array $result : This is result
      */
+    function scoreValiderStatsbyTypeListing()
+    {
+         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.type ' );
+        
+        $this->db->from('tbl_project as BaseTbl');
+
+         $this->db->where('BaseTbl.startDate >','2019-09-01');
+
+        $this->db->group_by('BaseTbl.type ');
+
+        
+
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+    }
+
+
+        /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
     function scoreValiderByCLubListing($clubID)
     {
         $this->db->select('BaseTbl.score_clubID , Project.titre , BaseTbl.clubID , BaseTbl.remarque , BaseTbl.titre , BaseTbl.score sc , BaseTbl.affectedBy ');
