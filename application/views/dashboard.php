@@ -218,7 +218,7 @@
                                             <?php   }  ?>
                                             </td>
                                             <td>
-                                             <small><small>
+                                             <small>
 
                                             
                                             <span>
@@ -226,38 +226,15 @@
                                             <small><small><?php echo $membre->clubName ?></small></small>
                                             </span>
 
-                                            </small></small> </td>
+                                            </small></td>
 
-                                            <td> <p class="text-muted "><small><small><?php echo $membre->scores ?> Points</small></p> </td>
+                                            <td> <p class="text-muted "><small><small><?php echo $membre->scores ?> Points</small></small></p> </td>
                                           </tr>
                                           
                                         </thead>
                                         <?php $c= $c + 1 ;  }   }else { echo "Il y a pas de données";} ?>
                 </table>
-                <!--
-                <div class="d-flex flex-column">
-                    <?php $c=0 ; if(!empty($RateMember)){ foreach ($RateMember as $membre ) { ?>
-                        <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $membre->userId ?>" class="d-flex align-items-center border-bottom">
-                            <div class="mr-3">
-                                <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle  mr-3" alt="user">
-                            </div>
-                            <div class="w-100">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="text-body "><?php echo $membre->name ?></h5>
-                                    <p class="text-muted ">
-                                        <?php echo $membre->scores ?> Points</p>
-                                </div>
-                               <small>
-                                <p class="text-muted tx-13">Club Tunivisions
-                                    <?php echo $membre->clubName ?>
-                                </p>
-                                </small>
-                            </div>
-                           
-                        </a>
-                        <?php }  }else { echo "Il y a pas de données";} ?>
-                </div>
-            -->
+              
             </div>
         </div>
     </div>
@@ -293,7 +270,7 @@
                                            <small> <?php echo $club->name ?></small> 
 
 
-                                    </td>
+                                    </td><
                                      <td>
                                             
 
@@ -325,8 +302,7 @@
             </div>
         </div>
     </div>
-
-
+    
     <div class="row">
     
     <div class="col-md-12">
@@ -337,55 +313,69 @@
         <div id="chart2"></div>
     </div>
 
+    </div>
+
+
+
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script type="text/javascript">
         var options = {
-  chart: {
-    type: 'bar',
-  },
-  series: [{
-    name: 'Projets',
-    data: [   
-    <?php foreach ($projetsStat as $key ) { 
-                $date = new DateTime($key->dateS); 
-        echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
-         ]
-  }
-  ],xaxis: {
-    type: "date",
-  }
+              chart: {
+                type: 'bar',
+              },
+              series: [{
+                name: 'Projets',
+                data: [   
+                <?php foreach ($projetsStat as $key ) { 
+                            $date = new DateTime($key->dateS); 
+                    echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                     ]
+              }
+              ],xaxis: {
+                type: "date",
+              }
 
-}
-
-var chart = new ApexCharts(document.querySelector("#chart2"), options);
-
-chart.render();
-
-
-
- var options2 = {
-          series: [<?php foreach ($projetsStatType as $key ) {  echo  $key->Cproject .','; } ?> ],
-          chart: {
-          width: 380,
-          type: 'pie',
-        },
-        labels: [<?php foreach ($projetsStatType as $key ) {  echo  '"'.$key->type .'",' ; }  ?> ],
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 200
-            },
-            legend: {
-              position: 'bottom'
             }
-          }
-        }]
-        };
 
-        var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
-        chart2.render();
+            var chart = new ApexCharts(document.querySelector("#chart2"), options);
+
+            chart.render();
+
+</script>
+
+<script type="text/javascript">
+
+             var options2 = {
+                      series: [<?php foreach ($projetsStatType as $key ) {  echo  $key->Cproject .','; } ?> ],
+                      chart: {
+                      width: 380,
+                      type: 'pie',
+                    },
+                    labels: [<?php foreach ($projetsStatType as $key ) {  echo  '"'.$key->type .'",' ; }  ?> ],
+                    responsive: [{
+                      breakpoint: 480,
+                      options: {
+                        chart: {
+                          width: 200
+                        },
+                        legend: {
+                          position: 'bottom'
+                        }
+                      }
+                    }]
+                    };
+
+                    var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+                    chart2.render();
 
 </script>
