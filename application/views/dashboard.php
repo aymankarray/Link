@@ -379,12 +379,12 @@
 <script type="text/javascript">
     
      var options2 = {
-          series: [<?php foreach ($projetsStat as $key ) { echo $key->Cproject.',' ;  } ?>],
+          series: [<?php foreach ($projetsStatType as $key ) { echo $key->Cproject.',' ;  } ?>],
           chart: {
           width: 380,
           type: 'pie',
         },
-        labels: [<?php foreach ($projetsStat as $key ) { echo '"'.$key->type.'",' ;  } ?>],
+        labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->typeS.'",' ;  } ?>],
         responsive: [{
           breakpoint: 480,
           options: {
