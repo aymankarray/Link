@@ -28,7 +28,7 @@ class Posts extends BaseController {
 
     public function Acceuil()
     {
-        $data  ['userId'] = $this->vendorId ; 
+         $data  ['userId'] = $this->vendorId ; 
          $data['ActuRecords'] = $this->actualite_model->actuListing();
          $data['projectRecords'] = $this->project_model->projectListing();
          
@@ -41,7 +41,7 @@ class Posts extends BaseController {
                   }
 
           
-
+         $this->global['pageTitle'] = 'Acceuil' ;
          $this->loadViews("Acceuil", $this->global, $data, NULL);   
     }
 
@@ -53,6 +53,9 @@ class Posts extends BaseController {
         $data['commentsRecords'] = $this->posts_model->CommentsListing($post);
         $data['likeRecords'] = $this->posts_model->likesListing($post);
         $data['likeCheck'] = $this->posts_model->likeCheck($post,$this->vendorId);
+
+
+        $this->global['pageTitle'] = $data  ['postRecords']->name ;
         $this->loadViews("post/view", $this->global, $data, NULL);   
     }
 
@@ -102,6 +105,8 @@ class Posts extends BaseController {
        );
         $result = $this->posts_model->addNewComment($commentInfo);
 
+
+        
         redirect('/Posts/post/'.$postId);
     }
 
