@@ -1,10 +1,12 @@
+<head>
 
 <meta property="og:url"                content="<?php echo base_url() ;  ?>Actu/show/<?php echo $actuInfo->actuID ?>" />
 <meta property="og:type"               content="article" />
 <meta property="og:title"              content="<?php echo $actuInfo->titre ?> " />
-<meta property="og:description"        content="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" />
-<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
-
+<meta property="og:description"        content="<?php echo $actuInfo->description ?> " />
+<meta property="og:image"              content="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" />
+<title><?php echo $actuInfo->titre ?></title>
+</head>
 
 <div class="header-for-bg">
     <div class="background-header position-relative">
