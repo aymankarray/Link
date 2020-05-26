@@ -330,10 +330,9 @@
 
 <div class="row">
     
-    <div class="col-md-8">
+    <div class="col-md-12">
         <div id="chart"></div>
     </div>
-
 
 </div>
 
@@ -350,27 +349,25 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script type="text/javascript">
         var options = {
-                          chart: {
-                            type: 'bar',
-                          },
-                          series: [{
-                            name: 'Projets',
-                            data: [   
-                            <?php foreach ($projetsStat as $key ) { 
-                                        $date = new DateTime($key->dateS); 
-                                echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
-                                 ]
-                          }
-                          ],xaxis: {
-                            type: "date",
-                          }
+  chart: {
+    type: 'bar',
+  },
+  series: [{
+    name: 'Projets',
+    data: [   
+    <?php foreach ($projetsStat as $key ) { 
+                $date = new DateTime($key->dateS); 
+        echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+         ]
+  }
+  ],xaxis: {
+    type: "date",
+  }
 
-                        }
+}
 
-                        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+var chart = new ApexCharts(document.querySelector("#chart"), options);
 
-                        chart.render();
-
-
+chart.render();
 
 </script>
