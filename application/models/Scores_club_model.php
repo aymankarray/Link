@@ -113,7 +113,7 @@ class Scores_club_model extends CI_Model
         $this->db->where('Evaluations.validBy != 0 ') ;
         
         $this->db->order_by('dateS ASC');
-        $this->db->group_by('Day(dateS) , MOUNTH(dateS) ,  Year (dateS)  ');
+        $this->db->group_by('Day(dateS) , MONTH(dateS) ,  Year (dateS)  ');
 
         $query = $this->db->get();
         
