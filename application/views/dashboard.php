@@ -381,7 +381,7 @@ chart.render();
           width: 380,
           type: 'pie',
         },
-        labels: [<?php foreach ($projetsStatType as $key ) {  echo  $key->type .',' ; }  ?> ],
+        labels: [<?php foreach ($projetsStatType as $key ) {  echo  '"'.$key->type .'",' ; }  ?> ],
         responsive: [{
           breakpoint: 480,
           options: {
