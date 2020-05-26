@@ -548,7 +548,7 @@
                                                 <li class="d-flex mb-4 align-items-center">
                                                     <div class="user-img img-fluid"><i class="ri-add-fill"></i></div>
                                                    <div class="media-support-info ml-3">
-                                                      <h6><small class="text-primary"> <?php echo $key->projectId  ?><small> <b> <?php echo $key->titre  ?></b><small class="text-primary" ><?php echo $key->startDate  ?>   </small></h6>
+                                                      <h6><small class="text-primary"> <?php echo $key->projectId  ?></small> <b> <?php echo $key->titre  ?></b><small class="text-primary" ><?php echo $key->startDate  ?>   </small></h6>
                                                    </div>
                                                    <div class="edit-relation"><a ><?php echo $key->score  ?> Points </a></div>
                                                 </li>
