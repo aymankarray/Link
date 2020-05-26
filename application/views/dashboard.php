@@ -331,7 +331,7 @@
 <div class="row">
     
     <div class="col-md-12">
-        <canvas id="myChart" width="400" height="400"></canvas>
+        <canvas id="myChart" width="400" height="200"></canvas>
     </div>
 
 </div>
