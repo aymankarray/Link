@@ -38,7 +38,7 @@
                             <div class="card" style="background-color: #343a40;color: #fff " >
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff" ><i class="ri-building-2-fill"></i>Membres Senior</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff" ><i class="ri-building-2-fill mr-3"></i>Membres Senior</h6>
                                         <div class="dropdown mb-2">
 
                                         </div>
@@ -54,7 +54,7 @@
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-home-smile-2-fill"></i>Membres Junior</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-home-smile-2-fill mr-3"></i>Membres Junior</h6>
                                         <div class="dropdown mb-2">
 
                                         </div>
@@ -70,7 +70,7 @@
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-ancient-gate-fill"></i> Membres Alumni</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-ancient-gate-fill mr-3 "></i> Membres Alumni</h6>
                                         <div class="dropdown mb-2">
                                         </div>
                                     </div>
