@@ -348,99 +348,42 @@
 
 <script  src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
 <script>
-        var timeFormat = 'MM/DD/YYYY HH:mm';
 
-        var color = Chart.helpers.color;
-        var config = {
-            type: 'line',
-            data: {
-                labels: [ // Date Objects
-                    newDate(0),
-                    newDate(1),
-                    newDate(2),
-                    newDate(3),
-                    newDate(4),
-                    newDate(5),
-                    newDate(6)
-                ],
-                datasets: [{
-                    label: 'My First dataset',
-                    backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
-                    borderColor: window.chartColors.red,
-                    fill: false,
-                    data: [
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor()
-                    ],
-                }, {
-                    label: 'My Second dataset',
-                    backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
-                    borderColor: window.chartColors.blue,
-                    fill: false,
-                    data: [
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor(),
-                        randomScalingFactor()
-                    ],
-                }, {
-                    label: 'Dataset with point data',
-                    backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
-                    borderColor: window.chartColors.green,
-                    fill: false,
-                    data: [{
-                        x: newDateString(0),
-                        y: randomScalingFactor()
-                    }, {
-                        x: newDateString(5),
-                        y: randomScalingFactor()
-                    }, {
-                        x: newDateString(7),
-                        y: randomScalingFactor()
-                    }, {
-                        x: newDateString(15),
-                        y: randomScalingFactor()
-                    }],
-                }]
-            },
-            options: {
-                title: {
-                    text: 'Chart.js Time Scale'
-                },
-                scales: {
-                    xAxes: [{
-                        type: 'time',
-                        time: {
-                            parser: timeFormat,
-                            // round: 'day'
-                            tooltipFormat: 'll HH:mm'
-                        },
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'Date'
-                        }
-                    }],
-                    yAxes: [{
-                        scaleLabel: {
-                            display: true,
-                            labelString: 'value'
-                        }
+            var ctx = document.getElementById('myChart');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                        ],
+                        borderWidth: 1
                     }]
                 },
-            }
-        };
-
-        window.onload = function() {
-            var ctx = document.getElementById('canvas').getContext('2d');
-            window.myLine = new Chart(ctx, config);
-
-        };
-</script>
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            });
+</script></script>
