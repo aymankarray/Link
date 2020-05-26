@@ -357,14 +357,12 @@
     data: [   
     <?php foreach ($projetsStat as $key ) { 
                 $date = new DateTime($key->dateS); 
-        echo '{ x: '.date_format( $date , 'd/m/Y').', y: '. $key->Cproject.' } , ' ;  } ?>
+        echo '{ x: "'.date_format( $date , 'd/m/Y').' GMT" , y: '. $key->Cproject.' } , ' ;  } ?>
          ]
   }
-  ,
-  xaxis: {
-          categories: [ 'Sep','Oct','Nov','Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
-        }
-  ]
+  ],xaxis: {
+    type: "datetime"
+  }
 
 }
 
