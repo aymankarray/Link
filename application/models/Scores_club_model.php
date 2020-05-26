@@ -95,7 +95,7 @@ class Scores_club_model extends CI_Model
      */
     function scoreValiderStatsListing()
     {
-         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.description , DATE_FORMAT(BaseTbl.startDate, %Y-%m-%d)  dateS  , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description descP ,  BaseTbl.local ,BaseTbl.banner , Evaluations.valider , Evaluer.name dobyName ,  Scores.score , Evaluations.statut , Scores.affectedBy , Valider.name validName 
+         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.description , DATE_FORMAT("BaseTbl.startDate" , "%Y-%m-%d")  dateS  , BaseTbl.endDate , BaseTbl.titre , BaseTbl.type , BaseTbl.cible , Clubs.name as ClubName ,  BaseTbl.prix , BaseTbl.capacite , BaseTbl.description descP ,  BaseTbl.local ,BaseTbl.banner , Evaluations.valider , Evaluer.name dobyName ,  Scores.score , Evaluations.statut , Scores.affectedBy , Valider.name validName 
             , Evaluations.album , Evaluations.afterMovie , BaseTbl.eventFB');
         
         $this->db->from('tbl_project as BaseTbl');
