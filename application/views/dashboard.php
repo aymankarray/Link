@@ -355,8 +355,9 @@
   series: [{
     name: 'Projets',
     data: [   
-    <?php foreach ($projetsStat as $key ) { $date = new DateTime($key->dateS); 
-        echo '{ x: '.date_format( $date , 'd/m/Y') ;} 
+    <?php foreach ($projetsStat as $key ) { 
+                $date = new DateTime($key->dateS); 
+        echo '{ x: '.date_format( $date , 'd/m/Y') ; 
              ', y: '.echo $key->Cproject.' } , '   }?>
          ]
   }],
