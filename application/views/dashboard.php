@@ -360,6 +360,9 @@
         echo '{ x: '.date_format( $date , 'd/m/Y').', y: '. $key->Cproject.' } , ' ;  } ?>
          ]
   }],
+  xaxis: {
+          categories: [ 'Sep','Oct','Nov','Dec','Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+        }
 
 }
 
