@@ -45,7 +45,7 @@ class User extends BaseController
      */
     public function index()
     {
-        $this->global['pageTitle'] = 'CodeInsect : Dashboard';
+        $this->global['pageTitle'] = 'Dashboard';
 
         $data['MyTFM'] = $this->Tfm_part_model->TFMMyBus($this->vendorId);
         
