@@ -378,7 +378,7 @@
 
 <script type="text/javascript">
     
-     var options = {
+     var options2 = {
           series: [<?php foreach ($projetsStat as $key ) { echo $key->Cproject.',' ;  } ?>],
           chart: {
           width: 380,
@@ -398,8 +398,8 @@
         }]
         };
 
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
+        var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
+        chart2.render();
 
 
 </script>
