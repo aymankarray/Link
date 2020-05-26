@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="path/to/chartjs/dist/Chart.min.css">
+
 <div id="content-page" class="content-page">
 <div class="container">
     <div class="row">
@@ -344,7 +346,7 @@
 </div>
 </div>
 
-<script type="text/javascript" src="https://cdnjs.com/libraries/Chart.js"></script>
+<script  src="https://www.chartjs.org/dist/2.9.3/Chart.min.js"></script>
 <script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
