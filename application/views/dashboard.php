@@ -354,11 +354,13 @@
   },
   series: [{
     name: 'Projets',
-    data: [<?php foreach ($projetsStat as $key ) {echo $key->Cproject.',' ;  }?>]
+    data: [   
+    <?php foreach ($projetsStat as $key ) { $date = new DateTime($key->dateS); 
+        echo '{ x: '.date_format( $date , 'd/m/Y') ;} 
+             ', y: '.echo $key->Cproject.' } , '   }?>
+         ]
   }],
-  xaxis: {
-    labels: [<?php foreach ($projetsStat as $key ) { $date = new DateTime($key->dateS); echo date_format( $date , 'm/Y').',' ;} ?>]
-  }
+
 }
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
