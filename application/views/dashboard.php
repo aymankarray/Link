@@ -116,7 +116,7 @@
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff" ><i class="ri-building-2-fill mr-3"></i></h6>
+                                        <h6 class="card-title mb-0" style="color: #fff" ></h6>
                                         <div class="dropdown mb-2">
 
                                         </div>
