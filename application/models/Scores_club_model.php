@@ -74,7 +74,7 @@ class Scores_club_model extends CI_Model
         $this->db->where('NOW() > BaseTbl.endDate ') ;
         $this->db->where('Evaluations.validBy != 0 ') ;
         
-        $this->db->order_by('BaseTbl.startDate ASC')
+        $this->db->order_by('BaseTbl.startDate ASC') ;
   
 
         $query = $this->db->get();
