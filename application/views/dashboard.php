@@ -330,10 +330,10 @@
 
 <div class="row">
     
-    <div class="col-md-8">
+    <div class="col-md-7">
         <div id="chart"></div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-5">
         <div id="chart2"></div>
     </div>
 
@@ -386,17 +386,12 @@
           type: 'pie',
         },
         labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->type.'",' ;  } ?>],
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 200
-            },
-            legend: {
-              position: 'bottom'
-            }
+        theme: {
+          monochrome: {
+            enabled: true
           }
-        }]
+        },
+        
         };
 
         var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
