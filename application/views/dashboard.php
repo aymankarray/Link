@@ -343,22 +343,16 @@
 
 
 
+
     <div class="col-md-4"  >
-        <h4 class="text-center"  >Action</h4>
-        <div id="Action"></div>
-    </div>
-    <div class="col-md-4"  >
-        <h4 class="text-center" >Compeétition</h4>
-        <div id="Comp"></div>
+        <h4 class="text-center" >Evenenement</h4>
+        <div id="Even"></div>
     </div>
     <div class="col-md-4"  >
         <h4 class="text-center">Conférence</h4>
         <div id="Conf"></div>
     </div>
-    <div class="col-md-4"  >
-        <h4 class="text-center" >Couverture mediatique</h4>
-        <div id="CM"></div>
-    </div>
+
     <div class="col-md-4"  >
         <h4 class="text-center" >Formation</h4>
         <div id="Formation"></div>
@@ -423,76 +417,6 @@
 </script>
 
 <script type="text/javascript">
-          var Action = {
-                      chart: {
-                        type: 'area',
-
-                        animations: {
-                          initialAnimation: {
-                            enabled: false
-                          }
-                        }
-                      },
-                      width: 100,
-                      series: [
-                      {
-                        name: 'Action',
-                        data: [   
-                        <?php foreach ($projetsStatTypeDateAction as $key ) { 
-                                    $date = new DateTime($key->dateS); 
-                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
-                             ]
-                      }, 
-
-                     
-
-                      ],xaxis: {
-                        type: "date",
-                      }
-
-                    }
-
-                    var Action1 = new ApexCharts(document.querySelector("#Action"), Action);
-
-                    Action1.render();
-
-
-
-            var Comp = {
-                      chart: {
-                                      height: 350,
-                                      type: 'line',
-                                      zoom: {
-                                        enabled: false
-                                      }
-                                    },
-                                    dataLabels: {
-                                      enabled: false
-                                    },
-                                    stroke: {
-                                      curve: 'straight'
-                                    },
-                      width: 100,
-                      series: [
-                     {
-                        name: 'Compétition',
-                        data: [   
-                        <?php foreach ($projetsStatTypeDateCompétition as $key ) { 
-                                    $date = new DateTime($key->dateS); 
-                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
-                             ]
-                      }, 
-
-
-                      ],xaxis: {
-                        type: "date",
-                      }
-
-                    }
-
-                    var Comp = new ApexCharts(document.querySelector("#Comp"), Comp);
-
-                    Comp.render();
 
 
 
@@ -569,13 +493,14 @@
 
                     }
 
-                    var Formation = new ApexCharts(document.querySelector("#Formation"), Formation);
+                    var FormationChart = new ApexCharts(document.querySelector("#Formation"), Formation);
 
-                    Formation.render();
+                    FormationChart.render();
 
-                    
-                    var CM = {
-                            chart: {
+
+
+                    var Even = {
+                                    chart: {
                                       height: 350,
                                       type: 'line',
                                       zoom: {
@@ -607,22 +532,11 @@
 
                     }
 
-                    var CM = new ApexCharts(document.querySelector("#CM"), CM);
+                    var Evenchart = new ApexCharts(document.querySelector("#Even"), Even);
 
-                    CM.render();
+                    Evenchart.render();
 
-/*
-                     
-                      {
-                        name: 'Couverture Mediatique',
-                        data: [   
-                        <?php foreach ($projetsStatTypeDateCM as $key ) { 
-                                    $date = new DateTime($key->dateS); 
-                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
-                             ]
-                      }, 
+                    
+                    
 
-
-
-      */
 </script>
