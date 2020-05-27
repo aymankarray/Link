@@ -403,10 +403,12 @@
          var options3 = {
           series: [{
             <?php foreach ($projetsStatTypeDate as $key ) { ?>
-
-
               name: ' <?php echo $key->type  ?>',
-              data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+              data: [
+                        {
+                          x: "02-10-2017",
+                          y: 34
+                        },
             },
 
             <?php } ?>
@@ -431,7 +433,7 @@
               colors: ['transparent']
             },
             xaxis: {
-              categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+              type: "datetime"
             },
             yaxis: {
               title: {
