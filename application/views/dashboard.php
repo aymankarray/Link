@@ -407,7 +407,12 @@
 <script type="text/javascript">
           var options3 = {
                       chart: {
-                        type: 'bar',
+                        type: 'area',
+                        animations: {
+                          initialAnimation: {
+                            enabled: false
+                          }
+                        }
                       },
                       width: 380,
                       series: [
@@ -437,6 +442,15 @@
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
                       }, 
+                      {
+                        name: 'Couverture Mediatique',
+                        data: [   
+                        <?php foreach ($projetsStatTypeDateCM as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                             ]
+                      }, 
+
 
                       {
                         name: 'Formation',
