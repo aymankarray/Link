@@ -423,10 +423,8 @@
 <script type="text/javascript">
           var Action = {
                       chart: {
-                        type: 'bar',
-                          height: 350,
-                          stacked: true,
-                          stackType: '100%',
+                        type: 'area',
+
                         animations: {
                           initialAnimation: {
                             enabled: false
