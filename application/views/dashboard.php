@@ -363,7 +363,7 @@
         <div id="CM"></div>
     </div>
     <div class="col-md-4">
-        <h4>Couverture mediatique</h4>
+        <h4>Formation</h4>
         <div id="Formation"></div>
     </div>
 
