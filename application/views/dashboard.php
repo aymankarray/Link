@@ -402,16 +402,18 @@
 <script type="text/javascript">
          var options3 = {
           series: [{
-            <?php foreach ($projetsStatTypeDate as $key ) { ?>
-              name: ' <?php echo $key->type  ?>',
+            name: 'Formation',
+           
               data: [
+                   <?php foreach ($projetsStatTypeDate as $key ) { ?>
                         {
                           x: "02-10-2017",
                           y: 34
                         },
+                    <?php } ?>
             },
 
-            <?php } ?>
+
             ],
               chart: {
               type: 'bar',
