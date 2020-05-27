@@ -343,9 +343,22 @@
     </div>
 
 
-    <div class="col-md-4">
-        <div id="chart2"></div>
+    <div class="col-md-2">
+        <div id="Action"></div>
     </div>
+    <div class="col-md-5">
+        <div id="Compétition"></div>
+    </div>
+    <div class="col-md-5">
+        <div id="Conférence"></div>
+    </div>
+    <div class="col-md-5">
+        <div id="Couverture Mediatique"></div>
+    </div>
+    <div class="col-md-5">
+        <div id="Formation"></div>
+    </div>
+
 
 
 </div>
@@ -392,7 +405,7 @@
      var options2 = {
           series: [<?php foreach ($projetsStatType as $key ) { echo $key->Cproject.',' ;  } ?>],
           chart: {
-          width:  450,
+          width:  550,
           type: 'pie',
         },
         labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->type.'",' ;  } ?>],
@@ -405,7 +418,7 @@
 </script>
 
 <script type="text/javascript">
-          var options3 = {
+          var Action = {
                       chart: {
                         type: 'bar',
                           height: 350,
@@ -464,23 +477,15 @@
                              ]
                       }, 
 
-                      {
-                        name: 'Evenement',
-                        data: [   
-                        <?php foreach ($projetsStatTypeDateEvenement as $key ) { 
-                                    $date = new DateTime($key->dateS); 
-                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
-                             ]
-                      }
                       ],xaxis: {
                         type: "date",
                       }
 
                     }
 
-                    var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
+                    var Action1 = new ApexCharts(document.querySelector("#Action"), Action);
 
-                    chart3.render();
+                    Action1.render();
 
       
 </script>
