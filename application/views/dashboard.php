@@ -406,9 +406,16 @@
                       },
                       width: 380,
                       series: [{
-                        name: 'Projets',
+                        name: 'Formation',
                         data: [   
                         <?php foreach ($projetsStatTypeDateFormation as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                             ]
+                      }, {
+                        name: 'Evenement',
+                        data: [   
+                        <?php foreach ($projetsStatTypeDateEvenement as $key ) { 
                                     $date = new DateTime($key->dateS); 
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
