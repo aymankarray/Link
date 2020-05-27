@@ -341,24 +341,29 @@
     </div>
     
     <div class="col-md-12">
-        <h4>Type de projet / %</h4>
+        <h4>Type de projet</h4>
         <div id="chart3"></div>
     </div>
 
 
     <div class="col-md-4">
+        <h4>Action</h4>
         <div id="Action"></div>
     </div>
     <div class="col-md-4">
+        <h4>Compeétition</h4>
         <div id="Comp"></div>
     </div>
     <div class="col-md-4">
-        <div id="Conférence"></div>
+        <h4>Conférence</h4>
+        <div id="Conf"></div>
     </div>
     <div class="col-md-4">
-        <div id="Couverture Mediatique"></div>
+        <h4>Couverture mediatique</h4>
+        <div id="CM"></div>
     </div>
     <div class="col-md-4">
+        <h4>Couverture mediatique</h4>
         <div id="Formation"></div>
     </div>
 
@@ -488,15 +493,79 @@
 
                     Comp.render();
 
-/*
-                      {
+
+
+
+
+                var Conf = {
+                      chart: {
+                        type: 'area',
+
+                        animations: {
+                          initialAnimation: {
+                            enabled: false
+                          }
+                        }
+                      },
+                      width: 100,
+                      series: [
+                     {
                         name: 'Conférence',
                         data: [   
-                        <?php foreach ($projetsStatTypeDateConférence as $key ) { 
+                        <?php foreach ($projetsStatTypeDateCompétition as $key ) { 
                                     $date = new DateTime($key->dateS); 
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
                       }, 
+
+
+                      ],xaxis: {
+                        type: "date",
+                      }
+
+                    }
+
+                    var Comp = new ApexCharts(document.querySelector("#Conf"), Conf);
+
+                    Conf.render();
+
+
+
+             var Formation = {
+                      chart: {
+                        type: 'area',
+
+                        animations: {
+                          initialAnimation: {
+                            enabled: false
+                          }
+                        }
+                      },
+                      width: 100,
+                      series: [
+                     
+                      {
+                        name: 'Formation',
+                        data: [   
+                        <?php foreach ($projetsStatTypeDateFormation as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                             ]
+                      }, 
+
+
+                      ],xaxis: {
+                        type: "date",
+                      }
+
+                    }
+
+                    var Formation = new ApexCharts(document.querySelector("#Formation"), Formation);
+
+                    Formation.render();
+
+/*
+                     
                       {
                         name: 'Couverture Mediatique',
                         data: [   
@@ -507,14 +576,6 @@
                       }, 
 
 
-                      {
-                        name: 'Formation',
-                        data: [   
-                        <?php foreach ($projetsStatTypeDateFormation as $key ) { 
-                                    $date = new DateTime($key->dateS); 
-                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
-                             ]
-                      }, 
 
       */
 </script>
