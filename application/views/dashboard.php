@@ -561,6 +561,40 @@
 
                     Formation.render();
 
+                    
+                    var CM = {
+                      chart: {
+                        type: 'area',
+
+                        animations: {
+                          initialAnimation: {
+                            enabled: false
+                          }
+                        }
+                      },
+                      width: 100,
+                      series: [
+                     
+                      {
+                        name: 'Formation',
+                        data: [   
+                        <?php foreach ($projetsStatTypeDateFormation as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                             ]
+                      }, 
+
+
+                      ],xaxis: {
+                        type: "date",
+                      }
+
+                    }
+
+                    var CM = new ApexCharts(document.querySelector("#CM"), CM);
+
+                    CM.render();
+
 /*
                      
                       {
