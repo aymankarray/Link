@@ -392,9 +392,6 @@
           type: 'pie',
         },
         labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->type.'",' ;  } ?>],
-        
-        
-        
         };
 
         var chart2 = new ApexCharts(document.querySelector("#chart2"), options2);
