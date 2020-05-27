@@ -334,7 +334,7 @@
         <div id="chart"></div>
     </div>
 
-    <div class="col-md-8">
+    <div class="col-md-12">
         <div id="chart3"></div>
     </div>
 
@@ -413,7 +413,9 @@
                                     $date = new DateTime($key->dateS); 
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
-                      }, {
+                      }, 
+
+                      {
                         name: 'Evenement',
                         data: [   
                         <?php foreach ($projetsStatTypeDateEvenement as $key ) { 
