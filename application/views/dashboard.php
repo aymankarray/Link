@@ -366,7 +366,7 @@
                       chart: {
                         type: 'bar',
                       },
-                      width: 450,
+                      width: 100,
                       series: [{
                         name: 'Projets',
                         data: [   
@@ -392,7 +392,7 @@
      var options2 = {
           series: [<?php foreach ($projetsStatType as $key ) { echo $key->Cproject.',' ;  } ?>],
           chart: {
-          width:  200,
+          width:  450,
           type: 'pie',
         },
         labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->type.'",' ;  } ?>],
@@ -414,7 +414,7 @@
                           }
                         }
                       },
-                      width: 200,
+                      width: 100,
                       series: [
                       {
                         name: 'Action',
