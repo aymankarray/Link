@@ -407,7 +407,10 @@
 <script type="text/javascript">
           var options3 = {
                       chart: {
-                        type: 'area',
+                        type: 'bar',
+                          height: 350,
+                          stacked: true,
+                          stackType: '100%',
                         animations: {
                           initialAnimation: {
                             enabled: false
