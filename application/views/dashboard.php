@@ -335,10 +335,13 @@
         <h4>Projets/Mois</h4>  
         <div id="chart"></div>
     </div>
-
-    
     <div class="col-md-12">
         <h4>Type de projet / Mois</h4>
+        <div id="chart2"></div>
+    </div>
+    
+    <div class="col-md-12">
+        <h4>Type de projet / %</h4>
         <div id="chart3"></div>
     </div>
 
@@ -346,16 +349,16 @@
     <div class="col-md-2">
         <div id="Action"></div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-2">
         <div id="Compétition"></div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-2">
         <div id="Conférence"></div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-2">
         <div id="Couverture Mediatique"></div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-2">
         <div id="Formation"></div>
     </div>
 
