@@ -366,7 +366,7 @@
                       chart: {
                         type: 'bar',
                       },
-                      width: 380,
+                      width: 200,
                       series: [{
                         name: 'Projets',
                         data: [   
