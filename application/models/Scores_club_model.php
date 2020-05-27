@@ -153,7 +153,7 @@ class Scores_club_model extends CI_Model
 
          $this->db->where('BaseTbl.startDate >','2019-09-01');
 
-        $this->db->group_by('dateS , type') ;
+        $this->db->group_by('type , dateS  ') ;
 
         
 
