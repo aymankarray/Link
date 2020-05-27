@@ -488,6 +488,7 @@
 
                     Comp.render();
 
+/*
                       {
                         name: 'Conférence',
                         data: [   
@@ -515,5 +516,5 @@
                              ]
                       }, 
 
-      
+      */
 </script>
