@@ -350,15 +350,15 @@
         <div id="Action"></div>
     </div>
     <div class="col-md-4">
-        <div id="Compétition"></div>
+        <div id="Comp"></div>
     </div>
     <div class="col-md-4">
         <div id="Conférence"></div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-4">
         <div id="Couverture Mediatique"></div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-4">
         <div id="Formation"></div>
     </div>
 
@@ -442,7 +442,33 @@
                              ]
                       }, 
 
-                      {
+                     
+
+                      ],xaxis: {
+                        type: "date",
+                      }
+
+                    }
+
+                    var Action1 = new ApexCharts(document.querySelector("#Action"), Action);
+
+                    Action1.render();
+
+
+
+            var Comp = {
+                      chart: {
+                        type: 'area',
+
+                        animations: {
+                          initialAnimation: {
+                            enabled: false
+                          }
+                        }
+                      },
+                      width: 100,
+                      series: [
+                     {
                         name: 'Compétition',
                         data: [   
                         <?php foreach ($projetsStatTypeDateCompétition as $key ) { 
@@ -450,6 +476,17 @@
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
                       }, 
+
+
+                      ],xaxis: {
+                        type: "date",
+                      }
+
+                    }
+
+                    var Comp = new ApexCharts(document.querySelector("#Comp"), Comp);
+
+                    Comp.render();
 
                       {
                         name: 'Conférence',
@@ -477,16 +514,6 @@
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
                       }, 
-
-                      ],xaxis: {
-                        type: "date",
-                      }
-
-                    }
-
-                    var Action1 = new ApexCharts(document.querySelector("#Action"), Action);
-
-                    Action1.render();
 
       
 </script>
