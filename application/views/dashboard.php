@@ -343,23 +343,23 @@
 
 
 
-    <div class="col-md-4" style="background-color: #343a40;color: #fff "  >
+    <div class="col-md-4"  >
         <h4 class="text-center"  >Action</h4>
         <div id="Action"></div>
     </div>
-    <div class="col-md-4" style="background-color: #343a40;color: #fff "  >
+    <div class="col-md-4"  >
         <h4 class="text-center" >Compeétition</h4>
         <div id="Comp"></div>
     </div>
-    <div class="col-md-4" style="background-color: #343a40;color: #fff " >
+    <div class="col-md-4"  >
         <h4 class="text-center">Conférence</h4>
         <div id="Conf"></div>
     </div>
-    <div class="col-md-4" style="background-color: #343a40;color: #fff " >
+    <div class="col-md-4"  >
         <h4 class="text-center" >Couverture mediatique</h4>
         <div id="CM"></div>
     </div>
-    <div class="col-md-4" style="background-color: #343a40;color: #fff "  >
+    <div class="col-md-4"  >
         <h4 class="text-center" >Formation</h4>
         <div id="Formation"></div>
     </div>
