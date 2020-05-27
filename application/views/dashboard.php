@@ -460,14 +460,18 @@
 
             var Comp = {
                       chart: {
-                        type: 'area',
-
-                        animations: {
-                          initialAnimation: {
-                            enabled: false
-                          }
-                        }
-                      },
+                                      height: 350,
+                                      type: 'line',
+                                      zoom: {
+                                        enabled: false
+                                      }
+                                    },
+                                    dataLabels: {
+                                      enabled: false
+                                    },
+                                    stroke: {
+                                      curve: 'straight'
+                                    },
                       width: 100,
                       series: [
                      {
@@ -496,14 +500,18 @@
 
                 var Conf = {
                       chart: {
-                        type: 'area',
-
-                        animations: {
-                          initialAnimation: {
-                            enabled: false
-                          }
-                        }
-                      },
+                                      height: 350,
+                                      type: 'line',
+                                      zoom: {
+                                        enabled: false
+                                      }
+                                    },
+                                    dataLabels: {
+                                      enabled: false
+                                    },
+                                    stroke: {
+                                      curve: 'straight'
+                                    },
                       width: 100,
                       series: [
                      {
@@ -529,15 +537,19 @@
 
 
              var Formation = {
-                      chart: {
-                        type: 'area',
-
-                        animations: {
-                          initialAnimation: {
-                            enabled: false
-                          }
-                        }
-                      },
+                                    chart: {
+                                      height: 350,
+                                      type: 'line',
+                                      zoom: {
+                                        enabled: false
+                                      }
+                                    },
+                                    dataLabels: {
+                                      enabled: false
+                                    },
+                                    stroke: {
+                                      curve: 'straight'
+                                    },
                       width: 100,
                       series: [
                      
@@ -563,15 +575,19 @@
 
                     
                     var CM = {
-                      chart: {
-                        type: 'area',
-
-                        animations: {
-                          initialAnimation: {
-                            enabled: false
-                          }
-                        }
-                      },
+                            chart: {
+                                      height: 350,
+                                      type: 'line',
+                                      zoom: {
+                                        enabled: false
+                                      }
+                                    },
+                                    dataLabels: {
+                                      enabled: false
+                                    },
+                                    stroke: {
+                                      curve: 'straight'
+                                    },
                       width: 100,
                       series: [
                      
