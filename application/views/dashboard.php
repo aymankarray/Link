@@ -405,13 +405,11 @@
             name: 'Formation',
            
               data: [
-                   <?php foreach ($projetsStatTypeDateFormation as $key ) { ?>
-                        {
-                          x: "<?php echo $key->dateS ?>",
-                          y: <?php echo $key->Cproject ?>
-                        },
-                    <?php } ?>
-            },
+              {
+                   <?php foreach ($projetsStatTypeDateFormation as $key ) 
+                         ?>{ x: "<?php echo $key->dateS ?>", y: <?php echo $key->Cproject ?> },    
+                    <?php }     ?>
+                },
 
 
             ],
