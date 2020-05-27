@@ -525,7 +525,7 @@
 
                     }
 
-                    var Comp = new ApexCharts(document.querySelector("#Conf"), Conf);
+                    var Conf = new ApexCharts(document.querySelector("#Conf"), Conf);
 
                     Conf.render();
 
