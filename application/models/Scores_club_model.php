@@ -101,7 +101,7 @@ class Scores_club_model extends CI_Model
 
          $this->db->where('BaseTbl.startDate >','2019-09-01');
 
-        $this->db->group_by('dateS');
+        $this->db->group_by(' , dateS');
         $this->db->order_by('dateS ASC');
         
 
@@ -121,13 +121,39 @@ class Scores_club_model extends CI_Model
      */
     function scoreValiderStatsbyTypeListing()
     {
-         $this->db->select('count(BaseTbl.projectId) Cproject , BaseTbl.type ' );
+         $this->db->select(' count(BaseTbl.projectId) Cproject , BaseTbl.type ' );
         
         $this->db->from('tbl_project as BaseTbl');
 
          $this->db->where('BaseTbl.startDate >','2019-09-01');
 
         $this->db->group_by('BaseTbl.type ');
+
+        
+
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+    }
+
+
+            /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function scoreValiderStatsbyTypeDateListing()
+    {
+         $this->db->select('DATE_FORMAT(BaseTbl.startDate, "%Y-%m ") as dateS , count(BaseTbl.projectId) Cproject , BaseTbl.type ' );
+        
+        $this->db->from('tbl_project as BaseTbl');
+
+         $this->db->where('BaseTbl.startDate >','2019-09-01');
+
+        $this->db->group_by('dateS , type') ;
 
         
 

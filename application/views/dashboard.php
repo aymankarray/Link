@@ -330,13 +330,15 @@
 
 <div class="row">
     
-    <div class="col-md-7">
+    <div class="col-md-12">
         <div id="chart"></div>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-4">
         <div id="chart2"></div>
     </div>
-
+    <div class="col-md-8">
+        <div id="chart3"></div>
+    </div>
 
 </div>
 
@@ -386,11 +388,8 @@
           type: 'pie',
         },
         labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->type.'",' ;  } ?>],
-        theme: {
-          monochrome: {
-            enabled: true
-          }
-        },
+        
+        
         
         };
 
@@ -398,4 +397,60 @@
         chart2.render();
 
 
+</script>
+
+<script type="text/javascript">
+         var options3 = {
+          series: [{
+              name: 'Net Profit',
+              data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+            }, {
+              name: 'Revenue',
+              data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
+            }, {
+              name: 'Free Cash Flow',
+              data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+            }],
+              chart: {
+              type: 'bar',
+              height: 350
+            },
+            plotOptions: {
+              bar: {
+                horizontal: false,
+                columnWidth: '55%',
+                endingShape: 'rounded'
+              },
+            },
+            dataLabels: {
+              enabled: false
+            },
+            stroke: {
+              show: true,
+              width: 2,
+              colors: ['transparent']
+            },
+            xaxis: {
+              categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+            },
+            yaxis: {
+              title: {
+                text: '$ (thousands)'
+              }
+            },
+            fill: {
+              opacity: 1
+            },
+            tooltip: {
+              y: {
+                formatter: function (val) {
+                  return "$ " + val + " thousands"
+                }
+              }
+            }
+            };
+
+        var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
+        chart3.render();
+      
 </script>

@@ -62,7 +62,7 @@ class User extends BaseController
         $data["projets"] = $this->Scores_club_model->scoreValiderListing()  ;
         $data["projetsStat"] = $this->Scores_club_model->scoreValiderStatsListing()  ;
         $data["projetsStatType"] = $this->Scores_club_model->scoreValiderStatsbyTypeListing() ;
-
+        $data["projetsStatTypeDate"] = $this->Scores_club_model->scoreValiderStatsbyTypeDateListing() ;
 
         $data["RateClub"] = $this->scores_model->RaitingClub()   ;
         $data["LastRaitingClub"] = $this->scores_model->LastRaitingClub()   ;
