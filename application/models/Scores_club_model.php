@@ -125,7 +125,7 @@ class Scores_club_model extends CI_Model
         
         $this->db->from('tbl_project as BaseTbl');
 
-         $this->db->where('BaseTbl.startDate > 2019-09-01 AND BaseTbl.endDate < NOW()  ');
+        $this->db->where('  BaseTbl.endDate < NOW() AND BaseTbl.startDate > ','2019-09-01');
 
         $this->db->group_by('BaseTbl.type ');
 
@@ -151,7 +151,7 @@ class Scores_club_model extends CI_Model
         
         $this->db->from('tbl_project as BaseTbl');
 
-         $this->db->where('BaseTbl.startDate > 2019-09-01 AND BaseTbl.endDate < NOW() ');
+         $this->db->where('  BaseTbl.endDate < NOW() AND BaseTbl.startDate > ','2019-09-01');
          $this->db->where('BaseTbl.type = ',$type);
 
         $this->db->group_by('type , dateS  ') ;
