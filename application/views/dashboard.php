@@ -333,12 +333,16 @@
     <div class="col-md-12">
         <div id="chart"></div>
     </div>
-    <div class="col-md-4">
-        <div id="chart2"></div>
-    </div>
+
     <div class="col-md-8">
         <div id="chart3"></div>
     </div>
+
+
+    <div class="col-md-4">
+        <div id="chart2"></div>
+    </div>
+
 
 </div>
 
