@@ -331,12 +331,12 @@
 <div class="row">
     
     <h4>Projets/Mois</h4>    
-    <div class="col-md-12">
+    <div class="col-md-10">
         <div id="chart"></div>
     </div>
 
     <h4>Type de projet / Mois</h4>
-    <div class="col-md-12">
+    <div class="col-md-10">
         <div id="chart3"></div>
     </div>
 
