@@ -441,7 +441,7 @@
                      {
                         name: 'Conférence',
                         data: [   
-                        <?php foreach ($projetsStatTypeDateCompétition as $key ) { 
+                        <?php foreach ($projetsStatTypeDateConf as $key ) { 
                                     $date = new DateTime($key->dateS); 
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
@@ -519,7 +519,7 @@
                       {
                         name: 'Formation',
                         data: [   
-                        <?php foreach ($projetsStatTypeDateFormation as $key ) { 
+                        <?php foreach ($projetsStatTypeDateEvenement as $key ) { 
                                     $date = new DateTime($key->dateS); 
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
