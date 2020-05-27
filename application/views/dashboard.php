@@ -406,7 +406,35 @@
                         type: 'bar',
                       },
                       width: 380,
-                      series: [{
+                      series: [
+                      {
+                        name: 'Action',
+                        data: [   
+                        <?php foreach ($projetsStatTypeDateAction as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                             ]
+                      }, 
+
+                      {
+                        name: 'Compétition',
+                        data: [   
+                        <?php foreach ($projetsStatTypeDateCompétition as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                             ]
+                      }, 
+
+                      {
+                        name: 'Conférence',
+                        data: [   
+                        <?php foreach ($projetsStatTypeDateConférence as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                             ]
+                      }, 
+
+                      {
                         name: 'Formation',
                         data: [   
                         <?php foreach ($projetsStatTypeDateFormation as $key ) { 
