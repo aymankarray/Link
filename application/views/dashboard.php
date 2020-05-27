@@ -400,61 +400,28 @@
 </script>
 
 <script type="text/javascript">
-         var options3 = {
-          series: [{
-            name: 'Formation',
-           
-              data: [
-                {
-                   <?php foreach ($projetsStatTypeDateFormation as $key ) {     ?> 
+          var options3 = {
+                      chart: {
+                        type: 'bar',
+                      },
+                      width: 380,
+                      series: [{
+                        name: 'Projets',
+                        data: [   
+                        <?php foreach ($projetsStatTypeDateFormation as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
+                             ]
+                      }
+                      ],xaxis: {
+                        type: "date",
+                      }
 
-                        { x: "<?php echo $key->dateS ?>", y: <?php echo $key->Cproject ?> },    
-                        
-                    <?php }     ?>
-                },
+                    }
 
+                    var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
 
-            ],
-              chart: {
-              type: 'bar',
-              height: 350
-            },
-            plotOptions: {
-              bar: {
-                horizontal: false,
-                columnWidth: '55%',
-                endingShape: 'rounded'
-              },
-            },
-            dataLabels: {
-              enabled: false
-            },
-            stroke: {
-              show: true,
-              width: 2,
-              colors: ['transparent']
-            },
-            xaxis: {
-              type: "date"
-            },
-            yaxis: {
-              title: {
-                text: '$ (thousands)'
-              }
-            },
-            fill: {
-              opacity: 1
-            },
-            tooltip: {
-              y: {
-                formatter: function (val) {
-                  return "$ " + val + " thousands"
-                }
-              }
-            }
-            };
+                    chart3.render();
 
-        var chart3 = new ApexCharts(document.querySelector("#chart3"), options3);
-        chart3.render();
       
 </script>
