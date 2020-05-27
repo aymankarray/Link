@@ -124,6 +124,12 @@ class Scores_club_model extends CI_Model
          $this->db->select(' count(BaseTbl.projectId) Cproject , BaseTbl.type ' );
         
         $this->db->from('tbl_project as BaseTbl');
+        $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
+
+        $this->db->where('Evaluations.validBy != 0 ') ;
+        $this->db->where('BaseTbl.endDate < NOW() AND BaseTbl.startDate > ','2019-09-01');
+        $this->db->where('BaseTbl.type = ',$type);
+
 
         $this->db->where('  BaseTbl.endDate < NOW() AND BaseTbl.startDate > ','2019-09-01');
 
@@ -150,9 +156,11 @@ class Scores_club_model extends CI_Model
          $this->db->select('DATE_FORMAT(BaseTbl.startDate, "%Y-%m ") as dateS , count(BaseTbl.projectId) Cproject , BaseTbl.type ' );
         
         $this->db->from('tbl_project as BaseTbl');
+        $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
 
-         $this->db->where('  BaseTbl.endDate < NOW() AND BaseTbl.startDate > ','2019-09-01');
-         $this->db->where('BaseTbl.type = ',$type);
+        $this->db->where('Evaluations.validBy != 0 ') ;
+        $this->db->where('BaseTbl.endDate < NOW() AND BaseTbl.startDate > ','2019-09-01');
+        $this->db->where('BaseTbl.type = ',$type);
 
         $this->db->group_by('type , dateS  ') ;
 
