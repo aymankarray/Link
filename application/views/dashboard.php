@@ -346,13 +346,13 @@
     </div>
 
 
-    <div class="col-md-2">
+    <div class="col-md-4">
         <div id="Action"></div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-4">
         <div id="Compétition"></div>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-4">
         <div id="Conférence"></div>
     </div>
     <div class="col-md-2">
