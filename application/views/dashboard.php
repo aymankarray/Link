@@ -340,30 +340,27 @@
         <div id="chart2"></div>
     </div>
     
-    <div class="col-md-12">
-        <h4>Type de projet</h4>
-        <div id="chart3"></div>
-    </div>
 
 
-    <div class="col-md-4">
-        <h4>Action</h4>
+
+    <div class="col-md-4" style="background-color: #343a40;color: #fff "  >
+        <h4 class="text-center"  >Action</h4>
         <div id="Action"></div>
     </div>
-    <div class="col-md-4">
-        <h4>Compeétition</h4>
+    <div class="col-md-4" style="background-color: #343a40;color: #fff "  >
+        <h4 class="text-center" >Compeétition</h4>
         <div id="Comp"></div>
     </div>
-    <div class="col-md-4">
-        <h4>Conférence</h4>
+    <div class="col-md-4" style="background-color: #343a40;color: #fff " >
+        <h4 class="text-center">Conférence</h4>
         <div id="Conf"></div>
     </div>
-    <div class="col-md-4">
-        <h4>Couverture mediatique</h4>
+    <div class="col-md-4" style="background-color: #343a40;color: #fff " >
+        <h4 class="text-center" >Couverture mediatique</h4>
         <div id="CM"></div>
     </div>
-    <div class="col-md-4">
-        <h4>Formation</h4>
+    <div class="col-md-4" style="background-color: #343a40;color: #fff "  >
+        <h4 class="text-center" >Formation</h4>
         <div id="Formation"></div>
     </div>
 
