@@ -58,7 +58,7 @@
                                     <img src="https://www.tunivisions.link/uploads/Actu/<?php echo $record->image ?>" class="img-fluid mb-4" alt="logo">
                                     <h4 class="mb-1 text-white">
                                     <?php 
-                                                        $string = strip_tags( $record->titre  );
+                                                        $string = strip_tags( $key->titre  );
                                                         if (strlen($string) > 25){
 
                                                             // truncate string
@@ -73,7 +73,7 @@
                                                          echo $string ;
                                                          ?>  </h4>
                                     <p><?php 
-                                                        $string = strip_tags( $record->description  );
+                                                        $string = strip_tags( $key->description  );
                                                         if (strlen($string) > 55){
 
                                                             // truncate string
@@ -89,7 +89,7 @@
                                                          ?>  </p>
                                 </div>
                                 
-                               <? } ?>
+                               <?php } ?>
                                 <div class="item">
                                     <img src="<?php echo base_url() ;  ?>images/login/2.png" class="img-fluid mb-4" alt="logo"> 
                                     <h4 class="mb-1 text-white">Connect with the world</h4>
