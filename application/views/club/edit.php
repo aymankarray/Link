@@ -52,9 +52,6 @@
                         </select>
 
 
-                        <iframe src="https://tunivisions.link/User/ProfileShow/2">
-                          
-                        </iframe>
 
                             
                             
@@ -83,6 +80,6 @@
 
 <script type="text/javascript">
     
-    
+
 
 </script>
