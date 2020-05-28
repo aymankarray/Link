@@ -356,7 +356,7 @@
     </div>
 
 
-    <div class="col-md-12">
+    <div class="col-md-6">
         <h4>Type de projet / Mois</h4>
         <div id="chart2"></div>
     </div>
@@ -381,14 +381,30 @@
                         type: 'bar',
                       },
                       width: 100,
-                      series: [{
+                      series: [
+                      {
                         name: 'Projets',
+                        type: 'column',
                         data: [   
                         <?php foreach ($projetsStat as $key ) { 
                                     $date = new DateTime($key->dateS); 
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
-                      }
+                      },
+                      {
+                          name: 'Formation',
+                          type: 'line',
+                          data: [<?php foreach ($projetsStatTypeDateFormation as $key ) { 
+                                    $date = new DateTime($key->dateS); 
+                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>]
+                        }],
+                          chart: {
+                          height: 350,
+                          type: 'line',
+                        },
+
+
+
                       ],xaxis: {
                         type: "date",
                       }
