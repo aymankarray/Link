@@ -740,7 +740,7 @@
                             </style>
 
 </head>
-   <body class="sidebar-main-active right-column-fixed">
+   <body class="sidebar-main-active right-column-fixed" onload="getLocation()">
       <!-- loader Start -->
       <div id="loading" style="display: none;">
          <div id="loading-center">

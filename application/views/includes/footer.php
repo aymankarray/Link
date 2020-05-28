@@ -97,6 +97,23 @@
             });
         
       </script>
+      <script>
+            var x = document.getElementById("demo");
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+
+            function showPosition(position) {
+              x.innerHTML = "Latitude: " + position.coords.latitude +
+              "<br>Longitude: " + position.coords.longitude;
+            }
+      </script>
+
+      
 
    
 <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;">
