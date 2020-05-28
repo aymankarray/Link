@@ -118,19 +118,34 @@
               function showError(error) {
                 switch(error.code) {
                   case error.PERMISSION_DENIED:
-                                Swal.fire({
-                                  title: 'il est strictement obligatoire d\'activer la géolocalisation.',
-                                  width: 600,
-                                  allowOutsideClick: false,
-                                  padding: '3em',
-                                  background: '#fff url(/images/trees.png)',
-                                  backdrop: `
-                                    rgba(0,0,123,0.4)
-                                    url("/images/nyan-cat.gif")
-                                    left top
-                                    no-repeat
-                                  `
-                                })
+                                let timerInterval
+                                      Swal.fire({
+                                        title: 'Nouvelle condition ',
+                                        html: 'il est strictement obligatoire d\'activer la géolocalisation.',
+                                        timer: 8000,
+                                        allowOutsideClick: false,
+                                        timerProgressBar: true,
+                                        onBeforeOpen: () => {
+                                          Swal.showLoading()
+                                          timerInterval = setInterval(() => {
+                                            const content = Swal.getContent()
+                                            if (content) {
+                                              const b = content.querySelector('b')
+                                              if (b) {
+                                                b.textContent = Swal.getTimerLeft()
+                                              }
+                                            }
+                                          }, 100)
+                                        },
+                                        onClose: () => {
+                                          clearInterval(timerInterval)
+                                        }
+                                      }).then((result) => {
+                                        /* Read more about handling dismissals below */
+                                        if (result.dismiss === Swal.DismissReason.timer) {
+                                          console.log('I was closed by the timer')
+                                        }
+                                      })
                     break;
                   case error.POSITION_UNAVAILABLE:
                     x.innerHTML = "Location information is unavailable."
