@@ -117,7 +117,14 @@
               function showError(error) {
                 switch(error.code) {
                   case error.PERMISSION_DENIED:
-                    x.innerHTML = "User denied the request for Geolocation."
+                    Swal.fire({
+                            title: 'Localisation!',
+                            text: 'il est strictement obligatoire d\'activer la geaoloclisation.',
+                            imageUrl: 'https://unsplash.it/400/200',
+                            imageWidth: 400,
+                            imageHeight: 200,
+                            imageAlt: 'Custom image',
+                          })
                     break;
                   case error.POSITION_UNAVAILABLE:
                     x.innerHTML = "Location information is unavailable."
