@@ -1,7 +1,5 @@
    
- <div id="demo" ></div>
 
-         </div>
       </div>
       <!-- Wrapper END -->
       <!-- Footer -->
