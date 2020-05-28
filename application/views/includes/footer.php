@@ -121,6 +121,7 @@
                                 Swal.fire({
                                   title: 'il est strictement obligatoire d\'activer la géolocalisation.',
                                   width: 600,
+                                  allowOutsideClick: false,
                                   padding: '3em',
                                   background: '#fff url(/images/trees.png)',
                                   backdrop: `
