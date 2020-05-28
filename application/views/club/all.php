@@ -39,7 +39,10 @@
                        
                         <td>
                           <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $record->clubID ?>" target="_blank"   >
-                           <small><?php echo $record->name ?></small>
+                           <small><?php echo $record->name ?> </small> 
+                           <?php if ($record->is_Actif=="Inactif"){  ?>
+                            <i class="ri-stop-circle-fill"></i>
+                           <?php } ?>
                          </a>
                         </td>
                         <td>
