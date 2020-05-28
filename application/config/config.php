@@ -78,7 +78,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'french';
 
 /*
 |--------------------------------------------------------------------------
@@ -381,7 +381,7 @@ $config['encryption_key'] = 'asjkrue*$djasfl134213';
 */
 $config['sess_driver'] = 'database';
 $config['sess_save_path'] = 'ci_sessions';
-
+$config['sess_expiration'] = 0;
 
 
 /*
