@@ -118,14 +118,18 @@
               function showError(error) {
                 switch(error.code) {
                   case error.PERMISSION_DENIED:
-                    Swal.fire({
-                            title: 'Localisation!',
-                            text: 'il est strictement obligatoire d\'activer la geaoloclisation.',
-                            imageUrl: 'https://unsplash.it/400/200',
-                            imageWidth: 400,
-                            imageHeight: 200,
-                            imageAlt: 'Custom image',
-                          })
+                                Swal.fire({
+                                  title: 'il est strictement obligatoire d\'activer la géolocalisation.',
+                                  width: 600,
+                                  padding: '3em',
+                                  background: '#fff url(/images/trees.png)',
+                                  backdrop: `
+                                    rgba(0,0,123,0.4)
+                                    url("/images/nyan-cat.gif")
+                                    left top
+                                    no-repeat
+                                  `
+                                })
                     break;
                   case error.POSITION_UNAVAILABLE:
                     x.innerHTML = "Location information is unavailable."
