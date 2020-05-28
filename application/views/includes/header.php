@@ -910,7 +910,7 @@
                                  <div class="iq-card-body p-0 ">
                                     <div class="bg-primary p-3 line-height">
                                        <h5 class="mb-0 text-white line-height">Salut ! <?php echo $name ?></h5>
-                                       <span class="text-white font-size-12">En ligne  <p id="demo"></p></span>
+                                       <span class="text-white font-size-12">En ligne  </span>
                                            
                                     </div>
                                     <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $MyUserId ; ?>" class="iq-sub-card iq-bg-primary-hover">
@@ -949,6 +949,7 @@
                                     </a>
                                     
                                     <div class="d-inline-block w-100 text-center p-3">
+                                      <p id="demo"></p>
                                        <a class="bg-primary iq-sign-btn" href="<?php echo base_url() ?>logout" role="button">Déconnection<i class="ri-login-box-line ml-2"></i></a>
                                     </div>
                                  </div>
