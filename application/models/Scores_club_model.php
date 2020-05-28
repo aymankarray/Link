@@ -160,8 +160,8 @@ class Scores_club_model extends CI_Model
         $this->db->where('Evaluations.validBy != 0 ') ;
         
         $this->db->where('BaseTbl.type = ',$type);
-        $this->db->where('BaseTbl.startDate >  ','2019-09-01');
-        $this->db->where('BaseTbl.startDate < ','NOW()');
+        $this->db->where('BaseTbl.startDate >=  ','2019-09-01');
+        $this->db->where('BaseTbl.startDate <= ','DATE_FORMAT(NOW()  , "%Y-%m-%d ")');
 
         $this->db->group_by('type , dateS  ') ;
 
