@@ -335,10 +335,7 @@
         <h4>Projets/Mois</h4>  
         <div id="chart"></div>
     </div>
-    <div class="col-md-12">
-        <h4>Type de projet / Mois</h4>
-        <div id="chart2"></div>
-    </div>
+
     
 
 
@@ -358,6 +355,11 @@
         <div id="Formation"></div>
     </div>
 
+
+    <div class="col-md-12">
+        <h4>Type de projet / Mois</h4>
+        <div id="chart2"></div>
+    </div>
 
 
 </div>
