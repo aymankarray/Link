@@ -342,23 +342,47 @@
 
 
     <div class="col-md-4"  >
-        <h4 class="text-center" >Evenenement</h4>
-        <div id="Even"></div>
+        <div class="card">
+            <div class="card-title">
+                <h4 class="text-center" >Evenenement</h4>
+            </div>
+            <div class="card-body">
+                <div id="Even"></div>
+            </div>
+        </div>
     </div>
     <div class="col-md-4"  >
-        <h4 class="text-center">Conférence</h4>
-        <div id="Conf"></div>
+        <div class="card">
+            <div class="card-title">
+                <h4 class="text-center" >Conférence</h4>
+            </div>
+            <div class="card-body">
+                <div id="Conf"></div>
+            </div>
+        </div>
     </div>
-
     <div class="col-md-4"  >
-        <h4 class="text-center" >Formation</h4>
-        <div id="Formation"></div>
+        <div class="card">
+            <div class="card-title">
+                <h4 class="text-center" >Formation</h4>
+            </div>
+            <div class="card-body">
+                <div id="Formation"></div>
+            </div>
+        </div>
     </div>
 
 
-    <div class="col-md-6">
-        <h4>Type de projet / Mois</h4>
-        <div id="chart2"></div>
+
+       <div class="col-md-4"  >
+        <div class="card">
+            <div class="card-title">
+                <h4 class="text-center" >Type de projet (%) mandat 2019-2020)</h4>
+            </div>
+            <div class="card-body">
+                <div id="chart2"></div>
+            </div>
+        </div>
     </div>
 
 
@@ -381,30 +405,14 @@
                         type: 'bar',
                       },
                       width: 100,
-                      series: [
-                      {
+                      series: [{
                         name: 'Projets',
-                        type: 'column',
                         data: [   
                         <?php foreach ($projetsStat as $key ) { 
                                     $date = new DateTime($key->dateS); 
                             echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>
                              ]
-                      },
-                      {
-                          name: 'Formation',
-                          type: 'line',
-                          data: [<?php foreach ($projetsStatTypeDateFormation as $key ) { 
-                                    $date = new DateTime($key->dateS); 
-                            echo '{ x: "'.date_format( $date , 'm-Y').' " , y: '. $key->Cproject.' } , ' ;  } ?>]
-                        }],
-                          chart: {
-                          height: 350,
-                          type: 'line',
-                        },
-
-
-
+                      }
                       ],xaxis: {
                         type: "date",
                       }
