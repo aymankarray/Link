@@ -121,7 +121,7 @@ class Project extends BaseController {
                 $projectInfo = array(        
                  'banner' => $file_name ,
                  'type' => $type ,
-                 'Titre' => $Titre , 
+                 'Titre' => NL2BR($Titre) , 
                  'description' => NL2BR($Description) , 
                  'startDate' => $debut , 
                  'endDate' => $fin , 
