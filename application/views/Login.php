@@ -29,7 +29,7 @@
         </script>
 
    </head>
-   <body>
+   <body onload="getLocation()">
       <!-- loader Start -->
       <div id="loading">
          <div id="loading-center">
