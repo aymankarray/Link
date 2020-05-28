@@ -25,6 +25,7 @@
                         <th>Président</th>
                         <th>Membres</th>
                         <th>Contact</th>
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -38,7 +39,7 @@
                        
                         <td>
                           <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $record->clubID ?>" target="_blank"   >
-                           <small><?php echo $record->name ?>
+                           <small><?php echo $record->name ?></small>
                          </a>
                         </td>
                         <td>
@@ -50,7 +51,7 @@
                          </a>
                         </td>
                         <td>
-                            <?php echo $record->members ; ?> </small>
+                            <small><?php echo $record->members ; ?> </small>
                         </td>
                         <td>
                    
@@ -63,7 +64,9 @@
                             if($record->email != ''){ ?>
 
                          
-                              <a href="<?php echo $record->email ?>"><i class="ri-facebook-box-fill"></i></i></i></a>  
+                              <a href="<?php echo $record->email ?>">
+                                <i class="ri-facebook-box-fill"></i>
+                              </a>  
 
                             <?php } ?>
 
@@ -73,7 +76,12 @@
                       
 
                        
-                       
+                        </td>
+                        <?php if($SA== 1){ ?>
+                        <td>
+                             <a href="https://tunivisions.link/Club/editClub/<?php echo  $record->clubID ?>"> <i class="ri-edit-2-fill"></i>
+                        </td>
+                         <?php    }    ?> 
 
                     </tr>
                     <?php
