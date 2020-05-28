@@ -90,16 +90,7 @@
                                 </div>
                                 
                                <?php } ?>
-                                <div class="item">
-                                    <img src="<?php echo base_url() ;  ?>images/login/2.png" class="img-fluid mb-4" alt="logo"> 
-                                    <h4 class="mb-1 text-white">Connect with the world</h4>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
-                                </div>
-                                <div class="item">
-                                    <img src="<?php echo base_url() ;  ?>images/login/3.png" class="img-fluid mb-4" alt="logo">
-                                    <h4 class="mb-1 text-white">Create new events</h4>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
