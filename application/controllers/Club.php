@@ -131,91 +131,16 @@ class Club extends BaseController {
 		        }
 
 
-		        public function EditPostes()
+		        public function ClassementMembers($clubId)
 		        {
 					$this->load->model('user_model');
-				
-					$userInfo =  array('roleId' => 5  );
 
-			       	$equipe = $this->user_model->getMembersByCellule($this->clubID,'Marketing');
-			       	foreach ($equipe as $record ) {	       		
-			       		$this->user_model->editUser($userInfo, $record->userId) ;	
-			       	 }
-
-			       	$equipe = $this->user_model->getMembersByCellule($this->clubID,'Administration et finance');
-			       	foreach ($equipe as $record ) {			       		
-			       		$this->user_model->editUser($userInfo, $record->userId) ;	
-			       	 }
-
-			       	$equipe = $this->user_model->getMembersByCellule($this->clubID,'Evenementiel');
-			       	foreach ($equipe as $record ) {			       	
-			       		$this->user_model->editUser($userInfo, $record->userId) ;	
-			       	 }
-
-			       	$equipe = $this->user_model->getMembersByCellule($this->clubID,'Gestion des talents');
-			       	foreach ($equipe as $record ) {			       		
-			       		$this->user_model->editUser($userInfo, $record->userId) ;	
-			       	 }
-
-
-
-			       	$VPM = $this->input->post('VPM');
-			       	$VPGT = $this->input->post('VPGT');
-			       	$VPE = $this->input->post('VPE');
-			       	$VPAF = $this->input->post('VPAF');
-
+			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
 			       	
-			       	$userInfo =  array('roleId' =>  3 );
-
-			       	if($VPM != NULL){
-			       	$this->user_model->editUser($userInfo, $VPM) ;
-			       	$notifInfo = array(        
-                                                             'text' => 'Félicitation pour votre nouveau poste' ,
-                                                             'dateNotif' => date('Y-m-d H:i:s') , 
-                                                             'seen' => 'no' , 
-                                                             'type' => 'Notification',
-                                                             'userId' => $VPM 
-                                                             );                       
-                           $this->notification_model->addNewNotificaition($notifInfo) ;
-					}
-					
-					if($VPGT != NULL){
-			       	$this->user_model->editUser($userInfo, $VPGT); 
-			       				       	$notifInfo = array(        
-                                                             'text' => 'Félicitation pour votre nouveau poste' ,
-                                                             'dateNotif' => date('Y-m-d H:i:s') , 
-                                                             'seen' => 'no' , 
-                                                             'type' => 'Notification',
-                                                             'userId' => $VPGT 
-                                                             );                       
-                           $this->notification_model->addNewNotificaition($notifInfo) ;
-                    }       
-
-                    if($VPAF != NULL){
-			       	$this->user_model->editUser($userInfo, $VPAF) ;
-			       				       	$notifInfo = array(        
-                                                             'text' => 'Félicitation pour votre nouveau poste' ,
-                                                             'dateNotif' => date('Y-m-d H:i:s') , 
-                                                             'seen' => 'no' , 
-                                                             'type' => 'Notification',
-                                                             'userId' => $VPAF 
-                                                             );                       
-                           $this->notification_model->addNewNotificaition($notifInfo) ;
-                    }       
-
-                    if($VPE != NULL){
-			       	$this->user_model->editUser($userInfo, $VPE) ;
-			       				       	$notifInfo = array(        
-                                                             'text' => 'Félicitation pour votre nouveau poste' ,
-                                                             'dateNotif' => date('Y-m-d H:i:s') , 
-                                                             'seen' => 'no' , 
-                                                             'type' => 'Notification',
-                                                             'userId' => $VPE 
-                                                             );                       
-                           $this->notification_model->addNewNotificaition($notifInfo) ;
-                    }
-                           
-			        redirect('club/clubInfo/'.$this->clubID);
+			        $this->loadViews("club/edit", $this->global, $data, NULL);
 		        }
+
+
+		       
 
 }
