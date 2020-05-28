@@ -406,7 +406,7 @@
      var options2 = {
           series: [<?php foreach ($projetsStatType as $key ) { echo $key->Cproject.',' ;  } ?>],
           chart: {
-          width:  550,
+          width:  auto,
           type: 'pie',
         },
         labels: [<?php foreach ($projetsStatType as $key ) { echo '"'.$key->type.'",' ;  } ?>],

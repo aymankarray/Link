@@ -98,8 +98,13 @@ class Scores_club_model extends CI_Model
          $this->db->select('count(BaseTbl.projectId) Cproject , DATE_FORMAT(BaseTbl.startDate, "%Y-%m ") as dateS ' );
         
         $this->db->from('tbl_project as BaseTbl');
+        $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
 
-         $this->db->where('BaseTbl.startDate >','2019-09-01');
+        $this->db->where('Evaluations.validBy != 0 ') ;
+        
+ 
+        $this->db->where('BaseTbl.startDate >=  ','2019-09-01');
+        $this->db->where('BaseTbl.startDate <=  ','2020-06-01');
 
         $this->db->group_by(' , dateS');
         $this->db->order_by('dateS ASC');
@@ -127,10 +132,12 @@ class Scores_club_model extends CI_Model
         $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
 
         $this->db->where('Evaluations.validBy != 0 ') ;
-        $this->db->where('BaseTbl.endDate < NOW() AND BaseTbl.startDate > ','2019-09-01');
+        
+ 
+        $this->db->where('BaseTbl.startDate >=  ','2019-09-01');
+        $this->db->where('BaseTbl.startDate <=  ','2020-06-01');
+      
 
-
-        $this->db->where('  BaseTbl.endDate < NOW() AND BaseTbl.startDate > ','2019-09-01');
 
         $this->db->group_by('BaseTbl.type ');
 
