@@ -134,7 +134,7 @@ class Club extends BaseController {
 		        public function editClub($clubId)
 		        {
 					$this->load->model('user_model');
-
+                    $data["members"] = $this->user_model->userListingByclub($this->vendorId,$clubId)
 			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
 			       	
 			        $this->loadViews("club/edit", $this->global, $data, NULL);
