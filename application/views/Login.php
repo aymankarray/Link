@@ -51,11 +51,45 @@
                         <div class="sign-in-detail text-white">
                             <a class="sign-in-logo mb-5" href="#"><img src="<?php echo base_url() ;  ?>images/logo blanc2.svg" class="img-fluid" width="" alt="logo"></a>
                             <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
+                                <?php foreach ($ActuRecords as $key ) {
+                                  ?>
+                                
                                 <div class="item">
-                                    <img src="<?php echo base_url() ;  ?>images/login/1.png" class="img-fluid mb-4" alt="logo">
-                                    <h4 class="mb-1 text-white">Find new friends</h4>
-                                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                                    <img src="https://www.tunivisions.link/uploads/Actu/<?php echo $record->image ?>" class="img-fluid mb-4" alt="logo">
+                                    <h4 class="mb-1 text-white">
+                                    <?php 
+                                                        $string = strip_tags( $record->titre  );
+                                                        if (strlen($string) > 25){
+
+                                                            // truncate string
+                                                            $stringCut = substr($string, 0, 25);
+                                                            $endPoint = strrpos($stringCut, ' ');
+
+                                                            //if the string doesn't contain any space then it will cut without word basis.
+                                                            $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                            $string .= '... ';
+                                                            }
+
+                                                         echo $string ;
+                                                         ?>  </h4>
+                                    <p><?php 
+                                                        $string = strip_tags( $record->description  );
+                                                        if (strlen($string) > 55){
+
+                                                            // truncate string
+                                                            $stringCut = substr($string, 0, 55);
+                                                            $endPoint = strrpos($stringCut, ' ');
+
+                                                            //if the string doesn't contain any space then it will cut without word basis.
+                                                            $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                            $string .= '... ';
+                                                            }
+
+                                                         echo $string ;
+                                                         ?>  </p>
                                 </div>
+                                
+                               <? } ?>
                                 <div class="item">
                                     <img src="<?php echo base_url() ;  ?>images/login/2.png" class="img-fluid mb-4" alt="logo"> 
                                     <h4 class="mb-1 text-white">Connect with the world</h4>
