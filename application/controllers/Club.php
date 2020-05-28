@@ -131,7 +131,7 @@ class Club extends BaseController {
 		        }
 
 
-		        public function ClassementMembers($clubId)
+		        public function editClub($clubId)
 		        {
 					$this->load->model('user_model');
 
