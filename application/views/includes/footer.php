@@ -97,8 +97,7 @@
         
       </script>
       <script>
-            var x = document.getElementById("demo");
-            
+
 
             var x = document.getElementById("demo");
 
@@ -130,8 +129,10 @@
                     x.innerHTML = "An unknown error occurred."
                     break;
                 }
+
+                
       </script>
-      
+
 
 
 

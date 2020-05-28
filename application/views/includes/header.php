@@ -910,10 +910,10 @@
                                  <div class="iq-card-body p-0 ">
                                     <div class="bg-primary p-3 line-height">
                                        <h5 class="mb-0 text-white line-height">Salut ! <?php echo $name ?></h5>
-                                       <span class="text-white font-size-12">En ligne </span>
-                                                                                     <div id="demo" ></div>
+                                       <span class="text-white font-size-12">En ligne  <div id="demo" ></div>
 
-                                              </div>
+                                              </div> </span>
+                                           
                                     </div>
                                     <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $MyUserId ; ?>" class="iq-sub-card iq-bg-primary-hover">
                                        <div class="media align-items-center">
