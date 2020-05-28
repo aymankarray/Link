@@ -427,7 +427,7 @@
                 var Conf = {
                       chart: {
                                       height: 350,
-                                      type: 'line',
+                                      type: 'bar',
                                       zoom: {
                                         enabled: false
                                       }
@@ -465,7 +465,7 @@
              var Formation = {
                                     chart: {
                                       height: 350,
-                                      type: 'line',
+                                      type: 'bar',
                                       zoom: {
                                         enabled: false
                                       }
@@ -504,7 +504,7 @@
                     var Even = {
                                     chart: {
                                       height: 350,
-                                      type: 'line',
+                                      type: 'bar',
                                       zoom: {
                                         enabled: false
                                       }
