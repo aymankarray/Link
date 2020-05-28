@@ -255,24 +255,7 @@
                                     <div class="total-comment-block">
                                           
                                           <?php if (!empty($record->likeCheck)) {  ?>
-                                             
-                                           <b id="PLiked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill '  > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords) ?> J'aimes
-
-                                             
-                                                               <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
-                                                               140 Likes
-                                                               </span>
-                                                               <div class="dropdown-menu">
-                                                                  <a class="dropdown-item" href="#">Max Emum</a>
-                                                                  <a class="dropdown-item" href="#">Bill Yerds</a>
-                                                                  <a class="dropdown-item" href="#">Hap E. Birthday</a>
-                                                                  <a class="dropdown-item" href="#">Tara Misu</a>
-                                                                  <a class="dropdown-item" href="#">Midge Itz</a>
-                                                                  <a class="dropdown-item" href="#">Sal Vidge</a>
-                                                                  <a class="dropdown-item" href="#">Other</a>
-                                                               </div>
-                                                            </div>
-                                            </b>
+                                           <b id="PLiked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords) ?> J'aimes </b>
 
                                             <?php } else {  ?>
                                             
