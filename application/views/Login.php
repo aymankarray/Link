@@ -158,11 +158,18 @@
       <script src="<?php echo base_url() ;  ?>assets/js//popper.min.js"></script>
       <script src="<?php echo base_url() ;  ?>assets/js//bootstrap.min.js"></script>
       <!-- Appear JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
 
-      <!-- lottie JavaScript -->
+      <!-- Counterup JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//waypoints.min.js"></script>
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.counterup.min.js"></script>
+
+ 
+
+      <!-- Owl Carousel JavaScript -->
       <script src="<?php echo base_url() ;  ?>assets/js//owl.carousel.min.js"></script>
 
-      
       <!-- Chart Custom JavaScript -->
       <script src="<?php echo base_url() ;  ?>assets/js//chart-custom.js"></script>
       <!-- Custom JavaScript -->
