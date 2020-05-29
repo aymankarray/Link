@@ -151,7 +151,7 @@ class Login_model extends CI_Model
     function lastLogins()
     {
         $this->db->select(' Users.avatar , Users.name  , BaseTbl.platform , BaseTbl.createdDtm ');
-        $this->db->from('tbl_users as BaseTbl ');
+        $this->db->from('tbl_last_login as BaseTbl ');
         $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.userId','left');
         $this->db->where(' DAY(BaseTbl.createdDtm) >= ADDTIME(NOW() , - 64800  ');
         $this->db->group_by('BaseTbl.userId');
