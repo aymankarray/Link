@@ -153,7 +153,7 @@ class Login_model extends CI_Model
         $this->db->select(' Users.avatar , Users.name  , BaseTbl.platform , BaseTbl.createdDtm ');
 
         $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.userId','left');
-        $this->db->where(' DAY(BaseTbl.createdDtm) =  ADDDATE(NOW() , INTERVAL -6 HOUR) ');
+        $this->db->where(' DAY(BaseTbl.createdDtm) >  ADDDATE(NOW() , INTERVAL -6 HOUR) ');
         $this->db->group_by('BaseTbl.userId');
         $this->db->order_by('BaseTbl.id', 'ASC');
         $query = $this->db->get('tbl_last_login as BaseTbl');
