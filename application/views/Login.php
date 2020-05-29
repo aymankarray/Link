@@ -44,8 +44,8 @@
               }
 
               function showPosition(position) {
-                <?php   $latitude ="<script>document.write(position.coords.latitude);</script>"; ?> 
-                <?php   $longitude ="<script>document.write(position.coords.longitude);</script>"; ?> 
+                <?php   $latitude = ?> document.write(position.coords.latitude) <?php ?> 
+                <?php   $longitude = ?> document.write(position.coords.longitude) <?php ?> ?> 
               }
 
               function showError(error) {
