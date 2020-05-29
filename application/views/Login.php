@@ -159,13 +159,14 @@
       <script src="<?php echo base_url() ;  ?>assets/js//bootstrap.min.js"></script>
       <!-- Appear JavaScript -->
 
-      <!-- Magnific Popup JavaScript -->
-      <script src="<?php echo base_url() ;  ?>assets/js//jquery.magnific-popup.min.js"></script>
-      <!-- Smooth Scrollbar JavaScript -->
+      <!-- lottie JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//owl.carousel.min.js"></script>
 
+      
+      <!-- Chart Custom JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//chart-custom.js"></script>
       <!-- Custom JavaScript -->
       <script src="<?php echo base_url() ;  ?>assets/js//custom.js"></script>
-      
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
        <script>
 
