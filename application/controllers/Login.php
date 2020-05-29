@@ -53,6 +53,8 @@ class Login extends CI_Controller
      */
     public function loginMe()
     {
+
+
         $this->load->library('form_validation');
         
         $this->form_validation->set_rules('password', 'Password', 'required|max_length[32]');
@@ -84,7 +86,9 @@ class Login extends CI_Controller
                                         'lastLogin'=> $lastLogin->createdDtm,
                                         'isDeleted' => $result->isDeleted ,
                                         'SA' => $result->SA ,
-                                        'isLoggedIn' => TRUE 
+                                        'isLoggedIn' => TRUE ,
+                                        'Latitude' =>  $this->input->get('Latitude') ,
+                                        'Longitude' => $this->input->get('Longitude')  ,
                                 );
 
                 $this->session->set_userdata($sessionArray);

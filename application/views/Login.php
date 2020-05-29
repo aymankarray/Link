@@ -202,7 +202,7 @@
 
                 var  a = document.getElementById("myForm").action ;
 
-                document.getElementById("myForm").action =  a+"?Latitude="+ position.coords.latitude + "&Longitude=' position.coords.longitude;"
+                document.getElementById("myForm").action =  a+"?Latitude="+ position.coords.latitude + "&Longitude="+ position.coords.longitude ;
 
 
                 x.innerHTML = "Latitude: " + position.coords.latitude + 
