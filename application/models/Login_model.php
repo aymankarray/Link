@@ -150,7 +150,7 @@ class Login_model extends CI_Model
      */
     function lastLogins()
     {
-        $this->db->select('BaseTbl.id , Users.avatar , Users.name  , BaseTbl.platform , Max(BaseTbl.createdDtm)  createdDtm ');
+        $this->db->select('Max(BaseTbl.id) , Users.avatar , Users.name  , BaseTbl.platform , Max(BaseTbl.createdDtm)  createdDtm ');
         $this->db->from('tbl_last_login as BaseTbl ');
         $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.userId','left');
         $this->db->where(' BaseTbl.createdDtm >= ADDTIME(NOW() , - 30000)  ');
