@@ -139,6 +139,9 @@
                                 </div>
                                 <div class="sign-info">
                                     <span class="dark-color d-inline-block line-height-2">Copyright © 2020 Maiza Bahaedinne . All rights reserved </span>
+                                    <?php  echo   $latitude  ?>
+                                    <br>
+                                    <?php  echo   $longitude  ?>
                                     <ul class="iq-social-media">
                                         <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
                                         <li><a href="#"><i class="ri-twitter-line"></i></a></li>
@@ -199,8 +202,8 @@
               }
 
               function showPosition(position) {
-                x.innerHTML = "Latitude: " + position.coords.latitude + 
-                "<br>Longitude: " + position.coords.longitude;
+                <?php   $latitude ="<script>document.write(position.coords.latitude);</script>"; ?> 
+                <?php   $longitude ="<script>document.write(position.coords.longitude);</script>"; ?> 
               }
 
               function showError(error) {
