@@ -781,7 +781,7 @@
                <nav class="navbar navbar-expand-lg navbar-light p-0">
                   <div class="iq-navbar-logo d-flex justify-content-between">
                      <a href="<?php echo base_url() ?>">
-                     <img src="<?php echo base_url()?>images/logo rouge.svg" width="75px" class="img-fluid" alt="">
+                     <img src="<?php echo base_url()?>images/logo rouge.svg" style="height: 71px;"  alt="">
                      <span> </span>
                      </a>
                      <div class="iq-menu-bt align-self-center">
