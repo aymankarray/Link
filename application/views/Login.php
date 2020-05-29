@@ -29,55 +29,6 @@
         </script>
 
    </head>
-
-          <script>
-
-
-             var x = document.getElementById("demo");
-
-              function getLocation() {
-                if (navigator.geolocation) {
-                  navigator.geolocation.getCurrentPosition(showPosition, showError);
-                } else { 
-                  x.innerHTML = "Geolocation is not supported by this browser.";
-                }
-              }
-
-              function showPosition(position) {
-                <?php   $latitude = ?> document.write(position.coords.latitude) <?php ?> 
-                <?php   $longitude = ?> document.write(position.coords.longitude) <?php ?> ?> 
-              }
-
-              function showError(error) {
-                switch(error.code) {
-                  case error.PERMISSION_DENIED:
-                                Swal.fire({
-                                  title: 'il est strictement obligatoire d\'activer la géolocalisation.',
-                                  width: 600,
-                                  allowOutsideClick: false,
-                                  padding: '3em',
-                                  background: '#fff url(/images/trees.png)',
-                                  backdrop: `
-                                    rgba(0,0,123,0.4)
-                                    url("/images/nyan-cat.gif")
-                                    left top
-                                    no-repeat
-                                  `
-                                })
-                    break;
-                  case error.POSITION_UNAVAILABLE:
-                    x.innerHTML = "Location information is unavailable."
-                    break;
-                  case error.TIMEOUT:
-                    x.innerHTML = "The request to get user location timed out."
-                    break;
-                  case error.UNKNOWN_ERROR:
-                    x.innerHTML = "An unknown error occurred."
-                    break;
-                }
-
-            }
-      </script>
    <body onload="getLocation()">
       <!-- loader Start -->
       <div id="loading">
@@ -188,9 +139,6 @@
                                 </div>
                                 <div class="sign-info">
                                     <span class="dark-color d-inline-block line-height-2">Copyright © 2020 Maiza Bahaedinne . All rights reserved </span>
-                                    <?php  echo   $latitude  ?>
-                                    <br>
-                                    <?php  echo   $longitude  ?>
                                     <ul class="iq-social-media">
                                         <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
                                         <li><a href="#"><i class="ri-twitter-line"></i></a></li>
@@ -237,7 +185,54 @@
       <!-- Custom JavaScript -->
       <script src="<?php echo base_url() ;  ?>assets/js//custom.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+       <script>
 
+
+             var x = document.getElementById("demo");
+
+              function getLocation() {
+                if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(showPosition, showError);
+                } else { 
+                  x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+              }
+
+              function showPosition(position) {
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                "<br>Longitude: " + position.coords.longitude;
+              }
+
+              function showError(error) {
+                switch(error.code) {
+                  case error.PERMISSION_DENIED:
+                                Swal.fire({
+                                  title: 'il est strictement obligatoire d\'activer la géolocalisation.',
+                                  width: 600,
+                                  allowOutsideClick: false,
+                                  padding: '3em',
+                                  background: '#fff url(/images/trees.png)',
+                                  backdrop: `
+                                    rgba(0,0,123,0.4)
+                                    url("/images/nyan-cat.gif")
+                                    left top
+                                    no-repeat
+                                  `
+                                })
+                    break;
+                  case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Location information is unavailable."
+                    break;
+                  case error.TIMEOUT:
+                    x.innerHTML = "The request to get user location timed out."
+                    break;
+                  case error.UNKNOWN_ERROR:
+                    x.innerHTML = "An unknown error occurred."
+                    break;
+                }
+
+            }
+      </script>
    </body>
 
 <!-- Mirrored from iqonic.design/themes/socialv/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 17:36:48 GMT -->
