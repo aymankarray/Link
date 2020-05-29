@@ -154,8 +154,8 @@ class Login_model extends CI_Model
         $this->db->from('tbl_last_login as BaseTbl ');
         $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.userId','left');
         $this->db->where(' BaseTbl.createdDtm >= ADDTIME(NOW() , - 30000)  ');
-        //$this->db->group_by('BaseTbl.userId');
-        $this->db->order_by('BaseTbl.createdDtm', 'DESC');
+        $this->db->group_by('BaseTbl.userId');
+        //$this->db->order_by('BaseTbl.createdDtm', 'DESC');
         $query = $this->db->get();
 
         return $query->result();  
