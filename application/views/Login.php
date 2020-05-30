@@ -55,7 +55,7 @@
                                   ?>
                                 
                                 <div class="item">
-                                    <img src="https://www.tunivisions.link/uploads/Actu/<?php echo $key->image ?>" class="img-fluid mb-4" alt="logo">
+                                    <img src="<?php echo base_url() ?>uploads/Actu/<?php echo $key->image ?>" class="img-fluid mb-4" alt="logo">
                                     <h4 class="mb-1 text-white">
                                     <?php 
                                                         $string = strip_tags( $key->titre  );

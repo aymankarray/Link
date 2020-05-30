@@ -35,7 +35,7 @@
                     <div class="iq-card rounded iq-card-block iq-card-stretch iq-card-height">
                         <div class="event-images">
                             
-                         <img src="https://www.tunivisions.link/uploads/projet/<?php echo $record->banner; ?>" class="alligator-event" alt="">
+                         <img src="<?php echo base_url() ?>uploads/projet/<?php echo $record->banner; ?>" class="alligator-event" alt="">
           
                         </div>
                         <div class="iq-card-body">

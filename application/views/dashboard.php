@@ -200,7 +200,7 @@
                                         <?php  if(!empty($RateMember)){ $c=1 ;   foreach ($RateMember as $membre ) { ?>
                                           <tr>
 
-                                            <td  > <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle " alt="user"> </td>
+                                            <td  > <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $membre->avatar ?>" class="alligator-turtle " alt="user"> </td>
 
                                             <td>
                                                 <?php   if ($c== 1) { ?>

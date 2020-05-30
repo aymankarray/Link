@@ -369,7 +369,7 @@
                               <?php foreach ($ActuRecords as $record ) { ?>
                               <li class="d-flex mb-4 align-items-center">
                                  <a href="<?php echo base_url().'Actu/show/'.$record->actuID ?>" >
-                                  <img src="https://www.tunivisions.link/uploads/Actu/<?php echo $record->image ?>" class="actu-turtle">
+                                  <img src="<?php echo base_url() ?>uploads/Actu/<?php echo $record->image ?>" class="actu-turtle">
                                  </a>
 
                                  <div class="stories-data ml-3">
@@ -441,7 +441,7 @@
                            <ul class="m-0 p-0">
                               <?php foreach ($projectRecords as $projets ) { ?>
                               <li class="d-flex mb-4 align-items-center ">
-                                 <img src="https://www.tunivisions.link/uploads/projet/<?php echo $projets->banner ?>" class="actu-turtle"  alt="item-image">
+                                 <img src="<?php echo base_url() ?>uploads/projet/<?php echo $projets->banner ?>" class="actu-turtle"  alt="item-image">
                                  <div class="stories-data ml-3">
                                     <h5><?php echo $projets->titre ?></h5>
                                     <p class="mb-0"><?php          $date = new DateTime($projets->startDate);
