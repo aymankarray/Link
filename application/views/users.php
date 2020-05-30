@@ -33,7 +33,7 @@
                                 <h6 class="card-title"></h6>
                                    
                 
-                    <table id="example" class="display" style="width: cover" >
+                    <table id="example" class="display table dataTable no-footer" id="tableid" style="width: cover" >
                     <thead>
                     <tr>
                        
