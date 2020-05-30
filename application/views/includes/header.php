@@ -811,7 +811,7 @@
                               <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" class="alligator-turtle  mr-3 " alt="<?php echo $name ?>">
                              
                               <div class="caption">
-                                 <b class="mb-0 line-height"> <?php echo $name ?></b>
+                                 <p class="mb-0 line-height"> <?php echo $name ?></p>
                               </div>
                            </a>
                         </li>
