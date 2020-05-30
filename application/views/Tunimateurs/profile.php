@@ -223,7 +223,7 @@
         <div class="iq-card-body" data-toggle="modal" data-target="#post-modal">
             <div class="d-flex align-items-center">
                 <div class="user-img">
-                    <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle" />
+                    <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle" />
                 </div>
                 <form class="post-text ml-3 w-100" action="javascript:void();">
                     <input type="text" name="postText" class="form-control rounded" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " style="border: none;" />
@@ -305,11 +305,11 @@
             <div class="user-post-data">
                 <div class="d-flex flex-wrap">
                     <div class="">
-                        <img class="alligator-turtle mr-3" src="https://tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>" alt="" />
+                        <img class="alligator-turtle mr-3" src="<?php echo base_url() ?>uploads/avatar/<?php echo $record->avatar ?>" alt="" />
                     </div>
                     <div class="media-support-info mt-2">
                         <h5 class="mb-0 d-inline-block">
-                            <a href="https://tunivisions.link/User/ProfileShow/<?php echo $record->userId ?>" class="alligator-turtle mr-3"><?php echo $record->name?></a>
+                            <a href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>" class="alligator-turtle mr-3"><?php echo $record->name?></a>
                         </h5>
                         <p class="mb-0 d-inline-block">a mise à jour son statut</p>
                         <p class="mb-0 text-primary">
@@ -341,6 +341,16 @@
                                     ?>
                 </p>
             </div>
+            <?php if ($record->photo != 'Post___' ) { ?>
+                              <div class="user-post">
+
+                                     
+
+
+                                 <a href="javascript:void();">
+                                    <img src="<?php echo base_url() ?>uploads/post/<?php echo $record->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
+                              </div>
+                           <?php }  ?>
 
             <div class="comment-area mt-3">
                 <div class="d-flex justify-content-between align-items-center">
