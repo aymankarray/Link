@@ -25,7 +25,7 @@
                               </div>
                               <div class="user-detail text-center mb-3">
                                  <div class="" >
-                                    <img  src="https://www.tunivisions.link/uploads/avatar/<?php echo $userInfo->avatar ?>" alt="profile-img" class=" profile-turtle" style="border-style: solid;border-color: white;" >
+                                    <img  src="<?php echo base_url() ?>uploads/avatar/<?php echo $userInfo->avatar ?>" alt="profile-img" class=" profile-turtle" style="border-style: solid;border-color: white;" >
                                  </div>
                                  <div class="profile-detail">
                                     <h3 class=""><?php echo $userInfo->name ?></h3>
