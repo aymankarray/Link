@@ -1016,14 +1016,16 @@
          <!-- Right Sidebar Panel End-->
          <!-- Page Content  -->
 
-
+<div id="content-page" class="content-page">
+            <div class="container">
+               <div class="row">
         <?php if($SA == 1 ) { ?>
             <div class="alert text-white bg-primary" role="alert">
               <div class="iq-alert-icon">
                  <i class="ri-alert-line"></i>
               </div>
               <div class="iq-alert-text">
-                Validation de l'adresse e-mail ! <p id="<?php echo $userId ?>" onclick="sendMailCOnfirma()" >Envoyer</p>
+                Validation de l'adresse e-mail ! <p id="<?php echo $userID ?>" onclick="sendMailCOnfirma()" >Envoyer</p>
               </div>
             </div>
         <?php } ?>
@@ -1045,3 +1047,5 @@
            
       }
         </script>
+
+      </div></div></div>
