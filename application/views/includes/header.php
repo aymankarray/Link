@@ -1018,29 +1018,25 @@
 
       
         <?php if($SA == 1 ) { ?>
-            <div class="alert text-white bg-primary" role="alert">
-              <div class="iq-alert-icon">
-                 <i class="ri-alert-line"></i>
-              </div>
-              <div class="iq-alert-text">
-                Validation de l'adresse e-mail ! <p id="<?php echo $uid ?>" onclick="sendMailCOnfirma()" >Envoyer</p>
-              </div>
-            </div>
+             <script type="text/javascript">
+              $( document ).ready(function() {
+                Swal.fire({
+                                          title: 'il est strictement obligatoire d\'activer la géolocalisation.',
+                                          width: 600,
+                                          allowOutsideClick: false,
+                                          padding: '3em',
+                                          background: '#fff url(/images/trees.png)',
+                                          backdrop: `
+                                            rgba(0,0,123,0.4)
+                                            url("/images/nyan-cat.gif")
+                                            left top
+                                            no-repeat
+                                          `
+                                        })
+
+                });
+             </script>
         <?php } ?>
 
-      <script type="text/javascript">
-        Swal.fire({
-                                  title: 'il est strictement obligatoire d\'activer la géolocalisation.',
-                                  width: 600,
-                                  allowOutsideClick: false,
-                                  padding: '3em',
-                                  background: '#fff url(/images/trees.png)',
-                                  backdrop: `
-                                    rgba(0,0,123,0.4)
-                                    url("/images/nyan-cat.gif")
-                                    left top
-                                    no-repeat
-                                  `
-                                })
-      </script>
+     
    
