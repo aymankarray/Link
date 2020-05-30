@@ -1025,7 +1025,7 @@
                  <i class="ri-alert-line"></i>
               </div>
               <div class="iq-alert-text">
-                Validation de l'adresse e-mail ! <p id="<?php echo $userID ?>" onclick="sendMailCOnfirma()" >Envoyer</p>
+                Validation de l'adresse e-mail ! <p id="<?php echo $uid ?>" onclick="sendMailCOnfirma()" >Envoyer</p>
               </div>
             </div>
         <?php } ?>
