@@ -17,7 +17,7 @@
                         <div class="iq-card-body">
                            <div class="table-responsive">
 
-                                <table class="table dataTable no-footer" style="width: cover" >
+                                <table class="display table dataTable no-footer" style="width: cover" >
                    <thead>
                      
                      <th>Club </th>
@@ -159,3 +159,14 @@
                </div>
             </div>
          </div>
+
+         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+  
+          <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+
+          <script type="text/javascript">
+            $(document).ready( function () {
+                $('table').DataTable();
+            } );
+
+          </script>
