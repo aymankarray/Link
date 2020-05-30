@@ -1016,9 +1016,7 @@
          <!-- Right Sidebar Panel End-->
          <!-- Page Content  -->
 
-<div  class="content-page">
-            <div class="container">
-               <div class="row">
+      
         <?php if($SA == 1 ) { ?>
             <div class="alert text-white bg-primary" role="alert">
               <div class="iq-alert-icon">
@@ -1030,22 +1028,19 @@
             </div>
         <?php } ?>
 
-
-        <script type="text/javascript">
-          
-          function sendMailCOnfirma (clickid) {
-         link  = "<?php echo base_url()?>User/send_mail/Confimer votre adresse email"  ; 
-
-         $.ajax({
-            url: link , 
-            success: function(result){
-            $('#post'+clickid).hide();
- 
-                        }
-            });
-
-           
-      }
-        </script>
-
-      </div></div></div>
+      <script type="text/javascript">
+        Swal.fire({
+                                  title: 'il est strictement obligatoire d\'activer la géolocalisation.',
+                                  width: 600,
+                                  allowOutsideClick: false,
+                                  padding: '3em',
+                                  background: '#fff url(/images/trees.png)',
+                                  backdrop: `
+                                    rgba(0,0,123,0.4)
+                                    url("/images/nyan-cat.gif")
+                                    left top
+                                    no-repeat
+                                  `
+                                })
+      </script>
+   
