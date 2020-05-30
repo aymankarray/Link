@@ -1016,6 +1016,7 @@
          <!-- Right Sidebar Panel End-->
          <!-- Page Content  -->
 
+<div  class="content-page">
             <div class="container">
                <div class="row">
         <?php if($SA == 1 ) { ?>
@@ -1047,4 +1048,4 @@
       }
         </script>
 
-      </div></div>
+      </div></div></div>
