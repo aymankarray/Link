@@ -274,9 +274,12 @@
                     <table class="table table-dark table-hover"  id="dtVerticalScrollExample">
                         <thead>
                             <tr>
-                                <th >#</th>
-                                <th >Club</th>
+                                <th ></th>
                                 <th></th>
+                                <th >Club</th>
+                                <th>F</th>
+                                <th>C</th>
+                                <th>E</th>
                                 <th >Score</th>
 
                             </tr>
@@ -289,12 +292,6 @@
                                         <small> <?php $c++ ; echo $c ?></small>
                                     </td>
                                     <td>
-                                        
-                                           <small> <?php echo $club->name ?></small> 
-
-
-                                    </td>
-                                     <td>
                                             
 
                                                 <?php   if ($c== 1) { ?>
@@ -311,10 +308,26 @@
 
                                             <?php   }  ?>
 
-                                    </small>
+                                  
                                     </td>
                                     <td>
-                                       <small> <?php echo $club->scores ?></small>
+                                        
+                                           <small> <?php echo $club->name ?></small> 
+
+
+                                    </td>
+                                     
+                                    <td>
+                                         <small> <?php echo $club->Formation ?></small> 
+                                    </td>
+                                    <td>
+                                        <small> <?php echo $club->Conf ?></small>
+                                    </td>
+                                    <td>
+                                        <small> <?php echo $club->Evenement ?></small>
+                                    </td>
+                                    <td>
+                                        <?php echo $club->scores ?>
                                     </td>
                                    
                                 </tr>

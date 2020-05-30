@@ -67,7 +67,17 @@ class User extends BaseController
         $data["projetsStatTypeDateEvenement"] = $this->Scores_club_model->scoreValiderStatsbyTypeDateListing('Evenement') ;
         $data["projetsStatTypeDateFormation"] = $this->Scores_club_model->scoreValiderStatsbyTypeDateListing('Formation') ;
 
-        $data["RateClub"] = $this->scores_model->RaitingClub()   ;
+        $data["RateClub"] = $this->scores_model->RaitingClub() ;
+
+
+        foreach ($data["RateClub"] as $key ) {                
+            $key->Conf = count($this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Evenement',$key->clubID ));
+            $key->Evenement  =  count($this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Conférence',$key->clubID));
+            $key->Formation  =count( $this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Formation',$key->clubID));
+                                             }
+
+
+
         $data["LastRaitingClub"] = $this->scores_model->LastRaitingClub()   ;
         $data["RateMember"] = $this->scores_model->RaitingUsers()   ;
         $data["countEval"] = count($this->evaluation_model->evaluation_A_ValidListing($this->clubID))   ;
