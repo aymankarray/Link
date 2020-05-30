@@ -191,7 +191,7 @@ class Scores_club_model extends CI_Model
      */
     function scoreValiderStatsbyTypeClubListing($type,$clubID)
     {
-         $this->db->select('DATE_FORMAT(BaseTbl.startDate, "%Y-%m ") as dateS , count(BaseTbl.projectId) Cproject , BaseTbl.type ' );
+         $this->db->select('* ' );
         
         $this->db->from('tbl_project as BaseTbl');
         $this->db->join('tbl_evaluation as Evaluations', 'Evaluations.projectId = BaseTbl.projectId', 'LEFT');
@@ -206,7 +206,7 @@ class Scores_club_model extends CI_Model
         $this->db->where('BaseTbl.startDate <=  ','2020-06-01');
       
 
-        $this->db->group_by('type , dateS  ') ;
+        
 
         
 
