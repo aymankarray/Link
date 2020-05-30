@@ -280,6 +280,8 @@
                                 <th>F</th>
                                 <th>C</th>
                                 <th>E</th>
+                                <th>S</th>
+                                <th>A</th>
                                 <th >Score</th>
 
                             </tr>
@@ -325,6 +327,12 @@
                                     </td>
                                     <td>
                                         <small> <?php echo $club->Evenement ?></small>
+                                    </td>
+                                    <td>
+                                        <small> <?php echo $club->Soi ?></small>
+                                    </td>
+                                    <td>
+                                        <small> <?php echo $club->Action ?></small>
                                     </td>
                                     <td>
                                         <?php echo $club->scores ?>

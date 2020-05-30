@@ -74,6 +74,8 @@ class User extends BaseController
             $key->Conf = count($this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Evenement',$key->clubID ));
             $key->Evenement  =  count($this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Conférence',$key->clubID));
             $key->Formation  =count( $this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Formation',$key->clubID));
+            $key->Soir  =count( $this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Soirée',$key->clubID));
+            $key->Action  =count( $this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Action',$key->clubID));
                                              }
 
 
