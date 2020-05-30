@@ -130,12 +130,12 @@
                          
                       <?php }else if($record->statut  == 'fini' && $record->valider  == 'Valider'  ) { ?>
                             
-
+<small>
                             <b> <?php echo $record->score ?> points </b><br>
                             <a href="<?php echo base_url()?>Score_club/PNoter/<?php echo $record->projectId ;  ?>" class="kt-widget__title">
                             <span class="badge badge-primary">Validé par  : <?php echo $record->validName ?></span>
                             </a>
-                            
+</small>                            
                             
                       <?php  } ?>
 

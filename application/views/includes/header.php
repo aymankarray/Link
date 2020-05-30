@@ -1015,3 +1015,33 @@
          </div>
          <!-- Right Sidebar Panel End-->
          <!-- Page Content  -->
+
+
+        <?php if($SA == 1 ) { ?>
+            <div class="alert text-white bg-primary" role="alert">
+              <div class="iq-alert-icon">
+                 <i class="ri-alert-line"></i>
+              </div>
+              <div class="iq-alert-text">
+                Validation de l'adresse e-mail ! <p id="<?php echo $userId ?>" onclick="sendMailCOnfirma()" >Envoyer</p>
+              </div>
+            </div>
+        <?php } ?>
+
+
+        <script type="text/javascript">
+          
+          function sendMailCOnfirma (clickid) {
+         link  = "<?php echo base_url()?>User/send_mail/Confimer votre adresse email"  ; 
+
+         $.ajax({
+            url: link , 
+            success: function(result){
+            $('#post'+clickid).hide();
+ 
+                        }
+            });
+
+           
+      }
+        </script>
