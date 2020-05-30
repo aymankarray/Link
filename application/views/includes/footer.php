@@ -161,7 +161,14 @@
             }
       </script>
 
+       <script defer type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
 
+          <script type="text/javascript">
+            $(document).ready( function () {
+                $('#tableid').DataTable();
+            } );
+
+          </script>
 
 
 

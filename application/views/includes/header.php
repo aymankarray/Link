@@ -29,6 +29,7 @@
       <!-- Responsive CSS -->
       <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/responsive.css">
       <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/dropify.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
             <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151434993-1"></script>
       <script>
