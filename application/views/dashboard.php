@@ -329,7 +329,7 @@
                                         <small> <?php echo $club->Evenement ?></small>
                                     </td>
                                     <td>
-                                        <small> <?php echo $club->Soi ?></small>
+                                        <small> <?php echo $club->Soir ?></small>
                                     </td>
                                     <td>
                                         <small> <?php echo $club->Action ?></small>
