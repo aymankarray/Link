@@ -1,5 +1,10 @@
 <style type="text/css">
-
+       .list-turtle {
+  object-fit: cover;
+  object-position: 50% 20%;
+  width: 100%;
+  height: 200px;
+}
 table ,tr td{
     
 }
@@ -29,11 +34,8 @@ table {
               
                
             <?php foreach($userRecords as $record ) { ?>
-               <div class="col-md-3 card" style=" border:1px solid black ;
-                                                  padding:16px 16px 16px 16px;
-                                                  /*arrondir les coins en haut à gauche et en bas à droite*/
-                                                  border-radius:5%  " >
-                  <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $record->avatar ?>" class="card-img-top alligator-turtle" alt="...">
+               <div class="col-md-3 card" style="padding:16px 16px 16px 16px;" >
+                  <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $record->avatar ?>" class="card-img-top list-turtle" alt="...">
                   <div class="card-body">
                    
                      <a  href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>"> 
