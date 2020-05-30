@@ -1,10 +1,5 @@
 <style type="text/css">
-       .alligator-turtle {
-  object-fit: cover;
-  object-position: 50% 20%;
-  width: 100%;
-  height: 200px;
-}
+
 table ,tr td{
     
 }
@@ -38,7 +33,7 @@ table {
                                                   padding:16px 16px 16px 16px;
                                                   /*arrondir les coins en haut à gauche et en bas à droite*/
                                                   border-radius:5%  " >
-                  <img src="https://www.tunivisions.link/uploads/avatar/<?php echo $record->avatar ?>" class="card-img-top alligator-turtle" alt="...">
+                  <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $record->avatar ?>" class="card-img-top alligator-turtle" alt="...">
                   <div class="card-body">
                    
                      <a  href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>"> 

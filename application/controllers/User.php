@@ -718,7 +718,6 @@ class User extends BaseController
 
         
         $this->global['pageTitle'] = $data["userInfo"]->name;
-         $this->global['active'] = 'profile' ;
         $this->loadViews("Tunimateurs/profile", $this->global, $data, NULL);
     }
 
