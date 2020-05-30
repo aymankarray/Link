@@ -59,10 +59,10 @@
                                     <h4 class="mb-1 text-white">
                                     <?php 
                                                         $string = strip_tags( $key->titre  );
-                                                        if (strlen($string) > 25){
+                                                        if (strlen($string) > 100){
 
                                                             // truncate string
-                                                            $stringCut = substr($string, 0, 25);
+                                                            $stringCut = substr($string, 0, 100);
                                                             $endPoint = strrpos($stringCut, ' ');
 
                                                             //if the string doesn't contain any space then it will cut without word basis.
@@ -77,7 +77,7 @@
                                                         if (strlen($string) > 55){
 
                                                             // truncate string
-                                                            $stringCut = substr($string, 0, 55);
+                                                            $stringCut = substr($string, 0, 100);
                                                             $endPoint = strrpos($stringCut, ' ');
 
                                                             //if the string doesn't contain any space then it will cut without word basis.
@@ -138,7 +138,7 @@
                                     <button type="submit" class="btn btn-primary float-right">Se connecter</button>
                                 </div>
                                 <div class="sign-info">
-                                    <span class="dark-color d-inline-block line-height-2">Copyright © 2020 Maiza Bahaedinne . All rights reserved </span>
+                                    <span class="dark-color d-inline-block line-height-2">Copyright © 2020 Maiza Bahaedinne & Tunivisions Foundation. All rights reserved </span>
                                     <ul class="iq-social-media">
                                         <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
                                         <li><a href="#"><i class="ri-twitter-line"></i></a></li>
