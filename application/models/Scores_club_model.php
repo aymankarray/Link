@@ -198,8 +198,10 @@ class Scores_club_model extends CI_Model
 
         $this->db->where('Evaluations.validBy != 0 ') ;
         
-        $this->db->where('BaseTbl.type = ',$type);
+
         $this->db->where('BaseTbl.clubID = ',$clubID);
+        $this->db->where('BaseTbl.type = ',$type);
+        
         $this->db->where('BaseTbl.startDate >=  ','2019-09-01');
         $this->db->where('BaseTbl.startDate <=  ','2020-06-01');
       
