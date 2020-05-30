@@ -17,7 +17,7 @@
                         <div class="iq-card-body">
                            <div class="table-responsive">
 
-                                <table class="display table dataTable no-footer" style="width: cover" >
+                                <table class="display table dataTable no-footer" id="tableid" style="width: cover" >
                    <thead>
                      
                      <th>Club </th>
@@ -166,7 +166,7 @@
 
           <script type="text/javascript">
             $(document).ready( function () {
-                $('table').DataTable();
+                $('#tableid').DataTable();
             } );
 
           </script>
