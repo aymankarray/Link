@@ -188,7 +188,7 @@
             </div>
             <div class="form-group">
               <span>Photo de profile : </span>
-              <input type="file" name="fileToUpload" id="fileToUpload" class="dropify" required>
+              <input type="file" ata-max-file-size="100K" data-max-height="2000" name="fileToUpload" id="fileToUpload" class="dropify" required>
              
             </div>
 
