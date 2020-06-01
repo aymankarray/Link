@@ -160,12 +160,7 @@
                       </div>
                   </div>
             </div>
-            <script type="text/javascript">
-                $(document).ready(function() {
-                  $('#gouvernorat').select2();
-                  $('#delegation').select2();
-              });
-            </script>
+
             <div class="form-group">
               <input class="form-control" type="email" placeholder="Email" name="email"  required>
             </div>
@@ -371,7 +366,9 @@
               var gouvernorat = $( '#gouvernorat' );
               var delegation = $( '#delegation' );
               
-             
+             $('#gouvernorat').select2();
+             $('#delegation').select2();
+
               var d = $.ajax({
               url: '<?php echo base_url(); ?>assets/json/tunisia.json',
               type: "GET",
@@ -405,6 +402,7 @@
                   
               });
           </script>
+
    </body>
 
 <!-- Mirrored from iqonic.design/themes/socialv/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 17:36:48 GMT -->
