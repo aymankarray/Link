@@ -94,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8 bg-white pt-5">
+                    <div class="col-md-6 bg-white pt-5">
                         <div class="sign-in-from">
                             <h1 class="mb-0">S'inscrire</h1>
                             <p>Cette application est déstiné aux clubs Tunivisions.</p>
@@ -345,7 +345,7 @@
             }
       </script>
 
-      
+
 <script type="text/javascript">
     $('.form_date').datepicker({ yearRange: '1990:2001' });
 </script>
