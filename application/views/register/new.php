@@ -95,7 +95,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 bg-white pt-5">
-                        <div class="sign-in-from">
+                        <div class="sign-in-from" style="height:834px ;overflow:auto;" >
                             <h1 class="mb-0">S'inscrire</h1>
                             <p>Cette application est déstiné aux clubs Tunivisions.</p>
 
@@ -106,7 +106,7 @@
              $var3 = $this->input->get('var3');
             ?>
           <!--begin::Form-->
-    <form  role="form" class="kt-form" runat="server" action="<?php echo base_url() ?>Register/registerNewUser?var1=<?php echo $var1 ?>&var2=<?php echo $var2 ?>&var3=<?php echo $var3 ?>"    method="post" enctype="multipart/form-data"  >
+    <form  role="form" class="kt-form" runat="server" action="<?php echo base_url() ?>Register/registerNewUser?var1=<?php echo $var1 ?>&var2=<?php echo $var2 ?>&var3=<?php echo $var3 ?>"     method="post" enctype="multipart/form-data"  >
       
       <div  class="text-center">
             <div   id="fb-root" class=""></div>
