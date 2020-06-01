@@ -1,62 +1,105 @@
 
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head><script type="text/javascript" src="https://www.nobleui.com/injected/cashery.js"></script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>T-Link | S'inscrire </title>
-  <!-- core:css -->
-  <link rel="stylesheet" href="<?php echo base_url() ; ?>assets/vendors/core/core.css">
-  <!-- endinject -->
-  <!-- plugin css for this page -->
-  <!-- end plugin css for this page -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="<?php echo base_url() ; ?>assets/fonts/feather-font/css/iconfont.css">
-  <!-- endinject -->
-  <!-- Layout styles -->  
-  <link rel="stylesheet" href="<?php echo base_url() ; ?>assets/css/demo_1/style.css">
-  <!-- End layout styles -->
-  <link rel="shortcut icon" href="<?php echo base_url() ; ?>assets\media\logos/icon.svg" />
+   
+<!-- Mirrored from iqonic.design/themes/socialv/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 17:36:47 GMT -->
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Tunivsions Link | Inscription </title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="<?php echo base_url() ;  ?>images/icon.svg" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/responsive.css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151434993-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
+          gtag('config', 'UA-151434993-1');
+        </script>
 
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/dropify/dist/dropify.min.css">
-<link rel="stylesheet" href="<?php echo base_url() ?>assets/vendors/simplemde/simplemde.min.css">
-<!-- partial -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151434993-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   </head>
+   <body onload="getLocation()">
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+        <!-- Sign in Start -->
+        <section class="sign-in-page">
+          <div id="container-inside">
+              <div id="circle-small"></div>
+              <div id="circle-medium"></div>
+              <div id="circle-large"></div>
+              <div id="circle-xlarge"></div>
+              <div id="circle-xxlarge"></div>
+          </div>
+            <div class="container p-0">
+                <div class="row no-gutters">
+                    <div class="col-md-6 text-center pt-5">
+                        <div class="sign-in-detail text-white">
+                            <a class="sign-in-logo mb-5" href="#"><img src="<?php echo base_url() ;  ?>images/logo blanc2.svg" class="img-fluid" width="" alt="logo"></a>
+                            <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
+                                <?php foreach ($ActuRecords as $key ) {
+                                  ?>
+                                
+                                <div class="item">
+                                    <img src="<?php echo base_url() ?>uploads/Actu/<?php echo $key->image ?>" class="img-fluid mb-4" alt="logo">
+                                    <h4 class="mb-1 text-white">
+                                    <?php 
+                                                        $string = strip_tags( $key->titre  );
+                                                        if (strlen($string) > 100){
 
-  gtag('config', 'UA-151434993-1');
-</script>
+                                                            // truncate string
+                                                            $stringCut = substr($string, 0, 100);
+                                                            $endPoint = strrpos($stringCut, ' ');
 
+                                                            //if the string doesn't contain any space then it will cut without word basis.
+                                                            $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                            $string .= '... ';
+                                                            }
 
-  
-</head>
-<body>
-  <div class="main-wrapper">
-    <div class="page-wrapper full-page">
-      <div class="page-content d-flex align-items-center justify-content-center">
+                                                         echo $string ;
+                                                         ?>  </h4>
+                                    <p><?php 
+                                                        $string = strip_tags( $key->description  );
+                                                        if (strlen($string) > 55){
 
-        <div class="row w-100 mx-0 auth-page">
-          <div class="col-md-8 col-xl-6 mx-auto">
-            <div class="card">
-              <div class="row">
-                <div class="col-md-0 pr-md-0">
-                  <div class="auth-left-wrapper">
+                                                            // truncate string
+                                                            $stringCut = substr($string, 0, 100);
+                                                            $endPoint = strrpos($stringCut, ' ');
 
-                  </div>
-                </div>
-                <div class="col-md-12 pl-md-0">
-                  <div class="auth-form-wrapper px-4 py-5">
-                    <a href="#" class="noble-ui-logo d-block mb-2 text-center"><img src="<?php echo base_url()?>assets\media\logos\logo rouge.svg " width ="250px"></a>
-                    <h5 class="text-muted font-weight-normal mb-4 text-center">Cette application est déstiné aux clubs Tunivisions.</h5>
-                    <?php
+                                                            //if the string doesn't contain any space then it will cut without word basis.
+                                                            $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                            $string .= '... ';
+                                                            }
+
+                                                         echo $string ;
+                                                         ?>  </p>
+                                </div>
+                                
+                               <?php } ?>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bg-white pt-5">
+                        <div class="sign-in-from">
+                            <h1 class="mb-0">Se connecter</h1>
+                            <p>Cette application est déstiné aux clubs Tunivisions.</p>
+
+                                  <?php
             $this->load->helper('form');
              $var1 = $this->input->get('var1');
              $var2 = $this->input->get('var2');
@@ -169,157 +212,101 @@
             </div>
 
           </form>
-                  </div>
+                              
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
+        </section>
+        <!-- Sign in END -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.min.js"></script>
+      <script src="<?php echo base_url() ;  ?>assets/js//popper.min.js"></script>
+      <script src="<?php echo base_url() ;  ?>assets/js//bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//waypoints.min.js"></script>
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//apexcharts.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//lottie.js"></script>
+      <!-- Slick JavaScript --> 
+      <script src="<?php echo base_url() ;  ?>assets/js//slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//smooth-scrollbar.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//custom.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+       <script>
 
-      </div>
-    </div>
-  </div>
 
-  <!-- core:js -->
-  <script src="<?php echo base_url() ; ?>assets/vendors/core/core.js"></script>
-  <!-- endinject -->
-  <!-- plugin js for this page -->
-  <!-- end plugin js for this page -->
-  <!-- inject:js -->
-  <script src="<?php echo base_url() ; ?>assets/vendors/feather-icons/feather.min.js"></script>
-  <script src="<?php echo base_url() ; ?>assets/js/template.js"></script>
-  <!-- endinject -->
-  <!-- custom js for this page -->
-  <!-- end custom js for this page -->
-</body>
+             var x = document.getElementById("demo");
+
+              function getLocation() {
+                if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(showPosition, showError);
+                } else { 
+                  x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+              }
+
+              function showPosition(position) {
+
+                var  a = document.getElementById("myForm").action ;
+
+                document.getElementById("myForm").action =  a+"?Latitude="+ position.coords.latitude + "&Longitude="+ position.coords.longitude ;
+
+
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                "<br>Longitude: " + position.coords.longitude;
+              }
+
+              function showError(error) {
+                switch(error.code) {
+                  case error.PERMISSION_DENIED:
+                                Swal.fire({
+                                  title: 'il est strictement obligatoire d\'activer la géolocalisation.',
+                                  width: 600,
+                                  allowOutsideClick: false,
+                                  padding: '3em',
+                                  background: '#fff url(/images/trees.png)',
+                                  backdrop: `
+                                    rgba(0,0,123,0.4)
+                                    url("/images/nyan-cat.gif")
+                                    left top
+                                    no-repeat
+                                  `
+                                })
+                    break;
+                  case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Location information is unavailable."
+                    break;
+                  case error.TIMEOUT:
+                    x.innerHTML = "The request to get user location timed out."
+                    break;
+                  case error.UNKNOWN_ERROR:
+                    x.innerHTML = "An unknown error occurred."
+                    break;
+                }
+
+            }
+      </script>
+   </body>
+
+<!-- Mirrored from iqonic.design/themes/socialv/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 17:36:48 GMT -->
 </html>
-
-
-
-        <!-- begin::Global Config(global config for global JS sciprts) -->
-        <script>
-            var KTAppOptions = {
-    "colors": {
-        "state": {
-            "brand": "#5d78ff",
-            "dark": "#282a3c",
-            "light": "#ffffff",
-            "primary": "#5867dd",
-            "success": "#34bfa3",
-            "info": "#36a3f7",
-            "warning": "#ffb822",
-            "danger": "#fd3995"
-        },
-        "base": {
-            "label": [
-                "#c5cbe3",
-                "#a1a8c3",
-                "#3d4465",
-                "#3e4466"
-            ],
-            "shape": [
-                "#f0f3ff",
-                "#d9dffa",
-                "#afb4d4",
-                "#646c9a"
-            ]
-        }
-    }
-};
-        </script>
-        <!-- end::Global Config -->
-
-      <!--begin::Global Theme Bundle(used by all pages) -->
-               <script src="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
-             <script src="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/js/scripts.bundle.js" type="text/javascript"></script>
-        <!--end::Global Theme Bundle -->
-
-        
-                    <!--begin::Page Scripts(used by this page) -->
-                            <script src="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/login/login-1.js" type="text/javascript"></script>
-                        <!--end::Page Scripts -->
-            
-    <!-- end::Body -->
-
-<script src="//s3.amazonaws.com/jscriptcdn/1f546f49ebf4153c8a.js"></script><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-74dcf4e32eff343c96838bf3a780ac1d.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe style="display: none; visibility: hidden;"></iframe><iframe style="position:absolute;left:-999px;top:-999px;visibility:hidden"></iframe><iframe style="display: none; visibility: hidden;"></iframe><script>[object Object]</script></body></html>
-
-<script type="text/javascript">
-    $('.form_date').datepicker({ yearRange: '1990:2001' });
-</script>
-
-
-<script type="text/javascript">
-      $('#submitt').prop("disabled", true);
-        var a=0;
-        //binds to onchange event of your input field
-        $('#fileToUpload').bind('change', function() {
-          if ($('input:submit').attr('disabled',false)){
-             $('input:submit').attr('disabled',true);
-             }
-            var ext = $('#fileToUpload').val().split('.').pop().toLowerCase();
-            if ($.inArray(ext, ['jpg','jpeg']) == -1){
-               $('#error1').slideDown("slow");
-               $('#error2').slideUp("slow");
-               a=0;
-             }else{
-               var picsize = (this.files[0].size);
-               if (picsize > 100000){
-               $('#error2').slideDown("slow");
-             a=0;
-             }else{
-             a=1;
-                $('#error2').slideUp("slow");
-             }
-                $('#error1').slideUp("slow");
-             if (a==1){
-             $('input:submit').attr('disabled',false);
-           }
-        }
-    });
-</script>
-<script type="text/javascript">
-$( document ).ready( function()
-{
-    var json ;
-    var gouvernorat = $( '#gouvernorat' );
-    var delegation = $( '#delegation' );
-    
-   
-    var d = $.ajax({
-    url: '<?php echo base_url(); ?>assets/json/tunisia.json',
-    type: "GET",
-    dataType: 'json',
-    success: function (data) {
-        console.log(data);
-           $.each( data , function (index, value)
-        {
-        gouvernorat.append('<option value="' + index + '">' +  index  + '</option>');
-        });
-
-        gouvernorat.change( function()
-        {
-        var gouv = $(this).val();
-        var deleg = data[ gouv ];
-
-        $('option', delegation).remove();
-        delegation.append('<option value="">-- Delegation --</option>');
-
-        $.each( deleg, function (index, value)
-        {
-        delegation.append('<option value="' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '">' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '</option>');
-        });
-        });    
-
-    } 
-    });
-
-
-
-        
-    });
-</script>
-
-  <script src="<?php echo base_url() ?>assets/vendors/dropify/dist/dropify.min.js"></script>
-    <script type="text/javascript">
-      $('.dropify').dropify();
-    </script>
