@@ -94,9 +94,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 bg-white pt-5">
+                    <div class="col-md-8 bg-white pt-5">
                         <div class="sign-in-from">
-                            <h1 class="mb-0">Se connecter</h1>
+                            <h1 class="mb-0">S'inscrire</h1>
                             <p>Cette application est déstiné aux clubs Tunivisions.</p>
 
                                   <?php
@@ -184,13 +184,7 @@
             <div class="form-group">
               <span>Photo de profile : </span>
               <input type="file" name="fileToUpload" id="fileToUpload" class="dropify" required>
-              <p >le format de fichier doit etre JPG ou JPEG avec une taile maximale de 100 KO </p>
-              <p id="error1" style="display:none; color:#FF0000;">
-                  Format d'image invalide! Le format d'image doit être JPG, JPEG.
-                  </p>
-                  <p id="error2" style="display:none; color:#FF0000;">
-                  La taille maximale du fichier est de 100 ko.
-                  </p>
+             
             </div>
 
             <div class="form-group">
@@ -350,6 +344,83 @@
 
             }
       </script>
+
+      
+<script type="text/javascript">
+    $('.form_date').datepicker({ yearRange: '1990:2001' });
+</script>
+
+
+<script type="text/javascript">
+      $('#submitt').prop("disabled", true);
+        var a=0;
+        //binds to onchange event of your input field
+        $('#fileToUpload').bind('change', function() {
+          if ($('input:submit').attr('disabled',false)){
+             $('input:submit').attr('disabled',true);
+             }
+            var ext = $('#fileToUpload').val().split('.').pop().toLowerCase();
+            if ($.inArray(ext, ['jpg','jpeg']) == -1){
+               $('#error1').slideDown("slow");
+               $('#error2').slideUp("slow");
+               a=0;
+             }else{
+               var picsize = (this.files[0].size);
+               if (picsize > 100000){
+               $('#error2').slideDown("slow");
+             a=0;
+             }else{
+             a=1;
+                $('#error2').slideUp("slow");
+             }
+                $('#error1').slideUp("slow");
+             if (a==1){
+             $('input:submit').attr('disabled',false);
+           }
+        }
+    });
+</script>
+<script type="text/javascript">
+$( document ).ready( function()
+{
+    var json ;
+    var gouvernorat = $( '#gouvernorat' );
+    var delegation = $( '#delegation' );
+    
+   
+    var d = $.ajax({
+    url: '<?php echo base_url(); ?>assets/json/tunisia.json',
+    type: "GET",
+    dataType: 'json',
+    success: function (data) {
+        console.log(data);
+           $.each( data , function (index, value)
+        {
+        gouvernorat.append('<option value="' + index + '">' +  index  + '</option>');
+        });
+
+        gouvernorat.change( function()
+        {
+        var gouv = $(this).val();
+        var deleg = data[ gouv ];
+
+        $('option', delegation).remove();
+        delegation.append('<option value="">-- Delegation --</option>');
+
+        $.each( deleg, function (index, value)
+        {
+        delegation.append('<option value="' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '">' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '</option>');
+        });
+        });    
+
+    } 
+    });
+
+
+
+        
+    });
+</script>
    </body>
 
 <!-- Mirrored from iqonic.design/themes/socialv/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 17:36:48 GMT -->
