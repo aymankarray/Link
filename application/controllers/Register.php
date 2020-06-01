@@ -44,12 +44,16 @@ class Register extends CI_Controller
   function registerNewUser()
     {
                 $birth = $this->security->xss_clean($this->input->post('birth'));
-                $name = $this->input->post('fname');
+                $fname = strtoupper ($this->input->post('fname'));
+                $lname = $this->input->post('lname');
+                $name =  strtoupper ($fname).' '.$lname ; 
+
                 $email = $this->input->post('email');
                 $password = $this->input->post('password');
                 $mobile = $this->security->xss_clean($this->input->post('mobile'));
                 $cin = $this->security->xss_clean($this->input->post('cin'));
                 $sexe = $this->security->xss_clean($this->input->post('sexe'));
+                $gouvernorat = $this->security->xss_clean($this->input->post('adresse'));
                 $gouvernorat = $this->security->xss_clean($this->input->post('gouvernorat'));
                 $delegation = $this->security->xss_clean($this->input->post('delegation'));
                 $facebook = $this->security->xss_clean($this->input->post('facebook'));
@@ -74,6 +78,8 @@ class Register extends CI_Controller
                  'roleId'=>'5',
                  'clubID'=>$this->input->get('var2') ,
                  'name'=> $name,
+                 'nom'=> $fname,
+                 'Prenom'=> $lname,
                  'mobile'=>$mobile,
                  'mobile2'=>$mobile2,
                  'cin'=>$cin,

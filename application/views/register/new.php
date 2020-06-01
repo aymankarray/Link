@@ -126,8 +126,8 @@
               <?php if  ($var3!=1){ ?>required <?php } ?>  >
             </div>
             <div class="form-group">
-             
-              <input class="form-control" type="text" placeholder="Nom et prénom" name="fname" required>
+              <input class="form-control" type="text" placeholder="Nom" name="fname" required>
+              <input class="form-control" type="text" placeholder="Prenom" name="lname" required>
             </div>
             <div class="form-group">
               Date de naissance <input class="form-control " type="date" placeholder="Date de naissance" name="birth" required>
@@ -139,6 +139,9 @@
               <option value="Femme"> Femme</option>
             </SELECT>
           </div>
+          <div class="form-group">
+              <input class="form-control" type="text" placeholder="adresse" name="adresse" required>
+            </div>
              <div class="row">
                   <div class="col-md-6">                                
                       <div class="form-group">
