@@ -205,6 +205,15 @@
                         </div> <?php }   ?>
              
             </div>
+                                            <div class="sign-info">
+                                    <span class="dark-color d-inline-block line-height-2">Copyright © 2020 Maiza Bahaedinne & Tunivisions Foundation. All rights reserved </span>
+                                    <ul class="iq-social-media">
+                                        <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                    </ul>
+                                </div>
+
 
           </form>
                               
