@@ -358,82 +358,47 @@
             }
       </script>
 
+          <script type="text/javascript">
+          $( document ).ready( function()
+          {
+              var json ;
+              var gouvernorat = $( '#gouvernorat' );
+              var delegation = $( '#delegation' );
+              
+             
+              var d = $.ajax({
+              url: '<?php echo base_url(); ?>assets/json/tunisia.json',
+              type: "GET",
+              dataType: 'json',
+              success: function (data) {
+                  console.log(data);
+                     $.each( data , function (index, value)
+                  {
+                  gouvernorat.append('<option value="' + index + '">' +  index  + '</option>');
+                  });
 
-<script type="text/javascript">
-    $('.form_date').datepicker({ yearRange: '1990:2001' });
-</script>
+                  gouvernorat.change( function()
+                  {
+                  var gouv = $(this).val();
+                  var deleg = data[ gouv ];
 
+                  $('option', delegation).remove();
+                  delegation.append('<option value="">-- Delegation --</option>');
 
-<script type="text/javascript">
-      $('#submitt').prop("disabled", true);
-        var a=0;
-        //binds to onchange event of your input field
-        $('#fileToUpload').bind('change', function() {
-          if ($('input:submit').attr('disabled',false)){
-             $('input:submit').attr('disabled',true);
-             }
-            var ext = $('#fileToUpload').val().split('.').pop().toLowerCase();
-            if ($.inArray(ext, ['jpg','jpeg']) == -1){
-               $('#error1').slideDown("slow");
-               $('#error2').slideUp("slow");
-               a=0;
-             }else{
-               var picsize = (this.files[0].size);
-               if (picsize > 100000){
-               $('#error2').slideDown("slow");
-             a=0;
-             }else{
-             a=1;
-                $('#error2').slideUp("slow");
-             }
-                $('#error1').slideUp("slow");
-             if (a==1){
-             $('input:submit').attr('disabled',false);
-           }
-        }
-    });
-</script>
-<script type="text/javascript">
-$( document ).ready( function()
-{
-    var json ;
-    var gouvernorat = $( '#gouvernorat' );
-    var delegation = $( '#delegation' );
-    
-   
-    var d = $.ajax({
-    url: '<?php echo base_url(); ?>assets/json/tunisia.json',
-    type: "GET",
-    dataType: 'json',
-    success: function (data) {
-        console.log(data);
-           $.each( data , function (index, value)
-        {
-        gouvernorat.append('<option value="' + index + '">' +  index  + '</option>');
-        });
+                  $.each( deleg, function (index, value)
+                  {
+                  delegation.append('<option value="' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '">' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '</option>');
+                  });
+                  });    
 
-        gouvernorat.change( function()
-        {
-        var gouv = $(this).val();
-        var deleg = data[ gouv ];
-
-        $('option', delegation).remove();
-        delegation.append('<option value="">-- Delegation --</option>');
-
-        $.each( deleg, function (index, value)
-        {
-        delegation.append('<option value="' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '">' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '</option>');
-        });
-        });    
-
-    } 
-    });
+              } 
+              });
 
 
 
-        
-    });
-</script>
+                  
+              });
+          </script>
    </body>
 
 <!-- Mirrored from iqonic.design/themes/socialv/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 17:36:48 GMT -->
