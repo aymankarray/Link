@@ -24,9 +24,9 @@ class Register extends CI_Controller
      */
     public function index()
     {
+            $data['ActuRecords'] = $this->actualite_model->actuListing();
 
-
-         $this->load->view('register/new');
+         $this->load->view('register/new',$data);
     }
     
  
@@ -34,9 +34,9 @@ class Register extends CI_Controller
      * Index Page for this controller.
      */
     public function reglement()
-    {       $data['ActuRecords'] = $this->actualite_model->actuListing();
+    {       
 
-         $this->load->view('reglement',$data);
+         $this->load->view('reglement');
     }
 
 
