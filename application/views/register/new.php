@@ -160,6 +160,12 @@
                       </div>
                   </div>
             </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                  $('#gouvernorat').select2();
+                  $('#delegation').select2();
+              });
+            </script>
             <div class="form-group">
               <input class="form-control" type="email" placeholder="Email" name="email"  required>
             </div>
