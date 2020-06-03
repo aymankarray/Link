@@ -66,6 +66,19 @@
           firebase.analytics();
         </script>
 
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+          var OneSignal = window.OneSignal || [];
+          OneSignal.push(function() {
+            OneSignal.init({
+              appId: "867e1b5b-2eaa-405f-81c5-81da2f556e05",
+              notifyButton: {
+                enable: true,
+              },
+            });
+          });
+        </script>
+
       
       
    <style type="text/css">
