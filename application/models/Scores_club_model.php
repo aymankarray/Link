@@ -104,7 +104,7 @@ class Scores_club_model extends CI_Model
         
  
         $this->db->where('BaseTbl.startDate >=  ','2019-09-01');
-        $this->db->where('BaseTbl.startDate <=  ','2020-06-01');
+        $this->db->where('BaseTbl.startDate <=  ','2020-08-01');
 
         $this->db->group_by(' , dateS');
         $this->db->order_by('dateS ASC');
@@ -135,7 +135,7 @@ class Scores_club_model extends CI_Model
         
  
         $this->db->where('BaseTbl.startDate >=  ','2019-09-01');
-        $this->db->where('BaseTbl.startDate <=  ','2020-06-01');
+        $this->db->where('BaseTbl.startDate <=  ','2020-08-01');
       
 
 
@@ -168,7 +168,7 @@ class Scores_club_model extends CI_Model
         
         $this->db->where('BaseTbl.type = ',$type);
         $this->db->where('BaseTbl.startDate >=  ','2019-09-01');
-        $this->db->where('BaseTbl.startDate <=  ','2020-06-01');
+        $this->db->where('BaseTbl.startDate <=  ','2020-08-01');
       
 
         $this->db->group_by('type , dateS  ') ;
@@ -203,7 +203,7 @@ class Scores_club_model extends CI_Model
         $this->db->where('BaseTbl.type = ',$type);
         
         $this->db->where('BaseTbl.startDate >=  ','2019-09-01');
-        $this->db->where('BaseTbl.startDate <=  ','2020-06-01');
+        $this->db->where('BaseTbl.startDate <=  ','2020-08-01');
       
 
         
