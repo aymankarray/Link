@@ -786,7 +786,7 @@
                      <li>
                         <a href="#mailbox" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-book-open-line"></i><span>Academy <span class="btn-primary" >Soon</span></span><i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                            <i class="ri-book-open-line"></i>Academy <span class="btn-primary" >Soon</span><i class="ri-arrow-right-s-line iq-arrow-right"></i>
                         </a>
                         <ul id="mailbox" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle" style="">
                             <li>
@@ -801,7 +801,7 @@
                       <li>
                         <a class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-archive-line"></i><span>Shop <span class="btn-primary" >Soon</span></span><i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                            <i class="ri-archive-line"></i>Shop <span class="btn-primary" >Soon</span>
                         </a>
                       </li>
 
