@@ -1053,26 +1053,7 @@
          <!-- Page Content  -->
 
       
-        <?php if($SA == 1 ) { ?>
-             <script type="text/javascript">
-              $(document).ready(function() {
-                Swal.fire({
-                                          title: 'il est strictement obligatoire d\'activer la géolocalisation.',
-                                          width: 600,
-                                          allowOutsideClick: false,
-                                          padding: '3em',
-                                          background: '#fff url(/images/trees.png)',
-                                          backdrop: `
-                                            rgba(0,0,123,0.4)
-                                            url("/images/nyan-cat.gif")
-                                            left top
-                                            no-repeat
-                                          `
-                                        })
-
-                });
-             </script>
-        <?php } ?>
+       
 
      
    
