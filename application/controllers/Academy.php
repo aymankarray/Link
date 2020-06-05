@@ -40,7 +40,7 @@ class Academy extends BaseController {
 					    $data['FromationsTypes'] = "" ; 
 		           		
 		           		
-		        		$this->loadViews("academy/newFormation", $this->global, $data, NULL);  
+		        		$this->loadViews("academy/formation/newFormation", $this->global, $data, NULL);  
 		        		  
 		          
 		        }  
