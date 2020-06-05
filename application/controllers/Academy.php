@@ -52,9 +52,9 @@ class Academy extends BaseController {
 		               $label = $this->input->post('label');
 		               $Description = $this->input->post('description');
 		               $type = $this->input->post('description');		       
-			   		   
-
-			   		   $target_dir = "uploads/Academy/";
+			   		   	
+ 						$filenameCC = date('d_M_Y_H_i_s_'); 
+			   		   $target_dir = "uploads/Academy/".$filenameCC;
 	                    $target_file = $target_dir . basename($_FILES["affiche"]["name"]);
 	                    $uploadOk = 1;
 	                    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
@@ -63,7 +63,7 @@ class Academy extends BaseController {
 			   		   $formationInfo = array(
 		                 'label' =>  $label, 
 		                 'description' => $Description ,
-		                 'affiche' => date('Y-m-d H:i:s').basename($_FILES["affiche"]["name"]) , 
+		                 'affiche' => $filenameCC.basename($_FILES["affiche"]["name"]) , 
 		                 'type' => $type ,
 		                 'createdBy' => $this->vendorId ,
 		                 'createdDTM'=> date('Y-m-d H:i:s')
