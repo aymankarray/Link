@@ -22,29 +22,180 @@
                             <a href="#">Voir plus</a>
                         </div>
                     </div>
-                    <div class="iq-card-body">
-                        <ul id="new-music" class="d-flex list-inline m-0 p-0 slick-initialized slick-slider">
-                            <div class="slick-list draggable">
-                                <div class="slick-track" style="opacity: 1; width: 1056px; transform: translate3d(-336px, 0px, 0px);">
-                                 
-
-                                	<li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 72px;" data-slick-index="-1" aria-hidden="true">
+                    <<div class="iq-card-body">
+                           <ul id="new-music" class="d-flex list-inline m-0 p-0 slick-initialized slick-slider">
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                           <div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 3870px; transform: translate3d(-1075px, 0px, 0px);"><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="-2" aria-hidden="true">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#" tabindex="-1"><img src="<?php echo base_url()  ?>assets/images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n7.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Quincy Jones</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="-1" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
                                     </div>
                                  </div>
                                  <h6>Ciara</h6>
                                  <p class="mb-0">Best Advice</p>
-                              </li>
-
-
-
-                                </div>
-                            </div>
-                        </ul>
-                    </div>
+                              </li><li class="text-center col-sm-2 slick-slide" tabindex="-1" style="width: 215px;" data-slick-index="0" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n1.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Sean Paul</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide" tabindex="-1" style="width: 215px;" data-slick-index="1" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n2.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Fetty Wap</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide" tabindex="-1" style="width: 215px;" data-slick-index="2" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n3.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Brittany Howard</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-current slick-active slick-center" tabindex="0" style="width: 215px;" data-slick-index="3" aria-hidden="false">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="0"><img src="images/page-img/n4.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="0"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Elton John</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide" tabindex="-1" style="width: 215px;" data-slick-index="4" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n5.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Tierra Whack</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide" tabindex="-1" style="width: 215px;" data-slick-index="5" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n6.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Trippie Redd</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide" tabindex="-1" style="width: 215px;" data-slick-index="6" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n7.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Quincy Jones</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide" tabindex="-1" style="width: 215px;" data-slick-index="7" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Ciara</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="8" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n1.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Sean Paul</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="9" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n2.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Fetty Wap</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="10" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n3.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Brittany Howard</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="11" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n4.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Elton John</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="12" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n5.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Tierra Whack</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="13" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n6.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Trippie Redd</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="14" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n7.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Quincy Jones</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li><li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 215px;" data-slick-index="15" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Ciara</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li></div></div></ul>
+                        </div>
                 </div>
             </div>
         </div>
