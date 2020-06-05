@@ -772,18 +772,32 @@
                         <a href="<?php echo base_url() ?>Posts/Acceuil" class="iq-waves-effect"><i class="las la-newspaper"></i><span>Acceuil</span></a>
                      </li>
                      <li>
-                        <a href="<?php echo base_url() ?>dashboard" class="iq-waves-effect"><i class="las la-newspaper"></i><span>Dashboard</span></a>
+                        <a href="<?php echo base_url() ?>dashboard" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Dashboard</span></a>
                      </li>
                      <li>
                         <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $clubID ?>" class="iq-waves-effect"><i class="las la-users"></i><span>Mon club</span></a>
                      </li>
                      <li>
-                        <a href="<?php echo base_url() ?>Project/projectListing" class="iq-waves-effect"><i class="las la-users"></i><span>Evenement</span></a>
+                        <a href="<?php echo base_url() ?>Project/projectListing" class="iq-waves-effect"><i class="las la-calendar"></i><span>Evenement</span></a>
                      </li>
                      <li>
                        <a href="<?php echo base_url() ?>Club/clubListing" class="iq-waves-effect"><i class="ri-list-check"></i><span>Clubs</span></a>
                      </li>
-                     
+                     <li>
+                        <a href="#mailbox" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
+                            <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
+                            <i class="ri-mail-line"></i><span>Academy</span><i class="ri-arrow-right-s-line iq-arrow-right">Soon</i>
+                        </a>
+                        <ul id="mailbox" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle" style="">
+                            <li>
+                                <a ><i class="ri-inbox-line"></i>Formation</a>
+                            </li>
+                            <li>
+                                <a ><i class="ri-edit-line"></i>Certifications</a>
+                            </li>
+                        </ul>
+                      </li>
+
                   </ul>
                </nav>
                <div class="p-3"></div>
