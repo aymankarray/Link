@@ -786,14 +786,14 @@
                      <li>
                         <a href="#mailbox" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-book-open-line"></i>Academy <span class="btn-primary" >Soon</span><i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                            <i class="ri-book-open-line"></i>Academy <i class="ri-arrow-right-s-line iq-arrow-right"><i class="ri-time-line"></i></i>
                         </a>
                         <ul id="mailbox" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
                             <li>
-                                <a ><i class="ri-computer-line"></i>Formations </a>  
+                                <a ><i class="ri-computer-line"></i>Formations </a>   <i class="ri-time-line"></i>
                             </li>
                             <li>
-                                <a ><i class="ri-award-line"></i>Certifications</a>
+                                <a ><i class="ri-award-line"></i>Certifications</a><i class="ri-time-line"></i>
                             </li>
                         </ul>
                       </li>
@@ -801,7 +801,7 @@
                       <li>
                         <a class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-archive-line"></i>Shop <span class="btn-primary" >Soon</span>
+                            <i class="ri-archive-line"></i>Shop <i class="ri-time-line"></i>
                         </a>
                       </li>
 
