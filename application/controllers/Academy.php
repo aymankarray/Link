@@ -23,7 +23,7 @@ class Academy extends BaseController {
  					      
             			$data['count'] = "" ; 
 
-		                $this->global['pageTitle'] = 'Actualités';
+		                $this->global['pageTitle'] = 'Academy';
 		            	$data['Fromations'] = "" ;
 		                $this->loadViews("academy/list", $this->global, $data, NULL);   
 		        		
@@ -35,7 +35,7 @@ class Academy extends BaseController {
 	public function NewFormation()
 		        {
 		                
-		                $this->global['pageTitle'] = 'Actualités';
+		                $this->global['pageTitle'] = 'Formation';
 		           		$this->global['active'] = 'actu';
 					    $data['FromationsTypes'] = "" ; 
 		           		
