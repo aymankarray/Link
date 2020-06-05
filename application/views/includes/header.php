@@ -802,7 +802,7 @@
                       <li>
                         <a class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-store-3-line"></i>Store <small class="mb-3"> 
+                            <i class="ri-store-3-line"></i>Store 
                         </a>
                          <small class="mb-3"><i class="ri-terminal-line"></i> comming soon</small>
                       </li>
