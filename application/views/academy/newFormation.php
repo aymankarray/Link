@@ -73,7 +73,7 @@
                                 </div>                                
                             </div>
 
-    
+                        </div>
                         <div class="box-footer">
                             <input type="submit" class="btn btn-primary" value="Envoyer" />
                             <input type="reset" class="btn btn-default" value="Reset" />
