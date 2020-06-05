@@ -110,7 +110,7 @@
                                  <h6>Ciara</h6>
                                  <p class="mb-0">Best Advice</p>
                               </li>
-                              
+
                            </ul>
                         </div>
 
@@ -127,7 +127,7 @@
 
          <script type="text/javascript">
          	jQuery('#JD').slick({
-            slidesToShow: 2,
+            slidesToShow: 6,
             slidesToScroll: 1,
             focusOnSelect: true,
             arrows: false,
