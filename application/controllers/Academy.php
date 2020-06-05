@@ -63,7 +63,7 @@ class Academy extends BaseController {
 			   		   $formationInfo = array(
 		                 'label' =>  $label, 
 		                 'description' => $Description ,
-		                 'affiche' => date('Y-m-d H:i:s').basename($_FILES["fileToUpload"]["name"]) , 
+		                 'affiche' => date('Y-m-d H:i:s').basename($_FILES["affiche"]["name"]) , 
 		                 'type' => $type ,
 		                 'createdBy' => $this->vendorId ,
 		                 'createdDTM'=> date('Y-m-d H:i:s')
