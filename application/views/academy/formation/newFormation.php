@@ -64,13 +64,7 @@
                                     </div>
                                     
                                 </div>
-                              <div class="col-md-6">                                
-                                    <div class="form-group">
-                                        <label for="fname">Date debut</label>
-                                        <!-- min="<?php echo date('Y-m-d').'T00:00' ?>" -->
-                                        <input type="datetime-local" class="form-control "    id="debut" name="debut"  required >
-                                    </div>
-                                </div>                                
+                                  
                            
 
                         </div>
@@ -81,7 +75,7 @@
                             <br>
                         </div>
                     </form>
-                    
+
                               
                            </div>
                         </div>
