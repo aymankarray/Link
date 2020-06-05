@@ -46,29 +46,29 @@ class Academy extends BaseController {
 		        }  
 
 
-    public function addNewA()
+    public function addNewF()
 		        {
 		                
 		               $Titre = $this->input->post('titre');
 		               $Description = $this->input->post('description');		       
-			   		   $lien = $this->input->post('lien');
+			   		   
 
-			   		   $target_dir = "uploads/Actu/";
-	                    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+			   		   $target_dir = "uploads/Academy/";
+	                    $target_file = $target_dir . basename($_FILES["affiche"]["name"]);
 	                    $uploadOk = 1;
 	                    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-						if(move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file) ){
-			   		   $actuInfo = array(
-		                 'titre' =>  $Titre, 
+						if(move_uploaded_file($_FILES["affiche"]["tmp_name"], $target_file) ){
+			   		   $formationInfo = array(
+		                 'label' =>  $label, 
 		                 'description' => $Description ,
-		                 'image' => basename($_FILES["fileToUpload"]["name"])  , 
-		                 'lien' => $lien ,
+		                 'affiche' => date('H_i_s').basename($_FILES["fileToUpload"]["name"]) , 
+		                 'type' => $type ,
 		                 'createdBy' => $this->vendorId ,
-		                 'createdDate'=> date('Y-m-d H:i:s')
+		                 'createdDTM'=> date('Y-m-d H:i:s')
 		                     );
 
-			   		   $resultat = $this->actualite_model->addNew($actuInfo);
+			   		   $resultat = $this->academy_formation_model->addNew($formationInfo);
 			   		   
 
 		        		  
@@ -77,9 +77,9 @@ class Academy extends BaseController {
 		          
 		        }    
 
-				public function Show($actuId)
+		public function formation($formationId)
 		        {
-		                $data['actuInfo'] =  $this->actualite_model->actuById($actuId);
+		                $data['actuInfo'] =  $this->actualite_model->actuById($formationId);
 		                 $this->global['pageTitle'] = $data['actuInfo']->titre  ;
 		           		 
 		           		 $this->global['active'] = 'actu';

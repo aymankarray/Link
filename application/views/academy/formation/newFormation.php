@@ -17,7 +17,7 @@
                         <div class="iq-card-body">
                            <div class="table-responsive">
                               <?php $this->load->helper("form"); ?>
-                    <form role="form"  id="addproject" action="<?php echo base_url() ?>Academy/addNewFormation" method="post" role="form"  enctype="multipart/form-data">
+                    <form role="form"  id="addproject" action="<?php echo base_url() ?>Academy/addNewF" method="post" role="form"  enctype="multipart/form-data">
                         
 
 
