@@ -24,7 +24,7 @@ class Academy extends BaseController {
             			$data['count'] = "" ; 
 
 		                $this->global['pageTitle'] = 'Academy';
-		            	$data['Fromations'] = "" ;
+		            	$data['Fromations'] = $this->academy_formation_model->formationListing() ;
 		                $this->loadViews("academy/list", $this->global, $data, NULL);   
 		        		
 

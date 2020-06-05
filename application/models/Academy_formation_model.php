@@ -15,7 +15,7 @@ class Academy_formation_model extends CI_Model
      * @param number $segment : This is pagination limit
      * @return array $result : This is result
      */
-    function absenceListing()
+    function formationListing()
     {
         $this->db->select('');
         $this->db->from('tbl_academy_formations as BaseTbl');
