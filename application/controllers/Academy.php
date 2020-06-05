@@ -49,8 +49,9 @@ class Academy extends BaseController {
     public function addNewF()
 		        {
 		                
-		               $Titre = $this->input->post('titre');
-		               $Description = $this->input->post('description');		       
+		               $label = $this->input->post('label');
+		               $Description = $this->input->post('description');
+		               $type = $this->input->post('description');		       
 			   		   
 
 			   		   $target_dir = "uploads/Academy/";
@@ -62,7 +63,7 @@ class Academy extends BaseController {
 			   		   $formationInfo = array(
 		                 'label' =>  $label, 
 		                 'description' => $Description ,
-		                 'affiche' => date('H_i_s').basename($_FILES["fileToUpload"]["name"]) , 
+		                 'affiche' => date('Y-m-d H:i:s').basename($_FILES["fileToUpload"]["name"]) , 
 		                 'type' => $type ,
 		                 'createdBy' => $this->vendorId ,
 		                 'createdDTM'=> date('Y-m-d H:i:s')
