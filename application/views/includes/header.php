@@ -790,10 +790,10 @@
                         </a>
                         <ul id="mailbox" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
                             <li>
-                                <a ><i class="ri-computer-line"></i>Formations </a>   <i class="ri-time-line"></i>
+                                <a ><i class="ri-computer-line"></i>Formations <small class="mb-3"><i class="ri-store-3-line"></i> comming soon</small> </a>   
                             </li>
                             <li>
-                                <a ><i class="ri-award-line"></i>Certifications</a><i class="ri-time-line"></i>
+                                <a ><i class="ri-award-line"></i>Certifications <small class="mb-3"><i class="ri-store-3-line"></i> comming soon</small>  </a>
                             </li>
                         </ul>
                       </li>
@@ -801,7 +801,7 @@
                       <li>
                         <a class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-store-3-line"></i>Store <i class="ri-time-line"></i>
+                            <i class="ri-store-3-line"></i>Store <small class="mb-3"><i class="ri-store-3-line"></i> comming soon</small> <i class="ri-time-line"></i>
                         </a>
                       </li>
 
