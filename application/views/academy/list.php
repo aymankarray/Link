@@ -28,6 +28,9 @@
 						<div class="iq-card-body">
                            <ul id="JD" class="d-flex list-inline m-0 p-0">
                               
+
+                              <?foreach ($Fromations as $key ) { ?>
+                           
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
                                     <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n1.jpg" alt="music-thumb" class="img-fluid w-100"></a>
@@ -39,84 +42,8 @@
                                  <p class="mb-0">Best Advice</p>
                               </li>
                               
-                              <li class="text-center col-sm-2">
-                                 <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
-                                    <div class="play-btn">
-                                       <a href="#"><i class="ri-play-fill text-white"></i></a>
-                                    </div>
-                                 </div>
-                                 <h6>Ciara</h6>
-                                 <p class="mb-0">Best Advice</p>
-                              </li>
-
-
-                              <li class="text-center col-sm-2">
-                                 <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n1.jpg" alt="music-thumb" class="img-fluid w-100"></a>
-                                    <div class="play-btn">
-                                       <a href="#"><i class="ri-play-fill text-white"></i></a>
-                                    </div>
-                                 </div>
-                                 <h6>Sean Paul</h6>
-                                 <p class="mb-0">Best Advice</p>
-                              </li>
-                              
-                              <li class="text-center col-sm-2">
-                                 <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
-                                    <div class="play-btn">
-                                       <a href="#"><i class="ri-play-fill text-white"></i></a>
-                                    </div>
-                                 </div>
-                                 <h6>Ciara</h6>
-                                 <p class="mb-0">Best Advice</p>
-                              </li>
-
-
-                              <li class="text-center col-sm-2">
-                                 <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n1.jpg" alt="music-thumb" class="img-fluid w-100"></a>
-                                    <div class="play-btn">
-                                       <a href="#"><i class="ri-play-fill text-white"></i></a>
-                                    </div>
-                                 </div>
-                                 <h6>Sean Paul</h6>
-                                 <p class="mb-0">Best Advice</p>
-                              </li>
-                              
-                              <li class="text-center col-sm-2">
-                                 <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
-                                    <div class="play-btn">
-                                       <a href="#"><i class="ri-play-fill text-white"></i></a>
-                                    </div>
-                                 </div>
-                                 <h6>Ciara</h6>
-                                 <p class="mb-0">Best Advice</p>
-                              </li>
-
-                              <li class="text-center col-sm-2">
-                                 <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n1.jpg" alt="music-thumb" class="img-fluid w-100"></a>
-                                    <div class="play-btn">
-                                       <a href="#"><i class="ri-play-fill text-white"></i></a>
-                                    </div>
-                                 </div>
-                                 <h6>Sean Paul</h6>
-                                 <p class="mb-0">Best Advice</p>
-                              </li>
-                              
-                              <li class="text-center col-sm-2">
-                                 <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
-                                    <div class="play-btn">
-                                       <a href="#"><i class="ri-play-fill text-white"></i></a>
-                                    </div>
-                                 </div>
-                                 <h6>Ciara</h6>
-                                 <p class="mb-0">Best Advice</p>
-                              </li>
+                              <?php   } ?>
+                             
                            </ul>
                         </div>
 
@@ -131,117 +58,4 @@
          </div>
 
 
-         <script type="text/javascript">
-         
-         	(function(jQuery) {
-
-				    "use strict";
-
-				    jQuery(document).ready(function() {
-
-
-				    	 /*---------------------------------------------------------------------
-       							 slick
-					        -----------------------------------------------------------------------*/
-					        jQuery('.slick-slider').slick({
-					            centerMode: true,
-					            centerPadding: '60px',
-					            slidesToShow: 9,
-					            slidesToScroll: 1,
-					            focusOnSelect: true,
-					            responsive: [{
-					                breakpoint: 992,
-					                settings: {
-					                    arrows: false,
-					                    centerMode: true,
-					                    centerPadding: '30',
-					                    slidesToShow: 3
-					                }
-					            }, {
-					                breakpoint: 480,
-					                settings: {
-					                    arrows: false,
-					                    centerMode: true,
-					                    centerPadding: '15',
-					                    slidesToShow: 1
-					                }
-					            }],
-					            nextArrow: '<a href="#" class="ri-arrow-left-s-line left"></a>',
-					            prevArrow: '<a href="#" class="ri-arrow-right-s-line right"></a>',
-					        });
-
-					        jQuery('#JD').slick({
-					            slidesToShow: 6,
-					            slidesToScroll: 1,
-					            focusOnSelect: true,
-					            arrows: false,
-					            responsive: [{
-					                breakpoint: 992,
-					                settings: {
-					                    arrows: false,
-					                    centerMode: true,
-					                    slidesToShow: 3
-					                }
-					            }, {
-					                breakpoint: 480,
-					                settings: {
-					                    arrows: false,
-					                    centerMode: true,
-					                    slidesToShow: 1
-					                }
-					            }],
-					           
-					        });
-
-					         jQuery('#recent-music').slick({
-					            slidesToShow: 6,
-					            slidesToScroll: 1,
-					            focusOnSelect: true,
-					            arrows: false,
-					            responsive: [{
-					                breakpoint: 992,
-					                settings: {
-					                    arrows: false,
-					                    centerMode: true,
-					                    slidesToShow: 3
-					                }
-					            }, {
-					                breakpoint: 480,
-					                settings: {
-					                    arrows: false,
-					                    centerMode: true,
-					                    slidesToShow: 1
-					                }
-					            }],
-					           
-					        });
-
-					          jQuery('#top-music').slick({
-					            slidesToShow: 6,
-					            slidesToScroll: 1,
-					            focusOnSelect: true,
-					            arrows: false,
-					            responsive: [{
-					                breakpoint: 992,
-					                settings: {
-					                    arrows: false,
-					                    centerMode: true,
-					                    slidesToShow: 3
-					                }
-					            }, {
-					                breakpoint: 480,
-					                settings: {
-					                    arrows: false,
-					                    centerMode: true,
-					                    slidesToShow: 1
-					                }
-					            }],
-					           
-					        });
-
-				         	
-
-				         	  });
-
-				})(jQuery);
-         </script>
+        

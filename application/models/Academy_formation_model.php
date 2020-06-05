@@ -30,11 +30,11 @@ class Academy_formation_model extends CI_Model
      * This function is used to add new user to system
      * @return number $insert_id : This is last inserted id
      */
-    function addNew($formationsInfo)
+    function addNew  ($formationsInfo)
     {
 
         $this->db->trans_start();
-        $this->db->insert('tbl_academy_formations', $absenceInfo);
+        $this->db->insert('tbl_academy_formations', $formationsInfo);
         
         $insert_id = $this->db->insert_id();
         

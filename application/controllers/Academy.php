@@ -32,12 +32,12 @@ class Academy extends BaseController {
         		
 
 
-	public function addNewFormation()
+	public function NewFormation()
 		        {
 		                
 		                $this->global['pageTitle'] = 'Actualités';
 		           		$this->global['active'] = 'actu';
-		        		$this->loadViews("actu/new", $this->global, Null, NULL); 
+		        		$this->loadViews("academy/newFormation", $this->global, Null, NULL); 
 		        		  
 		          
 		        }  

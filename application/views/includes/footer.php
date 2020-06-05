@@ -171,7 +171,120 @@
           </script>
           
 
-           
+           <script type="text/javascript">
+         
+          (function(jQuery) {
+
+            "use strict";
+
+            jQuery(document).ready(function() {
+
+
+               /*---------------------------------------------------------------------
+                     slick
+                  -----------------------------------------------------------------------*/
+                  jQuery('.slick-slider').slick({
+                      centerMode: true,
+                      centerPadding: '60px',
+                      slidesToShow: 9,
+                      slidesToScroll: 1,
+                      focusOnSelect: true,
+                      responsive: [{
+                          breakpoint: 992,
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              centerPadding: '30',
+                              slidesToShow: 3
+                          }
+                      }, {
+                          breakpoint: 480,
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              centerPadding: '15',
+                              slidesToShow: 1
+                          }
+                      }],
+                      nextArrow: '<a href="#" class="ri-arrow-left-s-line left"></a>',
+                      prevArrow: '<a href="#" class="ri-arrow-right-s-line right"></a>',
+                  });
+
+                  jQuery('#JD').slick({
+                      slidesToShow: 6,
+                      slidesToScroll: 1,
+                      focusOnSelect: true,
+                      arrows: false,
+                      responsive: [{
+                          breakpoint: 992,
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              slidesToShow: 3
+                          }
+                      }, {
+                          breakpoint: 480,
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              slidesToShow: 1
+                          }
+                      }],
+                     
+                  });
+
+                   jQuery('#recent-music').slick({
+                      slidesToShow: 6,
+                      slidesToScroll: 1,
+                      focusOnSelect: true,
+                      arrows: false,
+                      responsive: [{
+                          breakpoint: 992,
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              slidesToShow: 3
+                          }
+                      }, {
+                          breakpoint: 480,
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              slidesToShow: 1
+                          }
+                      }],
+                     
+                  });
+
+                    jQuery('#top-music').slick({
+                      slidesToShow: 6,
+                      slidesToScroll: 1,
+                      focusOnSelect: true,
+                      arrows: false,
+                      responsive: [{
+                          breakpoint: 992,
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              slidesToShow: 3
+                          }
+                      }, {
+                          breakpoint: 480,
+                          settings: {
+                              arrows: false,
+                              centerMode: true,
+                              slidesToShow: 1
+                          }
+                      }],
+                     
+                  });
+
+                  
+
+                    });
+
+        })(jQuery);
+         </script>
 
    
 <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;">
