@@ -26,7 +26,7 @@
                            </div>
                         </div>
 						<div class="iq-card-body">
-                           <ul id="new-music" class="d-flex list-inline m-0 p-0">
+                           <ul id="JD" class="d-flex list-inline m-0 p-0">
                               
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
@@ -132,26 +132,36 @@
 
 
          <script type="text/javascript">
-         	jQuery('#new-music').slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            focusOnSelect: true,
-            arrows: false,
-            responsive: [{
-                breakpoint: 992,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    slidesToShow: 3
-                }
-            }, {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    slidesToShow: 1
-                }
-            }],
-           
-        });
+         
+         	(function(jQuery) {
+
+				    "use strict";
+
+				    jQuery(document).ready(function() {
+
+				         	jQuery('#JD').slick({
+				            slidesToShow: 2,
+				            slidesToScroll: 1,
+				            focusOnSelect: true,
+				            arrows: false,
+				            responsive: [{
+				                breakpoint: 992,
+				                settings: {
+				                    arrows: false,
+				                    centerMode: true,
+				                    slidesToShow: 3
+				                }
+				            }, {
+				                breakpoint: 480,
+				                settings: {
+				                    arrows: false,
+				                    centerMode: true,
+				                    slidesToShow: 1
+				                }
+				            }],
+				           
+				        });
+				         	  });
+
+				})(jQuery);
          </script>
