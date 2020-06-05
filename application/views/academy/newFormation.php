@@ -39,7 +39,7 @@
                                         <label for="fname">type</label>
                                         <select class="form-control" id="type" name="type" >
                                             
-                                        <?foreach ($FromationsTypes as $type ) { ?>
+                                        <?php foreach ($FromationsTypes as $type ) { ?>
                                             <option value="<?php echo $type->typeId ?>"><?php echo $type->name ?></option>
                                         <?php   } ?>
                              

@@ -29,7 +29,7 @@
                            <ul id="JD" class="d-flex list-inline m-0 p-0">
                               
 
-                              <?foreach ($Fromations as $key ) { ?>
+                              <?php foreach ($Fromations as $key ) { ?>
                            
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
