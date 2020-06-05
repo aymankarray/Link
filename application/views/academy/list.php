@@ -42,26 +42,7 @@
 							            </li>
 
 
-							            <li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 157px;" data-slick-index="-4" aria-hidden="true">
-							                <div class="music-thumbnail position-relative mb-3">
-							                    <a href="#" tabindex="-1"><img src="<?php echo base_url()  ?>assets/images/page-img/n5.jpg" alt="music-thumb" class="img-fluid w-100" /></a>
-							                    <div class="play-btn">
-							                        <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
-							                    </div>
-							                </div>
-							                <h6>Tierra Whack</h6>
-							                <p class="mb-0">Best Advice</p>
-							            </li>
-							            <li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 157px;" data-slick-index="-3" aria-hidden="true">
-							                <div class="music-thumbnail position-relative mb-3">
-							                    <a href="#" tabindex="-1"><img src="<?php echo base_url()  ?>assets/images/page-img/n6.jpg" alt="music-thumb" class="img-fluid w-100" /></a>
-							                    <div class="play-btn">
-							                        <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
-							                    </div>
-							                </div>
-							                <h6>Trippie Redd</h6>
-							                <p class="mb-0">Best Advice</p>
-							            </li>
+							            
 							            <li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 157px;" data-slick-index="-2" aria-hidden="true">
 							                <div class="music-thumbnail position-relative mb-3">
 							                    <a href="#" tabindex="-1"><img src="<?php echo base_url()  ?>assets/images/page-img/n7.jpg" alt="music-thumb" class="img-fluid w-100" /></a>
