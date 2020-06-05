@@ -790,12 +790,19 @@
                         </a>
                         <ul id="mailbox" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle" style="">
                             <li>
-                                <a ><i class="ri-computer-line"></i>Formation  </a>  
+                                <a ><i class="ri-computer-line"></i>Formations </a>  
                             </li>
                             <li>
                                 <a ><i class="ri-award-line"></i>Certifications</a>
                             </li>
                         </ul>
+                      </li>
+
+                      <li>
+                        <a class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
+                            <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
+                            <i class="ri-archive-line"></i><span>Shop <span class="btn-primary" >Soon</span></span><i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                        </a>
                       </li>
 
                   </ul>
