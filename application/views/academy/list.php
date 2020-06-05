@@ -39,6 +39,16 @@
                                  <p class="mb-0">Best Advice</p>
                               </li>
                               
+                              <li class="text-center col-sm-2">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Ciara</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li>
                            </ul>
                         </div>
 
