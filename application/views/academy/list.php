@@ -30,7 +30,7 @@
                               
                           <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 3454px; transform: translate3d(-1413px, 0px, 0px);">
 
-                          	<li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 157px;" data-slick-index="-1" aria-hidden="true">
+                          	<li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 157px;" data-slick-index="1" aria-hidden="true">
                                  <div class="music-thumbnail position-relative mb-3">
                                     <a href="#" tabindex="-1"><img src="<?php echo base_url()  ?>assets/images/page-img/n3.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
@@ -40,6 +40,42 @@
                                  <h6>Brittany Howard</h6>
                                  <p class="mb-0">Best Advice</p>
                               </li>
+
+                              <li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 157px;" data-slick-index="2" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="<?php echo base_url()  ?>assets/images/page-img/n6.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Trippie Redd</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li>
+
+
+                              <li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 157px;" data-slick-index="3" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="<?php echo base_url()  ?>assets/images/page-img/n7.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Quincy Jones</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li>
+
+
+                              <li class="text-center col-sm-2 slick-slide slick-cloned" tabindex="-1" style="width: 157px;" data-slick-index="4" aria-hidden="true">
+                                 <div class="music-thumbnail position-relative mb-3">
+                                    <a href="#" tabindex="-1"><img src="<?php echo base_url()  ?>assets/images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <div class="play-btn">
+                                       <a href="#" tabindex="-1"><i class="ri-play-fill text-white"></i></a>
+                                    </div>
+                                 </div>
+                                 <h6>Ciara</h6>
+                                 <p class="mb-0">Best Advice</p>
+                              </li>
+
 
                           </div></div></ul>
                         </div>
