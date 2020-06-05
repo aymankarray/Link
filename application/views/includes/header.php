@@ -790,10 +790,10 @@
                         </a>
                         <ul id="mailbox" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle" style="">
                             <li>
-                                <a ><i class="ri-inbox-line"></i>Formation <span class="text-right">Soon</span> </a>  
+                                <a ><i class="ri-inbox-line"></i>Formation <span class="btn mb-1 btn-primary" >Soon</span> </a>  
                             </li>
                             <li>
-                                <a ><i class="ri-edit-line"></i>Certifications <span class="text-right">Soon</span></a>
+                                <a ><i class="ri-edit-line"></i>Certifications <span class="btn mb-1 btn-primary" >Soon</span></a>
                             </li>
                         </ul>
                       </li>
