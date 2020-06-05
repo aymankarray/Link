@@ -786,14 +786,14 @@
                      <li>
                         <a href="#mailbox" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-mail-line"></i><span>Academy <span class="btn-primary" >Soon</span></span><i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                            <i class="ri-book-open-line"></i><span>Academy <span class="btn-primary" >Soon</span></span><i class="ri-arrow-right-s-line iq-arrow-right"></i>
                         </a>
                         <ul id="mailbox" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle" style="">
                             <li>
-                                <a ><i class="ri-inbox-line"></i>Formation  </a>  
+                                <a ><i class="ri-computer-line"></i>Formation  </a>  
                             </li>
                             <li>
-                                <a ><i class="ri-edit-line"></i>Certifications</a>
+                                <a ><i class="ri-award-line"></i>Certifications</a>
                             </li>
                         </ul>
                       </li>
