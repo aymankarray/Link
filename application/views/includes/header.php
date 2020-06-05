@@ -1055,7 +1055,7 @@
       
         <?php if($SA == 1 ) { ?>
              <script type="text/javascript">
-              $( document ).ready(function() {
+              $(document).ready(function() {
                 Swal.fire({
                                           title: 'il est strictement obligatoire d\'activer la géolocalisation.',
                                           width: 600,
