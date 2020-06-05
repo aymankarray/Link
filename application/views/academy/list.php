@@ -1,9 +1,9 @@
 <div class="header-for-bg">
             <div class="background-header position-relative">
-               <img src="<?php echo base_url()  ?>/assets/images/page-img/profile-bg8.jpg" class="img-fluid w-100 rounded rounded" alt="header-bg">
+               <img src="<?php echo base_url()  ?>assets/images/page-img/profile-bg8.jpg" class="img-fluid w-100 rounded rounded" alt="header-bg">
                <div class="title-on-header">
                   <div class="data-block">
-                     <h2>Academy Tunivisions</h2>
+                     <h2>Tunivisions Academy</h2>
                   </div>
                </div>
             </div>
@@ -14,68 +14,9 @@
   <div id="content-page" class="content-page">
             <div class="container">
                <div class="row">
-                  <div class="col-md-4">
-                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                        <div class="iq-card-header d-flex justify-content-between">
-                           <div class="iq-header-title">
-                              <h4 class="card-title">Play Lists</h4>
-                           </div>
-                        </div>
-                        <div class="iq-card-body">
-                           <ul class="music-lists m-0 p-0">
-                              <li class="d-flex mb-4 align-items-center">
-                                 <div class="user-img img-fluid"><img src="images/page-img/l1.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                 <div class="media-support-info ml-3">
-                                    <h6>Ember</h6>
-                                 </div>
-                                 <div class="music-time">3:00</div>
-                              </li>
-                              <li class="d-flex mb-4 align-items-center">
-                                 <div class="user-img img-fluid"><img src="images/page-img/l2.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                 <div class="media-support-info ml-3">
-                                    <h6>Light Out(Bonus Track)</h6>
-                                 </div>
-                                 <div class="music-time">5:00</div>
-                              </li>
-                              <li class="d-flex mb-4 align-items-center">
-                                 <div class="user-img img-fluid"><img src="images/page-img/l3.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                 <div class="media-support-info ml-3">
-                                    <h6>Darkness Overture</h6>
-                                 </div>
-                                 <div class="music-time">2:30</div>
-                              </li>
-                              <li class="d-flex mb-4 align-items-center">
-                                 <div class="user-img img-fluid"><img src="images/page-img/l4.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                 <div class="media-support-info ml-3">
-                                    <h6>Dritin</h6>
-                                 </div>
-                                 <div class="music-time">4:20</div>
-                              </li>
-                              <li class="d-flex mb-4 align-items-center">
-                                 <div class="user-img img-fluid"><img src="images/page-img/l5.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                 <div class="media-support-info ml-3">
-                                    <h6>Bones</h6>
-                                 </div>
-                                 <div class="music-time">1:45</div>
-                              </li>
-                              <li class="d-flex align-items-center">
-                                 <div class="user-img img-fluid"><img src="images/page-img/l6.jpg" alt="story-img" class="rounded-circle avatar-40"></div>
-                                 <div class="media-support-info ml-3">
-                                    <h6>Hozier</h6>
-                                 </div>
-                                 <div class="music-time">2:00</div>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-8">
-                     <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
-                        <div class="iq-card-body p-0  ">
-                           <a href="#"><img src="images/page-img/48.jpg" alt="story-img" class="img-fluid rounded"></a>
-                        </div>
-                     </div>
-                  </div>
+                 
+
+
                   <div class="col-sm-12">
                      <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                         <div class="iq-card-header d-flex justify-content-between">
