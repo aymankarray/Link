@@ -3,7 +3,7 @@
                <img src="<?php echo base_url()  ?>/assets/images/page-img/profile-bg8.jpg" class="img-fluid w-100 rounded rounded" alt="header-bg">
                <div class="title-on-header">
                   <div class="data-block">
-                     <h2>Music</h2>
+                     <h2>Academy Tunivisions</h2>
                   </div>
                </div>
             </div>
