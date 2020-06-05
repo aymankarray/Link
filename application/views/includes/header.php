@@ -786,14 +786,14 @@
                      <li>
                         <a href="#mailbox" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-book-open-line"></i>Academy <i class="ri-arrow-right-s-line iq-arrow-right"><i class="ri-time-line"></i></i>
+                            <i class="ri-book-open-line"></i>Academy <i class="ri-arrow-right-s-line iq-arrow-right"></i>
                         </a>
                         <ul id="mailbox" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
                             <li>
-                                <a ><i class="ri-computer-line"></i>Formations <small class="mb-3"><i class="ri-store-3-line"></i> comming soon</small> </a>   
+                                <a ><i class="ri-computer-line"></i>Formations <small class="mb-3"><i class="ri-terminal-line"></i> comming soon</small> </a>   
                             </li>
                             <li>
-                                <a ><i class="ri-award-line"></i>Certifications <small class="mb-3"><i class="ri-store-3-line"></i> comming soon</small>  </a>
+                                <a ><i class="ri-award-line"></i>Certifications <small class="mb-3"><i class="ri-terminal-line"></i> comming soon</small>  </a>
                             </li>
                         </ul>
                       </li>
@@ -801,7 +801,7 @@
                       <li>
                         <a class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-store-3-line"></i>Store <small class="mb-3"><i class="ri-store-3-line"></i> comming soon</small> <i class="ri-time-line"></i>
+                            <i class="ri-store-3-line"></i>Store <small class="mb-3">comming soon</small> <i class="ri-time-line"></i>
                         </a>
                       </li>
 
