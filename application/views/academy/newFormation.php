@@ -5,7 +5,7 @@
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
-                              <h4 class="card-title">Declation du projet</h4>
+                              <h4 class="card-title">Formation</h4>
                            </div>
                            <div class="iq-card-header-toolbar d-flex align-items-center">
                               <div class="dropdown show">
@@ -31,7 +31,7 @@
                                             <input type="file" name="affiche" id="affiche" class="dropify" required/>                                    
                                 </div>
                             </div>
-                            <div class="row"> 
+                            
                             
                                
                                 <div class="col-md-4">                                
@@ -71,7 +71,7 @@
                                         <input type="datetime-local" class="form-control "    id="debut" name="debut"  required >
                                     </div>
                                 </div>                                
-                            </div>
+                           
 
                         </div>
                         <div class="box-footer">
