@@ -1,6 +1,6 @@
 <div class="header-for-bg">
             <div class="background-header position-relative">
-               <img src="images/page-img/profile-bg8.jpg" class="img-fluid w-100 rounded rounded" alt="header-bg">
+               <img src="<?php echo base_url()  ?>/assets/images/page-img/profile-bg8.jpg" class="img-fluid w-100 rounded rounded" alt="header-bg">
                <div class="title-on-header">
                   <div class="data-block">
                      <h2>Music</h2>
