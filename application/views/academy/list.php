@@ -29,7 +29,7 @@
                            <ul id="new-music" class="d-flex list-inline m-0 p-0">
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="images/page-img/n1.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n1.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#"><i class="ri-play-fill text-white"></i></a>
                                     </div>
@@ -39,7 +39,7 @@
                               </li>
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="images/page-img/n2.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n2.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#"><i class="ri-play-fill text-white"></i></a>
                                     </div>
@@ -49,7 +49,7 @@
                               </li>
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="images/page-img/n3.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n3.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#"><i class="ri-play-fill text-white"></i></a>
                                     </div>
@@ -59,7 +59,7 @@
                               </li>
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="images/page-img/n4.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n4.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#"><i class="ri-play-fill text-white"></i></a>
                                     </div>
@@ -69,7 +69,7 @@
                               </li>
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="images/page-img/n5.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n5.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#"><i class="ri-play-fill text-white"></i></a>
                                     </div>
@@ -79,7 +79,7 @@
                               </li>
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="images/page-img/n6.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n6.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#"><i class="ri-play-fill text-white"></i></a>
                                     </div>
@@ -89,7 +89,7 @@
                               </li>
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="images/page-img/n7.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n7.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#"><i class="ri-play-fill text-white"></i></a>
                                     </div>
@@ -99,7 +99,7 @@
                               </li>
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
-                                    <a href="#"><img src="images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
+                                    <a href="#"><img src="<?php echo base_url()  ?>assets/images/page-img/n8.jpg" alt="music-thumb" class="img-fluid w-100"></a>
                                     <div class="play-btn">
                                        <a href="#"><i class="ri-play-fill text-white"></i></a>
                                     </div>
@@ -111,7 +111,7 @@
                         </div>
 
 
-                        
+
                      </div>
                   </div>
                   
