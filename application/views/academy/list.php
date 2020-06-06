@@ -28,8 +28,11 @@
 						<div class="iq-card-body">
                            <ul id="JD" class="d-flex list-inline m-0 p-0">
                               
-
-                              <?php foreach ($Fromations as $key ) { ?>
+                              <?php if (count($Fromations) < 6  ){ 
+                              
+                                 for ($i= count($Fromations) ; $i >1 ; $i--) { 
+  
+                                 foreach ($Fromations as $key ) { ?>
                            
                               <li class="text-center col-sm-2">
                                  <div class="music-thumbnail position-relative mb-3">
@@ -43,7 +46,7 @@
                                  <p class="mb-0"><?php echo $key->description  ?></p>
                               </li>
                               
-                              <?php   } ?>
+                              <?php   }}} ?>
                              
                            </ul>
                         </div>
