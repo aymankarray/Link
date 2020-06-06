@@ -30,7 +30,7 @@
                               
                               <?php if (count($Fromations) < 6  ){ 
                               
-                                 for ($i= count($Fromations) ; $i >1 ; $i--) { 
+                                 
   
                                  foreach ($Fromations as $key ) { ?>
                            
@@ -46,7 +46,8 @@
                                  <p class="mb-0"><?php echo $key->description  ?></p>
                               </li>
                               
-                              <?php   }}} ?>
+                              <?php   }
+                                       } ?>
                              
                            </ul>
                         </div>
