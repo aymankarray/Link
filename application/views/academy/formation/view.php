@@ -32,9 +32,7 @@
                                              <div class="card-title"><h4><?php echo $key->titre  ; ?></h4></div>
                                              <div class="iq-card-body">   
 
-                                                <iframe id="player" type="text/html" width="640" height="360"
-                                                     src="http://www.youtube.com/embed/<?php echo $key->embed  ; ?>-VE?enablejsapi=1&origin=http://example.com"
-                                                     frameborder="0"></iframe>
+                                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/<?php echo $key->embed  ; ?>?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                              
                                                 <hr>
                                                 <h5>Description</h5>
