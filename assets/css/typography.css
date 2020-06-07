@@ -340,7 +340,7 @@ Card
 
 /*--------------*/
 .nav-pills .nav-item a { color: var(--iq-body-text); }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link { color: var(--iq-primary); background: var(--iq-light-primary); }
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link { color: white ; background: var(--iq-light-primary); }
 .nav-pills .nav-link:hover { color: var(--iq-primary); }
 
 /*--------------*/
