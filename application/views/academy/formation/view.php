@@ -19,7 +19,7 @@
                                  <div class="nav flex-column nav-pills text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <?php foreach ($chapters as $key ) { ?>
                                     <a class="nav-link <?php  if( $key->chapterId == 1){ ?> active<?php } ?> " id="v-pills-home-tab" data-toggle="pill" href="#Ch<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                                    <h3><?php echo $key->num  ; ?> - <?php echo $key->titre  ; ?></h3>
+                                    <?php echo $key->num  ; ?> - <?php echo $key->titre  ; ?>
                                     </a>
                                     <?php } ?>
                                  </div>
@@ -29,7 +29,7 @@
                                     <?php foreach ($chapters as $key ) { ?>
                                        <div class="tab-pane fade <?php  if( $key->chapterId == 1){ ?> show active<?php } ?>" id="Ch<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                           <div class="card" style="width: cover">
-                                             <div class="card-title"><?php echo $key->titre  ; ?></div>
+                                             <div class="card-title"><h4><?php echo $key->titre  ; ?></h4></div>
                                              <div class="iq-card-body">   
 
                                                 <iframe id="player" type="text/html" width="640" height="360"
