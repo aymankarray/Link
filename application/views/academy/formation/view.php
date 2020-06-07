@@ -13,9 +13,9 @@
                            <div class="row">
                               <div class="col-sm-3">
                                  <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    
+                                    <?php foreach ($chapters as $key ) { ?>
                                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                                    
+                                    <?php } ?>
                                  </div>
                               </div>
                               <div class="col-sm-9">
