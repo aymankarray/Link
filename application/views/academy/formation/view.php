@@ -13,16 +13,17 @@
                            <div class="row">
                               <div class="col-sm-3">
                                  <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <?php foreach ($chapters as $key ) { ?>
+                                    
                                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                                    <?php } ?>
+                                    
                                  </div>
                               </div>
                               <div class="col-sm-9">
                                  <div class="tab-content mt-0" id="v-pills-tabContent">
                                     
                                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                       123
+                                       123
                                     </div>
 
                                  </div>
