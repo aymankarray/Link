@@ -114,6 +114,11 @@
                                      </button>
          
                                    <?php }  ?>
+                                     <button class="tablink" onclick="openPage('Quiz', this, 'red')" <?php if ($key->num==1 ) {  ?> id="defaultOpen" <?php } ?> >
+
+                                     Certification
+                                        
+                                     </button>
                               </div>
                                 
                                  <?php foreach ($chapters as $key ) {  ?>
@@ -210,6 +215,13 @@
                                    </div>
                                  </div>
                                     <?php }  ?>
+                                 <div id="Quiz" class="tabcontent">
+
+                                   <h2> Reglement de quiz :</h2>
+                                   <p>              </p>
+                                   <input type="checkbox" name="" required="">j'accepte ce reglement de certification</div>
+                                   <a href="" class="btn btn-primary" >Envoyer</a> 
+                                 </div>
                                  
                               </div>
 
