@@ -151,7 +151,7 @@
                                     <i class="ri-check-double-line"></i> Un niveau dans la tranche des 70% est requis pour réussir et avoir un badge<br>
                                     <i class="ri-calendar-2-line"></i> Réessayez dans 1 Semaine si vous échouez<br>
 
-                                   <input type="checkbox" name="" required=""> j'accepte ce reglement de certification
+                                   <input type="checkbox" name="" required=""> j'accepte ce reglement de certification<br>
                                    <a href="" class="btn btn-primary" >Envoyer</a> 
                                  </div>
                                  
