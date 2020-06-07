@@ -21,11 +21,9 @@
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
   display: none;
-  padding: 100px 20px;
-  height: 100%;
 }
+
 </style>
 
                                     
@@ -37,7 +35,7 @@
                 <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
-                              <h4 class="card-title"><?php echo $formationInfo->label  ; ?></h4>
+                              <h6 class="card-title"><?php echo $formationInfo->label  ; ?></h6>
                            </div>
                         </div>
                         <div class="iq-card-body">
