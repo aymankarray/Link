@@ -40,8 +40,8 @@
                         </div>
                         <div class="iq-card-body">
                            
-
-                              <div class="tab">
+                           <div class="row">
+                              <div class=" tab">
                                     <?php foreach ($chapters as $key ) {  ?>
 
                                     <button class="tablink" onclick="openPage('CH<?php echo $key->chapterId ;?>', this, 'red')" <?php if ($key->num==1 ) {  ?> id="defaultOpen" <?php } ?> >
@@ -70,6 +70,7 @@
                                     <?php }  ?>
                                  
                               </div>
+                           </div>
 
 
 
