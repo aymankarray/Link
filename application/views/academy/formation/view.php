@@ -8,7 +8,7 @@
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 30%;
-  height: 300px;
+ 
 }
 
 /* Style the buttons inside the tab */
@@ -64,7 +64,7 @@
 
                               <div class="tab">
                                     <?php foreach ($chapters as $key ) {  ?>
-                                   <button class="tablinks" onclick="openCity(event, 'CH<?php echo $key->chapterId ;?>')">
+                                   <button class="tablinks" onclick="openCity(event, 'CH<?php echo $key->chapterId ;?>')"  <?php if ($key->num==1 ) {  ?> id="defaultOpen" <?php } ?> >
                                      <?php echo $key->num ;?> - <?php echo $key->titre ;?>
                                    </button>
                                    <?php }  ?>
