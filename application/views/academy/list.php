@@ -61,7 +61,7 @@
                               </div>
                            </div>
                            -->
-                           <a href="<?php echo base_url() ?>Academy/formation/<?php echo $key->formationsId ?>" class="btn btn-primary d-block w-100">Voir les détails</button>
+                           <a href="<?php echo base_url() ?>Academy/formation/<?php echo $key->formationsId ?>" class="btn btn-primary d-block w-100">Voir les détails</a>
                         </div>
                      </div>
                   </div>
