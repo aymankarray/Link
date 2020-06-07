@@ -211,7 +211,7 @@
                   });
 
                   jQuery('#JD').slick({
-                      slidesToShow: 6,
+                      slidesToShow: 4,
                       slidesToScroll: 1,
                       focusOnSelect: true,
                       arrows: false,
