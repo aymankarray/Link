@@ -83,6 +83,24 @@ class Academy_formation_model extends CI_Model
     }
 
 
+        /**
+     * This function is used to add new user to system
+     * @return number $insert_id : This is last inserted id
+     */
+    function addNewPart  ($formationsInfo)
+    {
+
+        $this->db->trans_start();
+        $this->db->insert('tbl_academy_formations_participant', $formationsInfo);
+        
+        $insert_id = $this->db->insert_id();
+        
+        $this->db->trans_complete();
+        
+        return $insert_id;
+    }
+
+
    
     
  

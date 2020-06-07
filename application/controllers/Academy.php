@@ -83,5 +83,24 @@ class Academy extends BaseController {
 		        		  
 		          
 		        }  
+
+
+		public function part($formationId)
+		        {
+		              $formationInfo = array(
+		                 'formationId' =>  $formationId, 
+		                 'createdBy' => $this->vendorId ,
+		                 'userId' => $this->vendorId ,
+		                 'createdDTM'=> date('Y-m-d H:i:s'),
+		                 'certif' => 0 
+		                     );
+		           		
+		              $resultat = $this->academy_formation_model->addNewPart($formationInfo);
+
+
+		        		redirect('Academy/Exam/'.$resultat) ; 
+		        		  
+		          
+		        }  
 		
 }

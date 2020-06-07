@@ -182,7 +182,7 @@
                                  </div>
                                     <?php }  ?>
                                  <div id="Quiz" class="tabcontent">
-                                                                              
+                                    <form action="<?php echo base_url() ?>Academy/part/<?php echo $formationInfo->formationsId ?>" method="post">                                          
                                     <h3>  <br><br><br> Note cette formation :</h3>
                                     <span class="star-rating">
                                        <input type="radio" name="note" value="1"><i></i>
@@ -208,8 +208,9 @@
                                      
 
 
-                                   <input type="checkbox" name="" required="">&nbsp; j'accepte ce reglement de certification<br><br>
-                                   <a href="" class="btn btn-primary" >Envoyer</a> 
+                                   <input type="checkbox" name="" required="">&nbsp; j'accepte ce reglement de certification<br>
+                                   <input type="submit"  class="btn btn-primary" value="Envoyer" >
+                                   </form> 
                                  </div>
                                  
                               </div>
