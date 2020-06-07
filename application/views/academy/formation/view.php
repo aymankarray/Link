@@ -12,10 +12,10 @@
                            <p>Stack your navigation by changing the flex item direction with the <code>.flex-column</code> utility.</p>
                            <div class="row">
                               <div class="col-sm-3">
-                                 <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                 <div class="nav flex-column nav-pills text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <?php foreach ($chapters as $key ) { ?>
                                     <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                                       <?php echo $key->titre  ; ?>
+                                    <?php echo $key->num  ; ?> - <?php echo $key->titre  ; ?>
                                     </a>
                                     <?php } ?>
                                  </div>
