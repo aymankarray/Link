@@ -18,7 +18,7 @@
                               <div class="col-sm-3">
                                  <div class="nav flex-column nav-pills text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <?php foreach ($chapters as $key ) { ?>
-                                    <a class="nav-link <?php  if( $key->chapterId == 1){ ?> active<?php } ?> " id="v-pills-home-tab" data-toggle="pill" href="#Ch<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-Ch<?php echo $key->chapterId  ; ?>" 
+                                    <a class="nav-link <?php  if ( $key->chapterId == 1){ ?> active <?php } ?> " id="v-pills-Ch<?php echo $key->chapterId  ; ?>-tab" data-toggle="pill" href="#Ch<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-Ch<?php echo $key->chapterId  ; ?>" 
                                       <?php  if( $key->chapterId == 1){ ?> aria-selected="true" <?php } ?>   >
                                     <?php echo $key->num  ; ?> - <?php echo $key->titre  ; ?>
                                     </a>
