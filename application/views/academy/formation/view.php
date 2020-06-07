@@ -14,42 +14,25 @@
                            </div>
                         </div>
                         <div class="iq-card-body">
-                           <div class="row">
-                              <div class="col-sm-3">
-                                 <div class="nav flex-column nav-pills text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                    <?php foreach ($chapters as $key ) { ?>
-                                    <a class="nav-link <?php  if ( $key->chapterId == 1){ ?> active <?php } ?> " id="v-pills-Ch<?php echo $key->chapterId  ; ?>-tab" data-toggle="pill" href="#Ch<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-Ch<?php echo $key->chapterId  ; ?>" 
-                                      <?php  if( $key->chapterId == 1){ ?> aria-selected="true" <?php } ?>   >
-                                    <?php echo $key->num  ; ?> - <?php echo $key->titre  ; ?>
-                                    </a>
-                                    <?php } ?>
-                                 </div>
-                              </div>
-                              <div class="col-sm-9">
-                                 <div class="tab-content mt-0" id="v-pills-tabContent">
-                                    <?php foreach ($chapters as $key ) { ?>
-                                       <div class="tab-pane fade <?php  if( $key->chapterId == 1){ ?> show active<?php } ?>" id="Ch<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="Ch<?php echo $key->chapterId  ; ?>-tab">
-                                          
-                                          <div class="card" style="width: cover">
-                                             <div class="card-title"><h4><?php echo $key->titre  ; ?></h4></div>
-                                             <div class="iq-card-body">   
+                           
 
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $key->embed  ; ?>" frameborder="0" allow="" allowfullscreen></iframe>
-                                               
-                                             
-                                                <hr>
-                                                <h5>Description</h5>
-                                                <p><?php echo $key->description  ; ?></p>
-                                             
-                                             </div>
-                                          
-                                       </div>
-                                    <?php } ?>
+                              <div class="tab">
+                                    <?php foreach ($chapters as $key ) {  ?>
+                                   <button class="tablinks" onclick="openCity(event, 'CH<?php echo $key->chapterId ;?>')">
+                                     <?php echo $key->num ;?> - <?php echo $key->titre ;?>
+                                   </button>
+                                   <?php }  ?>
                                  </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+
+                                 <div id="CH<?php echo $key->chapterId ;?>" class="tabcontent">
+                                   <h3><?php echo $key->num ;?> - <?php echo $key->titre ;?></h3>
+                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
+                                   <hr>
+                                   <h5>Description</h5>
+                                   <p><?php echo $key->description ;?></p>
+                                 </div>
+
+                                 
 
 
 
@@ -57,3 +40,24 @@
             </div>
          </div>
       </div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
