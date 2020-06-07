@@ -68,7 +68,7 @@
                                      <?php echo $key->num ;?> - <?php echo $key->titre ;?>
                                    </button>
                                    <?php }  ?>
-                                 </div>
+                               
 
                                  <?php foreach ($chapters as $key ) {  ?>
                                  <div id="CH<?php echo $key->chapterId ;?>" class="tabcontent">
@@ -80,7 +80,7 @@
                                  </div>
                                     <?php }  ?>
                                  
-
+                              </div>
 
 
 
