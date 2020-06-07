@@ -19,7 +19,7 @@
                                  <div class="nav flex-column nav-pills text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <?php foreach ($chapters as $key ) { ?>
                                     <a class="nav-link <?php  if( $key->chapterId == 1){ ?> active<?php } ?> " id="v-pills-home-tab" data-toggle="pill" href="#Ch<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                                    <?php echo $key->num  ; ?> - <?php echo $key->titre  ; ?>
+                                    <h3><?php echo $key->num  ; ?> - <?php echo $key->titre  ; ?></h3>
                                     </a>
                                     <?php } ?>
                                  </div>
