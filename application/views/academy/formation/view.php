@@ -218,7 +218,7 @@
                                  <div id="Quiz" class="tabcontent">
 
                                    <h2> Reglement de quiz :</h2>
-                                   Avant de commencer
+                                   Avant de commencer<br>
                                     Chaque quiz doit être terminé en une seule session ; assurez-vous que votre connexion Internet est stable et que vous avez fini avant de quitter.<br>
 
                                     Le quiz est en francais. Si vous échouez, vos résultats ne seront ni affichés ni partagés sur T-Link.<br>
