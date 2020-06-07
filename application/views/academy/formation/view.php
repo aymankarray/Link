@@ -5,11 +5,10 @@
                 <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
-                              <h4 class="card-title">Tabs Vertical Pills</h4>
+                              <h4 class="card-title"><?php echo $formationInfo->label  ; ?></h4>
                            </div>
                         </div>
                         <div class="iq-card-body">
-                           <p>Stack your navigation by changing the flex item direction with the <code>.flex-column</code> utility.</p>
                            <div class="row">
                               <div class="col-sm-3">
                                  <div class="nav flex-column nav-pills text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -26,11 +25,45 @@
                                        <div class="tab-pane fade show active" id="<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                           <div class="card" style="width: cover">
                                              <div class="card-title"><?php echo $key->titre  ; ?></div>
-                                             <div class="iq-card-body"><?php echo $key->embed  ; ?></div>
+                                             <div class="iq-card-body">
+                                                <div id="player"></div>
+
+                                                <script src="http://www.youtube.com/player_api"></script>
+
+                                              <script>
+
+                                                  // create youtube player
+                                                  var player;
+                                                  function onYouTubePlayerAPIReady() {
+                                                      player = new YT.Player('player', {
+                                                        width: '640',
+                                                        height: '390',
+                                                        videoId: '0Bmhjf0rKe8',
+                                                        events: {
+                                                          onReady: onPlayerReady,
+                                                          onStateChange: onPlayerStateChange
+                                                        }
+                                                      });
+                                                  }
+
+                                                  // autoplay video
+                                                  function onPlayerReady(event) {
+                                                      event.target.playVideo();
+                                                  }
+
+                                                  // when video ends
+                                                  function onPlayerStateChange(event) {        
+                                                      if(event.data === 0) {          
+                                                          alert('done');
+                                                      }
+                                                  }
+
+                                              </script>
+                                                
                                              
                                           </div>
                                           <hr>
-                                          <h6>Description</h6>
+                                          <h5>Description</h5>
                                           <p><?php echo $key->description  ; ?></p>
                                        </div>
                                     <?php } ?>
