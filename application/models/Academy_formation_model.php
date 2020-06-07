@@ -19,7 +19,7 @@ class Academy_formation_model extends CI_Model
     {
         $this->db->select('BaseTbl.label ,  BaseTbl.description ,BaseTbl.affiche , Users.name , Users.avatar');
         $this->db->from('tbl_academy_formations as BaseTbl');
-        $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy)');
+        $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy');
         $query = $this->db->get();
         $result = $query->result();        
         return $result;
