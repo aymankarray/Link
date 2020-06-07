@@ -21,7 +21,7 @@
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+ 
   display: none;
   padding: 100px 20px;
   height: 100%;
@@ -47,7 +47,7 @@
                               <div class="tab">
                                     <?php foreach ($chapters as $key ) {  ?>
 
-                                    <button class="tablink" onclick="openPage('CH<?php echo $key->chapterId ;?>', this, 'red')" <?php if ($key->num==1 ) {  ?> id="defaultOpen" <?php } ?> >
+                                    <button class="nav-link" onclick="openPage('CH<?php echo $key->chapterId ;?>', this, 'red')" <?php if ($key->num==1 ) {  ?> id="defaultOpen" <?php } ?> >
 
                                      <?php echo $key->num ;?> - <?php echo $key->titre ;?>
                                         
@@ -62,7 +62,7 @@
                                    
                                    <div class="row">
                                          <div class="card col-md-8 embed-responsive embed-responsive-16by9">
-                                          <h3><?php echo $key->num ;?> - <?php echo $key->titre ;?></h3>
+                                          
                              
                                               <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
                                         
