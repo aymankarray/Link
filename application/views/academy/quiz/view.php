@@ -4,11 +4,11 @@
         <?php foreach ($questions as $key ) { ?>
         
         <div class="row">
-	        <div class="iq-card">
-		        <div class="iq-header-title">
+	        <div class="card col-sm-12">
+		        <div class="card-title">
 		        	<h5><?php echo $key->Question ; ?> </h5>
 		        </div>
-		        <div class="iq-card-body">
+		        <div class="card-body">
 		        		
 		        		<?php if ($key->choice1 != '') { ?>
 		        			<input type="radio" value="0" name="<?php echo $key->quizId ; ?>"> 
