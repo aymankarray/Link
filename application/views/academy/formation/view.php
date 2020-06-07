@@ -26,7 +26,7 @@
                                           <div class="card" style="width: cover">
                                              <div class="card-title"><?php echo $key->titre  ; ?></div>
                                              <div class="iq-card-body">                                               
-                                                <div id="player"></div>
+                                                <div id="player<?php echo $key->chapterId  ; ?>"></div>
                                                 <script>
                                                 // 2. This code loads the IFrame Player API code asynchronously.
                                                 var tag = document.createElement('script');
@@ -39,7 +39,7 @@
                                                 //    after the API code downloads.
                                                 var player;
                                                 function onYouTubeIframeAPIReady() {
-                                                  player = new YT.Player('player', {
+                                                  player = new YT.Player('player<?php echo $key->chapterId  ; ?>', {
                                                     height: '360',
                                                     width: '640',
                                                     videoId: '<?php echo $key->embed  ; ?>',
