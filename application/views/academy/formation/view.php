@@ -23,7 +23,7 @@
                               <div class="col-sm-9">
                                  <div class="tab-content mt-0" id="v-pills-tabContent">
                                     <?php foreach ($chapters as $key ) { ?>
-                                       <div class="tab-pane fade" id="<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                       <div class="tab-pane fade show" id="<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                           <?php echo $key->embed  ; ?>
                                           <hr>
                                           <h6>Description</h6>
