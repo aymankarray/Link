@@ -28,9 +28,9 @@
                                              <div class="iq-card-body">
                                                 <div id="player"></div>
 
-                                                <script src="http://www.youtube.com/player_api"></script>
+                                               
 
-                                              <script>
+                                              <script defer >
 
                                                   // create youtube player
                                                   var player;
