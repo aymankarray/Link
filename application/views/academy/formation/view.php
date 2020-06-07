@@ -133,7 +133,33 @@
 
                                          </div>
                                     </div>
-                                    <div class="row">      
+                                    
+                                 </div>
+                                    <?php }  ?>
+                                 <div id="Quiz" class="tabcontent">
+
+                                   <h2> Reglement de quiz :</h2>
+                                   Avant de commencer<br>
+                                    Chaque quiz doit être terminé en une seule session ; assurez-vous que votre connexion Internet est stable et que vous avez fini avant de quitter.<br>
+
+                                    Le quiz est en francais. Si vous échouez, vos résultats ne seront ni affichés ni partagés sur T-Link.<br>
+
+                                    Présentation<br>
+                                    Répondez aux questions chronométrées à choix multiples<br>
+
+                                    <i class="ri-timer-2-line"></i> Durée d’environ 15 minutes<br>
+                                    <i class="ri-check-double-line"></i> Un niveau dans la tranche des 70% est requis pour réussir et avoir un badge<br>
+                                    <i class="ri-calendar-2-line"></i> Réessayez dans 1 Semaine si vous échouez<br>
+
+                                   <input type="checkbox" name="" required=""> j'accepte ce reglement de certification
+                                   <a href="" class="btn btn-primary" >Envoyer</a> 
+                                 </div>
+                                 
+                              </div>
+
+                        </div>
+
+                        <div class="card row">      
                                           <div class="col-md-8">
                                              <h5>Note</h5>
                                               
@@ -150,7 +176,7 @@
                                                  <span class="fa fa-star"></span>
                                               </div>
                                                    <p>4.1 average based on 254 reviews.</p>
-                                                   <hr style="border:3px solid #f1f1f1">
+                                                   <hr style="border:1px solid #f1f1f1">
 
                                                    <div class="row">
                                                      <div class="side">
@@ -213,30 +239,6 @@
                                         
                                          </div>
                                    </div>
-                                 </div>
-                                    <?php }  ?>
-                                 <div id="Quiz" class="tabcontent">
-
-                                   <h2> Reglement de quiz :</h2>
-                                   Avant de commencer<br>
-                                    Chaque quiz doit être terminé en une seule session ; assurez-vous que votre connexion Internet est stable et que vous avez fini avant de quitter.<br>
-
-                                    Le quiz est en francais. Si vous échouez, vos résultats ne seront ni affichés ni partagés sur T-Link.<br>
-
-                                    Présentation<br>
-                                    Répondez aux questions chronométrées à choix multiples<br>
-
-                                    <i class="ri-timer-2-line"></i> Durée d’environ 15 minutes<br>
-                                    <i class="ri-check-double-line"></i> Un niveau dans la tranche des 70% est requis pour réussir et avoir un badge<br>
-                                    <i class="ri-calendar-2-line"></i> Réessayez dans 1 Semaine si vous échouez<br>
-
-                                   <input type="checkbox" name="" required=""> j'accepte ce reglement de certification
-                                   <a href="" class="btn btn-primary" >Envoyer</a> 
-                                 </div>
-                                 
-                              </div>
-
-                        </div>
 
 
          
