@@ -49,7 +49,7 @@
 
 
 		        		
-		        		<?php if ($key->Answer4) != '' ) { ?>
+		        		<?php if ($key->Answer4 != '' ) { ?>
 		        			<input type="radio" value="1" name="<?php echo $key->quizId ; ?>"> 
 		        			<?php echo $key->Answer4 ?> <br>
 		        		<?php } ?>
