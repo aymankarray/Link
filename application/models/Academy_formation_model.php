@@ -89,12 +89,9 @@ class Academy_formation_model extends CI_Model
      */
     function addNewPart  ($formationsInfo)
     {
-
         $this->db->trans_start();
         $this->db->insert('tbl_academy_formations_participant', $formationsInfo);
-        
         $insert_id = $this->db->insert_id();
-        
         $this->db->trans_complete();
         
         return $insert_id;
@@ -102,7 +99,25 @@ class Academy_formation_model extends CI_Model
 
 
    
-    
+                /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function formationQuizsInfo($part)
+    {
+        $this->db->select('');
+        $this->db->from('tbl_academy_formations_participant as BaseTbl');
+        $this->db->join('tbl_academy_formations_quiz as Quiz','Quiz.formationId = BaseTbl.formationId');
+        $this->db->where('BaseTbl.partId = ', $part);
+        $this->db->order_by('Quiz.quizId  RAND ( )   ');
+
+        $query = $this->db->get();
+        $result = $query->result();        
+        return $result;
+    }
  
     
 

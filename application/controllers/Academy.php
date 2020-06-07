@@ -98,9 +98,18 @@ class Academy extends BaseController {
 		              $resultat = $this->academy_formation_model->addNewPart($formationInfo);
 
 
-		        		redirect('Academy/Exam/'.$resultat) ; 
-		        		  
+		        		redirect('Academy/Exam/'.$resultat) ;   
 		          
 		        }  
+
+
+		public function Exam($partId)
+		        {
+	
+		         $data['questions'] = $this->academy_formation_model->formationQuizsInfo($part) ; 
+		         
+		           $this->loadViews("academy/quiz/view", $this->global, $data  , NULL); 
+		        }  
+		
 		
 }

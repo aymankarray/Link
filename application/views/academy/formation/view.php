@@ -204,7 +204,7 @@
 
                                     <i class="ri-timer-2-line"></i> Durée d’environ 15 minutes<br>
                                     <i class="ri-check-double-line"></i> Un niveau dans la tranche des 70% est requis pour réussir et avoir un badge<br>
-                                    <i class="ri-calendar-2-line"></i> Réessayez dans 1 Semaine si vous échouez<br> <br>
+                                    <i class="ri-calendar-2-line"></i> Réessayez dans 3 Jours si vous échouez<br> <br>
                                      
 
 
