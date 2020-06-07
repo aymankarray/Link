@@ -182,7 +182,7 @@
                                  </div>
                                     <?php }  ?>
                                  <div id="Quiz" class="tabcontent">
-
+                                       <br><br><br>                                       
                                     <h3> Note cette formation :</h3>
                                     <span class="star-rating">
                                        <input type="radio" name="note" value="1"><i></i>
@@ -192,7 +192,7 @@
                                        <input type="radio" name="note" value="5"><i></i>
                                     </span>
 
-
+                                    <br><br>
                                    <h3> Reglement de quiz :</h3>
                                    <b>Avant de commencer</b><br><br>
                                     Chaque quiz doit être terminé en une seule session ; assurez-vous que votre connexion Internet est stable et que vous avez fini avant de quitter.<br>
