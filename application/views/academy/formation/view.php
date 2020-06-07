@@ -27,7 +27,7 @@
                                           <?php echo $key->embed  ; ?>
                                           <hr>
                                           <h6>Description</h6>
-                                          <p><?php echo $key->titre  ; ?></p>
+                                          <p><?php echo $key->description  ; ?></p>
                                        </div>
                                     <?php } ?>
                                  </div>
