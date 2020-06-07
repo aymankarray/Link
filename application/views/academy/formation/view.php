@@ -121,17 +121,19 @@
                                    
                                    
                                    <div class="row">
-                                         <div class="card col-md-8 embed-responsive embed-responsive-16by9">
+                                         <div class="card col-md-12 embed-responsive embed-responsive-16by9">
                                           
                              
                                               <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
                                         
                                          </div>
-                                          <div class="card col-md-4">
+                                          <div class="card col-md-8">
                                              <div class="iq-card-header"><h6>Note</h6></div>
                                               <div class="iq-card-body">
                                                  <?php echo $key->description ;?>
                                               </div>
+                                          </div>
+                                          <div class="card col-md-4">
                                               <div class="iq-card-footer" >
                                                  <span class="heading">User Rating</span>
                                                  <span class="fa fa-star checked"></span>
