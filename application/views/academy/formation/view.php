@@ -125,8 +125,9 @@
                                           
                              
                                               <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
-                                        
+                                         
                                          </div>
+                                         <hr>
                                           <div class="card col-md-8">
                                              <div class="iq-card-header"><h6>Note</h6></div>
                                               <div class="iq-card-body">
