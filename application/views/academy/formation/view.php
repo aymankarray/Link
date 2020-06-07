@@ -57,12 +57,14 @@
                                  <div id="CH<?php echo $key->chapterId ;?>" class="tabcontent">
                                    <h3><?php echo $key->num ;?> - <?php echo $key->titre ;?></h3>
                                    <br>
-                                   <div class="col-md-8">
-                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
-                                   </div>
-                                   <div class="col-md-4">
-                                   <h5>Description</h5>
-                                   <p><?php echo $key->description ;?></p>
+                                   <div class="row">
+                                         <div class="col-md-8">
+                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
+                                         </div>
+                                         <div class="col-md-4">
+                                            <h5>Description</h5>
+                                            <p><?php echo $key->description ;?></p>
+                                         </div>
                                    </div>
                                  </div>
                                     <?php }  ?>
