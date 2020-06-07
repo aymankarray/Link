@@ -25,9 +25,7 @@
                                        <div class="tab-pane fade show active" id="<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                           <div class="card" style="width: cover">
                                              <div class="card-title"><?php echo $key->titre  ; ?></div>
-                                             <div class="iq-card-body">
-                                                <?php echo $key->embed  ; ?>
-                                               
+                                             <div class="iq-card-body">                                               
                                                 <div id="player"></div>
                                                 <script>
                                                 // 2. This code loads the IFrame Player API code asynchronously.
@@ -44,7 +42,7 @@
                                                   player = new YT.Player('player', {
                                                     height: '360',
                                                     width: '640',
-                                                    videoId: 'M7lc1UVf-VE',
+                                                    videoId: '<?php echo $key->embed  ; ?>',
                                                     events: {
                                                       'onReady': onPlayerReady,
                                                       'onStateChange': onPlayerStateChange
