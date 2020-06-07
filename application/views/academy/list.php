@@ -11,10 +11,7 @@
 <div id="content-page" class="content-page">
             <div class="container">
                <div class="row">
-                 <?php                          
-                                 
-  
-                                 foreach ($Fromations as $key ) { ?> 
+                 <?php foreach ($Fromations as $key ) { ?> 
                   <div class="col-md-6 col-lg-4">
                      <div class="iq-card">
                         <div class="top-bg-image">
@@ -64,7 +61,7 @@
                               </div>
                            </div>
                            -->
-                           <button type="submit" class="btn btn-primary d-block w-100">Join</button>
+                           <a href="<?php echo base_url() ?>Academy/formation/<?php echo $key->formationId ?>" class="btn btn-primary d-block w-100">Voir les détails</button>
                         </div>
                      </div>
                   </div>

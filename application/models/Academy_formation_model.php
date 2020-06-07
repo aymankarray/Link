@@ -17,9 +17,28 @@ class Academy_formation_model extends CI_Model
      */
     function formationListing()
     {
-        $this->db->select('BaseTbl.label ,  BaseTbl.description ,BaseTbl.affiche , Users.name , Users.avatar');
+        $this->db->select('BaseTbl.formationId , BaseTbl.label ,  BaseTbl.description ,BaseTbl.affiche , Users.name , Users.avatar');
         $this->db->from('tbl_academy_formations as BaseTbl');
         $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy');
+        $query = $this->db->get();
+        $result = $query->result();        
+        return $result;
+    }
+
+
+        /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function formationInfo($formationId)
+    {
+        $this->db->select('BaseTbl.formationId , BaseTbl.label ,  BaseTbl.description ,BaseTbl.affiche , Users.name , Users.avatar');
+        $this->db->from('tbl_academy_formations as BaseTbl');
+        $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy');
+        $this->db->where('BaseTbl.formationId = ', $formationId);
         $query = $this->db->get();
         $result = $query->result();        
         return $result;
