@@ -55,22 +55,28 @@
 
                                  <?php foreach ($chapters as $key ) {  ?>
                                  <div id="CH<?php echo $key->chapterId ;?>" class="tabcontent">
-                                   <h3><?php echo $key->num ;?> - <?php echo $key->titre ;?></h3>
+                                   
                                    <br>
                                    <div class="row">
-                                         <div class="col-md-8">
-                                              <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
+                                         <div class="card col-md-8">
+                                          <div class="iq-card-header"><h3><?php echo $key->num ;?> - <?php echo $key->titre ;?></h3></div>
+                                          <div class="iq-card-body">
+                                              <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
+                                          </div>
                                          </div>
-                                         <div class="col-md-4">
-                                            <h5>Description</h5>
-                                            <p><?php echo $key->description ;?></p>
+                                          <div class="card col-md-8">
+                                          <div class="iq-card-header"><h5>Note</h5></div>
+                                          <div class="iq-card-body">
+                                              <?php echo $key->description ;?>
+                                          </div>
                                          </div>
                                    </div>
                                  </div>
                                     <?php }  ?>
                                  
                               </div>
-                           </div>
+
+                        </div>
 
 
 
