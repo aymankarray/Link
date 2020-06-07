@@ -129,18 +129,20 @@
                                          </div>
                                          <hr>
                                           <div class="card col-md-8">
-                                             <div class="iq-card-header"><h6>Note</h6></div>
+                                             <div class="iq-card-header"><h5>Note</h5></div>
                                               <div class="iq-card-body">
                                                  <?php echo $key->description ;?>
                                               </div>
                                           </div>
                                           <div class="card col-md-4">
+                                             <div class="row">
                                                  <span class="heading">User Rating</span>
                                                  <span class="fa fa-star checked"></span>
                                                  <span class="fa fa-star checked"></span>
                                                  <span class="fa fa-star checked"></span>
                                                  <span class="fa fa-star checked"></span>
                                                  <span class="fa fa-star"></span>
+                                              </div>
                                                    <p>4.1 average based on 254 reviews.</p>
                                                    <hr style="border:3px solid #f1f1f1">
 
