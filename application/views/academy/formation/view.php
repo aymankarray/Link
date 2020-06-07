@@ -13,26 +13,13 @@
                            <div class="row">
                               <div class="col-md-3">
                                  <ul id="top-tabbar-vertical" class="p-0">
-                                    <li class="active" id="personal">
+                                    
+                                    <li id="personal">
                                        <a href="javascript:void();">
-                                       <i class="ri-lock-unlock-line text-primary"></i><span>Personal</span>
+                                       <i class="ri-lock-unlock-line"></i><span>Personal</span>
                                        </a>
                                     </li>
-                                    <li id="contact">
-                                       <a href="javascript:void();">
-                                       <i class="ri-user-fill text-danger"></i><span>Contact</span>
-                                       </a>
-                                    </li>
-                                    <li id="official">
-                                       <a href="javascript:void();">
-                                       <i class="ri-camera-fill text-success"></i><span>Official</span>
-                                       </a>
-                                    </li>
-                                    <li id="payment">
-                                       <a href="javascript:void();">
-                                       <i class="ri-check-fill text-warning"></i><span>Payment</span>
-                                       </a>
-                                    </li>
+                                    
                                  </ul>
                               </div>
                               <div class="col-md-9">
@@ -46,39 +33,24 @@
                                              </div>
                                           </div>
                                           <div class="row">
-                                             <div class="col-md-12">
-                                                <div class="form-group">
-                                                   <label for="fname">First Name: *</label>
-                                                   <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required="required" />
-                                                </div>
+                                             
+                                             <div class="com-md-6">
+                                                <script src="https://api.dmcdn.net/all.js"></script>
+                                                <div id="player"></div>
+                                                <script>
+                                                    var player = DM.player(document.getElementById("player"), {
+                                                        video: "xwr14q",
+                                                        width: "100%",
+                                                        height: "100%",
+                                                        params: {
+                                                            autoplay: true,
+                                                            mute: true
+                                                        }
+                                                    });
+                                                </script>
                                              </div>
-                                             <div class="col-md-12">
-                                                <div class="form-group">
-                                                   <label for="lname">Last Name: *</label>
-                                                   <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" />
-                                                </div>
-                                             </div>
-                                             <div class="col-md-12">
-                                                <div class="form-group">
-                                                   <label>Gender: *</label>
-                                                   <div class="form-check">
-                                                      <div class="custom-control custom-radio custom-control-inline">
-                                                         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                         <label class="custom-control-label" for="customRadio1"> Male</label>
-                                                      </div>
-                                                      <div class="custom-control custom-radio custom-control-inline">
-                                                         <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                         <label class="custom-control-label" for="customRadio2"> Female</label>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                             <div class="col-md-12">
-                                                <div class="form-group">
-                                                   <label for="dob">Date Of Birth: *</label>
-                                                   <input type="date" class="form-control" id="dob" name="dob" />
-                                                </div>
-                                             </div>
+
+                                          </div>
                                           </div>
                                        </div>
                                        <button id="submit" type="button" name="next" class="btn btn-primary next action-button float-right" value="Next" >Next</button>
