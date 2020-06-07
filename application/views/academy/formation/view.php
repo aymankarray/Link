@@ -164,21 +164,14 @@
                            <div class="iq-card-body">
                               <div class="row">      
                                                 <div class="col-md-8">
-                                                   <h5>Note</h5>
-                                                    
-                                                   <?php echo $key->description ;?>
+                                                   <h5>Description</h5>
+                                                    <hr style="border:1px solid #f1f1f1">
+
+                                                   <?php echo $formationInfo->description ;?>
                                                     
                                                 </div>
                                                 <div class="col-md-4">
-                                                   <div class="row">
-                                                       <span class="heading">User Rating</span>
-                                                       <span class="fa fa-star checked"></span>
-                                                       <span class="fa fa-star checked"></span>
-                                                       <span class="fa fa-star checked"></span>
-                                                       <span class="fa fa-star checked"></span>
-                                                       <span class="fa fa-star"></span>
-                                                    </div>
-                                                         <p>4.1 average based on 254 reviews.</p>
+                                                         <h5>4.1 average based on 254 reviews.<h5>
                                                          <hr style="border:1px solid #f1f1f1">
 
                                                          <div class="row">
