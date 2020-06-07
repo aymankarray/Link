@@ -14,18 +14,22 @@
                               <div class="col-sm-3">
                                  <div class="nav flex-column nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <?php foreach ($chapters as $key ) { ?>
-                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                       <?php echo $key->titre  ; ?>
+                                    </a>
                                     <?php } ?>
                                  </div>
                               </div>
                               <div class="col-sm-9">
                                  <div class="tab-content mt-0" id="v-pills-tabContent">
-                                    
-                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                       123
-                                       123
-                                    </div>
-
+                                    <?php foreach ($chapters as $key ) { ?>
+                                       <div class="tab-pane fade show active" id="<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                          <?php echo $key->embed  ; ?>
+                                          <hr>
+                                          <h6>Description</h6>
+                                          <p><?php echo $key->titre  ; ?></p>
+                                       </div>
+                                    <?php } ?>
                                  </div>
                               </div>
                            </div>
