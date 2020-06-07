@@ -45,6 +45,25 @@ class Academy_formation_model extends CI_Model
     }
 
 
+            /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function formationChaptersInfo($formationId)
+    {
+        $this->db->select('BaseTbl.formationId , BaseTbl.titre ,  BaseTbl.num ,BaseTbl.description , ,BaseTbl.embed ,BaseTbl.chapterId  ');
+        $this->db->from('tbl_academy_formations as BaseTbl');
+        $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy');
+        $this->db->where('BaseTbl.formationId = ', $formationId);
+        $query = $this->db->get();
+        $result = $query->reset();        
+        return $result;
+    }
+
+
 
     /**
      * This function is used to add new user to system
