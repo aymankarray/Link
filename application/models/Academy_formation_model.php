@@ -35,7 +35,7 @@ class Academy_formation_model extends CI_Model
      */
     function formationInfo($formationId)
     {
-        $this->db->select('BaseTbl.formationId , BaseTbl.label ,  BaseTbl.description ,BaseTbl.affiche , Users.name , Users.avatar');
+        $this->db->select('BaseTbl.formationsId , BaseTbl.label ,  BaseTbl.description ,BaseTbl.affiche , Users.name , Users.avatar');
         $this->db->from('tbl_academy_formations as BaseTbl');
         $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy');
         $this->db->where('BaseTbl.formationsId = ', $formationId);
