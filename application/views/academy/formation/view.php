@@ -52,23 +52,22 @@
          
                                    <?php }  ?>
                               </div>
-
+                                 <br>
                                  <?php foreach ($chapters as $key ) {  ?>
                                  <div id="CH<?php echo $key->chapterId ;?>" class="tabcontent">
                                    
                                    <br>
                                    <div class="row">
                                          <div class="card col-md-8">
-                                          <div class="iq-card-header"><h3><?php echo $key->num ;?> - <?php echo $key->titre ;?></h3></div>
-                                          <div class="iq-card-body">
+                                          <h3><?php echo $key->num ;?> - <?php echo $key->titre ;?></h3>
+                             
                                               <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
-                                          </div>
+                                        
                                          </div>
                                           <div class="card col-md-8">
-                                          <div class="iq-card-header"><h5>Note</h5></div>
-                                          <div class="iq-card-body">
+
                                               <?php echo $key->description ;?>
-                                          </div>
+                                        
                                          </div>
                                    </div>
                                  </div>
