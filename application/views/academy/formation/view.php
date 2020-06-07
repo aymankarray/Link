@@ -21,7 +21,10 @@
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
+  color: white;
   display: none;
+  padding: 100px 20px;
+  height: 100%;
 }
 
 </style>
@@ -56,7 +59,7 @@
                                  <?php foreach ($chapters as $key ) {  ?>
                                  <div id="CH<?php echo $key->chapterId ;?>" class="tabcontent">
                                    
-                                   <br>
+                                   
                                    <div class="row">
                                          <div class="card col-md-8">
                                           <h3><?php echo $key->num ;?> - <?php echo $key->titre ;?></h3>
@@ -64,8 +67,8 @@
                                               <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
                                         
                                          </div>
-                                          <div class="card col-md-8">
-
+                                          <div class="card col-md-4">
+                                             <h6>Note</h6>
                                               <?php echo $key->description ;?>
                                         
                                          </div>
