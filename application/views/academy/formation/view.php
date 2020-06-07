@@ -34,7 +34,7 @@
                                           </div>
                                           <div class="row">
                                              
-                                             <div class="com-md-6">
+                                             <div class="col-md-12">
                                                 <script src="https://api.dmcdn.net/all.js"></script>
                                                 <div id="player"></div>
                                                 <script>
