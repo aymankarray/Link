@@ -21,8 +21,8 @@
                            <img src="<?php echo base_url()?>uploads/Academy/<?php echo $key->affiche  ?>" class="img-fluid w-100" alt="group-bg">
                         </div>
                         <div class="iq-card-body text-center">
-                           <div class="group-icon">
-                              <img src="<?php echo base_url()?>uploads/avatar/<?php echo $key->avatar  ?>" alt="profile-img" class="rounded-circle img-fluid avatar-120">
+                           <div class="group-icon text-right">
+                              <img src="<?php echo base_url()?>uploads/avatar/<?php echo $key->avatar  ?>" alt="profile-img" class="rounded-circle img-fluid avatar-40">
                            </div>
                            <div class="group-info pt-3 pb-3">
                               <h4><?php echo $key->label  ?></h4>

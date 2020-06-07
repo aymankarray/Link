@@ -520,7 +520,7 @@ div#post-modal-data .modal .modal-dialog { max-width: 100%; margin: 0; }
 .iq-example-row-flex-cols .row { margin-bottom: 15px; min-height: 10rem; background-color: rgba(255, 0, 0, .1); }
 .iq-icons-list { line-height: 50px; margin-bottom: 15px; display: inline-block; }
 .iq-icons-list i { text-align: center; vertical-align: middle; font-size: 22px; float: left; width: 40px; height: 50px; line-height: 50px; margin-right: 10px; display: inline-block; }
-.iq-icons-list .icon { text-align: right; vertical-align: middle; font-size: 22px; width: 20px; height: 20; line-height: 50px; margin-right: 10px; display: inline-block; }
+.iq-icons-list .icon { text-align: center; vertical-align: middle; font-size: 22px; width: 40px; height: 40px; line-height: 50px; margin-right: 10px; display: inline-block; }
 .iq-icons-list  span { display: inline-block; vertical-align: middle; }
 .iq-card-icon { height: 60px; width: 60px; display: inline-block; line-height: 60px; text-align: center; font-size: 22px; }
 
