@@ -20,7 +20,7 @@
 		        			<?php echo $key->Answer2 ?> <br>
 		        		<?php } ?>
 		        		
-		        		<?php if ($key->choice1 != '') { ?>
+		        		<?php if ($key->choice2 != '') { ?>
 		        			<input type="radio" value="0" name="<?php echo $key->quizId ; ?>"> 
 		        			<?php echo $key->choice2 ?> <br>
 		        		<?php } ?>
@@ -32,7 +32,7 @@
 		        		
 		        		<?php if ($key->choice3 != ''  ) { ?>
 		        			<input type="radio" value="0" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->choice2 ?> <br>
+		        			<?php echo $key->choice3 ?> <br>
 		        		<?php } ?>
 
 		        		
