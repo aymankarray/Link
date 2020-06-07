@@ -30,53 +30,18 @@
                                        <div class="tab-pane fade <?php  if( $key->chapterId == 1){ ?> show active<?php } ?>" id="Ch<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                           <div class="card" style="width: cover">
                                              <div class="card-title"><?php echo $key->titre  ; ?></div>
-                                             <div class="iq-card-body">                                               
-                                                <div id="player<?php echo $key->chapterId  ; ?>"></div>
+                                             <div class="iq-card-body">   
 
-                                             <script type="text/javascript">
-                                                                                                // 2. This code loads the IFrame Player API code asynchronously.
-                                                var tag = document.createElement('script');
-
-                                                tag.src = "https://www.youtube.com/iframe_api";
-                                                var firstScriptTag = document.getElementsByTagName('script')[0];
-                                                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-                                                // 3. This function creates an <iframe> (and YouTube player)
-                                                //    after the API code downloads.
-                                                var player;
-                                                function onYouTubeIframeAPIReady() {
-                                                  player = new YT.Player('player<?php echo $key->chapterId  ; ?>', {
-                                                    height: '360',
-                                                    width: '640',
-                                                    videoId: '<?php echo $key->embed  ; ?>',
-                                                    events: {
-                                                      'onReady': onPlayerReady,
-                                                      'onStateChange': onPlayerStateChange
-                                                    }
-                                                  });
-                                                }
-
-                                                
-                                                // 5. The API calls this function when the player's state changes.
-                                                //    The function indicates that when playing a video (state=1),
-                                                //    the player should play for six seconds and then stop.
-                                                var done = false;
-                                                function onPlayerStateChange(event) {
-                                                  if (event.data == YT.PlayerState.PLAYING && !done) {
-                                                    setTimeout(stopVideo, 6000);
-                                                    done = true;
-                                                  }
-                                                }
-                                                function stopVideo() {
-                                                  player.stopVideo();
-                                                }
-                                              </script>
+                                                <iframe id="player" type="text/html" width="640" height="360"
+                                                     src="http://www.youtube.com/embed/<?php echo $key->embed  ; ?>-VE?enablejsapi=1&origin=http://example.com"
+                                                     frameborder="0"></iframe>
                                              
-                                                
+                                                <hr>
+                                                <h5>Description</h5>
+                                                <p><?php echo $key->description  ; ?></p>
                                              
-                                          </div>
-                                          <hr>
-                                          <h5>Description</h5>
-                                          <p><?php echo $key->description  ; ?></p>
+                                             </div>
+                                          
                                        </div>
                                     <?php } ?>
                                  </div>
