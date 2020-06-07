@@ -26,8 +26,7 @@
                                           <div class="card" style="width: cover">
                                              <div class="card-title"><?php echo $key->titre  ; ?></div>
                                              <div class="iq-card-body">
-                                                <div id="player"></div>
-
+                                                <?php echo $key->embed  ; ?>
                                                
 
                                              
