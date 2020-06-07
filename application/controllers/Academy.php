@@ -18,16 +18,11 @@ class Academy extends BaseController {
 
 	public function formationListing()
 		        {
-						
-		               
  					      
             			$data['count'] = "" ; 
-
 		                $this->global['pageTitle'] = 'Academy';
 		            	$data['Fromations'] = $this->academy_formation_model->formationListing() ;
 		                $this->loadViews("academy/list", $this->global, $data, NULL);   
-		        		
-
 		        }
         		
 
@@ -80,8 +75,8 @@ class Academy extends BaseController {
 
 		public function formation($formationId)
 		        {
-		                $data['actuInfo'] =  $this->actualite_model->actuById($formationId);
-		                 $this->global['pageTitle'] = $data['actuInfo']->titre  ;
+		                $data['formationInfo'] =  $this->academy_formation_model->formationInfo($formationId);
+		                 $this->global['pageTitle'] = $data['formationInfo']->libele  ;
 		           		 
 		           		 $this->global['active'] = 'actu';
 		        		 $this->loadViews("actu/view", $this->global, $data  , NULL); 
