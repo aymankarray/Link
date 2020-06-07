@@ -113,7 +113,6 @@ function openPage(pageName, elmnt, color) {
 document.getElementById("defaultOpen").click();
 </script>
 
- <?php foreach ($chapters as $key ) {  ?>
 <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -121,7 +120,12 @@ document.getElementById("defaultOpen").click();
       tag.src = "https://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
 
+
+
+ <?php foreach ($chapters as $key ) {  ?>
+<script >
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
      
