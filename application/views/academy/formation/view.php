@@ -24,7 +24,7 @@
  
   display: none;
   padding: 100px 20px;
-  height: 100%;
+
 }
 
 </style>
@@ -55,7 +55,7 @@
          
                                    <?php }  ?>
                               </div>
-                                 <br>
+                                
                                  <?php foreach ($chapters as $key ) {  ?>
                                  <div id="CH<?php echo $key->chapterId ;?>" class="tabcontent">
                                    
