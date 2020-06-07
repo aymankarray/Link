@@ -59,7 +59,7 @@ class Academy_formation_model extends CI_Model
         $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy');
         $this->db->where('BaseTbl.formationId = ', $formationId);
         $query = $this->db->get();
-        $result = $query->reset();        
+        $result = $query->result();        
         return $result;
     }
 
