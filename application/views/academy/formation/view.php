@@ -47,7 +47,7 @@
                               <div class="tab">
                                     <?php foreach ($chapters as $key ) {  ?>
 
-                                    <button class="nav-link" onclick="openPage('CH<?php echo $key->chapterId ;?>', this, 'red')" <?php if ($key->num==1 ) {  ?> id="defaultOpen" <?php } ?> >
+                                    <button class="tablink" onclick="openPage('CH<?php echo $key->chapterId ;?>', this, 'red')" <?php if ($key->num==1 ) {  ?> id="defaultOpen" <?php } ?> >
 
                                      <?php echo $key->num ;?> - <?php echo $key->titre ;?>
                                         
