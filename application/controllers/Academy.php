@@ -76,7 +76,7 @@ class Academy extends BaseController {
 		public function formation($formationId)
 		        {
 		                $data['formationInfo'] =  $this->academy_formation_model->formationInfo($formationId);
-		                 $this->global['pageTitle'] = $data['formationInfo']->libele  ;
+		                 $this->global['pageTitle'] = $data['formationInfo']->label  ;
 		           		 
 		           		 $this->global['active'] = 'actu';
 		        		 $this->loadViews("academy/formation/view", $this->global, $data  , NULL); 

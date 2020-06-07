@@ -1,14 +1,7 @@
          <div id="content-page" class="content-page">
             <div class="container">
                <div class="row">
-                  <div class="col-sm-12">
-                     <div class="iq-card position-relative inner-page-bg bg-primary" style="height: 150px;">
-                        <div class="inner-page-title">
-                           <h3 class="text-white"><?php echo $formationInfo->label ?></h3>
-                           <p class="text-white"><?php echo $formationInfo->description ?></p>
-                        </div>
-                     </div>
-                  </div>
+                  
                   <div class="col-sm-12 col-lg-12">
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
