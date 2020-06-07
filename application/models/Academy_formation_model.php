@@ -112,7 +112,7 @@ class Academy_formation_model extends CI_Model
         $this->db->from('tbl_academy_formations_participant as BaseTbl');
         $this->db->join('tbl_academy_formations_quiz as Quiz','Quiz.formationId = BaseTbl.formationId');
         $this->db->where('BaseTbl.partId = ', $part);
-        $this->db->order_by('Quiz.quizId  RAND ( )   ');
+
 
         $query = $this->db->get();
         $result = $query->result();        
