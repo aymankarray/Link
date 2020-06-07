@@ -11,8 +11,8 @@
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+
+  width: auto;
 }
 
 .tablink:hover {
