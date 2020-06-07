@@ -186,7 +186,7 @@
                                    
                                    
                                   
-                                         <div class="embed-responsive embed-responsive-16by9">
+                                         <div class="card embed-responsive embed-responsive-16by9">
                                           
                              
                                               <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
