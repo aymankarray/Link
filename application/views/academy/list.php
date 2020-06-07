@@ -43,7 +43,7 @@
                                     </div>
                                  </div>
                                  <h6><?php echo $key->label  ?></h6>
-                                 <p class="mb-0"><?php echo $key->description  ?></p>
+                                 <p class="mb-0"> <?php echo xTimeAgo($key->createdDTM,date('Y-m-d H:i:s')) ; ?> </p>
                               </li>
                               
                               <?php   }
