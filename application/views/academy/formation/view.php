@@ -4,8 +4,8 @@
                   <div class="col-sm-12">
                      <div class="iq-card position-relative inner-page-bg bg-primary" style="height: 150px;">
                         <div class="inner-page-title">
-                           <h3 class="text-white"><?php echo $formationInfo->libele ?></h3>
-                           <p class="text-white">lorem ipsum</p>
+                           <h3 class="text-white"><?php echo $formationInfo->label ?></h3>
+                           <p class="text-white"><?php echo $formationInfo->description ?></p>
                         </div>
                      </div>
                   </div>
@@ -13,7 +13,7 @@
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
-                              <h4 class="card-title">Vertical Wizard</h4>
+                              <h4 class="card-title"><?php echo $formationInfo->label ?></h4>
                            </div>
                         </div>
                         <div class="iq-card-body">
