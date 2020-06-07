@@ -134,7 +134,6 @@
                                               </div>
                                           </div>
                                           <div class="card col-md-4">
-                                              <div class="iq-card-footer" >
                                                  <span class="heading">User Rating</span>
                                                  <span class="fa fa-star checked"></span>
                                                  <span class="fa fa-star checked"></span>
@@ -201,7 +200,7 @@
                                                        <div>20</div>
                                                      </div>
                                                    </div>
-                                              </div>
+                                              
                                         
                                          </div>
                                    </div>
