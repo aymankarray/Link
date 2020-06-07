@@ -13,7 +13,7 @@
                               <div class="col-sm-3">
                                  <div class="nav flex-column nav-pills text-left" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <?php foreach ($chapters as $key ) { ?>
-                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#Ch<?php echo $key->chapterId  ; ?>" role="tab" aria-controls="v-pills-home" aria-selected="true">
                                     <?php echo $key->num  ; ?> - <?php echo $key->titre  ; ?>
                                     </a>
                                     <?php } ?>
@@ -22,7 +22,7 @@
                               <div class="col-sm-9">
                                  <div class="tab-content mt-0" id="v-pills-tabContent">
                                     <?php foreach ($chapters as $key ) { ?>
-                                       <div class="tab-pane fade show active" id="<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                       <div class="tab-pane fade show <?php  if( $key->chapterId == 1){ ?> active<?php } ?>" id="Ch<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
                                           <div class="card" style="width: cover">
                                              <div class="card-title"><?php echo $key->titre  ; ?></div>
                                              <div class="iq-card-body">                                               
