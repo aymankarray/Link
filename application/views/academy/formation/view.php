@@ -193,7 +193,7 @@
                                     </span>
 
                                     
-                                   <h3> Reglement de quiz :</h3>
+                                   <h3><br><br><br> Reglement de quiz :</h3>
                                    <b>Avant de commencer</b><br><br>
                                     Chaque quiz doit être terminé en une seule session ; assurez-vous que votre connexion Internet est stable et que vous avez fini avant de quitter.<br>
 
