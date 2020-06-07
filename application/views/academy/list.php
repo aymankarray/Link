@@ -22,7 +22,7 @@
                         </div>
                         <div class="iq-card-body text-center">
                            <div class="group-icon">
-                              <img src="<?php echo base_url()?>uploads/Academy/<?php echo $key->affiche  ?>" alt="profile-img" class="rounded-circle img-fluid avatar-120">
+                              <img src="<?php echo base_url()?>uploads/Academy/<?php echo $key->avatar  ?>" alt="profile-img" class="rounded-circle img-fluid avatar-120">
                            </div>
                            <div class="group-info pt-3 pb-3">
                               <h4><?php echo $key->label  ?></h4>
@@ -31,19 +31,16 @@
                            <div class="group-details d-inline-block pb-3">
                               <ul class="d-flex align-items-center justify-content-between list-inline m-0 p-0">
                                  <li class="pl-3 pr-3">
-                                    <p class="mb-0">Post</p>
-                                    <h6>600</h6>
-                                 </li>
-                                 <li class="pl-3 pr-3">
-                                    <p class="mb-0">Member</p>
+                                    <p class="mb-0">Certification</p>
                                     <h6>320</h6>
                                  </li>
                                  <li class="pl-3 pr-3">
-                                    <p class="mb-0">Visit</p>
+                                    <p class="mb-0">Visite</p>
                                     <h6>1.2k</h6>
                                  </li>
                               </ul>
                            </div>
+                           <!--
                            <div class="group-member mb-3">
                               <div class="iq-media-group">
                                  <a href="#" class="iq-media">
@@ -66,6 +63,7 @@
                                  </a>
                               </div>
                            </div>
+                           -->
                            <button type="submit" class="btn btn-primary d-block w-100">Join</button>
                         </div>
                      </div>

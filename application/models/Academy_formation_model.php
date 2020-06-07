@@ -17,8 +17,9 @@ class Academy_formation_model extends CI_Model
      */
     function formationListing()
     {
-        $this->db->select('');
+        $this->db->select('BaseTbl.* , Users.name , Users.avatar');
         $this->db->from('tbl_academy_formations as BaseTbl');
+        $this->db->join('tbl_users as Users','Users.UserId = BaseTbl.createdBy)');
         $query = $this->db->get();
         $result = $query->result();        
         return $result;
