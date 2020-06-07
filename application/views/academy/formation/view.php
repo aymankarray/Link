@@ -40,7 +40,7 @@
                         </div>
                         <div class="iq-card-body">
                            
-                           <div class="row">
+                       
                               <div class=" tab">
                                     <?php foreach ($chapters as $key ) {  ?>
 
@@ -78,8 +78,7 @@
                         </div>
 
 
-
-            </div>
+         
          </div>
       </div>
 
