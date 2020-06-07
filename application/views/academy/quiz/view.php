@@ -4,11 +4,14 @@
         <?php foreach ($questions as $key ) { ?>
         
         <div class="row">
-	        <div class="card col-sm-12">
-		        <div class="card-title">
-		        	<h5><?php echo $key->Question ; ?> </h5>
+        	<div class="col-sm-12">
+	        <div class="iq-card">
+		        <div class="iq-card-header d-flex justify-content-between">
+		        	<div class="iq-header-title">
+		        	<h4 class="card-title" ><?php echo $key->Question ; ?> </h4>
+		        	</div>
 		        </div>
-		        <div class="card-body">
+		        <div class="iq-card-body">
 		        		
 		        		<?php if ($key->choice1 != '') { ?>
 		        			<input type="checkbox" value="0" name="<?php echo $key->quizId ; ?>"> 
@@ -57,7 +60,8 @@
 		        		
 
 		        </div>
-	        </div>
+		    </div>
+	       </div>
 	    </div>
 
 		<?php } ?> 
