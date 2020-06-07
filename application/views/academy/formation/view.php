@@ -24,7 +24,7 @@
                                  <div class="tab-content mt-0" id="v-pills-tabContent">
                                     <?php foreach ($chapters as $key ) { ?>
                                        <div class="tab-pane fade show active" id="<?php echo $key->chapterId  ; ?>" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                          <div class="card">
+                                          <div class="card" style="width: cover">
                                              <div class="card-title"><?php echo $key->titre  ; ?></div>
                                              <div class="iq-card-body"><?php echo $key->embed  ; ?></div>
                                              
