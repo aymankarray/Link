@@ -23,7 +23,7 @@
 .tabcontent {
  
   display: none;
-  padding: 100px 20px;
+
 
 }
 
@@ -76,15 +76,7 @@
 .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
 .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
 
-/* Responsive layout - make the columns stack on top of each other instead of next to each other */
-@media (max-width: 400px) {
-  .side, .middle {
-    width: 100%;
-  }
-  .right {
-    display: none;
-  }
-}
+
 
        .star-rating {
               font-size: 0;
@@ -136,14 +128,7 @@
             .star-rating i ~ i ~ i ~ i ~ i {
               width: 100%;
             }
-            ::after,
-            ::before {
-              height: 100%;
-              padding: 0;
-              margin: 0;
-              box-sizing: border-box;
-              text-align: center;
-              vertical-align: middle;
+           
             }
 
 
@@ -189,7 +174,7 @@
                                          <div class="card embed-responsive embed-responsive-16by9">
                                           
                              
-                                              <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen=""></iframe>
+                                              <iframe  class="embed-responsive-item"  src="https://www.youtube.com/embed/<?php echo $key->embed ;?>" frameborder="0" allow="" allowfullscreen="false"></iframe>
 
                                          </div>
                                     
