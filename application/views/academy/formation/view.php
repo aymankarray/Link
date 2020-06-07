@@ -198,19 +198,7 @@
                                     <?php }  ?>
                                  <div id="Quiz" class="tabcontent">
 
-                                   <h2> Reglement de quiz :</h2>
-                                   Avant de commencer<br>
-                                    Chaque quiz doit être terminé en une seule session ; assurez-vous que votre connexion Internet est stable et que vous avez fini avant de quitter.<br>
-
-                                    Le quiz est en francais. Si vous échouez, vos résultats ne seront ni affichés ni partagés sur T-Link.<br>
-
-                                    Présentation<br>
-                                    Répondez aux questions chronométrées à choix multiples<br>
-
-                                    <i class="ri-timer-2-line"></i> Durée d’environ 15 minutes<br>
-                                    <i class="ri-check-double-line"></i> Un niveau dans la tranche des 70% est requis pour réussir et avoir un badge<br>
-                                    <i class="ri-calendar-2-line"></i> Réessayez dans 1 Semaine si vous échouez<br>
-                                     
+                                    <h3> Note cette formation :</h3>
                                     <span class="star-rating">
                                        <input type="radio" name="note" value="1"><i></i>
                                        <input type="radio" name="note" value="2"><i></i>
@@ -219,7 +207,23 @@
                                        <input type="radio" name="note" value="5"><i></i>
                                     </span>
 
-                                   <input type="checkbox" name="" required=""> j'accepte ce reglement de certification<br>
+
+                                   <h3> Reglement de quiz :</h3>
+                                   <b>Avant de commencer</b><br><br>
+                                    Chaque quiz doit être terminé en une seule session ; assurez-vous que votre connexion Internet est stable et que vous avez fini avant de quitter.<br>
+
+                                    Le quiz est en francais. Si vous échouez, vos résultats ne seront ni affichés ni partagés sur T-Link.<br><br>
+
+                                    <b>Présentation</b><br>
+                                    Répondez aux questions chronométrées à choix multiples<br><br>
+
+                                    <i class="ri-timer-2-line"></i> Durée d’environ 15 minutes<br>
+                                    <i class="ri-check-double-line"></i> Un niveau dans la tranche des 70% est requis pour réussir et avoir un badge<br>
+                                    <i class="ri-calendar-2-line"></i> Réessayez dans 1 Semaine si vous échouez<br> <br>
+                                     
+
+
+                                   <input type="checkbox" name="" required="">&nbsp; j'accepte ce reglement de certification<br>
                                    <a href="" class="btn btn-primary" >Envoyer</a> 
                                  </div>
                                  
