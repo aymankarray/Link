@@ -771,6 +771,11 @@
                      <li>
                         <a href="<?php echo base_url() ?>Posts/Acceuil" class="iq-waves-effect"><i class="las la-newspaper"></i><span>Acceuil</span></a>
                      </li>
+                     <?php if ($SA == 1 || ($roleId == 7 && $cellule == 'Marketing') ) { ?>
+                     <li>
+                        <a href="<?php echo base_url() ?>Actu/addNew" class="iq-waves-effect"><i class="ri-newspaper-line"></i><span>Actualité</span></a>
+                     </li>
+                    <?php } ?>
                      <li>
                         <a href="<?php echo base_url() ?>dashboard" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Dashboard</span></a>
                      </li>

@@ -2,7 +2,7 @@
     <div class="container">
                 <div class="row" style="background-color: white ">
       <div class="card col-md-12" >
- <?php $this->load->helper("form"); ?>
+      <?php $this->load->helper("form"); ?>
         <form role="form" id="addproject" action="<?php echo base_url() ?>Actu/addNewA" method="post" role="form"  enctype="multipart/form-data">
         
         <div class="card-header">
@@ -16,29 +16,18 @@
 
               <div class="form-group">
                                  <div class="custom-file">
-                                    <input type="file" class="custom-file-input"  id="fileToUpload" name="fileToUpload" required>
+                                    <input type="file" class="dropify"  id="fileToUpload" name="fileToUpload" required>
                                     <label class="custom-file-label" for="customFile">Banner </label>
                                  </div>
               </div>
 
-      
-
               <label for="fname">Titre</label>
               <input type="text" class="form-control required" id="titre" name="titre" maxlength="255" required >
-
-
-
               <label for="fname">Description </label>
               <textarea class="form-control" id="summernote" name="description" rows="18">
               </textarea>
-
               <label for="fname">Embeded Code </label>
-              <input type="textarea" class="form-control" id="lien" name="lien"  row="20" >
-
- 
-                                       
-                          
-                
+              <input type="textarea" class="form-control" id="lien" name="lien"  row="20" >            
                                                       
         </div>
         <div class="card-footer">
