@@ -50,11 +50,11 @@
                        
 
 
-                
-
-                        </div>
                         <?php echo $actuInfo->lien ?>
 
+
+                        </div>
+                        
                 </div>
         </div>
     </div>
