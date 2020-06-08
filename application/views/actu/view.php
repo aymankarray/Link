@@ -25,7 +25,7 @@
     <div class="container">
                 <div class="row" style="background-color: white ">
                     
-                    <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card ">
                         <div class="iq-card-title">
                             <h2><?php echo $actuInfo->titre ?>       </h2>
                         </div>
@@ -35,11 +35,12 @@
                         <div style="line-height: 2;font-size: 16">
                         <?php echo $actuInfo->description ?>
                         <br>
+                        <hr>
                          publié le : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->createdDate ?> </a>
                         
                         par : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->name ?> </a>
                         <br>
-                        
+                        <hr>
 
                         </div>
             
@@ -48,7 +49,7 @@
                        
 
 
-        
+                
 
                         </div>
                         <?php echo $actuInfo->lien ?>
