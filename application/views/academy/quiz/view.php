@@ -20,7 +20,8 @@
 		        <div class="iq-card-header d-flex justify-content-between">
 		        	<div class="iq-header-title">
 		        	<h4 class="card-title" ></h4>
-		        	<h4 class="card-title text-right" id='timer' ></h4>
+		        	
+		        	<p id="demo" class="text-right"></p>
 		        	</div>
 		        </div>
 		        <div class="iq-card-body">		        		
@@ -152,21 +153,36 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 }
 
-var count = 6;
-var redirect = "http://www.apphp.com";
-var tId;
+// Set the date we're counting down to
+var MS_PER_MINUTE = 60000;
+var myEndDateTime = new Date().getTime() ; 
+var countDownDate = new Date(myEndDateTime.getTime() + 15 * MS_PER_MINUTE);
 
-function countDown() {
-  var timer = document.getElementById("timer");
-  if (count > 0) {
-    count--;
-    timer.innerHTML = "il vous reste " + count + " seconds.";
-    tId = setTimeout(countDown, 1000);
-  } else {
-    window.location.href = redirect;
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = myEndDateTime - countDownDate ;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
   }
-}
-
+}, 1000);
 
 </script>
 
