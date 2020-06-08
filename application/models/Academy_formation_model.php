@@ -97,6 +97,21 @@ class Academy_formation_model extends CI_Model
         return $insert_id;
     }
 
+     /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+    */
+    function editPart($participantInfo, $partId)
+    {
+        $this->db->where('partId', $partId);
+        $this->db->update('tbl_academy_formations_participant', $participantInfo);
+        
+        return TRUE;
+    }
+
 
    
                 /**

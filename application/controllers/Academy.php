@@ -64,12 +64,9 @@ class Academy extends BaseController {
 		                 'createdDTM'=> date('Y-m-d H:i:s')
 		                     );
 
-			   		   $resultat = $this->academy_formation_model->addNew($formationInfo);
-			   		   
-
-		        		  
+			   		   	$resultat = $this->academy_formation_model->addNew($formationInfo);
 		        		}
-		        		redirect('user') ;  
+		        	redirect('user') ;  
 		          
 		        }    
 
@@ -117,10 +114,37 @@ class Academy extends BaseController {
 
 		public function Result($partId)
 		        {
-	
-		         
-		         
-		           $this->loadViews("academy/quiz/view", $this->global, $data  , NULL); 
+		           $note = $this->input->get('note');
+		           if($note > 70)
+		            {
+		             $formationInfo = array(
+		                 'note' =>  $formationId, 
+		                 'certif' => 2, 
+		                 'certifDTM'=> date('Y-m-d H:i:s'),
+		                     );
+		            }
+		             else
+		            {
+		             	$formationInfo = array(
+		                 'note' =>  $formationId, 
+		                 'certif' => 1, 
+		                     );
+		            }
+
+		           $this->academy_formation_model->editPart($participantInfo, $partId) ; 
+
+		           redirect("certificat/".$partId); 
+		        }  
+
+
+		     public function certificat($partId)
+		        {
+		           
+				   $data['certificat'] = $this->academy_formation_model->formationQuizsInfo($partId) ;
+
+
+		           $this->loadViews("academy/certificat/view".$data['certificat'][0]->label , $this->global, $data  , NULL); 
+		           
 		        }  
 		
 		
