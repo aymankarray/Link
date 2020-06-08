@@ -1,70 +1,140 @@
  <div id="content-page" class="content-page">
     <div class="container">
         
-        <?php foreach ($questions as $key ) { ?>
+     
         
         <div class="row">
         	<div class="col-sm-12">
 	        <div class="iq-card">
 		        <div class="iq-card-header d-flex justify-content-between">
 		        	<div class="iq-header-title">
-		        	<h4 class="card-title" ><?php echo $key->Question ; ?> </h4>
+		        	<h4 class="card-title" ></h4>
 		        	</div>
 		        </div>
-		        <div class="iq-card-body">
-		        		
-		        		<?php if ($key->choice1 != '') { ?>
-		        			<input type="checkbox" value="0" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->choice1 ?> <br>
-		        		<?php } ?>
-
-		        		<?php if ($key->Answer2 != '') { ?>
-		        			<input type="checkbox" value="1" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->Answer2 ?> <br>
-		        		<?php } ?>
-		        		
-		        		<?php if ($key->choice2 != '') { ?>
-		        			<input type="checkbox" value="0" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->choice2 ?> <br>
-		        		<?php } ?>
-
-		        		<?php if ($key->Answer1 != '') { ?>
-		        			<input type="checkbox" value="1" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->Answer1 ?> <br>
-		        		<?php } ?>
-		        		
-		        		<?php if ($key->choice3 != ''  ) { ?>
-		        			<input type="checkbox" value="0" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->choice3 ?> <br>
-		        		<?php } ?>
-
-		        		
-		        		<?php if ($key->Answer3 != '')  { ?>
-		        			<input type="checkbox" value="1" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->Answer3 ?> <br>
-		        		<?php } ?>
-
-		        		
-		        		<?php if ($key->choice4 != '')  { ?>
-		        			<input type="checkbox" value="0" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->choice4 ?> <br>
-		        		<?php } ?>
+		        <div class="iq-card-body">		        		
+		        		<div id="quiz"></div>
+		        </div>
+		        <div class="card-footer">
+		        	<button id="submit">Get Results</button>
+				
+					<div id="results"></div>
 
 
-		        		
-		        		<?php if ($key->Answer4 != '' ) { ?>
-		        			<input type="checkbox" value="1" name="<?php echo $key->quizId ; ?>"> 
-		        			<?php echo $key->Answer4 ?> <br>
-		        		<?php } ?>
 
-		        		
 
 		        </div>
 		    </div>
 	       </div>
 	    </div>
 
-		<?php } ?> 
+		
 
     </div>
 </div>
+
+
+<script type="text/javascript">
+	var myQuestions = [
+	<?php foreach ($questions as $key ) { ?>
+    {
+        question: "<?php echo $key->Question ; ?> ",
+        answers: {
+            a: '<?php echo $key->choice1 ; ?>',
+            b: '<?php echo $key->choice2 ; ?>',
+            c: '<?php echo $key->choice3 ; ?>',
+            d: '<?php echo $key->choice4 ; ?>'
+        },
+        correctAnswer: '<?php echo $key->Answer1 ; ?>'
+    },
+    <?php } ?> 
+    
+];
+
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
+
+    function showQuestions(questions, quizContainer){
+        // we'll need a place to store the output and the answer choices
+        var output = [];
+        var answers;
+
+        // for each question...
+        for(var i=0; i<questions.length; i++){
+            
+            // first reset the list of answers
+            answers = [];
+
+            // for each available answer...
+            for(letter in questions[i].answers){
+
+                // ...add an html radio button
+                answers.push(
+                    '<label>'
+                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                        + letter + ': '
+                        + questions[i].answers[letter]
+                    + '</label>'
+                );
+            }
+
+            // add this question and its answers to the output
+            output.push(
+                '<div class="question">' + questions[i].question + '</div>'
+                + '<div class="answers">' + answers.join('') + '</div>'
+            );
+        }
+
+        // finally combine our output list into one string of html and put it on the page
+        quizContainer.innerHTML = output.join('');
+    }
+
+
+    function showResults(questions, quizContainer, resultsContainer){
+        
+        // gather answer containers from our quiz
+        var answerContainers = quizContainer.querySelectorAll('.answers');
+        
+        // keep track of user's answers
+        var userAnswer = '';
+        var numCorrect = 0;
+        
+        // for each question...
+        for(var i=0; i<questions.length; i++){
+
+            // find selected answer
+            userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+            
+            // if answer is correct
+            if(userAnswer===questions[i].correctAnswer){
+                // add to the number of correct answers
+                numCorrect++;
+                
+                // color the answers green
+                answerContainers[i].style.color = 'lightgreen';
+            }
+            // if answer is wrong or blank
+            else{
+                // color the answers red
+                answerContainers[i].style.color = 'red';
+            }
+        }
+
+        // show number of correct answers out of total
+        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+    }
+
+    // show questions right away
+    showQuestions(questions, quizContainer);
+    
+    // on submit, show results
+    submitButton.onclick = function(){
+        showResults(questions, quizContainer, resultsContainer);
+    }
+
+}
+</script>

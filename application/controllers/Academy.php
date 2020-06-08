@@ -107,6 +107,15 @@ class Academy extends BaseController {
 		        {
 	
 		         $data['questions'] = $this->academy_formation_model->formationQuizsInfo($partId) ; 
+
+		           $this->loadViews("academy/quiz/view", $this->global, $data  , NULL); 
+		        }  
+
+
+		public function Result($partId)
+		        {
+	
+		         
 		         
 		           $this->loadViews("academy/quiz/view", $this->global, $data  , NULL); 
 		        }  
