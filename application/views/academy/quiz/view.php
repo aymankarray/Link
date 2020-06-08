@@ -78,13 +78,13 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                         + '<input type="radio" name="question'+i+'" value="'+letter+'">'
                         + letter + ': '
                         + questions[i].answers[letter]
-                    + '</label>'
+                    + '</label> <br>'
                 );
             }
 
             // add this question and its answers to the output
             output.push(
-                '<div class="question">' + questions[i].question + '</div>'
+                '<div class="question"> <h4>' + questions[i].question + '</h4></div>'
                 + '<div class="answers">' + answers.join('') + '</div>'
             );
         }
