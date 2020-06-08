@@ -5,20 +5,8 @@
 .answers {
     margin-bottom: 20px;
 }
-#submit{
-	font-family: sans-serif;
-	font-size: 20px;
-	background-color: #297;
-	color: #fff;
-	border: 0px;
-	border-radius: 3px;
-	padding: 20px;
-	cursor: pointer;
-	margin-bottom: 20px;
-}
-#submit:hover{
-	background-color: #3a8;
-}
+
+
  </style>
 
  <div id="content-page" class="content-page">
@@ -92,7 +80,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 // ...add an html radio button
                 answers.push(
                     '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                        + '<input type="radio" name="question'+i+'" value="'+letter+'"> &nbsp;&nbsp; '
                         + letter + ': '
                         + questions[i].answers[letter]
                     + '</label> <br>'
