@@ -10,7 +10,7 @@
  </style>
 
  <div id="content-page" class="content-page">
-    <div class="container">
+    <div class="container" onload="toggleFullScreen()">
         
      
         
@@ -130,10 +130,11 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         }
 
  		b  = (100*numCorrect)/questions.length 
-		if( b>70  ){   alert('Félicitaion vous avez réussir dans ce exam')  ; }
+		if( b>70  ){ window.location.replace("http://www.w3schools.com");  }
+	     else{  window.location.replace("http://www.w3schools.com"); }
 
         // show number of correct answers out of total
-        resultsContainer.innerHTML = numCorrect + '/' + questions.length + ' = '+ b;
+       
 
        
     }
@@ -149,4 +150,20 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 }
+</script>
+<script type="text/javascript">
+	function toggleFullScreen() {
+		  var doc = window.document;
+		  var docEl = doc.documentElement;
+
+		  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
+		  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
+
+		  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
+		    requestFullScreen.call(docEl);
+		  }
+		  else {
+		    cancelFullScreen.call(doc);
+		  }
+		}
 </script>
