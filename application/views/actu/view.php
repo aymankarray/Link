@@ -37,9 +37,11 @@
                         <?php echo $actuInfo->description ?>
                         <br>
                         <hr>
+                        <p class="text-right">
                          publié le : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->createdDate ?> </a>
                         
                         par : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->name ?> </a>
+                        </p>
                         <br>
                         <hr>
 
