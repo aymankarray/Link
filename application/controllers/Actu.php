@@ -99,7 +99,7 @@ class Actu extends BaseController {
 
 		        		  
 		        		}
-		        		redirect('user') ;  
+		        		redirect('Actu/Show'.$resultat) ;  
 		          
 		        }    
 

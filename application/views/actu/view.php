@@ -35,6 +35,11 @@
                    </div>
                     <div class="col-md-6"> 
                          <img src="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" class="img-fluid w-100 rounded rounded" alt="profile-bg">
+                         <div class="card" >
+
+                            <?php echo $actuInfo->lien ?>
+
+                         </div>
                    </div>
 
 
