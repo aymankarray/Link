@@ -29,10 +29,7 @@
                         <div class="card-title">
                             <h2><?php echo $actuInfo->titre ?>       </h2>
                         </div>
-
-                    </div>
-                    <div class="card-body">
-                        <div class="col-md-6"> 
+                        <div class="card-title">
                         
                         
                         <div style="line-height: 2;font-size: 16">
@@ -42,25 +39,19 @@
                         
                         par : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->name ?> </a>
                         <br>
-                        <?php echo $actuInfo->lien ?>
+                        
 
                         </div>
-                   </div>
-                    <div class="col-md-6"> 
+            
+          
                          <img src="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" class="img-fluid w-100 rounded rounded" alt="profile-bg">
-                         <div class="card" >
+                       
 
 
-                         </div>
-                   </div>
+        
 
-               </div>
-
-
-
-                   
-
-    
+                        </div>
+                        <?php echo $actuInfo->lien ?>
 
                 </div>
         </div>
