@@ -36,17 +36,11 @@
 		        </div>
 		        <div class="iq-card-body">		        		
 		        		<div id="quiz"></div>
-		        </div>
-		        <div class="card-footer">
-		        	<button id="submit">Get Results</button>
+		        		<button id="submit">Get Results</button>
 				
 					<div id="results"></div>
-
-
-
-
 		        </div>
-		    </div>
+		      </div>
 	       </div>
 	    </div>
 
