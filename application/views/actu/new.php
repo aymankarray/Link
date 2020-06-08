@@ -13,14 +13,8 @@
         <div class="card-body">
 
               <label for="fname">image</label>
-
-              <div class="form-group">
-                                 <div class="custom-file">
-                                    <input type="file" class="dropify"  id="fileToUpload" name="fileToUpload" required>
-                                    <label class="custom-file-label" for="customFile">Banner </label>
-                                 </div>
-              </div>
-
+              <input type="file" class="dropify"  id="fileToUpload" name="fileToUpload" required>
+                                    
               <label for="fname">Titre</label>
               <input type="text" class="form-control required" id="titre" name="titre" maxlength="255" required >
               <label for="fname">Description </label>

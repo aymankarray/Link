@@ -799,7 +799,7 @@
                             </li>
                             <li>
                                 <a > <i class="ri-award-line"></i>Certifications  </a>  
-                                 <small class="mb-3"><i class="ri-terminal-line"></i> comming soon</small>
+                                 <small class="mb-3"><i class="ri-terminal-line"></i> coming soon</small>
                             </li>
                         </ul>
                       </li>
@@ -809,7 +809,7 @@
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
                             <i class="ri-store-3-line"></i>Store 
                         </a>
-                         <small class="mb-3"><i class="ri-terminal-line"></i> comming soon</small>
+                         <small class="mb-3"><i class="ri-terminal-line"></i> coming soon</small>
                       </li>
 
                   </ul>
