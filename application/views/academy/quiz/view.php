@@ -129,7 +129,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
             }
         }
 
- 		a = (numCorrect / (questions.length + numCorrect)) * 100;
+ 		a = (numCorrect / questions.length ) * 100;
 		b = 100 - a;
 		if( b>70  ){   alert('Félicitaion vous avez réussir dans ce exam')  ; }
 
