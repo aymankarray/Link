@@ -31,13 +31,19 @@
                         <hr>
                         <div style="line-height: 2;font-size: 16">
                         <?php echo $actuInfo->description ?>
+                        <br>
+                         publié le : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->createdDate ?> </a>
+                        
+                        par : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->name ?> </a>
+                        <br>
+                        <?php echo $actuInfo->lien ?>
+
                         </div>
                    </div>
                     <div class="col-md-6"> 
                          <img src="<?php echo base_url() ;  ?>uploads/Actu/<?php echo $actuInfo->image ?>" class="img-fluid w-100 rounded rounded" alt="profile-bg">
                          <div class="card" >
 
-                            <?php echo $actuInfo->lien ?>
 
                          </div>
                    </div>
@@ -48,9 +54,7 @@
 
                     <div class="col-md-6"> 
                         
-                        publié le : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->createdDate ?> </a>
-                        
-                        par : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->name ?> </a>
+                       
 
                    </div>
 
