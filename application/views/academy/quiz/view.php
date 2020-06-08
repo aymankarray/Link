@@ -134,7 +134,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 		if( b>70  ){   alert('Félicitaion vous avez réussir dans ce exam')  ; }
 
         // show number of correct answers out of total
-        resultsContainer.innerHTML = numCorrect + '/' + questions.length + ' = ' b;
+        resultsContainer.innerHTML = numCorrect + '/' + questions.length + ' = '+ b;
 
        
     }
