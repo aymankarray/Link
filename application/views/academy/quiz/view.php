@@ -131,7 +131,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 
         // show number of correct answers out of total
-        resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+        resultsContainer.innerHTML = numCorrect + '/' + questions.length;
 
         var a = (numCorrect / (questions.length + numCorrect)) * 100
 		var b = 100 - a
