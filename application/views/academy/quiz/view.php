@@ -129,8 +129,13 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
             }
         }
 
+
         // show number of correct answers out of total
         resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+
+        var a = (numCorrect / (questions.length + numCorrect)) * 100
+		var b = 100 - a
+		if( b>70  ){ alert('Félicitaion vous avez réussir dans ce exam')  }
     }
 
     // show questions right away
