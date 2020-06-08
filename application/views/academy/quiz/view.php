@@ -139,6 +139,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     // on submit, show results
     submitButton.onclick = function(){
         showResults(questions, quizContainer, resultsContainer);
+        quizContainer.style.display = 'none';
+        submitButton.style.display = 'none';
     }
 
 }
