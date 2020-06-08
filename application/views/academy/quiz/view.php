@@ -107,7 +107,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         // keep track of user's answers
         var userAnswer = '';
         var numCorrect = 0;
-        
+        var a  = 0 ; var b  = 0 ;
         // for each question...
         for(var i=0; i<questions.length; i++){
 
@@ -129,8 +129,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
             }
         }
 
- 		var a = (numCorrect / (questions.length + numCorrect)) * 100;
-		var b = 100 - a;
+ 		a = (numCorrect / (questions.length + numCorrect)) * 100;
+		b = 100 - a;
 		if( b>70  ){   alert('Félicitaion vous avez réussir dans ce exam')  ; }
 
         // show number of correct answers out of total
