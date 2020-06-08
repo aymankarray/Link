@@ -152,6 +152,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 }
 </script>
 <script type="text/javascript">
+	var elem = document.documentElement;
 	/* Function to open fullscreen mode */
 			function openFullscreen() {
 			  if (elem.requestFullscreen) {
@@ -165,4 +166,6 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 			    elem.msRequestFullscreen();
 			  }
 }
+
+
 </script>
