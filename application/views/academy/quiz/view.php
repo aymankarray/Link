@@ -153,11 +153,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
 }
 
-// Set the date we're counting down to
-var MS_PER_MINUTE = 60000;
-var myEndDateTime = new Date().getTime() ; 
-var countDownDate = new Date(myEndDateTime.getTime() + 15 * MS_PER_MINUTE);
-
+var countDownDate = new Date().getTime() + 15 * 60000;
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -165,7 +161,7 @@ var x = setInterval(function() {
   var now = new Date().getTime();
     
   // Find the distance between now and the count down date
-  var distance = myEndDateTime - countDownDate ;
+  var distance = countDownDate - now;
     
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -174,8 +170,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = "Il vous reste"+minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
