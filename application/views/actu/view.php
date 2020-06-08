@@ -25,10 +25,16 @@
     <div class="container">
                 <div class="row" style="background-color: white ">
                     
-                 
-                    <div class="col-md-6"> 
-                        <h2><?php echo $actuInfo->titre ?>       </h2>
-                        <hr>
+                    <div class="card">
+                        <div class="card-title">
+                            <h2><?php echo $actuInfo->titre ?>       </h2>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="col-md-6"> 
+                        
+                        
                         <div style="line-height: 2;font-size: 16">
                         <?php echo $actuInfo->description ?>
                         <br>
@@ -48,16 +54,11 @@
                          </div>
                    </div>
 
+               </div>
 
 
 
-
-                    <div class="col-md-6"> 
-                        
-                       
-
-                   </div>
-
+                   
 
     
 
