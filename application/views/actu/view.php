@@ -42,7 +42,7 @@
                         
                         par : <a href="https://tunivisions.link/User/ProfileShow/<?php echo $actuInfo->userId ?>" > <?php echo $actuInfo->name ?> </a>
                         </p>
-                        <br>
+                        
                         <hr>
 
                         </div>
