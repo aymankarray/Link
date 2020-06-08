@@ -10,7 +10,7 @@
  </style>
 
  <div id="content-page" class="content-page">
-    <div class="container" onload="toggleFullScreen()">
+    <div class="container" onload="openFullscreen()">
         
      
         
@@ -152,18 +152,17 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 }
 </script>
 <script type="text/javascript">
-	function toggleFullScreen() {
-		  var doc = window.document;
-		  var docEl = doc.documentElement;
-
-		  var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-		  var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-
-		  if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-		    requestFullScreen.call(docEl);
-		  }
-		  else {
-		    cancelFullScreen.call(doc);
-		  }
-		}
+	/* Function to open fullscreen mode */
+			function openFullscreen() {
+			  if (elem.requestFullscreen) {
+			    elem.requestFullscreen();
+			  } else if (elem.mozRequestFullScreen) { /* Firefox */
+			    elem.mozRequestFullScreen();
+			  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+			    elem.webkitRequestFullscreen();
+			  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+			    elem = window.top.document.body; //To break out of frame in IE
+			    elem.msRequestFullscreen();
+			  }
+}
 </script>
