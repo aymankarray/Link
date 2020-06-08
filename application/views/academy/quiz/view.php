@@ -9,8 +9,8 @@
 
  </style>
 
- <div id="content-page" class="content-page">
-    <div class="container" onload="openFullscreen()">
+ <div id="content-page" class="content-page" onload="openFullscreen()" >
+    <div class="container" >
         
      
         
