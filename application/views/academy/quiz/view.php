@@ -1,3 +1,26 @@
+ <style type="text/css">
+ 	.question{
+	font-weight: 600;
+}
+.answers {
+    margin-bottom: 20px;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background-color: #297;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+#submit:hover{
+	background-color: #3a8;
+}
+ </style>
+
  <div id="content-page" class="content-page">
     <div class="container">
         
@@ -84,7 +107,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
             // add this question and its answers to the output
             output.push(
-                '<div class="question"> <h4>' + questions[i].question + '</h4></div>'
+                '<div class="question"> <h4>' + questions[i].question + '</h4></div> <br> '
                 + '<div class="answers">' + answers.join('') + '</div>'
             );
         }
