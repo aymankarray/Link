@@ -9,7 +9,7 @@
 
  </style>
 
- <div id="content-page" class="content-page" onload="openFullscreen()" >
+ <div id="content-page" class="content-page" onload="countDown()" >
     <div class="container" >
         
      
