@@ -25,11 +25,11 @@
     <div class="container">
                 <div class="row" style="background-color: white ">
                     
-                    <div class="card">
-                        <div class="card-title">
+                    <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-title">
                             <h2><?php echo $actuInfo->titre ?>       </h2>
                         </div>
-                        <div class="card-title">
+                       <div class="iq-card-body">
                         
                         
                         <div style="line-height: 2;font-size: 16">
