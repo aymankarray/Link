@@ -27,7 +27,7 @@
                     
                     <div class="iq-card ">
                         <div class="iq-card-titre">
-                            <h2 class="text-center"><?php echo $actuInfo->titre ?>       </h2>
+                            <h2 class="text-center"><br><?php echo $actuInfo->titre ?>       </h2>
                             <hr>
                         </div>
                        <div class="iq-card-body">
