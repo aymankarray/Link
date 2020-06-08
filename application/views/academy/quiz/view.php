@@ -20,6 +20,7 @@
 		        <div class="iq-card-header d-flex justify-content-between">
 		        	<div class="iq-header-title">
 		        	<h4 class="card-title" ></h4>
+		        	<h4 class="card-title text-right" id='timer' ></h4>
 		        	</div>
 		        </div>
 		        <div class="iq-card-body">		        		
@@ -150,4 +151,23 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 
 }
+
+var count = 6;
+var redirect = "http://www.apphp.com";
+var tId;
+
+function countDown() {
+  var timer = document.getElementById("timer");
+  if (count > 0) {
+    count--;
+    timer.innerHTML = "il vous reste " + count + " seconds.";
+    tId = setTimeout(countDown, 1000);
+  } else {
+    window.location.href = redirect;
+  }
+}
+
+
 </script>
+
+
