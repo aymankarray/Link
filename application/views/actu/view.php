@@ -26,8 +26,9 @@
                 <div class="row" style="background-color: white ">
                     
                     <div class="iq-card ">
-                        <div class="iq-card-title">
+                        <div class="iq-card-titre">
                             <h2><?php echo $actuInfo->titre ?>       </h2>
+                            <hr>
                         </div>
                        <div class="iq-card-body">
                         
