@@ -247,12 +247,10 @@ class User_model extends CI_Model
      * This function is used to get the user roles information
      * @return array $result : This is result of the query
      */
-    function getUserRoles()
+    function getUserAllRoles()
     {
         $this->db->select('roleId, role');
         $this->db->from('tbl_roles');
-        $this->db->where('roleId !=', 1);
-        $this->db->where('roleId !=', 2);
         $query = $this->db->get();
         
         return $query->result();
