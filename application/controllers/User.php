@@ -828,7 +828,7 @@ class User extends BaseController
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);      
         $data["Roles"] = $this->user_model->getUserAllRoles() ; 
         $data["Clubs"] = $this->user_model->getClubs() ;
-        $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId); 
+        $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($userId); 
         $this->global['pageTitle'] = 'Cariere' ;
         
         $this->loadViews("Tunimateurs/cariere", $this->global, $data, NULL);
