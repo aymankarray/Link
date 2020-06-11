@@ -49,6 +49,44 @@
                         </div>
                      </div>
                   </div>
+
+                  <div class="col-lg-6">
+                     <div class="iq-card">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Formations</h4>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <ul class="iq-timeline">
+
+                               <li>
+                                 <div class="timeline-dots"></div>
+                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1"> Mise à jour vos formation de mandat 2019 - 2020 
+                                 </button>
+                                 
+                              </li>
+
+                              <?php foreach ($ressourceInfo as $key) {   ?>
+                              <li>
+                                 <div class="timeline-dots"></div>
+                                 <h6 class="float-left mb-1"> 
+                                    <?php echo $key->titre   ?>  <a> (<?php echo $key->score?>  points ) </a>
+                                 </h6>
+                                 <small class="float-right mt-1">
+                                    <?php echo $key->startDate?>  ?>
+                                 </small>
+                                 <div class="d-inline-block w-100">
+                                    <p>
+
+                                    </p>
+                                 </div>
+                              </li>
+                              <?php }  ?>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
                   
                </div>
             </div>
@@ -75,7 +113,7 @@
                                  
                                           <label>Poste</label>
                                           <select name="roleId" id="roleId"  class="form-control" required >
-                                             <option value="-1" >veuillez choisir votre poste </option>
+                                             <option value="-1" >Veuillez choisir votre poste </option>
                                              <?php foreach ($Roles as $key ) {
                                               echo "<option value='".$key->roleId."'>".$key->role."</option>" ; 
                                              }?>
@@ -83,7 +121,8 @@
                                           <br>
                                           <label>Cellule</label>
                                           <select name="cellule" id="cellule"  class="form-control" >
-                                             <option value="-1" >veuillez choisir votre unité </option>
+                                             <option value="-1" >Veuillez choisir votre unité </option>
+                                             <option value="" ></option>
                                              <option value="Marketing" >Marketing</option>
                                              <option value="Administration et finance" >Administration et finance</option>
                                              <option value="Evenementiel" >Evenementiel</option>
@@ -92,7 +131,7 @@
                                           <br>
                                           <label>Club</label>
                                           <select name="clubId" id="clubId"   class="form-control" required >
-                                             <option value="-1" >veuillez choisir votre club </option>
+                                             <option value="-1" >Veuillez choisir votre club </option>
                                              <?php foreach ($Clubs as $key ) {
                                               echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
                                              }?>

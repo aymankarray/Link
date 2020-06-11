@@ -69,7 +69,7 @@ class Ressource_model extends CI_Model
      */
     function ressourceListingBUser($UserId)
     {
-         $this->db->select('BaseTbl.ressourceID , BaseTbl.userID , Users.name  , BaseTbl.score ,  Users.avatar ,  Users.userId , Project.titre , Badges.name badge , Badges.code ');
+         $this->db->select('BaseTbl.ressourceID , BaseTbl.userID , Users.name  , BaseTbl.score ,  Users.avatar ,  Users.userId , Project.titre , Project.startDate  , Badges.name badge , Badges.code ');
         $this->db->from('tbl_ressource as BaseTbl');
         $this->db->join('tbl_users as Users', 'Users.userId = BaseTbl.userID', 'LEFT');
         $this->db->join('tbl_project as Project', 'Project.projectId = BaseTbl.projectID', 'LEFT');
