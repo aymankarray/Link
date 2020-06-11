@@ -103,7 +103,7 @@
                                     </div>
                                     <div class="modal-footer">
                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                       <input id="TF" type="submit" disabled class="btn btn-primary">
+                                       <input id="TF" type="submit"  class="btn btn-primary">
                                     </div>
                                     </form>
                                  </div>
@@ -124,13 +124,7 @@
              $('#cellule').select2();
              $('#clubId').select2();
 
-            if($('#roleId').val() != '-1' 
-               || $('#cellule').val() != '-1' 
-               ||  $('#clubId').val() != '-1'
-              )
-            {
-                  $( '#TF' ).enable() ; 
-            }
+
 
 
           
