@@ -70,8 +70,11 @@
                                        </button>
                                     </div>
                                     <div class="modal-body">
-                                       <form>
+                                       <form action="<?php echo base_url() ?>/User/CarierAdd/<?php echo $uid ?>">
                                           
+
+                                          <
+
                                           <label>Poste</label>
                                           <select name="roleId" id="roleId" class="form-control" >
                                              <?php foreach ($Roles as $key ) {
@@ -89,12 +92,16 @@
                                              }?>
                                           </select>
 
+                                          label>Debut</label>
+                                          <input type="date" name="attacheDT" class="form-control" >
+                                          <label>Fin</label>
+                                          <input type="date" name="endDT" class="form-control" >
 
                                        </form>
                                     </div>
                                     <div class="modal-footer">
                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                       <button type="button" class="btn btn-primary">Save changes</button>
+                                       <button type="button" class="btn btn-primary">Envoyer</button>
                                     </div>
                                  </div>
                               </div>

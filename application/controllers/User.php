@@ -833,9 +833,32 @@ class User extends BaseController
         $this->loadViews("Tunimateurs/cariere", $this->global, $data, NULL);
     }
 
+    /**
+     * This function is used to show users profile
+     */
+    function CarierAdd($userId)
+    {           
+                $roleId = $this->input->post('roleId') ; 
+                $cellule = $this->input->post('cellule') ; 
+                $clubId = $this->input->post('clubId') ; 
 
+           
+                $userInfo = array(
+                 'userId'=>$userId,
+                 'attacheDT'=>$attacheDT,
+                 'endDT'=>$endDT,
+                 'roleId'=>$roleId,
+                 'clubId'=>$clubId,
+                 'cellule'=>$cellule,
+                 'CreatedBy'=>$this->vendorId,
+                 'CreatedDTM'=>date('Y-m-d H:i:s')    
+                     );
+                
+       
+                $result = $this->user_cariere_model->addNewCarrier($userInfo);
 
-
+                redirect('User/CarierShow/'.$userId);
+    }
 
 
 
