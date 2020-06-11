@@ -34,16 +34,21 @@
                               <div class="profile-info p-4 d-flex align-items-center justify-content-between position-relative">
                                  <div class="social-links">
                                     <ul class="social-data-block d-flex align-items-center justify-content-between list-inline p-0 m-0">
+                                       <?php if ($userInfo->facebook != '' ) { ?>
                                        <li class="text-center pr-3">
                                           <a href="<?php echo $userInfo->facebook ?>"><img src="<?php echo base_url() ;  ?>images/icon/08.png" class="img-fluid rounded" alt="facebook"></a>
                                        </li>
-
+                                       <?php } ?>
+                                       <?php if ($userInfo->instagram != '' ) { ?>
                                        <li class="text-center pr-3">
                                           <a href="<?php echo $userInfo->instagram ?>"><img src="<?php echo base_url() ;  ?>images/icon/10.png" class="img-fluid rounded" alt="Instagram"></a>
                                        </li>
+                                       <?php } ?>
+                                       <?php if ($userInfo->linkedin != '' ) { ?>
                                        <li class="text-center pr-3">
                                           <a href="<?php echo $userInfo->linkedin ?>"><img src="<?php echo base_url() ;  ?>images/icon/13.png" class="img-fluid rounded" alt="linkedin"></a>
                                        </li>
+                                       <?php } ?>
                                     </ul>
                                  </div>
                                  <div class="social-info">
@@ -52,6 +57,7 @@
                                           <h6>Posts</h6>
                                           <p class="mb-0"><?php echo count($postRecords) ?></p>
                                        </li>
+                                       <!--
                                        <li class="text-center pl-3">
                                           <h6>Followers</h6>
                                           <p class="mb-0">206</p>
@@ -60,6 +66,7 @@
                                           <h6>Following</h6>
                                           <p class="mb-0">100</p>
                                        </li>
+                                       -->
                                     </ul>
                                  </div>
                               </div>
@@ -109,30 +116,23 @@
                                        </div>
                                        <div class="iq-card-body">
                                           <div class="row">
+                                             <?php foreach ($Experience as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
-                                                   <a href="javascript:void();"><img src="<?php echo base_url() ;  ?>images/page-img/07.jpg" alt="gallary-image" class="img-fluid rounded"></a>
+
                                                    <div class="job-icon-position">
                                                       <div class="job-icon bg-primary p-2 d-inline-block rounded-circle"><i class="ri-briefcase-line"></i></div>
                                                    </div>
                                                    <div class="iq-card-body text-center p-2">
-                                                      <h5>Started New Job at Apple</h5>
-                                                      <p>January 24, 2019</p>
+                                                      <h5>
+                                                         <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
+                                                       <?php echo $key->ClubName   ?> 
+                                                   </h5>
+                                                      <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
                                                    </div>
                                                 </div>
                                              </div>
-                                             <div class="col-sm-12">
-                                                <div class="event-post position-relative">
-                                                   <a href="javascript:void();"><img src="<?php echo base_url() ;  ?>images/page-img/06.jpg" alt="gallary-image" class="img-fluid rounded"></a>
-                                                   <div class="job-icon-position">
-                                                      <div class="job-icon bg-primary p-2 d-inline-block rounded-circle"><i class="ri-briefcase-line"></i></div>
-                                                   </div>
-                                                   <div class="iq-card-body text-center p-2">
-                                                      <h5>Freelance Photographer</h5>
-                                                      <p>January 24, 2019</p>
-                                                   </div>
-                                                </div>
-                                             </div>
+                                              <?php }  ?>
                                           </div>
                                        </div>
                                     </div>

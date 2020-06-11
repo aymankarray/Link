@@ -74,7 +74,7 @@
                                     <?php echo $key->titre   ?>  <a> (<?php echo $key->score?>  points ) </a>
                                  </h6>
                                  <small class="float-right mt-1">
-                                    <?php echo $key->startDate?>  ?>
+                                    <?php echo $key->startDate?> 
                                  </small>
                                  <div class="d-inline-block w-100">
                                     <p>
