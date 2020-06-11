@@ -91,7 +91,7 @@ class Ressource_model extends CI_Model
      * This function is used to get the user listing count
      * @return array $result : This is result
      */
-    function ressourceListingBUserT($UserId,$type)
+    function ressourceListingBUserT($UserId)
     {
          $this->db->select('BaseTbl.ressourceID , BaseTbl.userID , Users.name  , BaseTbl.score ,  Users.avatar ,  Users.userId , Project.titre , Project.startDate  , Badges.name badge , Badges.code ');
         $this->db->from('tbl_ressource as BaseTbl');
