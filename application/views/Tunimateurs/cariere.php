@@ -9,7 +9,6 @@
                         </div>
                      </div>
                   </div>
-
                   <div class="col-lg-6">
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
@@ -32,7 +31,7 @@
                                  <div class="timeline-dots"></div>
                                  <h6 class="float-left mb-1"> 
                                     <?php echo $key->role   ?> <?php echo $key->cellule ?> chez 
-                                     <a href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
+                                     <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
                                        <?php echo $key->ClubName   ?>  
                                     </a>  
                                  </h6>
@@ -46,10 +45,6 @@
                                  </div>
                               </li>
                               <?php }  ?>
-
-                              
-                              
-                              
                            </ul>
                         </div>
                      </div>
@@ -97,9 +92,9 @@
                                           </select>
 
                                           <label>Debut</label>
-                                          <input type="date" name="attacheDT" class="form-control" >
+                                          <input type="date"  name="attacheDT" id="attacheDT"  class="form-control" >
                                           <label>Fin</label>
-                                          <input type="date" name="endDT" class="form-control" >
+                                          <input type="date" name="endDT" id="endDT" class="form-control" >
 
                                        
                                     </div>
@@ -126,7 +121,40 @@
              $('#cellule').select2();
              $('#clubId').select2();
 
+             if($('#roleId').val() == '-1'){
+              alert("voyez choisir le poste") ; 
+            }
 
+            if($('#cellule').val() == '-1'){
+              alert("voyez choisir la cellule") ; 
+            }
+
+            if($('#clubId').val() == '-1'){
+              alert("voyez choisir le club") ; 
+            }
+
+
+         });
+
+   </script>
+   <script>
+     $(function () {
+             $("#attacheDT").datepicker({
+                 numberOfMonths: 2,
+                 onSelect: function (selected) {
+                     var dt = new Date(selected);
+                     dt.setDate(dt.getDate() + 1);
+                     $("#endDT").datepicker("option", "minDate", dt);
+                 }
+             });
+             $("#endDT").datepicker({
+                 numberOfMonths: 2,
+                 onSelect: function (selected) {
+                     var dt = new Date(selected);
+                     dt.setDate(dt.getDate() - 1);
+                     $("#attacheDT").datepicker("option", "maxDate", dt);
+                 }
+             });
          });
    </script>
 
