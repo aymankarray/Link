@@ -824,7 +824,7 @@ class User extends BaseController
      */
     function CarierShow($userId)
     {
-        
+
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);      
         $data["Roles"] = $this->user_model->getUserAllRoles() ; 
         $data["Clubs"] = $this->user_model->getClubs() ;
@@ -842,6 +842,8 @@ class User extends BaseController
                 $roleId = $this->input->post('roleId') ; 
                 $cellule = $this->input->post('cellule') ; 
                 $clubId = $this->input->post('clubId') ; 
+                $endDT = $this->input->post('endDT') ;
+                $attacheDT = $this->input->post('attacheDT') ;
 
            
                 $userInfo = array(
