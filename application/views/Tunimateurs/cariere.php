@@ -98,7 +98,7 @@
                                     </div>
                                     <div class="modal-footer">
                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                       <input type="submit" class="btn btn-primary">Envoyer</button>
+                                       <input id="TF" type="submit" class="btn btn-primary">
                                     </div>
                                     </form>
                                  </div>
@@ -119,17 +119,14 @@
              $('#cellule').select2();
              $('#clubId').select2();
 
-             if($('#roleId').val() == '-1'){
-              alert("voyez choisir le poste") ; 
+            if($('#roleId').val() != '-1' 
+               || $('#cellule').val() != '-1' 
+               ||  $('#clubId').val() != '-1'
+              )
+            {
+                  $( '#TF' ).enable() ; 
             }
 
-            if($('#cellule').val() == '-1'){
-              alert("voyez choisir la cellule") ; 
-            }
-
-            if($('#clubId').val() == '-1'){
-              alert("voyez choisir le club") ; 
-            }
 
             $("#attacheDT").datepicker({
                  numberOfMonths: 2,
