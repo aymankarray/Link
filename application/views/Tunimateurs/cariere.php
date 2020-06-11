@@ -22,7 +22,7 @@
 
                                <li>
                                  <div class="timeline-dots"></div>
-                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">                          Mise à jour votre Tunivisions Experience
+                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Mise à jour votre Tunivisions Experience
                                  </button>
                                  
                               </li>
@@ -31,10 +31,10 @@
                               <li>
                                  <div class="timeline-dots"></div>
                                  <h6 class="float-left mb-1"> 
-                                    <?php echo $key->role   ?> <?php echo $key->cellule   ?> chez 
-                                    <p class="text-priamry" >
+                                    <?php echo $key->role   ?> <?php echo $key->cellule ?> chez 
+                                     <a href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
                                        <?php echo $key->ClubName   ?>  
-                                    </p>  
+                                    </a>  
                                  </h6>
                                  <small class="float-right mt-1">
                                     <?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?>
