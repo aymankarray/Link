@@ -846,7 +846,7 @@
                      <?php if ($name != '') { ?>
                      <ul class="navbar-nav ml-auto navbar-list">
                         <li>
-                           <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $MyUserId ; ?>" class="iq-waves-effect d-flex align-items-center">
+                           <a href="<?php echo base_url() ; ?>User/ProfileShow/<?php echo $uid ; ?>" class="iq-waves-effect d-flex align-items-center">
 
     
                               <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" class="alligator-turtle  mr-3 " alt="<?php echo $name ?>">
