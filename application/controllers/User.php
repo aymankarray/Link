@@ -32,7 +32,7 @@ class User extends BaseController
         $this->load->model('ressource_model');
         $this->load->model('login_model');
         $this->load->model('posts_model') ; 
-        
+         $this->load->model('user_cariere_model') ; 
         $this->isLoggedIn();   
     }
     
@@ -817,6 +817,20 @@ class User extends BaseController
             echo json_encode( $this->login_model->lastLogins() , JSON_PRETTY_PRINT);
          
     }
+
+
+    /**
+     * This function is used to show users profile
+     */
+    function CarierShow($userId)
+    {
+        $data["userInfo"] = $this->user_cariere_model->carrierListing($userId);      
+       
+        $this->global['pageTitle'] = 'Cariere' ;
+        
+        $this->loadViews("Tunimateurs/cariere", $this->global, $data, NULL);
+    }
+
 
 
 
