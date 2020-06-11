@@ -119,13 +119,13 @@
                                              <?php foreach ($Experience as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
-                                                   <small>
+                                                   
                                                    <div class="job-icon-position">
                                                       <div class="job-icon bg-primary p-2 d-inline-block rounded-circle">
-                                                         <i class="ri-briefcase-line"></i>
+                                                       <small>  <i class="ri-briefcase-line"></i>  </small>
                                                       </div>
                                                    </div>
-                                                   </small>
+                                                  
                                                    <div class="iq-card-body text-center p-2">
                                                       <h5>
                                                          <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
