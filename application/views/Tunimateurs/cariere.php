@@ -63,6 +63,7 @@
          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
                               <div class="modal-dialog" role="document">
                                  <div class="modal-content">
+                                    <form action="<?php echo base_url() ?>/User/CarierAdd/<?php echo $uid ?>">
                                     <div class="modal-header">
                                        <h5 class="modal-title" id="exampleModalLabel">Nouvelle experience</h5>
                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -70,7 +71,7 @@
                                        </button>
                                     </div>
                                     <div class="modal-body">
-                                       <form action="<?php echo base_url() ?>/User/CarierAdd/<?php echo $uid ?>">
+                                       
                                           
 
                                           <
@@ -97,12 +98,13 @@
                                           <label>Fin</label>
                                           <input type="date" name="endDT" class="form-control" >
 
-                                       </form>
+                                       
                                     </div>
                                     <div class="modal-footer">
                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                        <button type="button" class="btn btn-primary">Envoyer</button>
                                     </div>
+                                    </form>
                                  </div>
                               </div>
                            </div>
