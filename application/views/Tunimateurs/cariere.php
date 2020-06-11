@@ -98,7 +98,7 @@
                                     </div>
                                     <div class="modal-footer">
                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                       <input id="TF" type="submit" class="btn btn-primary">
+                                       <input id="TF" type="submit" disabled class="btn btn-primary">
                                     </div>
                                     </form>
                                  </div>
@@ -128,22 +128,7 @@
             }
 
 
-            $("#attacheDT").datepicker({
-                 numberOfMonths: 2,
-                 onSelect: function (selected) {
-                     var dt = new Date(selected);
-                     dt.setDate(dt.getDate() + 1);
-                     $("#endDT").datepicker("option", "minDate", dt);
-                 }
-             });
-             $("#endDT").datepicker({
-                 numberOfMonths: 2,
-                 onSelect: function (selected) {
-                     var dt = new Date(selected);
-                     dt.setDate(dt.getDate() - 1);
-                     $("#attacheDT").datepicker("option", "maxDate", dt);
-                 }
-             });
+          
 
 
          });
