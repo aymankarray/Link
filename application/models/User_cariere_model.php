@@ -16,7 +16,7 @@ class User_cariere_model extends CI_Model
      */
     function carrierListing($userID)
     {
-         $this->db->select('*');
+         $this->db->select('Role.role  ,   Clubs.clubID ,  Clubs.name  ClubName , BaseTbl.attacheDT , BaseTbl.endDT , BaseTbl.Approuve ');
         $this->db->from('tbl_users_cariere as BaseTbl');
         $this->db->join('tbl_roles as Role', 'Role.roleId = BaseTbl.roleId','left');
         $this->db->join('tbl_club as Clubs', 'Clubs.clubID = BaseTbl.ClubId', 'LEFT');

@@ -824,8 +824,10 @@ class User extends BaseController
      */
     function CarierShow($userId)
     {
-        $data["userInfo"] = $this->user_cariere_model->carrierListing($userId);      
-       
+        $data["Experience"] = $this->user_cariere_model->carrierListing($userId);      
+        $data["Roles"] = $this->user_model->getUserRoles() ; 
+        $data["Clubs"] = $this->user_model->getClubs() ;
+
         $this->global['pageTitle'] = 'Cariere' ;
         
         $this->loadViews("Tunimateurs/cariere", $this->global, $data, NULL);
