@@ -932,7 +932,7 @@
                                        <?php } ?>
 
                                     <div class="text-center">
-                                       <a href="#" class="mr-3 btn text-primary">Voir plus</a>
+                                       <a href="<?php echo base_url() ?>Project/projectListing" class="mr-3 btn text-primary">Voir plus</a>
                                     </div>
                                  </div>
                               </div>
@@ -991,7 +991,7 @@
                                     </a>
                                     
                                     <div class="d-inline-block w-100 text-center p-3">
-                                      <p id="demo"></p>
+                                      
                                        <a class="bg-primary iq-sign-btn" href="<?php echo base_url() ?>logout" role="button">Déconnection<i class="ri-login-box-line ml-2"></i></a>
                                     </div>
                                  </div>
