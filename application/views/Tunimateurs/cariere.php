@@ -84,7 +84,10 @@
                                           <label>Cellule</label>
                                           <select name="cellule" id="cellule"  class="form-control" >
                                              <option value="-1" >veuillez choisir votre unité </option>
-                                             <option></option>
+                                             <option value="Marketing" >Marketing</option>
+                                             <option value="Administration et finance" >Administration et finance</option>
+                                             <option value="Evenementiel" >Evenementiel</option>
+                                             <option value="Gestion des talents" >Gestion des talents</option>
                                           </select>
                                           <br>
                                           <label>Club</label>
