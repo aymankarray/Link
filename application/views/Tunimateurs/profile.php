@@ -122,7 +122,7 @@
                                                    
 
                                                   
-                                                   <div class="iq-card-body text-center p-2">
+                                                   <div class="iq-card-body  p-2">
                                                       <h6>
                                                          <i class="ri-briefcase-line"></i>  <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
                                                        <?php echo $key->ClubName   ?></a> 
