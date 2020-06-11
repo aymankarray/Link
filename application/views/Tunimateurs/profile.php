@@ -108,7 +108,7 @@
                                     <div class="iq-card">
                                        <div class="iq-card-header d-flex justify-content-between">
                                           <div class="iq-header-title">
-                                             <h4 class="card-title">Life Event</h4>
+                                             <h4 class="card-title">Tunivisions Experience</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
                                              <p class="m-0"><a href="javacsript:void();"> Create </a></p>
@@ -119,10 +119,13 @@
                                              <?php foreach ($Experience as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
-
+                                                   <small>
                                                    <div class="job-icon-position">
-                                                      <div class="job-icon bg-primary p-2 d-inline-block rounded-circle"><i class="ri-briefcase-line"></i></div>
+                                                      <div class="job-icon bg-primary p-2 d-inline-block rounded-circle">
+                                                         <i class="ri-briefcase-line"></i>
+                                                      </div>
                                                    </div>
+                                                   </small>
                                                    <div class="iq-card-body text-center p-2">
                                                       <h5>
                                                          <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
