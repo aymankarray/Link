@@ -68,25 +68,25 @@
                                     <div class="modal-body">
 
                                           <label>Debut</label>
-                                          <input type="date"  name="attacheDT" id="attacheDT"  class="form-control" >
+                                          <input type="date"  name="attacheDT" id="attacheDT"  class="form-control" required>
                                           <label>Fin</label>
-                                          <input type="date" name="endDT" id="endDT" class="form-control" >
+                                          <input type="date" name="endDT" id="endDT" class="form-control"  required>
                                        
                                  
                                           <label>Poste</label>
-                                          <select name="roleId" id="roleId"  class="select2jsMultiSelect form-control" >
+                                          <select name="roleId" id="roleId"  class="form-control" required >
                                              <option value="-1" >veuillez choisir votre poste </option>
                                              <?php foreach ($Roles as $key ) {
                                               echo "<option value='".$key->roleId."'>".$key->role."</option>" ; 
                                              }?>
                                           </select>
                                           <label>Cellule</label>
-                                          <select name="cellule" id="cellule"  class="select2jsMultiSelect form-control" >
+                                          <select name="cellule" id="cellule"  class="form-control" >
                                              <option value="-1" >veuillez choisir votre unité </option>
                                              <option></option>
                                           </select>
                                           <label>Club</label>
-                                          <select name="clubId" id="clubId"   class="select2jsMultiSelect form-control" >
+                                          <select name="clubId" id="clubId"   class="form-control" required >
                                              <option value="-1" >veuillez choisir votre club </option>
                                              <?php foreach ($Clubs as $key ) {
                                               echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
