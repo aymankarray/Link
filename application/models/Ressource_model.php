@@ -100,7 +100,7 @@ class Ressource_model extends CI_Model
         $this->db->join('tbl_badges as Badges', 'Badges.badgeId = BaseTbl.badgeId', 'LEFT');
         $this->db->where('BaseTbl.UserId =', $UserId );
         $this->db->where('BaseTbl.badgeId !=', 0 );
-        $this->db->where('BaseTbl.type =','Formation'  );
+        $this->db->where('Project.type =','Formation'  );
         $this->db->order_by('BaseTbl.score DESC  ' );
 
         
