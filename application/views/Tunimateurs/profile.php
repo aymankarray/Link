@@ -125,6 +125,8 @@
                                                    <div class="iq-card-body  p-2">
                                                       <h6>
                                                          <i class="ri-briefcase-line"></i>  <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
+                                                        <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
+                                                        Tunivisions     
                                                        <?php echo $key->ClubName   ?></a> 
                                                    </h6>
                                                       <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
