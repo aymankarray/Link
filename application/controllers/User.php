@@ -684,6 +684,7 @@ class User extends BaseController
         $data["userInfo"] = $this->user_model->getUserInfoWithRole($userId);
         $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId);
         $data  ['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
+        $data["Experience"] = $this->user_cariere_model->carrierListing($userId); 
         
         foreach ($data['postRecords'] as $key ) {                
             $key->commentsRecords= $this->posts_model->CommentsListing($key->postId);
