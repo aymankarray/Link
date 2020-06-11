@@ -577,7 +577,7 @@ class User extends BaseController
 
 
 
-            public function send_mail($title,$mailContent,$addresse,$name)
+    public function send_mail($title,$mailContent,$addresse,$name)
             {
                 // Load PHPMailer library
                     $this->load->library('phpmailer_lib');
@@ -671,31 +671,9 @@ class User extends BaseController
         }        
     }
 
-    /**
-     * This function is used to show users profile
-     */
-    function profile($active = "details")
-    {
-        $data["userInfo"] = $this->user_model->getUserInfoWithRole($this->vendorId);
-        $data["active"] = $active;
-        
-        $this->global['pageTitle'] = $active == "details" ? 'CodeInsect : My Profile' : 'CodeInsect : Change Password';
-        $this->global['active'] = 'profile' ;
-        $this->loadViews("profile", $this->global, $data, NULL);
-    }
 
-        /**
-     * This function is used to show users profile
-     */
-    function PasswordMaj()
-    {
-        $data["userInfo"] = $this->user_model->getUserInfoWithRole($this->vendorId);
-        
-        
-        $this->global['pageTitle'] = 'CodeInsect : Change Password';
-         $this->global['active'] = 'profile' ;
-        $this->loadViews("Upassword", $this->global, $data, NULL);
-    }
+
+
 
 
             /**
@@ -708,9 +686,9 @@ class User extends BaseController
         $data  ['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
         
         foreach ($data['postRecords'] as $key ) {                
-                        $key->commentsRecords              = $this->posts_model->CommentsListing($key->postId);
-                        $key->likeRecords             = $this->posts_model->likesListing($key->postId);
-                         $key->likeCheck          = $this->posts_model->likeCheck($key->postId,$this->vendorId);
+            $key->commentsRecords= $this->posts_model->CommentsListing($key->postId);
+            $key->likeRecords= $this->posts_model->likesListing($key->postId);
+             $key->likeCheck= $this->posts_model->likeCheck($key->postId,$this->vendorId);
                   }
 
         
