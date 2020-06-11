@@ -68,9 +68,9 @@
                                     <div class="modal-body">
 
                                           <label>Debut</label>
-                                          <input type="date"  name="attacheDT" id="attacheDT"  class="form-control" required>
+                                          <input type="date"  name="attacheDT" id="attacheDT"  class="form-control" min="2016-10-01" max="2020-03-01" required>
                                           <label>Fin</label>
-                                          <input type="date" name="endDT" id="endDT" class="form-control"  required>
+                                          <input type="date" min="2016-10-01"  name="endDT" id="endDT" class="form-control"  required>
                                        
                                  
                                           <label>Poste</label>
@@ -80,11 +80,13 @@
                                               echo "<option value='".$key->roleId."'>".$key->role."</option>" ; 
                                              }?>
                                           </select>
+                                          <br>
                                           <label>Cellule</label>
                                           <select name="cellule" id="cellule"  class="form-control" >
                                              <option value="-1" >veuillez choisir votre unité </option>
                                              <option></option>
                                           </select>
+                                          <br>
                                           <label>Club</label>
                                           <select name="clubId" id="clubId"   class="form-control" required >
                                              <option value="-1" >veuillez choisir votre club </option>
