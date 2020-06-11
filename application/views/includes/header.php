@@ -39,7 +39,7 @@
 
         gtag('config', 'UA-151434993-1');
       </script>
-
+   <script    src="<?php echo base_url() ;  ?>assets/js/jquery.min.js"></script>
       <!-- Fire Base-->
       <!-- The core Firebase JS SDK is always required and must be listed first -->
       <!-- The core Firebase JS SDK is always required and must be listed first -->
