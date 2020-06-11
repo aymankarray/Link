@@ -38,7 +38,7 @@
       <!-- Slick JavaScript -->
       <script  src="<?php echo base_url() ;  ?>assets/js/slick.min.js"></script>
       <!-- Select2 JavaScript -->
-      <script   src="<?php echo base_url() ;  ?>assets/js/select2.min.js"></script>
+      <script defer  src="<?php echo base_url() ;  ?>assets/js/select2.min.js"></script>
       <!-- Owl Carousel JavaScript -->
       <script  src="<?php echo base_url() ;  ?>assets/js/owl.carousel.min.js"></script>
       <!-- Magnific Popup JavaScript -->
@@ -289,24 +289,7 @@
 
         })(jQuery);
          </script>
-        <script type="text/javascript">
-          var elem = document.documentElement;
-          /* Function to open fullscreen mode */
-              function openFullscreen() {
-                if (elem.requestFullscreen) {
-                  elem.requestFullscreen();
-                } else if (elem.mozRequestFullScreen) { /* Firefox */
-                  elem.mozRequestFullScreen();
-                } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-                  elem.webkitRequestFullscreen();
-                } else if (elem.msRequestFullscreen) { /* IE/Edge */
-                  elem = window.top.document.body; //To break out of frame in IE
-                  elem.msRequestFullscreen();
-                }
-              }
-
-
-        </script>
+ 
    
 <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;">
    <defs id="SvgjsDefs1002"></defs>

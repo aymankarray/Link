@@ -63,7 +63,7 @@
          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
                               <div class="modal-dialog" role="document">
                                  <div class="modal-content">
-                                    <form action="<?php echo base_url() ?>/User/CarierAdd/<?php echo $uid ?>" method="post">
+                                    <form action="<?php echo base_url() ?>User/CarierAdd/<?php echo $uid ?>" method="post">
                                     <div class="modal-header">
                                        <h5 class="modal-title" id="exampleModalLabel">Nouvelle experience</h5>
                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -74,26 +74,29 @@
                                        
                                           
 
-                                          <
+                                          
 
                                           <label>Poste</label>
                                           <select name="roleId" id="roleId" class="form-control" >
+                                             <option value="-1" ></option>
                                              <?php foreach ($Roles as $key ) {
                                               echo "<option value='".$key->roleId."'>".$key->role."</option>" ; 
                                              }?>
                                           </select>
                                           <label>Cellule</label>
                                           <select name="cellule" id="cellule" class="form-control" >
+                                             <option value="-1" ></option>
                                              <option></option>
                                           </select>
                                           <label>Club</label>
                                           <select name="clubId" id="clubId"  class="form-control" >
+                                             <option value="-1" ></option>
                                              <?php foreach ($Clubs as $key ) {
                                               echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
                                              }?>
                                           </select>
 
-                                          label>Debut</label>
+                                          <label>Debut</label>
                                           <input type="date" name="attacheDT" class="form-control" >
                                           <label>Fin</label>
                                           <input type="date" name="endDT" class="form-control" >
