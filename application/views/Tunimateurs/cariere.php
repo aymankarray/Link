@@ -72,19 +72,19 @@
                                           
 
                                           <label>Poste</label>
-                                          <select name="roleId" id="roleId" class="form-control" >
+                                          <select name="roleId" id="roleId"  class="select2jsMultiSelect form-control" >
                                              <option value="-1" ></option>
                                              <?php foreach ($Roles as $key ) {
                                               echo "<option value='".$key->roleId."'>".$key->role."</option>" ; 
                                              }?>
                                           </select>
                                           <label>Cellule</label>
-                                          <select name="cellule" id="cellule" class="form-control" >
+                                          <select name="cellule" id="cellule"  class="select2jsMultiSelect form-control" >
                                              <option value="-1" ></option>
                                              <option></option>
                                           </select>
                                           <label>Club</label>
-                                          <select name="clubId" id="clubId"  class="form-control" >
+                                          <select name="clubId" id="clubId"   class="select2jsMultiSelect form-control" >
                                              <option value="-1" ></option>
                                              <?php foreach ($Clubs as $key ) {
                                               echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
@@ -133,13 +133,7 @@
               alert("voyez choisir le club") ; 
             }
 
-
-         });
-
-   </script>
-   <script>
-     $(function () {
-             $("#attacheDT").datepicker({
+            $("#attacheDT").datepicker({
                  numberOfMonths: 2,
                  onSelect: function (selected) {
                      var dt = new Date(selected);
@@ -155,6 +149,10 @@
                      $("#attacheDT").datepicker("option", "maxDate", dt);
                  }
              });
+
+
          });
+
    </script>
+
 
