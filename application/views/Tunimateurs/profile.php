@@ -123,10 +123,10 @@
 
                                                   
                                                    <div class="iq-card-body text-center p-2">
-                                                      <h5>
+                                                      <h6>
                                                          <i class="ri-briefcase-line"></i>  <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
                                                        <?php echo $key->ClubName   ?></a> 
-                                                   </h5>
+                                                   </h6>
                                                       <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
                                                    </div>
                                                 </div>
