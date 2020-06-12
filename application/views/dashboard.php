@@ -185,7 +185,7 @@
                         height: 40px;
                     }
                 </style> 
-               <?php if($clubId == 0){  ?>
+               <?php if($clubID == 0){  ?>
                 <table  class="table table-dark table-hover" >
                           <th>
                           </th>
@@ -250,7 +250,7 @@
                   </span>
                 </div>
                 <div class="table-responsive" style="height:834px ;overflow:auto;">
-                    <?php if($clubId == 0){  ?>
+                    <?php if($clubID == 0){  ?>
                     <table class="table table-dark table-hover"  id="dtVerticalScrollExample">
                         <thead>
                             <tr>
