@@ -257,39 +257,46 @@
                                                    <h6>Address</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">United States of America</p>
+                                                   <p class="mb-0"><?php echo $userInfo->adresse ?> <?php echo $userInfo->gouvernorat ?> <?php echo $userInfo->delegation ?></p>
                                                 </div>
                                              </div>
-                                             <h4 class="mt-3">Websites and Social Links</h4>
+                                             <h4 class="mt-3">Social</h4>
                                              <hr>
                                              <div class="row">
                                                 <div class="col-3">
-                                                   <h6>Website</h6>
+                                                   <h6>Facebook</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">www.bootstrap.com</p>
+                                                   <p class="mb-0"><?php echo $userInfo->facebook ?></p>
                                                 </div>
                                                 <div class="col-3">
-                                                   <h6>Social Link</h6>
+                                                   <h6>Instagram</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0">www.bootstrap.com</p>
+                                                   <p class="mb-0"><?php echo $userInfo->instagram ?></p>
                                                 </div>
+                                                <div class="col-3">
+                                                   <h6>Linkedin</h6>
+                                                </div>
+                                                <div class="col-9">
+                                                   <p class="mb-0"><?php echo $userInfo->linkedin ?></p>
+                                                </div>
+
                                              </div>
                                              <h4 class="mt-3">Basic Information</h4>
                                              <hr>
                                              <div class="row">
                                                 <div class="col-3">
-                                                   <h6>Birth Date</h6>
+                                                   <h6>Date de naissance</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php echo $userInfo->birthday ;?></p>
+                                                   <p class="mb-0"><?php echo date('d/m', strtotime($userInfo->birthday)); ?></p>
                                                 </div>
                                                 <div class="col-3">
-                                                   <h6>Birth Year</h6>
+                                                   <h6>Année</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php echo $userInfo->birthday ;?></p>
+                                                   <p class="mb-0"><?php echo date('Y', strtotime($userInfo->birthday)); ?></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>Gender</h6>
