@@ -33,7 +33,10 @@
                                     <?php echo $key->role   ?> <?php echo $key->cellule ?> chez 
                                      <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
                                        <?php echo $key->ClubName   ?>  
-                                    </a>  
+                                    </a>
+                                    <?php if ( $key->Approuve == 0 ) {   ?>
+                                    <i class="ri-shield-check-fill" style="color:#0AEC6A "></i> 
+                                    <?php } ?> 
                                  </h6>
                                  <small class="float-right mt-1">
                                     <?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?>

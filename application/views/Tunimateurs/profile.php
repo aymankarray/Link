@@ -162,6 +162,9 @@
                                                         <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
                                                         Tunivisions     
                                                        <?php echo $key->ClubName   ?></a> 
+                                                  <?php if ( $key->Approuve == 0 ) {   ?>
+                                                   <i class="ri-shield-check-fill" style="color:#0AEC6A "></i> 
+                                                   <?php } ?> 
                                                    </h6>
                                                       <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
                                                    </div>
