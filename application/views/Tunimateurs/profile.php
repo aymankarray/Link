@@ -160,7 +160,7 @@
                                                 <div class="event-post position-relative">
                                                    <div class="iq-card-body  p-2">
                                                       <h6>
-                                                         <i class="ri-briefcase-line"></i>  <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
+                                                         <i class="ri-briefcase-line"></i>  <?php echo $key->role  ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
                                                         <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
                                                         Tunivisions     
                                                        <?php echo $key->ClubName   ?></a>
@@ -188,8 +188,9 @@
                                              <h4 class="card-title">Formations</h4>
                                           </div>
                                        </div>
-                                       <div class="iq-card-body">
+                                       <div class="iq-card-body" id ="FormationsP" >
                                           <?php foreach ($ressourceInfo as $key) {   ?>
+                                          
                                           <div class="timeline-dots"></div>
                                           <h6 class="float-left mb-1"> 
                                              <?php echo $key->titre   ?>  <a> (<?php echo $key->score?>  points ) </a>
@@ -202,10 +203,23 @@
 
                                              </p>
                                           </div>
+                                          
                                           <?php }   ?>
-                                          
-                                          
-                                          
+                                          <script type="text/javascript">
+                                             $('#FormationsP').pagination({
+                                                    dataSource: 
+                                                    [
+                                                    <?php foreach ($ressourceInfo as $key) {   ?>
+                                                    "<h6 class='float-left mb-1'> <?php echo $key->titre ?>  <a> (<?php echo $key->score?>  points ) </a></h6><small class='float-right mt-1><?php echo $key->startDate?></small>" , 
+                                                   <?php }   ?>
+                                                   ],
+                                                    callback: function(data, pagination) {
+                                                        // template method of yourself
+                                                        var html = template(data);
+                                                        dataContainer.html(html);
+                                                    }
+                                                })
+                                          </script>
                                        </div>
                                     </div>
                                  </div>
