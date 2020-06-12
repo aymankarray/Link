@@ -152,7 +152,7 @@
                                        </div>
                                        <div class="iq-card-body">
                                           <div class="row">
-                                             <?php foreach ($HSkils as $key) {   ?>
+                                             <?php foreach ($Diplome as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
 
