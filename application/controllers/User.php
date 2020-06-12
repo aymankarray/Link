@@ -864,8 +864,8 @@ class User extends BaseController
         $data  ['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
 
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
-        $data["HSkils"] = $this->ressource_model->ressourceListingBUserT($userId); 
-        $data["Diplome"] = $this->ressource_model->ressourceListingBUserT($userId);
+        $data["HSkils"] = $this->ressource_model->carrierListing($userId); 
+        $data["Diplome"] = $this->ressource_model->carrierListing($userId);
 
         foreach ($data['postRecords'] as $key ) {                
             $key->commentsRecords= $this->posts_model->CommentsListing($key->postId);
