@@ -280,19 +280,19 @@
                                              <hr>
                                              <div class="row">
                                                 <div class="col-3">
-                                                   <h6>Date de naissance</h6>
+                                                   <h6>Birth Date</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php $date = $userInfo->birthday ;  echo  $date->format('m/d')  ;?></p>
+                                                   <p class="mb-0"><?php echo $userInfo->birthday ;?></p>
                                                 </div>
                                                 <div class="col-3">
-                                                   <h6>Année</h6>
+                                                   <h6>Birth Year</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php echo  $date->format('Y')  ;?></p>
+                                                   <p class="mb-0"><?php echo $userInfo->birthday ;?></p>
                                                 </div>
                                                 <div class="col-3">
-                                                   <h6>Genre</h6>
+                                                   <h6>Gender</h6>
                                                 </div>
                                                 <div class="col-9">
                                                    <p class="mb-0"><?php echo $userInfo->sexe ;?></p>
