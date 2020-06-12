@@ -861,12 +861,13 @@ class User extends BaseController
     {
         $data["userInfo"] = $this->user_model->getUserInfoWithRole($userId);
         $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId);
+        $data['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
 
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
         $data["HSkils"] = ""; 
         $data["Diplome"] = "";
 
-
+        
         
         $this->global['pageTitle'] = $data["userInfo"]->name;
         $this->loadViews("Tunimateurs/profile", $this->global, $data, NULL);
