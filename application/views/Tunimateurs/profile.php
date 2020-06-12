@@ -114,7 +114,7 @@
                                     <div class="iq-card">
                                        <div class="iq-card-header d-flex justify-content-between">
                                           <div class="iq-header-title">
-                                             <h4 class="card-title">Tunivisions Experience</h4>
+                                             <h4 class="card-title">Diplomes</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
                                              <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
@@ -122,7 +122,7 @@
                                        </div>
                                        <div class="iq-card-body">
                                           <div class="row">
-                                             <?php foreach ($Experience as $key) {   ?>
+                                             <?php foreach ($Diplome as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
 
@@ -144,7 +144,7 @@
                                     <div class="iq-card">
                                        <div class="iq-card-header d-flex justify-content-between">
                                           <div class="iq-header-title">
-                                             <h4 class="card-title">Experience Associatif</h4>
+                                             <h4 class="card-title">Hard Skills</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
                                              <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
@@ -152,7 +152,37 @@
                                        </div>
                                        <div class="iq-card-body">
                                           <div class="row">
-                                             <?php foreach ($Experience as $key) {   ?>
+                                             <?php foreach ($HSkils as $key) {   ?>
+                                             <div class="col-sm-12">
+                                                <div class="event-post position-relative">
+
+                                                   <div class="iq-card-body  p-2">
+                                                      <h6>
+                                                         <i class="ri-briefcase-line"></i>  <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
+                                                        <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
+                                                        Tunivisions     
+                                                       <?php echo $key->ClubName   ?></a> 
+                                                   </h6>
+                                                      <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                              <?php }  ?>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="iq-card">
+                                       <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Hard Skills</h4>
+                                          </div>
+                                          <div class="iq-card-header-toolbar d-flex align-items-center">
+                                             <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
+                                          </div>
+                                       </div>
+                                       <div class="iq-card-body">
+                                          <div class="row">
+                                             <?php foreach ($HSkils as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
 
