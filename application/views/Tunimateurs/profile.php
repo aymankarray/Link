@@ -114,7 +114,7 @@
                                     <div class="iq-card">
                                        <div class="iq-card-header d-flex justify-content-between">
                                           <div class="iq-header-title">
-                                             <h4 class="card-title">Diplomes</h4>
+                                             <h4 class="card-title">Tunivisions Experience</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
                                              <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
@@ -122,7 +122,7 @@
                                        </div>
                                        <div class="iq-card-body">
                                           <div class="row">
-                                             <?php foreach ($Diplome as $key) {   ?>
+                                             <?php foreach ($Experience as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
 
@@ -144,7 +144,7 @@
                                     <div class="iq-card">
                                        <div class="iq-card-header d-flex justify-content-between">
                                           <div class="iq-header-title">
-                                             <h4 class="card-title">Hard Skills</h4>
+                                             <h4 class="card-title">Diplomes</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
                                              <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
