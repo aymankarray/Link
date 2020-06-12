@@ -188,29 +188,30 @@
                                              <h4 class="card-title">Formations</h4>
                                           </div>
                                        </div>
-                                       <div class="iq-card-body" id ="FormationsP" >
+                                       <div class="iq-card-body" id=>
+                                          <?php foreach ($ressourceInfo as $key) {   ?>
                                           
+                                          <div class="timeline-dots"></div>
+                                          <h6 class="float-left mb-1"> 
+                                             <?php echo $key->titre   ?>  <a> (<?php echo $key->score?>  points ) </a>
+                                          </h6>
+                                          <small class="float-right mt-1">
+                                             <?php echo $key->startDate?> 
+                                          </small>
+                                          <div class="d-inline-block w-100">
+                                             <p>
+
+                                             </p>
+                                          </div>
+                                          
+                                          <?php }   ?>
+
                                        </div>
                                     </div>
                                  </div>
                               </div>
                            </div>
                         </div>
-                        <script type="text/javascript">
-                                             $('#FormationsP').pagination({
-                                                    dataSource: 
-                                                    [
-                                                    <?php foreach ($ressourceInfo as $key) {   ?>
-                                                    "<h6 class='float-left mb-1'> <?php echo $key->titre ?>  <a> (<?php echo $key->score?>  points ) </a></h6><small class='float-right mt-1><?php echo $key->startDate?></small>" , 
-                                                   <?php }   ?>
-                                                   ],
-                                                    callback: function(data, pagination) {
-                                                        // template method of yourself
-                                                        var html = template(data);
-                                                        dataContainer.html(html);
-                                                    }
-                                                })
-                        </script>
                         <div class="tab-pane fade" id="about" role="tabpanel">
                            <div class="iq-card">
                               <div class="iq-card-body">

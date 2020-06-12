@@ -864,8 +864,8 @@ class User extends BaseController
         $data['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
 
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
-        $data["HSkils"] = ""; 
-        $data["Diplome"] = "";
+        $data["HSkils"] = Null; 
+        $data["Diplome"] = Null;
 
         
         
