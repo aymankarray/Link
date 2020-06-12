@@ -257,7 +257,7 @@
                                                    <h6>Address</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php echo $userInfo->adresse ?> <?php echo $userInfo->gouvernorat ?> <?php echo $userInfo->delegation ?></p>
+                                                   <p class="mb-0"><?php echo $userInfo->adresse ?> <br> <?php echo $userInfo->gouvernorat ?> <?php echo $userInfo->delegation ?></p>
                                                 </div>
                                              </div>
                                              <h4 class="mt-3">Social</h4>
@@ -267,19 +267,19 @@
                                                    <h6>Facebook</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php echo $userInfo->facebook ?></p>
+                                                   <p class="mb-0"><a  href="<?php echo $userInfo->facebook ?>"><?php echo $userInfo->facebook ?></a></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>Instagram</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php echo $userInfo->instagram ?></p>
+                                                   <p class="mb-0"><a  href="<?php echo $userInfo->instagram ?>"><?php echo $userInfo->instagram ?></a></p>
                                                 </div>
                                                 <div class="col-3">
                                                    <h6>Linkedin</h6>
                                                 </div>
                                                 <div class="col-9">
-                                                   <p class="mb-0"><?php echo $userInfo->linkedin ?></p>
+                                                   <p class="mb-0"><a  href="<?php echo $userInfo->linkedin ?>"><?php echo $userInfo->linkedin ?></a></p>
                                                 </div>
 
                                              </div>
@@ -3108,9 +3108,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-sm-12 text-center">
-                     <img src="<?php echo base_url() ;  ?>images/page-img/page-load-loader.gif" alt="loader" style="height: 100px;">
-                  </div>
+                  
                </div>
             </div>
          </div>
