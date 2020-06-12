@@ -183,10 +183,13 @@
                                  </div>
                                  <div class="col-lg-8">
                                     <div class="iq-card">
+                                       <div class="iq-card-header d-flex justify-content-between">
                                           <div class="iq-header-title">
                                              <h4 class="card-title">Formations</h4>
                                           </div>
+                                       </div>
                                        <div class="iq-card-body">
+                                          <?php foreach ($ressourceInfo as $key) {   ?>
                                           <div class="timeline-dots"></div>
                                           <h6 class="float-left mb-1"> 
                                              <?php echo $key->titre   ?>  <a> (<?php echo $key->score?>  points ) </a>
@@ -199,6 +202,7 @@
 
                                              </p>
                                           </div>
+                                          <?php }   ?>
                                           
                                           
                                           
