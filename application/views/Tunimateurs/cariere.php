@@ -35,7 +35,7 @@
                                        <?php echo $key->ClubName   ?>  
                                     </a>
                                     <?php if ( $key->Approuve == 0 ) {   ?>
-                                    <i class="ri-checkbox-circle-fill" style="color:#0AEC6A "></i> 
+                                    <i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i> 
                                     <?php } ?> 
                                  </h6>
                                  <small class="float-right mt-1">
