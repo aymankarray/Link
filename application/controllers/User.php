@@ -685,7 +685,7 @@ class User extends BaseController
         $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId);
         $data  ['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId); 
-        
+
         foreach ($data['postRecords'] as $key ) {                
             $key->commentsRecords= $this->posts_model->CommentsListing($key->postId);
             $key->likeRecords= $this->posts_model->likesListing($key->postId);
@@ -826,10 +826,18 @@ class User extends BaseController
     function CarierShow($userId)
     {
 
-        $data["Experience"] = $this->user_cariere_model->carrierListing($userId);      
+        $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
+        $data["HSkils"] = $this->ressource_model->ressourceListingBUserT($userId); 
+        $data["Diplome"] = $this->ressource_model->ressourceListingBUserT($userId);
+
+
+
         $data["Roles"] = $this->user_model->getUserAllRoles() ; 
         $data["Clubs"] = $this->user_model->getClubs() ;
         $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($userId); 
+
+
+
         $this->global['pageTitle'] = 'Cariere' ;
         
         $this->loadViews("Tunimateurs/cariere", $this->global, $data, NULL);
