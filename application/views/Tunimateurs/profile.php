@@ -155,20 +155,18 @@
                                              <?php foreach ($Diplome as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
-
                                                    <div class="iq-card-body  p-2">
-                                                      <?php if ( $key->Approuve == 0 ) {   ?>
-                                                   <i class="ri-shield-check-fill" ></i> 
-                                                   <?php } ?> 
                                                       <h6>
                                                          <i class="ri-briefcase-line"></i>  <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
                                                         <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
                                                         Tunivisions     
                                                        <?php echo $key->ClubName   ?></a> 
-
-                                                   </h6>
+                                                      </h6>
                                                       <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
                                                    </div>
+                                                   <?php if ( $key->Approuve == 0 ) {   ?>
+                                                      <i class="ri-shield-check-fill" ></i> 
+                                                   <?php } ?> 
                                                 </div>
                                              </div>
                                               <?php }  ?>
