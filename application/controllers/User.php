@@ -676,29 +676,7 @@ class User extends BaseController
 
 
 
-            /**
-     * This function is used to show users profile
-     */
-    function ProfileShow($userId)
-    {
-        $data["userInfo"] = $this->user_model->getUserInfoWithRole($userId);
-        $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId);
-        $data  ['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
-
-        $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
-        $data["HSkils"] = $this->ressource_model->ressourceListingBUserT($userId); 
-        $data["Diplome"] = $this->ressource_model->ressourceListingBUserT($userId);
-
-        foreach ($data['postRecords'] as $key ) {                
-            $key->commentsRecords= $this->posts_model->CommentsListing($key->postId);
-            $key->likeRecords= $this->posts_model->likesListing($key->postId);
-             $key->likeCheck= $this->posts_model->likeCheck($key->postId,$this->vendorId);
-                  }
-
-        
-        $this->global['pageTitle'] = $data["userInfo"]->name;
-        $this->loadViews("Tunimateurs/profile", $this->global, $data, NULL);
-    }
+   
 
 
     /**
@@ -875,6 +853,30 @@ class User extends BaseController
                 redirect('User/CarierShow/'.$userId);
     }
 
+
+         /**
+     * This function is used to show users profile
+     */
+    function ProfileShow($userId)
+    {
+        $data["userInfo"] = $this->user_model->getUserInfoWithRole($userId);
+        $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId);
+        $data  ['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
+
+        $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
+        $data["HSkils"] = $this->ressource_model->ressourceListingBUserT($userId); 
+        $data["Diplome"] = $this->ressource_model->ressourceListingBUserT($userId);
+
+        foreach ($data['postRecords'] as $key ) {                
+            $key->commentsRecords= $this->posts_model->CommentsListing($key->postId);
+            $key->likeRecords= $this->posts_model->likesListing($key->postId);
+             $key->likeCheck= $this->posts_model->likeCheck($key->postId,$this->vendorId);
+                  }
+
+        
+        $this->global['pageTitle'] = $data["userInfo"]->name;
+        $this->loadViews("Tunimateurs/profile", $this->global, $data, NULL);
+    }
 
 
 }

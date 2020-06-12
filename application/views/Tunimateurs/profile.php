@@ -182,14 +182,23 @@
                                     
                                  </div>
                                  <div class="col-lg-8">
-                                       
-                              Content
-
-
-
                                     <div class="iq-card">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Formations</h4>
+                                          </div>
                                        <div class="iq-card-body">
-                                          
+                                          <div class="timeline-dots"></div>
+                                          <h6 class="float-left mb-1"> 
+                                             <?php echo $key->titre   ?>  <a> (<?php echo $key->score?>  points ) </a>
+                                          </h6>
+                                          <small class="float-right mt-1">
+                                             <?php echo $key->startDate?> 
+                                          </small>
+                                          <div class="d-inline-block w-100">
+                                             <p>
+
+                                             </p>
+                                          </div>
                                           
                                           
                                           
