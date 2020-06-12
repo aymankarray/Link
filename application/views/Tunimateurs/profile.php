@@ -57,11 +57,12 @@
                                           <h6>Posts</h6>
                                           <p class="mb-0"><?php echo count($postRecords) ?></p>
                                        </li>
-                                       <!--
+                                       
                                        <li class="text-center pl-3">
-                                          <h6>Followers</h6>
+                                          <h6>Score</h6>
                                           <p class="mb-0">206</p>
                                        </li>
+                                       <!--
                                        <li class="text-center pl-3">
                                           <h6>Following</h6>
                                           <p class="mb-0">100</p>
@@ -102,7 +103,12 @@
                                  <div class="col-lg-4">
                                     <div class="iq-card">
                                        <div class="iq-card-body">
-                                          <a href="#"><span class="badge badge-pill badge-primary font-weight-normal ml-auto mr-1"><i class="ri-star-line"></i></span> <?php echo count($ressourceInfo) ?> Badges</a>
+                                          <a href="#">
+                                             <span class="badge badge-pill badge-primary font-weight-normal ml-auto mr-1">
+                                                <i class="ri-star-line"></i>
+                                             </span> 
+                                             <?php echo count($ressourceInfo) ?> Badges
+                                          </a>
                                        </div>
                                     </div>
                                     <div class="iq-card">
@@ -111,7 +117,7 @@
                                              <h4 class="card-title">Tunivisions Experience</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
-                                             <p class="m-0"><a href="javacsript:void();"> Create </a></p>
+                                             <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
@@ -119,9 +125,37 @@
                                              <?php foreach ($Experience as $key) {   ?>
                                              <div class="col-sm-12">
                                                 <div class="event-post position-relative">
-                                                   
 
-                                                  
+                                                   <div class="iq-card-body  p-2">
+                                                      <h6>
+                                                         <i class="ri-briefcase-line"></i>  <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
+                                                        <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
+                                                        Tunivisions     
+                                                       <?php echo $key->ClubName   ?></a> 
+                                                   </h6>
+                                                      <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                              <?php }  ?>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="iq-card">
+                                       <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Experience Associatif</h4>
+                                          </div>
+                                          <div class="iq-card-header-toolbar d-flex align-items-center">
+                                             <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
+                                          </div>
+                                       </div>
+                                       <div class="iq-card-body">
+                                          <div class="row">
+                                             <?php foreach ($Experience as $key) {   ?>
+                                             <div class="col-sm-12">
+                                                <div class="event-post position-relative">
+
                                                    <div class="iq-card-body  p-2">
                                                       <h6>
                                                          <i class="ri-briefcase-line"></i>  <?php echo $key->role   ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >

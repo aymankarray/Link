@@ -185,7 +185,7 @@
                         height: 40px;
                     }
                 </style> 
-               <!--
+               <?php if($clubId == 0){  ?>
                 <table  class="table table-dark table-hover" >
                           <th>
                           </th>
@@ -235,7 +235,7 @@
                                         </thead>
                                         <?php $c= $c + 1 ;  }   }else { echo "Il y a pas de données";} ?>
                 </table>
-                -->
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -250,7 +250,7 @@
                   </span>
                 </div>
                 <div class="table-responsive" style="height:834px ;overflow:auto;">
-                    <!--
+                    <?php if($clubId == 0){  ?>
                     <table class="table table-dark table-hover"  id="dtVerticalScrollExample">
                         <thead>
                             <tr>
@@ -322,7 +322,7 @@
                                 <?php } }else { echo "Il y a pas de données";} ?>
                         </tbody>
                     </table>
-                    -->
+                    <?php }  ?>
                 </div>
             </div>
         </div>
