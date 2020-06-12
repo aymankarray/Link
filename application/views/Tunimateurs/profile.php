@@ -132,6 +132,9 @@
                                                         <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
                                                         Tunivisions     
                                                        <?php echo $key->ClubName   ?></a> 
+                                                      <?php if ( $key->Approuve == 0 ) {   ?>
+                                                         <i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i> 
+                                                      <?php } ?> 
                                                    </h6>
                                                       <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
                                                    </div>
@@ -162,7 +165,7 @@
                                                         Tunivisions     
                                                        <?php echo $key->ClubName   ?></a>
                                                         <?php if ( $key->Approuve == 0 ) {   ?>
-                                                            <<i class="ri-checkbox-circle-fill" style="color:#0AEC6A "></i> 
+                                                            <<i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i> 
                                                          <?php } ?>  
                                                       </h6>
                                                       <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
