@@ -160,7 +160,8 @@
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
                                                          <h6>
-                                                            <i class="ri-briefcase-line"></i> <?php echo $key->type  ?> <?php echo $key->titre ?> de  <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"><?php echo $key->instituts  ?> </a>
+                                                            <i class="ri-briefcase-line"></i> <?php echo $key->type  ?> <?php echo $key->titre ?> de  
+                                                            <a class="text-primary" ><?php echo $key->instituts  ?> </a>
                                                              
                                                          </h6>
                                                          <p><?php echo $key->dateDebut?> - <?php echo $key->dateFin  ?></p>
