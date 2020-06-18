@@ -53,6 +53,56 @@
                      </div>
                   </div>
 
+                  <!--  Diplome   -->
+                  <div class="col-lg-6">
+                     <div class="iq-card">
+                        <div class="iq-card-header d-flex justify-content-between">
+                           <div class="iq-header-title">
+                              <h4 class="card-title">Diplome</h4>
+                           </div>
+                        </div>
+                        <div class="iq-card-body">
+                           <ul class="iq-timeline">
+
+                               <li>
+                                 <div class="timeline-dots"></div>
+                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Mise à jour votre Tunivisions Experience
+                                 </button>
+                                 
+                              </li>
+
+                              <?php foreach ($Diplome as $key) {   ?>
+                              <li>
+                                 <div class="timeline-dots"></div>
+                                 <h6 class="float-left mb-1"> 
+                                    <?php echo $key->role   ?> <?php echo $key->cellule ?> chez 
+                                     <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
+                                       <?php echo $key->ClubName   ?>  
+                                    </a>
+                                    <?php if ( $key->Approuve == 0 ) {   ?>
+                                    <i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i> 
+                                    <?php } ?> 
+                                 </h6>
+                                 <small class="float-right mt-1">
+                                    <?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?>
+                                 </small>
+                                 <div class="d-inline-block w-100">
+                                    <p>
+
+                                    </p>
+                                 </div>
+                              </li>
+                              <?php }  ?>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+
+                 <!--  End Diplome   -->
+
+
+
+
                   <div class="col-lg-6">
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">

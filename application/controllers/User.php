@@ -809,10 +809,8 @@ class User extends BaseController
 
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
         $data["HSkils"] = $this->ressource_model->ressourceListingBUserT($userId); 
-        $data["Diplome"] = $this->ressource_model->ressourceListingBUserT($userId);
-
-
-
+        $data["Diplome"] = $this->user_cariere_model->diplomeListing($userId) ;
+ 
         $data["Roles"] = $this->user_model->getUserAllRoles() ; 
         $data["Clubs"] = $this->user_model->getClubs() ;
         $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($userId); 
