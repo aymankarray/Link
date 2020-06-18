@@ -32,7 +32,8 @@ class User extends BaseController
         $this->load->model('ressource_model');
         $this->load->model('login_model');
         $this->load->model('posts_model') ; 
-         $this->load->model('user_cariere_model') ; 
+        $this->load->model('user_cariere_model') ;
+        $this->load->model('user_diplome_model') ;  
         $this->isLoggedIn();   
     }
     
@@ -809,8 +810,8 @@ class User extends BaseController
 
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
         $data["HSkils"] = $this->ressource_model->ressourceListingBUserT($userId); 
-        $data["Diplome"] = $this->user_cariere_model->diplomeListing($userId) ;
- 
+        $data["Diplome"] = $this->user_diplome_model->diplomeListing($userId) ;
+
         $data["Roles"] = $this->user_model->getUserAllRoles() ; 
         $data["Clubs"] = $this->user_model->getClubs() ;
         $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($userId); 
