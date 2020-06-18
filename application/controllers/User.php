@@ -34,6 +34,7 @@ class User extends BaseController
         $this->load->model('posts_model') ; 
         $this->load->model('user_cariere_model') ;
         $this->load->model('user_diplome_model') ;  
+        
         $this->isLoggedIn();   
     }
     
@@ -864,7 +865,7 @@ class User extends BaseController
 
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
         $data["HSkils"] = $this->user_cariere_model->carrierListing($userId);
-        $data["Diplome"] = $this->user_cariere_model->carrierListing($userId);
+        $data["Diplome"] = $this->user_diplome_model->diplomeListing($userId) ;
 
         
         
