@@ -160,15 +160,12 @@
                                                 <div class="event-post position-relative">
                                                    <div class="iq-card-body  p-2">
                                                       <h6>
-                                                         <i class="ri-briefcase-line"></i>  <?php echo $key->role  ?> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
-                                                        <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
-                                                        Tunivisions     
-                                                       <?php echo $key->ClubName   ?></a>
+                                                         <i class="ri-briefcase-line"></i>  <?php echo $key->type  ?> <?php echo $key->titre ?> de  <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"><?php echo $key->instituts  ?> </a>
                                                         <?php if ( $key->Approuve == 0 ) {   ?>
                                                             <<i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i> 
                                                          <?php } ?>  
                                                       </h6>
-                                                      <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
+                                                      <p><?php echo $key->dateDebut?>  - <?php echo $key->dateFin   ?></p>
                                                    </div>
 
                                                 </div>
