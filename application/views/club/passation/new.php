@@ -27,7 +27,7 @@
                             <label>
                               Poste actuelle
                             </label>
-                            <select name=""  >
+                            <select name=""  class="form-control"  >
                               <option value="" ><?php echo $role ?></option>
                             </select>                            
                             </div>
@@ -35,7 +35,7 @@
                             <label>
                               Cellule actuelle
                             </label>
-                            <select >
+                            <select   class="form-control" >
                               <option  ><?php echo $cellule ?></option>
                             </select>                            
                             </div>
@@ -44,7 +44,7 @@
                             <label>
                               Je veux postulé pour le poste de 
                             </label>
-                            <select name=""  >
+                            <select name=""   class="form-control" >
                               <option value="1" >Président(e)</option>
                               <option value="2" >Vice Président(e)</option>
                               <option value="6" >Assistant(e)</option>
@@ -65,7 +65,7 @@
                             </div>
 
                             <label>Plan d'action :</label>
-                            <textarea rows="20" >
+                            <textarea rows="20"  class="form-control" >
                               
                             </textarea>
 
