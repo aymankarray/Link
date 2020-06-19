@@ -11,7 +11,7 @@ class Passation extends BaseController {
         parent::__construct();
         $this->load->model('user_model');
         $this->load->model('academy_formation_model');
-        $this->load->model('passation_model');
+
         $this->isLoggedInPub();   
     }
     
