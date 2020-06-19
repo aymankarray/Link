@@ -20,10 +20,9 @@
                     <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
                         
 
-
-                          <div class="row " >
-                            <small class="text-muted">
-                              on va prendre une copie de votre profile comme étant un cv merci de le mettre à jour </small>
+<small class="text-muted">On va prendre une copie de votre profile comme étant un cv merci de le mettre à jour </small>
+                          <div class="row" >
+                            
                             <div class="col-sm-6">
                             <label>
                               Poste actuelle
