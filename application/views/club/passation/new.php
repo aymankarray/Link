@@ -65,7 +65,7 @@
                             </div>
                             <div class="col-sm-12">
                             <label>Plan d'action :</label>
-                            <textarea rows="20"  class="form-control" ></textarea>
+                            <textarea rows="10"  class="form-control" ></textarea>
                             </div>
 
                           </div>
