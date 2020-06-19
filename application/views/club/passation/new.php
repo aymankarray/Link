@@ -20,14 +20,14 @@
                     <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
                         
 
-<small class="text-muted">On va prendre une copie de votre profile comme étant un cv merci de le mettre à jour </small>
+              <small class="text-muted">On va prendre une copie de votre profile comme étant un cv merci de le mettre à jour <br> </small>
                           <div class="row" >
                             
                             <div class="col-sm-6">
                             <label>
                               Poste actuelle
                             </label>
-                            <select name=""  class="form-control"  >
+                            <select name=""  class="form-control"  disabled >
                               <option value="" ><?php echo $role_text ?></option>
                             </select>                            
                             </div>
@@ -35,8 +35,8 @@
                             <label>
                               Cellule actuelle
                             </label>
-                            <select   class="form-control" >
-                              <option  ><?php echo $cellule ?></option>
+                            <select   class="form-control" disabled >
+                              <option  value="<?php echo $cellule ?>" ><?php echo $cellule ?></option>
                             </select>                            
                             </div>
 
