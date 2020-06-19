@@ -28,7 +28,7 @@
                               Poste actuelle
                             </label>
                             <select name=""  class="form-control"  >
-                              <option value="" ><?php echo $role ?></option>
+                              <option value="" ><?php echo $role_text ?></option>
                             </select>                            
                             </div>
                             <div class="col-sm-6">
@@ -63,11 +63,10 @@
                                              <option value="Gestion des talents" >Gestion des talents</option>
                             </select>                            
                             </div>
-
+                            <div class="col-sm-12">
                             <label>Plan d'action :</label>
-                            <textarea rows="20"  class="form-control" >
-                              
-                            </textarea>
+                            <textarea rows="20"  class="form-control" ></textarea>
+                            </div>
 
                           </div>
 
