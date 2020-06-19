@@ -779,9 +779,23 @@
                      <li>
                         <a href="<?php echo base_url() ?>dashboard" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Dashboard</span></a>
                      </li>
+
                      <li>
-                        <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $clubID ?>" class="iq-waves-effect"><i class="las la-users"></i><span>Mon club</span></a>
-                     </li>
+                        <a href="#Mclub" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="true">
+                            <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
+                            <i class="ri-book-open-line"></i>Mon club <i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                        </a>
+                        <ul id="Mclub" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                            <li>
+                                <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $clubID ?>" ><i class="ri-computer-line"></i>Details  </a>     <small class="mb-3"><i class="ri-terminal-line"></i> Passation </small>
+                            </li>
+                            <li>
+                                <a > <i class="ri-award-line"></i>Certifications  </a>  
+                                 <small class="mb-3"><i class="ri-terminal-line"></i> coming soon</small>
+                            </li>
+                        </ul>
+                      </li>
+                      
                      <li>
                         <a href="<?php echo base_url() ?>Project/projectListing" class="iq-waves-effect"><i class="las la-calendar"></i><span>Evenement</span></a>
                      </li>
