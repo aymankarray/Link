@@ -13,7 +13,8 @@ class Passation extends BaseController {
         $this->load->model('academy_formation_model');
         $this->load->model('user_cariere_model');
         $this->load->model('user_diplome_model');
-        
+        $this->load->model('ressource_model');
+
         $this->isLoggedInPub();   
     }
     
@@ -36,6 +37,7 @@ class Passation extends BaseController {
 
 		                $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);   
 		           		$data["Diplome"] = $this->user_diplome_model->diplomeListing($this->vendorId) ;
+		           		$data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId);
 		           		
 		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
 		        		  
