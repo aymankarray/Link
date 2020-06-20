@@ -133,12 +133,12 @@
 
 
                             <div class="col-sm-6">
-                            <h4><br>Autre activité associatif  :</h4>
+                            <h4><br>Autres activités associatives  :</h4>
                             <textarea rows="5"  class="form-control" ></textarea>
                             </div>
 
                             <div class="col-sm-6">
-                            <h4><br>Autre activité Professionel  :</h4>
+                            <h4><br>Autres activités associatives  :</h4>
                             <textarea rows="5"  class="form-control" ></textarea>
                             </div>
 
