@@ -24,17 +24,17 @@
                           <div class="row" >
                             
                             <div class="col-sm-6">
-                            <label>
-                              Poste actuelle
-                            </label>
+                            <h4>
+                              Poste actuelle : 
+                            </h4>
                             
                               <?php echo $role_text ?>
                                                     
                             </div>
                             <div class="col-sm-6">
-                            <label>
-                              Cellule actuelle
-                            </label>
+                            <h4>
+                              Cellule actuelle :
+                            </h4>
                            
                               <?php echo $cellule ?>
                                                         
