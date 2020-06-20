@@ -41,9 +41,9 @@
                             </div>
 
                             <div class="col-sm-6">
-                            <label>
+                            <h4>
                               Je veux postulé pour le poste de 
-                            </label>
+                            </h4>
                             <select name=""   class="form-control" >
                               <option value="1" >Président(e)</option>
                               <option value="2" >Vice Président(e)</option>
@@ -51,9 +51,9 @@
                             </select>                            
                             </div>
                             <div class="col-sm-6">
-                            <label>
+                            <h4>
                               cellule
-                            </label>
+                            </h4>
                             <select name="cellule" id="cellule"  class="form-control" >
                                              <option value="-1" >Veuillez choisir votre unité </option>
                                              <option value="" ></option>
