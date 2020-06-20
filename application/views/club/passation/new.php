@@ -146,7 +146,7 @@
 
                             <div class="col-sm-12">
                             <h4><br>Plan d'action :</h4>
-                            <div id="myeditablediv">Click here to edit!</div>
+                            <textarea rows="10"  class="form-control" ></textarea>
                             </div>
 
 
@@ -184,11 +184,3 @@
             </div>
          </div>
 
-
-<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-<script>
-    tinymce.init({
-    selector: '#myeditablediv',
-    inline: true
-  });
-</script>
