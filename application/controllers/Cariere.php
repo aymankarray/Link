@@ -13,7 +13,7 @@ class Cariere extends BaseController {
         $this->load->model('academy_formation_model');
         $this->load->model('user_cariere_model') ;
         $this->load->model('user_diplome_model') ;  
-        
+
         $this->isLoggedInPub();   
     }
     
@@ -93,7 +93,7 @@ class Cariere extends BaseController {
                      );
                 
        
-                $result = $this->User_diplome_model->addNewDipmome($userInfo);
+                $result = $this->user_diplome_model->addNewDipmome($userInfo);
 
                 redirect('User/ProfileShow/'.$userId);
     }
