@@ -91,7 +91,7 @@
                               <?php }  ?>
                             <h4><br>Autres activités associatives :</h4>
                             <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a href="<?php echo base_url() ?>User/CarierShow/<?php echo $uid ?>"> mettre à jour </a> <br> </small>
-                               <?php foreach ($Diplome as $key) {   ?>
+                               <?php foreach ($ExperienceA as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
@@ -132,7 +132,7 @@
 
                             <h4><br>Activités professionelle :</h4>
                             <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a href="<?php echo base_url() ?>User/CarierShow/<?php echo $uid ?>"> mettre à jour </a> <br> </small>
-                               <?php foreach ($Diplome as $key) {   ?>
+                               <?php foreach ($ExperienceP as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
@@ -182,7 +182,7 @@
 
 
                             <div class="col-sm-12">
-                              <h4><br>Plan d'action :</h4>
+                              <h4><br>lettre de motivation :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
 

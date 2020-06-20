@@ -26,7 +26,17 @@ class Passation extends BaseController {
 		                $this->global['pageTitle'] = 'Passation';
 		                $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);   
 		           		$data["Diplome"] = $this->user_diplome_model->diplomeListing($this->vendorId) ;
+		           		
+
+
+		           		$data["ExperienceA"] = $this->user_diplome_model->carrierAutreListing($this->vendorId) ;
+		           		$data["ExperienceP"] = $this->user_diplome_model->carrierProListing($this->vendorId) ;
+
+
+
 		           		$data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($this->vendorId);
+
+
 		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
 		        }  
 
