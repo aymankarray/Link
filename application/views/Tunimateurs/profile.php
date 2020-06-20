@@ -3168,3 +3168,58 @@
             </div>
          </div>
       <!-- -->
+
+
+
+      <!--  diplome   -->
+         <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <form action="<?php echo base_url() ?>User/CarierAdd/<?php echo $uid ?>" method="post">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">ajouter un Diplome</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+
+                        <label>Debut</label>
+                        <input type="number"  name="attacheDT" id="dateDebut"  class="form-control" min="2010" max="2020" required>
+                        <label>Fin</label>
+                        <input type="number" min="2010" max="2020 name="dateFin" id="dateFin" class="form-control"  required>
+                     
+               
+                        <label>Type de diplome : </label>
+                        <select name="type" id="type"  class="form-control" required >
+                           <option value="" >Veuillez choisir votre poste </option>
+                           <option value="Licence appliquée" >Licence appliquée</option>
+                           <option value="Licence fondamentale" >Licence fondamentale</option>
+                           <option value="Master professionnel" >Master professionnel</option>
+                           <option value="Master de recherche" >Master de recherche</option>
+                           <option value="Ingénieurie" >Ingénieurie</option>
+                        </select>
+                        <br>
+                        <label>Titre : </label>
+                        <input type="text" name="titre" >
+                        <br>
+                        <label>Ecole : </label>
+                        <select name="clubId" id="clubId"   class="form-control" required >
+                           <option value="-1" >Veuillez choisir votre école </option>
+                           <?php foreach ($Clubs as $key ) {
+                            echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
+                           }?>
+                        </select>
+
+
+                     
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <input id="TF" type="submit"  class="btn btn-primary">
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      <!-- -->
