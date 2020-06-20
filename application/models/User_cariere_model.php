@@ -83,6 +83,9 @@ class User_cariere_model extends CI_Model
         
         return $insert_id;
     }
+
+
+
    
     
     /**

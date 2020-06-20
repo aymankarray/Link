@@ -117,7 +117,7 @@
                                              <h4 class="card-title">Tunivisions Experience</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
-                                             <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal"> Modifier </a></p>
+                                             <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal"> Ajouter </a></p>
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
@@ -150,7 +150,7 @@
                                              <h4 class="card-title">Diplomes</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
-                                             <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal1"> Modifier </a></p>
+                                             <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal1"> Ajouter </a></p>
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
@@ -3115,7 +3115,7 @@
          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog" role="document">
                <div class="modal-content">
-                  <form action="<?php echo base_url() ?>User/CarierAdd/<?php echo $uid ?>" method="post">
+                  <form action="<?php echo base_url() ?>Cariere/CarierAdd/<?php echo $uid ?>" method="post">
                   <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">Nouvelle experience</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -3127,7 +3127,7 @@
                         <label>Debut</label>
                         <input type="number"  name="attacheDT" id="attacheDT"  class="form-control" min="2016" max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2017" max="2017"   name="endDT" id="endDT" class="form-control"  required>
+                        <input type="number" min="2017" max="2020"   name="endDT" id="endDT" class="form-control"  required>
                      
                
                         <label>Poste</label>
@@ -3175,7 +3175,7 @@
          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog" role="document">
                <div class="modal-content">
-                  <form  method="post">
+                  <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd/<?php echo $uid ?>" >
                   <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">ajouter un Diplome</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -3185,7 +3185,7 @@
                   <div class="modal-body">
 
                         <label>Debut</label>
-                        <input type="number"  name="attacheDT" id="dateDebut"  class="form-control" min="2010" max="2020" required>
+                        <input type="number"  name="dateDebut" id="dateDebut"  class="form-control" min="2010" max="2020" required>
                         <label>Fin</label>
                         <input type="number" min="2010" max="2020" name="dateFin" id="dateFin" class="form-control"  required>
                      
@@ -3204,7 +3204,7 @@
                         <input type="text"   class="form-control" name="titre" >
                         <br>
                         <label>Ecole : </label>
-                        <select name="clubId" id="institut"   class="form-control" required >
+                        <select name="institut" id="institut"   class="form-control" required >
                            <option value="-1" >Veuillez choisir votre école </option>
                            <?php foreach ($Clubs as $key ) {
                             echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
@@ -3232,11 +3232,15 @@
               var roleId = $( '#roleId' );
               var cellule = $( '#cellule' );
               var clubId = $( '#clubId' );
+              var institut = $( '#institut' );
+              var institut = $( '#type' );
 
               
              $('#roleId').select2();
              $('#cellule').select2();
              $('#clubId').select2();
+             $('#type').select2();
+             $('#institut').select2();
 
          });
 
