@@ -20,7 +20,7 @@
                     <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
                         
 
-              <small class="text-muted">On va prendre une copie de votre profile comme étant un cv merci de le mettre à jour <br> </small>
+              
                           <div class="row" >
                             
                             <div class="col-sm-6">
@@ -66,6 +66,7 @@
                             </div>
                           </div>
                           <div class="row" >
+                            <small class="text-muted text-primary">On va prendre une copie de votre profile comme étant un cv merci de le mettre à jour <br> </small>
                             <div class="col-sm-6">
                             <h4><br>Experience Tunivisions :</h4>
                               <?php foreach ($Experience as $key) {   ?>
