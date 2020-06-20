@@ -68,7 +68,7 @@
                           <div class="row" >
 
                             <div class="col-sm-6">
-                              <small class="text-muted text-primary">On va prendre une copie de votre profile comme étant un cv merci de le <a href="<?php echo base_url() ?>User/CarierShow/<?php echo $uid ?>"> mettre à jour </a> <br> </small>
+                              <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a href="<?php echo base_url() ?>User/CarierShow/<?php echo $uid ?>"> mettre à jour </a> <br> </small>
                             <h4><br>Experience Tunivisions :</h4>
                               <?php foreach ($Experience as $key) {   ?>
                                                <div class="col-sm-12">
