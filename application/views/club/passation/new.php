@@ -154,7 +154,7 @@
 
                             </div>
                             
-                            <div class="col-sm-6">
+                            <div class="col-sm-6" style="height:834px ;overflow:auto;">
                              <h4 ><br>Formations</h4>
                               <?php foreach ($ressourceInfo as $key) {   ?>
                                           
@@ -203,7 +203,7 @@
 
                            
          
-                        
+                        <br>
     
                         <div class="box-footer">
                             <input type="submit" class="btn btn-primary" value="Envoyer" />
