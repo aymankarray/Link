@@ -156,7 +156,7 @@
                             </div>
                             
                             <div class="col-sm-6">
-                             <h4 >Formations</h4>
+                             <h4 ><br>Formations</h4>
                               <?php foreach ($ressourceInfo as $key) {   ?>
                                           
                                           <div class="timeline-dots"></div>
