@@ -39,7 +39,8 @@
                               <?php echo $cellule ?>
                                                         
                             </div>
-
+                          </div>
+                          <div class="row" >
                             <div class="col-sm-6">
                             <h4>
                               Je veux postulé pour le poste de 
@@ -63,8 +64,10 @@
                                              <option value="Gestion des talents" >Gestion des talents</option>
                             </select>                            
                             </div>
+                          </div>
+                          <div class="row" >
                             <div class="col-sm-12">
-                            <label>Plan d'action :</label>
+                            <h4>Plan d'action :</h4>
                             <textarea rows="10"  class="form-control" ></textarea>
                             </div>
 
