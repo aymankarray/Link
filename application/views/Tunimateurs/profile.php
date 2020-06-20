@@ -3204,7 +3204,7 @@
                         <input type="text"   class="form-control" name="titre" >
                         <br>
                         <label>Ecole : </label>
-                        <select name="clubId" id="clubId"   class="form-control" required >
+                        <select name="clubId" id="institut"   class="form-control" required >
                            <option value="-1" >Veuillez choisir votre école </option>
                            <?php foreach ($Clubs as $key ) {
                             echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
@@ -3223,3 +3223,21 @@
             </div>
          </div>
       <!-- -->
+
+
+
+          <script type="text/javascript">
+          $( document ).ready( function()
+          {
+              var roleId = $( '#roleId' );
+              var cellule = $( '#cellule' );
+              var clubId = $( '#clubId' );
+
+              
+             $('#roleId').select2();
+             $('#cellule').select2();
+             $('#clubId').select2();
+
+         });
+
+   </script>
