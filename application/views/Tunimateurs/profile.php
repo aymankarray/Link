@@ -3175,7 +3175,7 @@
          <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog" role="document">
                <div class="modal-content">
-                  <form action="<?php echo base_url() ?>User/CarierAdd/<?php echo $uid ?>" method="post">
+                  <form  method="post">
                   <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">ajouter un Diplome</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
