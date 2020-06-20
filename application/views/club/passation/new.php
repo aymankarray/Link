@@ -25,7 +25,7 @@
                             
                             <div class="col-sm-6">
                             <h4>
-                              Poste actuelle : 
+                              <br>Poste actuelle : 
                             </h4>
                             
                               <?php echo $role_text ?>
@@ -33,7 +33,7 @@
                             </div>
                             <div class="col-sm-6">
                             <h4>
-                              Cellule actuelle :
+                             <br>Cellule actuelle :
                             </h4>
                            
                               <?php echo $cellule ?>
@@ -66,8 +66,31 @@
                             </div>
                           </div>
                           <div class="row" >
-                            <div class="col-sm-12">
-                            <h4>Plan d'action :</h4>
+                            <div class="col-sm-6">
+                            <h4><br>Experience Tunivisions :</h4>
+                              <?php foreach ($Experience as $key) {   ?>
+                                               <div class="col-sm-12">
+                                                  <div class="event-post position-relative">
+
+                                                     <div class="iq-card-body  p-2">
+                                                        <h6>
+                                                           <i class="ri-briefcase-line"></i>  <b><?php echo $key->role   ?></b> <?php echo $key->cellule ?> chez <a class="text-primary" href="<?php echo base_url() ?>club/clubInfo/<?php echo  $key->clubId ?>"  >
+                                                          <?php if($key->clubId > 3) { echo 'Club' ; }  ?>    
+                                                          Tunivisions     
+                                                         <?php echo $key->ClubName   ?></a> 
+                                                        <?php if ( $key->Approuve == 0 ) {   ?>
+                                                           <i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i> 
+                                                        <?php } ?> 
+                                                     </h6>
+                                                        <p><?php echo $key->attacheDT?>  - <?php echo $key->endDT   ?></p>
+                                                     </div>
+                                                  </div>
+                                               </div>
+                              <?php }  ?>
+                            </div>
+
+                            <div class="col-sm-6">
+                            <h4><br>Plan d'action :</h4>
                             <textarea rows="10"  class="form-control" ></textarea>
                             </div>
 

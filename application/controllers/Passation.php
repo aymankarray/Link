@@ -11,6 +11,7 @@ class Passation extends BaseController {
         parent::__construct();
         $this->load->model('user_model');
         $this->load->model('academy_formation_model');
+        $this->load->model('user_cariere_model');
 
         $this->isLoggedInPub();   
     }
@@ -32,7 +33,7 @@ class Passation extends BaseController {
 		                
 		                $this->global['pageTitle'] = 'Passation';
 
-		                $data['Fromations'] = "" ;
+		                $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);   
 		           		
 		           		
 		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
