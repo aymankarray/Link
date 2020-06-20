@@ -43,7 +43,7 @@
                           <div class="row" >
                             <div class="col-sm-6">
                             <h4>
-                              Je veux postulé pour le poste de 
+                              <br>Je veux postulé pour le poste de 
                             </h4>
                             <select name=""   class="form-control" >
                               <option value="1" >Président(e)</option>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="col-sm-6">
                             <h4>
-                              cellule
+                              <br> cellule
                             </h4>
                             <select name="cellule" id="cellule"  class="form-control" >
                                              <option value="-1" >Veuillez choisir votre unité </option>
