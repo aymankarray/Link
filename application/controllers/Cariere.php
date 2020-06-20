@@ -75,11 +75,11 @@ class Cariere extends BaseController {
      */
     function DiplomeAdd($userId)
     {           
-                $roleId = $this->input->post('roleId') ; 
-                $cellule = $this->input->post('cellule') ; 
-                $clubId = $this->input->post('clubId') ; 
-                $endDT = $this->input->post('endDT') ;
-                $attacheDT = $this->input->post('attacheDT') ;
+                $dateDebut = $this->input->post('dateDebut') ; 
+                $dateFin = $this->input->post('dateFin') ; 
+                $type = $this->input->post('type') ; 
+                $titre = $this->input->post('titre') ;
+                $institut = $this->input->post('institut') ;
 
            
                 $userInfo = array(
