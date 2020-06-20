@@ -131,10 +131,24 @@
                            
 
 
+
                             <div class="col-sm-6">
+                            <h4><br>Autre activité associatif  :</h4>
+                            <textarea rows="10"  class="form-control" ></textarea>
+                            </div>
+
+                            <div class="col-sm-6">
+                            <h4><br>Autre activité Professionel  :</h4>
+                            <textarea rows="10"  class="form-control" ></textarea>
+                            </div>
+
+
+
+                            <div class="col-sm-12">
                             <h4><br>Plan d'action :</h4>
                             <textarea rows="10"  class="form-control" ></textarea>
                             </div>
+
 
                           </div>
 
