@@ -29,6 +29,43 @@ class User_cariere_model extends CI_Model
         $result = $query->result();        
         return $result;
     }
+
+
+     /**
+     * This function is used to get the user listing count
+     * @return array $result : This is result
+     */
+    function carrierAutreListing($userID)
+    {
+         $this->db->select(' BaseTbl.cariereAutreId  , BaseTbl.role , BaseTbl.association , BaseTbl.debut , BaseTbl.fin ');
+        $this->db->from('tbl_user_cariere_autre as BaseTbl');
+        $this->db->join('tbl_users as User', 'User.userId = BaseTbl.userId','left');
+
+       
+        $this->db->where('BaseTbl.userId =', $userID );
+        $this->db->order_by('BaseTbl.CreatedDTM', 'DESC');
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+    }
+
+
+     /**
+     * This function is used to get the user listing count
+     * @return array $result : This is result
+     */
+    function carrierProListing($userID)
+    {
+        $this->db->select(' BaseTbl.cariereProId  , BaseTbl.ste , BaseTbl.poste , BaseTbl.debut , BaseTbl.fin ');
+        $this->db->from('tbl_users_cariere as BaseTbl');
+        $this->db->where('BaseTbl.userId =', $userID );
+        $this->db->order_by('BaseTbl.CreatedDTM', 'DESC');
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+    }
     
     /**
      * This function is used to add new user to system

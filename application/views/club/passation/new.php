@@ -45,7 +45,7 @@
                             <h4>
                               <br>Je veux postulé pour le poste de 
                             </h4>
-                            <select name=""   class="form-control" >
+                            <select name=""   class="form-control" required >
                               <option value="1" >Président(e)</option>
                               <option value="2" >Vice Président(e)</option>
                               <option value="6" >Assistant(e)</option>
@@ -55,9 +55,8 @@
                             <h4>
                               <br> cellule
                             </h4>
-                            <select name="cellule" id="cellule"  class="form-control" >
-                                             <option value="-1" >Veuillez choisir votre unité </option>
-                                             <option value="" ></option>
+                            <select name="cellule" id="cellule"  class="form-control" required style="display: none;" >
+                                             <option value="" >Veuillez choisir votre unité </option>
                                              <option value="Marketing" >Marketing</option>
                                              <option value="Administration et finance" >Administration et finance</option>
                                              <option value="Evenementiel" >Evenementiel</option>
@@ -183,8 +182,8 @@
 
 
                             <div class="col-sm-12">
-                            <h4><br>Plan d'action :</h4>
-                            <textarea rows="10"  class="form-control" ></textarea>
+                              <h4><br>Plan d'action :</h4>
+                              <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
 
 
