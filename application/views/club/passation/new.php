@@ -27,17 +27,17 @@
                             <label>
                               Poste actuelle
                             </label>
-                            <select name=""  class="form-control"  disabled >
-                              <option value="" ><?php echo $role_text ?></option>
-                            </select>                            
+                            
+                              <?php echo $role_text ?>
+                                                    
                             </div>
                             <div class="col-sm-6">
                             <label>
                               Cellule actuelle
                             </label>
-                            <select   class="form-control" disabled >
-                              <option  value="<?php echo $cellule ?>" ><?php echo $cellule ?></option>
-                            </select>                            
+                           
+                              <?php echo $cellule ?>
+                                                        
                             </div>
 
                             <div class="col-sm-6">
