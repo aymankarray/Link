@@ -3125,9 +3125,9 @@
                   <div class="modal-body">
 
                         <label>Debut</label>
-                        <input type="date"  name="attacheDT" id="attacheDT"  class="form-control" min="2016-10-01" max="2020-03-01" required>
+                        <input type="number"  name="attacheDT" id="attacheDT"  class="form-control" min="2016" max="2020" required>
                         <label>Fin</label>
-                        <input type="date" min="2016-10-01"  name="endDT" id="endDT" class="form-control"  required>
+                        <input type="number" min="2017" max="2017"   name="endDT" id="endDT" class="form-control"  required>
                      
                
                         <label>Poste</label>
@@ -3187,7 +3187,7 @@
                         <label>Debut</label>
                         <input type="number"  name="attacheDT" id="dateDebut"  class="form-control" min="2010" max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2010" max="2020 name="dateFin" id="dateFin" class="form-control"  required>
+                        <input type="number" min="2010" max="2020" name="dateFin" id="dateFin" class="form-control"  required>
                      
                
                         <label>Type de diplome : </label>
@@ -3201,7 +3201,7 @@
                         </select>
                         <br>
                         <label>Titre : </label>
-                        <input type="text" name="titre" >
+                        <input type="text"   class="form-control" name="titre" >
                         <br>
                         <label>Ecole : </label>
                         <select name="clubId" id="clubId"   class="form-control" required >
