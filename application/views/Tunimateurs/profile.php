@@ -117,7 +117,7 @@
                                              <h4 class="card-title">Tunivisions Experience</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
-                                             <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
+                                             <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal"> Modifier </a></p>
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
@@ -150,7 +150,7 @@
                                              <h4 class="card-title">Diplomes</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
-                                             <p class="m-0"><a href="javacsript:void();"> Modifier </a></p>
+                                             <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal1"> Modifier </a></p>
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
@@ -3107,3 +3107,64 @@
                </div>
             </div>
          </div>
+
+
+
+
+         <!--  experience   -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <form action="<?php echo base_url() ?>User/CarierAdd/<?php echo $uid ?>" method="post">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Nouvelle experience</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+
+                        <label>Debut</label>
+                        <input type="date"  name="attacheDT" id="attacheDT"  class="form-control" min="2016-10-01" max="2020-03-01" required>
+                        <label>Fin</label>
+                        <input type="date" min="2016-10-01"  name="endDT" id="endDT" class="form-control"  required>
+                     
+               
+                        <label>Poste</label>
+                        <select name="roleId" id="roleId"  class="form-control" required >
+                           <option value="-1" >Veuillez choisir votre poste </option>
+                           <?php foreach ($Roles as $key ) {
+                            echo "<option value='".$key->roleId."'>".$key->role."</option>" ; 
+                           }?>
+                        </select>
+                        <br>
+                        <label>Cellule</label>
+                        <select name="cellule" id="cellule"  class="form-control" >
+                           <option value="-1" >Veuillez choisir votre unité </option>
+                           <option value="" ></option>
+                           <option value="Marketing" >Marketing</option>
+                           <option value="Administration et finance" >Administration et finance</option>
+                           <option value="Evenementiel" >Evenementiel</option>
+                           <option value="Gestion des talents" >Gestion des talents</option>
+                        </select>
+                        <br>
+                        <label>Club</label>
+                        <select name="clubId" id="clubId"   class="form-control" required >
+                           <option value="-1" >Veuillez choisir votre club </option>
+                           <?php foreach ($Clubs as $key ) {
+                            echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
+                           }?>
+                        </select>
+
+
+                     
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <input id="TF" type="submit"  class="btn btn-primary">
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      <!-- -->
