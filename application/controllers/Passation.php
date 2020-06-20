@@ -12,7 +12,8 @@ class Passation extends BaseController {
         $this->load->model('user_model');
         $this->load->model('academy_formation_model');
         $this->load->model('user_cariere_model');
-
+        $this->load->model('user_diplome_model');
+        
         $this->isLoggedInPub();   
     }
     
