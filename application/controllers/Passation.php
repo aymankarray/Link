@@ -34,7 +34,7 @@ class Passation extends BaseController {
 		                $this->global['pageTitle'] = 'Passation';
 
 		                $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);   
-		           		
+		           		$data["Diplome"] = $this->user_diplome_model->diplomeListing($this->vendorId) ;
 		           		
 		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
 		        		  

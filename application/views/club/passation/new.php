@@ -90,6 +90,23 @@
                                                   </div>
                                                </div>
                               <?php }  ?>
+
+                              <h4><br>Diplomes :</h4>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a href="<?php echo base_url() ?>User/CarierShow/<?php echo $uid ?>"> mettre à jour </a> <br> </small>
+                               <?php foreach ($Diplome as $key) {   ?>
+                                                <div class="col-sm-12">
+                                                   <div class="event-post position-relative">
+                                                      <div class="iq-card-body  p-2">
+                                                         <h6>
+                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->type  ?></b> <?php echo $key->titre ?> à <a class="text-primary" ><?php echo $key->instituts  ?> </a>
+                                                             
+                                                         </h6>
+                                                         <p><?php echo $key->dateDebut?> - <?php echo $key->dateFin  ?></p>
+                                                      </div>
+
+                                                   </div>
+                                                </div>
+                               <?php }  ?>
                             </div>
 
                             <div class="col-sm-6">
