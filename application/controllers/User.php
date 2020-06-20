@@ -867,6 +867,8 @@ class User extends BaseController
         $data["HSkils"] = $this->user_cariere_model->carrierListing($userId);
         $data["Diplome"] = $this->user_diplome_model->diplomeListing($userId) ;
 
+        $data["Roles"] = $this->user_model->getUserAllRoles() ; 
+        $data["Clubs"] = $this->user_model->getClubs() ;
         
         
         $this->global['pageTitle'] = $data["userInfo"]->name;
