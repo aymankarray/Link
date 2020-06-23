@@ -272,7 +272,7 @@
                <div class="modal-content">
                   <form action="<?php echo base_url() ?>Cariere/CarierAdd/<?php echo $uid ?>" method="post">
                   <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLabel">Autre activité associati</h5>
+                     <h5 class="modal-title" id="exampleModalLabel">Autre activité associative</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true">×</span>
                      </button>
@@ -372,9 +372,9 @@
 
 
 
-      <!--  diplome   -->
+      <!--  Exp pro   -->
          <div class="modal fade" id="experiencePro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-            <div class="odal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
                   <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd/<?php echo $uid ?>" >
                   <div class="modal-header">
