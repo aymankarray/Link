@@ -90,7 +90,7 @@
                                                </div>
                               <?php }  ?>
                             <h4><br>Autres activités associatives :</h4>
-                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#Diplome" class="text-primary " > mettre à jour </a> <br> </small>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#ExperienceA" class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($ExperienceA as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
@@ -431,14 +431,14 @@
           $( document ).ready( function()
           {
               var roleId = $( '#roleId' );
-              var cellule = $( '#cellule' );
+              
               var clubId = $( '#clubId' );
               var institut = $( '#institut' );
               var institut = $( '#type' );
 
               
              $('#roleId').select2();
-             $('#cellule').select2();
+           
              $('#clubId').select2();
              $('#type').select2();
              $('#institut').select2();
