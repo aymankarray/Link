@@ -90,7 +90,7 @@
                                                </div>
                               <?php }  ?>
                             <h4><br>Autres activités associatives :</h4>
-                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#Diplome" > mettre à jour </a> <br> </small>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#Diplome" class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($ExperienceA as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
@@ -109,7 +109,7 @@
 
 
                               <h4><br>Diplomes :</h4>
-                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a data-toggle="modal" data-target="#experienceAutre" > mettre à jour </a> <br> </small>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a data-toggle="modal" data-target="#experienceAutre"  class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($Diplome as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
@@ -131,7 +131,7 @@
 
 
                             <h4><br>Activités professionelle :</h4>
-                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#experiencePro" > mettre à jour </a> <br> </small>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#experiencePro" class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($ExperienceP as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
