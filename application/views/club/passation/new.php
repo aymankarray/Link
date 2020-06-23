@@ -55,7 +55,7 @@
                             <h4>
                               <br> cellule
                             </h4>
-                            <select name="cellule" id="cellule"  class="form-control" required style="display: none;" >
+                            <select name="cellule"  class="form-control" required style="display: none;" >
                                              <option value="" >Veuillez choisir votre unité </option>
                                              <option value="Marketing" >Marketing</option>
                                              <option value="Administration et finance" >Administration et finance</option>
@@ -214,7 +214,7 @@
 
                <!--  experience   -->
          <div class="modal fade" id="experience" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
                   <form action="<?php echo base_url() ?>Cariere/CarierAdd/<?php echo $uid ?>" method="post">
                   <div class="modal-header">
@@ -274,7 +274,7 @@
 
       <!--  diplome   -->
          <div class="modal fade" id="diplome" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
                   <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd/<?php echo $uid ?>" >
                   <div class="modal-header">
@@ -310,6 +310,53 @@
                            <?php foreach ($Clubs as $key ) {
                             echo "<option value='".$key->clubID."'>".$key->name."</option>" ;  
                            }?>
+                        </select>
+
+
+                     
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <input id="TF" type="submit"  class="btn btn-primary">
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      <!-- -->
+
+
+
+
+
+      <!--  diplome   -->
+         <div class="modal fade" id="experiencePro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd/<?php echo $uid ?>" >
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">ajouter une experience professionelle</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+
+                        <label>Debut</label>
+                        <input type="number"  name="dateDebut" id="dateDebut"  class="form-control" min="2010" max="2020" required>
+                        <label>Fin</label>
+                        <input type="number" min="2010" max="2020" name="dateFin" id="dateFin" class="form-control"  required>
+                     
+               
+                        <label>Type de diplome : </label>
+                        <input type="text" name="poste" id="poste"  class="form-control" required >
+                        <br>
+                        <label>Titre : </label>
+                        <input type="text"   class="form-control" name="ste" >
+                        <br>
+                        <label>Domaine : </label>
+                        <select name="steDomain" id="steDomain"   class="form-control" required >
+                           <option value="" >Informatique</option>
                         </select>
 
 
