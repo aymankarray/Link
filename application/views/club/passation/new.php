@@ -69,7 +69,7 @@
                             <div class="col-sm-6">
 
                             <h4><br>Experience Tunivisions :</h4>
-                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a data-toggle="modal" data-target="#experience" > mettre à jour </a> <br> </small>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a data-toggle="modal" data-target="#experience"   class="text-primary "  > mettre à jour </a> <br> </small>
                               <?php foreach ($Experience as $key) {   ?>
                                                <div class="col-sm-12">
                                                   <div class="event-post position-relative">
@@ -176,11 +176,6 @@
                            
 
 
-
-                           
-
-
-
                             <div class="col-sm-12">
                               <h4><br>lettre de motivation :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
@@ -241,7 +236,6 @@
                         <br>
                         <label>Cellule</label>
                         <select name="cellule" id="cellule"  class="form-control" >
-                           <option value="-1" >Veuillez choisir votre unité </option>
                            <option value="" ></option>
                            <option value="Marketing" >Marketing</option>
                            <option value="Administration et finance" >Administration et finance</option>
@@ -345,19 +339,23 @@
                         <label>Debut</label>
                         <input type="number"  name="dateDebut" id="dateDebut"  class="form-control" min="2010" max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2010" max="2020" name="dateFin" id="dateFin" class="form-control"  required>
-                     
-               
-                        <label>Type de diplome : </label>
-                        <input type="text" name="poste" id="poste"  class="form-control" required >
-                        <br>
-                        <label>Titre : </label>
+                        <input type="number" min="2010" name="dateFin" id="dateFin" class="form-control"  required>
+
+                        <label>Société : </label>
                         <input type="text"   class="form-control" name="ste" >
                         <br>
                         <label>Domaine : </label>
                         <select name="steDomain" id="steDomain"   class="form-control" required >
                            <option value="" >Informatique</option>
                         </select>
+               
+                        <label>Poste : </label>
+                        <input type="text" name="poste" id="poste"  class="form-control" required >
+                        <br>
+                        <label>Departement : </label>
+                        <input type="text" name="poste" id="poste"  class="form-control" required >
+                        <br>
+                        
 
 
                      
@@ -371,6 +369,12 @@
             </div>
          </div>
       <!-- -->
+
+
+
+
+
+
 
 
 
