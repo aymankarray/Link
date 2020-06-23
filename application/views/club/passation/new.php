@@ -5,7 +5,7 @@
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
                            <div class="iq-header-title">
-                              <h4 class="card-title">Declation du projet</h4>
+                              <h4 class="card-title">Dossier de passation </h4>
                            </div>
                            <div class="iq-card-header-toolbar d-flex align-items-center">
                               <div class="dropdown show">
@@ -272,7 +272,7 @@
                <div class="modal-content">
                   <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd/<?php echo $uid ?>" >
                   <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLabel">ajouter un Diplome</h5>
+                     <h5 class="modal-title" id="exampleModalLabel">Ajouter un diplome</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true">×</span>
                      </button>
@@ -325,7 +325,7 @@
 
       <!--  diplome   -->
          <div class="modal fade" id="experiencePro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog" role="document">
+            <div class="odal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
                   <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd/<?php echo $uid ?>" >
                   <div class="modal-header">
