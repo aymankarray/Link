@@ -47,8 +47,8 @@
                             </h4>
                             <select name=""   class="form-control" required >
                               <option value="1" >Président(e)</option>
-                              <option value="2" >Vice Président(e)</option>
-                              <option value="6" >Assistant(e)</option>
+                   <!--           <option value="2" >Vice Président(e)</option>
+                              <option value="6" >Assistant(e)</option> -->
                             </select>                            
                             </div>
                             <div class="col-sm-6">
