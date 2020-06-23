@@ -43,7 +43,7 @@ class User_cariere_model extends CI_Model
 
        
         $this->db->where('BaseTbl.userId =', $userID );
-        $this->db->order_by('BaseTbl.CreatedDTM', 'DESC');
+        $this->db->order_by('BaseTbl.createdDTM', 'DESC');
         $query = $this->db->get();
         
         $result = $query->result();        
@@ -58,7 +58,7 @@ class User_cariere_model extends CI_Model
     function carrierProListing($userID)
     {
         $this->db->select(' BaseTbl.cariereProId  , BaseTbl.ste , BaseTbl.poste , BaseTbl.debut , BaseTbl.fin ');
-        $this->db->from('tbl_users_cariere as BaseTbl');
+        $this->db->from('tbl_user_cariere_pro as BaseTbl');
         $this->db->where('BaseTbl.userId =', $userID );
         $this->db->order_by('BaseTbl.CreatedDTM', 'DESC');
         $query = $this->db->get();
