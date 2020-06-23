@@ -31,7 +31,9 @@ class Passation extends BaseController {
 
 		           		$data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($this->vendorId) ;
 		           		$data["ExperienceP"] = $this->user_cariere_model->carrierProListing($this->vendorId) ;
-
+ 						
+ 						        $data["Roles"] = $this->user_model->getUserAllRoles() ; 
+       							 $data["Clubs"] = $this->user_model->getClubs() ;
 
 
 		           		$data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($this->vendorId);

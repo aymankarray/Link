@@ -266,6 +266,55 @@
 
 
 
+               <!-- Autre experience   -->
+         <div class="modal fade" id="ExperienceA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <form action="<?php echo base_url() ?>Cariere/CarierAdd/<?php echo $uid ?>" method="post">
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Autre activité associati</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+
+                        <label>Debut</label>
+                        <input type="number"  name="attache" id="attache"  class="form-control" min="2010" max="2020" required>
+                        <label>Fin</label>
+                        <input type="number" min="2010" max="2020"   name="end" id="end" class="form-control"  required>
+                     
+               
+                        <label>Poste</label>
+                        <select name="role" id="role"  class="form-control" required >
+                           <option>Membre</option>
+                           <option>Responsable</option>
+                           <option>Vice Président</option>
+                           <option>Président</option>
+                        </select>
+                        
+                        <br>
+                        <label>association</label>
+                        <input name="association" id="association"  class="form-control" >
+
+                        
+
+
+                     
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <input id="TF" type="submit"  class="btn btn-primary">
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      <!-- -->
+
+
+
+
       <!--  diplome   -->
          <div class="modal fade" id="diplome" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -292,7 +341,7 @@
                            <option value="Licence fondamentale" >Licence fondamentale</option>
                            <option value="Master professionnel" >Master professionnel</option>
                            <option value="Master de recherche" >Master de recherche</option>
-                           <option value="Ingénieurie" >Ingénieurie</option>
+                           <option value="Ingénierie" >Ingénierie</option>
                         </select>
                         <br>
                         <label>Titre : </label>
