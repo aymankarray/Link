@@ -109,7 +109,7 @@
 
 
                               <h4><br>Diplomes :</h4>
-                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a data-toggle="modal" data-target="#experienceAutre"  class="text-primary " > mettre à jour </a> <br> </small>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a data-toggle="modal" data-target="#diplome"  class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($Diplome as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
