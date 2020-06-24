@@ -194,7 +194,7 @@ class Cariere extends BaseController {
     {           
                 $debut = $this->input->post('debut') ; 
                 $fin = $this->input->post('fin') ; 
-                $ste = strtoupper ($this->input->post('ste') ; 
+                $ste = strtoupper ($this->input->post('ste')) ; 
                 $steDomain = $this->input->post('steDomain') ;
                 $poste = $this->input->post('poste') ;
                 $departement = $this->input->post('departement') ;
