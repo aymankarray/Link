@@ -47,7 +47,7 @@ class Passation extends BaseController {
 		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
                 }else
                 {
-                  loadViews('club/passation/view', $this->global, $data, NULL) ; 
+                 $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
                 }
 		        }  
 
@@ -87,7 +87,7 @@ class Passation extends BaseController {
 
 
 
-		        		loadViews('club/passation/view', $this->global, $data, NULL) ; 
+		        		$this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
 		        }  
 
 
