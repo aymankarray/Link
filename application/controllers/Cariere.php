@@ -146,7 +146,7 @@ class Cariere extends BaseController {
                  'role'=>$role,
                  'association'=>$association,
                  
-                 'CreatedBy'=>$this->vendorId,
+                 'userId'=>$this->vendorId,
                  'CreatedDTM'=>date('Y-m-d H:i:s')    
                      );
                 
