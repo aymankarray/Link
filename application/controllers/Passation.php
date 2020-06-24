@@ -24,7 +24,7 @@ class Passation extends BaseController {
 
 	public function NewPassation()
 		        {
-              if($this->SA == 1 ){
+              if(  empty($this->passation_model->passationByuserId($this->vendorId)) ){
 
 		                $this->global['pageTitle'] = 'Passation';
 		                $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);
@@ -45,6 +45,9 @@ class Passation extends BaseController {
 
 
 		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
+                }else
+                {
+                  loadViews('club/passation/view', $this->global, $data, NULL) ; 
                 }
 		        }  
 
@@ -52,7 +55,8 @@ class Passation extends BaseController {
 
 
 	       public function addNewPassation()
-		        {	                
+		        {	            $this->global['pageTitle'] = 'Passation';
+                          $data="" ;      
 
 		               $userInfo = array(                                      
                                       'nom'=> strtoupper ($nom) ,
@@ -83,7 +87,7 @@ class Passation extends BaseController {
 
 
 
-		        		redirect('Posts/Acceuil') ;   
+		        		loadViews('club/passation/view', $this->global, $data, NULL) ; 
 		        }  
 
 

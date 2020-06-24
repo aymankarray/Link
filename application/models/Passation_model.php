@@ -30,6 +30,25 @@ class Passation_model extends CI_Model
         return $insert_id;
     }
 
+            /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function passationByuserId($userId)
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_passation');
+        $this->db->where('userId', $userId);
+        $query = $this->db->get();
+        
+        return $query->row();
+    }
+
+
+
 
     
     

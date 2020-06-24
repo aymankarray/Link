@@ -790,7 +790,7 @@
                                 <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $clubID ?>"> <i class="ri-information-line"></i>Details  </a>    
                             </li>
                             <li>
-                                <a href="<?php echo base_url() ?>Passation/NewPassation" > <i class="ri-award-line"></i>passation<span class="btn btn-success" >New</span>  </a>  
+                                <a href="<?php echo base_url() ?>Passation/NewPassation" > <i class="ri-award-line"></i>passation &nbsp; <span class="btn btn-success" >New</span>  </a>  
                                  
                             </li>
                         </ul>
