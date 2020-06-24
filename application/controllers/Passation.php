@@ -80,7 +80,7 @@ class Passation extends BaseController {
 
 
 
-		        		$this->loadViews("club/passation/view", $this->global, $data, NULL);  
+		        		redirect('Posts/Acceuil') ;   
 		        }  
 
 
