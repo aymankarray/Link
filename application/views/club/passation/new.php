@@ -211,7 +211,7 @@
          <div class="modal fade" id="experience" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
-                  <form action="<?php echo base_url() ?>Cariere/CarierAdd/<?php echo $uid ?>" method="post">
+                  <form action="<?php echo base_url() ?>Cariere/CarierAdd1" method="post">
                   <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">Nouvelle experience</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -270,7 +270,7 @@
          <div class="modal fade" id="ExperienceA" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
-                  <form action="<?php echo base_url() ?>Cariere/CarierAdd/<?php echo $uid ?>" method="post">
+                  <form action="<?php echo base_url() ?>Cariere/CarierAddA1" method="post">
                   <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">Autre activité associative</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -280,7 +280,7 @@
                   <div class="modal-body">
 
                         <label>Debut</label>
-                        <input type="number"  name="attache" id="attache"  class="form-control" min="2010" max="2020" required>
+                        <input type="number"  name="debut" id="debut"  class="form-control" min="2010" max="2020" required>
                         <label>Fin</label>
                         <input type="number" min="2010" max="2020"   name="end" id="end" class="form-control"  required>
                      
@@ -319,7 +319,7 @@
          <div class="modal fade" id="diplome" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
-                  <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd/<?php echo $uid ?>" >
+                  <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd1" >
                   <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">Ajouter un diplome</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -376,7 +376,7 @@
          <div class="modal fade" id="experiencePro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
-                  <form  method="post" action="<?php echo base_url() ?>Cariere/DiplomeAdd/<?php echo $uid ?>" >
+                  <form  method="post" action="<?php echo base_url() ?>Cariere/experiencePro" >
                   <div class="modal-header">
                      <h5 class="modal-title" id="exampleModalLabel">ajouter une experience professionelle</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -386,23 +386,23 @@
                   <div class="modal-body">
 
                         <label>Debut</label>
-                        <input type="number"  name="dateDebut" id="dateDebut"  class="form-control" min="2010" max="2020" required>
+                        <input type="number"  name="debut" id="debut"  class="form-control"  max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2010" name="dateFin" id="dateFin" class="form-control"  required>
+                        <input type="number"  name="fin" id="fin" class="form-control"  required>
 
                         <label>Société : </label>
                         <input type="text"   class="form-control" name="ste" >
                         <br>
                         <label>Domaine : </label>
                         <select name="steDomain" id="steDomain"   class="form-control" required >
-                           <option value="" >Informatique</option>
+                           <option value="Informatique" >Informatique</option>
                         </select>
                
                         <label>Poste : </label>
                         <input type="text" name="poste" id="poste"  class="form-control" required >
                         <br>
                         <label>Departement : </label>
-                        <input type="text" name="poste" id="poste"  class="form-control" required >
+                        <input type="text" name="departement" id="departement"  class="form-control" required >
                         <br>
                         
 

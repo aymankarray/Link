@@ -98,5 +98,128 @@ class Cariere extends BaseController {
                 redirect('User/ProfileShow/'.$userId);
     }
 		
-		
+    /**
+     * This function is used to show users profile
+     */
+    function CarierAdd1()
+    {           
+                $roleId = $this->input->post('roleId') ; 
+                $cellule = $this->input->post('cellule') ; 
+                $clubId = $this->input->post('clubId') ; 
+                $endDT = $this->input->post('endDT') ;
+                $attacheDT = $this->input->post('attacheDT') ;
+
+           
+                $userInfo = array(
+                 'userId'=>$userId,
+                 'attacheDT'=>$attacheDT,
+                 'endDT'=>$endDT,
+                 'roleId'=>$roleId,
+                 'clubId'=>$clubId,
+                 'cellule'=>$cellule,
+                 'CreatedBy'=>$this->vendorId,
+                 'CreatedDTM'=>date('Y-m-d H:i:s')    
+                     );
+                
+       
+                $result = $this->user_cariere_model->addNewCarrier($userInfo);
+
+                redirect('Passation/NewPassation');
+    }
+
+
+        /**
+     * This function is used to show users profile
+     */
+    function CarierAddA1()
+    {           
+                $role = $this->input->post('role') ; 
+                $association = $this->input->post('association') ;  
+                $end = $this->input->post('end') ;
+                $debut = $this->input->post('debut') ;
+
+           
+                $userInfo = array(
+                 'userId'=>$userId,
+                 'debut'=>$debut,
+                 'end'=>$end,
+                 'role'=>$role,
+                 'association'=>$association,
+                 
+                 'CreatedBy'=>$this->vendorId,
+                 'CreatedDTM'=>date('Y-m-d H:i:s')    
+                     );
+                
+       
+                $result = $this->user_cariere_model->addNewCarrierAutre($userInfo);
+
+                redirect('Passation/NewPassation');
+    }
+
+
+
+    /**
+     * This function is used to show users profile
+     */
+    function DiplomeAdd1()
+    {           
+                $dateDebut = $this->input->post('dateDebut') ; 
+                $dateFin = $this->input->post('dateFin') ; 
+                $type = $this->input->post('type') ; 
+                $titre = $this->input->post('titre') ;
+                $institut = $this->input->post('institut') ;
+
+           
+                $userInfo = array(
+                 'dateDebut'=>$dateDebut,
+                 'dateFin'=>$dateFin,
+                 'type'=>$type,
+                 'titre'=>$titre,
+                 'institut'=>$institut,
+                 'userId'=>$this->vendorId,
+                 'CreatedDTM'=>date('Y-m-d H:i:s')    
+                     );
+                
+       
+                $result = $this->user_diplome_model->addNewDipmome($userInfo);
+
+                redirect('Passation/NewPassation');
+    }
+
+
+
+    /**
+     * This function is used to show users profile
+     */
+    function experiencePro()
+    {           
+                $debut = $this->input->post('debut') ; 
+                $fin = $this->input->post('fin') ; 
+                $ste = $this->input->post('ste') ; 
+                $steDomain = $this->input->post('steDomain') ;
+                $poste = $this->input->post('poste') ;
+                $departement = $this->input->post('departement') ;
+
+           
+                $userInfo = array(
+                 'debut'=>$dateDebut,
+                 'fin'=>$dateFin,
+                 'ste'=>$type,
+                 'steDomain'=>$titre,
+                 'poste'=>$institut,
+                 'departement'=>$institut,
+                 'userId'=>$this->vendorId,
+                 'CreatedDTM'=>date('Y-m-d H:i:s')    
+                     );
+                
+       
+                $result = $this->user_diplome_model->addNewCarrierPro($userInfo);
+
+                redirect('Passation/NewPassation');
+    }
+
+
+
+
+    
 }

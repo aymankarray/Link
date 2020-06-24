@@ -84,6 +84,41 @@ class User_cariere_model extends CI_Model
         return $insert_id;
     }
 
+        /**
+     * This function is used to add new user to system
+     * @return number $insert_id : This is last inserted id
+     */
+    function addNewCarrierAutre($carrierInfo)
+    {
+
+        $this->db->trans_start();
+        $this->db->insert('tbl_user_cariere_autre', $carrierInfo);
+        
+        $insert_id = $this->db->insert_id();
+        
+        $this->db->trans_complete();
+        
+        return $insert_id;
+    }
+
+
+        /**
+     * This function is used to add new user to system
+     * @return number $insert_id : This is last inserted id
+     */
+    function addNewCarrierPro($carrierInfo)
+    {
+
+        $this->db->trans_start();
+        $this->db->insert('tbl_user_cariere_pro', $carrierInfo);
+        
+        $insert_id = $this->db->insert_id();
+        
+        $this->db->trans_complete();
+        
+        return $insert_id;
+    }
+
 
 
    
