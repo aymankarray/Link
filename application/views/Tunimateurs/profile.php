@@ -161,7 +161,7 @@
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
                                                          <h6>
-                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->role  ?></b>  à <a class="text-primary" ><?php echo $key->assoiation  ?> </a>
+                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->role  ?></b>  à <a class="text-primary" ><?php echo $key->association  ?> </a>
                                                              
                                                          </h6>
                                                          <p><?php echo $key->debut?> - <?php echo $key->fin  ?></p>
