@@ -106,9 +106,9 @@ class Cariere extends BaseController {
                 $roleId = $this->input->post('roleId') ; 
                 $cellule = $this->input->post('cellule') ; 
                 $clubId = $this->input->post('clubId') ; 
-                $endDT = $this->input->post('endDT') ;
+                
                 $attacheDT = $this->input->post('attacheDT') ;
-
+                $endDT = $attacheDT + 1 ; 
            
                 $userInfo = array(
                  'userId'=>$this->vendorId,

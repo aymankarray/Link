@@ -309,9 +309,7 @@
 
                         <label>Debut</label>
                         <input type="number"  name="attacheDT" id="attacheDT"  class="form-control" min="2016" max="2020" required>
-                        <label>Fin</label>
-                        <input type="number" min="2017"    name="endDT" id="endDT" class="form-control"  required>
-                        <small class="text-muted">0000 si vous occupez ce poste actuellement</small><br>
+                        <br>
                      
                
                         <label>Poste</label>
@@ -632,14 +630,14 @@
                <div class="modal-content">
                   <form  method="post" action="<?php echo base_url() ?>Cariere/hard" >
                   <div class="modal-header">
-                     <h5 class="modal-title" id="exampleModalLabel">ajouter une langue</h5>
+                     <h5 class="modal-title" id="exampleModalLabel">ajouter Hard Skils</h5>
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                      <span aria-hidden="true">×</span>
                      </button>
                   </div>
                   <div class="modal-body">
 
-                        <label>Langue : </label>
+                        <label>Hard skils : </label>
                         <input type="text" name="nom" class="form-control" >
                         <label>Niveau : </label>
                         <input type="range" name="niveau" min="0" max="100" class="form-control">
