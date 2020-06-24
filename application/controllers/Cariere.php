@@ -202,12 +202,12 @@ class Cariere extends BaseController {
 
            
                 $userInfo = array(
-                 'debut'=>$dateDebut,
-                 'fin'=>$dateFin,
-                 'ste'=>$type,
-                 'steDomain'=>$titre,
-                 'poste'=>$institut,
-                 'departement'=>$institut,
+                 'debut'=>$debut,
+                 'fin'=>$fin,
+                 'ste'=>$ste,
+                 'steDomain'=>$steDomain,
+                 'poste'=>$poste,
+                 'departement'=>$departement,
                  'userId'=>$this->vendorId,
                  'CreatedDTM'=>date('Y-m-d H:i:s')    
                      );
