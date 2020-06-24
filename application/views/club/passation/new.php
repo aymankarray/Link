@@ -20,6 +20,39 @@
                     <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
                         
 
+                          <div class="row" >
+                            <div class="col-sm-6">
+                              <h4>Nom</h4>
+                              <input type="text" name="nom" class="form-control" >            
+                            </div>
+                            <div class="col-sm-6">
+                              <h4>Prenom</h4>
+                              <input type="text" name="prenom" class="form-control" >              
+                            </div>
+                            <div class="col-sm-12">
+                              <h4>Adresse</h4>
+                              <textarea type="text" name="adresse" class="form-control" ></textarea>              
+                            </div>
+                            <div class="col-md-6">                                
+                                <div class="form-group">
+                                
+                                            <select class="form-control" name="gouvernorat" id="gouvernorat" required >
+                                                <option value="">-- Gouvernorat --</option>
+                                            </select>
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">                                
+                                <div class="form-group">
+                              
+                                            <select class="form-control" name="delegation" id="delegation" required >
+                                                <option value="">-- Delegation --</option>
+                                             </select>
+
+                                </div>
+                            </div>  
+                          </div>
               
                           <div class="row" >
                             
@@ -179,7 +212,7 @@
                            
 
 
-                            <div class="col-sm-12">
+                            <div class="col-sm-6">
                               <h4 ><br>lettre de motivation :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
@@ -187,7 +220,7 @@
 
 
 
-                            <div class="col-sm-12">
+                            <div class="col-sm-6">
                               <h4><br>Plan d'action :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
@@ -307,7 +340,7 @@
                         
                         <br>
                         <label>association</label>
-                        <input name="association" id="association"  class="form-control" >
+                        <input name="association" id="association"  class="form-control" required >
 
                         
 
@@ -343,7 +376,7 @@
                         <label>Debut</label>
                         <input type="number"  name="dateDebut" id="dateDebut"  class="form-control" min="2010" max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2010"  name="dateFin" id="dateFin" class="form-control"  required>
+                        <input type="number"   name="dateFin" id="dateFin" class="form-control"  required>
                         <small class="text-muted">0000 si vous occupez ce poste actuellement</small><br>
                
                         <label>Type de diplome : </label>
@@ -357,7 +390,7 @@
                         </select>
                         <br>
                         <label>Titre : </label>
-                        <input type="text"   class="form-control" name="titre" >
+                        <input type="text"   class="form-control" name="titre" required >
                         <br>
                         <label>Ecole : </label>
                         <select name="institut" id="institut"   class="form-control" required >
@@ -408,13 +441,17 @@
                         <input type="text"   class="form-control" name="ste" >
                         <br>
                         <label>Domaine : </label>
-                        <select name="steDomain" id="steDomain"   class="form-control" required >
+                        <select name="steDomain" id="steDomain"   class="form-control" >
                            <option value="Informatique" >Informatique</option>
-                           <option value="Informatique" >Santé</option>
-                           <option value="Informatique" >Evenmentiel</option>
-                           <option value="Informatique" >Marketing</option>
-                           <option value="Informatique" >Comerciale</option>
-                           <option value="Informatique" >Comerciale</option>
+                           <option value="Santé" >Santé</option>
+                           <option value="Evenmentiel" >Evenmentiel</option>
+                           <option value="Marketing" >Marketing</option>
+                           <option value="Comerciale" >Comerciale</option>
+                           <option value="Toursime" >Toursime</option>
+                           <option value="Agriculture" >Agriculture</option>
+                           <option value="Communication" >Communication</option>
+                           <option value="Media" >Media</option>
+                           <option value="Juridique" >Juridique</option>
                         </select>
                
                         <label>Poste : </label>
