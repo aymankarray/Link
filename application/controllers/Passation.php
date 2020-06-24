@@ -47,6 +47,9 @@ class Passation extends BaseController {
 		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
                 }else
                 {
+                          $this->global['pageTitle'] = 'Passation';
+                          $data="" ; 
+
                  $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
                 }
 		        }  
