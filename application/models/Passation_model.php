@@ -31,7 +31,7 @@ class Passation_model extends CI_Model
     }
 
 
-    }
+    
     
 
 }
