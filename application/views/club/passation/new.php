@@ -99,7 +99,7 @@
                                                             <i class="ri-briefcase-line"></i> <b><?php echo $key->type  ?></b> <?php echo $key->titre ?> à <a class="text-primary" ><?php echo $key->instituts  ?> </a>
                                                              
                                                          </h6>
-                                                         <p><?php echo $key->dateDebut?> - <?php echo $key->dateFin  ?></p>
+                                                         <p>de <?php echo $key->dateDebut?> à <?php echo $key->dateFin  ?></p>
                                                       </div>
 
                                                    </div>
@@ -118,7 +118,7 @@
                                                             <i class="ri-briefcase-line"></i> <b><?php echo $key->type  ?></b> <?php echo $key->titre ?> à <a class="text-primary" ><?php echo $key->instituts  ?> </a>
                                                              
                                                          </h6>
-                                                         <p><?php echo $key->dateDebut?> - <?php echo $key->dateFin  ?></p>
+                                                         <p>de <?php echo $key->dateDebut?> à <?php echo $key->dateFin  ?></p>
                                                       </div>
 
                                                    </div>
@@ -140,7 +140,7 @@
                                                             <i class="ri-briefcase-line"></i> <b><?php echo $key->poste   ?></b> <?php echo $key->departement ?> chez <a class="text-primary" ><?php echo $key->ste  ?> </a>
                                                              
                                                          </h6>
-                                                         <p><?php echo $key->debut?> - <?php echo $key->fin  ?></p>
+                                                         <p>de <?php echo $key->debut?> à <?php echo $key->fin  ?></p>
                                                       </div>
 
                                                    </div>
@@ -160,10 +160,10 @@
                                           
                                           <div class="timeline-dots"></div>
                                           <h6 class="float-left mb-1"> 
-                                             <?php echo $key->titre   ?>  <a> (<?php echo $key->score?>  points ) </a>
+                                             <?php echo $key->titre   ?>  <a class="text-primary"> (<?php echo $key->score?>  points ) </a>
                                           </h6>
                                           <small class="float-right mt-1">
-                                             <?php echo $key->startDate?> 
+                                            le <?php echo $key->startDate?> 
                                           </small>
                                           <div class="d-inline-block w-100">
                                              <p>
@@ -178,6 +178,14 @@
 
                             <div class="col-sm-12">
                               <h4><br>lettre de motivation :</h4>
+                              <textarea rows="10"  class="form-control" required ></textarea>
+                            </div>
+
+
+
+
+                            <div class="col-sm-12">
+                              <h4><br>Plan d'action :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
 
@@ -389,10 +397,10 @@
                         <label>Debut</label>
                         <input type="number"  name="debut" id="debut"  class="form-control"  max="2020" required>
                         <label>Fin</label>
-                        <input type="number"  name="fin" id="fin" class="form-control"  required>
+                        <input type="number" min="2010"  name="fin" id="fin" class="form-control"  required>
                         <small class="text-muted">0000 si vous occupez ce poste actuellement</small>
 
-                        
+
                         <label>Société : </label>
                         <input type="text"   class="form-control" name="ste" >
                         <br>
