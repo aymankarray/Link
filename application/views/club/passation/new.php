@@ -2,8 +2,10 @@
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">
-                    <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
+                   
                      <div class="iq-card">
+
+                       <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
                         <div class="iq-card-header d-flex justify-content-between">
 
                            <div class="iq-header-title">
