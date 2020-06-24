@@ -180,7 +180,7 @@
 
 
                             <div class="col-sm-12">
-                              <h4 class="text-primary" ><br>lettre de motivation :</h4>
+                              <h4 ><br>lettre de motivation :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
 
@@ -188,7 +188,7 @@
 
 
                             <div class="col-sm-12">
-                              <h4 class="text-primary" ><br>Plan d'action :</h4>
+                              <h4><br>Plan d'action :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
 
