@@ -5,7 +5,7 @@
                    
                      <div class="iq-card">
 
-                       <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
+                      
                         <div class="iq-card-header d-flex justify-content-between">
 
                            <div class="iq-header-title">
@@ -18,10 +18,11 @@
                               </div>
                            </div>
                         </div>
+
                         <div class="iq-card-body">
                            <div class="table-responsive">
-                              <?php $this->load->helper("form"); ?>
-                    
+                              
+                    <form action="<?php echo base_url() ?>Passation/addNewPassation" id="fp" method="post"  >
                         
 
                           <div class="row" >
@@ -273,12 +274,12 @@
 
                           </div>
 
-
+                        </form>
 
                         <br>
     
                         <div class="box-footer">
-                            <input type="submit" class="btn btn-primary" value="Envoyer" />
+                            <input type="submit" class="btn btn-primary" value="Envoyer" onclick="document.getElementById('fp').submit();" />
                             <input type="reset" class="btn btn-default" value="Reset" />
                             <br>
                             <br>
