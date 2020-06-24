@@ -88,7 +88,7 @@ class User_cariere_model extends CI_Model
      * This function is used to get the user listing count
      * @return array $result : This is result
      */
-    function langListing($userID)
+    function hardListing($userID)
     {
         $this->db->select(' BaseTbl.skilsId  , BaseTbl.nom , BaseTbl.niveau');
         $this->db->from('tbl_user_skils as BaseTbl');
