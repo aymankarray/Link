@@ -52,7 +52,7 @@ class Passation extends BaseController {
 		        {	                
 
 		               $userInfo = array(                                      
-                                      'nom'=>$nom,
+                                      'nom'=> strtoupper ($nom) ,
                                       'prenom'=>$prenom,
                                       'adresse'=>$adresse,
                                       'gouvernorat'=>$gouvernorat,
@@ -70,8 +70,8 @@ class Passation extends BaseController {
                                       'celluleAct'=>$this->cellule,
                                       'roleVol'=> $this->input->post('roleId'), 
                                       'cellule'=>'',
-                                      'LM'=> $this->input->post('LM'),
-                                      'PA'=> $this->input->post('PA'),
+                                      'LM'=> NL2BR($this->input->post('LM')) ,
+                                      'PA'=> NL2BR($this->input->post('PA')),
                                       'statut'=> 1 ,
                                       'userId'=>$this->vendorId,
                                       'createdDTM'=>date('Y-m-d H:i:s'));
@@ -80,7 +80,7 @@ class Passation extends BaseController {
 
 
 
-		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
+		        		$this->loadViews("club/passation/view", $this->global, $data, NULL);  
 		        }  
 
 

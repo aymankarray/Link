@@ -4,6 +4,7 @@
                   <div class="col-sm-12">
                      <div class="iq-card">
                         <div class="iq-card-header d-flex justify-content-between">
+                          <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
                            <div class="iq-header-title">
                               <h4 class="card-title">Dossier de passation </h4>
                            </div>
@@ -17,7 +18,7 @@
                         <div class="iq-card-body">
                            <div class="table-responsive">
                               <?php $this->load->helper("form"); ?>
-                    <form role="form"  id="addproject" action="<?php echo base_url() ?>Club/addNewPassation" method="post" role="form"  enctype="multipart/form-data">
+                    
                         
 
                           <div class="row" >
