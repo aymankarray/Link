@@ -209,7 +209,7 @@
 
                             <h4 class="text-primary" ><br>hard Skills :</h4>
                             <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#hard" class="text-primary " > mettre à jour </a> <br> </small>
-                               <?php foreach ($Langue as $key) {   ?>
+                               <?php foreach ($skils as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">

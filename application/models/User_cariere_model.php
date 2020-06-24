@@ -77,7 +77,23 @@ class User_cariere_model extends CI_Model
         $this->db->select(' BaseTbl.langId  , BaseTbl.nom , BaseTbl.niveau');
         $this->db->from('tbl_user_lang as BaseTbl');
         $this->db->where('BaseTbl.userId =', $userID );
-        $this->db->order_by('BaseTbl.CreatedDTM', 'DESC');
+        $this->db->order_by('BaseTbl.niveau', 'DESC');
+        $query = $this->db->get();
+        
+        $result = $query->result();        
+        return $result;
+    }
+
+      /**
+     * This function is used to get the user listing count
+     * @return array $result : This is result
+     */
+    function langListing($userID)
+    {
+        $this->db->select(' BaseTbl.skilsId  , BaseTbl.nom , BaseTbl.niveau');
+        $this->db->from('tbl_user_skils as BaseTbl');
+        $this->db->where('BaseTbl.userId =', $userID );
+        $this->db->order_by('BaseTbl.niveau', 'DESC');
         $query = $this->db->get();
         
         $result = $query->result();        
