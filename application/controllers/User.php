@@ -815,6 +815,9 @@ class User extends BaseController
         $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUser($userId);
         $data['postRecords'] =  $this->posts_model->postsListingbyUser($userId);
 
+
+        $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($userId) ;
+        $data["ExperienceP"] = $this->user_cariere_model->carrierProListing($userId) ;
         $data["Experience"] = $this->user_cariere_model->carrierListing($userId);   
         $data["HSkils"] = $this->user_cariere_model->carrierListing($userId);
         $data["Diplome"] = $this->user_diplome_model->diplomeListing($userId) ;

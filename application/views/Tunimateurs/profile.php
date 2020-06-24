@@ -17,7 +17,7 @@
                         <div class="iq-card-body profile-page p-0">
                            <div class="profile-header">
                               <div class="cover-container">
-                                 <img src="https://scontent.ftun3-1.fna.fbcdn.net/v/t1.0-9/79385061_951733981864962_3787148526337654784_o.jpg?_nc_cat=107&_nc_sid=dd9801&_nc_ohc=4ZmEDOHWD8IAX_208AJ&_nc_ht=scontent.ftun3-1.fna&oh=aac7c6637b936148262d2f18ae14e7de&oe=5EEFBE0C" alt="profile-bg" class="rounded img-fluid">
+                                 <img src="https://scontent.ftun7-1.fna.fbcdn.net/v/t1.0-9/87541545_2593976110835615_7006417743813541888_o.jpg?_nc_cat=106&_nc_sid=825194&_nc_ohc=GILnp1cl6tkAX--A8sF&_nc_ht=scontent.ftun7-1.fna&oh=6826167fb02844e3efe985a2f23ee20f&oe=5F18FCA9" alt="profile-bg" class="rounded img-fluid">
                                  <ul class="header-nav d-flex flex-wrap justify-end p-0 m-0">
                                     <li><a href="javascript:void();"><i class="ri-pencil-line"></i></a></li>
                                     <li><a href="javascript:void();"><i class="ri-settings-4-line"></i></a></li>
@@ -144,6 +144,36 @@
                                           </div>
                                        </div>
                                     </div>
+
+                                    <div class="iq-card">
+                                       <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Autre experience associative</h4>
+                                          </div>
+                                          <div class="iq-card-header-toolbar d-flex align-items-center">
+                                             <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal1"> Ajouter </a></p>
+                                          </div>
+                                       </div>
+                                       <div class="iq-card-body">
+                                          <div class="row">
+                                             <?php foreach ($ExperienceA as $key) {   ?>
+                                                <div class="col-sm-12">
+                                                   <div class="event-post position-relative">
+                                                      <div class="iq-card-body  p-2">
+                                                         <h6>
+                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->role  ?></b>  à <a class="text-primary" ><?php echo $key->assoiation  ?> </a>
+                                                             
+                                                         </h6>
+                                                         <p><?php echo $key->debut?> - <?php echo $key->fin  ?></p>
+                                                      </div>
+
+                                                   </div>
+                                                </div>
+                                              <?php }  ?>
+                                          </div>
+                                       </div>
+                                    </div>
+                                   
                                     <div class="iq-card">
                                        <div class="iq-card-header d-flex justify-content-between">
                                           <div class="iq-header-title">
@@ -164,6 +194,35 @@
                                                              
                                                          </h6>
                                                          <p><?php echo $key->dateDebut?> - <?php echo $key->dateFin  ?></p>
+                                                      </div>
+
+                                                   </div>
+                                                </div>
+                                              <?php }  ?>
+                                          </div>
+                                       </div>
+                                    </div>
+
+                                     <div class="iq-card">
+                                       <div class="iq-card-header d-flex justify-content-between">
+                                          <div class="iq-header-title">
+                                             <h4 class="card-title">Experience Pro</h4>
+                                          </div>
+                                          <div class="iq-card-header-toolbar d-flex align-items-center">
+                                             <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal1"> Ajouter </a></p>
+                                          </div>
+                                       </div>
+                                       <div class="iq-card-body">
+                                          <div class="row">
+                                             <?php foreach ($ExperienceP as $key) {   ?>
+                                                <div class="col-sm-12">
+                                                   <div class="event-post position-relative">
+                                                      <div class="iq-card-body  p-2">
+                                                         <h6>
+                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->poste  ?></b> <?php echo $key->departement ?> à <a class="text-primary" ><?php echo $key->ste  ?> </a>
+                                                             
+                                                         </h6>
+                                                         <p><?php echo $key->debut?> - <?php echo $key->fin  ?></p>
                                                       </div>
 
                                                    </div>

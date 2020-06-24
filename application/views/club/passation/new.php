@@ -400,8 +400,8 @@
                         <label>Debut</label>
                         <input type="number"  name="debut" id="debut"  class="form-control"  max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2010"  name="fin" id="fin" class="form-control"  required>
-                        <small class="text-muted">0000 si vous occupez ce poste actuellement</small><br>
+                        <input type="number" min="2010" min="2020"  name="fin" id="fin" class="form-control"  required>
+                        
 
 
                         <label>Société : </label>
