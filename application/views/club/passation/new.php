@@ -223,7 +223,8 @@
                         <label>Debut</label>
                         <input type="number"  name="attacheDT" id="attacheDT"  class="form-control" min="2016" max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2017" max="2020"   name="endDT" id="endDT" class="form-control"  required>
+                        <input type="number" min="2017"    name="endDT" id="endDT" class="form-control"  required>
+                        <small class="text-muted">0000 si vous occupez ce poste actuellement</small>
                      
                
                         <label>Poste</label>
@@ -283,7 +284,7 @@
                         <input type="number"  name="debut" id="debut"  class="form-control" min="2010" max="2020" required>
                         <label>Fin</label>
                         <input type="number" min="2010" max="2020"   name="end" id="end" class="form-control"  required>
-                     
+                        <small class="text-muted">0000 si vous occupez ce poste actuellement</small>
                
                         <label>Poste</label>
                         <select name="role" id="role"  class="form-control" required >
@@ -331,8 +332,8 @@
                         <label>Debut</label>
                         <input type="number"  name="dateDebut" id="dateDebut"  class="form-control" min="2010" max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2010" max="2020" name="dateFin" id="dateFin" class="form-control"  required>
-                     
+                        <input type="number" min="2010"  name="dateFin" id="dateFin" class="form-control"  required>
+                        <small class="text-muted">0000 si vous occupez ce poste actuellement</small>
                
                         <label>Type de diplome : </label>
                         <select name="type" id="type"  class="form-control" required >
@@ -389,7 +390,9 @@
                         <input type="number"  name="debut" id="debut"  class="form-control"  max="2020" required>
                         <label>Fin</label>
                         <input type="number"  name="fin" id="fin" class="form-control"  required>
+                        <small class="text-muted">0000 si vous occupez ce poste actuellement</small>
 
+                        
                         <label>Société : </label>
                         <input type="text"   class="form-control" name="ste" >
                         <br>
