@@ -186,14 +186,36 @@
 
                             <hr>
 
-                            <h4 class="text-primary" ><br>langue :</h4>
+                            <h4 class="text-primary" ><br>Langues :</h4>
                             <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#langue" class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($Langue as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
+                                                        <b><?php echo $key->nom   ?>  : </b>
                                                         <div class="progress mb-3">
-                                                          <b><?php echo $key->nom   ?>  :    <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $key->niveau ?> %" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                             <div class="progress-bar bg-success" role="progressbar" style="width:  25%" aria-valuenow="<?php echo $key->niveau ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                         
+                                                      </div>
+
+                                                   </div>
+                                                </div>
+                               <?php }  ?>
+
+
+
+                               <hr>
+
+                            <h4 class="text-primary" ><br>haed Skills :</h4>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#langue" class="text-primary " > mettre à jour </a> <br> </small>
+                               <?php foreach ($Langue as $key) {   ?>
+                                                <div class="col-sm-12">
+                                                   <div class="event-post position-relative">
+                                                      <div class="iq-card-body  p-2">
+                                                        <b><?php echo $key->nom   ?>  : </b>
+                                                        <div class="progress mb-3">
+                                                             <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="<?php echo $key->niveau   ?>" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                          
                                                       </div>
