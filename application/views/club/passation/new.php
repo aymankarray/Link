@@ -502,3 +502,48 @@
          });
 
    </script>
+
+
+   <script type="text/javascript">
+          $( document ).ready( function()
+          {
+              var json ;
+              var gouvernorat = $( '#gouvernorat' );
+              var delegation = $( '#delegation' );
+              
+             $('#gouvernorat').select2();
+             $('#delegation').select2();
+
+              var d = $.ajax({
+              url: '<?php echo base_url(); ?>assets/json/tunisia.json',
+              type: "GET",
+              dataType: 'json',
+              success: function (data) {
+                  console.log(data);
+                     $.each( data , function (index, value)
+                  {
+                  gouvernorat.append('<option value="' + index + '">' +  index  + '</option>');
+                  });
+
+                  gouvernorat.change( function()
+                  {
+                  var gouv = $(this).val();
+                  var deleg = data[ gouv ];
+
+                  $('option', delegation).remove();
+                  delegation.append('<option value="">-- Delegation --</option>');
+
+                  $.each( deleg, function (index, value)
+                  {
+                  delegation.append('<option value="' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '">' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '</option>');
+                  });
+                  });    
+
+              } 
+              });
+
+
+
+                  
+              });
+          </script>
