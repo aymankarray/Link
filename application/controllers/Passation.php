@@ -14,6 +14,7 @@ class Passation extends BaseController {
         $this->load->model('user_cariere_model');
         $this->load->model('user_diplome_model');
         $this->load->model('ressource_model');
+        $this->load->model('passation_model');
 
         $this->isLoggedInPub();   
     }
@@ -47,7 +48,7 @@ class Passation extends BaseController {
 
 
 
-	public function addNewPassation()
+	       public function addNewPassation()
 		        {	                
 
 		               $userInfo = array(                                      
@@ -65,17 +66,17 @@ class Passation extends BaseController {
 
 
  						$passationInfo = array(                                      
-                                      'roleAct'=>$roleAct,
-                                      'celluleAct'=>$celluleAct,
-                                      'roleVol'=>$roleVol,
-                                      'cellule'=>$cellule,
-                                      'LM'=>$LM,
-                                      'PA'=>$PA,
-                                      'statut'=>$statut,
+                                      'roleAct'=>$this->role,
+                                      'celluleAct'=>$this->cellule,
+                                      'roleVol'=> $this->input->post('roleId'), 
+                                      'cellule'=>'',
+                                      'LM'=> $this->input->post('LM'),
+                                      'PA'=> $this->input->post('PA'),
+                                      'statut'=> 1 ,
                                       'userId'=>$this->vendorId,
                                       'createdDTM'=>date('Y-m-d H:i:s'));
 
-
+               $result = $this->passation_model->addNewPassation($passationInfo);
 
 
 

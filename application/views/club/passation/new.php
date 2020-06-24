@@ -78,7 +78,7 @@
                             <h4>
                               <br>Je veux postuler pour le poste de 
                             </h4>
-                            <select name=""   class="form-control" required >
+                            <select name="roleId"   class="form-control" required >
                               <option value="1" >Président(e)</option>
                    <!--           <option value="2" >Vice Président(e)</option>
                               <option value="6" >Assistant(e)</option> -->
