@@ -111,7 +111,7 @@ class Cariere extends BaseController {
 
            
                 $userInfo = array(
-                 'userId'=>$userId,
+                 'userId'=>$this->vendorId,
                  'attacheDT'=>$attacheDT,
                  'endDT'=>$endDT,
                  'roleId'=>$roleId,
@@ -140,12 +140,11 @@ class Cariere extends BaseController {
 
            
                 $userInfo = array(
-                 'userId'=>$userId,
                  'debut'=>$debut,
                  'end'=>$end,
                  'role'=>$role,
                  'association'=>$association,
-                 
+
                  'userId'=>$this->vendorId,
                  'CreatedDTM'=>date('Y-m-d H:i:s')    
                      );
