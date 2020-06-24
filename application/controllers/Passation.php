@@ -23,7 +23,9 @@ class Passation extends BaseController {
 
 
 	public function NewPassation()
-		        {	                
+		        {
+              if($this->SA == 1 ){
+
 		                $this->global['pageTitle'] = 'Passation';
 		                $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);
 		                $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($this->vendorId) ;   
@@ -43,6 +45,7 @@ class Passation extends BaseController {
 
 
 		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
+                }
 		        }  
 
 
