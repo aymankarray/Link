@@ -781,7 +781,7 @@
                      </li>
 
                      <li>
-                        <a href="#Mclub" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="true">
+                        <a href="#Mclub" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
                             <i class="ri-group-2-line"></i>Mon club <i class="ri-arrow-right-s-line iq-arrow-right"></i>
                         </a>
@@ -790,7 +790,7 @@
                                 <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $clubID ?>"> <i class="ri-information-line"></i>Details  </a>    
                             </li>
                             <li>
-                                <a > <i class="ri-award-line"></i>passation  <small><i class="ri-terminal-line"></i>coming soon</small>  </a>  
+                                <a href="<?php echo base_url() ?>Passation/NewPassation" > <i class="ri-award-line"></i>passation<span class="btn btn-success" >New</span>  </a>  
                                  
                             </li>
                         </ul>
