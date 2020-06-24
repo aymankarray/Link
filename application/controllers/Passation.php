@@ -48,7 +48,8 @@ class Passation extends BaseController {
                 }else
                 {
                           $this->global['pageTitle'] = 'Passation';
-                          $data="" ; 
+                          $code = $this->passation_model->passationByuserId($this->vendorId) ; 
+                          $data['code']=  $code->passationId ; 
 
                  $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
                 }
@@ -59,7 +60,7 @@ class Passation extends BaseController {
 
 	       public function addNewPassation()
 		        {	            $this->global['pageTitle'] = 'Passation';
-                          $data="" ;      
+                               
 
 		               $userInfo = array(                                      
                                       'nom'=> strtoupper ($nom) ,
@@ -88,6 +89,7 @@ class Passation extends BaseController {
 
                $result = $this->passation_model->addNewPassation($passationInfo);
 
+                $data['code']=$result ; 
 
 
 		        		$this->loadViews('club/passation/view', $this->global, $data, NULL) ; 

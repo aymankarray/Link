@@ -9,7 +9,7 @@
                         <div class="iq-card-header d-flex justify-content-between">
 
                            <div class="iq-header-title">
-                              <h4 class="card-title">Dossier de passation </h4>
+                              <h4 class="card-title">Dossier de passation  <b> N°<?php echo $code ?> </b> </h4>
                            </div>
                            <div class="iq-card-header-toolbar d-flex align-items-center">
                               <div class="dropdown show">
