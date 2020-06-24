@@ -68,7 +68,7 @@
 
                             <div class="col-sm-6">
 
-                            <h4><br>Experience Tunivisions :</h4>
+                            <h4 class="text-primary"  ><br>Experience Tunivisions :</h4>
                             <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a data-toggle="modal" data-target="#experience"   class="text-primary "  > mettre à jour </a> <br> </small>
                               <?php foreach ($Experience as $key) {   ?>
                                                <div class="col-sm-12">
@@ -92,7 +92,7 @@
 
                               <hr>
 
-                            <h4><br>Autres activités associatives :</h4>
+                            <h4 class="text-primary" ><br>Autres activités associatives :</h4>
                             <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#ExperienceA" class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($ExperienceA as $key) {   ?>
                                                 <div class="col-sm-12">
@@ -111,7 +111,7 @@
 
                                <hr>
 
-                              <h4><br>Diplomes :</h4>
+                              <h4 class="text-primary" ><br>Diplomes :</h4>
                             <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le <a data-toggle="modal" data-target="#diplome"  class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($Diplome as $key) {   ?>
                                                 <div class="col-sm-12">
@@ -133,7 +133,7 @@
 
                                <hr>
 
-                            <h4><br>Activités professionelle :</h4>
+                            <h4 class="text-primary" ><br>Activités professionelle :</h4>
                             <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#experiencePro" class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($ExperienceP as $key) {   ?>
                                                 <div class="col-sm-12">
@@ -158,7 +158,7 @@
                             </div>
                             
                             <div class="col-sm-6" style="height:834px ;overflow:auto;">
-                             <h4 ><br>Formations</h4>
+                             <h4 class="text-primary" ><br>Formations</h4>
                               <?php foreach ($ressourceInfo as $key) {   ?>
                                           
                                           <div class="timeline-dots"></div>
@@ -180,7 +180,7 @@
 
 
                             <div class="col-sm-12">
-                              <h4><br>lettre de motivation :</h4>
+                              <h4 class="text-primary" ><br>lettre de motivation :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
 
@@ -188,7 +188,7 @@
 
 
                             <div class="col-sm-12">
-                              <h4><br>Plan d'action :</h4>
+                              <h4 class="text-primary" ><br>Plan d'action :</h4>
                               <textarea rows="10"  class="form-control" required ></textarea>
                             </div>
 
@@ -410,13 +410,18 @@
                         <label>Domaine : </label>
                         <select name="steDomain" id="steDomain"   class="form-control" required >
                            <option value="Informatique" >Informatique</option>
+                           <option value="Informatique" >Santé</option>
+                           <option value="Informatique" >Evenmentiel</option>
+                           <option value="Informatique" >Marketing</option>
+                           <option value="Informatique" >Comerciale</option>
+                           <option value="Informatique" >Comerciale</option>
                         </select>
                
                         <label>Poste : </label>
                         <input type="text" name="poste" id="poste"  class="form-control" required >
                         <br>
                         <label>Departement : </label>
-                        <input type="text" name="departement" id="departement"  class="form-control" required >
+                        <input type="text" name="departement" id="departement"  class="form-control"  >
                         <br>
                         
 
