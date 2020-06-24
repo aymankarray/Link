@@ -134,7 +134,7 @@ class Cariere extends BaseController {
     function CarierAddA1()
     {           
                 $role = $this->input->post('role') ; 
-                $association = $this->input->post('association') ;  
+                $association = strtoupper ($this->input->post('association')) ;  
                 $fin = $this->input->post('fin') ;
                 $debut = $this->input->post('debut') ;
 
@@ -194,7 +194,7 @@ class Cariere extends BaseController {
     {           
                 $debut = $this->input->post('debut') ; 
                 $fin = $this->input->post('fin') ; 
-                $ste = $this->input->post('ste') ; 
+                $ste = strtoupper ($this->input->post('ste') ; 
                 $steDomain = $this->input->post('steDomain') ;
                 $poste = $this->input->post('poste') ;
                 $departement = $this->input->post('departement') ;
@@ -249,7 +249,7 @@ class Cariere extends BaseController {
      */
     function hard()
     {           
-                $nom = $this->input->post('nom') ; 
+                $nom =  strtoupper ($this->input->post('nom')) ; 
                 $niveau = $this->input->post('niveau') ;
                
 
