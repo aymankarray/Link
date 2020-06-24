@@ -99,10 +99,10 @@
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
                                                          <h6>
-                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->type  ?></b> <?php echo $key->titre ?> à <a class="text-primary" ><?php echo $key->instituts  ?> </a>
+                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->role  ?></b> à <a class="text-primary" ><?php echo $key->association  ?> </a>
                                                              
                                                          </h6>
-                                                         <p>de <?php echo $key->dateDebut?> à <?php echo $key->dateFin  ?></p>
+                                                         <p>de <?php echo $key->debut?> à <?php echo $key->fin  ?></p>
                                                       </div>
 
                                                    </div>
