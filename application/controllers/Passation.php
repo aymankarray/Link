@@ -31,7 +31,7 @@ class Passation extends BaseController {
 
 		           		$data["Langue"] = $this->user_cariere_model->langListing($this->vendorId) ;
 
-		           		
+
  						
  						$data["Roles"] = $this->user_model->getUserAllRoles() ; 
        					$data["Clubs"] = $this->user_model->getClubs() ;
@@ -46,7 +46,7 @@ class Passation extends BaseController {
 
 
 
-	public function NewPassation()
+	public function addNewPassation()
 		        {	                
 
 		               $userInfo = array(                                      
