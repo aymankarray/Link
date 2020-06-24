@@ -156,6 +156,25 @@ class User_cariere_model extends CI_Model
     }
 
 
+             /**
+     * This function is used to add new user to system
+     * @return number $insert_id : This is last inserted id
+     */
+    function addNewHard($carrierInfo)
+    {
+
+        $this->db->trans_start();
+        $this->db->insert('tbl_user_skils', $carrierInfo);
+        
+        $insert_id = $this->db->insert_id();
+        
+        $this->db->trans_complete();
+        
+        return $insert_id;
+    }
+
+
+
 
    
     

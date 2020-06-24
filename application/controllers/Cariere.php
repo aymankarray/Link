@@ -244,6 +244,30 @@ class Cariere extends BaseController {
     }
 
 
+     /**
+     * This function is used to show users profile
+     */
+    function hard()
+    {           
+                $nom = $this->input->post('nom') ; 
+                $niveau = $this->input->post('niveau') ;
+               
+
+           
+                $userInfo = array(
+                 'nom'=>$nom,
+                 'niveau'=>$niveau,
+                 'userId'=>$this->vendorId,
+                 'CreatedDTM'=>date('Y-m-d H:i:s')    
+                     );
+                
+       
+                $result = $this->user_cariere_model->addNewHard($userInfo);
+
+                redirect('Passation/NewPassation');
+    }
+
+
 
 
     

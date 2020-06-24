@@ -194,7 +194,7 @@
                                                       <div class="iq-card-body  p-2">
                                                         <b><?php echo $key->nom   ?>  : </b>
                                                         <div class="progress mb-3">
-                                                             <div class="progress-bar bg-success" role="progressbar" style="width:  25%" aria-valuenow="<?php echo $key->niveau ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                                             <div class="progress-bar" role="progressbar" style="width:  <?php echo $key->niveau ?>%" aria-valuenow="<?php echo $key->niveau ?>" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                          
                                                       </div>
@@ -207,15 +207,15 @@
 
                                <hr>
 
-                            <h4 class="text-primary" ><br>haed Skills :</h4>
-                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#langue" class="text-primary " > mettre à jour </a> <br> </small>
+                            <h4 class="text-primary" ><br>hard Skills :</h4>
+                            <small class="text-muted ">On va prendre une copie de votre profile comme étant un cv merci de le  <a data-toggle="modal" data-target="#hard" class="text-primary " > mettre à jour </a> <br> </small>
                                <?php foreach ($Langue as $key) {   ?>
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
                                                         <b><?php echo $key->nom   ?>  : </b>
                                                         <div class="progress mb-3">
-                                                             <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="<?php echo $key->niveau   ?>" aria-valuemin="0" aria-valuemax="100"></div>
+                                                             <div class="progress-bar" role="progressbar" style="width: <?php echo $key->niveau ?>%" aria-valuenow="<?php echo $key->niveau   ?>" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
                                                          
                                                       </div>
@@ -518,7 +518,7 @@
 
 
 
-      <!--  Exp pro   -->
+      <!--  Lang   -->
          <div class="modal fade" id="langue" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
             <div class="modal-dialog modal-dialog-centered" role="document">
                <div class="modal-content">
@@ -622,6 +622,38 @@
          </div>
       <!-- -->
 
+
+
+      <!--  Skils   -->
+         <div class="modal fade" id="hard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+               <div class="modal-content">
+                  <form  method="post" action="<?php echo base_url() ?>Cariere/hard" >
+                  <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">ajouter une langue</h5>
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                  </div>
+                  <div class="modal-body">
+
+                        <label>Langue : </label>
+                        <input type="text" name="nom" class="form-control" >
+                        <label>Niveau : </label>
+                        <input type="range" name="niveau" min="0" max="100" class="form-control">
+
+
+                     
+                  </div>
+                  <div class="modal-footer">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                     <input id="TF" type="submit"  class="btn btn-primary">
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      <!-- -->
 
 
 
