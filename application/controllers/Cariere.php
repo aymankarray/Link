@@ -135,13 +135,13 @@ class Cariere extends BaseController {
     {           
                 $role = $this->input->post('role') ; 
                 $association = $this->input->post('association') ;  
-                $end = $this->input->post('end') ;
+                $fin = $this->input->post('fin') ;
                 $debut = $this->input->post('debut') ;
 
            
                 $userInfo = array(
                  'debut'=>$debut,
-                 'end'=>$end,
+                 'fin'=>$fin,
                  'role'=>$role,
                  'association'=>$association,
 

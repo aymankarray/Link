@@ -294,7 +294,7 @@
                         <label>Debut</label>
                         <input type="number"  name="debut" id="debut"  class="form-control" min="2010" max="2020" required>
                         <label>Fin</label>
-                        <input type="number" min="2010" max="2020"   name="end" id="end" class="form-control"  required>
+                        <input type="number"  max="2020"   name="fin" id="fin" class="form-control"  required>
                         <small class="text-muted">0000 si vous occupez ce poste actuellement</small><br>
                
                         <label>Poste</label>
