@@ -192,11 +192,10 @@
                                                 <div class="col-sm-12">
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
-                                                         <h6>
-                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->poste   ?></b> <?php echo $key->departement ?> chez <a class="text-primary" ><?php echo $key->ste  ?> </a>
-                                                             
-                                                         </h6>
-                                                         <p>de <?php echo $key->debut?> à <?php echo $key->fin  ?></p>
+                                                        <div class="progress mb-3">
+                                                          <b><?php echo $key->nom   ?>  :    <div class="progress-bar bg-success" role="progressbar" style="width: <?php echo $key->niveau ?> %" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                         
                                                       </div>
 
                                                    </div>
