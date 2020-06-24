@@ -137,10 +137,10 @@
                                                    <div class="event-post position-relative">
                                                       <div class="iq-card-body  p-2">
                                                          <h6>
-                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->type  ?></b> <?php echo $key->titre ?> à <a class="text-primary" ><?php echo $key->instituts  ?> </a>
+                                                            <i class="ri-briefcase-line"></i> <b><?php echo $key->poste   ?></b> <?php echo $key->departement ?> chez <a class="text-primary" ><?php echo $key->ste  ?> </a>
                                                              
                                                          </h6>
-                                                         <p><?php echo $key->dateDebut?> - <?php echo $key->dateFin  ?></p>
+                                                         <p><?php echo $key->debut?> - <?php echo $key->fin  ?></p>
                                                       </div>
 
                                                    </div>
