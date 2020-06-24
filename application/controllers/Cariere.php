@@ -213,7 +213,7 @@ class Cariere extends BaseController {
                      );
                 
        
-                $result = $this->user_diplome_model->addNewCarrierPro($userInfo);
+                $result = $this->user_cariere_model->addNewCarrierPro($userInfo);
 
                 redirect('Passation/NewPassation');
     }
