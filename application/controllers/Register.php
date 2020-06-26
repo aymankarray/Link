@@ -30,6 +30,51 @@ class Register extends CI_Controller
          $this->load->view('register/new',$data);
     }
     
+
+
+         public function send_mail($title,$mailContent,$addresse)
+            {
+                // Load PHPMailer library
+                    $this->load->library('phpmailer_lib');
+                    
+                    // PHPMailer object
+                    $mail = $this->phpmailer_lib->load();
+                    
+                    // SMTP configuration
+                    $mail->isSMTP();
+                    $mail->Host     = 'tunivisions.link';
+                    $mail->SMTPAuth = true;
+                    $mail->Username = 'no-reply@tunivisions.link';
+                    $mail->Password = 'Tunivisions-Link-2019';
+                    $mail->SMTPSecure = 'tls';
+                    $mail->Port     = 587;
+                    
+                    $mail->setFrom('no-reply@tunivisions.link', 'Tunivisions Link');
+                    $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
+                    
+                    // Add a recipient
+                
+                    $mail->addAddress($to);
+                    
+                    
+                    // Email subject
+                    $mail->Subject = $title ;
+                    
+                    // Set email format to HTML
+                    $mail->isHTML(true);
+                    
+                    // Email body content
+                     
+                    $mail->Body = $mailContent ;
+                    
+                    // Send email
+                    if(!$mail->send()){
+                        return true ; 
+                    }else{
+                        return false ; 
+                    }
+                       
+            }
  
      /**
      * Index Page for this controller.
@@ -219,49 +264,7 @@ class Register extends CI_Controller
     }
 
 
-     public function send_mail($title,$mailContent,$addresse)
-            {
-                // Load PHPMailer library
-                    $this->load->library('phpmailer_lib');
-                    
-                    // PHPMailer object
-                    $mail = $this->phpmailer_lib->load();
-                    
-                    // SMTP configuration
-                    $mail->isSMTP();
-                    $mail->Host     = 'tunivisions.link';
-                    $mail->SMTPAuth = true;
-                    $mail->Username = 'no-reply@tunivisions.link';
-                    $mail->Password = 'Tunivisions-Link-2019';
-                    $mail->SMTPSecure = 'tls';
-                    $mail->Port     = 587;
-                    
-                    $mail->setFrom('no-reply@tunivisions.link', 'Tunivisions Link');
-                    $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
-                    
-                    // Add a recipient
-                
-                    $mail->addAddress($to);
-                    
-                    
-                    // Email subject
-                    $mail->Subject = $title ;
-                    
-                    // Set email format to HTML
-                    $mail->isHTML(true);
-                    
-                    // Email body content
-                     
-                    $mail->Body = $mailContent ;
-                    
-                    // Send email
-                    if(!$mail->send()){
-                        return true ; 
-                    }else{
-                        return false ; 
-                    }
-                       
-            }
+
 
 
 
