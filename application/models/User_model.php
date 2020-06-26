@@ -306,7 +306,7 @@ class User_model extends CI_Model
      */
     function checkPasswordExists($email)
     {
-        $this->db->select("userId");
+        $this->db->select("userId ,  name , email  ");
         $this->db->from("tbl_users");
         $this->db->where("email =", $email);
  

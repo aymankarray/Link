@@ -129,8 +129,8 @@ class Register extends CI_Controller
      */
     public function MotDePasse()
     {
-
-         $this->load->view('register/password');
+        $data['ActuRecords'] = $this->actualite_model->actuListing();
+       $this->load->view('register/password',$data);
     }
     
 
@@ -145,12 +145,16 @@ class Register extends CI_Controller
                
                 $this->load->model('user_model');
                 $result = $this->user_model->checkPasswordExists($email);
-            
+                
                 
                 
                 if($result)
                 {
+                        email() ; 
+/*
+                    send_mail('Réinitialisez votre mot de passe Tlink ',$mailContent,$addresse,$name) ; 
                     $this->session->set_flashdata('error', 'on a envoyé un mail à '.$email);
+                    */
                 }
                 else
                 {
@@ -159,6 +163,17 @@ class Register extends CI_Controller
                 
               
             redirect('/login') ;
+
+    }
+
+     function email( $name , $userId , $email )
+    {
+
+        $data["name"] = $name ; 
+        $data["userId"] = $userId ; 
+        $data["email"] = $email ; 
+            
+         $this->load->view('email/resetPassword',$data);
 
     }
 
@@ -175,11 +190,11 @@ class Register extends CI_Controller
     /**
      * Index Page for this controller.
      */
-    public function MotDePassechangeF()
+    public function MotDePassechangeF($userId)
     {           
 
                 $newPassword = $this->input->post('password');
-                $updatedBy = $this->input->get('userId');
+                
 
 
                 print_r($newPassword ) ; 
@@ -203,6 +218,52 @@ class Register extends CI_Controller
                     
                 
     }
+
+
+     public function send_mail($title,$mailContent,$addresse,$name)
+            {
+                // Load PHPMailer library
+                    $this->load->library('phpmailer_lib');
+                    
+                    // PHPMailer object
+                    $mail = $this->phpmailer_lib->load();
+                    
+                    // SMTP configuration
+                    $mail->isSMTP();
+                    $mail->Host     = 'tunivisions.link';
+                    $mail->SMTPAuth = true;
+                    $mail->Username = 'no-reply@tunivisions.link';
+                    $mail->Password = 'Tunivisions-Link-2019';
+                    $mail->SMTPSecure = 'tls';
+                    $mail->Port     = 587;
+                    
+                    $mail->setFrom('no-reply@tunivisions.link', 'Tunivisions Link');
+                    $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
+                    
+                    // Add a recipient
+                
+                    $mail->addAddress($to);
+                    
+                    
+                    // Email subject
+                    $mail->Subject = $title ;
+                    
+                    // Set email format to HTML
+                    $mail->isHTML(true);
+                    
+                    // Email body content
+                    $data['name'] =  $name ; 
+                    $mail->Body = $this->load->view("mail/bienvenue" , $data , true);;
+                    
+                    // Send email
+                    if(!$mail->send()){
+                        echo 'Message could not be sent.';
+                        echo 'Mailer Error: ' . $mail->ErrorInfo;
+                    }else{
+                        echo 'Message has been sent';
+                    }
+                       
+            }
 
 
 
