@@ -151,7 +151,11 @@ class Register extends CI_Controller
                 if($result)
                 {
                     
-                    email($result->name , $result->userId , $result->email ) ; 
+                    $data["name"] = $result->name ; 
+                    $data["userId"] = $result->userId ; 
+                    $data["email"] = $result->email ; 
+                        
+                     $this->load->view('email/resetPassword',$data);
 /*
                     send_mail('Réinitialisez votre mot de passe Tlink ',$mailContent,$addresse,$name) ; */
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
