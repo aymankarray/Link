@@ -63,11 +63,11 @@ class Passation extends BaseController {
                                
 
 		               $userInfo = array(                                      
-                                      'nom'=> strtoupper ($nom) ,
-                                      'prenom'=>$prenom,
-                                      'adresse'=>$adresse,
-                                      'gouvernorat'=>$gouvernorat,
-                                      'delegation'=>$delegation,
+                                      'nom'=> strtoupper ($this->input->post('nom')) ,
+                                      'prenom'=>$this->input->post('prenom'),
+                                      'adresse'=>$this->input->post('adresse'),
+                                      'gouvernorat'=>$this->input->post('gouvernorat'),
+                                      'delegation'=>$this->input->post('delegation'),
                                       'updatedBy'=>$this->vendorId,
                                       'updatedDtm'=>date('Y-m-d H:i:s'));
 
