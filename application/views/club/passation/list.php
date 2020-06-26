@@ -79,7 +79,7 @@
 
                         <td>
                       
-                              <small> <?php echo $record->act ?> <?php echo $record->cellule ?>    </small> 
+                              <small class="text-primary" > <b><?php echo $record->act ?></b> </small> <small><?php echo $record->cellule ?>    </small> 
                                   
                         </td>
                         <td>
