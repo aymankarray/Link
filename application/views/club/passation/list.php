@@ -42,8 +42,7 @@
                         <th>Club</th>
                         <th>cell act</th>
                         <th>cand pour</th>
-                        <th>Inscription </th>
-                        <th>Actif</th>
+                        <th>scores</th>
                         
                     </tr>
                     </thead>
@@ -69,44 +68,35 @@
                         <td>                                                      
                             <?php echo $record->nom ?>  <?php echo $record->prenom ?>
                         </td>
-                        
+
                         <td>
                             <a class="kt-user-card-v2__name" href="#">
-                              <small> <?php echo $record->ClubName ?> </small> </td>
+                              <small> <?php echo $record->clubName ?> </small> 
                             </a>                            
                                                      
                         </td>
-                        
-                        
-                        <td>
-                            <A HREF="mailto:<?php echo $record->email ?>"><i class="ri-mail-fill"></i></A> 
-                            <a href="tel:<?php echo $record->mobile ?>"><i class="ri-phone-fill"></i></i></a>
-                            <a href="<?php echo $record->facebook ?>"><i class="ri-facebook-box-fill"></i></i></i></a>
-                         </td>
 
                         <td>
-                            <small><small>
-
-                           parrin : <a class="kt-user-card-v2__name" href="https://tunivisions.link/User/ProfileShow/<?php echo $record->p_userId ?>" > <?php echo $record->parrain ?></a><br>
-                           date d'inscription :<a> <?php echo $record->createdDtm ?></a>
-                       </small></small>
+                      
+                              <small> <?php echo $record->act ?> <?php echo $record->cellule ?>    </small> 
+                                  
+                        </td>
+                        <td>
+                      
+                              <small> <?php echo $record->vol ?> <?php echo $record->celluleVol ?>    </small> 
+                                  
+                        </td>
+                        <td>
+                      
+                              <small>    </small> 
+                                  
                         </td>
                         
-                        <td> 
-                           
-                        <?php if($record->isDeleted == 0) { ?>
-                            <span class="btn btn-Info" > <small> Approuvé  </small></span>
-                        <?php }   ?>
-                        <?php if($record->isDeleted == 1) { ?>
-                            <span class="btn btn-warning" > <small> non approuvé </small> </span>
-                        <?php } ?>
 
-                        <?php  if($record->isDeleted == 2) {  ?>
-                            <span class="btn btn-danger" > <small> bloqué </small> </span>
-                        <?php } ?>
-     
-                           
-                        </td>
+
+                        
+                        
+                       
                        
 
                     </tr>
