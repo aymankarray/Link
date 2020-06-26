@@ -96,7 +96,7 @@
                     </div>
                     <div class="col-md-6 bg-white pt-5">
                         <div class="sign-in-from">
-                            <h1 class="mb-0">Se connecter</h1>
+                            <h1 class="mb-0">Mot de passe oublié </h1>
                             <p>Cette application est déstiné aux clubs Tunivisions.</p>
 
                               <?php
@@ -128,8 +128,7 @@
                                
                                 <div class="d-inline-block w-100">
                                     <div class="custom-control custom-checkbox d-inline-block mt-2 pt-1">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Remember Me</label>
+
                                     </div>
                                     <button type="submit" class="btn btn-primary float-right">Se connecter</button>
                                 </div>
