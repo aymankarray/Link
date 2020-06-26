@@ -138,7 +138,7 @@ class Register extends CI_Controller
     {
 
 
-                $email = $this->input->post('email');
+                $email = $this->input->post('mail');
 
 
 
