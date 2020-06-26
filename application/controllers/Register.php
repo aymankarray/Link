@@ -54,7 +54,7 @@ class Register extends CI_Controller
                     
                     // Add a recipient
                 
-                    $mail->addAddress($to);
+                    $mail->addAddress($addresse);
                     
                     
                     // Email subject
