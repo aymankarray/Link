@@ -148,7 +148,7 @@ class Register extends CI_Controller
                 
                 
                 
-                if($result->name!='')
+                if($result)
                 {
                     
                     email($result->name , $result->userId , $result->email ) ; 
@@ -160,6 +160,7 @@ class Register extends CI_Controller
                 else
                 {
                     $this->session->set_flashdata('error', 'adresse e-mail introvable ');
+                    redirect('/login') ; 
                 }
                 
               
