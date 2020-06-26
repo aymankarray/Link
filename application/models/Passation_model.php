@@ -63,8 +63,8 @@ class Passation_model extends CI_Model
         $this->db->from('tbl_passation  as BaseTbl ');
         $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
         $this->db->join('tbl_club as Club ', 'Club.clubID = User.ClubID', 'LEFT');
-        $this->db->join('tbl_roles as RoleAct ', 'BaseTbl.roleAct = roleAct.roleId', 'LEFT');
-        $this->db->join('tbl_roles as RoleVol ', 'BaseTbl.BaseTbl = roleVol.roleId', 'LEFT');
+        $this->db->join('tbl_roles as RoleAct ', 'BaseTbl.roleAct = RoleAct.roleId', 'LEFT');
+        $this->db->join('tbl_roles as RoleVol ', 'BaseTbl.BaseTbl = RoleVol.roleId', 'LEFT');
 
         $query = $this->db->get();
         
