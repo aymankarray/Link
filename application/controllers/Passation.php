@@ -105,7 +105,7 @@ class Passation extends BaseController {
              
              $data  ['userRecords'] = $this->passation_model->passationListing() ; 
              $this->global['pageTitle'] = 'Acceuil' ;
-              $this->loadViews("Acceuil", $this->global, $data, NULL);   
+              $this->loadViews("club/passation/list", $this->global, $data, NULL);   
         } 
         
 		
