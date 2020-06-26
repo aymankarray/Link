@@ -304,13 +304,11 @@ class User_model extends CI_Model
      * @param {number} $userId : This is user id
      * @return {mixed} $result : This is searched result
      */
-    function checkPasswordExists($email,$cin,$mobile)
+    function checkPasswordExists($email)
     {
         $this->db->select("userId");
         $this->db->from("tbl_users");
         $this->db->where("email =", $email);
-        $this->db->where("cin =", $cin);
-        $this->db->where("mobile =", $mobile);
  
       
         $query = $this->db->get();

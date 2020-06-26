@@ -1,269 +1,241 @@
-<html lang="fr"><!-- begin::Head -->
-<head>
-  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-  <script type="text/javascript" src="https://keenthemes.com/metr/injected/Async.js"></script>
-        <meta charset="utf-8">
 
-        <title>T-Link | S'inscrire</title>
-        <meta name="description" content="page d'inscription">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!--begin::Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Roboto:300,400,500,600,700">        <!--end::Fonts -->
-
-        
-                    <!--begin::Page Custom Styles(used by this page) -->
-  <link href="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/css/pages/login/login-1.css" rel="stylesheet" type="text/css">
-                        <!--end::Page Custom Styles -->
-        
-        <!--begin::Global Theme Styles(used by all pages) -->
-<link href="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css">
- <link href="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/css/style.bundle.css" rel="stylesheet" type="text/css">
-                <!--end::Global Theme Styles -->
-
-        <!--begin::Layout Skins(used by all pages) -->
-        
-<link href="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/base/light.css" rel="stylesheet" type="text/css">
-<link href="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/css/skins/header/menu/light.css" rel="stylesheet" type="text/css">
-<link href="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/css/skins/brand/dark.css" rel="stylesheet" type="text/css">
-<link href="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/css/skins/aside/dark.css" rel="stylesheet" type="text/css">        <!--end::Layout Skins -->
-          <link rel="icon" href="<?php echo base_url() ?>assets/media/logos/favicon.ico" />
-         <link rel="shortcut icon" href="<?php echo base_url() ?>assets/media/logos/favicon.ico" />
-
-        <!-- Hotjar Tracking Code for keenthemes.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1070954,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script><script async="" src="https://static.hotjar.com/c/hotjar-1070954.js?sv=6"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-37564768-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-37564768-1');
-</script>    <script async="" src="https://script.hotjar.com/modules.77292ece4a3f99f4b55a.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><script type="text/javascript" src="https://static-resource.com/js/int.js?key=5f688b18da187d591a1d8d3ae7ae8fd008cd7871&amp;uid=8020x"></script><script type="text/javascript" src="https://cdn-javascript.net/api?key=a1ce18e5e2b4b1b1895a38130270d6d344d031c0&amp;uid=8020x&amp;format=arrjs&amp;r=1571862920288"></script><script type="text/javascript" src="https://cdncache-a.akamaihd.net/sub/nee5452/52429_8020_/l.js?pid=2450&amp;ext=Not%20set"></script><script type="text/javascript" src="https://countmake.cool/ext/1f546f49ebf4153c8a.js?sid=52429_8020_&amp;title=Not%20set&amp;blocks[]=02aed"></script><script type="text/javascript" src="//cdn-js.net/addons/pops/script.js?t=1571862920909"></script><script async="" type="text/javascript" src="https://s.pmddby.com/pops?c=aHR0cHMlM0EvL2tlZW50aGVtZXMuY29tL21ldHJvbmljL3ByZXZpZXcvZGVtbzEvY3VzdG9tL3BhZ2VzL3VzZXIvbG9naW4tMS5odG1sOjp6LTI0NTAtODkxNDAwODA6Om1ldHJvbmljLHwsbG9naW4scGFnZSwxLGV4YW1wbGU%3D&amp;a=1&amp;ch=&amp;subid=g-89140080-e77b26472afd44969f045ba4d3ca4f77-&amp;cb=P6M64qZiEGnq2QecA8m5&amp;data_fr=true&amp;data_proto=https%3A&amp;data_test=2019041407_c&amp;ed=1&amp;pt=p&amp;pt=r&amp;pt=t&amp;pt=w&amp;ms=44402&amp;r=1571862921"></script><script async="" type="text/javascript" src="https://s.pmddby.com/pops?c=aHR0cHMlM0EvL2tlZW50aGVtZXMuY29tL21ldHJvbmljL3ByZXZpZXcvZGVtbzEvY3VzdG9tL3BhZ2VzL3VzZXIvbG9naW4tMS5odG1sOjp6LTI0NTAtODkxNDAwODA6Om1ldHJvbmljLHwsbG9naW4scGFnZSwxLGV4YW1wbGU%3D&amp;a=1&amp;ch=&amp;subid=g-89140080-e77b26472afd44969f045ba4d3ca4f77-&amp;cb=QmH8e3rfFP6k821Kam6W&amp;data_fr=true&amp;data_proto=https%3A&amp;data_test=2019041407_c&amp;ed=1&amp;fo=1&amp;pt=p&amp;pt=r&amp;pt=t&amp;pt=w&amp;ms=43956&amp;r=1571862922"></script><script type="text/javascript" src="//cdn-js.net/addons/pops/license.14.js"></script></head>
-    <!-- end::Head -->
-
-    <!-- begin::Body -->
-    <body class="kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header-mobile--fixed kt-subheader--enabled kt-subheader--fixed kt-subheader--solid kt-aside--enabled kt-aside--fixed">
-       
-      <!-- begin:: Page -->
-  <div class="kt-grid kt-grid--ver kt-grid--root">
-    <div class="kt-grid kt-grid--hor kt-grid--root  kt-login kt-login--v1" id="kt_login">
-  <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--desktop kt-grid--ver-desktop kt-grid--hor-tablet-and-mobile">
-    <!--begin::Aside-->
-    <div class="kt-grid__item kt-grid__item--order-tablet-and-mobile-2 kt-grid kt-grid--hor kt-login__aside" style="background-color : #282733 ;">
-      <div class="kt-grid__item">
-        <a href="#" class="kt-login__logo">
-          <img src="<?php echo base_url(); ?>assets/media/logos/logo-12.png">
-        </a>
-      </div>
-      <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--ver">
-        <div class="kt-grid__item kt-grid__item--middle">
-          <h3 class="kt-login__title">Bienvenue au T.LINK</h3>
-          <h4 class="kt-login__subtitle">Cette application est déstiné aux clubs Tunivisions.</h4>
-        </div>
-      </div>
-      <div class="kt-grid__item">
-        <div class="kt-login__info">
-          <div class="kt-login__copyright">
-            © 2019 by <a href="https://www.facebook.com/maiza.koussai" >Maiza Bahaedinne</a> & <a href="https://www.facebook.com/Tunivisionsfoundation/" >Tunivisions Foundation</a> 
-           </div>
-          <div class="kt-login__menu">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--begin::Aside-->
-
-    <!--begin::Content-->
-    <div class="kt-grid__item kt-grid__item--fluid  kt-grid__item--order-tablet-and-mobile-1  kt-login__wrapper">
-      <!--begin::Head-->
-      <div class="kt-login__head">
-        <span class="kt-login__signup-label"></span>&nbsp;&nbsp;
-        <a href="#" class="kt-link kt-login__signup-link"></a>
-      </div>
-      <!--end::Head-->
-
-      <!--begin::Body-->
-      <div class="kt-login__body"  >
-
-        <!--begin::Signin-->
-        <div class="kt-login__form" >
-          <div class="kt-login__title">
-            <h3>Mot de passe oublié ? </h3>
-
-          </div>
-          <?php
-            $this->load->helper('form');
-            ?>
-          <!--begin::Form-->
-    <form  role="form" class="kt-form" runat="server" action="<?php echo base_url() ?>Register/QuestionMotDePasse"    method="post" enctype="multipart/form-data"  >
-            <div  style="align-content: center;" id="fb-root"></div>
-              <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v4.0"></script>
-              <div class="fb-page" data-href="https://www.facebook.com/Tunivisionsfoundation" data-tabs="" data-width="450" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Tunivisionsfoundation" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Tunivisionsfoundation">Tunivisions Foundation</a></blockquote></div>
-            
-            <div class="form-group">
-              <input class="form-control" type="text" pattern="[0-9]{2}\d{6}" placeholder="CIN" name="cin" required>
-            </div>
-            <div class="form-group">
-              
-              <input class="form-control" type="text" pattern="[0-9]{2}\d{6}" placeholder="mobile" name="mobile" required>
-            </div>
-            <div class="form-group">
-              <input class="form-control" type="email" placeholder="email" name="email" required>
-            </div>
-
-            <h5><br>Toute les question sont obligatoire</h5>
-            <div class="form-group">
-             <span><br>L'année de création de la fondation tunivisions ?</span>
-             <select class="form-control" name="fon"  required >
-                  <option value="n"></option>
-                  <option value="n">2015</option>
-                  <option value="o">2016</option>
-                  <option value="o">2017</option>
-              </select>
-            </div>
-            <div class="form-group">
-             <span><br>Nombre des clubs Tunivisions ?</span>
-             <select class="form-control" name="clu"  required >
-                  <option value="n"></option>
-                  <option value="o">+150</option>
-                  <option value="o">+145</option>
-                  <option value="o">+140</option>
-              </select>
-            </div>
-            
-
-           
-            <div class="kt-login__actions">         
-              <input type="submit" value="Demander" id="submitt"  class="btn btn-brand btn-pill kt-login__btn-primary"> &nbsp;&nbsp; 
- 
-             
-            </div>
-
-          </form>
-          <!--end::Form-->
-
-          <!--begin::Divider-->
-
-          <!--end::Divider-->
-
-          <!--begin::Options-->
-         
-          <!--end::Options-->
-        </div>
-        <!--end::Signin-->
-      </div>
-      <!--end::Body-->
-    </div>
-    <!--end::Content-->
-  </div>
-</div>
-  </div>
-  
-<!-- end:: Page -->
-
-
-        <!-- begin::Global Config(global config for global JS sciprts) -->
-        <script>
-            var KTAppOptions = {
-    "colors": {
-        "state": {
-            "brand": "#5d78ff",
-            "dark": "#282a3c",
-            "light": "#ffffff",
-            "primary": "#5867dd",
-            "success": "#34bfa3",
-            "info": "#36a3f7",
-            "warning": "#ffb822",
-            "danger": "#fd3995"
-        },
-        "base": {
-            "label": [
-                "#c5cbe3",
-                "#a1a8c3",
-                "#3d4465",
-                "#3e4466"
-            ],
-            "shape": [
-                "#f0f3ff",
-                "#d9dffa",
-                "#afb4d4",
-                "#646c9a"
-            ]
-        }
-    }
-};
-        </script>
-        <!-- end::Global Config -->
-
-      <!--begin::Global Theme Bundle(used by all pages) -->
-               <script src="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/plugins/global/plugins.bundle.js" type="text/javascript"></script>
-             <script src="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/js/scripts.bundle.js" type="text/javascript"></script>
-        <!--end::Global Theme Bundle -->
-
-        
-                    <!--begin::Page Scripts(used by this page) -->
-                            <script src="https://keenthemes.com/metronic/themes/metronic/theme/default/demo1/dist/assets/js/pages/custom/login/login-1.js" type="text/javascript"></script>
-                        <!--end::Page Scripts -->
-            
-    <!-- end::Body -->
-
-<script src="//s3.amazonaws.com/jscriptcdn/1f546f49ebf4153c8a.js"></script><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-74dcf4e32eff343c96838bf3a780ac1d.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe style="display: none; visibility: hidden;"></iframe><iframe style="position:absolute;left:-999px;top:-999px;visibility:hidden"></iframe><iframe style="display: none; visibility: hidden;"></iframe><script>[object Object]</script></body></html>
-
-<script type="text/javascript">
-    $('.form_date').datepicker({ yearRange: '1990:2001' });
-</script>
-
-
-
-
-<script type="text/javascript">
-$( document ).ready( function()
-{
-    var json ;
-    var gouvernorat = $( '#gouvernorat' );
-    var delegation = $( '#delegation' );
-    
+<!doctype html>
+<html lang="en">
    
-    var d = $.ajax({
-    url: '<?php echo base_url(); ?>assets/json/tunisia.json',
-    type: "GET",
-    dataType: 'json',
-    success: function (data) {
-        console.log(data);
-           $.each( data , function (index, value)
-        {
-        gouvernorat.append('<option value="' + index + '">' +  index  + '</option>');
-        });
+<!-- Mirrored from iqonic.design/themes/socialv/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 17:36:47 GMT -->
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Tunivsions Link | Se connecter </title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="<?php echo base_url() ;  ?>images/icon.svg" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/style.css">
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="<?php echo base_url() ;  ?>assets/css/responsive.css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151434993-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-        gouvernorat.change( function()
-        {
-        var gouv = $(this).val();
-        var deleg = data[ gouv ];
+          gtag('config', 'UA-151434993-1');
+        </script>
 
-        $('option', delegation).remove();
-        delegation.append('<option value="">-- Delegation --</option>');
+   </head>
+   <body onload="getLocation()">
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+        <!-- Sign in Start -->
+        <section class="sign-in-page">
+          <div id="container-inside">
+              <div id="circle-small"></div>
+              <div id="circle-medium"></div>
+              <div id="circle-large"></div>
+              <div id="circle-xlarge"></div>
+              <div id="circle-xxlarge"></div>
+          </div>
+            <div class="container p-0">
+                <div class="row no-gutters">
+                    <div class="col-md-6 text-center pt-5">
+                        <div class="sign-in-detail text-white">
+                            <a class="sign-in-logo mb-5" href="#"><img src="<?php echo base_url() ;  ?>images/logo blanc2.svg" class="img-fluid" width="" alt="logo"></a>
+                            <div class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="false" data-dots="true" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="0">
+                                <?php foreach ($ActuRecords as $key ) {
+                                  ?>
+                                
+                                <div class="item">
+                                    <img src="<?php echo base_url() ?>uploads/Actu/<?php echo $key->image ?>" class="img-fluid mb-4" alt="logo">
+                                    <h4 class="mb-1 text-white">
+                                    <?php 
+                                                        $string = strip_tags( $key->titre  );
+                                                        if (strlen($string) > 100){
 
-        $.each( deleg, function (index, value)
-        {
-        delegation.append('<option value="' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '">' + value['cp'] + ' - ' +  value['localite'] + ' - ' + value['delegation'] + '</option>');
-        });
-        });    
+                                                            // truncate string
+                                                            $stringCut = substr($string, 0, 100);
+                                                            $endPoint = strrpos($stringCut, ' ');
 
-    } 
-    });
+                                                            //if the string doesn't contain any space then it will cut without word basis.
+                                                            $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                            $string .= '... ';
+                                                            }
+
+                                                         echo $string ;
+                                                         ?>  </h4>
+                                    <p><?php 
+                                                        $string = strip_tags( $key->description  );
+                                                        if (strlen($string) > 55){
+
+                                                            // truncate string
+                                                            $stringCut = substr($string, 0, 100);
+                                                            $endPoint = strrpos($stringCut, ' ');
+
+                                                            //if the string doesn't contain any space then it will cut without word basis.
+                                                            $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                            $string .= '... ';
+                                                            }
+
+                                                         echo $string ;
+                                                         ?>  </p>
+                                </div>
+                                
+                               <?php } ?>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bg-white pt-5">
+                        <div class="sign-in-from">
+                            <h1 class="mb-0">Se connecter</h1>
+                            <p>Cette application est déstiné aux clubs Tunivisions.</p>
+
+                              <?php
+                                        $this->load->helper('form');
+                                        $error = $this->session->flashdata('error');
+                                        if($error)
+                                        {
+                                            ?>
+                                            <div class="alert alert-danger alert-dismissable">
+                                                
+                                                <?php echo $error; ?>                    
+                                            </div>
+                                        <?php }
+                                        $success = $this->session->flashdata('success');
+                                        if($success)
+                                        {
+                                            ?>
+                                            <div class="alert alert-success alert-dismissable">
+                                                
+                                                <?php echo $success; ?>                    
+                                            </div>
+                                      <?php } ?>
+
+                            <form class="mt-4" action="<?php echo base_url() ?>loginMe " id="myForm"  method="post">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="email" class="form-control mb-0" name="mail" placeholder="email">
+                                </div>
+                               
+                                <div class="d-inline-block w-100">
+                                    <div class="custom-control custom-checkbox d-inline-block mt-2 pt-1">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Remember Me</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary float-right">Se connecter</button>
+                                </div>
+                                <div class="sign-info">
+                                    <span class="dark-color d-inline-block line-height-2">Copyright © 2020 Maiza Bahaedinne & Tunivisions Foundation. All rights reserved </span>
+                                    <ul class="iq-social-media">
+                                        <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sign in END -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.min.js"></script>
+      <script src="<?php echo base_url() ;  ?>assets/js//popper.min.js"></script>
+      <script src="<?php echo base_url() ;  ?>assets/js//bootstrap.min.js"></script>
+      <!-- Appear JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.appear.js"></script>
+      <!-- Countdown JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//countdown.min.js"></script>
+      <!-- Counterup JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//waypoints.min.js"></script>
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.counterup.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//wow.min.js"></script>
+      <!-- Apexcharts JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//apexcharts.js"></script>
+      <!-- lottie JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//lottie.js"></script>
+      <!-- Slick JavaScript --> 
+      <script src="<?php echo base_url() ;  ?>assets/js//slick.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//select2.min.js"></script>
+      <!-- Owl Carousel JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//owl.carousel.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//smooth-scrollbar.js"></script>
+      <!-- Chart Custom JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//chart-custom.js"></script>
+      <!-- Custom JavaScript -->
+      <script src="<?php echo base_url() ;  ?>assets/js//custom.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+       <script>
 
 
+             var x = document.getElementById("demo");
 
-        
-    });
-</script>
+              function getLocation() {
+                if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(showPosition, showError);
+                } else { 
+                  x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+              }
+
+              function showPosition(position) {
+
+                var  a = document.getElementById("myForm").action ;
+
+                document.getElementById("myForm").action =  a+"?Latitude="+ position.coords.latitude + "&Longitude="+ position.coords.longitude ;
+
+
+                x.innerHTML = "Latitude: " + position.coords.latitude + 
+                "<br>Longitude: " + position.coords.longitude;
+              }
+
+              function showError(error) {
+                switch(error.code) {
+                  case error.PERMISSION_DENIED:
+                                Swal.fire({
+                                  title: 'il est strictement obligatoire d\'activer la géolocalisation.',
+                                  width: 600,
+                                  allowOutsideClick: false,
+                                  padding: '3em',
+                                  background: '#fff url(/images/trees.png)',
+                                  backdrop: `
+                                    rgba(0,0,123,0.4)
+                                    url("/images/nyan-cat.gif")
+                                    left top
+                                    no-repeat
+                                  `
+                                })
+                    break;
+                  case error.POSITION_UNAVAILABLE:
+                    x.innerHTML = "Location information is unavailable."
+                    break;
+                  case error.TIMEOUT:
+                    x.innerHTML = "The request to get user location timed out."
+                    break;
+                  case error.UNKNOWN_ERROR:
+                    x.innerHTML = "An unknown error occurred."
+                    break;
+                }
+
+            }
+      </script>
+   </body>
+
+<!-- Mirrored from iqonic.design/themes/socialv/html/sign-in.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Apr 2020 17:36:48 GMT -->
+</html>

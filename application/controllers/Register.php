@@ -139,26 +139,22 @@ class Register extends CI_Controller
 
 
                 $email = $this->input->post('email');
-                $mobile = $this->input->post('mobile');
-                $cin = $this->input->post('cin');
 
-                $q1 = $this->input->post('fon');
-                $q2 = $this->input->post('clu');
 
 
                
                 $this->load->model('user_model');
-                $result = $this->user_model->checkPasswordExists($email,$cin,$mobile);
+                $result = $this->user_model->checkPasswordExists($email);
             
                 
                 
-                if($result && $q1 == 'o' &&  $q2 == 'o' )
+                if($result)
                 {
-                    redirect('Register/MotDePassechange?userId='.$result->userId) ;
+                    $this->session->set_flashdata('error', 'on a envoyé un mail à '.$email);
                 }
                 else
                 {
-                    $this->session->set_flashdata('error', 'Problème veuillez contacter <a href="https://www.facebook.com/maiza.koussai">l\'administrateur</a> ');
+                    $this->session->set_flashdata('error', 'adresse e-mail introvable ');
                 }
                 
               

@@ -127,7 +127,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Mot de passe</label>
-                                    <a href="#" class="float-right">Mot de passe oublié ?</a>
+                                    <a href="<?php echo base_url() ?>Register/MotDePasse" class="float-right">Mot de passe oublié ?</a>
                                     <input type="password" class="form-control mb-0" name="password"  placeholder="Mot de passe">
                                 </div>
                                 <div class="d-inline-block w-100">
