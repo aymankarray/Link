@@ -154,12 +154,15 @@ class Register extends CI_Controller
                     $data["name"] = $result->name ; 
                     $data["userId"] = $result->userId ; 
                     $data["email"] = $result->email ; 
-                        
-                     $this->load->view('email/resetPassword',$data);
-/*
-                    send_mail('Réinitialisez votre mot de passe Tlink ',$mailContent,$addresse,$name) ; */
+
+
+                    if(send_mail('Réinitialisez votre mot de passe Tlink ',$this->load->view('email/resetPassword',$data),$result->email))
+                    {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
-                    
+                    }
+                    else{
+                        $this->session->set_flashdata('error', 'Problème d\'envoi contacter le service technique tunivisions.link@gmail.com ' );
+                    }
                 }
                 else
                 {
@@ -172,16 +175,6 @@ class Register extends CI_Controller
 
     }
 
-     function email( $name , $userId , $email )
-    {
-
-        $data["name"] = $name ; 
-        $data["userId"] = $userId ; 
-        $data["email"] = $email ; 
-            
-         $this->load->view('email/resetPassword',$data);
-
-    }
 
      /**
      * Index Page for this controller.
@@ -226,7 +219,7 @@ class Register extends CI_Controller
     }
 
 
-     public function send_mail($title,$mailContent,$addresse,$name)
+     public function send_mail($title,$mailContent,$addresse)
             {
                 // Load PHPMailer library
                     $this->load->library('phpmailer_lib');
@@ -258,15 +251,14 @@ class Register extends CI_Controller
                     $mail->isHTML(true);
                     
                     // Email body content
-                    $data['name'] =  $name ; 
-                    $mail->Body = $this->load->view("mail/bienvenue" , $data , true);;
+                     
+                    $mail->Body = $mailContent ;
                     
                     // Send email
                     if(!$mail->send()){
-                        echo 'Message could not be sent.';
-                        echo 'Mailer Error: ' . $mail->ErrorInfo;
+                        return true ; 
                     }else{
-                        echo 'Message has been sent';
+                        return false ; 
                     }
                        
             }

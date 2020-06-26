@@ -18,6 +18,7 @@
 <img src="https://www.tunivisions.link/images/logo%20rouge.svg" width="150px" ></img>
 <br>
 <h1 style="text-align:center">Bonjour , <?php echo $name ?></h1>
+<br><br>
 <p>	
 Vous avez récemment demandé la réinitialisation de votre mot de passe. Il vous suffit de cliquer sur le bouton ci-dessous pour en définir un nouveau.</p>
 <br>
