@@ -59,7 +59,10 @@ class Passation extends BaseController {
 
 
 	       public function addNewPassation()
-		        {	            $this->global['pageTitle'] = 'Passation';
+		        {	            
+
+
+                    $this->global['pageTitle'] = 'Passation';
                                
 
 		               $userInfo = array(                                      
@@ -97,10 +100,13 @@ class Passation extends BaseController {
 
 
 
-
-  
-
-	
-		
+  public function index()
+            {
+             
+             $data  ['userRecords'] = $this->passation_model->passationListing() ; 
+             $this->global['pageTitle'] = 'Acceuil' ;
+              $this->loadViews("Acceuil", $this->global, $data, NULL);   
+        } 
+        
 		
 }
