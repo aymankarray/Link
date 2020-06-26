@@ -67,7 +67,7 @@
                       
                         <td>                                                      
                             <?php echo $record->nom ?>  <?php echo $record->prenom ?>
-                            <?php if ($record->nom =='' ) { echo $record->name } ?>
+                            <?php if ($record->nom =='' ) { echo $record->name; } ?>
                         </td>
 
                         <td>
