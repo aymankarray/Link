@@ -83,7 +83,16 @@ class User extends BaseController
 
 
         $data["LastRaitingClub"] = $this->scores_model->LastRaitingClub()   ;
-        $data["RateMember"] = $this->scores_model->RaitingUsers()   ;
+        
+
+        $data["RateMember"] = $this->scores_model->RaitingUsers(10 , 5 , '')   ;
+        $data["RateVPAF"] = $this->scores_model->RaitingUsers(3 , 5 , 'Administration et finance')   ;
+        $data["RateVPM"] = $this->scores_model->RaitingUsers(3 , 5 , 'Marketing')   ;
+        $data["RateVPE"] = $this->scores_model->RaitingUsers(3 , 5 , 'Evenementiel')   ;
+        $data["RateVPRH"] = $this->scores_model->RaitingUsers(3 , 5 , 'Gestion des talents')   ;
+
+
+
         $data["countEval"] = count($this->evaluation_model->evaluation_A_ValidListing($this->clubID))   ;
         $data['ActuRecords'] = $this->actualite_model->actuListing();
         $data['MyclubID'] = $this->clubID;

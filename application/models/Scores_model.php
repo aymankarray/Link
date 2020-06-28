@@ -74,13 +74,15 @@ class Scores_model extends CI_Model
      * @param number $segment : This is pagination limit
      * @return array $result : This is result
      */
-    function RaitingUsers()
+    function RaitingUsers($limit , $role , $cellule)
     {
         $this->db->select('BaseTbl.userId  , BaseTbl.avatar , BaseTbl.name ,  BaseTbl.clubName , sum(scoreByMembre) as scores  ');
         $this->db->from('memberscoring as  BaseTbl');
         $this->db->order_by('scores', 'DESC');
         $this->db->group_by('BaseTbl.userID');  
-        $this->db->limit(10);  
+        $this->db->limit($limit); 
+        $this->db->where('BaseTbl.roleId = ',$role ); 
+        $this->db->where('BaseTbl.cellule = ',$cellule );          
         $query = $this->db->get();
         
         $result = $query->result();        
