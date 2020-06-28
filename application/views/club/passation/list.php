@@ -65,9 +65,11 @@
                             </small>
                         </td>
                       
-                        <td>                                                      
+                        <td>  
+                        <a href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>" >                                                    
                             <?php echo $record->nom ?>  <?php echo $record->prenom ?>
                             <?php if ($record->nom =='' ) { echo $record->name; } ?>
+                        </a>
                         </td>
 
                         <td>
