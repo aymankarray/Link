@@ -781,11 +781,11 @@
                      </li>
 
                      <li>
-                        <a href="#Mclub" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
+                        <a href="#Mclub" class="iq-waves-effect" >
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
                             <i class="ri-group-2-line"></i>Mon club <i class="ri-arrow-right-s-line iq-arrow-right"></i>
                         </a>
-                        <ul id="Mclub" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
+                        <ul id="Mclub" class="iq-submenu " data-parent="#iq-sidebar-toggle" style="">
                             <li>
                                 <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $clubID ?>"> <i class="ri-information-line"></i>Details  </a>    
                             </li>
@@ -807,7 +807,7 @@
                        <a href="<?php echo base_url() ?>Club/clubListing" class="iq-waves-effect"><i class="ri-list-check"></i><span>Clubs</span></a>
                      </li>
                      <li>
-                        <a href="#mailbox" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="true">
+                        <a href="#mailbox" class="iq-waves-effect collapsed" >
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
                             <i class="ri-book-open-line"></i>Academy <i class="ri-arrow-right-s-line iq-arrow-right"></i>
                         </a>
@@ -823,7 +823,7 @@
                       </li>
 
                       <li>
-                        <a class="iq-waves-effect" data-toggle="collapse" aria-expanded="true">
+                        <a class="iq-waves-effect" >
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
                             <i class="ri-store-3-line"></i>Store 
                         </a>
