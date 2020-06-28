@@ -335,7 +335,7 @@
     <div class="row">
 
 
-        <div class="col-lg-5 col-xl-4 grid-margin grid-margin-xl-0 stretch-card">
+     
         <div class="card">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-baseline mb-2">
@@ -345,14 +345,7 @@
                     </div>
                 </div>
 
-                <style type="text/css">
-                    .pro-turtle {
-                        object-fit: cover;
-                        object-position: 50% 50%;
-                        width: 40px;
-                        height: 40px;
-                    }
-                </style> 
+
                <?php if($clubID == 0){  ?>
                 <table  class="table table-dark table-hover" >
                           <th>
@@ -397,18 +390,18 @@
 
                                             </small></small> </td>
 
-                                            <td> <p class="text-muted "><small><small><?php echo $membre->scores ?> Points</small></p> </td>
+                                            <td> <p class="text-muted "><small><?php echo $membre->scores ?> Points</small></p> </td>
                                           </tr>
                                           
-                                        </thead>
+                                       
                                         <?php $c= $c + 1 ;  }   }else { echo "Il y a pas de données";} ?>
                 </table>
                 <?php } ?>
             </div>
         </div>
-        
 
-         <div class="col-lg-5 col-xl-4 grid-margin grid-margin-xl-0 stretch-card">
+
+         
         <div class="card">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-baseline mb-2">
@@ -418,14 +411,7 @@
                     </div>
                 </div>
 
-                <style type="text/css">
-                    .pro-turtle {
-                        object-fit: cover;
-                        object-position: 50% 50%;
-                        width: 40px;
-                        height: 40px;
-                    }
-                </style> 
+
                <?php if($clubID == 0){  ?>
                 <table  class="table table-dark table-hover" >
                           <th>
@@ -470,10 +456,10 @@
 
                                             </small></small> </td>
 
-                                            <td> <p class="text-muted "><small><small><?php echo $membre->scores ?> Points</small></p> </td>
+                                            <td> <p class="text-muted "><small><?php echo $membre->scores ?> Points</small></p> </td>
                                           </tr>
                                           
-                                        </thead>
+                                      
                                         <?php $c= $c + 1 ;  }   }else { echo "Il y a pas de données";} ?>
                 </table>
                 <?php } ?>
@@ -482,7 +468,7 @@
 
 
 
-        <div class="col-lg-5 col-xl-4 grid-margin grid-margin-xl-0 stretch-card">
+       
         <div class="card">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-baseline mb-2">
@@ -491,15 +477,7 @@
 
                     </div>
                 </div>
-
-                <style type="text/css">
-                    .pro-turtle {
-                        object-fit: cover;
-                        object-position: 50% 50%;
-                        width: 40px;
-                        height: 40px;
-                    }
-                </style> 
+ 
                <?php if($clubID == 0){  ?>
                 <table  class="table table-dark table-hover" >
                           <th>
@@ -544,10 +522,9 @@
 
                                             </small></small> </td>
 
-                                            <td> <p class="text-muted "><small><small><?php echo $membre->scores ?> Points</small></p> </td>
+                                            <td> <p class="text-muted "><small><?php echo $membre->scores ?> Points</small></p> </td>
                                           </tr>
-                                          
-                                        </thead>
+                                        
                                         <?php $c= $c + 1 ;  }   }else { echo "Il y a pas de données";} ?>
                 </table>
                 <?php } ?>
@@ -555,7 +532,7 @@
         </div>
 
 
-        <div class="col-lg-5 col-xl-4 grid-margin grid-margin-xl-0 stretch-card">
+        
         <div class="card">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-baseline mb-2">
@@ -617,10 +594,10 @@
 
                                             </small></small> </td>
 
-                                            <td> <p class="text-muted "><small><small><?php echo $membre->scores ?> Points</small></p> </td>
+                                            <td> <p class="text-muted "><small><?php echo $membre->scores ?> Points</small></p> </td>
                                           </tr>
                                           
-                                        </thead>
+                                      
                                         <?php $c= $c + 1 ;  }   }else { echo "Il y a pas de données";} ?>
                 </table>
                 <?php } ?>
