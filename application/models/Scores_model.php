@@ -82,7 +82,9 @@ class Scores_model extends CI_Model
         $this->db->group_by('BaseTbl.userID');  
         $this->db->limit($limit); 
         $this->db->where('BaseTbl.roleId = ',$role ); 
-        $this->db->where('BaseTbl.cellule = ',$cellule );          
+        if(  $cellule != '' ){
+        $this->db->where('BaseTbl.cellule = ',$cellule );    
+        }      
         $query = $this->db->get();
         
         $result = $query->result();        
