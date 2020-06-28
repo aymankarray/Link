@@ -86,10 +86,10 @@ class User extends BaseController
         
 
         $data["RateMember"] = $this->scores_model->RaitingUsers(10 , 5 , '')   ;
-        $data["RateVPAF"] = $this->scores_model->RaitingUsers(3 , 5 , 'Administration et finance')   ;
-        $data["RateVPM"] = $this->scores_model->RaitingUsers(3 , 5 , 'Marketing')   ;
-        $data["RateVPE"] = $this->scores_model->RaitingUsers(3 , 5 , 'Evenementiel')   ;
-        $data["RateVPRH"] = $this->scores_model->RaitingUsers(3 , 5 , 'Gestion des talents')   ;
+        $data["RateVPAF"] = $this->scores_model->RaitingUsers(3 , 3 , 'Administration et finance')   ;
+        $data["RateVPM"] = $this->scores_model->RaitingUsers(3 , 3 , 'Marketing')   ;
+        $data["RateVPE"] = $this->scores_model->RaitingUsers(3 , 3 , 'Evenementiel')   ;
+        $data["RateVPRH"] = $this->scores_model->RaitingUsers(3 , 3 , 'Gestion des talents')   ;
 
 
 
