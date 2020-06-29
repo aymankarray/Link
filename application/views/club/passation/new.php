@@ -281,7 +281,7 @@
                         <br>
     
                         <div class="box-footer">
-                            <input type="submit" class="btn btn-primary" value="Envoyer" onclick="document.getElementById('fp').submit();" />
+                            <input type="submit" class="btn btn-primary" value="Envoyer"  />
                             <input type="reset" class="btn btn-default" value="Reset" />
                             <br>
                             <br>
