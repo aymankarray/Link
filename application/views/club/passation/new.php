@@ -84,6 +84,7 @@
                               <br>Je veux postuler pour le poste de 
                             </h4>
                             <select name="roleId"   class="form-control" required >
+                              <option value="" >>Veuillez choisir votre poste</option>
                               <option value="1" >Président(e)</option>
                               <option value="3" >Vice Président(e)</option>
                               <option value="6" >Assistant(e)</option> 
@@ -94,7 +95,7 @@
                               <br> cellule
                             </h4>
                             <select name="cellule"  class="form-control" required  >
-                                             <option value="" >Veuillez choisir votre unité</option>
+                                             <option value="" >Veuillez choisir votre cellule</option>
                                              <!-- <option value="Marketing" >Marketing</option> -->
                                              <option value="Administration et finance" >Administration et finance</option>
                                             <!-- <option value="Evenementiel" >Evenementiel</option> -->
