@@ -99,6 +99,7 @@
                                              <option value="Administration et finance" >Administration et finance</option>
                                              <option value="Evenementiel" >Evenementiel</option>
                                              <option value="Gestion des talents" >Gestion des talents</option>
+                                             <option value="" > Président </option
                             </select>                            
                             </div>
                           </div>
