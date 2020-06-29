@@ -91,7 +91,7 @@
                             
                             <a href="<?php echo $record->facebook ?>"><i class="ri-facebook-box-fill"></i></a>
                         <br>
-                             <a href="tel:<?php echo $record->mobile ?>"><i class="ri-phone-fill"></i <?php echo $record->mobile ?></a>        
+                             <a href="tel:<?php echo $record->mobile ?>"><i class="ri-phone-fill"></i> <?php echo $record->mobile ?></a>        
                          </td>
 
                         <td>
