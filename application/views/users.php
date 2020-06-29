@@ -88,8 +88,10 @@
                         
                         <td>
                             <A HREF="mailto:<?php echo $record->email ?>"><i class="ri-mail-fill"></i></A> 
-                            <a href="tel:<?php echo $record->mobile ?>"><i class="ri-phone-fill"></i <?php echo $record->mobile ?></a>
+                            
                             <a href="<?php echo $record->facebook ?>"><i class="ri-facebook-box-fill"></i></a>
+                        <br>
+                             <a href="tel:<?php echo $record->mobile ?>"><i class="ri-phone-fill"></i <?php echo $record->mobile ?></a>        
                          </td>
 
                         <td>
