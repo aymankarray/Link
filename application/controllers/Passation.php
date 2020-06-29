@@ -78,12 +78,12 @@ class Passation extends BaseController {
 
 		               $result = $this->user_model->editUser($userInfo, $this->vendorId);
 
-
+                  $user =  $this->user_model->getUserInfoById($this->vendorId);
  						$passationInfo = array(                                      
-                                      'roleAct'=>$this->role,
-                                      'celluleAct'=>$this->cellule,
+                                      'roleAct'=>$user->roleId,
+                                      'celluleAct'=>$user->cellule,
                                       'roleVol'=> $this->input->post('roleId'), 
-                                      'cellule'=>'',
+                                      'cellule'=> $this->input->post('cellule'),
                                       'LM'=> NL2BR($this->input->post('LM')) ,
                                       'PA'=> NL2BR($this->input->post('PA')),
                                       'statut'=> 1 ,

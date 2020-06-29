@@ -85,16 +85,16 @@
                             </h4>
                             <select name="roleId"   class="form-control" required >
                               <option value="1" >Président(e)</option>
-                   <!--           <option value="2" >Vice Président(e)</option>
-                              <option value="6" >Assistant(e)</option> -->
+                              <option value="3" >Vice Président(e)</option>
+                              <option value="6" >Assistant(e)</option> 
                             </select>                            
                             </div>
                             <div class="col-sm-6">
                             <h4>
                               <br> cellule
                             </h4>
-                            <select name="cellule"  class="form-control" required style="display: none;" >
-                                             <option value="" >Veuillez choisir votre unité </option>
+                            <select name="cellule"  class="form-control" required  >
+                                             <option value="" >Veuillez choisir votre unité</option>
                                              <option value="Marketing" >Marketing</option>
                                              <option value="Administration et finance" >Administration et finance</option>
                                              <option value="Evenementiel" >Evenementiel</option>
