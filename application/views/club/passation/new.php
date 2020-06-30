@@ -28,15 +28,15 @@
                           <div class="row" >
                             <div class="col-sm-6">
                               <h4>Nom</h4>
-                              <input type="text" name="nom" class="form-control" >            
+                              <input type="text" name="nom" class="form-control" required>            
                             </div>
                             <div class="col-sm-6">
                               <h4>Prenom</h4>
-                              <input type="text" name="prenom" class="form-control" >              
+                              <input type="text" name="prenom" class="form-control" required>              
                             </div>
                             <div class="col-sm-12">
                               <h4>Adresse</h4>
-                              <textarea type="text" name="adresse" class="form-control" ></textarea>              
+                              <textarea type="text" name="adresse" class="form-control" required ></textarea>              
                             </div>
                             <div class="col-md-6">                                
                                 <div class="form-group">
