@@ -80,7 +80,7 @@ class Passation extends BaseController {
 
                   $user =  $this->user_model->getUserInfoById($this->vendorId);
  						
-                  $cellule => $this->input->post('cellule'); 
+                  $cellule = $this->input->post('cellule'); 
                   
                   if($this->input->post('roleId') == 1){
                     $cellule = '' ; 
