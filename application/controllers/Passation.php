@@ -79,11 +79,18 @@ class Passation extends BaseController {
 		               $result = $this->user_model->editUser($userInfo, $this->vendorId);
 
                   $user =  $this->user_model->getUserInfoById($this->vendorId);
- 						$passationInfo = array(                                      
+ 						
+                  $cellule => $this->input->post('cellule'); 
+                  
+                  if($this->input->post('roleId') == 1){
+                    $cellule = '' ; 
+                  }
+
+            $passationInfo = array(                                      
                                       'roleAct'=>$user->roleId,
                                       'celluleAct'=>$user->cellule,
                                       'roleVol'=> $this->input->post('roleId'), 
-                                      'cellule'=> $this->input->post('cellule'),
+                                      'cellule'=> $cellule,
                                       'LM'=> NL2BR($this->input->post('LM')) ,
                                       'PA'=> NL2BR($this->input->post('PA')),
                                       'statut'=> 1 ,
@@ -97,6 +104,7 @@ class Passation extends BaseController {
 
 		        		$this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
 		        }  
+                  }
 
 
 
