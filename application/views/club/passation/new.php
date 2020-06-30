@@ -2,7 +2,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">
-                   
+                    <form action="<?php echo base_url() ?>Passation/addNewPassation" id="fp" method="post"  >
                      <div class="iq-card">
 
                       
@@ -22,7 +22,7 @@
                         <div class="iq-card-body">
                            <div class="table-responsive">
                               
-                    <form action="<?php echo base_url() ?>Passation/addNewPassation" id="fp" method="post"  >
+                   
                         
 
                           <div class="row" >
@@ -276,7 +276,7 @@
 
                           </div>
 
-                        </form>
+                        
 
                         <br>
     
@@ -286,11 +286,12 @@
                             <br>
                             <br>
                         </div>
-                    </form>
+                    
                               
                            </div>
                         </div>
                      </div>
+                     </form>
                   </div>
                </div>
 
