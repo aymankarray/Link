@@ -213,7 +213,7 @@ class Register extends CI_Controller
                                     <br><br>
                                     <p>L\'équipe T-Link</p>' ; 
                     if( 
-                        $this->send_mail('Réinitialisez votre mot de passe Tlink '$content,$data,$result->email)
+                        $this->send_mail('Réinitialisez votre mot de passe Tlink ',$content,$data,$result->email)
                         )
                     {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
