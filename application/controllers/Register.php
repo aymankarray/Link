@@ -239,7 +239,7 @@ class Register extends CI_Controller
      /**
      * Index Page for this controller.
      */
-    public function MotDePassechange()
+    public function Passechange($userId)
     {
 
          $this->load->view('register/changePassword');
