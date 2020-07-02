@@ -317,10 +317,12 @@
                
                         <label>Poste</label>
                         <select name="roleId" id="roleId"  class="form-control" required >
-                           <option value="-1" >Veuillez choisir votre poste </option>
-                           <?php foreach ($Roles as $key ) {
-                            echo "<option value='".$key->roleId."'>".$key->role."</option>" ; 
-                           }?>
+                           <option value="" >Veuillez choisir votre poste </option>
+                                    <option value="1" >Président </option>
+                                    <option value="3" >Vice Président </option>
+                                    <option value="5" >Membre </option>
+                              </select>
+                                   
                         </select>
                         <br>
                         <label>Cellule</label>
