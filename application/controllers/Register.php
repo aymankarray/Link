@@ -267,11 +267,12 @@ class Register extends CI_Controller
                  $usersData = array('password'=>getHashedPassword($newPassword), 'updatedBy'=>$userId,
                                 'updatedDtm'=>date('Y-m-d H:i:s'));
                 
-                 print_r($usersData ) ; 
-                $result = $this->user_model->changePassword($updatedBy, $usersData);
+              
+                $result = $this->user_model->changePassword($userId , $usersData);
 
                 if($result)
                 {
+                    this->session->set_flashdata('success', 'Mot de passe modifier avec succéss ');
                     redirect('/login') ; 
                 }
                 else
