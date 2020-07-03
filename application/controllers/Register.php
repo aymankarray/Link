@@ -244,9 +244,10 @@ class Register extends CI_Controller
      * Index Page for this controller.
      */
     public function Passechange($userId)
-    {
+    {   
+         $data['ActuRecords'] = $this->actualite_model->actuListing();
 
-         $this->load->view('register/changePassword');
+         $this->load->view('register/changePassword' , $data );
     }
 
 
