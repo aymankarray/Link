@@ -125,7 +125,7 @@
                     ?>
                   <!--begin::Form-->
 
-                    <form  role="form" class="kt-form" runat="server"  id="myForm" action="<?php echo base_url() ?>Register/MotDePassechangeF?userId=<?php echo  $userId ?>"  id=''   method="post" enctype="multipart/form-data"  >
+                    <form  role="form" class="kt-form" runat="server"  id="myForm" action="<?php echo base_url() ?>Register/MotDePassechangeF/<?php echo  $userId ?>"  id=''   method="post" enctype="multipart/form-data"  >
                             <div  style="align-content: center;" id="fb-root"></div>
                               <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v4.0"></script>
                               <div class="fb-page" data-href="https://www.facebook.com/Tunivisionsfoundation" data-tabs="" data-width="450" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Tunivisionsfoundation" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Tunivisionsfoundation">Tunivisions Foundation</a></blockquote></div>
