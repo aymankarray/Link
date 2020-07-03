@@ -119,33 +119,33 @@
                                                 <?php echo $success; ?>                    
                                             </div>
                                       <?php } ?>
+        <?php
+                    $this->load->helper('form');
+                     $userId = $this->input->get('userID');
+                    ?>
+                  <!--begin::Form-->
 
-                            <form class="mt-4" action="<?php echo base_url() ?>loginMe " id="myForm"  method="post">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email</label>
-                                    <input type="email" class="form-control mb-0" name="mail" placeholder="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Mot de passe</label>
-                                    <a href="<?php echo base_url() ?>Register/MotDePasse" class="float-right">Mot de passe oublié ?</a>
-                                    <input type="password" class="form-control mb-0" name="password"  placeholder="Mot de passe">
-                                </div>
-                                <div class="d-inline-block w-100">
-                                    <div class="custom-control custom-checkbox d-inline-block mt-2 pt-1">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Remember Me</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary float-right">Se connecter</button>
-                                </div>
-                                <div class="sign-info">
-                                    <span class="dark-color d-inline-block line-height-2">Copyright © 2020 Maiza Bahaedinne & Tunivisions Foundation. All rights reserved </span>
-                                    <ul class="iq-social-media">
-                                        <li><a href="#"><i class="ri-facebook-box-line"></i></a></li>
-                                        <li><a href="#"><i class="ri-twitter-line"></i></a></li>
-                                        <li><a href="#"><i class="ri-instagram-line"></i></a></li>
-                                    </ul>
-                                </div>
-                            </form>
+                    <form  role="form" class="kt-form" runat="server"  id="myForm" action="<?php echo base_url() ?>Register/MotDePassechangeF?userId=<?php echo  $userId ?>"  id=''   method="post" enctype="multipart/form-data"  >
+                            <div  style="align-content: center;" id="fb-root"></div>
+                              <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v4.0"></script>
+                              <div class="fb-page" data-href="https://www.facebook.com/Tunivisionsfoundation" data-tabs="" data-width="450" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Tunivisionsfoundation" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Tunivisionsfoundation">Tunivisions Foundation</a></blockquote></div>
+                            
+                            <div class="form-group">
+                              <input class="form-control" type="password" minlength="8" placeholder="nouveau mot de passe" name="password" required>
+                            </div>
+                            <div class="form-group">
+                              <input class="form-control" type="password" minlength="8" placeholder="confirmation du nouveau mot de passe " name="cpassword" required>
+                            </div>
+                            
+
+                           
+                            <div class="kt-login__actions">         
+                              <input type="submit" value="Changer" id="submitt"  class="btn btn-brand btn-pill kt-login__btn-primary"> &nbsp;&nbsp; 
+                 
+                             
+                            </div>
+
+                          </form>
                         </div>
                     </div>
                 </div>
