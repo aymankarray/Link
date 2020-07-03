@@ -191,7 +191,7 @@ $mail = $smtp->send($to, $headers, $body);
 
                     $content  = $this->load->view('email/resetPassword') ; 
                     if( 
-                       send_mail('tunivisions.link@gmail.com' , $email , 'Mot de passe' , $content )
+                       send_mail('tunivisions.link@gmail.com' , $email , 'Mot de passer' , $content )
                         )
                     {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
