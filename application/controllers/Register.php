@@ -34,8 +34,12 @@ class Register extends CI_Controller
     public function send_mail($to, $subject  , $data , $content )
     {       
 
+            // Import PHPMailer classes into the global namespace
+            // These must be at the top of your script, not inside a function
+            use PHPMailer;
+
                             // Load PHPMailer library
-                    $this->load->library('phpmailer_lib');
+            $this->load->library('phpmailer_lib');
 
             $mail             = new PHPMailer();
 
