@@ -52,9 +52,10 @@ class Register extends CI_Controller
                     $mail->setFrom('no-reply@tunivisions.link', 'Tunivisions Link');
                     $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
                     
-                    // Add a recipient
-                
-                    $mail->addAddress($to);
+                    
+                    $mail->AddAddress($to , $data['name']); // Add a recipient
+                    $mail->WordWrap = 50;               // set word wrap
+                    $mail->Priority = 1; 
                     
                     
                     // Email subject
@@ -67,7 +68,9 @@ class Register extends CI_Controller
                      
                     $Body = $this->load->view('email/resetPassword' , $data ); 
                     $mail->Body = $Body ; 
-                    
+                    $mail->msgHTML($this->load->view('email/resetPassword' , $data ) ) ;
+
+                                        
                     // Send email
                     if(!$mail->send()){
                         echo 'Message could not be sent.';
