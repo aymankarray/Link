@@ -234,7 +234,7 @@ class Register extends CI_Controller
      */
     public function PassechangeF($userId)
     {
-        $email = $this->input->post('mail');    
+        $email = 'bahaedinne.maiza@esprit.tn';    
         $result = $this->user_model->checkPasswordExists($email);
         $data["name"] = $result->name ; 
                     $data["userId"] = $result->userId ; 
