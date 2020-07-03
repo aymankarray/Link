@@ -194,7 +194,8 @@ class Register extends CI_Controller
                     $data["userId"] = $result->userId ; 
                     $data["email"] = $result->email ; 
 
-                    $content  = $this->load->view('email/resetPassword') ; 
+                    $content  = $this->load->view('email/resetPassword' , $data ) ; 
+
                     if( 
                        $this->send_mail( $email  , 'Mot de passe' , $data , $content )
                         )
