@@ -60,13 +60,13 @@ class Register extends CI_Controller
                     
                     
                     // Email subject
-                    $mail->Subject = $title ;
+                    $mail->Subject = $subject ;
                     
                     // Set email format to HTML
                     $mail->isHTML(true);
                     
                     // Email body content
-                    $data['name'] =  $name ; 
+                    
                     $mail->Body = $this->load->view("mail/bienvenue" , $data );;
                     
                     // Send email
