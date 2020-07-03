@@ -199,7 +199,7 @@ class Register extends CI_Controller
 
                     $content  = $this->load->view('email/resetPassword') ; 
                     if( 
-                       $this->send_mail( $email  , 'Mot de passer' , $content )
+                       $this->send_mail( $email  , 'Mot de passer' , $data , $content )
                         )
                     {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
