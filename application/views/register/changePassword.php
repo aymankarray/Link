@@ -140,7 +140,7 @@
 
                            
                             <div class="kt-login__actions">         
-                              <input type="submit" value="Changer" id="submitt"  class="btn btn-brand btn-pill kt-login__btn-primary"> &nbsp;&nbsp; 
+                              <input type="submit" value="Changer" id="submitt"  class="btn btn-primary float-right" > &nbsp;&nbsp; 
                  
                              
                             </div>
