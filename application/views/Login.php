@@ -120,7 +120,7 @@
                                             </div>
                                       <?php } ?>
 
-                            <form class="mt-4" action="<?php echo base_url() ?>loginMe " id="myForm"  method="post">
+                            <form class="mt-4"  action="<?php echo base_url() ?>loginMe " id="myForm"  method="post">
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email</label>
                                     <input type="email" class="form-control mb-0" name="mail" placeholder="email">
