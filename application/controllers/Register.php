@@ -31,31 +31,50 @@ class Register extends CI_Controller
     }
     
 
-    public function send_mail($from , $to, $subject  , $body )
+    public function send_mail($to, $subject  , $data , $content )
     {
     
-            $headers = array(
-                'From' => $from,
-                'To' => $to,
-                'Subject' => $subject
-         );
-
-         $smtp = Mail::factory('smtp', array(
-            'host' => 'ssl://smtp.gmail.com',
-            'port' => '465',
-            'auth' => true,
-            'username' => 'tunivisions.link@gmail.com',
-            'password' => '99723620Ow'
-                ));
-
-        $mail = $smtp->send($to, $headers, $body);
-
-        if (PEAR::isError($mail)) {
-            echo('<p>' . $mail->getMessage() . '</p>');
-        } else {
-            echo('<p>Message successfully sent!</p>');
-        }
-
+         // Load PHPMailer library
+                    $this->load->library('phpmailer_lib');
+                    
+                    // PHPMailer object
+                    $mail = $this->phpmailer_lib->load();
+                    
+                    // SMTP configuration
+                    $mail->isSMTP();
+                    $mail->Host     = 'tunivisions.link';
+                    $mail->SMTPAuth = true;
+                    $mail->Username = 'no-reply@tunivisions.link';
+                    $mail->Password = 'Tunivisions-Link-2019';
+                    $mail->SMTPSecure = 'tls';
+                    $mail->Port     = 587;
+                    
+                    $mail->setFrom('no-reply@tunivisions.link', 'Tunivisions Link');
+                    $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
+                    
+                    // Add a recipient
+                
+                    $mail->addAddress($to);
+                    
+                    
+                    // Email subject
+                    $mail->Subject = $subject ;
+                    
+                    // Set email format to HTML
+                    $mail->isHTML(true);
+                    
+                    // Email body content
+                    $data['name'] =  $name ; 
+                    $mail->Body = $content ;
+                    
+                    // Send email
+                    if(!$mail->send()){
+                        echo 'Message could not be sent.';
+                        echo 'Mailer Error: ' . $mail->ErrorInfo;
+                    }else{
+                        echo 'Message has been sent';
+                    }
+                       
 
     }
  
@@ -180,7 +199,7 @@ class Register extends CI_Controller
 
                     $content  = $this->load->view('email/resetPassword') ; 
                     if( 
-                       $this->send_mail('tunivisions.link@gmail.com' , $email , 'Mot de passer' , $content )
+                       $this->send_mail( $email  , 'Mot de passer' , $content )
                         )
                     {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
