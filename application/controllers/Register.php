@@ -55,7 +55,13 @@ class Register extends CI_Controller
             $mail->SetFrom('tunivisions.link@gmail.com', 'tunivisions.link');
 
             $mail->Subject    = $subject ;
-            $mail->Body( $content );
+                                // Set email format to HTML
+                    $mail->isHTML(true);
+                    
+                    // Email body content
+                    
+                    $mail->Body = $content ;
+
             $mail->MsgHTML( $content );
 
             $address = $to ;
