@@ -33,20 +33,32 @@ class Register extends CI_Controller
 
     public function send_mail($to, $subject  , $data , $content )
     {
+            $mail             = new PHPMailer();
 
+            $mail->IsSMTP(); // telling the class to use SMTP
+            $mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
+                                                       // 1 = errors and messages
+                                                       // 2 = messages only
+            $mail->SMTPAuth   = true;                  // enable SMTP authentication
+            $mail->SMTPSecure = "tls";                 
+            $mail->Host       = "smtp.gmail.com";      // SMTP server
+            $mail->Port       = 587;                   // SMTP port
+            $mail->Username   = "tunivisions.link@gmail.com";  // username
+            $mail->Password   = "99723620Ow";            // password
 
+            $mail->SetFrom('"tunivisions.link@gmail.com', 'tunivisions.link');
 
-            $headers = "From: no-reply@tunivisions.link \r\n";
-            $headers .= "Reply-To: no-reply@tunivisions.link \r\n";
-            $headers .= "MIME-Version: 1.0\r\n";
-            $headers .= "Content-Type: text/html; charset=UTF-8 \r\n";
+            $mail->Subject    = $subject ;
 
-            $message = $this->load->view('email/resetPassword');
+            $mail->MsgHTML( $content );
 
-            if (mail($to, $subject, $message, $headers)) {
-              echo 'Your message has been sent.';
+            $address = $to ;
+            $mail->AddAddress($address, $data['name']);
+
+            if(!$mail->Send()) {
+              echo "Mailer Error: " . $mail->ErrorInfo;
             } else {
-              echo 'There was a problem sending the email.';
+              echo "Message sent!";
             }
 
     }
