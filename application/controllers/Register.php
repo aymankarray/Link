@@ -272,7 +272,7 @@ class Register extends CI_Controller
 
                 if($result)
                 {
-                    this->session->set_flashdata('success', 'Mot de passe modifier avec succéss ');
+                    $this->session->set_flashdata('success', 'Mot de passe modifier avec succéss ');
                     redirect('/login') ; 
                 }
                 else
