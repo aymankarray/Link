@@ -31,30 +31,24 @@ class Register extends CI_Controller
     }
     
 
-    function send_mail($from , $to, $subject  , $body )
+    public function send_mail($from , $to, $subject  , $body )
     {
+    
+            $headers = array(
+                'From' => $from,
+                'To' => $to,
+                'Subject' => $subject
+         );
 
+         $smtp = Mail::factory('smtp', array(
+            'host' => 'ssl://smtp.gmail.com',
+            'port' => '465',
+            'auth' => true,
+            'username' => 'tunivisions.link@gmail.com',
+            'password' => '99723620Ow'
+                ));
 
-                                    // Pear Mail Library
-                                require_once "Mail.php";
-
-
-
-    $headers = array(
-        'From' => $from,
-        'To' => $to,
-        'Subject' => $subject
-    );
-
-$smtp = Mail::factory('smtp', array(
-        'host' => 'ssl://smtp.gmail.com',
-        'port' => '465',
-        'auth' => true,
-        'username' => 'tunivisions.link@gmail.com',
-        'password' => '99723620Ow'
-    ));
-
-$mail = $smtp->send($to, $headers, $body);
+        $mail = $smtp->send($to, $headers, $body);
 
         if (PEAR::isError($mail)) {
             echo('<p>' . $mail->getMessage() . '</p>');
@@ -191,7 +185,7 @@ $mail = $smtp->send($to, $headers, $body);
 
                     $content  = $this->load->view('email/resetPassword') ; 
                     if( 
-                       send_mail('tunivisions.link@gmail.com' , $email , 'Mot de passer' , $content )
+                       $this->send_mail('tunivisions.link@gmail.com' , $email , 'Mot de passer' , $content )
                         )
                     {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
