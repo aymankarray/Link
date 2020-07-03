@@ -73,7 +73,7 @@ class Register extends CI_Controller
                                         </p>
                                         <br><br>
                                         <p>L\'équipe T-Link</p>  '; 
-                    $mail->
+                    $mail->Body = $Body ; 
                     
                     // Send email
                     if(!$mail->send()){
