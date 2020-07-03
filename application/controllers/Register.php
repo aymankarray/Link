@@ -66,8 +66,10 @@ class Register extends CI_Controller
                     $mail->isHTML(true);
                     
                     // Email body content
-                    
-                    $mail->Body = $this->load->view("mail/bienvenue" , $data );;
+                    $body = '<img src="https://www.tunivisions.link/images/logo%20rouge.svg" width="150px" ></img>' ;
+                    $body .= '<img src="https://www.tunivisions.link/images/logo%20rouge.svg" width="150px" ></img>' ;
+
+                    $mail->Body =  $body  ; 
                     
                     // Send email
                     if(!$mail->send()){
