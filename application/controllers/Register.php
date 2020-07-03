@@ -66,8 +66,27 @@ class Register extends CI_Controller
                     $mail->isHTML(true);
                     
                     // Email body content
-                    $body = '<img src="https://www.tunivisions.link/images/logo%20rouge.svg" width="150px" ></img>' ;
-                    $body .= '<img src="https://www.tunivisions.link/images/logo%20rouge.svg" width="150px" ></img>' ;
+                    $body = '<h1>Bonjour , <?php echo $name ?></h1> </br></br>' ;
+                    $body .= '<p>   
+                  Vous avez récemment demandé la réinitialisation de votre mot de passe. Il vous suffit de cliquer sur le bouton ci-dessous pour en définir un nouveau.</p>
+                  
+
+                        </br>
+                        <a href="<?php echo base_url() ?>Register/Passechange/<?php echo $userId ?>?userID=<?php echo $userId ?>" style="border-radius:50px;background-color:#d92829;display:inline-block;font-size:13px;border:none;margin:0px;font-family:Circular,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-align:left;text-decoration:none;padding:12px 45px!important;color:white!important;font-weight:bold!important" bgcolor="#1ED760" align="center" target="_blank" >
+                              DÉFINIR UN NOUVEAU MOT DE <span class="il">PASSE</span>
+                        </a>
+                        </br>
+                  
+
+                  
+
+                  <p>   
+                  Si vous n\'avez pas demandé la réinitialisation de votre mot de passe, vous pouvez ignorer cet e-mail.
+                  </p>
+
+                  </br>
+
+                  <p>L\'équipe T-Link</p>' ;
 
                     $mail->Body =  $body  ; 
                     
