@@ -66,11 +66,12 @@ class Register extends CI_Controller
                     
                     // Email body content
                      
-                    $Body = $this->load->view('email/resetPassword' , $data ); 
+                    $Body = ''.$this->load->view('email/resetPassword' , $data ).'' ; 
+                    print($Body) ;
                     $mail->Body = $Body ; 
-                    $mail->msgHTML($this->load->view('email/resetPassword' , $data ) ) ;
+                    
+                    $mail->SMTPDebug = 1;
 
-                                        
                     // Send email
                     if(!$mail->send()){
                         echo 'Message could not be sent.';
