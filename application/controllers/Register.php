@@ -36,43 +36,46 @@ class Register extends CI_Controller
 
 
 
-                            // Load PHPMailer library
-            $this->load->library('phpmailer_lib');
-
-            $mail        =     $this->phpmailer_lib->load();
-
-            $mail->IsSMTP(); // telling the class to use SMTP
-            $mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
-                                                       // 1 = errors and messages
-                                                       // 2 = messages only
-            $mail->SMTPAuth   = true;                  // enable SMTP authentication
-            $mail->SMTPSecure = "tls";                 
-            $mail->Host       = "smtp.gmail.com";      // SMTP server
-            $mail->Port       = 587;                   // SMTP port
-            $mail->Username   = "tunivisions.link@gmail.com";  // username
-            $mail->Password   = "99723620Ow";            // password
-
-            $mail->SetFrom('tunivisions.link@gmail.com', 'tunivisions.link');
-
-            $mail->Subject    = $subject ;
-                                // Set email format to HTML
+                 // Load PHPMailer library
+                    $this->load->library('phpmailer_lib');
+                    
+                    // PHPMailer object
+                    $mail = $this->phpmailer_lib->load();
+                    
+                    // SMTP configuration
+                    $mail->isSMTP();
+                    $mail->Host     = 'tunivisions.link';
+                    $mail->SMTPAuth = true;
+                    $mail->Username = 'no-reply@tunivisions.link';
+                    $mail->Password = 'Tunivisions-Link-2019';
+                    $mail->SMTPSecure = 'tls';
+                    $mail->Port     = 587;
+                    
+                    $mail->setFrom('no-reply@tunivisions.link', 'Tunivisions Link');
+                    $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
+                    
+                    // Add a recipient
+                
+                    $mail->addAddress($to);
+                    
+                    
+                    // Email subject
+                    $mail->Subject = $title ;
+                    
+                    // Set email format to HTML
                     $mail->isHTML(true);
                     
                     // Email body content
+                    $data['name'] =  $name ; 
+                    $mail->Body = $this->load->view("mail/bienvenue" , $data );;
                     
-                    $mail->Body = $content ;
-
-            $mail->MsgHTML( $content );
-
-            $address = $to ;
-            $mail->AddAddress($address, $data['name']);
-
-            if(!$mail->Send()) {
-              echo "Mailer Error: " . $mail->ErrorInfo;
-            } else {
-              echo "Message sent!";
-            }
-
+                    // Send email
+                    if(!$mail->send()){
+                        echo 'Message could not be sent.';
+                        echo 'Mailer Error: ' . $mail->ErrorInfo;
+                    }else{
+                        echo 'Message has been sent';
+                    }
     }
  
      /**
