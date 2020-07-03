@@ -32,7 +32,11 @@ class Register extends CI_Controller
     
 
     public function send_mail($to, $subject  , $data , $content )
-    {
+    {       
+
+                            // Load PHPMailer library
+                    $this->load->library('phpmailer_lib');
+
             $mail             = new PHPMailer();
 
             $mail->IsSMTP(); // telling the class to use SMTP
