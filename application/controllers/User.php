@@ -621,7 +621,7 @@ class User extends BaseController
                     
                     // Email body content
                     $data['name'] =  $name ; 
-                    $mail->Body = $this->load->view("mail/bienvenue" , $data , true);;
+                    $mail->Body = $this->load->view("mail/bienvenue" , $data );;
                     
                     // Send email
                     if(!$mail->send()){
