@@ -32,7 +32,7 @@ class Register extends CI_Controller
     
 
 
-         public function send_mail($title,$mailContent,$addresse)
+         public function send_mail($title,$mailContent,$data,$addresse)
             {
                 // Load PHPMailer library
                     $this->load->library('phpmailer_lib');
@@ -201,7 +201,7 @@ class Register extends CI_Controller
 
                     $content  = $this->load->view('email/resetPassword') ; 
                     if( 
-                        $this->send_mail('Reinitialisez votre mot de passe Tlink ',$content,$data,$result->email)
+                        $this->send_mail('Rinitialisez votre mot de passe Tlink ',$content,$data,$result->email)
                         )
                     {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
