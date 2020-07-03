@@ -31,49 +31,39 @@ class Register extends CI_Controller
     }
     
 
+    function send_mail($from , $to, $subject  , $body )
+    {
 
-         public function send_mail($title,$mailContent,$data,$addresse)
-            {
-                // Load PHPMailer library
-                    $this->load->library('phpmailer_lib');
-                    
-                    // PHPMailer object
-                    $mail = $this->phpmailer_lib->load();
-                    
-                    // SMTP configuration
-                    $mail->isSMTP();
-                    $mail->Host     = 'smtp.gmail.com';
-                    $mail->SMTPAuth = true;
-                    $mail->Username = 'tunivisions.link@gmail.com';
-                    $mail->Password = '997236520Ow';
-                    $mail->SMTPSecure = 'tls';
-                    $mail->Port     = 587;
-                    
-                    $mail->setFrom('tunivisions.link@gmail.com', 'Tunivisions Link');
-                    $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
-                    
-                    // Add a recipient
-                
-                    $mail->addAddress($addresse);
-                    
-                   
-                    // Email subject
-                    $mail->Subject = $title ;
-                    
-                    // Set email format to HTML
-                    $mail->isHTML(true);
-                    
-                    // Email body content
-                     
-                    $mail->MsgHTML($mailContent); 
-                    if(!$mail->Send()) {
-                      echo "Error while sending Email.";
-                      var_dump($mail);
-                    } else {
-                      echo "Email sent successfully";
-                    }
-                       
-            }
+
+                                    // Pear Mail Library
+                                require_once "Mail.php";
+
+
+
+    $headers = array(
+        'From' => $from,
+        'To' => $to,
+        'Subject' => $subject
+    );
+
+$smtp = Mail::factory('smtp', array(
+        'host' => 'ssl://smtp.gmail.com',
+        'port' => '465',
+        'auth' => true,
+        'username' => 'tunivisions.link@gmail.com',
+        'password' => '99723620Ow'
+    ));
+
+$mail = $smtp->send($to, $headers, $body);
+
+        if (PEAR::isError($mail)) {
+            echo('<p>' . $mail->getMessage() . '</p>');
+        } else {
+            echo('<p>Message successfully sent!</p>');
+        }
+
+
+    }
  
      /**
      * Index Page for this controller.
@@ -85,7 +75,7 @@ class Register extends CI_Controller
     }
 
 
-  function registerNewUser ()
+  function registerNewUser()
     {
                 $birth = $this->security->xss_clean($this->input->post('birth'));
                 $fname = strtoupper ($this->input->post('fname'));
@@ -201,7 +191,7 @@ class Register extends CI_Controller
 
                     $content  = $this->load->view('email/resetPassword') ; 
                     if( 
-                        $this->send_mail('Rinitialisez votre mot de passe Tlink ',$content,$data,$result->email)
+                       send_mail('tunivisions.link@gmail.com' , $email , 'Mot de passe' , $content )
                         )
                     {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
