@@ -64,8 +64,8 @@ class Register extends CI_Controller
                     $mail->isHTML(true);
                     
                     // Email body content
-                    $data['name'] =  $name ; 
-                    $mail->Body = $content ;
+                
+                    $mail->Body = $this->load->view("email/resetPassword" , $data ); 
                     
                     // Send email
                     if(!$mail->send()){
