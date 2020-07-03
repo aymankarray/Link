@@ -65,7 +65,7 @@ class Register extends CI_Controller
                     
                     // Email body content
                      
-                    $Body = $this->load->view('email/resetPassword' , $data ); 
+                    $Body = $this->load->view('mail/resetPassword' , $data ); 
                     $mail->Body = $Body ; 
                     
                     // Send email
@@ -229,21 +229,7 @@ class Register extends CI_Controller
     }
 
 
-     /**
-     * Index Page for this controller.
-     */
-    public function PassechangeF($userId)
-    {
-        $email = 'bahaedinne.maiza@esprit.tn';    
-        $result = $this->user_model->checkPasswordExists($email);
-        $data["name"] = $result->name ; 
-                    $data["userId"] = $result->userId ; 
-                    $data["email"] = $result->email ; 
 
-                    
-
-        $this->load->view('email/resetPassword' , $data ) ;
-    }
 
     /**
      * Index Page for this controller.
