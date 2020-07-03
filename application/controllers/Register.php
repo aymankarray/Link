@@ -42,14 +42,14 @@ class Register extends CI_Controller
                     
                     // SMTP configuration
                     $mail->isSMTP();
-                    $mail->Host     = 'tunivisions.link';
+                    $mail->Host     = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'no-reply@tunivisions.link';
-                    $mail->Password = 'Tunivisions-Link-2019';
+                    $mail->Username = 'tunivisions.link@gmail.com';
+                    $mail->Password = '997236520Ow';
                     $mail->SMTPSecure = 'tls';
                     $mail->Port     = 587;
                     
-                    $mail->setFrom('no-reply@tunivisions.link', 'Tunivisions Link');
+                    $mail->setFrom('tunivisions.link@gmail.com', 'Tunivisions Link');
                     $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
                     
                     // Add a recipient
@@ -65,13 +65,12 @@ class Register extends CI_Controller
                     
                     // Email body content
                      
-                    $mail->Body = $mailContent ;
-                    
-                    // Send email
-                    if(!$mail->send()){
-                        return true ; 
-                    }else{
-                        return false ; 
+                    $mail->MsgHTML($mailContent); 
+                    if(!$mail->Send()) {
+                      echo "Error while sending Email.";
+                      var_dump($mail);
+                    } else {
+                      echo "Email sent successfully";
                     }
                        
             }
@@ -200,20 +199,9 @@ class Register extends CI_Controller
                     $data["userId"] = $result->userId ; 
                     $data["email"] = $result->email ; 
 
-                    $content  = '<p>    
-                                    Vous avez récemment demandé la réinitialisation de votre mot de passe. Il vous suffit de cliquer sur le bouton ci-dessous pour en définir un nouveau.</p>
-                                    <br>
-                                    <center>
-                                    <a href="<?php echo base_url() ?>Register/MotDePassechange/<?php echo $userId ?>" style="border-radius:50px;background-color:#d92829;display:inline-block;font-size:13px;border:none;margin:0px;font-family:Circular,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-align:left;text-decoration:none;padding:12px 45px!important;color:white!important;font-weight:bold!important" bgcolor="#1ED760" align="center" target="_blank" >DÉFINIR UN NOUVEAU MOT DE</span> <span class="il">PASSE</span></a>
-                                    </center>
-                                    <br><br>
-                                    <p> 
-                                    Si vous n\'avez pas demandé la réinitialisation de votre mot de passe, vous pouvez ignorer cet e-mail.
-                                    </p>
-                                    <br><br>
-                                    <p>L\'équipe T-Link</p>' ; 
+                    $content  = $this->load->view('email/resetPassword') ; 
                     if( 
-                        $this->send_mail('Réinitialisez votre mot de passe Tlink ',$content,$data,$result->email)
+                        $this->send_mail('Reinitialisez votre mot de passe Tlink ',$content,$data,$result->email)
                         )
                     {
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);

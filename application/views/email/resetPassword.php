@@ -23,7 +23,7 @@
 Vous avez récemment demandé la réinitialisation de votre mot de passe. Il vous suffit de cliquer sur le bouton ci-dessous pour en définir un nouveau.</p>
 <br>
 <center>
-<a href="<?php echo base_url() ?>Register/MotDePassechange/<?php echo $userId ?>" style="border-radius:50px;background-color:#d92829;display:inline-block;font-size:13px;border:none;margin:0px;font-family:Circular,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-align:left;text-decoration:none;padding:12px 45px!important;color:white!important;font-weight:bold!important" bgcolor="#1ED760" align="center" target="_blank" >DÉFINIR UN NOUVEAU MOT DE</span> <span class="il">PASSE</span></a>
+<a href="<?php echo base_url() ?>Register/Passechange/<?php echo $userId ?>" style="border-radius:50px;background-color:#d92829;display:inline-block;font-size:13px;border:none;margin:0px;font-family:Circular,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif;text-align:left;text-decoration:none;padding:12px 45px!important;color:white!important;font-weight:bold!important" bgcolor="#1ED760" align="center" target="_blank" >DÉFINIR UN NOUVEAU MOT DE</span> <span class="il">PASSE</span></a>
 </center>
 <br><br>
 <p>	
