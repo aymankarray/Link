@@ -264,7 +264,7 @@ class Register extends CI_Controller
                 print_r($newPassword ) ; 
                 print_r($updatedBy ) ; 
 
-                 $usersData = array('password'=>getHashedPassword($newPassword), 'updatedBy'=>$updatedBy,
+                 $usersData = array('password'=>getHashedPassword($newPassword), 'updatedBy'=>$userId,
                                 'updatedDtm'=>date('Y-m-d H:i:s'));
                 
                  print_r($usersData ) ; 
