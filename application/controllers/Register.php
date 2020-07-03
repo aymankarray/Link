@@ -65,14 +65,7 @@ class Register extends CI_Controller
                     
                     // Email body content
                      
-                    $Body = 'Content-type: text/html; charset=iso-8859-1' . '\r\n'.'<p>  
-                                        Vous avez récemment demandé la réinitialisation de votre mot de passe. Il vous suffit de cliquer sur le bouton ci-dessous pour en définir un nouveau.</p>
-                                        <br> <a href="'.base_url().'Register/Passechange/'.$data['userId'].'?userId='.$data['userId'].'" > DÉFINIR UN NOUVEAU MOT DE</span> <span class="il">PASSE</span>  </a> <br><br>
-                                        <p> 
-                                        Si vous n\'avez pas demandé la réinitialisation de votre mot de passe, vous pouvez ignorer cet e-mail.
-                                        </p>
-                                        <br><br>
-                                        <p>L\'équipe T-Link</p>  '; 
+                    $Body = $this->load->view('email/resetPassword' , $data ); 
                     $mail->Body = $Body ; 
                     
                     // Send email
@@ -229,12 +222,28 @@ class Register extends CI_Controller
      /**
      * Index Page for this controller.
      */
-    public function Passechange($userId)
+    public function Passechang($userId)
     {
 
          $this->load->view('register/changePassword');
     }
 
+
+     /**
+     * Index Page for this controller.
+     */
+    public function PassechangeF($userId)
+    {
+        $email = $this->input->post('mail');    
+        $result = $this->user_model->checkPasswordExists($email);
+        $data["name"] = $result->name ; 
+                    $data["userId"] = $result->userId ; 
+                    $data["email"] = $result->email ; 
+
+                    
+
+        $this->load->view('email/resetPassword' , $data ) ;
+    }
 
     /**
      * Index Page for this controller.
