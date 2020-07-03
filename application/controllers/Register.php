@@ -63,7 +63,7 @@ class Register extends CI_Controller
                     $mail->Subject = $subject ;
                     
                     // Set email format to HTML
-                    $mail->isHTML(true);
+                    $mail->isHTML();
                     
                     // Email body content
                     
@@ -267,17 +267,12 @@ class Register extends CI_Controller
 
                     $content  = $this->load->view('email/resetPassword' , $data ) ; 
 
-                    if( 
-                       $this->send_mail( $email  , 'Mot de passe' , $data , $content )
-                        )
-                    {
+
+                    $this->send_mail( $email  , 'Mot de passe' , $data , $content )
+
                     $this->session->set_flashdata('success', 'on a envoyé un mail à '.$email);
                     redirect('/login') ; 
-                    }
-                    else{
-                        $this->session->set_flashdata('error', 'Problème d\'envoi contacter le service technique tunivisions.link@gmail.com ' );
-                        redirect('/login') ; 
-                    }
+                    
                 }
                 else
                 {
@@ -307,9 +302,7 @@ class Register extends CI_Controller
     {           
 
                 $newPassword = $this->input->post('password');
-                
-                print_r($newPassword ) ; 
-                print_r($updatedBy ) ; 
+
 
                  $usersData = array('password'=>getHashedPassword($newPassword), 'updatedBy'=>$userId,
                                 'updatedDtm'=>date('Y-m-d H:i:s'));
