@@ -65,7 +65,7 @@ class Register extends CI_Controller
                     
                     // Email body content
                      
-                    $Body = $this->load->view('mail/resetPassword' , $data ); 
+                    $Body = $this->load->view('email/resetPassword' , $data ); 
                     $mail->Body = $Body ; 
                     
                     // Send email
