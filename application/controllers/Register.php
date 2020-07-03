@@ -52,7 +52,7 @@ class Register extends CI_Controller
             $mail->Username   = "tunivisions.link@gmail.com";  // username
             $mail->Password   = "99723620Ow";            // password
 
-            $mail->SetFrom('"tunivisions.link@gmail.com', 'tunivisions.link');
+            $mail->SetFrom('tunivisions.link@gmail.com', 'tunivisions.link');
 
             $mail->Subject    = $subject ;
 
