@@ -33,14 +33,22 @@ class Register extends CI_Controller
 
     public function send_mail($to, $subject  , $data , $content )
     {
+
+
+
             $headers = "From: no-reply@tunivisions.link \r\n";
             $headers .= "Reply-To: no-reply@tunivisions.link \r\n";
             $headers .= "MIME-Version: 1.0\r\n";
-            $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+            $headers .= "Content-Type: text/html; charset=UTF-8 \r\n";
 
             $message = $this->load->view('email/resetPassword');
 
-            mail($to, $subject, $message, $headers);
+            if (mail($to, $subject, $message, $headers)) {
+              echo 'Your message has been sent.';
+            } else {
+              echo 'There was a problem sending the email.';
+            }
+
     }
  
      /**
