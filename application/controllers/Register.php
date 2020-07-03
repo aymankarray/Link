@@ -39,7 +39,7 @@ class Register extends CI_Controller
                             // Load PHPMailer library
             $this->load->library('phpmailer_lib');
 
-            $mail             = new PHPMailer();
+            $mail        =     $this->phpmailer_lib->load();
 
             $mail->IsSMTP(); // telling the class to use SMTP
             $mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
