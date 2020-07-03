@@ -65,7 +65,14 @@ class Register extends CI_Controller
                     
                     // Email body content
                 
-                    $mail->Body = $this->load->view("email/resetPassword" , $data ); 
+                    $mail->Body = '<p>  
+                                        Vous avez récemment demandé la réinitialisation de votre mot de passe. Il vous suffit de cliquer sur le bouton ci-dessous pour en définir un nouveau.</p>
+                                        <br> <a href="'.base_url().'Register/Passechange/'.$data['userId'].'" > DÉFINIR UN NOUVEAU MOT DE</span> <span class="il">PASSE</span>  </a> <br><br>
+                                        <p> 
+                                        Si vous n\'avez pas demandé la réinitialisation de votre mot de passe, vous pouvez ignorer cet e-mail.
+                                        </p>
+                                        <br><br>
+                                        <p>L\'équipe T-Link</p>  '; 
                     
                     // Send email
                     if(!$mail->send()){
