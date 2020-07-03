@@ -106,6 +106,7 @@
              $userId = $this->input->get('userId');
             ?>
           <!--begin::Form-->
+          
     <form  role="form" class="kt-form" runat="server" action="<?php echo base_url() ?>Register/MotDePassechangeF?userId=<?php echo  $userId ?>"    method="post" enctype="multipart/form-data"  >
             <div  style="align-content: center;" id="fb-root"></div>
               <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v4.0"></script>
