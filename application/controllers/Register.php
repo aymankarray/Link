@@ -33,54 +33,14 @@ class Register extends CI_Controller
 
     public function send_mail($to, $subject  , $data , $content )
     {
-    
-         // Load PHPMailer library
-                    $this->load->library('phpmailer_lib');
-                    
-                    // PHPMailer object
-                    $mail = $this->phpmailer_lib->load();
-                    
-                    // SMTP configuration
-                    $mail->isSMTP();
-                    $mail->Host     = 'tunivisions.link';
-                    $mail->SMTPAuth = true;
-                    $mail->Username = 'no-reply@tunivisions.link';
-                    $mail->Password = 'Tunivisions-Link-2019';
-                    $mail->SMTPSecure = 'tls';
-                    $mail->Port     = 587;
-                    
-                    $mail->setFrom('no-reply@tunivisions.link', 'Tunivisions Link');
-                    $mail->addReplyTo('no-reply@tunivisions.link', 'Tunivisions Link');
-                    
-                    
-                    $mail->AddAddress($to , $data['name']); // Add a recipient
-                    $mail->WordWrap = 50;               // set word wrap
-                    $mail->Priority = 1; 
-                    
-                    
-                    // Email subject
-                    $mail->Subject = $subject ;
-                    
-                    // Set email format to HTML
-                    $mail->isHTML(true);
-                    
-                    // Email body content
-                     
-                    $Body = ''.$this->load->view('email/resetPassword' , $data ).'' ; 
-                    print($Body) ;
-                    $mail->Body = $Body ; 
-                    
-                    $mail->SMTPDebug = 1;
+            $headers = "From: no-reply@tunivisions.link \r\n";
+            $headers .= "Reply-To: no-reply@tunivisions.link \r\n";
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-                    // Send email
-                    if(!$mail->send()){
-                        echo 'Message could not be sent.';
-                        echo 'Mailer Error: ' . $mail->ErrorInfo;
-                    }else{
-                        echo 'Message has been sent';
-                    }
-                       
+            $message = $this->load->view('email/resetPassword');
 
+            mail($to, $subject, $message, $headers);
     }
  
      /**
