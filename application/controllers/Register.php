@@ -167,14 +167,9 @@ class Register extends CI_Controller
 
 
                 $email = $this->input->post('mail');
-
-
-
-               
+              
                 $this->load->model('user_model');
                 $result = $this->user_model->checkPasswordExists($email);
-                
-                
                 
                 if($result)
                 {
@@ -201,10 +196,6 @@ class Register extends CI_Controller
                     $this->session->set_flashdata('error', 'adresse e-mail introvable ');
                     redirect('/login') ; 
                 }
-                
-              
-           
-
     }
 
 
@@ -226,8 +217,6 @@ class Register extends CI_Controller
 
                 $newPassword = $this->input->post('password');
                 
-
-
                 print_r($newPassword ) ; 
                 print_r($updatedBy ) ; 
 
