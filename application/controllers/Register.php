@@ -64,8 +64,8 @@ class Register extends CI_Controller
                     $mail->isHTML(true);
                     
                     // Email body content
-                
-                    $mail->Body = '<p>  
+                    $headers = 'Content-type: text/html; charset=iso-8859-1' . '\r\n'; 
+                    $Body = '<p>  
                                         Vous avez récemment demandé la réinitialisation de votre mot de passe. Il vous suffit de cliquer sur le bouton ci-dessous pour en définir un nouveau.</p>
                                         <br> <a href="'.base_url().'Register/Passechange/'.$data['userId'].'?userId='.$data['userId'].'" > DÉFINIR UN NOUVEAU MOT DE</span> <span class="il">PASSE</span>  </a> <br><br>
                                         <p> 
@@ -73,6 +73,7 @@ class Register extends CI_Controller
                                         </p>
                                         <br><br>
                                         <p>L\'équipe T-Link</p>  '; 
+                    $mail->
                     
                     // Send email
                     if(!$mail->send()){
