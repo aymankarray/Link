@@ -56,7 +56,7 @@ class Register extends CI_Controller
                 
                     $mail->addAddress($addresse);
                     
-                    
+                   
                     // Email subject
                     $mail->Subject = $title ;
                     
@@ -85,7 +85,7 @@ class Register extends CI_Controller
     }
 
 
-  function registerNewUser()
+  function registerNewUser ()
     {
                 $birth = $this->security->xss_clean($this->input->post('birth'));
                 $fname = strtoupper ($this->input->post('fname'));
