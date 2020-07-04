@@ -137,7 +137,7 @@ class Passation extends BaseController {
 
              
              $this->global['pageTitle'] = 'Passation' ;
-              $this->loadViews("club/passation/listClub", $this->global, $data, NULL);   
+              $this->loadViews("club/passation/listByClub", $this->global, $data, NULL);   
         } 
 
 
