@@ -111,9 +111,9 @@ class Passation extends BaseController {
   public function index()
             {
              
-             $data  ['userRecords'] = $this->passation_model->passationListing() ; 
+             $data  ['userRecords'] = $this->passation_model->passationListingClub() ; 
              $this->global['pageTitle'] = 'Acceuil' ;
-              $this->loadViews("club/passation/list", $this->global, $data, NULL);   
+              $this->loadViews("club/passation/listClub", $this->global, $data, NULL);   
         } 
         
 		
