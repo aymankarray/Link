@@ -33,7 +33,7 @@
                                 <h6 class="card-title"></h6>
                                    
                 
-                    <table  class="table dataTable no-footer" id="tableid" style="width: cover" >
+                    <table  class="table dataTable no-footer" id="tableid" style="width: cover;background-color: red" >
                     <thead>
                     <tr>
                        
@@ -64,12 +64,12 @@
                     <tr>
                        
                         <td><?php echo $record->name ;?></td>
-                        <td><?php echo $record->ND ;?></td>
-                        <td><?php echo $record->NP ?></td>
-                        <td><?php echo $record->NVPAF ?></td>
-                        <td><?php echo $record->NAAF ?></td>
-                        <td><?php echo $record->NVPRH ?></td>
-                        <td><?php echo $record->NARH ?></td>
+                        <td <?php if($$record->ND == 0 ){ echo "style='background-color: red'"; ?> ><?php echo $record->ND ;?></td>
+                        <td <?php if($$record->NP == 0 ){ echo "style='background-color: red'"; ?> ><?php echo $record->NP ?></td>
+                        <td <?php if($$record->NVPAF == 0 ){ echo "style='background-color: red'"; ?> ><?php echo $record->NVPAF ?></td>
+                        <td <?php if($$record->NAAF == 0 ){ echo "style='background-color: red'"; ?> ><?php echo $record->NAAF ?></td>
+                        <td <?php if($$record->NVPRH == 0 ){ echo "style='background-color: red'"; ?> ><?php echo $record->NVPRH ?></td>
+                        <td <?php if($$record->NARH == 0 ){ echo "style='background-color: red'"; ?> ><?php echo $record->NARH ?></td>
                         <td>Afficher</td>
                        
                     </tr>

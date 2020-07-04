@@ -116,13 +116,13 @@ class Passation extends BaseController {
              $data  ['userRecords'] = $this->club_model->clubListing(); 
 
              foreach ($data  ['userRecords'] as $key ) {
-              $key->ND =  1 ; 
+        
               $key->NP =  count($this->passation_model->passationListingClub($key->clubID , 1 , '' )) ;
               $key->NVPAF =  count($this->passation_model->passationListingClub($key->clubID , 3 , 'Administration et finance' )) ;
               $key->NAAF =  count($this->passation_model->passationListingClub($key->clubID , 6 , 'Administration et finance' )) ;
               $key->NVPRH =  count($this->passation_model->passationListingClub($key->clubID , 3 , 'Gestion des talents' )) ;
               $key->NARH =  count($this->passation_model->passationListingClub($key->clubID , 6 , 'Gestion des talents' )) ;
-              
+              $key->ND =  $key->N + $key->NVPAF +   $key->NAAF +  $key->NVPRH + $key->NARH ; 
               }
              $this->global['pageTitle'] = 'Passation' ;
               $this->loadViews("club/passation/listClub", $this->global, $data, NULL);   
