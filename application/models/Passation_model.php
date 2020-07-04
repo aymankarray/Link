@@ -83,7 +83,7 @@ class Passation_model extends CI_Model
     {
         $this->db->select('BaseTbl.clubID , BaseTbl.name ');
         $this->db->from('tbl_club  as BaseTbl ');
-        $this->db->join('tbl_passation as Passation ', 'Passation.clubId = BaseTbl.ClubId', 'LEFT');
+        $this->db->join('tbl_passation as Passation ', 'Passation.clubId = BaseTbl.ClubID', 'LEFT');
 
 
         $query = $this->db->get();
