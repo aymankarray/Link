@@ -72,6 +72,27 @@ class Passation_model extends CI_Model
     }
 
 
+                /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+     */
+    function passationListingClub()
+    {
+        $this->db->select('BaseTbl.clubId , BaseTbl.name ');
+        $this->db->from('tbl_club  as BaseTbl ');
+        $this->db->join('tbl_passation as Passation ', 'Club.clubID = User.ClubID', 'LEFT');
+
+
+        $query = $this->db->get();
+        
+        return $query->result();
+    }
+
+
+
 
 
     
