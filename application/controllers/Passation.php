@@ -133,7 +133,7 @@ class Passation extends BaseController {
             {
              
 
-             $data  ['userRecords'] = $this->passation_model->passationListingByClub($clubID) ; 
+             $data  ['userRecords'] = $this->passation_model->passationListingByClub($clubId) ; 
 
              
              $this->global['pageTitle'] = 'Passation' ;
