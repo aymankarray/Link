@@ -63,7 +63,7 @@
                     ?>
                     <tr>
                        
-                        <td><?php echo $record->clubName ;?></td>
+                        <td><?php echo $record->name ;?></td>
                         <td><?php echo $record->ND ;?></td>
                         <td><?php echo $record->NP ?></td>
                         <td><?php echo $record->NVPAF ?></td>
