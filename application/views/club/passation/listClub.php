@@ -70,7 +70,7 @@
                         <td <?php if($record->NAAF == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NAAF ?></td>
                         <td <?php if($record->NVPRH == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NVPRH ?></td>
                         <td <?php if($record->NARH == '0' ){ echo "style='background-color: var(--iq-primary)'";  } ?> ><?php echo $record->NARH ?></td>
-                        <td><a href="<?php echo base_url() ?>PassationByClub/<?php echo $record->clubID ?>" >Afficher  </a>></td>
+                        <td><a href="<?php echo base_url() ?>Passation/PassationByClub/<?php echo $record->clubID ?>" >Afficher  </a>></td>
                        
                     </tr>
                     <?php
