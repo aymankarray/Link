@@ -81,7 +81,7 @@ class Passation_model extends CI_Model
      */
     function passationListingClub()
     {
-        $this->db->select('BaseTbl.clubId , BaseTbl.name ');
+        $this->db->select('BaseTbl.clubID , BaseTbl.name ');
         $this->db->from('tbl_club  as BaseTbl ');
         $this->db->join('tbl_passation as Passation ', 'Club.clubID = User.ClubID', 'LEFT');
 
