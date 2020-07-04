@@ -79,12 +79,18 @@ class Passation_model extends CI_Model
      * @param number $segment : This is pagination limit
      * @return array $result : This is result
      */
-    function passationListingClub()
+    function passationListingClub($clubID , $rolVol , $cellule)
     {
-        $this->db->select('BaseTbl.passationId, User.userId , User.nom, User.prenom  , User.name , Club.name clubName , Club.clubID ');
+        $this->db->select('BaseTbl.passationId, User.userId , User.nom, User.prenom  , User.name , Club.name clubName , Club.clubID  , RoleVol.roleId vol , User.cellule ');
+        
         $this->db->from('tbl_passation  as BaseTbl ');
         $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
         $this->db->join('tbl_club as Club ', 'Club.clubID = User.ClubID', 'LEFT');
+        $this->db->join('tbl_roles as RoleVol ', 'BaseTbl.roleVol = RoleVol.roleId', 'LEFT');
+
+        $this->db->where('Club.clubID  =  ',$clubID );
+        $this->db->where('RoleVol.roleId  =  ',$rolVol );
+        $this->db->where('BaseTbl.cellule  =  ',$cellule );
 
 
         $query = $this->db->get();

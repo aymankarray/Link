@@ -15,6 +15,7 @@ class Passation extends BaseController {
         $this->load->model('user_diplome_model');
         $this->load->model('ressource_model');
         $this->load->model('passation_model');
+        $this->load->model('club_model');
 
         $this->isLoggedInPub();   
     }
@@ -111,7 +112,18 @@ class Passation extends BaseController {
   public function index()
             {
              
-             $data  ['userRecords'] = $this->passation_model->passationListingClub() ; 
+
+             $data  ['userRecords'] = $this->club_model->clubListing(); 
+
+             foreach ($data  ['userRecords'] as $key ) {
+              $key->ND =  1 ; 
+              $key->NP =  count($this->club_model-passationListingClub($key->clubID , 1 , '' )) ;
+              $key->NVPAF =  count($this->club_model-passationListingClub($key->clubID , 3 , 'Administration et finance' )) ;
+              $key->NAAF =  count($this->club_model-passationListingClub($key->clubID , 6 , 'Administration et finance' )) ;
+              $key->NVPRH =  count($this->club_model-passationListingClub($key->clubID , 3 , 'Gestion des talents' )) ;
+              $key->NARH =  count($this->club_model-passationListingClub($key->clubID , 6 , 'Gestion des talents' )) ;
+              
+              }
              $this->global['pageTitle'] = 'Acceuil' ;
               $this->loadViews("club/passation/listClub", $this->global, $data, NULL);   
         } 
