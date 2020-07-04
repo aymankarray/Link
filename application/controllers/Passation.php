@@ -117,14 +117,14 @@ class Passation extends BaseController {
 
              foreach ($data  ['userRecords'] as $key ) {
               $key->ND =  1 ; 
-              $key->NP =  count($this->club_model-passationListingClub($key->clubID , 1 , '' )) ;
-              $key->NVPAF =  count($this->club_model-passationListingClub($key->clubID , 3 , 'Administration et finance' )) ;
-              $key->NAAF =  count($this->club_model-passationListingClub($key->clubID , 6 , 'Administration et finance' )) ;
-              $key->NVPRH =  count($this->club_model-passationListingClub($key->clubID , 3 , 'Gestion des talents' )) ;
-              $key->NARH =  count($this->club_model-passationListingClub($key->clubID , 6 , 'Gestion des talents' )) ;
+              $key->NP =  count($this->passation_model-passationListingClub($key->clubID , 1 , '' )) ;
+              $key->NVPAF =  count($this->passation_model-passationListingClub($key->clubID , 3 , 'Administration et finance' )) ;
+              $key->NAAF =  count($this->passation_model-passationListingClub($key->clubID , 6 , 'Administration et finance' )) ;
+              $key->NVPRH =  count($this->passation_model-passationListingClub($key->clubID , 3 , 'Gestion des talents' )) ;
+              $key->NARH =  count($this->passation_model-passationListingClub($key->clubID , 6 , 'Gestion des talents' )) ;
               
               }
-             $this->global['pageTitle'] = 'Acceuil' ;
+             $this->global['pageTitle'] = 'Passation' ;
               $this->loadViews("club/passation/listClub", $this->global, $data, NULL);   
         } 
         
