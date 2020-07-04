@@ -40,7 +40,7 @@
 
                         <th>Club</th>
                         <th>Nombre des dossiers</th>
-                        <th>P</th>
+
                         <th>P</th>
                         <th>N VPAF</th>
                         <th>N AAF</th>
@@ -70,6 +70,7 @@
                         <td><?php echo $record->NAAF ?></td>
                         <td><?php echo $record->NVPRH ?></td>
                         <td><?php echo $record->NARH ?></td>
+                        <td>Afficher</td>
                        
                     </tr>
                     <?php
