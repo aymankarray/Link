@@ -37,16 +37,12 @@
                     <thead>
                     <tr>
                        
-
+                        <th>id</th>
+                        <th>Nom et prénom</th>
                         <th>Club</th>
-                        <th>N Dossier</th>
-
-                        <th>P</th>
-                        <th>VP AF</th>
-                        <th>A AF</th>
-                        <th>VP RH</th>
-                        <th>A RH</th>
-                        <th>Action</th>
+                        <th>cell act</th>
+                        <th>cand pour</th>
+                        <th>scores</th>
                         
                     </tr>
                     </thead>
@@ -63,15 +59,49 @@
                     ?>
                     <tr>
                        
-                        <td><?php echo $record->name ;?></td>
-                        <td <?php if($record->ND == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->ND ;?></td>
-                        <td <?php if($record->NP == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NP ?></td>
-                        <td <?php if($record->NVPAF == '0' ){ echo "style='background-color: var(--iq-primary)'";  } ?> ><?php echo $record->NVPAF ?></td>
-                        <td <?php if($record->NAAF == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NAAF ?></td>
-                        <td <?php if($record->NVPRH == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NVPRH ?></td>
-                        <td <?php if($record->NARH == '0' ){ echo "style='background-color: var(--iq-primary)'";  } ?> ><?php echo $record->NARH ?></td>
-                        <td><a href="<?php echo base_url() ?>PassationByClub/<?php echo $record->clubID ?>" >Afficher  </a>></td>
+                        <td>
+                            <small>
+                            <?php echo $record->passationId ?>
+                            </small>
+                        </td>
+                      
+                        <td>  
+                        <a href="<?php echo base_url() ?>User/ProfileShow/<?php echo $record->userId ?>" >                                                    
+                            <?php echo $record->nom ?>  <?php echo $record->prenom ?>
+                            <?php if ($record->nom =='' ) { echo $record->name; } ?>
+                        </a>
+                        </td>
+
+                        <td>
+                            <a class="kt-user-card-v2__name" href="#">
+                              <small> <?php echo $record->clubName ?> </small> 
+                            </a>                            
+                                                     
+                        </td>
+
+                        <td>
+                      
+                              <small class="text-primary" > <b><?php echo $record->act ?></b> </small> <small><?php echo $record->cellule ?>    </small> 
+                                  
+                        </td>
+                        <td>
+                      
+                              <small> <?php echo $record->vol ?> <?php echo $record->celluleVol ?>    </small> 
+                                  
+                        </td>
+                        <td>
+                      
+                              <small>    </small> 
+                                  
+                        </td>
+                        
+
+
+                        
+                        
                        
+                       
+
                     </tr>
                     <?php
                         }
