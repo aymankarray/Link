@@ -96,9 +96,9 @@
                             </h4>
                             <select name="cellule"  class="form-control" required  >
                                              <option value="" >Veuillez choisir votre cellule</option>
-                                             <!-- <option value="Marketing" >Marketing</option> -->
+                                             <option value="Marketing" >Marketing</option> 
                                              <option value="Administration et finance" >Administration et finance</option>
-                                            <!-- <option value="Evenementiel" >Evenementiel</option> -->
+                                             <option value="Evenementiel" >Evenementiel</option>
                                              <option value="Gestion des talents" >Gestion des talents</option>
                                              <option value=" " > Président </option>
                             </select>                            
