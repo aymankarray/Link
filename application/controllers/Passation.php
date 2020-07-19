@@ -122,7 +122,11 @@ class Passation extends BaseController {
               $key->NAAF =  count($this->passation_model->passationListingClub($key->clubID , 6 , 'Administration et finance' )) ;
               $key->NVPRH =  count($this->passation_model->passationListingClub($key->clubID , 3 , 'Gestion des talents' )) ;
               $key->NARH =  count($this->passation_model->passationListingClub($key->clubID , 6 , 'Gestion des talents' )) ;
-              $key->ND =  $key->NP + $key->NVPAF +   $key->NAAF +  $key->NVPRH + $key->NARH ; 
+              $key->NVPM =  count($this->passation_model->passationListingClub($key->clubID , 3 , 'Marketing' )) ;
+              $key->NAM =  count($this->passation_model->passationListingClub($key->clubID , 6 , 'Marketing' )) ;
+              $key->NVPE =  count($this->passation_model->passationListingClub($key->clubID , 3 , 'Evenementiel' )) ;
+              $key->NAE =  count($this->passation_model->passationListingClub($key->clubID , 6 , 'Evenementiel' )) ;
+              $key->ND =  $key->NP + $key->NVPAF +   $key->NAAF +  $key->NVPRH + $key->NARH + $key->NVPM + $key->NAM + $key->NARH + $key->NVPE  + $key->NAE  ; 
               }
              $this->global['pageTitle'] = 'Passation' ;
               $this->loadViews("club/passation/listClub", $this->global, $data, NULL);   
