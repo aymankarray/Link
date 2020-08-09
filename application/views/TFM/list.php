@@ -85,7 +85,7 @@
                             if ( $tfmp->tfmId == 7 && $tfmp->statut == 1  ){
                             ?>
 
-                                <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfm ?>" >
+                                <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfm->tfmId ?>" >
                                     <h4> Remboursé : </h4>
                                     <input type="radio" name="" value="1">
                                     <h4> Partant : </h4>
