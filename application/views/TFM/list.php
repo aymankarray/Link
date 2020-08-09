@@ -39,7 +39,7 @@
                              </div>
                             <div class="kt-widget__info">
                                 <div class="kt-widget__media">
-                                    <h5>
+                                    <h2>
                                 
                                   
 
@@ -59,7 +59,7 @@
                                      echo $string ;
                                      ?>
                                
-                                </h5>
+                                </h2>
                                
                                 <a <?php foreach ($tfmpartRecords as $tfmp ) {
                             if ( $tfmp->tfmId == 7   ){ ?> style="display: none" <?php }} ?>
