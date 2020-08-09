@@ -94,11 +94,7 @@
                         <?php } ?>
 
 
-                        <?php foreach ($variable as $key => $value) {
-
-                                if ($)
-
-                        }  ?>
+               
 
                             
                             
