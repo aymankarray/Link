@@ -57,7 +57,7 @@ class Tfm_model extends CI_Model
      */
     function TFMPId($userID,$TfmId)
     {
-        $this->db->select('BaseTbl.tfmId , BaseTbl.dateInscrip , BaseTbl.statut   ');
+        $this->db->select(' BaseTbl.Id , BaseTbl.tfmId , BaseTbl.dateInscrip , BaseTbl.statut   ');
         $this->db->from('tbl_tfm_part as BaseTbl');
 
         $this->db->where('BaseTbl.userId =',$userID);
