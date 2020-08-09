@@ -34,7 +34,7 @@ class Tfm_model extends CI_Model
      */
     function TFMPListing($userID)
     {
-        $this->db->select('BaseTbl.tfmId , BaseTbl.dateInscrip , BaseTbl.statut   ');
+        $this->db->select('BaseTbl.tfmId , BaseTbl.dateInscrip , BaseTbl.statut ,  BaseTbl.remb   ');
         $this->db->from('tbl_tfm_part as BaseTbl');
 
         $this->db->where('BaseTbl.userId =',$userID);

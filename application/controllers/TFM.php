@@ -285,10 +285,7 @@ class TFM extends BaseController {
 		{
 
 
-				$partanTfm = array(  	  'p_tranch2' => '70', 
-									          'dateP_tranch2'=>date('Y-m-d H:i:s'),
-									          'recepteurTranche2'=>$this->vendorId ,
-									          'statut'=> 1 
+				$partanTfm = array( 'remb'=> $this->input->post('r1');
 									     );
 					$result = $this->tfm_model->editTFMPart($partanTfm, $r) ;	
 
