@@ -1,5 +1,5 @@
 <style type="text/css">
-       .alligator-turtle {
+       .alligator-turtle12 {
   object-fit: cover;
   object-position: 50% 50%;
 
@@ -26,7 +26,7 @@
         <!--begin:: Portlet-->
         <div class="kt-portlet kt-portlet--height-fluid">
         <div>
-             <img src="<?php echo base_url()  ?>uploads/projet/<?php echo $record->banner; ?>"  class="alligator-turtle" alt="image">  
+             <img src="<?php echo base_url()  ?>uploads/projet/<?php echo $record->banner; ?>"  class="alligator-turtle12" alt="image">  
         </div>
 
             <div class="kt-portlet__body kt-portlet__body--fit">
