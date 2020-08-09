@@ -285,7 +285,7 @@ class TFM extends BaseController {
 		{
 
 
-				$partanTfm = array( 'remb'=> $this->input->post('r1');
+				$partanTfm = array( 'remb'=> $this->input->post('r1')
 									     );
 					$result = $this->tfm_model->editTFMPart($partanTfm, $r) ;	
 
