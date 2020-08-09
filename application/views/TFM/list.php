@@ -59,7 +59,7 @@
                                      echo $string ;
                                      ?>
                                 </a>
-                                
+                                </h5>
                                
                                 <a <?php foreach ($tfmpartRecords as $tfmp ) {
                             if ( $tfmp->tfmId == 7   ){ ?> style="display: none" <?php }} ?>
@@ -75,11 +75,11 @@
                             </a> 
                                    <br>
                                            <!--
-<?php if ($record->tfmId == 7 ){ ?>
-    <div class="btn btn-danger"> SOLD OUT </div>
+                                            <?php if ($record->tfmId == 7 ){ ?>
+                                                <div class="btn btn-danger"> SOLD OUT </div>
 
-  <?php }  ?>
--->
+                                              <?php }  ?>
+                                            -->
                                            <span>
   
                             
