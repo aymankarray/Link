@@ -67,7 +67,7 @@
                         <?php  $tfmPart = $record->tfm ;  
                                 if (!empty($tfmPart) &&   $tfmPart->tfmId == 7)  { ?>
 
-                                <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfmPart->Id ?>" >
+                                <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfmPart->Id ?>" method="post" >
 
                                     <h4> <input type="radio" name="r1" value="2"> Partant  </h4>
                                     <h4> <input type="radio" name="r1" value="1"> Remboursé  </h4>

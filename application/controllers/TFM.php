@@ -293,6 +293,7 @@ class TFM extends BaseController {
 									     );
 					$result = $this->tfm_model->editTFMPart($partanTfm, $r) ;	
 
+				redirect('TFM')		 ;
 		}
 		
 
