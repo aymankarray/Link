@@ -86,10 +86,10 @@
                             ?>
 
                                 <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfm->tfmId ?>" >
-                                    <h4> Remboursé : </h4>
-                                    <input type="radio" name="" value="1">
-                                    <h4> Partant : </h4>
-                                    <input type="radio" name="" value="2">
+                                    <h4>  <input type="radio" name="" value="1"> Remboursé  </h4>
+                                   
+                                    <h4> <input type="radio" name="" value="2"> Partant  </h4>
+                                    <input type="submit" name="envoyer" class="btn btn-primary" >
                                 </form>
 
                           <?php        
