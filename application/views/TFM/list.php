@@ -78,6 +78,22 @@
 
                         <?php } ?>
 
+                        <?php  $tfmPart = $record->tfm ;  
+                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 2 )  { ?>
+
+                                <span class="btn btn-danger">On a valider votre paricipation</span>
+
+
+                        <?php } ?>
+
+                        <?php  $tfmPart = $record->tfm ;  
+                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 1 )  { ?>
+
+                                <span class="btn btn-success">On va vous contacter prochainement</span>
+
+
+                        <?php } ?>
+
                             
                             
   
