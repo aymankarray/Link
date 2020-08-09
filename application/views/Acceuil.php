@@ -56,95 +56,7 @@
                               </ul>
                                   
                            </div>
-                           <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="post-modalLabel" aria-hidden="true" style="display: none;">
-                              <form action="<?php echo base_url()?>Posts/addNewP"   method="post" enctype="multipart/form-data"  >
-                              <div class="modal-dialog" role="document">
-                                 <div class="modal-content">
-                                    <div class="modal-header">
-                                       <div class="user-img">
-                                             <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle">
-                                          </div>
-
-                                       <h5 class="modal-title" id="post-modalLabel">Créer une publication</h5>
-                                       <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="ri-close-fill"></i></button>
-                                    </div>
-                                    <div class="modal-body">
-                                       <div class="d-flex align-items-center">
-                                          
-
-
-                                          
-                                        <textarea id="textarea"  class="form-control rounded" name="postText" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " row="10"; style="resize: none;" required ></textarea>
-                                           
-                                           <script type="text/javascript">
-                                                 function convert()
-                                                 {
-                                                  var text=document.getElementById("textarea").value;
-                                                  var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                                                  var text1=text.replace(exp, "<a href='$1'>$1</a>");
-                                                  var exp2 =/(^|[^\/])(www\.[\S]+(\b|$))/gim;
-                                                  document.getElementById("converted_url").innerHTML=text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
-                                                 }
-                                               </script>
-
-                                          
-                                       </div>
-                                       <hr>
-
-                                       <br>
-                                                                             
-                                          <input class="dropify-fr" data-height="500" data-max-file-size="250K" data-max-height="2000"  type="file" name="file"  > 
-                               
-                  <!--  
-                                      
-                                       <ul class="d-flex flex-wrap align-items-center list-inline m-0 p-0">
-                                           <li class="col-md-12 mb-3" id="lien" style="display: none;"> 
-                                             <div class="iq-bg-primary rounded p-2 pointer mr-3">
-                                                <a href="#"></a>
-                                                 <input type="url" class="form-control" name=""  placeholder="integrer un lien " >
-                                              </div>
-                                          </li>
-                                          <li class="col-md-12 mb-3" id="tof" style="display: none;">
-                                             <div class="form-group">
-                                                <div class="custom-file">
-                                                   <input type="file" class="custom-file-input" id="customFile">
-                                                   <label class="custom-file-label" for="customFile">Choisir un fichier</label>
-                                                </div>
-                                             </div>
-                                          </li>
-                                      
-                                          -->
-                                          <!--
-                                          <li class="col-md-6 mb-3">
-                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/09.png" alt="icon" class="img-fluid"> Feeling/Activity</div>
-                                          </li>
-                                          <li class="col-md-6 mb-3">
-                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/10.png" alt="icon" class="img-fluid"> Check in</div>
-                                          </li>
-                                          <li class="col-md-6 mb-3">
-                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/11.png" alt="icon" class="img-fluid"> Live Video</div>
-                                          </li>
-                                          <li class="col-md-6 mb-3">
-                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/12.png" alt="icon" class="img-fluid"> Gif</div>
-                                          </li>
-                                          <li class="col-md-6 mb-3">
-                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/13.png" alt="icon" class="img-fluid"> Watch Party</div>
-                                          </li>
-                                          <li class="col-md-6 mb-3">
-                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/14.png" alt="icon" class="img-fluid"> Play with Friends</div>
-                                          </li>-->
-                                       </ul>
-                                       
-                                       <hr>
-                                       
-                                       <button type="submit" onclick="convert();" class="btn btn-primary d-block w-100 mt-3">Post</button>
-                                    </div>
-                                 </div>
-                              </div>
-                           </form>
-                           </div>
-                        </div>
-                     </div>
+                           
 
 
                      <?php   if (!empty($postRecords)) {    foreach ($postRecords as $record ) {  ?>
@@ -530,6 +442,103 @@
                </div>
             </div>
          </div>
+
+
+
+
+
+
+                           <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="post-modalLabel" aria-hidden="true" style="display: none;">
+                              <form action="<?php echo base_url()?>Posts/addNewP"   method="post" enctype="multipart/form-data"  >
+                              <div class="modal-dialog" role="document">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <div class="user-img">
+                                             <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" alt="userimg" class="alligator-turtle">
+                                          </div>
+
+                                       <h5 class="modal-title" id="post-modalLabel">Créer une publication</h5>
+                                       <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="ri-close-fill"></i></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="d-flex align-items-center">
+                                          
+
+
+                                          
+                                        <textarea id="textarea"  class="form-control rounded" name="postText" placeholder="Que voulez-vous dire, <?php echo $name ?> ? " row="10"; style="resize: none;" required ></textarea>
+                                           
+                                           <script type="text/javascript">
+                                                 function convert()
+                                                 {
+                                                  var text=document.getElementById("textarea").value;
+                                                  var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                                                  var text1=text.replace(exp, "<a href='$1'>$1</a>");
+                                                  var exp2 =/(^|[^\/])(www\.[\S]+(\b|$))/gim;
+                                                  document.getElementById("converted_url").innerHTML=text1.replace(exp2, '$1<a target="_blank" href="http://$2">$2</a>');
+                                                 }
+                                               </script>
+
+                                          
+                                       </div>
+                                       <hr>
+
+                                       <br>
+                                                                             
+                                          <input class="dropify-fr" data-height="500" data-max-file-size="250K" data-max-height="2000"  type="file" name="file"  > 
+                               
+                  <!--  
+                                      
+                                       <ul class="d-flex flex-wrap align-items-center list-inline m-0 p-0">
+                                           <li class="col-md-12 mb-3" id="lien" style="display: none;"> 
+                                             <div class="iq-bg-primary rounded p-2 pointer mr-3">
+                                                <a href="#"></a>
+                                                 <input type="url" class="form-control" name=""  placeholder="integrer un lien " >
+                                              </div>
+                                          </li>
+                                          <li class="col-md-12 mb-3" id="tof" style="display: none;">
+                                             <div class="form-group">
+                                                <div class="custom-file">
+                                                   <input type="file" class="custom-file-input" id="customFile">
+                                                   <label class="custom-file-label" for="customFile">Choisir un fichier</label>
+                                                </div>
+                                             </div>
+                                          </li>
+                                      
+                                          -->
+                                          <!--
+                                          <li class="col-md-6 mb-3">
+                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/09.png" alt="icon" class="img-fluid"> Feeling/Activity</div>
+                                          </li>
+                                          <li class="col-md-6 mb-3">
+                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/10.png" alt="icon" class="img-fluid"> Check in</div>
+                                          </li>
+                                          <li class="col-md-6 mb-3">
+                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/11.png" alt="icon" class="img-fluid"> Live Video</div>
+                                          </li>
+                                          <li class="col-md-6 mb-3">
+                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/12.png" alt="icon" class="img-fluid"> Gif</div>
+                                          </li>
+                                          <li class="col-md-6 mb-3">
+                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/13.png" alt="icon" class="img-fluid"> Watch Party</div>
+                                          </li>
+                                          <li class="col-md-6 mb-3">
+                                             <div class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="<?php echo base_url() ;  ?>images/small/14.png" alt="icon" class="img-fluid"> Play with Friends</div>
+                                          </li>-->
+                                       </ul>
+                                       
+                                       <hr>
+                                       
+                                       <button type="submit" onclick="convert();" class="btn btn-primary d-block w-100 mt-3">Post</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                           </div>
+                        </div>
+                     </div>
+
+
 
 
 <script type="text/javascript">
