@@ -18,7 +18,7 @@ class TFM extends BaseController {
     }
     
 
-		public function TFMListing()
+		public function index()
 		        {
 		        		 
 		                $searchText='' ;

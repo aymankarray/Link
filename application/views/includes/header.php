@@ -785,6 +785,7 @@
                      </li>
                      <?php } ?>
                     <?php if ($clubID > 5 ) { ?>
+                     <!--
                      <li>
                         <a href="#Mclub" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false" >
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
@@ -804,6 +805,7 @@
                             </li>
                         </ul>
                       </li>
+                      -->
                    <?php } ?>
                      <li>
                         <a href="<?php echo base_url() ?>Project/projectListing" class="iq-waves-effect"><i class="las la-calendar"></i><span>Evenement</span></a>
@@ -828,12 +830,9 @@
                       </li>
 
                       <li>
-                        <a class="iq-waves-effect" >
-                            <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-store-3-line"></i>Store 
-                        </a>
-                         <small class="mb-3"><i class="ri-terminal-line"></i> coming soon</small>
-                      </li>
+                        <a href="<?php echo base_url() ?>TFM" class="iq-waves-effect"><i class="ri-newspaper-line"></i><span> TFM </span></a>
+                     </li>
+
 
                   </ul>
                </nav>
