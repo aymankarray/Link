@@ -43,9 +43,14 @@
 
                         <th>P</th>
                         <th>VP AF</th>
-                        <th>A AF</th>
                         <th>VP RH</th>
+                        <th>VP M</th>
+                        <th>VP E</th>
+
+                        <th>A AF</th>
                         <th>A RH</th>
+                        <th>A M</th>
+                        <th>A E</th>
                         <th>Action</th>
                         
                     </tr>
@@ -66,10 +71,18 @@
                         <td><?php echo $record->name ;?></td>
                         <td <?php if($record->ND == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->ND ;?></td>
                         <td <?php if($record->NP == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NP ?></td>
+                        
                         <td <?php if($record->NVPAF == '0' ){ echo "style='background-color: var(--iq-primary)'";  } ?> ><?php echo $record->NVPAF ?></td>
-                        <td <?php if($record->NAAF == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NAAF ?></td>
                         <td <?php if($record->NVPRH == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NVPRH ?></td>
+                        <td <?php if($record->NVPM == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NVPM ?></td>
+                        <td <?php if($record->NVPE == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NVPE ?></td>
+
+                        <td <?php if($record->NAAF == '0' ){ echo "style='background-color: var(--iq-primary)'"; } ?> ><?php echo $record->NAAF ?></td>
                         <td <?php if($record->NARH == '0' ){ echo "style='background-color: var(--iq-primary)'";  } ?> ><?php echo $record->NARH ?></td>
+                        <td <?php if($record->NAM == '0' ){ echo "style='background-color: var(--iq-primary)'";  } ?> ><?php echo $record->NAM ?></td>
+                        <td <?php if($record->NAE == '0' ){ echo "style='background-color: var(--iq-primary)'";  } ?> ><?php echo $record->NAE ?></td>
+                        
+
                         <td><a href="<?php echo base_url() ?>Passation/PassationByClub/<?php echo $record->clubID ?>" >Afficher  </a></td>
                        
                     </tr>
