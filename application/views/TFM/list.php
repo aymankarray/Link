@@ -64,7 +64,7 @@
 
   
                             
-                        <?php if ($tfm->tfmId = 7  ) { ?>
+                        <?php  if ($tfm->tfmId = 7 &&  $record->tfmId == 7 ) { ?>
 
                                 <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfm->tfmId ?>" >
 
