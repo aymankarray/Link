@@ -40,7 +40,7 @@
                             <div class="kt-widget__info">
                                 <div class="kt-widget__media">
                                     <h5>
-                                <a href="" class="kt-widget__title">
+                                
                                   
 
                                     <?php 
@@ -58,7 +58,7 @@
 
                                      echo $string ;
                                      ?>
-                                </a>
+                               
                                 </h5>
                                
                                 <a <?php foreach ($tfmpartRecords as $tfmp ) {
