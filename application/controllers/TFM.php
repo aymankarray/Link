@@ -23,8 +23,12 @@ class TFM extends BaseController {
 		        		 
 		                $searchText='' ;
 		                $data['tfmRecords'] = $this->tfm_model->TFMListing();
-		                $data['tfmpartRecords'] = $this->tfm_model->TFMPListing($this->vendorId);
-		                $data['tfm'] = $this->tfm_model->TFMPId($this->vendorId);
+
+		                foreach ($data['tfmRecords'] as $a ) {
+
+		                	 $data['tfmRecords']->tfm = $this->tfm_model->TFMPId($this->vendorId,$a->tfmId);
+		                }
+		                
 
 		                $this->global['pageTitle'] = 'TFM';
 		             	$this->global['active'] = 'TFM';

@@ -64,7 +64,7 @@
 
   
                             
-                        <?php if { ?>
+                        <?php if ($  ) { ?>
 
                                 <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfm->tfmId ?>" >
 

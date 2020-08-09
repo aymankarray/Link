@@ -55,13 +55,13 @@ class Tfm_model extends CI_Model
      * @param number $segment : This is pagination limit
      * @return array $result : This is result
      */
-    function TFMPId($userID)
+    function TFMPId($userID,$TfmId)
     {
         $this->db->select('BaseTbl.tfmId , BaseTbl.dateInscrip , BaseTbl.statut   ');
         $this->db->from('tbl_tfm_part as BaseTbl');
 
         $this->db->where('BaseTbl.userId =',$userID);
-        $this->db->where('BaseTbl.tfmId =',7);
+        $this->db->where('BaseTbl.tfmId =',$TfmId);
        
            
         $query = $this->db->get();
