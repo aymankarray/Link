@@ -82,7 +82,7 @@
   
                             
                         <?php foreach ($tfmpartRecords as $tfmp ) {
-                            if ( $tfmp->tfmId == 7 &&  $record->tfmId == 7 && $tfmp->statut == 1 && $tfmp->remb != 0   ){
+                            if ( $tfmp->tfmId == 7 &&  $record->tfmId == 7 && $tfmp->statut == 1    ){
                             ?>
 
                                 <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfm->tfmId ?>" >
