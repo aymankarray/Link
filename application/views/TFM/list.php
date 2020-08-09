@@ -91,8 +91,14 @@
 
                                 <span class="btn btn-danger">Nous allons vous contacter bientôt</span>
 
-
                         <?php } ?>
+
+
+                        <?php foreach ($variable as $key => $value) {
+
+                                if ($)
+
+                        }  ?>
 
                             
                             
