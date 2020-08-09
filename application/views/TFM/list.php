@@ -59,54 +59,23 @@
                                
                                 </h2>
                                
-                                <a <?php foreach ($tfmpartRecords as $tfmp ) {
-                            if ( $tfmp->tfmId == 7   ){ ?> style="display: none" <?php }} ?>
-                            href="<?php echo base_url() ; ?>TFM/partant/<?php echo $record->tfmId ; ?>">  
-                       
-                            <?php if ($record->tfmId == 7 ){ ?>
-                                <div class="btn btn-danger">
-                                    <span class="kt-widget__subtitle"></span>
-                                    <span class="kt-widget__value"> je veux participer </span><span></span>
-                                </div>
 
-                                                            <?php }  ?>
-                            </a> 
                                    <br>
-                                           <!--
-                                            <?php if ($record->tfmId == 7 ){ ?>
-                                                <div class="btn btn-danger"> SOLD OUT </div>
 
-                                              <?php }  ?>
-                                            -->
-                                           <span>
   
                             
-                        <?php foreach ($tfmpartRecords as $tfmp ) {
-                            if ( $tfmp->tfmId == 7 &&  $record->tfmId == 7 && $tfmp->statut == 1    ){
-                            ?>
+                        <?php if { ?>
 
                                 <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfm->tfmId ?>" >
-                                    <h4>  <input type="radio" name="r1" value="1"> Remboursé  </h4>
-                                   
+
                                     <h4> <input type="radio" name="r1" value="2"> Partant  </h4>
+                                    <h4> <input type="radio" name="r1" value="1"> Remboursé  </h4>
+                                    
                                     <br>
                                     <input type="submit" name="envoyer" class="btn btn-primary" >
                                 </form>
 
-                          <?php        
-                                }
-                                else if( $tfmp->tfmId == $record->tfmId && $tfmp->statut == 2  ) {
-                                   ?>
-                            <span class="btn btn-warning "> 
-                                        <b>En cours de traitement</b> <br>
-
-                                         Paiement 1 <b>175 DT</b>  Avant le <b>18/08/2020</b> <br>
-                                         <br><b>système de paiement FIFO ( First IN First OUT )</b>     
-                            </span> 
-                         <?php   
-                                }
-                            } 
-                            ?>
+                        <?php } ?>
 
                             
                             
