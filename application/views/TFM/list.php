@@ -41,8 +41,6 @@
                                 <div class="kt-widget__media">
                                     <h2>
                                 
-                                  
-
                                     <?php 
                                     $string = strip_tags( $record->nom );
                                     if (strlen($string) > 20){
@@ -86,7 +84,7 @@
                         <?php foreach ($tfmpartRecords as $tfmp ) {
                             if ( $tfmp->tfmId == $record->tfmId && $tfmp->statut == 1  ){
                             ?>
-                            <span class="btn btn-primary "> 
+                            <span class="btn btn-success "> 
                                         TFM validé    
                             </span> 
                           <?php        
