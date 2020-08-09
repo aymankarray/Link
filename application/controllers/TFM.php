@@ -24,6 +24,8 @@ class TFM extends BaseController {
 		                $searchText='' ;
 		                $data['tfmRecords'] = $this->tfm_model->TFMListing();
 		                $data['tfmpartRecords'] = $this->tfm_model->TFMPListing($this->vendorId);
+		                $data['tfm'] = $this->tfm_model->TFMPId($this->vendorId);
+
 		                $this->global['pageTitle'] = 'TFM';
 		             	$this->global['active'] = 'TFM';
 		                $this->loadViews("TFM/list", $this->global, $data, NULL);   
@@ -277,6 +279,19 @@ class TFM extends BaseController {
 		             	$this->global['active'] = 'TFMP';
 		                $this->load->view("TFM/codeABare",$data,false);   
 		
+		}
+
+		public function remboursement ($r)
+		{
+
+
+				$partanTfm = array(  	  'p_tranch2' => '70', 
+									          'dateP_tranch2'=>date('Y-m-d H:i:s'),
+									          'recepteurTranche2'=>$this->vendorId ,
+									          'statut'=> 1 
+									     );
+					$result = $this->tfm_model->editTFMPart($partanTfm, $r) ;	
+
 		}
 		
 

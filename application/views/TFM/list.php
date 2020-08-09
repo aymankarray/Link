@@ -82,11 +82,16 @@
   
                             
                         <?php foreach ($tfmpartRecords as $tfmp ) {
-                            if ( $tfmp->tfmId == $record->tfmId && $tfmp->statut == 1  ){
+                            if ( $tfmp->tfmId == 7 && $tfmp->statut == 1  ){
                             ?>
-                            <span class="btn btn-success "> 
-                                        TFM validé    
-                            </span> 
+
+                                <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfm ?>" >
+                                    <h4> Remboursé : </h4>
+                                    <input type="radio" name="" value="1">
+                                    <h4> Partant : </h4>
+                                    <input type="radio" name="" value="2">
+                                </form>
+
                           <?php        
                                 }
                                 else if( $tfmp->tfmId == $record->tfmId && $tfmp->statut == 2  ) {
@@ -94,10 +99,8 @@
                             <span class="btn btn-warning "> 
                                         <b>En cours de traitement</b> <br>
 
-                                         Paiement 1 <b>80 DT</b>  Avant le <b>01/03/2020</b> <br>
-                                         Paiement 2 <b>70 DT</b>  Avant le <b>05/03/2020</b>
-                                         <br><b>système de paiement FIFO ( First IN First OUT )</b>
-                                           
+                                         Paiement 1 <b>175 DT</b>  Avant le <b>18/08/2020</b> <br>
+                                         <br><b>système de paiement FIFO ( First IN First OUT )</b>     
                             </span> 
                          <?php   
                                 }
