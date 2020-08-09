@@ -26,7 +26,7 @@ class TFM extends BaseController {
 
 		                foreach ($data['tfmRecords'] as $a ) {
 
-		                	 $data['tfmRecords']->tfm = $this->tfm_model->TFMPId($this->vendorId,$a->tfmId);
+		                	 $a->tfm = $this->tfm_model->TFMPId($this->vendorId,$a->tfmId);
 		                }
 		                
 
