@@ -1,3 +1,9 @@
+
+<div id="content-page" class="content-page">
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-sm-12">
+
 <div class="row">
 	
 
@@ -84,4 +90,9 @@
 
 	</div>	
 		
+</div>
+
+</div>
+</div>
+</div>
 </div>
