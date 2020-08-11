@@ -76,7 +76,7 @@
                                     <input type="submit" name="envoyer" class="btn btn-primary" >
                                 </form>
 
-                        <?php }  else  { ?>
+                        <?php }  else if( empty($tfmPart) )  { ?>
 
                                 <a class="btn btn-danger" href="<?php echo base_url() ?>TFM/partanTfm" >Je veux participer</a>
 
