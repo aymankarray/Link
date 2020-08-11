@@ -98,7 +98,7 @@
 
 
                         <?php  $tfmPart = $record->tfm ;  
-                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 2 )  { ?>
+                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 2 && $tfmPart->statut == 1 )  { ?>
 
                                 <span class="btn btn-success"> ID : <?php echo $tfmPart->Id ?> <br> Participation validé</span>
 
@@ -106,7 +106,7 @@
                         <?php } ?>
 
                         <?php  $tfmPart = $record->tfm ;  
-                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 1 )  { ?>
+                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 1 && $tfmPart->statut == 1 )  { ?>
 
                                 <span class="btn btn-danger"> ID : <?php echo $tfmPart->Id ?> <br> Nous allons vous contacter bientôt</span>
 
