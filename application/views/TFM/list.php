@@ -90,7 +90,7 @@
                             
                         if (!empty($tfmPart) && $record->tfmId == 7 && $tfmPart->remb == 0 && $tfmPart->statut == 2  )  { ?>        
                                 <span href="<?php echo base_url() ?>TFM/partanTfm" class="btn btn-warning" >  
-                                    ID : <?php echo $tfmPart->Id ?> <br> DDL de paiement le 18/08/2020</a>
+                                    ID : <?php echo $tfmPart->Id ?> <br> DDL de paiement  le 18/08/2020 <br> avec 25 Dt à payer le jour j </a>
                         <?php }  ?>
 
 
