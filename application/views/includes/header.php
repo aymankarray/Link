@@ -839,7 +839,7 @@
                      </li>
                      <?php } ?>
                      <li>
-                        <a href="<?php echo base_url() ?>TFM/PaimentByClub" class="iq-waves-effect"><i class="las la-calendar"></i><span>My Team for TFM2020</span></a>
+                        <a href="<?php echo base_url() ?>TFM/PaimentByClub/<?php echo $clubID ?>" class="iq-waves-effect"><i class="las la-calendar"></i><span>My Team for TFM2020</span></a>
                      </li>
 
 
