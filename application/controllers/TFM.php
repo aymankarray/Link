@@ -156,18 +156,18 @@ class TFM extends BaseController {
 				}
 
 				
-		*/
+		
 				$moto = $this->input->post('bus');
 				$sys = $this->input->post('sys');
-			
+		*/	
 
 				$partanTfm = array(
 		          'tfmId'=>'7',
 		          'dateInscrip'=>date('Y-m-d H:i:s'),
 		          'userId'=>$this->vendorId ,
 		          'statut'=>2 ,
-		          'moto'=> $moto ,
-		          'sysMobile'=> $sys ,
+		          'moto'=> 1 ,
+		          'sysMobile'=> 'Android' ,
 		          'remb'=> 0 ,
 		        );
 
