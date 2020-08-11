@@ -100,7 +100,7 @@
                         <?php  $tfmPart = $record->tfm ;  
                                 if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 2 )  { ?>
 
-                                <span class="btn btn-success">Participation validé</span>
+                                <span class="btn btn-success"> ID : <?php echo $tfmPart->Id ?> <br> Participation validé</span>
 
 
                         <?php } ?>
@@ -108,7 +108,7 @@
                         <?php  $tfmPart = $record->tfm ;  
                                 if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 1 )  { ?>
 
-                                <span class="btn btn-danger">Nous allons vous contacter bientôt</span>
+                                <span class="btn btn-danger"> ID : <?php echo $tfmPart->Id ?> <br> Nous allons vous contacter bientôt</span>
 
                         <?php } ?>
 
