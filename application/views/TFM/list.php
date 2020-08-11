@@ -88,7 +88,7 @@
                       
                         <?php  $tfmPart = $record->tfm ;  
                             
-                        if (!empty($tfmPart) && $record->tfmId == 7 && $tfmPart->remb == 0 && $tfmPart->statut == 2 )  { ?>        
+                        if (!empty($tfmPart) && $record->tfmId == 7 && $tfmPart->remb == 0  )  { ?>        
                                 <span href="<?php echo base_url() ?>TFM/partanTfm" class="btn btn-warning" >  
                                     ID : <?php echo $tfmPart->Id ?> <br> DDL de paiement le 18/08/2020</a>
                         <?php }  ?>
@@ -98,7 +98,7 @@
 
 
                         <?php  $tfmPart = $record->tfm ;  
-                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 2 && $tfmPart->statut == 1 )  { ?>
+                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 2  )  { ?>
 
                                 <span class="btn btn-success"> ID : <?php echo $tfmPart->Id ?> <br> Participation validée <br> 25 dt à payer le jour j en bus</span>
 
@@ -106,7 +106,7 @@
                         <?php } ?>
 
                         <?php  $tfmPart = $record->tfm ;  
-                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 1 && $tfmPart->statut == 1 )  { ?>
+                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 1  )  { ?>
 
                                 <span class="btn btn-danger"> ID : <?php echo $tfmPart->Id ?> <br> Nous allons vous contacter bientôt</span>
 
