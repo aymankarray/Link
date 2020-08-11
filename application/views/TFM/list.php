@@ -65,22 +65,28 @@
   
                             
                         <?php  $tfmPart = $record->tfm ;  
-                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 0 && $tfmPart->statut == 2 )  { ?>
+                            
+                        if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 0 && $tfmPart->statut == 2 )  { ?>
 
-                                <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfmPart->Id ?>" method="post" >
+                            <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfmPart->Id ?>" method="post" >
 
                                     <h4> <input type="radio" name="r1" value="2"> Partant  </h4>
                                     <h4> <input type="radio" name="r1" value="1"> Remboursé  </h4>
+
                                     
                                     <br>
                                     <input type="submit" name="envoyer" class="btn btn-primary" >
-                                </form>
+                            </form>
 
-                        <?php }  else if(  ($record->tfmId==7) && (empty($tfmPart))  )  { ?>
+                        <?php }  ?>
+                                
+                        <?php  $tfmPart = $record->tfm ;  
+                            
+                        if (empty($tfmPart) && $tfmPart->tfmId == 7 )  { ?>        
+                                <a href="<?php echo base_url() ?>TFM/partanTfm" class="btn btn-danger" >Je veux participer</a>
+                        <?php }  ?>
+                      
 
-                                <a class="btn btn-danger" href="<?php echo base_url() ?>TFM/partanTfm" >Je veux participer</a>
-
-                        <?php } ?>
 
 
 
