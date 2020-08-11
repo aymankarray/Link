@@ -51,10 +51,10 @@
 					<div class="form-check form-check-flat form-check-primary">
 						<label class="form-check-label">
 							<input class="form-check-input" type="checkbox" name="participant[]" value="<?php echo $record->id ; ?>" > <?php echo ' '.$record->name ;  ?> 
-							<?php if($record->remb = 2 ) ?>
+							<?php if($record->remb = 2 ){ ?>
 								<i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i>
 						   	<?php } ?>
-							<?php if($record->remb = 1 ) ?>
+							<?php if($record->remb = 1 ){ ?>
 								<i class="ri-checkbox-circle-fill" style="color:#ff1a1a "></i>
 						   	<?php } ?>
 
