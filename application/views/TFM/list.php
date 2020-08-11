@@ -100,7 +100,7 @@
                         <?php  $tfmPart = $record->tfm ;  
                                 if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 2 && $tfmPart->statut == 1 )  { ?>
 
-                                <span class="btn btn-success"> ID : <?php echo $tfmPart->Id ?> <br> Participation validé</span>
+                                <span class="btn btn-success"> ID : <?php echo $tfmPart->Id ?> <br> Participation validé <br> 25 dt à payer le jour j en bus</span>
 
 
                         <?php } ?>
