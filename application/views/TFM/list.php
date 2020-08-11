@@ -76,6 +76,10 @@
                                     <input type="submit" name="envoyer" class="btn btn-primary" >
                                 </form>
 
+                        <?php }  else  { ?>
+
+                                <a class="btn btn-danger" href="<?php echo base_url() ?>TFM/partanTfm" >Je veux participer</a>
+
                         <?php } ?>
 
                         <?php  $tfmPart = $record->tfm ;  
@@ -93,12 +97,7 @@
 
                         <?php } ?>
 
-                        <?php  $tfmPart = $record->tfm ;  
-                                if (empty($tfmPart))  { ?>
 
-                                <a href="" > </a>
-
-                        <?php } ?>
 
 
                
