@@ -165,7 +165,7 @@ class TFM extends BaseController {
 		          'tfmId'=>'7',
 		          'dateInscrip'=>date('Y-m-d H:i:s'),
 		          'userId'=>$this->vendorId ,
-		          'statut'=>2 ,
+		          'statut'=>1 ,
 		          'moto'=> 1 ,
 		          'sysMobile'=> 'Android' ,
 		          'remb'=> 0 ,
@@ -176,7 +176,7 @@ class TFM extends BaseController {
 
 				
 		if ( $result){	
-		   			redirect('TFM/TFMListing') ; 		
+		   			redirect('TFM') ; 		
 		   }
 		
 		}
