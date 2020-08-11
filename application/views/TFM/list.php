@@ -82,7 +82,7 @@
                                 
                         <?php  $tfmPart = $record->tfm ;  
                             
-                        if (empty($tfmPart) && $tfmPart->tfmId == 7 )  { ?>        
+                        if (empty($tfmPart) && $record->tfmId == 7 )  { ?>        
                                 <a href="<?php echo base_url() ?>TFM/partanTfm" class="btn btn-danger" >Je veux participer</a>
                         <?php }  ?>
                       
