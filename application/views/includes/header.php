@@ -833,6 +833,15 @@
                       <li>
                         <a href="<?php echo base_url() ?>TFM" class="iq-waves-effect"><i class="ri-newspaper-line"></i><span> TFM </span></a>
                      </li>
+                     <?php if($clubID == 0 ){ ?>
+                     <li>
+                        <a href="<?php echo base_url() ?>TFM/partantF" class="iq-waves-effect"><i class="las la-calendar"></i><span>Participant TFM2020</span></a>
+                     </li>
+                     <?php } ?>
+                     <li>
+                        <a href="<?php echo base_url() ?>TFM/PaimentByClub" class="iq-waves-effect"><i class="las la-calendar"></i><span>My Team for TFM2020</span></a>
+                     </li>
+
 
 
                   </ul>
