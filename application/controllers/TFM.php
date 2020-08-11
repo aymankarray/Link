@@ -165,7 +165,7 @@ class TFM extends BaseController {
 		          'tfmId'=>'7',
 		          'dateInscrip'=>date('Y-m-d H:i:s'),
 		          'userId'=>$this->vendorId ,
-		          'statut'=>1 ,
+		          'statut'=>2 ,
 		          'moto'=> 1 ,
 		          'sysMobile'=> 'Android' ,
 		          'remb'=> 0 ,
