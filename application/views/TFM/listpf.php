@@ -69,7 +69,13 @@
                            
                                                              
                                         <a class="kt-user-card-v2__name" href="#">
-                                         <?php echo $record->name ?>
+                                         <?php echo $record->name ?> 
+                                         <?php if($record->remb == 2 ){ ?>
+                                        <i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i>
+                                        <?php } ?>
+                                      <?php if($record->remb == 1 ){ ?>
+                                        <i class="ri-checkbox-circle-fill" style="color:#ff1a1a "></i>
+                                        <?php } ?>
                                         </a>
                                         <br>                              
                                         <span class="kt-user-card-v2__desc">
