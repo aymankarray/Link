@@ -140,7 +140,7 @@ class TFM extends BaseController {
 		public function partanTfm (){
 
 				//club
-				if($this->role == 1 || $this->SA==1  ){
+		/*		if($this->role == 1 || $this->SA==1  ){
 				$date = $this->input->post('dateFonde');
 				$email = $this->input->post('email');
 				$facebook = $this->input->post('facebook');
@@ -156,7 +156,7 @@ class TFM extends BaseController {
 				}
 
 				
-	
+		*/
 				$moto = $this->input->post('bus');
 				$sys = $this->input->post('sys');
 			
@@ -168,6 +168,7 @@ class TFM extends BaseController {
 		          'statut'=>2 ,
 		          'moto'=> $moto ,
 		          'sysMobile'=> $sys ,
+		          'remb'=> 0 ,
 		        );
 
 		         $result = $this->tfm_model->addNewPartTFM($partanTfm) ;

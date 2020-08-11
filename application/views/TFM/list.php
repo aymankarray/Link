@@ -65,7 +65,7 @@
   
                             
                         <?php  $tfmPart = $record->tfm ;  
-                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 0 )  { ?>
+                                if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 0 && $tfmPart->statut == 2 )  { ?>
 
                                 <form action="<?php echo base_url() ?>TFM/remboursement/<?php echo $tfmPart->Id ?>" method="post" >
 
@@ -90,6 +90,13 @@
                                 if (!empty($tfmPart) &&   $tfmPart->tfmId == 7 && $tfmPart->remb == 1 )  { ?>
 
                                 <span class="btn btn-danger">Nous allons vous contacter bientôt</span>
+
+                        <?php } ?>
+
+                        <?php  $tfmPart = $record->tfm ;  
+                                if (empty($tfmPart))  { ?>
+
+                                <a href="" > </a>
 
                         <?php } ?>
 
