@@ -51,12 +51,7 @@
 					<div class="form-check form-check-flat form-check-primary">
 						<label class="form-check-label">
 							<input class="form-check-input" type="checkbox" name="participant[]" value="<?php echo $record->id ; ?>" > <?php echo ' '.$record->name ;  ?> 
-							<?php if($record->remb = 2 ){ ?>
-								<i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i>
-						   	<?php } ?>
-							<?php if($record->remb = 1 ){ ?>
-								<i class="ri-checkbox-circle-fill" style="color:#ff1a1a "></i>
-						   	<?php } ?>
+
 
 						</label>
 					</div>
@@ -84,7 +79,14 @@
 			</div>
 			<div class="card-body">
 				<?php foreach ($userRecordsT2 as $record ) { ?>
-					 <?php echo ' '.$record->name ;  ?><br>
+					 <?php echo ' '.$record->name ;  ?> 
+					 <?php if($record->remb = 2 ){ ?>
+								<i class="ri-checkbox-circle-fill" style="color:#05BD53 "></i>
+						   	<?php } ?>
+							<?php if($record->remb = 1 ){ ?>
+								<i class="ri-checkbox-circle-fill" style="color:#ff1a1a "></i>
+						   	<?php } ?>
+					 <br>
 				<small><small> <?php echo ' '.$record->recp2 ;  ?> le  <?php echo ' '.$record->dateTranche2 ;  ?>  </small></small>
 				<br>
 				<?php } ?>
