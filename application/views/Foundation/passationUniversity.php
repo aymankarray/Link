@@ -2,7 +2,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">
-                    <form action="<?php echo base_url() ?>Passation/addNewPassation" id="fp" method="post"  >
+                    <form action="<?php echo base_url() ?>Passation/addNewPassation/1" id="fp" method="post"  >
                      <div class="iq-card">
 
                       
