@@ -810,24 +810,38 @@
                      <li>
                         <a href="<?php echo base_url() ?>Project/projectListing" class="iq-waves-effect"><i class="las la-calendar"></i><span>Evenement</span></a>
                      </li>
+                                          <?php if ($SA == 1 ){ ?>
+                      <li>
+                        <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-focus-2-line"></i><span>Foundation</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                           <li>
+                              <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>Coordination University</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <ul id="ui-kit" class="iq-submenu collapse" data-parent="#ui-elements">
+                                 <li><a href="ui-colors.html"><i class="ri-font-color"></i>Bureau National</a></li>
+                                 <li><a href="ui-typography.html"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-profile-line"></i><span>Coordination High school</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <ul id="forms" class="iq-submenu collapse" data-parent="#ui-elements">
+                                 <li><a href="ui-colors.html"><i class="ri-font-color"></i>Bureau National</a></li>
+                                 <li><a href="ui-typography.html"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="#wizard-form" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-archive-drawer-line"></i><span>Coordination Alumni</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <ul id="wizard-form" class="iq-submenu collapse" data-parent="#ui-elements">
+                                 <li><a href="ui-colors.html"><i class="ri-font-color"></i>Bureau National</a></li>
+                                 <li><a href="ui-typography.html"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                   <?php } ?>
                      <li>
                        <a href="<?php echo base_url() ?>Club/clubListing" class="iq-waves-effect"><i class="ri-list-check"></i><span>Clubs</span></a>
                      </li>
-                     <li>
-                        <a href="#mailbox" class="iq-waves-effect collapsed" >
-                            <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-book-open-line"></i>Academy <i class="ri-arrow-right-s-line iq-arrow-right"></i>
-                        </a>
-                        <ul id="mailbox" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
-                            <li>
-                                <a ><i class="ri-computer-line"></i>Formations  </a>     <small class="mb-3"><i class="ri-terminal-line"></i> comming soon</small>
-                            </li>
-                            <li>
-                                <a > <i class="ri-award-line"></i>Certifications  </a>  
-                                 <small class="mb-3"><i class="ri-terminal-line"></i> coming soon</small>
-                            </li>
-                        </ul>
-                      </li>
+
 
 
                       <li>
@@ -838,64 +852,7 @@
                         <a href="<?php echo base_url() ?>TFM/partantF" class="iq-waves-effect"><i class="las la-calendar"></i><span>Participant TFM2020</span></a>
                      </li>
                      <?php } ?>
-                     <?php if ($SA == 1 ){ ?>
-                      <li>
-                        <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-focus-2-line"></i><span>Foundation</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                        <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                           <li>
-                              <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>Coordination University</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="ui-kit" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="ui-colors.html"><i class="ri-font-color"></i>colors</a></li>
-                                 <li><a href="ui-typography.html"><i class="ri-text"></i>Typography</a></li>
-                                 <li><a href="ui-alerts.html"><i class="ri-alert-line"></i>Alerts</a></li>
-                                 <li><a href="ui-badges.html"><i class="ri-building-3-line"></i>Badges</a></li>
-                                 <li><a href="ui-breadcrumb.html"><i class="ri-menu-2-line"></i>Breadcrumb</a></li>
-                                 <li><a href="ui-buttons.html"><i class="ri-checkbox-blank-line"></i>Buttons</a></li>
-                                 <li><a href="ui-cards.html"><i class="ri-bank-card-line"></i>Cards</a></li>
-                                 <li><a href="ui-carousel.html"><i class="ri-slideshow-line"></i>Carousel</a></li>
-                                 <li><a href="ui-embed-video.html"><i class="ri-slideshow-2-line"></i>Video</a></li>
-                                 <li><a href="ui-grid.html"><i class="ri-grid-line"></i>Grid</a></li>
-                                 <li><a href="ui-images.html"><i class="ri-image-line"></i>Images</a></li>
-                                 <li><a href="ui-list-group.html"><i class="ri-file-list-3-line"></i>list Group</a></li>
-                                 <li><a href="ui-media-object.html"><i class="ri-camera-line"></i>Media</a></li>
-                                 <li><a href="ui-modal.html"><i class="ri-stop-mini-line"></i>Modal</a></li>
-                                 <li><a href="ui-notifications.html"><i class="ri-notification-line"></i>Notifications</a></li>
-                                 <li><a href="ui-pagination.html"><i class="ri-pages-line"></i>Pagination</a></li>
-                                 <li><a href="ui-popovers.html"><i class="ri-folder-shield-2-line"></i>Popovers</a></li>
-                                 <li><a href="ui-progressbars.html"><i class="ri-battery-low-line"></i>Progressbars</a></li>
-                                 <li><a href="ui-tabs.html"><i class="ri-database-line"></i>Tabs</a></li>
-                                 <li><a href="ui-tooltips.html"><i class="ri-record-mail-line"></i>Tooltips</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-profile-line"></i><span>Coordination High school</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="forms" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="form-layout.html"><i class="ri-tablet-line"></i>Form Elements</a></li>
-                                 <li><a href="form-validation.html"><i class="ri-device-line"></i>Form Validation</a></li>
-                                 <li><a href="form-switch.html"><i class="ri-toggle-line"></i>Form Switch</a></li>
-                                 <li><a href="form-chechbox.html"><i class="ri-checkbox-line"></i>Form Checkbox</a></li>
-                                 <li><a href="form-radio.html"><i class="ri-radio-button-line"></i>Form Radio</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="#wizard-form" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-archive-drawer-line"></i><span>Coordination Alumni</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="wizard-form" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="form-wizard.html"><i class="ri-clockwise-line"></i>Simple Wizard</a></li>
-                                 <li><a href="form-wizard-validate.html"><i class="ri-clockwise-2-line"></i>Validate Wizard</a></li>
-                                 <li><a href="form-wizard-vertical.html"><i class="ri-anticlockwise-line"></i>Vertical Wizard</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="#tables" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-table-line"></i><span>Table</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                              <ul id="tables" class="iq-submenu collapse" data-parent="#ui-elements">
-                                 <li><a href="tables-basic.html"><i class="ri-table-line"></i>Basic Tables</a></li>
-                                 <li><a href="data-table.html"><i class="ri-database-line"></i>Data Table</a></li>
-                                 <li><a href="table-editable.html"><i class="ri-refund-line"></i>Editable Table</a></li>
-                              </ul>
-                           </li>
-                        </ul>
-                     </li>
-                   <?php } ?>
+
                      <li>
                         <a href="<?php echo base_url() ?>TFM/partantByClub" class="iq-waves-effect"><i class="las la-calendar"></i><span>My Team for TFM2020</span></a>
                      </li>
