@@ -815,7 +815,7 @@
                         <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-focus-2-line"></i><span>Foundation</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                         <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                            <li>
-                              <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>Coordination University</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>University</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                               <ul id="ui-kit" class="iq-submenu collapse" data-parent="#ui-elements">
                                  <li><a href=""><i class="ri-font-color"></i>Bureau National</a></li>
                                  <li><a href="<?php echo base_url() ?>Passation/NewPassationUniversity"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
