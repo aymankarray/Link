@@ -158,7 +158,7 @@ class Passation extends BaseController {
                                       'roleAct'=>$user->roleId,
                                       'celluleAct'=>$user->cellule,
                                       'roleVol'=> $this->input->post('roleId'), 
-                                      'cellule'=> $cellule,
+                                      'cellule'=> '',
                                       'LM'=> NL2BR($this->input->post('LM')) ,
                                       'PA'=> NL2BR($this->input->post('PA')),
                                       'statut'=> 1 ,
