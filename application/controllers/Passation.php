@@ -79,14 +79,14 @@ class Passation extends BaseController {
                   $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($this->vendorId);
 
 
-                $this->loadViews("club/passation/new", $this->global, $data, NULL);  
+                $this->loadViews("Foundation/passationUniversity", $this->global, $data, NULL);  
                 }else
                 {
                           $this->global['pageTitle'] = 'Passation';
                           $code = $this->passation_model->passationByuserId($this->vendorId) ; 
                           $data['code']=  $code->passationId ; 
 
-                 $this->loadViews('club/Foundation/passationUniversity', $this->global, $data, NULL) ; 
+                 $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
                 }
             }
 
@@ -112,14 +112,14 @@ class Passation extends BaseController {
                   $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($this->vendorId);
 
 
-                $this->loadViews("club/passation/new", $this->global, $data, NULL);  
+                $this->loadViews("Foundation/passationUniversity", $this->global, $data, NULL);  
                 }else
                 {
                           $this->global['pageTitle'] = 'Passation';
                           $code = $this->passation_model->passationByuserId($this->vendorId) ; 
                           $data['code']=  $code->passationId ; 
 
-                 $this->loadViews('club/Foundation/passationHighSchool', $this->global, $data, NULL) ; 
+                 $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
                 }
             }   
 
