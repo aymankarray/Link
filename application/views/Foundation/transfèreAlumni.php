@@ -84,7 +84,7 @@
                               <br>Je veux postuler pour le poste de 
                             </h4>
                             <select name="roleId"   class="form-control" required >
-                              <option value="" >>Veuillez choisir votre poste</option>
+                              <option value="" >Veuillez choisir votre poste</option>
                               <option value="2" >Coordinateur</option>
 
                             </select>                            
