@@ -92,6 +92,9 @@ class Passation_model extends CI_Model
         $this->db->where('RoleVol.roleId  =  ',$rolVol );
         $this->db->where('BaseTbl.cellule  =  ',$cellule );
 
+         $this->db->where('Club.clubID  >  ',4 );
+         $this->db->where('BaseTbl.CSJA    ', );
+
 
         $query = $this->db->get();
         
