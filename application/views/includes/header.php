@@ -818,14 +818,14 @@
                               <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>Coordination University</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                               <ul id="ui-kit" class="iq-submenu collapse" data-parent="#ui-elements">
                                  <li><a href="ui-colors.html"><i class="ri-font-color"></i>Bureau National</a></li>
-                                 <li><a href="ui-typography.html"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                                 <li><a href="<?php echo base_url() ?>Passation/NewPassationUniversity"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
                               </ul>
                            </li>
                            <li>
                               <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-profile-line"></i><span>Coordination High school</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                               <ul id="forms" class="iq-submenu collapse" data-parent="#ui-elements">
                                  <li><a href="ui-colors.html"><i class="ri-font-color"></i>Bureau National</a></li>
-                                 <li><a href="ui-typography.html"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                                 <li><a href="<?php echo base_url() ?>Passation/NewPassationHighSchool"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
                               </ul>
                            </li>
                            <li>
