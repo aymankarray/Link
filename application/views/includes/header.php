@@ -810,7 +810,7 @@
                      <li>
                         <a href="<?php echo base_url() ?>Project/projectListing" class="iq-waves-effect"><i class="las la-calendar"></i><span>Evenement</span></a>
                      </li>
-                                          <?php if ($SA == 1 ){ ?>
+                                          
                       <li>
                         <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-focus-2-line"></i><span>Foundation</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                         <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
@@ -839,7 +839,7 @@
                            -->
                         </ul>
                      </li>
-                   <?php } ?>
+                  
                      <li>
                        <a href="<?php echo base_url() ?>Club/clubListing" class="iq-waves-effect"><i class="ri-list-check"></i><span>Clubs</span></a>
                      </li>
