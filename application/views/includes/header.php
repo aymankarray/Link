@@ -810,24 +810,40 @@
                      <li>
                         <a href="<?php echo base_url() ?>Project/projectListing" class="iq-waves-effect"><i class="las la-calendar"></i><span>Evenement</span></a>
                      </li>
+                                          
+                      <li>
+                        <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-focus-2-line"></i><span>Foundation</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                           <li>
+                              <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>University</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <ul id="ui-kit" class="iq-submenu collapse" data-parent="#ui-elements">
+                                 <li><a href=""><i class="ri-font-color"></i>Bureau National</a></li>
+                                 <li><a href="<?php echo base_url() ?>Passation/NewPassationUniversity"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-profile-line"></i><span>High school</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <ul id="forms" class="iq-submenu collapse" data-parent="#ui-elements">
+                                 <li><a href=""><i class="ri-font-color"></i>Bureau National</a></li>
+                                 <li><a href="<?php echo base_url() ?>Passation/NewPassationHighSchool"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                              </ul>
+                           </li>
+                           <!--
+                           <li>
+                              <a href="#wizard-form" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-archive-drawer-line"></i><span>Coordination Alumni</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <ul id="wizard-form" class="iq-submenu collapse" data-parent="#ui-elements">
+                                 <li><a href=""><i class="ri-font-color"></i>Bureau National</a></li>
+                                 <li><a href=""><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                              </ul>
+                           </li>
+                           -->
+                        </ul>
+                     </li>
+                  
                      <li>
                        <a href="<?php echo base_url() ?>Club/clubListing" class="iq-waves-effect"><i class="ri-list-check"></i><span>Clubs</span></a>
                      </li>
-                     <li>
-                        <a href="#mailbox" class="iq-waves-effect collapsed" >
-                            <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
-                            <i class="ri-book-open-line"></i>Academy <i class="ri-arrow-right-s-line iq-arrow-right"></i>
-                        </a>
-                        <ul id="mailbox" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle" style="">
-                            <li>
-                                <a ><i class="ri-computer-line"></i>Formations  </a>     <small class="mb-3"><i class="ri-terminal-line"></i> comming soon</small>
-                            </li>
-                            <li>
-                                <a > <i class="ri-award-line"></i>Certifications  </a>  
-                                 <small class="mb-3"><i class="ri-terminal-line"></i> coming soon</small>
-                            </li>
-                        </ul>
-                      </li>
+
 
 
                       <li>
@@ -838,6 +854,7 @@
                         <a href="<?php echo base_url() ?>TFM/partantF" class="iq-waves-effect"><i class="las la-calendar"></i><span>Participant TFM2020</span></a>
                      </li>
                      <?php } ?>
+
                      <li>
                         <a href="<?php echo base_url() ?>TFM/partantByClub" class="iq-waves-effect"><i class="las la-calendar"></i><span>My Team for TFM2020</span></a>
                      </li>

@@ -23,7 +23,7 @@ class Passation extends BaseController {
 
 
 
-	public function NewPassation()
+	     public function NewPassation()
 		        {
               if(  empty($this->passation_model->passationByuserId($this->vendorId)) ){
 
@@ -57,9 +57,76 @@ class Passation extends BaseController {
 		        }  
 
 
+        public function NewPassationUniversity()
+            {
+              if(  empty($this->passation_model->passationByuserId($this->vendorId)) ){
+
+                    $this->global['pageTitle'] = 'Passation';
+                    $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);
+                    $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($this->vendorId) ;   
+                  $data["Diplome"] = $this->user_diplome_model->diplomeListing($this->vendorId) ;
+                  $data["ExperienceP"] = $this->user_cariere_model->carrierProListing($this->vendorId) ;
+
+                  $data["Langue"] = $this->user_cariere_model->langListing($this->vendorId) ;
+                  $data["skils"] = $this->user_cariere_model->hardListing($this->vendorId) ;
 
 
-	       public function addNewPassation()
+            
+            $data["Roles"] = $this->user_model->getUserAllRoles() ; 
+                $data["Clubs"] = $this->user_model->getClubs() ;
+
+
+                  $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($this->vendorId);
+
+
+                $this->loadViews("Foundation/passationUniversity", $this->global, $data, NULL);  
+                }else
+                {
+                          $this->global['pageTitle'] = 'Passation';
+                          $code = $this->passation_model->passationByuserId($this->vendorId) ; 
+                          $data['code']=  $code->passationId ; 
+
+                 $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
+                }
+            }
+
+        public function NewPassationHighSchool()
+            {
+              if(  empty($this->passation_model->passationByuserId($this->vendorId)) ){
+
+                    $this->global['pageTitle'] = 'Passation';
+                    $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);
+                    $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($this->vendorId) ;   
+                  $data["Diplome"] = $this->user_diplome_model->diplomeListing($this->vendorId) ;
+                  $data["ExperienceP"] = $this->user_cariere_model->carrierProListing($this->vendorId) ;
+
+                  $data["Langue"] = $this->user_cariere_model->langListing($this->vendorId) ;
+                  $data["skils"] = $this->user_cariere_model->hardListing($this->vendorId) ;
+
+
+            
+            $data["Roles"] = $this->user_model->getUserAllRoles() ; 
+                $data["Clubs"] = $this->user_model->getClubs() ;
+
+
+                  $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($this->vendorId);
+
+
+                $this->loadViews("Foundation/passationUniversity", $this->global, $data, NULL);  
+                }else
+                {
+                          $this->global['pageTitle'] = 'Passation';
+                          $code = $this->passation_model->passationByuserId($this->vendorId) ; 
+                          $data['code']=  $code->passationId ; 
+
+                 $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
+                }
+            }   
+
+
+
+
+	       public function addNewPassation($CSJA)
 		        {	            
 
 
@@ -91,12 +158,14 @@ class Passation extends BaseController {
                                       'roleAct'=>$user->roleId,
                                       'celluleAct'=>$user->cellule,
                                       'roleVol'=> $this->input->post('roleId'), 
-                                      'cellule'=> $cellule,
+                                      'cellule'=> '',
                                       'LM'=> NL2BR($this->input->post('LM')) ,
                                       'PA'=> NL2BR($this->input->post('PA')),
                                       'statut'=> 1 ,
                                       'userId'=>$this->vendorId,
-                                      'createdDTM'=>date('Y-m-d H:i:s'));
+                                      'createdDTM'=>date('Y-m-d H:i:s'),
+                                      'CSJA'=>$CSJA 
+                                    );
 
                $result = $this->passation_model->addNewPassation($passationInfo);
 
@@ -105,6 +174,11 @@ class Passation extends BaseController {
 
 		        		$this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
 		        }  
+
+
+
+
+
                   
 
 
