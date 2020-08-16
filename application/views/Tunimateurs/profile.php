@@ -117,7 +117,9 @@
                                              <h4 class="card-title">Tunivisions Experience</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                                            <!--
                                              <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal"> Ajouter </a></p>
+                                          -->
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
@@ -151,7 +153,9 @@
                                              <h4 class="card-title">Autre experience associative</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                                             <!--
                                              <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal1"> Ajouter </a></p>
+                                          -->
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
@@ -180,7 +184,9 @@
                                              <h4 class="card-title">Diplomes</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                                             <!--
                                              <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal1"> Ajouter </a></p>
+                                          -->
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
@@ -209,7 +215,9 @@
                                              <h4 class="card-title">Experience Pro</h4>
                                           </div>
                                           <div class="iq-card-header-toolbar d-flex align-items-center">
+                                             <!--
                                              <p class="m-0"><a href="javacsript:void();" data-toggle="modal" data-target="#exampleModal1"> Ajouter </a></p>
+                                          -->
                                           </div>
                                        </div>
                                        <div class="iq-card-body">
