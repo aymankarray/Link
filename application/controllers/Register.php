@@ -168,7 +168,7 @@ class Register extends CI_Controller
                 $mobile = $this->security->xss_clean($this->input->post('mobile'));
                 $cin = $this->security->xss_clean($this->input->post('cin'));
                 $sexe = $this->security->xss_clean($this->input->post('sexe'));
-                $gouvernorat = $this->security->xss_clean($this->input->post('adresse'));
+                $adresse = $this->security->xss_clean($this->input->post('adresse'));
                 $gouvernorat = $this->security->xss_clean($this->input->post('gouvernorat'));
                 $delegation = $this->security->xss_clean($this->input->post('delegation'));
                 $facebook = $this->security->xss_clean($this->input->post('facebook'));

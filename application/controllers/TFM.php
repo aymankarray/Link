@@ -296,6 +296,16 @@ class TFM extends BaseController {
 
 				redirect('TFM')		 ;
 		}
+
+
+		public function point ($r)
+		{
+				$partanTfm = array( 'pointDepart'=> $this->input->post('pointDepart')
+									     );
+				$result = $this->tfm_model->editTFMPart($partanTfm, $r) ;	
+
+				redirect('TFM')		 ;
+		}
 		
 
 }
