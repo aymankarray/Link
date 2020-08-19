@@ -535,7 +535,7 @@ Les tenues sportives ne sont pas tolérés et peuvent être une raison d’un av
                                 <span></span>
                             </label>
                         </div>
-                        <span class="form-text text-muted">Les frais de participation sont toujours fixées à 150 DT </span>
+                        <span class="form-text text-muted">Les frais de participation sont toujours fixées à 150 DT (on cas d'annulation la premiere tranche non remboursable)</span>
                     </div>
             
         </div>
