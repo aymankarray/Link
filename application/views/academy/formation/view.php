@@ -70,11 +70,11 @@
 }
 
 /* Individual bars */
-.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
-.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
-.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
-.bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
-.bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+.bar-5 {width: 0%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 0%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 0%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 0%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 0%; height: 18px; background-color: #f44336;}
 
 
 
@@ -204,12 +204,12 @@
 
                                     <i class="ri-timer-2-line"></i> Durée d’environ 15 minutes<br>
                                     <i class="ri-check-double-line"></i> Un niveau dans la tranche des 70% est requis pour réussir et avoir un badge<br>
-                                    <i class="ri-calendar-2-line"></i> Réessayez dans 3 Jours si vous échouez<br> <br>
+                                    <i class="ri-calendar-2-line"></i> Réessayez dans 48 heures si vous échouez<br> <br>
                                      
 
 
                                    <input type="checkbox" name="" required="">&nbsp; j'accepte ce reglement de certification<br>
-                                   <input type="submit"  class="btn btn-primary" value="Envoyer" >
+                                   <input type="submit"  class="btn btn-primary" value="Envoyer" disabled="true" >
                                    </form> 
                                  </div>
                                  
@@ -242,7 +242,7 @@
                                                              </div>
                                                            </div>
                                                            <div class="side right">
-                                                             <div>150</div>
+                                                             <div>0</div>
                                                            </div>
                                                            <div class="side">
                                                              <div>4 star</div>
@@ -253,7 +253,7 @@
                                                              </div>
                                                            </div>
                                                            <div class="side right">
-                                                             <div>63</div>
+                                                             <div>0</div>
                                                            </div>
                                                            <div class="side">
                                                              <div>3 star</div>
@@ -264,7 +264,7 @@
                                                              </div>
                                                            </div>
                                                            <div class="side right">
-                                                             <div>15</div>
+                                                             <div>0</div>
                                                            </div>
                                                            <div class="side">
                                                              <div>2 star</div>
@@ -275,7 +275,7 @@
                                                              </div>
                                                            </div>
                                                            <div class="side right">
-                                                             <div>6</div>
+                                                             <div>0</div>
                                                            </div>
                                                            <div class="side">
                                                              <div>1 star</div>
@@ -286,7 +286,7 @@
                                                              </div>
                                                            </div>
                                                            <div class="side right">
-                                                             <div>20</div>
+                                                             <div>0</div>
                                                            </div>
                                                          </div>
                                                     
