@@ -858,11 +858,11 @@
                      <li>
                         <a href="<?php echo base_url() ?>TFM/partantByClub" class="iq-waves-effect"><i class="las la-calendar"></i><span>My Team for TFM2020</span></a>
                      </li>
-                     <?php if ($SA == 1 ) { ?>
+                     
                      <li>
                         <a href="<?php echo base_url() ?>Academy/formationListing" class="iq-waves-effect"><i class="las la-calendar"></i><span>Academie</span></a>
                      </li>
-                   <?php } ?>
+                   
 
 
 
