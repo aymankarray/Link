@@ -34,7 +34,7 @@
 
 
 <script type="text/javascript">
-   function  timerContDown() { // Set the date we're counting down to
+    // Set the date we're counting down to
                                 var countDownDate = new Date().getTime() + 15 * 60000;
 
                                 // Update the count down every 1 second
@@ -62,7 +62,7 @@
                                   }
                                 }, 1000);
 
-                }
+                
                             
 </script>
 
