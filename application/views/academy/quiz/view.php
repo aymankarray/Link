@@ -16,7 +16,7 @@
 		        	</div>
 		        </div>
 		        <div class="iq-card-body">	
-		        <h4 id="demo" class="text-right" onload="timerContDown()" ></h4>	        		
+		        <h4 id="horloge" class="text-right" onload="timerContDown()" ></h4>	        		
 		        <div id="quiz"></div>
 		        
                 <button id="submit">Envoyer</button>
