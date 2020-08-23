@@ -11,12 +11,12 @@
 		        <div class="iq-card-header d-flex justify-content-between">
 		        	<div class="iq-header-title">
 		        	<h4 class="card-title" ><?php echo $Formation->label ?></h4>
-		        	<h4 id="horloge" style="border: 1px ; border-color: red " class="text-right" onload="timerContDown()" ></h4>
+		        	
 		        	
 		        	</div>
 		        </div>
 		        <div class="iq-card-body">	
-		        	        		
+		        <h4 id="horloge" style="border: 10px ; border-color: red " class="text-right" onload="timerContDown()" ></h4>	        		
 		        <div id="quiz"></div>
 		        
                 <button id="submit">Envoyer</button>
