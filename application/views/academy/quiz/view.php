@@ -94,7 +94,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
             // ...add an html radio button
             answers.push(
                 '<label>'
-                    + '<input type="radio" name="question'+i+'" value="'+letter+'">'
+                    + ' &nbsp; &nbsp; <input type="radio" name="question'+i+'" value="'+letter+'"> &nbsp;'
                     + letter + ': '
                     + questions[i].answers[letter]
                 + '</label> <br>'
