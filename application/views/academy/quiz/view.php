@@ -11,12 +11,12 @@
 		        <div class="iq-card-header d-flex justify-content-between">
 		        	<div class="iq-header-title">
 		        	<h4 class="card-title" ><?php echo $Formation->label ?></h4>
-		        	<h4 id="horloge" class="text-right" onload="timerContDown()" ></h4>   
+		        	
 		        	
 		        	</div>
 		        </div>
 		        <div class="iq-card-body">	
-		              		
+		        <h4 id="horloge" class="text-right" onload="timerContDown()" ></h4>	        		
 		        <div id="quiz"></div>
 		        
                 <button id="submit">Envoyer</button>
@@ -36,10 +36,8 @@
 <script type="text/javascript">
 
 
-
-
-		// Set the date we're counting down to
-								var countDownDate = new Date().getTime() + 2 * 60000;
+                               // Set the date we're counting down to
+								var countDownDate = new Date().getTime() + 15 * 60000;
 
 								// Update the count down every 1 second
 								var x = setInterval(function() {
@@ -68,7 +66,7 @@
 
 
 
-}
+
 
 
 </script>
