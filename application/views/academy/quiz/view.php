@@ -1,13 +1,4 @@
- <style type="text/css">
- 	.question{
-	font-weight: 600;
-}
-.answers {
-    margin-bottom: 20px;
-}
 
-
- </style>
 
  <div id="content-page" class="content-page" onload="countDown()" >
     <div class="container" >
@@ -25,11 +16,12 @@
 		        	</div>
 		        </div>
 		        <div class="iq-card-body">	
-		        <p id="demo" class="text-right" onload="timerContDown()" ></p>	        		
-		        		<div id="quiz"></div>
-		        		<button id="submit">Envoyer</button>
+		        <h4 id="demo" class="text-right" onload="timerContDown()" ></h4>	        		
+		        <div id="quiz"></div>
+		        
+                <button id="submit">Envoyer</button>
 				
-					<div id="results"></div>
+				<div id="results"></div>
 		        </div>
 		      </div>
 	       </div>
@@ -172,12 +164,12 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 								  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 								    
 								  // Output the result in an element with id="demo"
-								  document.getElementById("demo").innerHTML =  minutes + "m " + seconds + "s ";
+								  document.getElementById("horloge").innerHTML =  minutes + "m " + seconds + "s ";
 								    
 								  // If the count down is over, write some text 
 								  if (distance < 0) {
 								    clearInterval(x);
-								    document.getElementById("demo").innerHTML = "EXPIRED";
+								    document.getElementById("horloge").innerHTML = "EXPIRED";
 								  }
 								}, 1000);
 

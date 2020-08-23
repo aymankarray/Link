@@ -102,13 +102,9 @@ class Academy extends BaseController {
 
 		public function Exam($partId)
 		        {
-					
-
-		     $data['questions'] = $this->academy_formation_model->formationQuizsInfo($partId) ; 
-			$data['Formation'] = $this->academy_formation_model->formationInfo($data['questions'][0]->formationId) ;
-
-
-		           $this->loadViews("academy/quiz/view", $this->global, $data  , NULL); 
+		    		$data['questions'] = $this->academy_formation_model->formationQuizsInfo($partId) ; 
+					$data['Formation'] = $this->academy_formation_model->formationInfo($data['questions'][0]->formationId) ;
+		            $this->loadViews("academy/quiz/view", $this->global, $data  , NULL); 
 		        }  
 
 
@@ -118,7 +114,7 @@ class Academy extends BaseController {
 		           if($note > 70)
 		            {
 		             $formationInfo = array(
-		                 'note' =>  $formationId, 
+		                 'note' =>  $note, 
 		                 'certif' => 2, 
 		                 'certifDTM'=> date('Y-m-d H:i:s'),
 		                     );
@@ -126,7 +122,7 @@ class Academy extends BaseController {
 		             else
 		            {
 		             	$formationInfo = array(
-		                 'note' =>  $formationId, 
+		                 'note' =>  $note, 
 		                 'certif' => 1, 
 		                     );
 		            }
