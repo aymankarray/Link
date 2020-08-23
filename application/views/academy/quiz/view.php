@@ -34,7 +34,7 @@
 		        </div>
 		        <div class="iq-card-body">	
 		        <h4 id="horloge" style="border: 10px ; border-color: red ; color: red " class="text-right" ></h4>	        		
-		        <div id="quiz" onload="generateQuiz()"></div>
+		        <div id="quiz"></div>
 		        
                 <button id="submit">Envoyer</button>
 				
@@ -155,7 +155,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 }
 
-
+generateQuiz(questions, quizContainer, resultsContainer, submitButton) ;
 
 
 
