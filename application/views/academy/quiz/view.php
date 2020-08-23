@@ -1,9 +1,4 @@
 <style type="text/css">
-    body{
-    font-size: 20px;
-    font-family: sans-serif;
-    color: #333;
-}
 .question{
     font-weight: 600;
 }
@@ -11,10 +6,6 @@
     margin-bottom: 20px;
 }
 #submit{
-    font-family: sans-serif;
-    font-size: 20px;
-    background-color: #297;
-    color: #fff;
     border: 0px;
     border-radius: 3px;
     padding: 20px;
