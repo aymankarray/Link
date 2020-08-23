@@ -155,7 +155,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     }
 }
 
-generateQuiz(questions, quizContainer, resultsContainer, submitButton) ;
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 
 
 
