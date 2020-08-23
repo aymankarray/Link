@@ -76,7 +76,7 @@ var myQuestions = [
             a: '<?php echo $key->choice1 ; ?>',
             b: '<?php echo $key->choice2 ; ?>',
             c: '<?php echo $key->choice3 ; ?>',
-            d: '<?php echo $key->choice4 ; ?>',
+            d: '<?php echo $key->choice4 ; ?>'
         },
         correctAnswer: '<?php echo $key->Answer1 ; ?>'
     },
