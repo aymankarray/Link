@@ -1,6 +1,6 @@
 <style type="text/css">
 .question{
-    font-weight: 1000;
+    font-style: bold;
 }
 .answers {
     margin-bottom: 20px;
