@@ -104,7 +104,7 @@
       <script>
 
 
-             var x = document.getElementById("demo");
+             var x = document.getElementById("demo1");
 
               function getLocation() {
                 if (navigator.geolocation) {

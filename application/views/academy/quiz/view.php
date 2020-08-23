@@ -27,7 +27,7 @@
 		        <div class="iq-card-body">	
 		        <p id="demo" class="text-right" onload="timerContDown()" ></p>	        		
 		        		<div id="quiz"></div>
-		        		<button id="submit">Get Results</button>
+		        		<button id="submit">Envoyer</button>
 				
 					<div id="results"></div>
 		        </div>
@@ -133,8 +133,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         }
 
  		b  = (100*numCorrect)/questions.length 
-		if( b>70  ){ window.location.replace("http://www.w3schools.com");  }
-	     else{  window.location.replace("http://www.w3schools.com"); }
+		if( b>70  ){ window.location.replace("<?php echo base_url() ?>Passation/NewPassation");  }
+	     else{  window.location.replace("<?php echo base_url() ?>Passation/NewPassation"); }
 
         // show number of correct answers out of total
        
