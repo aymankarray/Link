@@ -85,7 +85,7 @@ class Academy extends BaseController {
 		public function part($formationId)
 		        {
 
-		        	if(empty($this->academy_formation_model->formationInfoByUser($formationId,$userId))){
+		        	if(empty($this->academy_formation_model->formationInfoByUser($formationId,$this->vendorId))){
 		        	$avis = $this->input->post('avis');
 		              $formationInfo = array(
 		                 'formationId' =>  $formationId, 
