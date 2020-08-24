@@ -144,7 +144,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
-    var por = (numCorrect/questions.length)/100 ;
+    var por = (numCorrect/questions.length) ;
     window.location.replace("<?php echo base_url() ?>Academy/Result/<?php echo $partId ?>?note="+por);
     }
 

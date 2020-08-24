@@ -117,7 +117,7 @@ class Academy extends BaseController {
 		           if($note > 70)
 		            {
 		             $participantInfo = array(
-		                 'note' =>  $note*100, 
+		                 'note' =>  $note, 
 		                 'certif' => 2, 
 		                 'certifDTM'=> date('Y-m-d H:i:s'),
 		                     );
@@ -125,14 +125,14 @@ class Academy extends BaseController {
 		             else
 		            {
 		             	$participantInfo = array(
-		                 'note' =>  $note*100, 
+		                 'note' =>  $note, 
 		                 'certif' => 1, 
 		                     );
 		            }
 
 		           $this->academy_formation_model->editPart($participantInfo, $partId) ; 
 
-		           redirect("certificat/".$partId); 
+		           redirect("Academy/formationListing"); 
 		        }  
 
 
