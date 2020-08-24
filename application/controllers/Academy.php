@@ -116,16 +116,16 @@ class Academy extends BaseController {
 		           $note = $this->input->get('note');
 		           if($note > 70)
 		            {
-		             $formationInfo = array(
-		                 'note' =>  $note, 
+		             $participantInfo = array(
+		                 'note' =>  $note*100, 
 		                 'certif' => 2, 
 		                 'certifDTM'=> date('Y-m-d H:i:s'),
 		                     );
 		            }
 		             else
 		            {
-		             	$formationInfo = array(
-		                 'note' =>  $note, 
+		             	$participantInfo = array(
+		                 'note' =>  $note*100, 
 		                 'certif' => 1, 
 		                     );
 		            }
