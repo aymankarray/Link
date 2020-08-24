@@ -91,7 +91,7 @@ class Academy extends BaseController {
 		                 'formationId' =>  $formationId, 
 		                 'createdBy' => $this->vendorId ,
 		                 'userId' => $this->vendorId ,
-		                 'createdDTM'=> date('Y-m-d H:i:s'),
+		                 'certifDTM'=> date('Y-m-d H:i:s'),
 		                 'certif' => 0 , 
 		                 'avis' => $avis
 		                     );
