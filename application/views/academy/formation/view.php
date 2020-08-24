@@ -209,7 +209,7 @@
 
 
                                    <input type="checkbox" name="" required="">&nbsp; j'accepte ce reglement de certification<br>
-                                   <input type="submit"  class="btn btn-primary" value="Envoyer" disabled="true" >
+                                   <input type="submit"  class="btn btn-primary" value="Envoyer" <?php if ($SA == 0 ){ ?> disabled="true"<?php } ?> >
                                    </form> 
                                  </div>
                                  
