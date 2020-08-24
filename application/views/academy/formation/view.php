@@ -185,7 +185,7 @@
                                     <form action="<?php echo base_url() ?>Academy/part/<?php echo $formationInfo->formationsId ?>" method="post">                                          
                                     <h3>  <br><br><br> Note cette formation :</h3>
                                     <span class="star-rating">
-                                       <input type="radio" name="avis" value="1"><i></i>
+                                       <input type="radio" name="avis" value="1" required=""><i></i>
                                        <input type="radio" name="avis" value="2"><i></i>
                                        <input type="radio" name="avis" value="3"><i></i>
                                        <input type="radio" name="avis" value="4"><i></i>
