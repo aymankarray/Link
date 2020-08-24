@@ -119,7 +119,7 @@ class Academy extends BaseController {
 		public function Result($partId)
 		        {
 		           $note = $this->input->get('note');
-		           if($note > 70)
+		           if($note >= 70)
 		            {
 		             $participantInfo = array(
 		                 'note' =>  $note, 
