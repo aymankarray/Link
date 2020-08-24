@@ -85,6 +85,7 @@ class Academy extends BaseController {
 		public function part($formationId)
 		        {
 
+		        	if(empty($this->academy_formation_model->formationInfoByUser($formationId,$userId))){
 		        	$avis = $this->input->post('avis');
 		              $formationInfo = array(
 		                 'formationId' =>  $formationId, 
@@ -98,7 +99,11 @@ class Academy extends BaseController {
 		              $resultat = $this->academy_formation_model->addNewPart($formationInfo);
 
 
-		        		redirect('Academy/Exam/'.$resultat) ;   
+		        		redirect('Academy/Exam/'.$resultat) ;  
+		        		}
+		        		else {
+		        			redirect('Academy/formationListing/') ; 
+		        		}
 		          
 		        }  
 
