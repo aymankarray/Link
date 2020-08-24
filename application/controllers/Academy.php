@@ -84,12 +84,15 @@ class Academy extends BaseController {
 
 		public function part($formationId)
 		        {
+
+		        	$avis = $this->input->post('avis');
 		              $formationInfo = array(
 		                 'formationId' =>  $formationId, 
 		                 'createdBy' => $this->vendorId ,
 		                 'userId' => $this->vendorId ,
 		                 'createdDTM'=> date('Y-m-d H:i:s'),
-		                 'certif' => 0 
+		                 'certif' => 0 , 
+		                 'avis' => $avis
 		                     );
 		           		
 		              $resultat = $this->academy_formation_model->addNewPart($formationInfo);
@@ -101,7 +104,7 @@ class Academy extends BaseController {
 
 
 		public function Exam($partId)
-		        {
+		        {     $data['partId'] =               $partId ; 
 		    		$data['questions'] = $this->academy_formation_model->formationQuizsInfo($partId) ; 
 					$data['Formation'] = $this->academy_formation_model->formationInfo($data['questions'][0]->formationId) ;
 		            $this->loadViews("academy/quiz/view", $this->global, $data  , NULL); 

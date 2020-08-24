@@ -144,6 +144,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+    window.location.replace("<?php echo base_url() ?>Academy/Result/<?php echo $partId ?>?note="+((numCorrect/questions.length)/100);
     }
 
     // show the questions
@@ -161,7 +162,7 @@ generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
 
 
     // Set the date we're counting down to
-                                var countDownDate = new Date().getTime() + 2 * 60000;
+                                var countDownDate = new Date().getTime() + 12 * 60000;
 
                                 // Update the count down every 1 second
                                 var x = setInterval(function() {
@@ -185,6 +186,7 @@ generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
                                   if (distance < 0) {
                                     clearInterval(x);
                                     document.getElementById("horloge").innerHTML = "EXPIRED";
+                                    showResults(questions, quizContainer, resultsContainer);
                                   }
                                 }, 1000);
 
