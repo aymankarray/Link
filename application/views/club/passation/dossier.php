@@ -25,68 +25,7 @@
                    
                         
 
-                          <div class="row" >
-                            <div class="col-sm-6">
-                              <h4>Nom</h4>
-                              <input type="text" name="nom" class="form-control" required>            
-                            </div>
-                            <div class="col-sm-6">
-                              <h4>Prenom</h4>
-                              <input type="text" name="prenom" class="form-control" required>              
-                            </div>
-                            <div class="col-sm-12">
-                              <h4>Adresse</h4>
-                              <textarea type="text" name="adresse" class="form-control" required ></textarea>              
-                            </div>
-                            <div class="col-md-6">                                
-                                <div class="form-group">
-                                
-                                            <select class="form-control" name="gouvernorat" id="gouvernorat" required >
-                                                <option value="">-- Gouvernorat --</option>
-                                            </select>
-
-
-                                </div>
-                            </div>
-                            <div class="col-md-6">                                
-                                <div class="form-group">
-                              
-                                            <select class="form-control" name="delegation" id="delegation" required >
-                                                <option value="">-- Delegation --</option>
-                                             </select>
-
-                                </div>
-                            </div>  
-                          </div>
-              
-                          <div class="row" >
-                            
-                            <div class="col-sm-6">
-                            <h4>
-                              <br>Poste actuelle : 
-                            </h4>
-                            
-                              <?php echo $role_text ?>
-                                                    
-                            </div>
-                            <div class="col-sm-6">
-                            <h4>
-                             <br>Cellule actuelle :
-                            </h4>
-                           
-                              <?php echo $cellule ?>
-                                                        
-                            </div>
-                          </div>
-                          <div class="row" >
-                            <div class="col-sm-6">
-                            <h4>
-                              <br>Je veux postuler pour le poste de 
-                            </h4>
-                          
-                            </div>
-
-                          </div>
+            
                           <div class="row" >
 
                             <div class="col-sm-6">
@@ -243,7 +182,7 @@
                            
 
 
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                               <h4 ><br>lettre de motivation :</h4>
                               <?php echo $passation->LM ?>
                             </div>
@@ -251,7 +190,7 @@
 
 
 
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                               <h4><br>Plan d'action :</h4>
                               <p>
                                 <?php echo $passation->PA ?>
