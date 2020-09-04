@@ -222,7 +222,8 @@ class Passation extends BaseController {
         public function Dossier ($passationId)
             {
              
-               $passation = $this->passation_model->PassationById($passationId)
+               $passation = $this->passation_model->PassationById($passationId) ;
+               $data["passation"] = $this->passation_model->PassationById($passationId) ;
                $this->global['pageTitle'] = 'Passation';
                     $data["Experience"] = $this->user_cariere_model->carrierListing($passation->userId);
                     $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($passation->userId) ;   
@@ -239,7 +240,7 @@ class Passation extends BaseController {
                   $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($passation->userId);
              
              $this->global['pageTitle'] = 'Passation' ;
-              $this->loadViews("club/passation/listByClub", $this->global, $data, NULL);   
+              $this->loadViews("club/passation/dossier", $this->global, $data, NULL);   
         } 
 
 

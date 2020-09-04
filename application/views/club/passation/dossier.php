@@ -245,7 +245,7 @@
 
                             <div class="col-sm-6">
                               <h4 ><br>lettre de motivation :</h4>
-                              <?php echo $LM ?>
+                              <?php echo $passation->LM ?>
                             </div>
 
 
@@ -254,7 +254,7 @@
                             <div class="col-sm-6">
                               <h4><br>Plan d'action :</h4>
                               <p>
-                                <?php echo $PA ?>
+                                <?php echo $passation->PA ?>
                               </p>
                             </div>
 
