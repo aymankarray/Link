@@ -219,6 +219,30 @@ class Passation extends BaseController {
         } 
 
 
+        public function Dossier ($passationId)
+            {
+             
+               $passation = $this->passation_model->PassationById($passationId)
+               $this->global['pageTitle'] = 'Passation';
+                    $data["Experience"] = $this->user_cariere_model->carrierListing($passation->userId);
+                    $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($passation->userId) ;   
+                  $data["Diplome"] = $this->user_diplome_model->diplomeListing($passation->userId) ;
+                  $data["ExperienceP"] = $this->user_cariere_model->carrierProListing($passation->userId) ;
+
+                  $data["Langue"] = $this->user_cariere_model->langListing($passation->userId) ;
+                  $data["skils"] = $this->user_cariere_model->hardListing($passation->userId) ;
+            
+                $data["Roles"] = $this->user_model->getUserAllRoles() ; 
+                $data["Clubs"] = $this->user_model->getClubs() ;
+
+
+                  $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($passation->userId);
+             
+             $this->global['pageTitle'] = 'Passation' ;
+              $this->loadViews("club/passation/listByClub", $this->global, $data, NULL);   
+        } 
+
+
 
 
        
