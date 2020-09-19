@@ -17,7 +17,7 @@
                         <div class="iq-card-body">
                            <div class="table-responsive">
 
-               <table  class="display table dataTable no-footer" id="tableid" style="width: cover" >
+               <table  class="table" id="tableid" style="width: cover" >
                     <thead>
                     <tr>
                         <th>Faculté</th>
