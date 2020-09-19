@@ -84,24 +84,32 @@ class Academy extends BaseController {
 
 		public function part($formationId)
 		        {
+
+		        	if(empty($this->academy_formation_model->formationInfoByUser($formationId,$this->vendorId))){
+		        	$avis = $this->input->post('avis');
 		              $formationInfo = array(
 		                 'formationId' =>  $formationId, 
 		                 'createdBy' => $this->vendorId ,
 		                 'userId' => $this->vendorId ,
-		                 'createdDTM'=> date('Y-m-d H:i:s'),
-		                 'certif' => 0 
+		                 'certifDTM'=> date('Y-m-d H:i:s'),
+		                 'certif' => 0 , 
+		                 'avis' => $avis
 		                     );
 		           		
 		              $resultat = $this->academy_formation_model->addNewPart($formationInfo);
 
 
-		        		redirect('Academy/Exam/'.$resultat) ;   
+		        		redirect('Academy/Exam/'.$resultat) ;  
+		        		}
+		        		else {
+		        			redirect('Academy/formationListing/') ; 
+		        		}
 		          
 		        }  
 
 
 		public function Exam($partId)
-		        {
+		        {     $data['partId'] =               $partId ; 
 		    		$data['questions'] = $this->academy_formation_model->formationQuizsInfo($partId) ; 
 					$data['Formation'] = $this->academy_formation_model->formationInfo($data['questions'][0]->formationId) ;
 		            $this->loadViews("academy/quiz/view", $this->global, $data  , NULL); 
@@ -111,9 +119,9 @@ class Academy extends BaseController {
 		public function Result($partId)
 		        {
 		           $note = $this->input->get('note');
-		           if($note > 70)
+		           if($note >= 70)
 		            {
-		             $formationInfo = array(
+		             $participantInfo = array(
 		                 'note' =>  $note, 
 		                 'certif' => 2, 
 		                 'certifDTM'=> date('Y-m-d H:i:s'),
@@ -121,7 +129,7 @@ class Academy extends BaseController {
 		            }
 		             else
 		            {
-		             	$formationInfo = array(
+		             	$participantInfo = array(
 		                 'note' =>  $note, 
 		                 'certif' => 1, 
 		                     );
@@ -129,7 +137,7 @@ class Academy extends BaseController {
 
 		           $this->academy_formation_model->editPart($participantInfo, $partId) ; 
 
-		           redirect("certificat/".$partId); 
+		           redirect("Academy/formationListing"); 
 		        }  
 
 

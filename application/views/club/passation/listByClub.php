@@ -91,7 +91,7 @@
                         </td>
                         <td>
                       
-                              <small>    </small> 
+                              <a href="<?php echo base_url() ?>Passation/Dossier/<?php echo $record->passationId ?>">Afficher</a>
                                   
                         </td>
                         

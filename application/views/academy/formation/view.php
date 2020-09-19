@@ -185,11 +185,11 @@
                                     <form action="<?php echo base_url() ?>Academy/part/<?php echo $formationInfo->formationsId ?>" method="post">                                          
                                     <h3>  <br><br><br> Note cette formation :</h3>
                                     <span class="star-rating">
-                                       <input type="radio" name="note" value="1"><i></i>
-                                       <input type="radio" name="note" value="2"><i></i>
-                                       <input type="radio" name="note" value="3"><i></i>
-                                       <input type="radio" name="note" value="4"><i></i>
-                                       <input type="radio" name="note" value="5"><i></i>
+                                       <input type="radio" name="avis" value="1" required=""><i></i>
+                                       <input type="radio" name="avis" value="2"><i></i>
+                                       <input type="radio" name="avis" value="3"><i></i>
+                                       <input type="radio" name="avis" value="4"><i></i>
+                                       <input type="radio" name="avis" value="5"><i></i>
                                     </span>
 
                                     
@@ -197,19 +197,19 @@
                                    <b>Avant de commencer</b><br><br>
                                     Chaque quiz doit être terminé en une seule session ; assurez-vous que votre connexion Internet est stable et que vous avez fini avant de quitter.<br>
 
-                                    Le quiz est en francais. Si vous échouez, vos résultats ne seront ni affichés ni partagés sur T-Link.<br><br>
+                                    Le quiz est en anglais . Si vous échouez, vos résultats ne seront ni affichés ni partagés sur T-Link.<br><br>
 
                                     <b>Présentation</b><br>
                                     Répondez aux questions chronométrées à choix multiples<br><br>
 
-                                    <i class="ri-timer-2-line"></i> Durée d’environ 15 minutes<br>
+                                    <i class="ri-timer-2-line"></i> Durée d’environ 12 minutes<br>
                                     <i class="ri-check-double-line"></i> Un niveau dans la tranche des 70% est requis pour réussir et avoir un badge<br>
                                     <i class="ri-calendar-2-line"></i> Réessayez dans 48 heures si vous échouez<br> <br>
                                      
 
 
                                    <input type="checkbox" name="" required="">&nbsp; j'accepte ce reglement de certification<br>
-                                   <input type="submit"  class="btn btn-primary" value="Envoyer" disabled="true" >
+                                   <input type="submit"  class="btn btn-primary" value="Envoyer"  >
                                    </form> 
                                  </div>
                                  
