@@ -906,6 +906,7 @@
                               <img src="https://tunivisions.link/uploads/avatar/<?php echo $avatar ?>" class="alligator-turtle  mr-3 " alt="<?php echo $name ?>">
                              <b>Tuni-ID : </b><?php echo $uid ?>
                               <div class="caption">
+                                 <br>
                                  <p class="mb-0 line-height"><?php echo $name ?></p>
                               </div>
                            </a>
