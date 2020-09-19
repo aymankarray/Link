@@ -125,8 +125,13 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         }
 
  		b  = (100*numCorrect)/questions.length 
-		if( b>70  ){ window.location.replace("<?php echo base_url() ?>Passation/NewPassation");  }
-	     else{  window.location.replace("<?php echo base_url() ?>Passation/NewPassation"); }
+		if( b>70  )
+            { 
+                window.location.replace("<?php echo base_url() ?>Passation/NewPassation");
+                  }
+	     else{  
+            window.location.replace("<?php echo base_url() ?>Passation/NewPassation");
+             }
 
         // show number of correct answers out of total
        
