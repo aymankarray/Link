@@ -33,15 +33,15 @@
                               <div class="modal-dialog" role="document">
                                  <div class="modal-content">
                                     <div class="modal-header">
-                                       <h5 class="modal-title" id="post-modalLabel">Create Post</h5>
+                                       <h5 class="modal-title" id="post-modalLabel">Creer un Post</h5>
                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="ri-close-fill"></i></button>
                                     </div>
                                     <div class="modal-body">
                                        <div class="d-flex align-items-center">
                                           <div class="user-img">
-                                             <img src="images/user/1.jpg" alt="userimg" class="avatar-60 rounded-circle img-fluid">
+                                             <img class="alligator-turtle  mr-3" src="<?php echo base_url() ; ?>uploads/avatar/<?php echo $avatar ?>" >
                                           </div>
-                                          <form class="post-text ml-3 w-100" action="javascript:void();">
+                                          <form class="post-text ml-3 w-100" action="<?php echo base_url() ?>Post/addNewP">
                                              <input type="text" class="form-control rounded" placeholder="Write something here..." style="border:none;">
                                           </form>
                                        </div>
