@@ -21,11 +21,11 @@
                               <div class="user-post-data">
                                  <div class="d-flex flex-wrap">
                                     <div class="media-support-user-img mr-3">
-                                       <img class="rounded-circle img-fluid" src="https://tunivisions.link/uploads/avatar/<?php echo $post->avatar ?>" alt="">
+                                       <img class="alligator-turtle  mr-3" src="<?php echo base_url() ; ?>uploads/avatar/<?php echo $post->avatar ?>" alt="">
                                     </div>
                                     <div class="media-support-info mt-2">
                                        <h5 class="mb-0 d-inline-block"><a href="#" class=""><?php echo $post->name ?></a></h5>
-                                       <p class="mb-0 d-inline-block">Added New Image in a Post</p>
+                                       <p class="mb-0 d-inline-block">Ajout d'un nouveau message</p>
                                        <p class="mb-0 text-primary"><a href="<?php echo base_url().'Posts/post/'.$post->postId ?>"><?php echo xTimeAgo($post->DatePosted,date('Y-m-d H:i:s')) ; ?></a></p>
                                     </div>
                                     <div class="iq-card-post-toolbar">
