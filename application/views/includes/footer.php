@@ -15,7 +15,7 @@
                <div class="col-lg-6 text-right">
                   Copyright 2020 <a href="#">Maiza Bahaedinne</a> & Tunivisions Foundation All Rights Reserved.
                </div>
-               <div id="demo1" ></div>
+             
             </div>
          </div>
       </footer>
