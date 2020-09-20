@@ -171,7 +171,7 @@
                            </div>
                         </div>
                      </div>
-                     <?php } } ?>
+                     <?php }  ?>
                      <!-- publication  -->    
 
                   </div>
