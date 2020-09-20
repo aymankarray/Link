@@ -23,31 +23,11 @@
                                     <img class="alligator-turtle  mr-3" src="<?php echo base_url() ; ?>uploads/avatar/<?php echo $avatar ?>" >
                                  </div>
                                  <form class="post-text ml-3 w-100" action="javascript:void();">
-                                    <input type="text" class="form-control rounded" placeholder="Write something here..." style="border:none;">
+                                    <input type="text" class="form-control rounded" placeholder="Ecrire quelque chose..." style="border:none;">
                                  </form>
                               </div>
                               <hr>
-                              <ul class="post-opt-block d-flex align-items-center list-inline m-0 p-0">
-                                 <li class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="images/small/07.png" alt="icon" class="img-fluid"> Photo/Video</li>
-                                 <li class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="images/small/08.png" alt="icon" class="img-fluid"> Tag Friend</li>
-                                 <li class="iq-bg-primary rounded p-2 pointer mr-3"><a href="#"></a><img src="images/small/09.png" alt="icon" class="img-fluid"> Feeling/Activity</li>
-                                 <li class="iq-bg-primary rounded p-2 pointer">
-                                    <div class="iq-card-header-toolbar d-flex align-items-center">
-                                       <div class="dropdown">
-                                          <span class="dropdown-toggle" id="post-option" data-toggle="dropdown">
-                                          <i class="ri-more-fill"></i>
-                                          </span>
-                                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="post-option" style="">
-                                             <a class="dropdown-item" href="#">Check in</a>
-                                             <a class="dropdown-item" href="#">Live Video</a>
-                                             <a class="dropdown-item" href="#">Gif</a>
-                                             <a class="dropdown-item" href="#">Watch Party</a>
-                                             <a class="dropdown-item" href="#">Play with Friend</a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </li>
-                              </ul>
+                              
                            </div>
                            <div class="modal fade" id="post-modal" tabindex="-1" role="dialog" aria-labelledby="post-modalLabel" style="display: none;" aria-hidden="true">
                               <div class="modal-dialog" role="document">
