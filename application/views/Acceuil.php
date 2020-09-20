@@ -14,13 +14,13 @@
                         <div id="post-modal-data" class="iq-card iq-card-block iq-card-stretch iq-card-height">
                            <div class="iq-card-header d-flex justify-content-between">
                               <div class="iq-header-title">
-                                 <h4 class="card-title">Create Post</h4>
+                                 <h4 class="card-title">Creer un Post</h4>
                               </div>
                            </div>
                            <div class="iq-card-body" data-toggle="modal" data-target="#post-modal">
                               <div class="d-flex align-items-center">
                                  <div class="user-img">
-                                    <img src="images/user/1.jpg" alt="userimg" class="avatar-60 rounded-circle">
+                                    <img class="alligator-turtle  mr-3" src="<?php echo base_url() ; ?>uploads/avatar/<?php echo $avatar ?>" >
                                  </div>
                                  <form class="post-text ml-3 w-100" action="javascript:void();">
                                     <input type="text" class="form-control rounded" placeholder="Write something here..." style="border:none;">
