@@ -111,9 +111,7 @@
                         </div>
                      </div> 
                     <!-- publication  --> 
-                    <?php foreach ($postRecords as $post ) { ?>
-
- 
+                    <?php foreach ($postRecords as $post ) { ?> 
                      <div class="col-sm-12">
                         <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
                            <div class="iq-card-body">
@@ -124,8 +122,9 @@
                                     </div>
                                     <div class="media-support-info mt-2">
                                        <h5 class="mb-0 d-inline-block"><a href="#" class=""><?php echo $post->name ?></a></h5>
-                                       <p class="mb-0 d-inline-block">Ajout d'un nouveau message</p>
-                                       <p class="mb-0 text-primary"><a href="<?php echo base_url().'Posts/post/'.$post->postId ?>"><?php echo xTimeAgo($post->DatePosted,date('Y-m-d H:i:s')) ; ?></a></p>
+                                       <p class="mb-0 d-inline-block">A ajouté d'un nouveau message</p>
+                                       <p class="mb-0 text-primary"><a href="<?php echo base_url().'Posts/post/'.$post->postId ?>">
+                                    <?php echo xTimeAgo($post->DatePosted,date('Y-m-d H:i:s')) ; ?></a></p>
                                     </div>
                                     <div class="iq-card-post-toolbar">
                                        <div class="dropdown">
@@ -144,7 +143,6 @@
                                                 </div>
                                              </a>
                                               <?php }  ?>
-                                             
                                           </div>
                                        </div>
                                     </div>
@@ -153,7 +151,6 @@
                               <div class="mt-3">
                                   <p  style="font-size: 13"  >
                                     <?php 
-
                                           $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
                                           $text = $post->Content ;
                                           if(preg_match($reg_exUrl, $text, $url)) {
@@ -161,16 +158,8 @@
                                           } else {
                                                  echo $text;
                                           }
-
                                           if ($reg_exUrl = "(?:(?:http|https):\/\/)?(?:www.)?facebook.com\/(?:(?:\w)*" ) { ?>
-
-                                             
-                                            
-                                          
-                                          <?php
-                                          }
-
-                                    ?>
+                                          <?php  }  ?>
                                        
                                     </p>
                               </div>
@@ -185,7 +174,9 @@
                                     <div class="total-comment-block">
                                           
                                           <?php if (!empty($post->likeCheck)) {  ?>
-                                           <b id="PLiked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($post->likeRecords) ?> J'aimes </b>
+                                           <b id="PLiked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > 
+                                             <i class='ri-heart-2-fill'></i> <?php echo count($post->likeRecords) ?> J'aimes 
+                                          </b>
 
                                             <?php } else {  ?>
                                             
@@ -210,7 +201,8 @@
                                           </div>
 
                                  </div>
-
+                                 
+                                 <ul>
                                      <?php 
                            
                    
@@ -254,7 +246,7 @@
                                        <a href="javascript:void();"><i class="ri-camera-line mr-3"></i></a>
                                       -->
 
-                                                                       </div>
+                                    </div>
                                  </form>
 
                               </div>
