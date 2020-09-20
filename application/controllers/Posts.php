@@ -81,13 +81,6 @@ class Posts extends BaseController {
 
 
         $result = $this->posts_model->addNewPost($postInfo); 
-
-                
-
-
-        
-        
-
         redirect('/Posts/Acceuil');
     }
 

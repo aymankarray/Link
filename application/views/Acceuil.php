@@ -180,7 +180,7 @@
                                        <img src="<?php echo base_url() ?>uploads/post/<?php echo $post->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
                                  </div>
                               <?php }  ?>
-                              <<div class="comment-area mt-3">
+                              <div class="comment-area mt-3">
                                  <div class="d-flex justify-content-between align-items-center">
                                     <div class="total-comment-block">
                                           
