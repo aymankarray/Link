@@ -56,7 +56,7 @@
                                     <?php 
 
                                           $reg_exUrl = "/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
-                                          $text = $record->Content ;
+                                          $text = $post->Content ;
                                           if(preg_match($reg_exUrl, $text, $url)) {
                                                  echo preg_replace($reg_exUrl, "<a href=".$url[0]." target=_blank >".$url[0]."</a> ", $text);
                                           } else {
@@ -78,56 +78,47 @@
                               <?php if ($post->photo != 'Post___' ) { ?>
                                  <div class="user-post">
                                     <a href="javascript:void();">
-                                       <img src="<?php echo base_url() ?>uploads/post/<?php echo $record->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
+                                       <img src="<?php echo base_url() ?>uploads/post/<?php echo $post->photo ?>" alt="post-image" class="img-fluid rounded w-100"></a>
                                  </div>
                               <?php }  ?>
                               <<div class="comment-area mt-3">
                                  <div class="d-flex justify-content-between align-items-center">
                                     <div class="total-comment-block">
                                           
-                                          <?php if (!empty($record->likeCheck)) {  ?>
-                                           <b id="PLiked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords) ?> J'aimes </b>
+                                          <?php if (!empty($post->likeCheck)) {  ?>
+                                           <b id="PLiked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > <i class='ri-heart-2-fill'></i> <?php echo count($post->likeRecords) ?> J'aimes </b>
 
                                             <?php } else {  ?>
                                             
 
 
-                                             <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $record->postId ?>" onclick="like(this.id)" >  <?php echo count($record->likeRecords) ?> <i class='ri-heart-2-fill'></i> j'aimes </p>
+                                             <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $record->postId ?>" onclick="like(this.id)" >  <?php echo count($post->likeRecords) ?> <i class='ri-heart-2-fill'></i> j'aimes </p>
                                             <b id="Liked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords)+ 1 ?> J'aimes </b>
                                              <?php }   ?>
 
                                              &nbsp; 
 
                                              <?php if  (count($record->commentsRecords) ==  0) {  ?>
-                                                <b  class='btn btn-outline-primary rounded-pill mb-3' onclick="location.href = '<?php echo base_url().'Posts/post/'.$record->postId ?>';"  >
-                                                   <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
+                                                <b  class='btn btn-outline-primary rounded-pill mb-3' onclick="location.href = '<?php echo base_url().'Posts/post/'.$post->postId ?>';"  >
+                                                   <?php echo count($post->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
-                                             <?php } if  (count($record->commentsRecords) >  0 ){ ?>
-                                             <b  class='btn mb-3 btn-primary rounded-pill' onclick="location.href = '<?php echo base_url().'Posts/post/'.$record->postId ?>';" >
-                                                   <?php echo count($record->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
+                                             <?php } if  (count($post->commentsRecords) >  0 ){ ?>
+                                             <b  class='btn mb-3 btn-primary rounded-pill' onclick="location.href = '<?php echo base_url().'Posts/post/'.$post->postId ?>';" >
+                                                   <?php echo count($post->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
                                              <?php } ?> 
 
                                           </div>
 
                                  </div>
-                                 <hr>
-                                 <ul class="post-comments p-0 m-0">
 
-                                    
-                 
-                           
-                           
-
-                                    
-                                    
                                      <?php 
                            
                    
 
-                                    if(!empty($record->commentsRecords))
+                                    if(!empty($post->commentsRecords))
                                      { 
-                                     foreach ($record->commentsRecords as $key ) {  ?>     
+                                     foreach ($post->commentsRecords as $key ) {  ?>     
                                     
                                     <li class="mb-2" style="background-color: #FFF0F1   ">
                                        <div class="d-flex flex-wrap">
@@ -330,9 +321,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-sm-12 text-center">
-                     <img src="images/page-img/page-load-loader.gif" alt="loader" style="height: 100px;">
-                  </div>
+                  
                </div>
             </div>
          </div>
