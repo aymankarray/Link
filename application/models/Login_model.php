@@ -17,9 +17,10 @@ class Login_model extends CI_Model
      */
     function loginMe($email, $password)
     {
-        $this->db->select('BaseTbl.userId, BaseTbl.password, BaseTbl.name, BaseTbl.roleId, Roles.role , BaseTbl.cellule , BaseTbl.ClubID ,  BaseTbl.avatar , BaseTbl.isDeleted ,SA  , BaseTbl.nom , BaseTbl.prenom ');
+        $this->db->select('BaseTbl.userId, BaseTbl.password, BaseTbl.name, BaseTbl.roleId, Roles.role , BaseTbl.cellule , BaseTbl.ClubID ,  BaseTbl.avatar , BaseTbl.isDeleted ,SA  , BaseTbl.nom , BaseTbl.prenom , BaseTbl.SenJun HUA');
         $this->db->from('tbl_users as BaseTbl');
         $this->db->join('tbl_roles as Roles','Roles.roleId = BaseTbl.roleId');
+        $this->db->join('tbl_club as Club','Club.clubID = BaseTbl.clubID');
         $this->db->where('BaseTbl.email', $email);
         $this->db->where('BaseTbl.isDeleted', 0 );
         $query = $this->db->get();

@@ -147,7 +147,7 @@
                                     <div class="total-comment-block">
                                           
                                           <?php if (!empty($post->likeCheck)) {  ?>
-                                           <b id="PLiked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > 
+                                           <b id="PLiked<?php echo $post->postId ?>" class='btn mb-3 btn-primary rounded-pill'  > 
                                              <i class='ri-heart-2-fill'></i> <?php echo count($post->likeRecords) ?> J'aimes 
                                           </b>
 
@@ -245,12 +245,12 @@
                               <li class="d-flex align-items-center">
                                 <a href="<?php echo base_url() ?>Actu/Show/<?php echo $key->actuID ?>">
                                  <img src="<?php echo base_url() ?>uploads/Actu/<?php echo $key->image ?>" class="alligator-turtle  mr-3 " >
-                                 </a>
+                                 
                                  <div class="stories-data ml-3">
                                     <h5><?php echo $key->titre ?></h5>
                                     <p class="mb-0">Il y a <?php echo xTimeAgo($key->createdBy,date('Y-m-d H:i:s')) ; ?></p>
                                  </div>
-
+                                </a>
                               </li>
                               <?php } ?>
                            </ul>
