@@ -48,7 +48,7 @@
                         <div class="iq-card-body profile-page p-0">
                            <div class="profile-header">
                               <div class="cover-container">
-                                 <img src="https://scontent.ftun9-1.fna.fbcdn.net/v/t1.0-9/s960x960/119282954_2766007680299123_5257676414938800586_o.jpg?_nc_cat=102&_nc_sid=825194&_nc_ohc=eAuMnZSUeF4AX-Q9Yj7&_nc_ht=scontent.ftun9-1.fna&tp=7&oh=33a46a63daef47a89f32f9baf1aa74d5&oe=5F8FFFA8" alt="profile-bg" class="rounded img-fluid">
+                                 <img src="https://live.tunivisions.net/adserver/tunivisions/www/images/2e7aacdf30624a2e3b8c84f2f5ac6d72.jpg" alt="profile-bg" class="rounded img-fluid">
                                  <ul class="header-nav d-flex flex-wrap justify-end p-0 m-0">
                                     <li><a href="javascript:void();"><i class="ri-pencil-line"></i></a></li>
                                     <li><a href="javascript:void();"><i class="ri-settings-4-line"></i></a></li>
