@@ -36,14 +36,15 @@
                                        <h5 class="modal-title" id="post-modalLabel">Creer un Post</h5>
                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="ri-close-fill"></i></button>
                                     </div>
+                                    <form class="post-text ml-3 w-100" action="<?php echo base_url() ?>Post/addNewP">
                                     <div class="modal-body">
                                        <div class="d-flex align-items-center">
                                           <div class="user-img">
                                              <img class="alligator-turtle  mr-3" src="<?php echo base_url() ; ?>uploads/avatar/<?php echo $avatar ?>" >
                                           </div>
-                                          <form class="post-text ml-3 w-100" action="<?php echo base_url() ?>Post/addNewP">
+                                          
                                              <input type="text" class="form-control rounded" placeholder="Write something here..." style="border:none;">
-                                          </form>
+                                          
                                        </div>
                                        <hr>
                                        
@@ -61,50 +62,14 @@
                                                    <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
                                                    <span class="btn btn-primary">Friend</span>
                                                    </span>
-                                                   <div class="dropdown-menu m-0 p-0">
-                                                      <a class="dropdown-item p-3" href="#">
-                                                         <div class="d-flex align-items-top">
-                                                            <div class="icon font-size-20"><i class="ri-save-line"></i></div>
-                                                            <div class="data ml-2">
-                                                               <h6>Public</h6>
-                                                               <p class="mb-0">Anyone on or off Facebook</p>
-                                                            </div>
-                                                         </div>
-                                                      </a>
-                                                      <a class="dropdown-item p-3" href="#">
-                                                         <div class="d-flex align-items-top">
-                                                            <div class="icon font-size-20"><i class="ri-close-circle-line"></i></div>
-                                                            <div class="data ml-2">
-                                                               <h6>Friends</h6>
-                                                               <p class="mb-0">Your Friend on facebook</p>
-                                                            </div>
-                                                         </div>
-                                                      </a>
-                                                      <a class="dropdown-item p-3" href="#">
-                                                         <div class="d-flex align-items-top">
-                                                            <div class="icon font-size-20"><i class="ri-user-unfollow-line"></i></div>
-                                                            <div class="data ml-2">
-                                                               <h6>Friends except</h6>
-                                                               <p class="mb-0">Don't show to some friends</p>
-                                                            </div>
-                                                         </div>
-                                                      </a>
-                                                      <a class="dropdown-item p-3" href="#">
-                                                         <div class="d-flex align-items-top">
-                                                            <div class="icon font-size-20"><i class="ri-notification-line"></i></div>
-                                                            <div class="data ml-2">
-                                                               <h6>Only Me</h6>
-                                                               <p class="mb-0">Only me</p>
-                                                            </div>
-                                                         </div>
-                                                      </a>
-                                                   </div>
+                                                
                                                 </div>
                                              </div>
                                           </div>
                                        </div>
                                        <button type="submit" class="btn btn-primary d-block w-100 mt-3">Post</button>
                                     </div>
+                                 </form>
                                  </div>
                               </div>
                            </div>
