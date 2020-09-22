@@ -113,7 +113,7 @@
                     <!-- publication  --> 
                     <?php foreach ($postRecords as $post ) { ?> 
                      <div class="col-sm-12">
-                        <div class="iq-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card ">
                            <div class="iq-card-body">
                               <div class="user-post-data">
                                  <div class="d-flex flex-wrap">
