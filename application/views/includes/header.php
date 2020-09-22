@@ -1077,7 +1077,7 @@
                               <img class="alligator-turtle" src="https://tunivisions.link/uploads/avatar/<?php echo $key->avatar ?>" alt="">
                            </div>
                            <div class="media-body ml-3">
-                              <h6 class="mb-0"><a href="#"><?php echo $key->name ; ?></a></h6>
+                              <h6 class="mb-0"><a href="<?php echo base_url() ?>User/ProfileShow/<?php echo $key->userId ?>"><?php echo $key->name ; ?></a></h6>
                               <p class="mb-0">il y a <?php echo xTimeAgo($key->createdDtm,date('Y-m-d H:i:s')) ; ?></p>
                               <p class="mb-0">via <?php echo $key->platform ; ?></p>
 
