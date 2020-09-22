@@ -34,13 +34,13 @@
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff"></h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-group-2-fill mr-3"></i>Unité Alumni</h6>
                                         <div class="dropdown mb-2">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-6 col-md-12 col-xl-5">
-                                            <h3 class="mb-2" style="color: #fff"></h3>
+                                            <h3 class="mb-2" style="color: #fff">12</h3>
                                         </div>
                                     </div>
                                 </div>
