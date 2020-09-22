@@ -77,9 +77,11 @@
                      </div> 
 
                      <!-- pub -->
+                     <div class="col-sm-12">
                      <a href="https://www.facebook.com/ChahiaOfficielle" target="_blank" >
                      <img src="https://live.tunivisions.net/adserver/tunivisions/www/images/2e7aacdf30624a2e3b8c84f2f5ac6d72.jpg"  class="img-fluid rounded w-100" >
                       </a>
+                    </div>
                      <!-- end pub-->
                     <!-- publication  --> 
                     <?php foreach ($postRecords as $post ) { ?> 
