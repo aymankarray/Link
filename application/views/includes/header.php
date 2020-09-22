@@ -779,13 +779,13 @@
                      <li>
                         <a href="<?php echo base_url() ?>dashboard" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Dashboard</span></a>
                      </li>
-                      <?php if ($clubID == 0  ) { ?>
+                      <?php if ($clubID == 2  ) { ?>
                       <li>
                         <a href="<?php echo base_url() ?>Passation" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Passation </span></a>
                      </li>
                      <?php } ?>
-                    <?php if ($clubID > 5 ) { ?>
-                     <!--
+                    <?php if ($clubID > 5 || $SA == 1 ) { ?>
+                    
                      <li>
                         <a href="#Mclub" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false" >
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
@@ -805,7 +805,7 @@
                             </li>
                         </ul>
                       </li>
-                      -->
+                     
                    <?php } ?>
                      <li>
                         <a href="<?php echo base_url() ?>Project/projectListing" class="iq-waves-effect"><i class="las la-calendar"></i><span>Evenement</span></a>
