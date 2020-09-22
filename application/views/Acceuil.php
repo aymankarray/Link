@@ -244,7 +244,7 @@
                               <?php foreach ($ActuRecords as $key ) { ?>
                               <li class="d-flex align-items-center">
                                 <a href="<?php echo base_url() ?>Actu/Show/<?php echo $key->actuID ?>">
-                                 <img src="<?php echo base_url() ?>Uploads/Actu/<?php echo $key->image ?>" class="img-fluid" >
+                                 <img src="<?php echo base_url() ?>uploads/Actu/<?php echo $key->image ?>" class="img-fluid" >
                                  </a>
                                  <div class="stories-data ml-3">
                                     <h5><?php echo $key->titre ?></h5>
