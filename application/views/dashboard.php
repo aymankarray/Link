@@ -34,7 +34,7 @@
                                     </div>
                                     <hr>
                                     <div class="d-flex justify-content-between align-items-baseline">
-                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-group-2-fill mr-3"></i>Unité Alumni</h6>
+                                        <h6 class="card-title mb-0" style="color: #fff"><i class="ri-group-2-fill mr-3"></i>Unités Alumni</h6>
                                         <div class="dropdown mb-2">
                                         </div>
                                     </div>
