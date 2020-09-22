@@ -78,8 +78,8 @@
 
                      <!-- pub -->
                      <div class="col-sm-12">
-                     <a href="https://www.facebook.com/ChahiaOfficielle" target="_blank" >
-                     <img src="https://live.tunivisions.net/adserver/tunivisions/www/images/2e7aacdf30624a2e3b8c84f2f5ac6d72.jpg"  class="img-fluid rounded w-100" >
+                      <a href="https://www.facebook.com/ChahiaOfficielle" target="_blank" >
+                        <img src="https://live.tunivisions.net/adserver/tunivisions/www/images/2e7aacdf30624a2e3b8c84f2f5ac6d72.jpg"  class="img-fluid rounded w-100" >
                       </a>
                     </div>
                      <!-- end pub-->
@@ -241,36 +241,18 @@
                         </div>
                         <div class="iq-card-body">
                            <ul class="media-story m-0 p-0">
-                              <li class="d-flex mb-4 align-items-center">
-                                 <i class="ri-add-line font-size-18"></i>
-                                 <div class="stories-data ml-3">
-                                    <h5>Creat Your Story</h5>
-                                    <p class="mb-0">time to story</p>
-                                 </div>
-                              </li>
-                              <li class="d-flex mb-4 align-items-center active">
-                                 <img src="images/page-img/s2.jpg" alt="story-img" class="rounded-circle img-fluid">
-                                 <div class="stories-data ml-3">
-                                    <h5>Anna Mull</h5>
-                                    <p class="mb-0">1 hour ago</p>
-                                 </div>
-                              </li>
-                              <li class="d-flex mb-4 align-items-center">
-                                 <img src="images/page-img/s3.jpg" alt="story-img" class="rounded-circle img-fluid">
-                                 <div class="stories-data ml-3">
-                                    <h5>Ira Membrit</h5>
-                                    <p class="mb-0">4 hour ago</p>
-                                 </div>
-                              </li>
+                              <?php foreach ($ActuRecords as $key ) { ?>
                               <li class="d-flex align-items-center">
+                                <a href="<?php echo base_url() ?>Actu/Show/<?php echo $key->actuID ?>">
                                  <img src="images/page-img/s1.jpg" alt="story-img" class="rounded-circle img-fluid">
                                  <div class="stories-data ml-3">
-                                    <h5>Bob Frapples</h5>
-                                    <p class="mb-0">9 hour ago</p>
+                                    <h5><?php $key->titre ?></h5>
+                                    <p class="mb-0">Il y a <?php echo xTimeAgo($key->createdBy,date('Y-m-d H:i:s')) ; ?></p>
                                  </div>
                               </li>
+                              <?php } ?>
                            </ul>
-                           <a href="#" class="btn btn-primary d-block mt-3">See All</a>
+                           <a href="#" class="btn btn-primary d-block mt-3">Afficher plus</a>
                         </div>
                      </div>
                      <div class="iq-card">
