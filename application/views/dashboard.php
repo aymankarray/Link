@@ -1,4 +1,4 @@
-<?php $SA == 1 { ?>
+<?php if ($SA == 1) { ?>
 
 <div id="content-page" class="content-page">
 <div class="container">
