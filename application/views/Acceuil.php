@@ -182,13 +182,13 @@
                                             
 
 
-                                             <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $record->postId ?>" onclick="like(this.id)" >  <?php echo count($post->likeRecords) ?> <i class='ri-heart-2-fill'></i> j'aimes </p>
-                                            <b id="Liked<?php echo $record->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($record->likeRecords)+ 1 ?> J'aimes </b>
+                                             <p class="btn btn-outline-primary rounded-pill mb-3"  id="<?php echo $post->postId ?>" onclick="like(this.id)" >  <?php echo count($post->likeRecords) ?> <i class='ri-heart-2-fill'></i> j'aimes </p>
+                                            <b id="Liked<?php echo $post->postId ?>" class='btn mb-3 btn-primary rounded-pill' style="display: none" > <i class='ri-heart-2-fill'></i> <?php echo count($post->likeRecords)+ 1 ?> J'aimes </b>
                                              <?php }   ?>
 
                                              &nbsp; 
 
-                                             <?php if  (count($record->commentsRecords) ==  0) {  ?>
+                                             <?php if  (count($post->commentsRecords) ==  0) {  ?>
                                                 <b  class='btn btn-outline-primary rounded-pill mb-3' onclick="location.href = '<?php echo base_url().'Posts/post/'.$post->postId ?>';"  >
                                                    <?php echo count($post->commentsRecords) ?> <i class="ri-chat-3-fill"></i> Commentaires
                                                  </b>
