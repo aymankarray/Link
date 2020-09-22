@@ -72,8 +72,8 @@ class User_model extends CI_Model
             $this->db->where($likeCriteria);
         }
         
-        $this->db->where('BaseTbl.isDeleted !=', 1 );
-        $this->db->where('Clubs.SenJun =', 0 );
+        $this->db->where('BaseTbl.isDeleted =', 0 );
+        $this->db->where('Clubs.SenJun =', 2 );
         $this->db->order_by('BaseTbl.ClubID', 'ASC');
        
         $query = $this->db->get();
@@ -99,8 +99,8 @@ class User_model extends CI_Model
             $this->db->where($likeCriteria);
         }
         
-        $this->db->where('BaseTbl.isDeleted !=', 1 );
-        $this->db->where('Clubs.SenJun =', 1 );
+        $this->db->where('BaseTbl.isDeleted =', 0 );
+        $this->db->where('Clubs.SenJun =', 3 );
         $this->db->order_by('BaseTbl.ClubID', 'ASC');
        
         $query = $this->db->get();
@@ -125,8 +125,9 @@ class User_model extends CI_Model
             $this->db->where($likeCriteria);
         }
         
-        $this->db->where('BaseTbl.isDeleted !=', 1 );
-        $this->db->where('Clubs.clubID =', 2 );
+        $this->db->where('BaseTbl.isDeleted =', 0 );
+        $this->db->where('Clubs.clubID =', 1 );
+        $this->db->where('Clubs.name =', 'Alumni' );
         $this->db->order_by('BaseTbl.ClubID', 'ASC');
        
         $query = $this->db->get();
