@@ -236,8 +236,8 @@
                                     <?php  } }    ?>    
                                                                   
                                  </ul>
-                                 <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$record->postId ?>">
-                                    <input type="text" name="comment<?php echo $record->postId ?>" class="form-control rounded" placeholder="votre commentaire " style="background-color: #FFF0F1  " required>
+                                 <form id="commentF" class="comment-text d-flex align-items-center mt-1" method="post" action="<?php echo base_url().'Posts/addNewComment/'.$post->postId ?>">
+                                    <input type="text" name="comment<?php echo $post->postId ?>" class="form-control rounded" placeholder="votre commentaire " style="background-color: #FFF0F1  " required>
                                     <div class="comment-attagement d-flex">
 
                                        <!-- 
