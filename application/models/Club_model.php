@@ -61,7 +61,7 @@ class Club_model extends CI_Model
     {
         $this->db->select('BaseTbl.clubID  ');
         $this->db->from('tbl_club as BaseTbl');
-        $this->db->where('BaseTbl.SenJun = ','0') ;
+        $this->db->where('BaseTbl.SenJun = ','3') ;
 
        $this->db->group_by('BaseTbl.clubId') ;
         $query = $this->db->get();
@@ -87,7 +87,7 @@ class Club_model extends CI_Model
         $this->db->select('BaseTbl.clubID  ');
         $this->db->from('tbl_club as BaseTbl');
    
-        $this->db->where('BaseTbl.SenJun = ','1') ;
+        $this->db->where('BaseTbl.SenJun = ','4') ;
 
        $this->db->group_by('BaseTbl.clubId') ;
         $query = $this->db->get();
