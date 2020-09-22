@@ -245,12 +245,14 @@
                               <li class="d-flex align-items-center">
                                 <a href="<?php echo base_url() ?>Actu/Show/<?php echo $key->actuID ?>">
                                  <img src="<?php echo base_url() ?>uploads/Actu/<?php echo $key->image ?>" class="alligator-turtle  mr-3 " >
-                                 
+                                 </a>
                                  <div class="stories-data ml-3">
+                                   <a href="<?php echo base_url() ?>Actu/Show/<?php echo $key->actuID ?>">
                                     <h5><?php echo $key->titre ?></h5>
                                     <p class="mb-0">Il y a <?php echo xTimeAgo($key->createdBy,date('Y-m-d H:i:s')) ; ?></p>
+                                  </a>
                                  </div>
-                                </a>
+                                
                               </li>
                               <?php } ?>
                            </ul>
