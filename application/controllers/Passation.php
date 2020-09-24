@@ -126,7 +126,7 @@ class Passation extends BaseController {
 
 
 
-	       public function addNewPassation($CSJA)
+	       public function addNewPassation()
 		        {	            
 
 
