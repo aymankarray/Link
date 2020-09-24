@@ -831,7 +831,7 @@
                                           
                       <li>
                         <a href="#Foundation" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-focus-2-line"></i><span>Foundation</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                        <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        <ul id="Foundation" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                            <li>
                               <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>Board</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                               <ul id="ui-kit" class="iq-submenu collapse" data-parent="#ui-elements">
