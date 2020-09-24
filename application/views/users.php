@@ -1,4 +1,4 @@
-
+<?php if ($SA== 1  ) {  ?>
 <div id="content-page" class="content-page">
             <div class="container">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
@@ -147,3 +147,4 @@
             } );
   </script>
 </div></div>
+<?php } ?>
