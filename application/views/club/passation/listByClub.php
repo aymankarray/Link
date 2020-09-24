@@ -36,7 +36,7 @@
                     <table  class="table dataTable no-footer" id="tableid" style="width: cover" >
                     <thead>
                     <tr>
-                       
+                        <th></th>
                         <th>id</th>
                         <th>Nom et prénom</th>
                         <th>Club</th>
@@ -58,7 +58,9 @@
                         {
                     ?>
                     <tr>
-                       
+                       <td>
+                            <input type="checkbox" name="id[]" value="<?php echo $record->passationId ?>"  >
+                        </td>
                         <td>
                             <small>
                             <?php echo $record->passationId ?>

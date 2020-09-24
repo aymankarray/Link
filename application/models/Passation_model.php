@@ -134,7 +134,7 @@ class Passation_model extends CI_Model
         $this->db->join('tbl_roles as RoleVol ', 'BaseTbl.roleVol = RoleVol.roleId', 'LEFT');
         
         $this->db->where('Club.clubID  =  ',$clubID );
-        $this->db->where('BaseTbl.CSJA  =  ',0 );
+       
 
 
         $query = $this->db->get();
