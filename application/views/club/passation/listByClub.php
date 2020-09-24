@@ -98,7 +98,7 @@
 
                   </table>
 
-                  <input type="submit" value="Valider text-right" class="btn btn-primary">
+                  <input type="submit" class="btn btn-primary text-right" value="Valider" >
                   <input type="reset" class="btn btn-warning text-right" value="anuller">
                 </form>
                
