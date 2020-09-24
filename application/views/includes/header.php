@@ -783,11 +783,11 @@
 
 
                       <li>
-                        <a href="#Mclub" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false" >
+                        <a href="#Passation" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false" >
                             <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
                             <i class="ri-group-2-line"></i>Passation <i class="ri-arrow-right-s-line iq-arrow-right"></i>
                         </a>
-                        <ul id="Mclub" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        <ul id="Passation" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                             <a href="<?php echo base_url() ?>Passation" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Liste </span></a>
                             <li>
                                 <a  > <i class="ri-award-line">Validation</i>  </a>  
@@ -821,31 +821,37 @@
                      </li>
                                           
                       <li>
-                        <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-focus-2-line"></i><span>Foundation</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <a href="#Foundation" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-focus-2-line"></i><span>Foundation</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                         <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                           <li>
+                              <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>Board</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <ul id="ui-kit" class="iq-submenu collapse" data-parent="#ui-elements">
+                                 <li><a href=""><i class="ri-font-color"></i>Bureau</a></li>
+                              </ul>
+                           </li>
                            <li>
                               <a href="#ui-kit" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-pencil-ruler-line"></i><span>University</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                               <ul id="ui-kit" class="iq-submenu collapse" data-parent="#ui-elements">
                                  <li><a href=""><i class="ri-font-color"></i>Bureau National</a></li>
-                                 <li><a href="<?php echo base_url() ?>Passation/NewPassationUniversity"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                                 
                               </ul>
                            </li>
                            <li>
                               <a href="#forms" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-profile-line"></i><span>High school</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                               <ul id="forms" class="iq-submenu collapse" data-parent="#ui-elements">
                                  <li><a href=""><i class="ri-font-color"></i>Bureau National</a></li>
-                                 <li><a href="<?php echo base_url() ?>Passation/NewPassationHighSchool"><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                                 
                               </ul>
                            </li>
-                           <!--
+                         
                            <li>
-                              <a href="#wizard-form" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-archive-drawer-line"></i><span>Coordination Alumni</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                              <a href="#wizard-form" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-archive-drawer-line"></i><span>Alumni</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                               <ul id="wizard-form" class="iq-submenu collapse" data-parent="#ui-elements">
                                  <li><a href=""><i class="ri-font-color"></i>Bureau National</a></li>
-                                 <li><a href=""><i class="ri-text"></i>Mandat 2020 - 2021</a></li>
+                                 <li><a href=""><i class="ri-text"></i>Rejoindre l'equipe</a></li>
                               </ul>
                            </li>
-                           -->
+                           
                         </ul>
                      </li>
                   
