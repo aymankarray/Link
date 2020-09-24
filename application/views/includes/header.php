@@ -789,9 +789,6 @@
                         </a>
                         <ul id="Passation" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                             <a href="<?php echo base_url() ?>Passation" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Liste </span></a>
-                            <li>
-                                <a  > <i class="ri-award-line">Validation</i>  </a>  
-                            </li>
                         </ul>
                       </li>
 
