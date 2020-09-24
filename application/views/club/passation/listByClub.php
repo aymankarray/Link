@@ -32,7 +32,7 @@
               <div class="card-body">
                                 <h6 class="card-title"></h6>
                                    
-                
+                <form action="" method="post" >
                     <table  class="table dataTable no-footer" id="tableid" style="width: cover" >
                     <thead>
                     <tr>
@@ -73,36 +73,20 @@
                             <?php if ($record->nom =='' ) { echo $record->name; } ?>
                         </a>
                         </td>
-
                         <td>
                             <a class="kt-user-card-v2__name" href="#">
                               <small> <?php echo $record->clubName ?> </small> 
-                            </a>                            
-                                                     
-                        </td>
-
-                        <td>
-                      
-                              <small class="text-primary" > <b><?php echo $record->act ?></b> </small> <small><?php echo $record->cellule ?>    </small> 
-                                  
+                            </a>                                                  
                         </td>
                         <td>
-                      
-                              <small> <?php echo $record->vol ?> <?php echo $record->celluleVol ?>    </small> 
-                                  
+                              <small class="text-primary" > <b><?php echo $record->act ?></b> </small> <small><?php echo $record->cellule ?>    </small>      
                         </td>
                         <td>
-                      
-                              <a href="<?php echo base_url() ?>Passation/Dossier/<?php echo $record->passationId ?>">Afficher</a>
-                                  
+                              <small> <?php echo $record->vol ?> <?php echo $record->celluleVol ?>    </small>     
                         </td>
-                        
-
-
-                        
-                        
-                       
-                       
+                        <td>
+                           <a href="<?php echo base_url() ?>Passation/Dossier/<?php echo $record->passationId ?>">Afficher</a>  
+                        </td>
 
                     </tr>
                     <?php
@@ -114,7 +98,9 @@
 
                   </table>
 
-
+                  <input type="submit" value="Valider" class="btn btn-primary">
+                  <input type="reset" class="btn btn-warning" value="anuller">
+                </form>
                
               </div>
             </div>
