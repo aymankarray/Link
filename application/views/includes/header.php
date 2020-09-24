@@ -753,6 +753,18 @@
                                       }
                             </style>
 
+                            <style type="text/css">
+                                            .alligator-turtle-Stories {
+                                        object-fit: cover;
+                                        object-position: 50% 50%;
+                                    
+                                        border-radius: 20%;
+
+                                        width: 65px;
+                                        height: 55px;
+                                      }
+                            </style>
+
 </head>
    <body class="sidebar-main-active right-column-fixed" onload="getLocation()">
       <!-- loader Start -->
@@ -1032,7 +1044,7 @@
                                           </div>
                                        </div>
                                     </a>
-                                    <a href="<?php echo base_url() ; ?>User/editOld/<?php echo $MyUserId ; ?>" class="iq-sub-card iq-bg-warning-hover">
+                                    <a href="" class="iq-sub-card iq-bg-warning-hover">
                                        <div class="media align-items-center">
                                           <div class="rounded iq-card-icon iq-bg-warning">
                                              <i class="ri-profile-line"></i>
