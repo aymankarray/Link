@@ -163,9 +163,8 @@ class Passation extends BaseController {
                                       'PA'=> NL2BR($this->input->post('PA')),
                                       'statut'=> 1 ,
                                       'userId'=>$this->vendorId,
-                                      'createdDTM'=>date('Y-m-d H:i:s'),
-                                      'CSJA'=>$CSJA 
-                                    );
+                                      'createdDTM'=>date('Y-m-d H:i:s')
+                                                                          );
 
                $result = $this->passation_model->addNewPassation($passationInfo);
 
