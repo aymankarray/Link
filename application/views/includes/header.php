@@ -779,7 +779,7 @@
                      <li>
                         <a href="<?php echo base_url() ?>dashboard" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Dashboard</span></a>
                      </li>
-                      <?php if ($clubID == 2  ) { ?>
+                      <?php if ($SA == 1 &&  $clubID == 0  ) { ?>
                       <li>
                         <a href="<?php echo base_url() ?>Passation" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Passation </span></a>
                      </li>
