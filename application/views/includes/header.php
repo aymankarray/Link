@@ -780,9 +780,23 @@
                         <a href="<?php echo base_url() ?>dashboard" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Dashboard</span></a>
                      </li>
                       <?php if ($SA == 1 &&  $clubID == 0  ) { ?>
+
+
                       <li>
-                        <a href="<?php echo base_url() ?>Passation" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Passation </span></a>
-                     </li>
+                        <a href="#Mclub" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false" >
+                            <span class="ripple rippleEffect" style="width: 190px; height: 190px; top: -67px; left: 70px;"> </span>
+                            <i class="ri-group-2-line"></i>Passation <i class="ri-arrow-right-s-line iq-arrow-right"></i>
+                        </a>
+                        <ul id="Mclub" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <a href="<?php echo base_url() ?>Passation" class="iq-waves-effect"><i class="ri-compasses-line"></i><span>Liste </span></a>
+                            <li>
+                                <a  > <i class="ri-award-line">Validation</i>  </a>  
+                            </li>
+                        </ul>
+                      </li>
+
+
+
                      <?php } ?>
                     <?php if ($clubID > 5 || $SA == 1 ) { ?>
                     
@@ -797,10 +811,6 @@
                             </li>
                             <li>
                                 <a href="<?php echo base_url() ; ?>Passation/NewPassation" > <i class="ri-award-line"></i>Passation &nbsp; <br><span class="btn btn-success" >DLL 30/09/2020</span>  </a>  
-                               
-
-
-                                 
                             </li>
                         </ul>
                       </li>
