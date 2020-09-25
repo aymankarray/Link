@@ -54,7 +54,7 @@
                     <?php
                     if(!empty($userRecords))
                     {
-                        foreach($userRecords as $record)
+                        foreach($userRecords as $record   )
                         {
                     ?>
                     <tr>
