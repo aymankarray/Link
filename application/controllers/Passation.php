@@ -232,7 +232,7 @@ class Passation extends BaseController {
         } 
 
 
-public function AccepteDossier ()
+        public function AccepteDossier ()
             {
             
               $ids = $this->input->post('id'); 
@@ -242,6 +242,18 @@ public function AccepteDossier ()
               if ( $Dossier->roleId == 1 ){ $Dossier->celluleVol = '' ;  }
               $CandidatActuel = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->roleId);
               echo  '<br>'.$CandidatActuel->name   ;
+
+              $CandidatActuelInfo = array('roleId'=>11 , 'cellule'=>''   );
+              $this->user_model->editUser($userInfo,  $CandidatActuelInfo->userId);
+
+              $DossierInfo = array('roleId'=>$Dossier->roleId , 'cellule'=>$Dossier->celluleVol   );
+              $this->user_model->editUser($DossierInfo,  $Dossier->userId);
+
+              $DossierInfo = array('partant'=>$CandidatActuel->userId , 'acceptDate'=>date('Y-m-d H:i:s') , 'accepteBy'=> $this->vendorId  );
+              $this->passation_model->editPassation($DossierInfo,  $Dossier->userId);
+
+
+
 
             }
            
