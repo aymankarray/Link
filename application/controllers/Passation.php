@@ -245,7 +245,7 @@ public function AccepteDossier ()
 
               $Dossier =   $this->passation_model->PassationById($key) ;
             echo  $Dossier->clubID .' '.$Dossier->celluleVol.' '.$Dossier->roleId.''.$Dossier->name   ;
-              $CandidatActuel = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->roleId);
+              $CandidatActuel = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,'',$Dossier->roleId);
              echo  $CandidatActuel->name   ;
 
             }
