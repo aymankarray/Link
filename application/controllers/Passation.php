@@ -240,7 +240,7 @@ public function AccepteDossier ()
               $Dossier =   $this->passation_model->PassationById($key) ;
               echo  $Dossier->clubID .' cellule : '.$Dossier->celluleVol.' role : '.$Dossier->roleId.' name : '.$Dossier->name   ;
               if ( $Dossier->roleId == 1 ){ $Dossier->celluleVol = '' ;  }
-              $CandidatActuel = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$cellule,$Dossier->roleId);
+              $CandidatActuel = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->roleId);
               echo  '<br>'.$CandidatActuel->name   ;
 
             }
