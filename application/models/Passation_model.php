@@ -130,12 +130,14 @@ class Passation_model extends CI_Model
      */
     function passationListingByClub($clubID)
     {
-        $this->db->select('BaseTbl.passationId, User.userId , User.nom, User.prenom  , User.name , Club.name clubName , RoleAct.role act ,  RoleVol.role vol , User.cellule , BaseTbl.cellule celluleVol ');
+        $this->db->select('BaseTbl.passationId, User.userId , User.nom, User.prenom  , User.name , Club.name clubName , RoleAct.role act ,  RoleVol.role vol , User.cellule , BaseTbl.cellule celluleVol , Valid.name validBy , Partant.name PostPart , BaseTbl.acceptDate ');
         $this->db->from('tbl_passation  as BaseTbl ');
         $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
         $this->db->join('tbl_club as Club ', 'Club.clubID = User.ClubID', 'LEFT');
         $this->db->join('tbl_roles as RoleAct ', 'BaseTbl.roleAct = RoleAct.roleId', 'LEFT');
         $this->db->join('tbl_roles as RoleVol ', 'BaseTbl.roleVol = RoleVol.roleId', 'LEFT');
+        $this->db->join('tbl_users as Partant ', 'Partant.userId = BaseTbl.partant', 'LEFT');
+        $this->db->join('tbl_users as Valid ', 'Valid.userId = BaseTbl.accepteBy', 'LEFT');
         
         $this->db->where('Club.clubID  =  ',$clubID );
        
