@@ -236,7 +236,7 @@ class Passation extends BaseController {
         } 
 
 
-public function AccepteDossier ($clubId)
+public function AccepteDossier ()
             {
             
 
@@ -245,10 +245,10 @@ public function AccepteDossier ($clubId)
                 $Dossier =   $this->passation_model->PassationById($passationId) ;
 
                 $data["CandidatActuel"] = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->vol);
-            
+            echo $data["CandidatActuel"]
 
             }
-             echo $data["CandidatActuel"]  ;
+           
              
         } 
 

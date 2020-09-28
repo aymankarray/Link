@@ -32,7 +32,7 @@
               <div class="card-body">
                                 <h6 class="card-title"></h6>
                                    
-                <form action="" method="post" >
+                <form action="<?php echo base_url() ?>Passation/AccepteDossier" method="post" >
                     <table  class="table dataTable no-footer" id="tableid" style="width: cover" >
                     <thead>
                     <tr>
