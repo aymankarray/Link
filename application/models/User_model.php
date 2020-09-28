@@ -270,14 +270,13 @@ class User_model extends CI_Model
 
      function getMemberByRoleAndCelulle($clubID,$cellule,$roleId)
         {
-            $this->db->select('userId, name ');
+            $this->db->select('*');
             $this->db->from('tbl_users');
-            $this->db->where("isDeleted", 0);
             $this->db->where('roleId =', $roleId );
             $this->db->where('cellule =', $cellule );
             $this->db->where('ClubID =', $clubID );
             $query = $this->db->get();         
-            return $query->result();
+            return $query->row();
         }
 
 
