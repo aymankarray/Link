@@ -240,11 +240,11 @@ public function AccepteDossier ()
             {
             
               $ids = $this->input->post('id'); 
-              
+
              foreach ( $ids as $key ) {
 
                 $Dossier =   $this->passation_model->PassationById($key) ;
-
+            echo  $Dossier ;
                 $data["CandidatActuel"] = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->vol);
             echo $data["CandidatActuel"] ;
 
