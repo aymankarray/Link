@@ -244,7 +244,7 @@ class Passation extends BaseController {
               echo  '<br>'.$CandidatActuel->name   ;
 
               $CandidatActuelInfo = array('roleId'=>11 , 'cellule'=>''   );
-              $this->user_model->editUser($CandidatActuelInfo,  $CandidatActuelInfo->userId);
+              $this->user_model->editUser($CandidatActuelInfo,  $CandidatActuel->userId);
 
               $DossierInfo = array('roleId'=>$Dossier->roleId , 'cellule'=>$Dossier->celluleVol   );
               $this->user_model->editUser($DossierInfo,  $Dossier->userId);
