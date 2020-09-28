@@ -56,8 +56,12 @@ class Passation_model extends CI_Model
      */
     function PassationById($passationId)
     {
-        $this->db->select('*');
-        $this->db->from('tbl_passation');
+       $this->db->select('BaseTbl.passationId, User.userId , User.nom, User.prenom  , User.name , Club.clubID , Club.name clubName , RoleAct.role act ,  RoleVol.role vol , User.cellule , BaseTbl.cellule celluleVol ');
+        $this->db->from('tbl_passation  as BaseTbl ');
+        $this->db->join('tbl_users as User ', 'User.userId = BaseTbl.userId', 'LEFT');
+        $this->db->join('tbl_club as Club ', 'Club.clubID = User.ClubID', 'LEFT');
+        $this->db->join('tbl_roles as RoleAct ', 'BaseTbl.roleAct = RoleAct.roleId', 'LEFT');
+        $this->db->join('tbl_roles as RoleVol ', 'BaseTbl.roleVol = RoleVol.roleId', 'LEFT');
         $this->db->where('passationId', $passationId);
         $query = $this->db->get();
         
@@ -140,6 +144,22 @@ class Passation_model extends CI_Model
         $query = $this->db->get();
         
         return $query->result();
+    }
+
+
+     /**
+     * This function is used to get the user listing count
+     * @param string $searchText : This is optional search text
+     * @param number $page : This is pagination offset
+     * @param number $segment : This is pagination limit
+     * @return array $result : This is result
+    */
+    function editPassation($passationInfo, $passationID)
+    {
+        $this->db->where('passationId', $passationID);
+        $this->db->update('tbl_passation', $passationInfo);
+        
+        return TRUE;
     }
 
 

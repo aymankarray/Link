@@ -30,29 +30,22 @@ class Passation extends BaseController {
 		                $this->global['pageTitle'] = 'Passation';
 		                $data["Experience"] = $this->user_cariere_model->carrierListing($this->vendorId);
 		                $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($this->vendorId) ;   
-		           		$data["Diplome"] = $this->user_diplome_model->diplomeListing($this->vendorId) ;
-		           		$data["ExperienceP"] = $this->user_cariere_model->carrierProListing($this->vendorId) ;
+  		           		$data["Diplome"] = $this->user_diplome_model->diplomeListing($this->vendorId) ;
+  		           		$data["ExperienceP"] = $this->user_cariere_model->carrierProListing($this->vendorId) ;
+  		           		$data["Langue"] = $this->user_cariere_model->langListing($this->vendorId) ;
+  		           		$data["skils"] = $this->user_cariere_model->hardListing($this->vendorId) ;		
+         						$data["Roles"] = $this->user_model->getUserAllRoles() ; 
+           					$data["Clubs"] = $this->user_model->getClubs() ;
+  		           		$data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($this->vendorId);
 
-		           		$data["Langue"] = $this->user_cariere_model->langListing($this->vendorId) ;
-		           		$data["skils"] = $this->user_cariere_model->hardListing($this->vendorId) ;
-
-
- 						
- 						$data["Roles"] = $this->user_model->getUserAllRoles() ; 
-       					$data["Clubs"] = $this->user_model->getClubs() ;
-
-
-		           		$data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($this->vendorId);
-
-
-		        		$this->loadViews("club/passation/new", $this->global, $data, NULL);  
+		        		    $this->loadViews("club/passation/new", $this->global, $data, NULL);  
                 }else
                 {
-                          $this->global['pageTitle'] = 'Passation';
-                          $code = $this->passation_model->passationByuserId($this->vendorId) ; 
-                          $data['code']=  $code->passationId ; 
+                    $this->global['pageTitle'] = 'Passation';
+                    $code = $this->passation_model->passationByuserId($this->vendorId) ; 
+                    $data['code']=  $code->passationId ; 
 
-                 $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
+                    $this->loadViews('club/passation/view', $this->global, $data, NULL) ; 
                 }
 		        }  
 
@@ -240,6 +233,23 @@ class Passation extends BaseController {
              
              $this->global['pageTitle'] = 'Passation' ;
               $this->loadViews("club/passation/dossier", $this->global, $data, NULL);   
+        } 
+
+
+public function AccepteDossier ($clubId)
+            {
+            
+
+             foreach ( $this->input->post('id') as $key ) {
+
+                $Dossier =   $this->passation_model->PassationById($passationId) ;
+
+                $data["CandidatActuel"] = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->vol);
+            
+
+            }
+             echo $data["CandidatActuel"]  ;
+             
         } 
 
 
