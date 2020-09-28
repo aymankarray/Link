@@ -236,13 +236,11 @@ public function AccepteDossier ()
             {
             
               $ids = $this->input->post('id'); 
-
              foreach ( $ids as $key ) {
-
               $Dossier =   $this->passation_model->PassationById($key) ;
-            echo  $Dossier->clubID .'cellule :'.$Dossier->celluleVol.' role :'.$Dossier->roleId.' name :'.$Dossier->name   ;
+              echo  $Dossier->clubID .' cellule : '.$Dossier->celluleVol.' role : '.$Dossier->roleId.' name : '.$Dossier->name   ;
               $CandidatActuel = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,'',$Dossier->roleId);
-             echo  '<br>'.$CandidatActuel->name   ;
+              echo  '<br>'.$CandidatActuel->name   ;
 
             }
            
