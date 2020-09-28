@@ -250,7 +250,7 @@ class Passation extends BaseController {
               $this->user_model->editUser($DossierInfo,  $Dossier->userId);
 
               $DossierInfo = array('statut' => 0 , 'partant'=>$CandidatActuel->userId , 'acceptDate'=>date('Y-m-d H:i:s') , 'accepteBy'=> $this->vendorId  );
-              $this->passation_model->editPassation($DossierInfo,  $Dossier->key);
+              $this->passation_model->editPassation($DossierInfo,  $key);
 
 
 
