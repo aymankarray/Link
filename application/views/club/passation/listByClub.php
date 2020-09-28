@@ -41,14 +41,15 @@
                     <div class="col-md-3"><b><?php echo $record->name;  ?></b></div>
                     <div class="col-md-1"><i class="fas fa-angle-double-right"></i></div>
                     <div class="col-md-3"><b><?php echo $record->PostPart;  ?></b></div>
-                    <div class="col-md-2">Validé par : <?php echo $record->PostPart;  ?></div>
+                    <div class="col-md-2">Validé par : <?php echo $record->validBy;  ?></div>
                     <div class="col-md-2"> Le : <?php echo $record->acceptDate;  ?></div>
                 </div>  
-                <br><br>
+                <hr>
                 <?php
                         }
                     }
-                    ?>                 
+                    ?>  
+                    <br>       <br>        
                 <form action="<?php echo base_url() ?>Passation/AccepteDossier" method="post" >
                     <table  class="table dataTable no-footer" id="tableid" style="width: cover" >
                     <thead>
