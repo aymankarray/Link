@@ -239,10 +239,11 @@ class Passation extends BaseController {
 public function AccepteDossier ()
             {
             
+              $ids = $this->input->post('id'); 
+              
+             foreach ( $ids as $key ) {
 
-             foreach ( $this->input->post('id') as $key ) {
-
-                $Dossier =   $this->passation_model->PassationById($passationId) ;
+                $Dossier =   $this->passation_model->PassationById($key) ;
 
                 $data["CandidatActuel"] = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->vol);
             echo $data["CandidatActuel"] ;
