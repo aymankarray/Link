@@ -873,7 +873,7 @@
                       <li>
                         <a href="<?php echo base_url() ?>TFM" class="iq-waves-effect"><i class="ri-newspaper-line"></i><span> TFM </span></a>
                      </li>
-                     <?php if($clubID == 0 ){ ?>
+                     <?php if($clubID == -1 ){ ?>
                      <li>
                         <a href="<?php echo base_url() ?>TFM/partantF" class="iq-waves-effect"><i class="las la-calendar"></i><span>Participant TFM2020</span></a>
                      </li>
