@@ -244,9 +244,9 @@ public function AccepteDossier ()
              foreach ( $ids as $key ) {
 
                 $Dossier =   $this->passation_model->PassationById($key) ;
-            echo  $Dossier->clubID .' '.$Dossier->celluleVol.' '.$Dossier->vol ;
-                $data["CandidatActuel"] = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->vol);
-            echo $data["CandidatActuel"] ;
+            echo  $Dossier->clubID .' '.$Dossier->celluleVol.' '.$Dossier->roleId.' '.$Dossier->name   ;
+                $CandidatActuel = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,$Dossier->celluleVol,$Dossier->roleId);
+             echo  $CandidatActuel->clubID .' '.$CandidatActuel->celluleVol.' '.$CandidatActuel->roleId.' '.$CandidatActuel->name   ;
 
             }
            
