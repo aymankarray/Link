@@ -44,6 +44,7 @@
                     <div class="col-md-2">Validé par : <?php echo $record->PostPart;  ?></div>
                     <div class="col-md-2"> Le : <?php echo $record->acceptDate;  ?></div>
                 </div>  
+                <br><br>
                 <?php
                         }
                     }
