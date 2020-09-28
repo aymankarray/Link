@@ -217,21 +217,17 @@ class Passation extends BaseController {
                $passation = $this->passation_model->PassationById($passationId) ;
                $data["passation"] = $this->passation_model->PassationById($passationId) ;
                $this->global['pageTitle'] = 'Passation';
-                    $data["Experience"] = $this->user_cariere_model->carrierListing($passation->userId);
-                    $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($passation->userId) ;   
-                  $data["Diplome"] = $this->user_diplome_model->diplomeListing($passation->userId) ;
-                  $data["ExperienceP"] = $this->user_cariere_model->carrierProListing($passation->userId) ;
+               $data["Experience"] = $this->user_cariere_model->carrierListing($passation->userId);
+               $data["ExperienceA"] = $this->user_cariere_model->carrierAutreListing($passation->userId) ;   
+               $data["Diplome"] = $this->user_diplome_model->diplomeListing($passation->userId) ;
+               $data["ExperienceP"] = $this->user_cariere_model->carrierProListing($passation->userId) ;
+               $data["Langue"] = $this->user_cariere_model->langListing($passation->userId) ;
+               $data["skils"] = $this->user_cariere_model->hardListing($passation->userId) ;
+               $data["Roles"] = $this->user_model->getUserAllRoles() ; 
+               $data["Clubs"] = $this->user_model->getClubs() ;
+               $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($passation->userId);
 
-                  $data["Langue"] = $this->user_cariere_model->langListing($passation->userId) ;
-                  $data["skils"] = $this->user_cariere_model->hardListing($passation->userId) ;
-            
-                $data["Roles"] = $this->user_model->getUserAllRoles() ; 
-                $data["Clubs"] = $this->user_model->getClubs() ;
-
-
-                  $data["ressourceInfo"] = $this->ressource_model->ressourceListingBUserT($passation->userId);
-             
-             $this->global['pageTitle'] = 'Passation' ;
+              $this->global['pageTitle'] = 'Passation' ;
               $this->loadViews("club/passation/dossier", $this->global, $data, NULL);   
         } 
 
@@ -244,9 +240,9 @@ public function AccepteDossier ()
              foreach ( $ids as $key ) {
 
               $Dossier =   $this->passation_model->PassationById($key) ;
-            echo  $Dossier->clubID .'c '.$Dossier->celluleVol.' c'.$Dossier->roleId.' r '.$Dossier->name   ;
+            echo  $Dossier->clubID .'cellule :'.$Dossier->celluleVol.' role :'.$Dossier->roleId.' name :'.$Dossier->name   ;
               $CandidatActuel = $this->user_model->getMemberByRoleAndCelulle($Dossier->clubID,'',$Dossier->roleId);
-             echo  $CandidatActuel->name   ;
+             echo  '<br>'.$CandidatActuel->name   ;
 
             }
            
