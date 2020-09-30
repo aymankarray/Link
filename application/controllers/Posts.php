@@ -9,17 +9,10 @@ class Posts extends BaseController {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('evaluation_model');
         $this->load->model('user_model');
-        $this->load->model('scores_model');  
         $this->load->model('club_model'); 
         $this->load->model('project_model');   
-        $this->load->model('Image_upload_model');
         $this->load->model('actualite_model');
-        $this->load->model('notification_model');
-        $this->load->model('finance_model');
-        $this->load->model('Tfm_part_model');
-        $this->load->model('ressource_model');
         $this->load->model('posts_model');
         
         $this->isLoggedIn();   
