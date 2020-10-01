@@ -3,14 +3,14 @@
               <!-- sidebar -->
               <div class="col-lg-9">
                 <div class="central-meta postbox">
-                  <span class="create-post">Create post</span>
+                  <span class="create-post">Créer un post</span>
                   <div class="new-postbox">
                     <figure>
-                      <img src="images/resources/admin.jpg" alt="">
+                      <img src="<?php echo base_url() ?>uplaods/avatar/<?php echo $avatar ?>" alt="">
                     </figure>
                     <div class="newpst-input">
                       <form method="post">
-                        <textarea rows="2" placeholder="Share some what you are thinking?"></textarea>
+                        <textarea rows="2" placeholder="Partagez ce que vous pensez?"></textarea>
                       </form>
                     </div>
                     <div class="attachments">
@@ -45,13 +45,13 @@
                           </label>
                         </li>
                         <li class="preview-btn">
-                          <button class="post-btn-preview" type="submit" data-ripple="">Preview</button>
+                          
                         </li>
                       </ul>
-                      <button class="post-btn" type="submit" data-ripple="">Post</button>
+                      <input class="post-btn" type="submit" data-ripple="">Post</button>
                     </div>
                     <div class="add-location-post">
-                      <span>Drag map point to selected area</span>
+                      <span>Faites glisser le point de la carte vers la zone sélectionnée</span>
                       <div class="row">
 
                           <div class="col-lg-6">
@@ -88,13 +88,8 @@
                           <div class="more">
                             <div class="more-post-optns"><i class="ti-more-alt"></i>
                               <ul>
-                                <li><i class="fa fa-pencil-square-o"></i>Edit Post</li>
-                                <li><i class="fa fa-trash-o"></i>Delete Post</li>
-                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                <li><i class="fa fa-address-card-o"></i>Boost This Post</li>
-                                <li><i class="fa fa-clock-o"></i>Schedule Post</li>
-                                <li><i class="fa fa-wpexplorer"></i>Select as featured</li>
-                                <li><i class="fa fa-bell-slash-o"></i>Turn off Notifications</li>
+                                <li><i class="fa fa-pencil-square-o"></i>Modifier le message</li>
+                                <li><i class="fa fa-trash-o"></i>Supprimer le message</li>
                               </ul>
                             </div>
                           </div>
@@ -118,8 +113,23 @@
                           </figure>     
                           <?php } ?>                  
                           <div class="description">
-                            <p>
-                              <?php echo $post->Content ?>
+                            <p id="Cpntent<?php $post->postId ?>" >
+                              <?php  $post->Content
+                              
+                             
+                              $string = strip_tags($post->Content);
+                              if (strlen($string) > 500) {
+
+                                  // truncate string
+                                  $stringCut = substr($string, 0, 500);
+                                  $endPoint = strrpos($stringCut, ' ');
+
+                                  //if the string doesn't contain any space then it will cut without word basis.
+                                  $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                  $string .= '... <a href="/this/story">Afficher la suite</a>';
+                              }
+                              echo $string;
+                              ?>
                             </p>
                           </div>
                           <div class="we-video-info">
@@ -403,3 +413,5 @@
             </div>
 
           </div>
+
+
