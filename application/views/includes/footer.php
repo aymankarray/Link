@@ -1,10 +1,6 @@
 
 
-  
-        </div>
-      </div>
-    </div>  
-  </section>
+
 
   <a title="Your Cart Items" href="shop-cart.html" class="shopping-cart" data-toggle="tooltip">Cart <i class="fa fa-shopping-bag"></i><span>02</span></a>
 
