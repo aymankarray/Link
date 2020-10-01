@@ -31,7 +31,8 @@
 
 </head>
 
-<body><nav id="shoppingbag" class="mm-menu mm-offcanvas mm-right" aria-hidden="true">
+<body>
+	<nav id="shoppingbag" class="mm-menu mm-offcanvas mm-right" aria-hidden="true">
 	<div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened" id="mm-13">
 		<div class="mm-navbar">
 			<a class="mm-title">General Setting
@@ -101,7 +102,8 @@
 				</div>
 			</div></div>
 			
-		</nav><nav id="menu" class="res-menu mm-menu mm-offcanvas" aria-hidden="true"><div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened" id="mm-1"><div class="mm-navbar"><a class="mm-title">Menu</a></div><ul class="mm-listview">
+		</nav>
+		<nav id="menu" class="res-menu mm-menu mm-offcanvas" aria-hidden="true"><div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened" id="mm-1"><div class="mm-navbar"><a class="mm-title">Menu</a></div><ul class="mm-listview">
 				<li><a class="mm-next mm-fullsubopen" href="#mm-2" aria-owns="mm-2" aria-haspopup="true"><span class="mm-sronly">Open submenu (Home Pages)</span></a><span>Home Pages</span> 
 					
 				</li>
@@ -247,7 +249,7 @@
 				<a class="" href="#menu"><i class="fa fa-align-justify"></i></a>
 			</span>
 			<span class="mh-text">
-				<a href="<?php echo base_url()?>" title=""><img src="<?php echo base_url()?>assets/images/logo2.svg" width="50%" alt=""></a>
+				<a href="<?php echo base_url()?>" title=""><img src="<?php echo base_url()?>assets/images/logo2.svg"  width="45%" alt=""></a>
 			</span>
 			<span class="mh-btns-right">
 				<a class="fa fa-sliders" href="#shoppingbag"></a>
@@ -265,7 +267,7 @@
 	
 	<div class="topbar stick" style="">
 		<div class="logo">
-			<a title="" href="newsfeed.html"><img src="<?php echo base_url()?>assets/images/logo.svg"  width="50%" alt=""></a>
+			<a title="" href="<?php echo base_url()?>"> <img src="<?php echo base_url()?>assets/images/logo.svg"  width="45%" alt=""></a>
 		</div>
 		<div class="top-area">
 			<div class="main-menu">
