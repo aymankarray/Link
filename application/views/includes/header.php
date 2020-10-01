@@ -265,7 +265,7 @@
 	
 	<div class="topbar stick" style="">
 		<div class="logo">
-			<a title="" href="newsfeed.html"><img src="<?php echo base_url()?>assets/images/logo.png" alt=""></a>
+			<a title="" href="newsfeed.html"><img src="<?php echo base_url()?>assets/images/logo.svg" alt=""></a>
 		</div>
 		<div class="top-area">
 			<div class="main-menu">
