@@ -117,8 +117,8 @@
   
   <!-- send message popup -->
   
-  <script src="<?php echo ?>assets/js/main.min.js"></script>
-  <script src="<?php echo ?>assets/js/script.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/main.min.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/script.js"></script>
 
   
 
