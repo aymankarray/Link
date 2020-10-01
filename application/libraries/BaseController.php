@@ -178,9 +178,10 @@ class BaseController extends CI_Controller {
 
          $headerInfo['ConnrectedUser'] =  $this->login_model->lastLogins() ;
         if($this->SA == 1){
-        $this->load->view('includes/header', $headerInfo);
+      /*  $this->load->view('includes/header', $headerInfo);
         $this->load->view($viewName, $pageInfo);
-        $this->load->view('includes/footer', $footerInfo);
+        $this->load->view('includes/footer', $footerInfo);*/
+        $this->load->view ( 'soon' );
         }else {
 			$this->load->view ( 'soon' );
 		}
