@@ -114,7 +114,7 @@
                           <?php } ?>                  
                           <div class="description">
                             <p id="Cpntent<?php $post->postId ?>" >
-                              <?php  $post->Content
+                              <?php  
                               
                              
                               $string = strip_tags($post->Content);
