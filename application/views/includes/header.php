@@ -247,7 +247,7 @@
 				<a class="" href="#menu"><i class="fa fa-align-justify"></i></a>
 			</span>
 			<span class="mh-text">
-				<a href="newsfeed.html" title=""><img src="images/logo2.png" alt=""></a>
+				<a href="<?php echo base_url()?>" title=""><img src="<?php echo base_url()?>assets/images/logo2.svg" alt=""></a>
 			</span>
 			<span class="mh-btns-right">
 				<a class="fa fa-sliders" href="#shoppingbag"></a>
@@ -265,7 +265,7 @@
 	
 	<div class="topbar stick" style="">
 		<div class="logo">
-			<a title="" href="newsfeed.html"><img src="images/logo.png" alt=""></a>
+			<a title="" href="newsfeed.html"><img src="<?php echo base_url()?>assets/images/logo.png" alt=""></a>
 		</div>
 		<div class="top-area">
 			<div class="main-menu">
@@ -537,231 +537,7 @@
 						<a href="chat-messenger.html" title="" class="more-mesg">View All</a>
 					<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 340px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 323px;"></div></div></div>
 				</li>
-				<li><a href="#" title="Languages" data-ripple=""><i class="fa fa-globe"></i><em>EN</em></a>
-					<div class="dropdowns languages ps-container ps-theme-default" data-ps-id="7e944227-d074-a339-19eb-a41f9138ce0c">
-						<div data-gutter="10" class="row">
-							<div class="col-md-3">
-							  <ul class="dropdown-meganav-select-list-lang">
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/UK.png">English(UK)
-								  </a>
-								</li>
-								<li class="active">
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/US.png">English(US)
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/DE.png">Deutsch
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/NED.png">Nederlands
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/FR.png">Français
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/SP.png">Español
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/ARG.png">Español (AR)
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/IT.png">Italiano
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/PT.png">Português (PT)
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/BR.png">Português (BR)
-								  </a>
-								</li>
-
-							  </ul>
-							</div>
-							<div class="col-md-3">
-							  <ul class="dropdown-meganav-select-list-lang">
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/FIN.png">Suomi
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/SW.png">Svenska
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/DEN.png">Dansk
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/CZ.png">Čeština
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/HUN.png">Magyar
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/ROM.png">Română
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/JP.png">日本語
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/CN.png">简体中文
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/PL.png">Polski
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/GR.png">Ελληνικά
-								  </a>
-								</li>
-
-							  </ul>
-							</div>
-							<div class="col-md-3">
-							  <ul class="dropdown-meganav-select-list-lang">
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/TUR.png">Türkçe
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/BUL.png">Български
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/ARB.png">العربية
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/KOR.png">한국어
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/ISR.png">עברית
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/LAT.png">Latviski
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/UKR.png">Українська
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/IND.png">Bahasa Indonesia
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/MAL.png">Bahasa Malaysia
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/TAI.png">ภาษาไทย
-								  </a>
-								</li>
-
-							  </ul>
-							</div>
-							<div class="col-md-3">
-							  <ul class="dropdown-meganav-select-list-lang">
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/CRO.png">Hrvatski
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/LIT.png">Lietuvių
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/SLO.png">Slovenčina
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/SERB.png">Srpski
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/SLOVE.png">Slovenščina
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/NAM.png">Tiếng Việt
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/PHI.png">Filipino
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/ICE.png">Íslenska
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/EST.png">Eesti
-								  </a>
-								</li>
-								<li>
-								  <a href="#">
-									<img title="Image Title" alt="Image Alternative text" src="images/flags/RU.png">Русский
-								  </a>
-								</li>
-							  </ul>
-							</div>
-						  </div>
-					<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
-				</li>
+				
 				<li><a href="#" title="Help" data-ripple=""><i class="fa fa-question-circle"></i></a>
 					<div class="dropdowns helps ps-container ps-theme-default" data-ps-id="e0371eba-e3ae-8b7a-3e63-fdd3e45cb7ce">
 						<span>Quick Help</span>
@@ -781,23 +557,17 @@
 				</li>
 			</ul>
 			<div class="user-img">
-				<h5>Jack Carter</h5>
-				<img src="images/resources/admin.jpg" alt="">
+				<h5><?php echo $name ?></h5>
+				<img src="<?php echo base_url()?>uploads/avatar/<?php echo $avatar ?>" alt="">
 				<span class="status f-online"></span>
 				<div class="user-setting">
-					<span class="seting-title">Chat setting <a href="#" title="">see all</a></span>
-					<ul class="chat-setting">
-						<li><a href="#" title=""><span class="status f-online"></span>online</a></li>
-						<li><a href="#" title=""><span class="status f-away"></span>away</a></li>
-						<li><a href="#" title=""><span class="status f-off"></span>offline</a></li>
-					</ul>
-					<span class="seting-title">User setting <a href="#" title="">see all</a></span>
+					<span class="seting-title">Paramètre d'utilisateur <a href="#" title="">voir tout</a></span>
 					<ul class="log-out">
-						<li><a href="about.html" title=""><i class="ti-user"></i> view profile</a></li>
-						<li><a href="setting.html" title=""><i class="ti-pencil-alt"></i>edit profile</a></li>
-						<li><a href="#" title=""><i class="ti-target"></i>activity log</a></li>
-						<li><a href="setting.html" title=""><i class="ti-settings"></i>account setting</a></li>
-						<li><a href="logout.html" title=""><i class="ti-power-off"></i>log out</a></li>
+						<li><a href="about.html" title=""><i class="ti-user"></i> Voir le profil</a></li>
+						<li><a href="setting.html" title=""><i class="ti-pencil-alt"></i>Editer le profil</a></li>
+						<li><a href="#" title=""><i class="ti-target"></i>journal d'activité</a></li>
+						<li><a href="setting.html" title=""><i class="ti-settings"></i>paramètre du compte</a></li>
+						<li><a href="<?php echo base_url() ?>logout" title=""><i class="ti-power-off"></i>Se déconnecter</a></li>
 					</ul>
 				</div>
 			</div>
