@@ -7,7 +7,8 @@
                       else if ($timeCalc > 0) {$timeCalc .= " seconds";}
                       return $timeCalc;
                       }
-                      ?>
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-	<title>Tunivisions.Link | <?php echo $ pageTitle ?></title>
+	<title>Tunivisions.Link | <?php echo $pageTitle ?></title>
     <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16"> 
     
     <link rel="stylesheet" href="css/main.min.css">
