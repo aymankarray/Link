@@ -35,7 +35,9 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/color.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive.css">
 
-<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/geocoder.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/infowindow.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/controls.js"></script></head>
+    
+
+</head>
 
 <body><nav id="shoppingbag" class="mm-menu mm-offcanvas mm-right" aria-hidden="true">
 	<div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened" id="mm-13">
