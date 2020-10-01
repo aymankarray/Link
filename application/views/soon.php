@@ -26,7 +26,7 @@
             	<div class="col-lg-12">
 					<div class="coming-head">
 						<div class="logo">
-							<a href="<?php echo base_url() ?>" title=""><img src="<?php echo base_url() ?>assets/images/logo.svg" alt="" width="25%"></a>
+							<a href="<?php echo base_url() ?>" title=""><img src="<?php echo base_url() ?>assets/images/logo.svg" alt="" width="35%"></a>
 						</div>
 						<ul class="social-circle ">
 							<li><a class="facebook-color" href="#" title=""><i class="fa fa-facebook"></i></a></li>
