@@ -32,7 +32,6 @@
 							<li><a class="facebook-color" href="#" title=""><i class="fa fa-facebook"></i></a></li>
 							<li><a class="twitter-color" href="#" title=""><i class="fa fa-twitter"></i></a></li>
 							<li><a class="google-color" href="#" title=""><i class="fa fa-google-plus"></i></a></li>
-							<li><a class="vk-color" href="#" title=""><i class="fa fa-vk"></i></a></li>
 						</ul>
 					</div>
                 	<div class="coming-meta">
