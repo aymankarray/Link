@@ -130,13 +130,14 @@ class BaseController extends CI_Controller {
 	 * This function is used to load the set of views
 	 */
 	function loadThis() {
-		$this->load->model('notification_model');
-		$this->global ['active'] = 'dash';
-
-
+		
+		if($this->SA != 1){
 		$this->load->view ( 'includes/header', $this->global );
 		$this->load->view ( 'access' );
 		$this->load->view ( 'includes/footer' );
+		}else {
+			$this->load->view ( 'soon' );
+		}
 	}
 	
 	
