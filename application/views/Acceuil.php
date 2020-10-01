@@ -155,7 +155,7 @@
                                         }
                                 ?>
                               <a data-toggle="tooltip" title="<?php echo $like->name ?>" href="#" data-original-title="<?php echo $like->name ?>">
-                                <img alt="" width="10%" src="<?php echo base_url() ?>uploads/avatar/<?php echo $like->avatar ?>">  
+                                <img alt="" max-width="10px" src="<?php echo base_url() ?>uploads/avatar/<?php echo $like->avatar ?>">  
                               </a>
                               <?php  } ?>
 
