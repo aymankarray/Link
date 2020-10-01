@@ -74,11 +74,14 @@
                   <!-- love post -->
                   <!-- without image -->
                   <!-- map location post -->
-                  <div class="central-meta item" style="">
+
+                  <?php foreach ($postRecords as $post ) { ?>
+                                  
+                  <div class="central-meta item" style="display: inline-block;">
                     <div class="user-post">
                       <div class="friend-info">
                         <figure>
-                          <img src="images/resources/nearly1.jpg" alt="">
+                          <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $post->avatar ?>" alt="">
                         </figure>
                         <div class="friend-name">
                           <div class="more">
@@ -94,8 +97,8 @@
                               </ul>
                             </div>
                           </div>
-                          <ins><a href="time-line.html" title="">Jack Carter</a> share <a href="#" title="">link</a></ins>
-                          <span><i class="fa fa-globe"></i> published: january,5 2010 19:PM </span>
+                          <ins><a href="time-line.html" title=""><?php echo $post->name ?></a> a publié <a href="#" title="">une publication</a></ins>
+                          <span><i class="fa fa-globe"></i> il y a <?php echo $post->DatePosted ?> </span>
                         </div>
                         <div class="post-meta">
                           <figure>
@@ -119,7 +122,7 @@
                           </figure>                       
                           <div class="description">
                             <p>
-                              Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc.
+                              <?php echo $post->Content ?>
                             </p>
                           </div>
                           <div class="we-video-info">
@@ -235,6 +238,7 @@
                                       <i class="em em-stuck_out_tongue"></i>
                                     </div>
                                   </div>
+
                                   <button type="submit"></button>
                                 </form> 
                               </div>
@@ -243,8 +247,11 @@
                         </div>
                       </div>
                     </div>
-                  </div><!-- video post -->
                   </div>
+
+                <?php }?>
+
+                </div>
               <button class="btn-view btn-load-more" style="display: none;">Load More</button></div><!-- centerl meta -->
               <div class="col-lg-3">
                 <aside class="sidebar static right">
