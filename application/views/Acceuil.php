@@ -48,7 +48,7 @@
                           
                         </li>
                       </ul>
-                      <input class="post-btn" type="submit" data-ripple="">Post</button>
+                      <input class="post-btn" type="submit" data-ripple="" value="Post" >
                     </div>
                     <div class="add-location-post">
                       <span>Faites glisser le point de la carte vers la zone sélectionnée</span>
