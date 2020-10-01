@@ -94,7 +94,7 @@
                             </div>
                           </div>
                           <ins><a href="time-line.html" title=""><?php echo $post->name ?></a> a publié <a href="#" title="">une publication</a></ins>
-                          <span><i class="fa fa-globe"></i> il y a <?php echo $post->DatePosted ?> </span>
+                          <span><i class="fa fa-globe"></i> il y a <?php echo xTimeAgo ($post->DatePosted, New Date() )  ?> </span>
                         </div>
                         <div class="post-meta">
                           <?php if ($post->photo != '' ){ ?>
@@ -134,84 +134,53 @@
                           </div>
                           <div class="we-video-info">
                             <ul>
+                              
                               <li>
-                                <span class="views" title="views">
-                                  <i class="fa fa-eye"></i>
-                                  <ins>1.2k</ins>
-                                </span>
-                              </li>
-                              <li>
-                                <div class="likes heart" title="Like/Dislike">❤ <span>2K</span></div>
+                                <div class="likes heart" title="Like/Dislike">❤ <span><?php echo count($post->likeRecords) ?></span></div>
                               </li>
                               <li>
                                 <span class="comment" title="Comments">
                                   <i class="fa fa-commenting"></i>
-                                  <ins>52</ins>
+                                  <ins><?php echo count($post->commentsRecords) ?></ins>
                                 </span>
                               </li>
 
-                              <li>
-                                <span>
-                                  <a class="share-pst" href="#" title="Share">
-                                    <i class="fa fa-share-alt"></i>
-                                  </a>
-                                  <ins>20</ins>
-                                </span> 
-                              </li>
+                              
                             </ul>
                             <div class="users-thumb-list">
+                              <?php foreach ($likesRecords as $like ) { ?>
                               <a data-toggle="tooltip" title="" href="#" data-original-title="Anderw">
-                                <img alt="" src="images/resources/userlist-1.jpg">  
+                                <img alt="" src="<?php echo $like->avatar ?>">  
                               </a>
-                              <a data-toggle="tooltip" title="" href="#" data-original-title="frank">
-                                <img alt="" src="images/resources/userlist-2.jpg">  
-                              </a>
-                              <a data-toggle="tooltip" title="" href="#" data-original-title="Sara">
-                                <img alt="" src="images/resources/userlist-3.jpg">  
-                              </a>
-                              <a data-toggle="tooltip" title="" href="#" data-original-title="Amy">
-                                <img alt="" src="images/resources/userlist-4.jpg">  
-                              </a>
-                              <a data-toggle="tooltip" title="" href="#" data-original-title="Ema">
-                                <img alt="" src="images/resources/userlist-5.jpg">  
-                              </a>
-                              <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
+                              <?php  } ?>
+                              <?php foreach ($likesRecords as $like ) { ?>
+                              <span> <b><?php echo $like->name ?> </b> 
+                              <?php  } ?> et <a href="#" title="">plus que24+ </a> j'aimes</span>
                             </div>
                           </div>
                         </div>
                         <div class="coment-area" style="">
                           <ul class="we-comet">
-                            <li>
-                              <div class="comet-avatar">
-                                <img src="images/resources/nearly3.jpg" alt="">
-                              </div>
-                              <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Jason borne</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel</p>
-                                <div class="inline-itms">
-                                  <span>1 year ago</span>
-                                  <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
-                                  <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
-                                </div>
-                              </div>
 
-                            </li>
+                            <?php foreach ($commentsRecords as $comment ) { ?>
                             <li>
                               <div class="comet-avatar">
-                                <img src="images/resources/comet-4.jpg" alt="">
+                                <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $comment->avatar ?>" alt="">
                               </div>
                               <div class="we-comment">
-                                <h5><a href="time-line.html" title="">Sophia</a></h5>
-                                <p>we are working for the dance and sing songs. this video is very awesome for the youngster.
+                                <h5><a href="time-line.html" title=""><?php echo $comment->name ?></a></h5>
+                                <p><?php echo $comment->content ?>
                                   <i class="em em-smiley"></i>
                                 </p>
                                 <div class="inline-itms">
-                                  <span>1 year ago</span>
+                                  <span>  il y a <?php echo xTimeAgo ($post->createdDTM, New Date() )  ?> </span>
                                   <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
                                   <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
                                 </div>
                               </div>
                             </li>
+                            <?php } ?>
+
                             <li>
                               <a href="#" title="" class="showmore underline">more comments+</a>
                             </li>
