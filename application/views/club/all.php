@@ -2,22 +2,10 @@
             <div class="container">
                <div class="row">
                   <div class="col-sm-12">
-                     <div class="iq-card">
-                        <div class="iq-card-header d-flex justify-content-between">
-                           <div class="iq-header-title">
-                              <h4 class="card-title">La liste des club </h4>
-                           </div>
-                           <div class="iq-card-header-toolbar d-flex align-items-center">
-                              <div class="dropdown show">
-                                
-                                 
-                              </div>
-                           </div>
-                        </div>
-                        <div class="iq-card-body">
-                           <div class="table-responsive">
 
-               <table  class="table" id="tableid" style="width: cover" >
+                      <div class="widget">
+                    <h4 class="widget-title">La liste des club</h4>
+                     <table  class="table" id="tableid" style="width: cover" >
                     <thead>
                     <tr>
                         <th>Faculté</th>
@@ -93,11 +81,13 @@
                     ?>
                     </tbody>
                   </table>
-               
-                              
-                           </div>
-                        </div>
-                     </div>
+                  </div>
+
+
+
+
+
+                  
                   </div>
                </div>
             </div>
