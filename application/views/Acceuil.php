@@ -149,18 +149,24 @@
                             </ul>
                             <div class="users-thumb-list">
                               <?php $i=1 ; foreach ($post->likeRecords  as $like ) { $i++ ;
-                              if ($i>2)
+                              if ($i>7)
                                         {
                                         break;
                                         }
                                 ?>
                               <a data-toggle="tooltip" title="" href="#" data-original-title="Anderw">
-                                <img alt="" src="<?php echo $like->avatar ?>">  
+                                <img alt="" src="<?php echo base_url() ?>uploads/avatar/<?php echo $like->avatar ?>">  
                               </a>
                               <?php  } ?>
-                              <?php foreach ($post->likeRecords as $like ) { ?>
+
+                              <?php $i=1 ; foreach ($post->likeRecords  as $like ) { $i++ ;
+                              if ($i>2)
+                                        {
+                                        break;
+                                        }
+                                ?>
                               <span> <b><?php echo $like->name ?> </b> 
-                              <?php  } ?> et <a href="#" title=""> +<?php  echo  count($post->likeRecords)-2 ?> </a> j'aimes</span>
+                              <?php  } ?> et <a href="#" title=""> +<?php  echo  count($post->likeRecords) ?> </a> j'aimes</span>
                             </div>
                           </div>
                         </div>
