@@ -148,12 +148,12 @@
                               
                             </ul>
                             <div class="users-thumb-list">
-                              <?php foreach ($likeRecords as $like ) { ?>
+                              <?php foreach ($Post->likeRecords  as $like ) { ?>
                               <a data-toggle="tooltip" title="" href="#" data-original-title="Anderw">
                                 <img alt="" src="<?php echo $like->avatar ?>">  
                               </a>
                               <?php  } ?>
-                              <?php foreach ($likeRecords as $like ) { ?>
+                              <?php foreach ($Post->likeRecords as $like ) { ?>
                               <span> <b><?php echo $like->name ?> </b> 
                               <?php  } ?> et <a href="#" title="">plus que24+ </a> j'aimes</span>
                             </div>
@@ -162,7 +162,7 @@
                         <div class="coment-area" style="">
                           <ul class="we-comet">
 
-                            <?php foreach ($commentsRecords as $comment ) { ?>
+                            <?php foreach ($Post->commentsRecords as $comment ) { ?>
                             <li>
                               <div class="comet-avatar">
                                 <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $comment->avatar ?>" alt="">
