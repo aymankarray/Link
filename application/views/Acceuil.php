@@ -1,3 +1,4 @@
+<div class="col-lg-12">
 <div class="row merged20" id="page-contents">
               <!-- sidebar -->
               <div class="col-lg-9">
@@ -404,3 +405,5 @@
                 </aside>
               </div><!-- sidebar -->
             </div>
+
+          </div>
