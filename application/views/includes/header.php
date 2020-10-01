@@ -558,7 +558,7 @@
 			</ul>
 			<div class="user-img">
 				<h5><?php echo $name ?></h5>
-				<img src="<?php echo base_url()?>uploads/avatar/<?php echo $avatar ?>" alt="">
+				<img src="<?php echo base_url()?>uploads/avatar/<?php echo $avatar ?>" width="20%" alt="">
 				<span class="status f-online"></span>
 				<div class="user-setting">
 					<span class="seting-title">Paramètre d'utilisateur <a href="#" title="">voir tout</a></span>
