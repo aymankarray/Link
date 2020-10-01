@@ -58,7 +58,7 @@
 </div>
 	
 	<script src="<?php echo base_url() ?>assets/js/main.min.js"></script>
-	<script defer src="<?php echo base_url() ?>assets/js/jquery.downCount.js"></script>
+	<script src="<?php echo base_url() ?>assets/js/jquery.downCount.js"></script>
 	<script src="<?php echo base_url() ?>assets/js/script.js"></script>
         
         
