@@ -264,13 +264,13 @@
     </div>
   </div><!-- send message popup --> 
   
-  <script defer src="<?php echo base_url()?>assets/js/main.min.js"></script>
+  <script  src="<?php echo base_url()?>assets/js/main.min.js"></script>
   <script src="<?php echo base_url()?>assets/js/jquery-stories.js"></script>
   <script src="cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8c55_YHLvDHGACkQscgbGLtLRdxBDCfI"></script>
   <script src="<?php echo base_url()?>assets/js/locationpicker.jquery.js"></script>
   <script src="<?php echo base_url()?>assets/js/map-init.js"></script>
-  <script src="<?php echo base_url()?>assets/js/script.js"></script>
+  <script defer src="<?php echo base_url()?>assets/js/script.js"></script>
   <script>
     jQuery(document).ready(function($) {
       
