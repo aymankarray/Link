@@ -34,12 +34,12 @@
 <body>
 	<div class="wavy-wraper">
 		<div class="wavy">
-		  <span style="--i:1;">p</span>
-		  <span style="--i:2;">i</span>
-		  <span style="--i:3;">t</span>
-		  <span style="--i:4;">n</span>
-		  <span style="--i:5;">i</span>
-		  <span style="--i:6;">k</span>
+		  <span style="--i:1;">T</span>
+		  <span style="--i:2;">L</span>
+		  <span style="--i:3;">I</span>
+		  <span style="--i:4;">N</span>
+		  <span style="--i:5;">K</span>
+		  <span style="--i:6;">.</span>
 		  <span style="--i:7;">.</span>
 		  <span style="--i:8;">.</span>
 		  <span style="--i:9;">.</span>
@@ -240,19 +240,9 @@
 					</ul></div></div>
 			
 		</nav>
-<div id="mm-0" class="mm-page mm-slideout"><div class="wavy-wraper hidden">
-		<div class="wavy">
-		  <span style="--i:1;">T</span>
-		  <span style="--i:2;">L</span>
-		  <span style="--i:3;">I</span>
-		  <span style="--i:4;">N</span>
-		  <span style="--i:5;">K</span>
-		  <span style="--i:6;">.</span>
-		  <span style="--i:7;">.</span>
-		  <span style="--i:8;">.</span>
-		  <span style="--i:9;">.</span>
-		</div>
-	</div><div class="theme-layout">
+<div id="mm-0" class="mm-page mm-slideout">
+
+	<div class="theme-layout">
 	
 	<div class="postoverlay" style="display: none;"></div>
 	
