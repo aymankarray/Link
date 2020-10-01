@@ -270,7 +270,7 @@
 			</div>
 			<div class="top-search">
 				<form method="post" class="">
-					<input type="text" placeholder="Search People, Pages, Groups etc">
+					<input type="text" placeholder="Chercher">
 					<button data-ripple><i class="ti-search"></i></button>
 				</form>
 			</div>
@@ -553,7 +553,7 @@
 			</ul>
 			<div class="user-img">
 				<h5><?php echo $name?></h5>
-				<img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" alt="">
+				<img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" width="30" alt="">
 				<span class="status f-online"></span>
 				<div class="user-setting">
 					<span class="seting-title">User setting <a href="#" title="">see all</a></span>
