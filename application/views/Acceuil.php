@@ -149,7 +149,7 @@
                             </ul>
                             <div class="users-thumb-list">
                               <?php $i=1 ; foreach ($post->likeRecords  as $like ) { $i++ ;
-                              if ($i>4)
+                              if ($i>6)
                                         {
                                         break;
                                         }
