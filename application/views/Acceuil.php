@@ -148,12 +148,12 @@
                               
                             </ul>
                             <div class="users-thumb-list">
-                              <?php foreach ($likesRecords as $like ) { ?>
+                              <?php foreach ($likeRecords as $like ) { ?>
                               <a data-toggle="tooltip" title="" href="#" data-original-title="Anderw">
                                 <img alt="" src="<?php echo $like->avatar ?>">  
                               </a>
                               <?php  } ?>
-                              <?php foreach ($likesRecords as $like ) { ?>
+                              <?php foreach ($likeRecords as $like ) { ?>
                               <span> <b><?php echo $like->name ?> </b> 
                               <?php  } ?> et <a href="#" title="">plus que24+ </a> j'aimes</span>
                             </div>
