@@ -1076,7 +1076,7 @@
 				</li>
 				
 				<li>
-					<a href="newsfeed.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Newsfeed Page">
+					<a href="<?php echo base_url() ?>club" title="" data-toggle="tooltip" data-placement="right" data-original-title="Clubs">
 						<i class="ti-magnet"></i>
 					</a>
 				</li>

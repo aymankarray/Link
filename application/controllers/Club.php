@@ -23,7 +23,7 @@ class Club extends BaseController {
     }
     
 
-		public function clubListing()
+		public function index()
 		        {
 
 		                $this->load->model('club_model');
@@ -31,21 +31,11 @@ class Club extends BaseController {
 		                $data['clubRecords'] = $this->club_model->clubListing();
 
 		                $this->global['pageTitle'] = 'CodeInsect : club  Listing';
-		             	$this->global['active'] = 'clubs';
+		             	$this->global['active'] = 'Clubs';
 		                $this->loadViews("club/all", $this->global, $data, NULL);   
 		        }
 
-		public function clubListing2()
-		        {
 
-		                $this->load->model('club_model');
-		                $searchText='' ;
-		                $data['clubRecords'] = $this->club_model->clubListing();
-
-		                $this->global['pageTitle'] = 'CodeInsect : club  Listing';
-		             $this->global['active'] = 'clubs';
-		                $this->loadViews("club/list", $this->global, $data, NULL);   
-		        }
 
 				public function clubInfo($clubId)
 		        {
