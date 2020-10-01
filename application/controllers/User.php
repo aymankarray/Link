@@ -17,19 +17,18 @@ class User extends BaseController
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('evaluation_model');
+  
         $this->load->model('user_model');
-        $this->load->model('scores_model'); 
-        $this->load->model('Scores_club_model');  
+ 
         
         $this->load->model('club_model'); 
         $this->load->model('project_model');   
         $this->load->model('Image_upload_model');
         $this->load->model('actualite_model');
         $this->load->model('notification_model');
-        $this->load->model('finance_model');
+
         $this->load->model('Tfm_part_model');
-        $this->load->model('ressource_model');
+
         $this->load->model('login_model');
         $this->load->model('posts_model') ; 
         $this->load->model('user_cariere_model') ;
@@ -51,8 +50,7 @@ class User extends BaseController
 
         $data['MyTFM'] = $this->Tfm_part_model->TFMMyBus($this->vendorId);
         
-
-              
+             
         $data["tunimateurs"] = count($this->user_model->userListing($this->vendorId))  ; 
         $data["tunimateursApp"] = count($this->user_model->userListingApprouveF());
         $data["tunimateursAppJ"] = count($this->user_model->userListingApprouveFJ());
@@ -60,51 +58,15 @@ class User extends BaseController
       
         $data["clubscountS"] = count($this->club_model->clubListingS() )  ;
         $data["clubscountJ"] = count($this->club_model->clubListingJ() )  ;
-
-        $data["projets"] = $this->Scores_club_model->scoreValiderListing()  ;
-        $data["projetsStat"] = $this->Scores_club_model->scoreValiderStatsListing()  ;
-        $data["projetsStatType"] = $this->Scores_club_model->scoreValiderStatsbyTypeListing() ;
-
-        $data["projetsStatTypeDateConf"] = $this->Scores_club_model->scoreValiderStatsbyTypeDateListing('Conférence') ;
-        $data["projetsStatTypeDateEvenement"] = $this->Scores_club_model->scoreValiderStatsbyTypeDateListing('Evenement') ;
-        $data["projetsStatTypeDateFormation"] = $this->Scores_club_model->scoreValiderStatsbyTypeDateListing('Formation') ;
-
-        $data["RateClub"] = $this->scores_model->RaitingClub() ;
-
-
-        foreach ($data["RateClub"] as $key ) {                
-            $key->Conf = count($this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Evenement',$key->clubID ));
-            $key->Evenement  =  count($this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Conférence',$key->clubID));
-            $key->Formation  =count( $this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Formation',$key->clubID));
-            $key->Soir  =count( $this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Soirée',$key->clubID));
-            $key->Action  =count( $this->Scores_club_model->scoreValiderStatsbyTypeClubListing('Action',$key->clubID));
-                                             }
-
-
-
-        $data["LastRaitingClub"] = $this->scores_model->LastRaitingClub()   ;
-        
-
-        $data["RateMember"] = $this->scores_model->RaitingUsers(10 , 5 , '')   ;
-        $data["RateVPAF"] = $this->scores_model->RaitingUsers(3 , 3 , 'Administration et finance')   ;
-        $data["RateVPM"] = $this->scores_model->RaitingUsers(3 , 3 , 'Marketing')   ;
-        $data["RateVPE"] = $this->scores_model->RaitingUsers(3 , 3 , 'Evenementiel')   ;
-        $data["RateVPRH"] = $this->scores_model->RaitingUsers(3 , 3 , 'Gestion des talents')   ;
-
-
-
-        $data["countEval"] = count($this->evaluation_model->evaluation_A_ValidListing($this->clubID))   ;
+     
         $data['ActuRecords'] = $this->actualite_model->actuListing();
         $data['MyclubID'] = $this->clubID;
-        $data['MyuserId'] = $this->vendorId;
         $data["membersCount"] = count($this->user_model->userListingByclub($this->vendorId,$this->clubID)) ;
-        $data["user"] = $this->user_model->getUserInfoWithRole($this->vendorId) ;
-        $count = $this->finance_model->financeListing($this->clubID);
-        $data['bilancount'] = count($count)  ; 
-        $data["TFMVALID"] = $this->Tfm_part_model->TFMValid($this->vendorId) ;
+
+       
 
          
-        $this->global['active'] = 'dash';
+        $this->global['active'] = 'dashboard';
     
         $this->loadViews("dashboard", $this->global, $data , NULL);
     }
