@@ -155,12 +155,12 @@
                                         }
                                 ?>
                               <a data-toggle="tooltip" title="" href="#" data-original-title="Anderw">
-                                <img alt="" src="<?php echo base_url() ?>uploads/avatar/<?php echo $like->avatar ?>">  
+                                <img alt="" width="10%"> src="<?php echo base_url() ?>uploads/avatar/<?php echo $like->avatar ?>">  
                               </a>
                               <?php  } ?>
 
                               <?php $i=1 ; foreach ($post->likeRecords  as $like ) { $i++ ;
-                              if ($i>2)
+                              if ($i>3)
                                         {
                                         break;
                                         }
