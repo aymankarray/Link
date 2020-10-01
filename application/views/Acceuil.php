@@ -94,7 +94,7 @@
                             </div>
                           </div>
                           <ins><a href="time-line.html" title=""><?php echo $post->name ?></a> a publié <a href="#" title="">une publication</a></ins>
-                          <span><i class="fa fa-globe"></i> il y a <?php echo xTimeAgo ($post->DatePosted, New Date() )  ?> </span>
+                          <span><i class="fa fa-globe"></i> il y a <?php echo xTimeAgo ($post->DatePosted, date() )  ?> </span>
                         </div>
                         <div class="post-meta">
                           <?php if ($post->photo != '' ){ ?>
@@ -173,7 +173,7 @@
                                   <i class="em em-smiley"></i>
                                 </p>
                                 <div class="inline-itms">
-                                  <span>  il y a <?php echo xTimeAgo ($post->createdDTM, New Date() )  ?> </span>
+                                  <span>  il y a <?php echo xTimeAgo ($post->createdDTM,  date() )  ?> </span>
                                   <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
                                   <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
                                 </div>
