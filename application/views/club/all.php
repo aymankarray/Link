@@ -1,7 +1,10 @@
-<div id="content-page" class="content-page">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
+<section>
+    <div class="gap2 gray-bg">
+      <div class="container">
+        <div class="row">
+
+<div class="col-lg-12">
+<div class="row merged20" id="page-contents">
 
                       <div class="widget">
                     <h4 class="widget-title">La liste des club</h4>
@@ -92,3 +95,7 @@
                </div>
             </div>
          </div>
+
+          
+    </div>  
+  </section>
