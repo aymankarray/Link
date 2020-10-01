@@ -684,7 +684,7 @@ header.sticky {
 .top-area {
     display: inline-block;
     text-align: right;
-    vertical-align: middle;
+    vertical-align: super;
     width: 84%;
 }
 
@@ -695,13 +695,13 @@ header.sticky {
     list-style: outside none none;
     margin-bottom: 0;
     padding-left: 10px;
-    vertical-align: middle;
+    vertical-align: super;
 }
 
 .top-area > ul > li {
     display: inline-block;
     position: relative;
-    vertical-align: top;
+    vertical-align: super;
     z-index: 2;
 }
 
