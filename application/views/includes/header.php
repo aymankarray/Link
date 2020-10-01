@@ -22,11 +22,11 @@
 	<title>Tunivisions.Link | <?php echo $pageTitle ?></title>
     <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16"> 
     
-    <link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="css/weather-icons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/main.min.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/weather-icons.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/color.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive.css">
 
 </head>
 <body>
