@@ -1,4 +1,4 @@
-</div>
+
       </div>
     </div>  
   <p class="post"></p></section>

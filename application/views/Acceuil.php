@@ -102,9 +102,10 @@
                           <span><i class="fa fa-globe"></i> il y a <?php echo $post->DatePosted ?> </span>
                         </div>
                         <div class="post-meta">
+                          <?php if ($post->photo != '' ){ ?>
                           <figure>
                             <a href="https://www.youtube.com/watch?v=fF382gwEnG8" title="" data-strip-group="mygroup" class="strip vdeo-link" data-strip-options="width: 700,height: 450,youtube: { autoplay: 1 }">
-                            <img src="images/resources/user-post.jpg" alt="">
+                            <img src="<?php echo base_url() ?>uploads/post/<?php echo $post->photo ?>" alt="">
                               <i>
                                 <svg version="1.1" class="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="55px" width="55px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
                                 <path class="stroke-solid" fill="none" stroke="" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7
@@ -120,7 +121,8 @@
                               <li><a class="bg-red" href="#" title="dislike Post"><i class="ti-thumb-down"></i></a></li>
                             </ul>
 
-                          </figure>                       
+                          </figure>     
+                          <?php } ?>                  
                           <div class="description">
                             <p>
                               <?php echo $post->Content ?>
