@@ -36,7 +36,13 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive.css">
 
 <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/map.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/marker.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/geocoder.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/infowindow.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/<?php echo base_url() ?>assets/js/42/7/intl/fr_ALL/controls.js"></script></head>
-<body><nav id="shoppingbag" class="mm-menu mm-offcanvas mm-right" aria-hidden="true"><div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened" id="mm-13"><div class="mm-navbar"><a class="mm-title">General Setting</a></div>
+
+<body><nav id="shoppingbag" class="mm-menu mm-offcanvas mm-right" aria-hidden="true">
+	<div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened" id="mm-13">
+		<div class="mm-navbar">
+			<a class="mm-title">General Setting
+			</a
+			></div>
 				<div class="">
 					<form method="post">
 						<div class="setting-row">
@@ -280,10 +286,10 @@
 				</form>
 			</div>
 			<div class="page-name">
-			    <span>Newsfeed</span>
+			    <span><?php echo $pageTitle ?></span>
 			 </div>
 			<ul class="setting-area">
-				<li><a href="newsfeed.html" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
+				<li><a href="<?php echo base_url()?>" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
 				<li>
 					<a href="#" title="Friend Requests" data-ripple="">
 						<i class="fa fa-user"></i><em class="bg-red">5</em>
