@@ -13,11 +13,9 @@ class Club extends BaseController {
 			        $this->load->model('notification_model');
 			        $this->load->model('club_model');
 					$this->load->model('project_model');
-					$this->load->model('scores_club_model');
-					$this->load->model('finance_model');
+
 					$this->load->model('project_model');
-					$this->load->model('scores_model');
-					$this->load->model('evaluation_model');
+
 					
         $this->isLoggedIn();   
     }
@@ -41,8 +39,7 @@ class Club extends BaseController {
 		        {
 					
 		      
-					$data["finance"] = $this->finance_model->financeInfostat($clubId);
-					$data["scoreByClub"] = $this->scores_model->ScoreClub($clubId);
+
 			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
 			        $data["bureauExe"] = $this->club_model->BureauListing($clubId);
 			        $data["ProjectByClub"] = $this->project_model->projectListingByClubPost($clubId);
@@ -53,12 +50,10 @@ class Club extends BaseController {
 			 		$count = $this->user_model->userListing($this->vendorId);
 			        $data['userRecords'] = $this->user_model->userListingByclub($this->vendorId,$clubId);
 
-			        $data["RatingMembers"] = $this->scores_model-> RaitingUsersByClubV($clubId) ; 
-
 			        
 
 
-			    	$this->global['active'] = 'myClub';   
+			    	$this->global['active'] = 'mon club';   
 			    	$this->global['clubN'] = $clubId;    
 			       $this->loadViews("club/myClub", $this->global, $data, NULL);
 		        }
