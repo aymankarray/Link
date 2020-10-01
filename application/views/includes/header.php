@@ -29,11 +29,11 @@
 <body>
 	<div class="wavy-wraper">
 		<div class="wavy">
-		  <span style="--i:1;">p</span>
-		  <span style="--i:2;">i</span>
-		  <span style="--i:3;">t</span>
-		  <span style="--i:4;">n</span>
-		  <span style="--i:5;">i</span>
+		  <span style="--i:1;">T</span>
+		  <span style="--i:2;">.</span>
+		  <span style="--i:3;">L</span>
+		  <span style="--i:4;">i</span>
+		  <span style="--i:5;">n</span>
 		  <span style="--i:6;">k</span>
 		  <span style="--i:7;">.</span>
 		  <span style="--i:8;">.</span>
@@ -107,41 +107,11 @@
 				</div>
 			</div></div>
 			
-		</nav><nav id="menu" class="res-menu mm-menu mm-offcanvas" aria-hidden="true"><div class="mm-panels"><div class="mm-panel mm-hasnavbar mm-opened" id="mm-1"><div class="mm-navbar"><a class="mm-title">Menu</a></div><ul class="mm-listview">
-				<li><a class="mm-next mm-fullsubopen" href="#mm-2" aria-owns="mm-2" aria-haspopup="true"><span class="mm-sronly">Open submenu (Home Pages)</span></a><span>Home Pages</span> 
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-3" aria-owns="mm-3" aria-haspopup="true"><span class="mm-sronly">Open submenu (Pittube)</span></a><span>Pittube</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-4" aria-owns="mm-4" aria-haspopup="true"><span class="mm-sronly">Open submenu (PitPoint)</span></a><span>PitPoint</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-5" aria-owns="mm-5" aria-haspopup="true"><span class="mm-sronly">Open submenu (Pitjob)</span></a><span>Pitjob</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-6" aria-owns="mm-6" aria-haspopup="true"><span class="mm-sronly">Open submenu (Timeline)</span></a><span>Timeline</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-7" aria-owns="mm-7" aria-haspopup="true"><span class="mm-sronly">Open submenu (Favourit Page)</span></a><span>Favourit Page</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-8" aria-owns="mm-8" aria-haspopup="true"><span class="mm-sronly">Open submenu (Forum)</span></a><span>Forum</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-9" aria-owns="mm-9" aria-haspopup="true"><span class="mm-sronly">Open submenu (Featured)</span></a><span>Featured</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-10" aria-owns="mm-10" aria-haspopup="true"><span class="mm-sronly">Open submenu (Account Setting)</span></a><span>Account Setting</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-11" aria-owns="mm-11" aria-haspopup="true"><span class="mm-sronly">Open submenu (Authentication)</span></a><span>Authentication</span>
-					
-				</li>
-				<li><a class="mm-next mm-fullsubopen" href="#mm-12" aria-owns="mm-12" aria-haspopup="true"><span class="mm-sronly">Open submenu (Tools)</span></a><span>Tools</span>
-					
-				</li>
-			</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-2" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Home Pages)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Home Pages</a></div><ul class="mm-listview">
+		</nav>
+		<nav id="menu" class="res-menu">
+			<ul>
+				<li><span>Home Pages</span> 
+					<ul>
 						<li><a href="index-2.html" title="">Pitnik Default</a></li>
 						<li><a href="company-landing.html" title="">Company Landing</a></li>
 						<li><a href="pitrest.html" title="">Pitrest</a></li>
@@ -155,24 +125,36 @@
 						<li><a href="pitpoint.html" title="">PitPoint</a></li>
 						<li><a href="pittube.html" title="">Pittube</a></li>
 						<li><a href="chat-messenger.html" title="">Messenger</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-3" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Pittube)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Pittube</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Pittube</span>
+					<ul>
 						<li><a href="pittube.html" title="">Pittube</a></li>
 						<li><a href="pittube-detail.html" title="">Pittube single</a></li>
 						<li><a href="pittube-category.html" title="">Pittube Category</a></li>
 						<li><a href="pittube-channel.html" title="">Pittube Channel</a></li>
 						<li><a href="pittube-search-result.html" title="">Pittube Search Result</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-4" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (PitPoint)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">PitPoint</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>PitPoint</span>
+					<ul>
 						<li><a href="pitpoint.html" title="">PitPoint</a></li>
 						<li><a href="pitpoint-detail.html" title="">Pitpoint Detail</a></li>
 						<li><a href="pitpoint-list.html" title="">Pitpoint List style</a></li>
 						<li><a href="pitpoint-without-baner.html" title="">Pitpoint without Banner</a></li>
 						<li><a href="pitpoint-search-result.html" title="">Pitpoint Search</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-5" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Pitjob)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Pitjob</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Pitjob</span>
+					<ul>
 						<li><a href="career.html" title="">Pitjob</a></li>
 						<li><a href="career-detail.html" title="">Pitjob Detail</a></li>
 						<li><a href="career-search-result.html" title="">Job seach page</a></li>
 						<li><a href="social-post-detail.html" title="">Social Post Detail</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-6" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Timeline)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Timeline</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Timeline</span>
+					<ul>
 						<li><a href="timeline.html" title="">Timeline</a></li>
 						<li><a href="timeline-photos.html" title="">Timeline Photos</a></li>
 						<li><a href="timeline-videos.html" title="">Timeline Videos</a></li>
@@ -184,7 +166,10 @@
 						<li><a href="friends-birthday.html" title="">Friends' Birthday</a></li>
 						<li><a href="newsfeed.html" title="">Newsfeed</a></li>
 						<li><a href="search-result.html" title="">Search Result</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-7" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Favourit Page)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Favourit Page</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Favourit Page</span>
+					<ul>
 						<li><a href="fav-page.html" title="">Favourit Page</a></li>
 						<li><a href="fav-favers.html" title="">Fav Page Likers</a></li>
 						<li><a href="fav-events.html" title="">Fav Events</a></li>
@@ -192,12 +177,18 @@
 						<li><a href="event-calendar.html" title="">Event Calendar</a></li>
 						<li><a href="fav-page-create.html" title="">Create New Page</a></li>
 						<li><a href="price-plans.html" title="">Price Plan</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-8" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Forum)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Forum</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Forum</span>
+					<ul>
 						<li><a href="forum.html" title="">Forum</a></li>
 						<li><a href="forum-create-topic.html" title="">Forum Create Topic</a></li>
 						<li><a href="forum-open-topic.html" title="">Forum Open Topic</a></li>
 						<li><a href="forums-category.html" title="">Forum Category</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-9" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Featured)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Featured</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Featured</span>
+					<ul>
 						<li><a href="chat-messenger.html" title="">Messenger (Chatting)</a></li>
 						<li><a href="notifications.html" title="">Notifications</a></li>
 						<li><a href="badges.html" title="">Badges</a></li>
@@ -207,13 +198,19 @@
 						<li><a href="weather-forecast.html" title="">weather-forecast</a></li>
 						<li><a href="statistics.html" title="">Statics/Analytics</a></li>
 						<li><a href="shop-cart.html" title="">Shop Cart</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-10" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Account Setting)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Account Setting</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Account Setting</span>
+					<ul>
 						<li><a href="setting.html" title="">Setting</a></li>
 						<li><a href="privacy.html" title="">Privacy</a></li>
-						<li><a href="support-and-help.html" title="">Support &amp; Help</a></li>
+						<li><a href="support-and-help.html" title="">Support & Help</a></li>
 						<li><a href="support-and-help-detail.html" title="">Support Detail</a></li>
 						<li><a href="support-and-help-search-result.html" title="">Support Search</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-11" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Authentication)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Authentication</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Authentication</span>
+					<ul>
 						<li><a href="login.html" title="">Login Page</a></li>
 						<li><a href="register.html" title="">Register Page</a></li>
 						<li><a href="logout.html" title="">Logout Page</a></li>
@@ -221,15 +218,19 @@
 						<li><a href="error-404.html" title="">Error 404</a></li>
 						<li><a href="error-404-2.html" title="">Error 404-2</a></li>
 						<li><a href="error-500.html" title="">Error 500</a></li>
-					</ul></div><div class="mm-panel mm-hidden mm-hasnavbar" id="mm-12" aria-hidden="true"><div class="mm-navbar"><a class="mm-btn mm-prev" href="#mm-1" aria-owns="mm-1" aria-haspopup="true"><span class="mm-sronly">Close submenu (Tools)</span></a><a class="mm-title" href="#mm-1" aria-hidden="true">Tools</a></div><ul class="mm-listview">
+					</ul>
+				</li>
+				<li><span>Tools</span>
+					<ul>
 						<li><a href="typography.html" title="">Typography</a></li>
 						<li><a href="popup-modals.html" title="">Popups/Modals</a></li>
 						<li><a href="post-versions.html" title="">Post Versions</a></li>
 						<li><a href="sliders.html" title="">Sliders / Carousel</a></li>
 						<li><a href="google-map.html" title="">Google Maps</a></li>
 						<li><a href="widgets.html" title="">Widgets</a></li>
-					</ul></div></div>
-			
+					</ul>
+				</li>
+			</ul>
 		</nav>
 
 	</div><div class="theme-layout">
