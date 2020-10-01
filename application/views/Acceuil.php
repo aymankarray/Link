@@ -149,12 +149,12 @@
                             </ul>
                             <div class="users-thumb-list">
                               <?php $i=1 ; foreach ($post->likeRecords  as $like ) { $i++ ;
-                              if ($i>7)
+                              if ($i>4)
                                         {
                                         break;
                                         }
                                 ?>
-                              <a data-toggle="tooltip" title="" href="#" data-original-title="Anderw">
+                              <a data-toggle="tooltip" title="<?php echo $like->name ?>" href="#" data-original-title="<?php echo $like->name ?>">
                                 <img alt="" width="10%" src="<?php echo base_url() ?>uploads/avatar/<?php echo $like->avatar ?>">  
                               </a>
                               <?php  } ?>
