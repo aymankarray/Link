@@ -6,7 +6,7 @@
                   <span class="create-post">Créer un post</span>
                   <div class="new-postbox">
                     <figure>
-                      <img src="<?php echo base_url() ?>uplaods/avatar/<?php echo $avatar ?>" alt="">
+                      <img src="<?php echo base_url() ?>uplaods/avatar/<?php echo $avatar ?>" width = "20%" alt="">
                     </figure>
                     <div class="newpst-input">
                       <form method="post">
