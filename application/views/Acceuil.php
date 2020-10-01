@@ -148,12 +148,12 @@
                               
                             </ul>
                             <div class="users-thumb-list">
-                              <?php foreach ($Post->likeRecords  as $like ) { ?>
+                              <?php foreach ($post->likeRecords  as $like ) { ?>
                               <a data-toggle="tooltip" title="" href="#" data-original-title="Anderw">
                                 <img alt="" src="<?php echo $like->avatar ?>">  
                               </a>
                               <?php  } ?>
-                              <?php foreach ($Post->likeRecords as $like ) { ?>
+                              <?php foreach ($post->likeRecords as $like ) { ?>
                               <span> <b><?php echo $like->name ?> </b> 
                               <?php  } ?> et <a href="#" title="">plus que24+ </a> j'aimes</span>
                             </div>
@@ -162,7 +162,7 @@
                         <div class="coment-area" style="">
                           <ul class="we-comet">
 
-                            <?php foreach ($Post->commentsRecords as $comment ) { ?>
+                            <?php foreach ($post->commentsRecords as $comment ) { ?>
                             <li>
                               <div class="comet-avatar">
                                 <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $comment->avatar ?>" alt="">
@@ -173,7 +173,7 @@
                                   <i class="em em-smiley"></i>
                                 </p>
                                 <div class="inline-itms">
-                                  <span>  il y a <?php echo xTimeAgo ($post->createdDTM,  date('Y-m-d H:i:s') )  ?> </span>
+                                  <span>  il y a <?php echo xTimeAgo ($comment->createdDTM,  date('Y-m-d H:i:s') )  ?> </span>
                                   <a class="we-reply" href="#" title="Reply"><i class="fa fa-reply"></i></a>
                                   <a href="#" title=""><i class="fa fa-heart"></i><span>20</span></a>
                                 </div>
