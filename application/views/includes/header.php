@@ -53,7 +53,7 @@
 				<a class="" href="#menu"><i class="fa fa-align-justify"></i></a>
 			</span>
 			<span class="mh-text">
-				<a href="newsfeed.html" title=""><img src="images/logo2.png" alt=""></a>
+				<a href="newsfeed.html" title=""><img src="<?php echo base_url() ?>assets/images/logo2.svg" alt=""></a>
 			</span>
 			<span class="mh-btns-right">
 				<a class="fa fa-sliders" href="#shoppingbag"></a>
@@ -259,7 +259,7 @@
 	
 	<div class="topbar stick">
 		<div class="logo">
-			<a title="" href="newsfeed.html"><img src="images/logo.png" alt=""></a>
+			<a title="" href="newsfeed.html"><img src="<?php echo base_url() ?>assets/images/logo2.svg" alt=""></a>
 		</div>
 		<div class="top-area">
 			<div class="main-menu">
@@ -1252,8 +1252,5 @@
 		</div>
 	</div><!-- left sidebar menu -->
 		
-	<section>
-		<div class="gap2 gray-bg">
-			<div class="container">
-				<div class="row">
+	
 					
