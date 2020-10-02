@@ -25,7 +25,7 @@
                                                         </div>
                                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                                             <div class="select-options">
-                                                                <button type="button" class="main-btn2" data-toggle="Ajout" data-target="#myModal">Ajouter un projet</button>
+                                                                <button type="button" class="main-btn2" data-toggle="modal" data-target="#myModal">Ajouter un projet</button>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-1 col-md-1 col-sm-1">
@@ -221,7 +221,7 @@
 
 
 
-    <div class="modal fade" id="Ajout">
+    <div class="modal fade" id="myModal">
                                             <div class="modal-dialog">
                                               <div class="modal-content">
 
