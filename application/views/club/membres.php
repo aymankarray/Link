@@ -120,7 +120,7 @@
                                 <option>See All</option>
                                 <option>Newest</option>
                                 <option>oldest</option>
-                              </select><div class="chosen-container chosen-container-single" style="width: 72px;" title=""><a class="chosen-single"><span>Sort by</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"></ul></div></div>
+                              </select>
                             </div>
                           </div>
                           <div class="col-lg-1 col-md-1 col-sm-1">
@@ -142,7 +142,7 @@
                   <div class="row">
                     <?php foreach ($members as $member ) { ?>
 
-                    <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="col-lg-4 ">
                       <div class="friend-box">
 
                         <div class="frnd-meta">
