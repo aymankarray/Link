@@ -33,7 +33,7 @@
                           <a href="<?php echo base_url() ?>club/clubInfo/<?php echo $record->clubID ?>" target="_blank"   >
                            <small><?php echo $record->name ?> </small> 
                            <?php if ($record->is_Actif=="0"){  ?>
-                            <i class="ri-stop-circle-fill"></i>
+                               <i class="fa fa-ban" aria-hidden="true"></i>
                            <?php } ?>
                          </a>
                         </td>
