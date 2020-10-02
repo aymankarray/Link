@@ -146,7 +146,7 @@
                       <div class="friend-box">
                         <figure>
                           <img src="images/resources/frnd-cover1.jpg" alt="">
-                          <span>Followers: 120</span>
+                          <span>Scores : 0</span>
                         </figure>
                         <div class="frnd-meta">
                           <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $member->avatar ?>" alt="">
