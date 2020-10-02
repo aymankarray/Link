@@ -8,7 +8,7 @@
                             
 
                             
-                            <div class="col-lg-9">
+                            <div class="col-lg-8">
                                 
                                 <div class="load-more4">
                                     <?php foreach ($projectRecords as $projet ) {  ?>
@@ -38,7 +38,7 @@
                                                     </div>
                                                     <div class="classi-pst-meta">
                                                         <h6><a href="#" title=""><?php echo $projet->titre ?></a></h6>
-                                                        <span><i class="fa fa-map-marker"></i> <?php echo $projet->local ?> <ins><i>Prix : </i> <?php echo $projet->local ?> </ins></span>
+                                                        <span><i class="fa fa-map-marker"></i> <?php echo $projet->local ?> <ins><i>Prix : </i> <?php echo $projet->prix ?> DT </ins></span>
                                                         <em><i class="fa fa-cloud-upload"></i> <?php echo $projet->startDate ?> au <?php echo $projet->startDate ?>  </em>
                                                     </div>
                                                 </div>
