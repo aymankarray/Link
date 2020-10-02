@@ -16,6 +16,8 @@ class Task extends BaseController {
 
     function index()
     {
+
+      $this->global['pageTitle'] = 'Taches';
       $this->loadViews('task/list', $this->global, Null, NULL) ; 
     }
     
