@@ -26,52 +26,7 @@ class Project extends BaseController {
 		        }
 
 
-        public function projectListingbyClub()
-                {
-                        $searchText='' ;
-                        $data['projectRecords'] = $this->project_model->projectListingByClub($this->clubID);
-                        $this->global['pageTitle'] = 'Projets ';
-                        $this->global['active'] = 'projects';
-                        $this->loadViews("project/ourProject", $this->global, $data, NULL);   
-                }
-
-
-
-        public function oldProjectListing()
-                {
-                        $titre='' ;
-                        $titre = $this->input->post('titre');
-                        $data['titre'] = $titre;
-                        $this->load->model('project_model');
-                        
-                        $data['projectRecords'] = $this->project_model->projectOldListing($titre);
-                        
-                        $this->global['pageTitle'] = 'Projets ';
-                        
-                        
-                        $this->loadViews("project/old", $this->global, $data, NULL);   
-                }
-
-
-
-        public function ScoringProjectListing()
-                {
-                        $titre='' ;
-                        $titre = $this->input->post('titre');
-                        $data['titre'] = $titre;
-                        $this->load->model('project_model');
-                        
-                        $data['projectRecords'] = $this->project_model->ScoringProjectListing($titre);
-                        
-                        $this->global['pageTitle'] = 'Scoring ';
-                        $this->global['active'] = 'projects';
-                        
-                        $this->loadViews("project/old", $this->global, $data, NULL);   
-                }
-
-
-
-		public function projectDetails($projectID)
+   		public function projectDetails($projectID)
 		        {
 
 		                $this->load->model('project_model');
@@ -140,7 +95,7 @@ class Project extends BaseController {
                                 
                 }
                 
-                     redirect('/Project/projectListing');
+                     redirect('/Project');
 
                 }
 

@@ -150,47 +150,7 @@
                                             
                                         </div><!-- Weather Widget -->
                                     </div><!-- weather-->
-                                    <div class="widget">
-                                        <h4 class="widget-title">Invite Friends <a class="see-all" href="#" title="">See All</a></h4>
-                                        <ul class="invitepage">
-                                            <li>
-                                                <figure>
-                                                    <img src="images/resources/friend-avatar.jpg" alt="">
-                                                    <a href="#">Jack carter</a>
-                                                </figure>
-                                                <a class="invited" href="#" title=""><i class="ti-check"></i></a>
-                                            </li>
-                                            <li>
-                                                <figure>
-                                                    <img src="images/resources/friend-avatar2.jpg" alt="">
-                                                    <a href="#">Emma watson</a>
-                                                </figure>
-                                                <a href="#" title="">Invite</a>
-                                            </li>
-                                            <li>
-                                                <figure>
-                                                    <img src="images/resources/friend-avatar3.jpg" alt="">
-                                                    <a href="#">Andrew</a>
-                                                </figure>
-                                                <a href="#" title="">Invite</a>
-                                            </li>
-                                            <li>
-                                                <figure>
-                                                    <img src="images/resources/friend-avatar4.jpg" alt="">
-                                                    <a href="#">Moona Singh</a>
-                                                </figure>
-                                                <a class="invited" href="#" title=""><i class="ti-check"></i></a>
-                                            </li>
-                                            <li>
-                                                <figure>
-                                                    <img src="images/resources/friend-avatar5.jpg" alt="">
-                                                    <a href="#">Harry pooter</a>
-                                                </figure>
-                                                <a href="#" title="">Invite</a>
-                                            </li>
-                                        </ul>
-                                        
-                                    </div><!-- page invitation widget -->   
+                                    
                                     <div class="widget stick-widget">
                                         <div class="banner medium-opacity purple">
                                             <div class="bg-image" style="background-image: url(images/resources/baner-widgetbg.jpg)"></div>
