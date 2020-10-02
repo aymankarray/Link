@@ -24,7 +24,7 @@ class Club extends BaseController {
 		                $searchText='' ;
 		                $data['clubRecords'] = $this->club_model->clubListing();
 
-		                $this->global['pageTitle'] = 'CodeInsect : club  Listing';
+		                $this->global['pageTitle'] = 'Clubs';
 		             	$this->global['active'] = 'Clubs';
 		                $this->loadViews("club/all", $this->global, $data, NULL);   
 		        }
