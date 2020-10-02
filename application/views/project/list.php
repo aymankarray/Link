@@ -297,20 +297,18 @@
                               <div class="col-md-12">                                
                                     <div class="form-group">
                                         <label for="fname">Cible  &nbsp; &nbsp; <br> </label>
-                                        <label class="kt-radio">
-                                                <input type="radio" name="cible" id="Publique" value="Publique" required> Publique
-                                                <span></span>
-                                        </label>
+                                        
+                                        <input type="radio" name="cible" id="Publique" value="Publique" required> Publique
+                                                
                                         &nbsp;&nbsp;
-                                        <label class="kt-radio">
-                                                <input type="radio" name="cible" id="prive" value="Privé"> Privé
-                                                <span></span>
-                                        </label>
+                                        
+                                        <input type="radio" name="cible" id="prive" value="Privé"> Privé
+                                          
+                                       
                                         &nbsp;&nbsp;
-                                        <label class="kt-radio">
-                                                <input type="radio" name="cible" id="Only" value="Only tunimateur" > Only tunimateur
-                                                <span></span>
-                                        </label>
+                                        
+                                        <input type="radio" name="cible" id="Only" value="Only tunimateur" > Only tunimateur
+                           
 
                                         <script type="text/javascript">
                                           $( "#Publique" ).click(function() {
