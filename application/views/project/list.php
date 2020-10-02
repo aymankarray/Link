@@ -12,7 +12,90 @@
                                 
                                 <div class="load-more4">
                                     <?php foreach ($projectRecords as $projet ) {  ?>
-                     
+                                    <div class="central-meta item" style="display: inline-block;">
+                                        <div class="classi-pst">
+                                            <div class="row merged10">
+                                                <div class="col-lg-6">
+                                                    <div class="image-bunch single">
+                                                        <figure><img src="<?php echo base_url() ?>uploads/projet/<?php echo $projet->banner ?>" alt=""></figure>
+                                                        <span><?php echo $projet->type ?>  </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="more">
+                                                        <div class="more-post-optns"><i class="ti-more-alt"></i>
+                                                            <ul>
+                                                                <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>
+                                                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
+                                                                <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>
+                                                                <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-fig">
+                                                        <img src="images/resources/tube-user2.jpg" alt="">
+                                                        <a href="#" title=""><?php echo $projet->ClubName ?> </a>
+                                                    </div>
+                                                    <div class="classi-pst-meta">
+                                                        <h6><a href="#" title=""><?php echo $projet->titre ?></a></h6>
+                                                        <span><i class="fa fa-map-marker"></i> <?php echo $projet->local ?> <ins><i>Prix : </i> <?php echo $projet->prix ?> DT </ins></span>
+                                                        <em><i class="fa fa-cloud-upload"></i> <?php echo $projet->startDate ?> au <?php echo $projet->startDate ?>  </em>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <p class="classi-pst-des">
+                                                         
+                                                    </p>
+                                                    <div class="we-video-info">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="views" title="views">
+                                                                    <i class="fa fa-eye"></i>
+                                                                    <ins>1.2k</ins>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="likes heart broken" title="Like/Dislike">❤ <span>0</span></div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="comment" title="Comments">
+                                                                    <i class="fa fa-commenting"></i>
+                                                                    <ins>52</ins>
+                                                                </span>
+                                                            </li>
+
+                                                            <li>
+                                                                <span>
+                                                                    <a class="share-pst" href="#" title="Share">
+                                                                        <i class="fa fa-share-alt"></i>
+                                                                    </a>
+                                                                    <ins>20</ins>
+                                                                </span> 
+                                                            </li>
+                                                        </ul>
+                                                        <div class="users-thumb-list">
+                                                            <a data-original-title="Anderw" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-1.jpg">  
+                                                            </a>
+                                                            <a data-original-title="frank" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-2.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Sara" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-3.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Amy" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-4.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Ema" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-5.jpg">  
+                                                            </a>
+                                                            <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <?php }  ?>
                                     </div>
                                 </div>
@@ -251,5 +334,5 @@
                     </div>
                 </div>
             </div>
-        </div>  
+         
     </section>
