@@ -1,14 +1,7 @@
-<section>
-    <div class="gap2 gray-bg">
-      <div class="container">
-        <div class="row">
-
-<div class="col-lg-12">
-<div class="row merged20" id="page-contents">
-
-                      <div class="widget">
-                    <h4 class="widget-title">La liste des club</h4>
-                     <table  class="table" id="tableid" style="width: cover" >
+<div class="widget">
+                    <h4 class="widget-title">Liste des clubs </h4>
+                    <ul class="faved-page">
+                         <table  class="table" id="tableid" style="width: cover" >
                     <thead>
                     <tr>
                         <th>Faculté</th>
@@ -84,18 +77,10 @@
                     ?>
                     </tbody>
                   </table>
+    
+                    </ul>
                   </div>
 
-
-
-
-
-                  
-                  </div>
-               </div>
-            </div>
-         </div>
-
-          
-    </div>  
-  </section>
+                 
+                    
+               
