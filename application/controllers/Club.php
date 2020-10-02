@@ -109,9 +109,7 @@ class Club extends BaseController {
 					          
 					            $searchText = $this->security->xss_clean($this->input->post('searchText'));
 					            $data['searchText'] = $searchText;
-					            
-					            $this->load->library('pagination');
-					            
+					            	            
 					            $data['members'] = $this->user_model->userListingByclub($clubID);
 								$data['cl'] = $clubID;
 					            
