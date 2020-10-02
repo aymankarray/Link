@@ -38,7 +38,8 @@ class Club_model extends CI_Model
        $this->db->join('tbl_users as Users1', 'Users1.ClubID = BaseTbl.clubID', 'LEFT') ; 
         $this->db->where('Users.roleId = 1 OR Users.roleId = ','2') ;
         $this->db->where('Users1.isDeleted = ','0') ;
-        $this->db->where('BaseTbl.clubID > ', 5 ) ; 
+        $this->db->where('BaseTbl.clubID > ', 5 ) ;
+        $this->db->where('BaseTbl.clubID != ', -1 ) ;  
         
         if($clubId == 0 ){
         $this->db->where('BaseTbl.SenJun = ', 3 ) ;      
