@@ -787,12 +787,6 @@
 				<img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" width="25" alt="">
 				<span class="status f-online"></span>
 				<div class="user-setting">
-					<span class="seting-title">Chat setting <a href="#" title="">see all</a></span>
-					<ul class="chat-setting">
-						<li><a href="#" title=""><span class="status f-online"></span>online</a></li>
-						<li><a href="#" title=""><span class="status f-away"></span>away</a></li>
-						<li><a href="#" title=""><span class="status f-off"></span>offline</a></li>
-					</ul>
 					<span class="seting-title">User setting <a href="#" title="">see all</a></span>
 					<ul class="log-out">
 						<li><a href="about.html" title=""><i class="ti-user"></i> view profile</a></li>
@@ -807,8 +801,8 @@
 		</div>
 		<nav>
 			<ul class="nav-list">
-								<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-home"></i> Fondation</a>
-					<ul class="submenu">
+				<li><a class="" href="#" title=""><i class="fa fa-home"></i> Fondation</a>
+					<ul>
 						<li><a href="<?php echo base_url() ?>Club/clubInfo/-1" title="">Board</a></li>
 						<li><a href="<?php echo base_url() ?>Club/clubInfo/0" title="">University</a></li>
 						<li><a href="<?php echo base_url() ?>Club/clubInfo/1" title="">High School</a></li>
@@ -816,16 +810,25 @@
 						<li><a href="<?php echo base_url() ?>Club" title="">Clubs</a></li>
 					</ul>
 				</li>
-				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-calendar"></i> Projets</a>
-					<ul class="submenu">
+				<li><a class="" href="#" title=""><i class="fa fa-film"></i> Pittube</a>
+					<ul>
+						<li><a href="pittube.html" title="">Pittube</a></li>
+						<li><a href="pittube-detail.html" title="">Pittube single</a></li>
+						<li><a href="pittube-category.html" title="">Pittube Category</a></li>
+						<li><a href="pittube-channel.html" title="">Pittube Channel</a></li>
+						<li><a href="pittube-search-result.html" title="">Pittube Search Result</a></li>
+					</ul>
+				</li>
+				<li><a class="" href="#" title=""><i class="fa fa-calendar"></i> Projet</a>
+					<ul>
 						<li><a href="pittube.html" title="">Calendrier</a></li>
 						<li><a href="pittube-detail.html" title="">Nos projet</a></li>
 						<li><a href="pittube-category.html" title="">Taches</a></li>
 						<li><a href="pittube-channel.html" title="">Historiques</a></li>
 					</ul>
 				</li>
-				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-line-chart"></i>Statistique</a>
-					<ul class="submenu">
+				<li><a class="" href="#" title=""><i class="fa fa-line-chart"></i> Statistique</a>
+					<ul>
 						<li><a href="pitpoint.html" title="">Dashboard</a></li>
 						<li><a href="pitpoint-detail.html" title="">Sondage</a></li>
 					</ul>
@@ -845,136 +848,11 @@
 						<span class="status f-online"></span>
 					</div>
 				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend2.jpg" alt="">
-						<span class="status f-away"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend3.jpg" alt="">
-						<span class="status f-online"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend4.jpg" alt="">
-						<span class="status f-offline"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend5.jpg" alt="">
-						<span class="status f-online"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend6.jpg" alt="">
-						<span class="status f-online"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend7.jpg" alt="">
-						<span class="status f-offline"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend8.jpg" alt="">
-						<span class="status f-online"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend9.jpg" alt="">
-						<span class="status f-away"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend10.jpg" alt="">
-						<span class="status f-away"></span>
-					</div>
-				</li>
-				<li>
-					<div class="author-thmb">
-						<img src="images/resources/side-friend8.jpg" alt="">
-						<span class="status f-online"></span>
-					</div>
-				</li>
-			<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 502px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 424px;"></div></div></ul>
-			<div class="chat-box">
-				<div class="chat-head">
-					<span class="status f-online"></span>
-					<h6>Bucky Barnes</h6>
-					<div class="more">
-						<div class="more-optns"><i class="ti-more-alt"></i>
-							<ul>
-								<li>block chat</li>
-								<li>unblock chat</li>
-								<li>conversation</li>
-							</ul>
-						</div>
-						<span class="close-mesage"><i class="ti-close"></i></span>
-					</div>
-				</div>
-				<div class="chat-list">
-					<ul class="ps-container ps-theme-default ps-active-y" data-ps-id="e2ecdce5-6df3-8703-9136-39917e4c5046">
-						<li class="me">
-							<div class="chat-thumb"><img src="images/resources/chatlist1.jpg" alt=""></div>
-							<div class="notification-event">
-								<span class="chat-message-item">
-									HI, Jack i have faced a problem with your software. are you available now, when i install this i have to received an error.
-								</span>
-								<span class="notification-date"><time datetime="2004-07-24T18:18" class="entry-date updated">Today at 2:12pm</time></span>
-							</div>
-						</li>
-						<li class="you">
-							<div class="chat-thumb"><img src="images/resources/chatlist2.jpg" alt=""></div>
-							<div class="notification-event">
-								<span class="chat-message-item">
-									Hi tina, Please let me know your purchase code, and show me the screnshot of error.
-								</span>
-								<span class="notification-date"><time datetime="2004-07-24T18:18" class="entry-date updated">Today at 2:14pm</time></span>
-							</div>
-						</li>
-						<li class="me">
-							<div class="chat-thumb"><img src="images/resources/chatlist1.jpg" alt=""></div>
-							<div class="notification-event">
-								<span class="chat-message-item">
-									Yes, sure please wait a while, i ll show you the complete error list. Thank you.
-								</span>
-								<span class="notification-date"><time datetime="2004-07-24T18:18" class="entry-date updated">Today at 2:15pm</time></span>
-							</div>
-						</li>
-					<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 290px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 215px;"></div></div></ul>
-					<form class="text-box">
-						<textarea placeholder="Post enter to post..."></textarea>
-						<div class="add-smiles">
-							<span title="add icon" class="em em-expressionless"></span>
-							<div class="smiles-bunch">
-								<i class="em em---1"></i>
-								<i class="em em-smiley"></i>
-								<i class="em em-anguished"></i>
-								<i class="em em-laughing"></i>
-								<i class="em em-angry"></i>
-								<i class="em em-astonished"></i>
-								<i class="em em-blush"></i>
-								<i class="em em-disappointed"></i>
-								<i class="em em-worried"></i>
-								<i class="em em-kissing_heart"></i>
-								<i class="em em-rage"></i>
-								<i class="em em-stuck_out_tongue"></i>
-							</div>
-						</div>
-						
-						<button type="submit"></button>
-					</form>
-				</div>
-			</div>
+				
+			<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div>
+			<div class="ps-scrollbar-y-rail" style="top: 0px; height: 502px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 424px;"></div></div>
+		</ul>
+			
 		</div>
 	</div><!-- right sidebar user chat -->
 	
