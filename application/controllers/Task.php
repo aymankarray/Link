@@ -20,7 +20,7 @@ class Task extends BaseController {
         $data["projet"] = $this->project_model->getProjectInfo(400);
 
       $this->global['pageTitle'] = 'Taches';
-      $this->loadViews('task/list', $this->global, Null, NULL) ; 
+      $this->loadViews('task/list', $this->global, $data, NULL) ; 
     }
     
 
