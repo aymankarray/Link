@@ -220,19 +220,19 @@
 
 
     <div class="modal fade" id="myModal">
-                                            <div class="modal-dialog">
-                                              <div class="modal-content">
+        <div class="modal-dialog">
+          <div class="modal-content">
 
-                                                <!-- Modal Header -->
-                                                <div class="modal-header">
-                                                  <h4 class="modal-title">Ajouter un projet</h4>
-                                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                </div>
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Ajouter un projet</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
 
-                                                <!-- Modal body -->
-                                                <div class="modal-body">
-                                                         <?php $this->load->helper("form"); ?>
-                    <form role="form"  id="addproject" action="<?php echo base_url() ?>Project/addNewP" method="post" role="form"  enctype="multipart/form-data">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <?php $this->load->helper("form"); ?>
+                <form role="form"  id="addproject" action="<?php echo base_url() ?>Project/addNewP" method="post" role="form"  enctype="multipart/form-data">
                         
 
 
@@ -296,14 +296,7 @@
                                         <label for="fname">Cible  &nbsp; &nbsp; <br> </label>
                                         
                                         <input type="radio" name="cible" id="Publique" value="Publique" required> Publique
-                                                
-                                        &nbsp;&nbsp;
-                                        
                                         <input type="radio" name="cible" id="prive" value="Privé"> Privé
-                                          
-                                       
-                                        &nbsp;&nbsp;
-                                        
                                         <input type="radio" name="cible" id="Only" value="Only tunimateur" > Only tunimateur
                            
 
@@ -415,12 +408,17 @@
                             <br>
                        
                     </form>
-                                                </div>
 
-                                                <!-- Modal footer -->
-                                                <div class="modal-footer">
-                                                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div><!-- fade Modal -->
+
+
+
+
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+    </div><!-- fade Modal -->
