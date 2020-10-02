@@ -37,7 +37,7 @@
                                                         <a href="#" title=""><?php echo $projet->ClubName ?> </a>
                                                     </div>
                                                     <div class="classi-pst-meta">
-                                                        <h6><a href="#" title=""><?php echo $projet->Titre ?></a></h6>
+                                                        <h6><a href="#" title=""><?php echo $projet->titre ?></a></h6>
                                                         <span><i class="fa fa-map-marker"></i> <?php echo $projet->local ?> <ins><i>Prix : </i> <?php echo $projet->local ?> </ins></span>
                                                         <em><i class="fa fa-cloud-upload"></i> <?php echo $projet->startDate ?> au <?php echo $projet->descP ?>  </em>
                                                     </div>
