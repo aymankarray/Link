@@ -29,7 +29,7 @@ class Club_model extends CI_Model
      * @param number $segment : This is pagination limit
      * @return array $result : This is result
      */
-    function clubListing()
+    function clubListing($HUA)
     {
         $this->db->select('BaseTbl.clubID , BaseTbl.name , BaseTbl.birthday , BaseTbl.city ,BaseTbl.email , BaseTbl.is_Actif , Users.name P , Users.avatar , Users.userId , Users.isDeleted  ,count(Users1.userId) members  , BaseTbl.charte, BaseTbl.facebook ');
         $this->db->from('tbl_club as BaseTbl');
@@ -38,7 +38,8 @@ class Club_model extends CI_Model
        $this->db->join('tbl_users as Users1', 'Users1.ClubID = BaseTbl.clubID', 'LEFT') ; 
         $this->db->where('Users.roleId = 1 OR Users.roleId = ','2') ;
         $this->db->where('Users1.isDeleted = ','0') ;
-     
+        $this->db->where('BaseTbl.clubID > ,'4 ) ; 
+        $this->db->where('BaseTbl.HUA = ,' $HUA ) ;      
 
        $this->db->group_by('BaseTbl.clubId') ;
         $query = $this->db->get();
@@ -47,54 +48,6 @@ class Club_model extends CI_Model
         return $result;
     }
 
-
-
-
-    /**
-     * This function is used to get the user listing count
-     * @param string $searchText : This is optional search text
-     * @param number $page : This is pagination offset
-     * @param number $segment : This is pagination limit
-     * @return array $result : This is result
-     */
-    function clubListingS()
-    {
-        $this->db->select('BaseTbl.clubID  ');
-        $this->db->from('tbl_club as BaseTbl');
-        $this->db->where('BaseTbl.SenJun = ','3') ;
-
-       $this->db->group_by('BaseTbl.clubId') ;
-        $query = $this->db->get();
-        
-        $result = $query->result();        
-        return $result;
-    }
-
-
-
-
-
-
-        /**
-     * This function is used to get the user listing count
-     * @param string $searchText : This is optional search text
-     * @param number $page : This is pagination offset
-     * @param number $segment : This is pagination limit
-     * @return array $result : This is result
-     */
-    function clubListingJ()
-    {
-        $this->db->select('BaseTbl.clubID  ');
-        $this->db->from('tbl_club as BaseTbl');
-   
-        $this->db->where('BaseTbl.SenJun = ','4') ;
-
-       $this->db->group_by('BaseTbl.clubId') ;
-        $query = $this->db->get();
-        
-        $result = $query->result();        
-        return $result;
-    }
 
 
 /**

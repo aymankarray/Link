@@ -22,7 +22,7 @@ class Club extends BaseController {
 
 		                $this->load->model('club_model');
 		                $searchText='' ;
-		                $data['clubRecords'] = $this->club_model->clubListing();
+		                $data['clubRecords'] = $this->club_model->clubListing($this->HUA);
 
 		                $this->global['pageTitle'] = 'Clubs';
 		             	$this->global['active'] = 'Clubs';
