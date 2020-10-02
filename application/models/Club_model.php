@@ -39,7 +39,7 @@ class Club_model extends CI_Model
         $this->db->where('Users.roleId = 1 OR Users.roleId = ','2') ;
         $this->db->where('Users1.isDeleted = ','0') ;
         $this->db->where('BaseTbl.clubID > ', 4 ) ; 
-        $this->db->where('BaseTbl.HUA = ', $HUA ) ;      
+        $this->db->where('BaseTbl.SenJun = ', $HUA ) ;      
 
        $this->db->group_by('BaseTbl.clubId') ;
         $query = $this->db->get();
