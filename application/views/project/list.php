@@ -8,7 +8,7 @@
                             
 
                             
-                            <div class="col-lg-8">
+                            <div class="col-lg-9">
                                 
                                 <div class="load-more4">
                                     <?php foreach ($projectRecords as $projet ) {  ?>
@@ -17,7 +17,7 @@
                                             <div class="row merged10">
                                                 <div class="col-lg-6">
                                                     <div class="image-bunch single">
-                                                        <figure><img src="<?php echo base_url() ?>uplaods/projet/<?php echo $projet->banner ?>" alt=""></figure>
+                                                        <figure><img src="<?php echo base_url() ?>uploads/projet/<?php echo $projet->banner ?>" alt=""></figure>
                                                         <span><?php echo $projet->type ?>  </span>
                                                     </div>
                                                 </div>
