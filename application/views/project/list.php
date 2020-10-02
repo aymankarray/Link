@@ -370,7 +370,7 @@
                                     <div class="form-group">
                                         <label for="fname">Date debut</label>
                                         <!-- min="<?php echo date('Y-m-d').'T00:00' ?>" -->
-                                        <input type="datetime-local" class="form-control "    id="debut" name="debut"  required >
+                                        <input type="datetime-local" class="form-control "  min="<?php echo date('Y-m-d').'T00:00' ?>"   id="debut" name="debut"  required >
                                     </div>
                                 </div>
 
@@ -378,7 +378,7 @@
                                     <div class="form-group">
                                         <label for="fname">Date fin</label>
                                         <!-- min="<?php echo date('Y-m-d').'T00:00' ?>" -->
-                                        <input type="datetime-local" class="form-control"    id="fin" name="fin"  required >
+                                        <input type="datetime-local" class="form-control"  min="<?php echo date('Y-m-d').'T00:00' ?>"   id="fin" name="fin"  required >
                                     </div>
                               </div>
                             
@@ -386,7 +386,7 @@
                               <div class="col-md-6">                                
                                     <div class="form-group">
                                         <label for="fname">Local</label>
-                                          <input type="text" class="form-control required" id="local" name="local" maxlength="255" required >      
+                                          <input type="text" class="form-control " id="local" name="local" maxlength="255" required >      
 
 
                                     </div>
@@ -394,7 +394,7 @@
                                 <div class="col-md-3">                                
                                     <div class="form-group">
                                         <label for="fname">Capacité</label>
-                                          <input type="number" class="form-control required" id="capacite" name="capacite"  required >      
+                                          <input type="number" class="form-control " id="capacite" name="capacite"  required >      
 
 
                                     </div>
@@ -402,54 +402,23 @@
                                 <div class="col-md-3">                                
                                     <div class="form-group">
                                         <label for="fname">Prix</label>
-                                          <input type="number" class="form-control required" id="prix" name="prix"  required >      
+                                          <input type="number" class="form-control" id="prix" name="prix"  required >      
 
 
                                     </div>
                                 </div>
 
-                                <div class="col-md-3">                                
-                                    <div class="form-group">
-                                        <label for="fname">Cellule Marketing</label>
-                                            <?php   foreach($members as $record)
-                                                    {
-                                                        if($record->cellule == 'Marketing')
-                                                        {
-                                            ?>            
 
-                                                    <div class="form-check form-check-flat form-check-primary">
-                                                      <label class="form-check-label">
-                                                        <input type="checkbox" name="ressource[]" value="<?php echo   $record->userId ; ?>"  class="form-check-input">
-                                                      <?php  echo   $record->name ; ?> 
-                                                      </label>
-                                                    </div>
-                                                    
-                                            <?php
-                                                     
-                                                    }
-                                                }
-                                            ?> 
-
-
-                                    </div>
-                                </div>
 
                             </div>
-
-                            
-                            
-                           
-
-                           
-         
-                        
-    
-                        <div class="box-footer">
+                            <br>
+                            <br>
+                       
                             <input type="submit" class="btn btn-primary" value="Envoyer" />
-                            <input type="reset" class="btn btn-default" value="Reset" />
+                            <input type="reset" class="btn btn-secondary" value="Reset" />
                             <br>
                             <br>
-                        </div>
+                       
                     </form>
                                                 </div>
 
