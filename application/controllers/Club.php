@@ -84,8 +84,8 @@ class Club extends BaseController {
 				            $clubInfo = array('name'=> $name ,
 				                              'city'=>$city,
 				                               'birthday'=>$birthday,
-				                               'email'=>  $facebook  ,
-				                               'facebook'=>  $email ,
+				                               'email'=>  $email  ,
+				                               'facebook'=>  $facebook ,
 				                               'is_Actif'=> $is_Actif ,
 
 				                             );
