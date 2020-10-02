@@ -1086,7 +1086,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo base_url() ?>Club/clubInfo" title="" data-toggle="tooltip" data-placement="right" data-original-title="Mon club">
+					<a href="<?php echo base_url() ?>Club/clubInfo/<?php echo $clubID ?>" title="" data-toggle="tooltip" data-placement="right" data-original-title="Mon club">
 						<i class="ti-heart"></i>
 					</a>
 				</li>
