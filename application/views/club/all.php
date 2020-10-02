@@ -51,20 +51,8 @@
                         <td>
 
 
-                            <?php if($record->facebook != ''){ ?>
-
-                                <A HREF="mailto:<?php echo $record->facebook ?>"><i class="ri-mail-fill"></i></A> 
-                            <?php } 
-
-                            if($record->email != ''){ ?>
-
-
-                              <a href="<?php echo $record->email ?>">
-                                <i class="ri-facebook-box-fill"></i>
-                              </a>  
-
-                            <?php } ?>
-
+                            <?php if ($record->SenJen == 3 ){ echo 'University' }?>
+                            <?php if ($record->SenJen == 3 ){ echo 'High School' }?>
 
 
 
