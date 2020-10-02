@@ -144,10 +144,7 @@
 
                     <div class="col-lg-3 col-md-6 col-sm-6">
                       <div class="friend-box">
-                        <figure>
-                          <img src="images/resources/frnd-cover1.jpg" alt="">
-                          <span>Scores : 0</span>
-                        </figure>
+
                         <div class="frnd-meta">
                           <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $member->avatar ?>" alt="">
                           <div class="frnd-name">
