@@ -4,6 +4,8 @@
 				<div class="row" id="page-contents">
 					<div class=" col-lg-12">
 						<div class="central-meta">
+							<span><h2> Gestion des tache :  </h2> <?php echo $projet->titre ?></span>
+							<button></button> 
 							<div id="calendar"></div>
 						</div>
 					</div>
@@ -23,6 +25,22 @@
          var y = date.getFullYear();
 
          var calendar = $('#calendar').fullCalendar({
+         	    eventClick: function(info) {
+		      var eventObj = info.event;
+
+		      if (eventObj.url) {
+		        alert(
+		          'Clicked ' + eventObj.title + '.\n' +
+		          'Will open ' + eventObj.url + ' in a new tab'
+		        );
+
+		        window.open(eventObj.url);
+
+		        info.jsEvent.preventDefault(); // prevents browser from following link in current tab.
+		      } else {
+		        alert('Clicked ' + eventObj.title);
+		      }
+		    },
               header: {
                    left: 'prev,next today',
                    center: 'title',
