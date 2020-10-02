@@ -160,7 +160,7 @@ class User_model extends CI_Model
      * This function is used to get the user listing count
      * @return array $result : This is result
      */
-    function userListingByclub(,$clubID)
+    function userListingByclub($clubID)
     {
          $this->db->select('BaseTbl.userId, BaseTbl.gouvernorat , BaseTbl.delegation , BaseTbl.CLubID as club , BaseTbl.cin, BaseTbl.email, BaseTbl.name, BaseTbl.mobile, BaseTbl.createdDtm, Role.role , BaseTbl.cellule , Clubs.name as ClubName , Clubs.city as ClubCity ,BaseTbl.sexe ,BaseTbl.isDeleted , BaseTbl.avatar  ');
         $this->db->from('tbl_users as BaseTbl');
