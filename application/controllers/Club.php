@@ -39,7 +39,7 @@ class Club extends BaseController {
 			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
 			        $data["bureauExe"] = $this->club_model->BureauListing($clubId);
 			        $data["ProjectByClub"] = $this->project_model->projectListingByClubPost($clubId);
-			        
+			        $data['cl'] = $clubID;
 
 			        $data["members"] = $this->user_model->userListingByclubINFO($clubId) ;
 			        $data["membersCount"] =count($this->user_model->userListingByclub($this->vendorId,$clubId)) ;
@@ -113,9 +113,9 @@ class Club extends BaseController {
 					            $this->load->library('pagination');
 					            
 					            $data['members'] = $this->user_model->userListingByclub($clubID);
-
+								$data['cl'] = $clubID;
 					            
-					            $this->global['pageTitle'] = 'Club';
+					            $this->global['pageTitle'] = 'members';
 					            $this->global['active'] = 'users';
 					            $this->loadViews("club/members", $this->global, $data, NULL);
 					        

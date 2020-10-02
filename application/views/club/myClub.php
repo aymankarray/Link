@@ -77,13 +77,10 @@
                     <div class="col-lg-10">
                       <ul class="profile-menu">
                         <li>
-                          <a class="active" href="fav-page.html">Page Feed</a>
+                          <a class="active" href="<?php echo base_url() ?>Club/clubInfo/<?php echo $cl ?>">Projets</a>
                         </li>
                         <li>
-                          <a class="" href="fav-favers.html">Membes</a>
-                        </li>
-                        <li>
-                          <a class="" href="fav-events.html">Projet</a>
+                          <a class="" href="<?php echo base_url() ?>Club/clubInfo/<?php echo $cl ?>">Membes</a>
                         </li>
 
                         
