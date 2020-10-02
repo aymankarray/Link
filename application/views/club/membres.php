@@ -149,7 +149,7 @@
                           <span>Followers: 120</span>
                         </figure>
                         <div class="frnd-meta">
-                          <img src="images/resources/frnd-figure1.jpg" alt="">
+                          <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $member->avatar ?>" alt="">
                           <div class="frnd-name">
                             <a href="#" title=""><?php echo $member->name ?></a>
                             <span><?php echo $member->role ?></span>
@@ -175,7 +175,7 @@
                         </div>
                       </div>
                     </div>
-                      # code...
+                    
                      <?php }  ?>
                   </div>
                   <div class="lodmore">
