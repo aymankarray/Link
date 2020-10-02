@@ -56,6 +56,7 @@ class Club extends BaseController {
 		        public function editClub($clubId)
 		        {
 					$this->load->model('user_model');
+					
                     $data["members"] = $this->user_model->userListingByclub($this->vendorId,$clubId);
 			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
 
@@ -107,7 +108,7 @@ class Club extends BaseController {
 					          
 					            $searchText = $this->security->xss_clean($this->input->post('searchText'));
 					            $data['searchText'] = $searchText;
-					            $data["clubInfo"] = $this->club_model->getClubInfo($clubId);	            
+					            $data["clubInfo"] = $this->club_model->getClubInfo($clubID);	            
 					            $data['members'] = $this->user_model->userListingByclub($clubID);
 								$data['cl'] = $clubID;
 					            
