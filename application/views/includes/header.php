@@ -783,8 +783,8 @@
 				</li>
 			</ul>
 			<div class="user-img">
-				<h5>Jack Carter</h5>
-				<img src="images/resources/admin.jpg" alt="">
+				<h5><?php echo $name ?></h5>
+				<img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" width="25" alt="">
 				<span class="status f-online"></span>
 				<div class="user-setting">
 					<span class="seting-title">Chat setting <a href="#" title="">see all</a></span>
