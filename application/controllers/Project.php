@@ -137,30 +137,7 @@ class Project extends BaseController {
                 if( move_uploaded_file($file_tmp, $file_destination)){
                 $this->load->model('project_model');
                 $result = $this->project_model->addNewProject($projectInfo);
-                
-
-                foreach ( $this->input->post('ressource') as $r)
-				{
-				$ressourceInfo = array(
-                 'userID' => $r ,  
-                 'projectID'=>$result
-                     );
-
-					$this->load->model('ressource_model');
-					$resultRessource = $this->ressource_model->addNewRessource($ressourceInfo);
-				}
-
-                $evaluationInfo = array(
-                 'statut' => 'En Attend' ,  
-                 'doDate' => $r ,  
-                 'titre' => 'Fiche evaluation '.$Titre ,   
-                 'projectId'=>$result , 
-                 'createdDate'=> date('Y-m-d H:i:s')
-                     );
-
-                $this->load->model('evaluation_model');
-                $result = $this->evaluation_model->addNew($evaluationInfo);
-                
+                                
                 }
                 
                      redirect('/Project/projectListing');
