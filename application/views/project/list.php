@@ -1,101 +1,611 @@
-<style type="text/css">
-    .alligator-event {
-        object-fit: cover;
-        object-position: 50% 50%;
-        width: 100%;
-        height: 200px;
-    }
-</style>
 
-<div class="header-for-bg">
-    <div class="background-header position-relative">
-        <img src="<?php echo base_url() ;  ?>images/page-img/profile-bg6.jpg" class="img-fluid w-100 rounded rounded" alt="profile-bg">
-        <div class="title-on-header">
-            <div class="data-block">
-                <h2>Evenement
-                    <?php  if ($role ==1  ||  $role == 3  || $SA == 1   ) { ?>
-                    <a class="btn btn-primary btn-block" href="<?php echo base_url() ; ?>Project/addNew">Nouveau projet</a>
-                    <?php } ?>
-                </h2>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="content-page" class="content-page">
-    <div class="container">
-        <div class="row">
-
-            <?php if(!empty($projectRecords))
-     {
-      foreach($projectRecords as $record)
-      {
-        ?>
-                <div class="col-md-6 col-lg-4">
-                    <div class="iq-card rounded iq-card-block iq-card-stretch iq-card-height">
-                        <div class="event-images">
+<section>
+        <div class="gap2 gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row merged20" id="page-contents">
                             
-                         <img src="<?php echo base_url() ?>uploads/projet/<?php echo $record->banner; ?>" class="alligator-event" alt="">
-          
-                        </div>
-                        <div class="iq-card-body">
-                            <div class="d-flex">
-                                <div class="date-of-event">
-                                    <span><?php $date = new DateTime($record->startDate) ;      echo $date->format('M') ; ?></span>
-                                    <h5><?php $date = new DateTime($record->startDate) ;         echo $date->format('d') ; ?></h5>
-                                </div>
-                                <div class="events-detail ml-3">
-                                    <h5><?php 
-             $string = strip_tags( $record->titre );
-             if (strlen($string) > 30){
 
-                                        // truncate string
-              $stringCut = substr($string, 0, 30);
-              $endPoint = strrpos($stringCut, ' ');
+                            
+                            <div class="col-lg-9">
+                                
+                                <div class="load-more4">
+                                    <div class="central-meta item" style="display: inline-block;">
+                                        <div class="classi-pst">
+                                            <div class="row merged10">
+                                                <div class="col-lg-6">
+                                                    <div class="image-bunch single">
+                                                        <figure><img src="images/resources/classic-bunch1.jpg" alt=""></figure>
+                                                        <span>New Post</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="more">
+                                                        <div class="more-post-optns"><i class="ti-more-alt"></i>
+                                                            <ul>
+                                                                <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>
+                                                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
+                                                                <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>
+                                                                <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-fig">
+                                                        <img src="images/resources/tube-user2.jpg" alt="">
+                                                        <a href="#" title="">Xing Xong</a>
+                                                    </div>
+                                                    <div class="classi-pst-meta">
+                                                        <h6><a href="#" title="">White BMW 1998 Model for sale</a></h6>
+                                                        <span><i class="fa fa-map-marker"></i> Ontario, CA <ins><i>used</i> $700</ins></span>
+                                                        <em><i class="fa fa-cloud-upload"></i> Jan, 13 2020</em>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <p class="classi-pst-des">
+                                                        A beautiful Iphone Mobile golden color 6 months used only A beautiful Iphone 
+                                                        Mobile golden color 6 months used only
+                                                    </p>
+                                                    <div class="we-video-info">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="views" title="views">
+                                                                    <i class="fa fa-eye"></i>
+                                                                    <ins>1.2k</ins>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="likes heart broken" title="Like/Dislike">❤ <span>0</span></div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="comment" title="Comments">
+                                                                    <i class="fa fa-commenting"></i>
+                                                                    <ins>52</ins>
+                                                                </span>
+                                                            </li>
 
-                                        //if the string doesn't contain any space then it will cut without word basis.
-              $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
-              $string .= '... ';
-            }
-
-            echo $string ;
-            ?></h5>
-                                    <small>par <a href=""><?php if ($record->ClubName !='Foundation') {echo 'club';} ?> Tunivisions <?php echo $record->ClubName ?>  </a></small>
-                                    <p>
-
-                                    </p>
-                                    <div class="event-member">
-                                        <div class="iq-media-group">
-
+                                                            <li>
+                                                                <span>
+                                                                    <a class="share-pst" href="#" title="Share">
+                                                                        <i class="fa fa-share-alt"></i>
+                                                                    </a>
+                                                                    <ins>20</ins>
+                                                                </span> 
+                                                            </li>
+                                                        </ul>
+                                                        <div class="users-thumb-list">
+                                                            <a data-original-title="Anderw" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-1.jpg">  
+                                                            </a>
+                                                            <a data-original-title="frank" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-2.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Sara" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-3.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Amy" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-4.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Ema" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-5.jpg">  
+                                                            </a>
+                                                            <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="central-meta item" style="display: inline-block;">
+                                        <div class="classi-pst">
+                                            <div class="row merged10">
+                                                <div class="col-lg-6">
+                                                    <div class="image-bunch two">
+                                                        <figure><img src="images/resources/classic-bunch2.jpg" alt=""></figure> 
+                                                        <figure>
+                                                            <img src="images/resources/classic-bunch3.jpg" alt="">
+                                                            <div class="more-photos">
+                                                                <span>2+</span>
+                                                            </div>
+                                                        </figure>
+                                                        <span class="yellow">featured</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="more">
+                                                        <div class="more-post-optns"><i class="ti-more-alt"></i>
+                                                            <ul>
+                                                                <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>
+                                                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
+                                                                <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>
+                                                                <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-fig">
+                                                        <img src="images/resources/tube-user2.jpg" alt="">
+                                                        <a href="#" title="">Xing Xong</a>
+                                                    </div>
+                                                    <div class="classi-pst-meta">
+                                                        <h6><a href="#" title="">Beautiful House at a good location</a></h6>
+                                                        <span><i class="fa fa-map-marker"></i> Ontario, CA <ins><i>New</i> $27000</ins></span>
+                                                        <em><i class="fa fa-cloud-upload"></i> Jan, 13 2020</em>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <p class="classi-pst-des">
+                                                        A beautiful Iphone Mobile golden color 6 months used only A beautiful Iphone 
+                                                        Mobile golden color 6 months used only
+                                                    </p>
+                                                    <div class="we-video-info">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="views" title="views">
+                                                                    <i class="fa fa-eye"></i>
+                                                                    <ins>1.2k</ins>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="likes heart broken" title="Like/Dislike">❤ <span>0</span></div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="comment" title="Comments">
+                                                                    <i class="fa fa-commenting"></i>
+                                                                    <ins>52</ins>
+                                                                </span>
+                                                            </li>
 
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <?php if($record->eventFB!='' ) { ?>
-                                                <a href="<?php  echo $record->eventFB; ?>"> &nbsp;  <img src="<?php echo base_url() ?>images/icon/08.png" class="img-fluid rounded" alt="facebook"> </h6>  </a>
-                                                <?php } ?>
+                                                            <li>
+                                                                <span>
+                                                                    <a class="share-pst" href="#" title="Share">
+                                                                        <i class="fa fa-share-alt"></i>
+                                                                    </a>
+                                                                    <ins>20</ins>
+                                                                </span> 
+                                                            </li>
+                                                        </ul>
+                                                        <div class="users-thumb-list">
+                                                            <a data-original-title="Anderw" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-1.jpg">  
+                                                            </a>
+                                                            <a data-original-title="frank" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-2.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Sara" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-3.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Amy" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-4.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Ema" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-5.jpg">  
+                                                            </a>
+                                                            <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <i class="fas fa-map-marker-alt"></i> &nbsp;
-                                            <h6>Local </h6>
-                                            <?php  echo $record->local; ?>
-                                        </div>
+                                    </div>
+                                    <div class="central-meta item" style="display: inline-block;">
+                                        <div class="classi-pst">
+                                            <div class="row merged10">
+                                                <div class="col-lg-6">
+                                                    <div class="image-bunch three">
+                                                        <figure><img src="images/resources/classic-bunch4.jpg" alt=""></figure>
+                                                        <figure><img src="images/resources/classic-bunch5.jpg" alt=""></figure>
+                                                        <figure>
+                                                            <img src="images/resources/classic-bunch6.jpg" alt="">
+                                                            <div class="more-photos">
+                                                                <span>3+</span>
+                                                            </div>
+                                                        </figure>   
+                                                        <span class="red">Super Hot</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="more">
+                                                        <div class="more-post-optns"><i class="ti-more-alt"></i>
+                                                            <ul>
+                                                                <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>
+                                                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
+                                                                <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>
+                                                                <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-fig">
+                                                        <img src="images/resources/tube-user2.jpg" alt="">
+                                                        <a href="#" title="">Xing Xong</a>
+                                                    </div>
+                                                    <div class="classi-pst-meta">
+                                                        <h6><a href="#" title="">Beautiful iphone x 2020 in gold color</a></h6>
+                                                        <span><i class="fa fa-map-marker"></i> Ontario, CA <ins><i>used</i> $700</ins></span>
+                                                        <em><i class="fa fa-cloud-upload"></i> Jan, 13 2020</em>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <p class="classi-pst-des">
+                                                        A beautiful Iphone Mobile golden color 6 months used only A beautiful Iphone 
+                                                        Mobile golden color 6 months used only
+                                                    </p>
+                                                    <div class="we-video-info">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="views" title="views">
+                                                                    <i class="fa fa-eye"></i>
+                                                                    <ins>1.2k</ins>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="likes heart broken" title="Like/Dislike">❤ <span>0</span></div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="comment" title="Comments">
+                                                                    <i class="fa fa-commenting"></i>
+                                                                    <ins>52</ins>
+                                                                </span>
+                                                            </li>
 
-                                        <div class="col-md-4">
-                                                        <i class="fas fa-money-bill-wave"></i> &nbsp;
-                                                        <h6>Prix</h6>
-                                                        <?php if ($record->prix == 0){echo "Gratuit";}else{echo $record->prix.' DT';} ?>
-                                                          
-                                          </div>
+                                                            <li>
+                                                                <span>
+                                                                    <a class="share-pst" href="#" title="Share">
+                                                                        <i class="fa fa-share-alt"></i>
+                                                                    </a>
+                                                                    <ins>20</ins>
+                                                                </span> 
+                                                            </li>
+                                                        </ul>
+                                                        <div class="users-thumb-list">
+                                                            <a data-original-title="Anderw" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-1.jpg">  
+                                                            </a>
+                                                            <a data-original-title="frank" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-2.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Sara" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-3.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Amy" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-4.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Ema" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-5.jpg">  
+                                                            </a>
+                                                            <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="central-meta item" style="display: inline-block;">
+                                        <div class="classi-pst">
+                                            <div class="row merged10">
+                                                <div class="col-lg-6">
+                                                    <div class="image-bunch">
+                                                        <figure><img src="images/resources/classic-bunch7.jpg" alt=""></figure>
+                                                        <figure><img src="images/resources/classic-bunch8.jpg" alt=""></figure>
+                                                        <figure><img src="images/resources/classic-bunch9.jpg" alt=""></figure>
+                                                        <figure>
+                                                            <img src="images/resources/classic-bunch10.jpg" alt="">
+                                                            <div class="more-photos">
+                                                                <span>4+</span>
+                                                            </div>
+                                                        </figure>   
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="more">
+                                                        <div class="more-post-optns"><i class="ti-more-alt"></i>
+                                                            <ul>
+                                                                <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>
+                                                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
+                                                                <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>
+                                                                <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="user-fig">
+                                                        <img src="images/resources/tube-user2.jpg" alt="">
+                                                        <a href="#" title="">Xing Xong</a>
+                                                    </div>
+                                                    <div class="classi-pst-meta">
+                                                        <h6><a href="#" title="">Dell Laptop Xp13"-14"-15"-17" Branded</a></h6>
+                                                        <span><i class="fa fa-map-marker"></i> Ontario, CA <ins><i>used</i> $1200</ins></span>
+                                                        <em><i class="fa fa-cloud-upload"></i> Jan, 13 2020</em>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <p class="classi-pst-des">
+                                                        A beautiful Iphone Mobile golden color 6 months used only A beautiful Iphone 
+                                                        Mobile golden color 6 months used only
+                                                    </p>
+                                                    <div class="we-video-info">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="views" title="views">
+                                                                    <i class="fa fa-eye"></i>
+                                                                    <ins>1.2k</ins>
+                                                                </span>
+                                                            </li>
+                                                            <li>
+                                                                <div class="likes heart broken" title="Like/Dislike">❤ <span>0</span></div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="comment" title="Comments">
+                                                                    <i class="fa fa-commenting"></i>
+                                                                    <ins>52</ins>
+                                                                </span>
+                                                            </li>
+
+                                                            <li>
+                                                                <span>
+                                                                    <a class="share-pst" href="#" title="Share">
+                                                                        <i class="fa fa-share-alt"></i>
+                                                                    </a>
+                                                                    <ins>20</ins>
+                                                                </span> 
+                                                            </li>
+                                                        </ul>
+                                                        <div class="users-thumb-list">
+                                                            <a data-original-title="Anderw" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-1.jpg">  
+                                                            </a>
+                                                            <a data-original-title="frank" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-2.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Sara" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-3.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Amy" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-4.jpg">  
+                                                            </a>
+                                                            <a data-original-title="Ema" data-toggle="tooltip" title="" href="#">
+                                                                <img alt="" src="images/resources/userlist-5.jpg">  
+                                                            </a>
+                                                            <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
+                            <button class="btn-view btn-load-more" style="display: none;">Load More</button></div><!-- centerl meta -->
+                            <div class="col-lg-3">
+                                <aside class="sidebar static right">
+                                    <div class="widget">
+                                        <h4 class="widget-title">Your page</h4> 
+                                        <div class="your-page">
+                                            <figure>
+                                                <a href="#" title=""><img src="images/resources/friend-avatar9.jpg" alt=""></a>
+                                            </figure>
+                                            <div class="page-meta">
+                                                <a href="#" title="" class="underline">My Creative Page</a>
+                                                <span><i class="ti-comment"></i><a href="insight.html" title="">Messages <em class="bg-blue">9</em></a></span>
+                                                <span><i class="ti-bell"></i><a href="insight.html" title="">Notifications <em class="bg-purple">2</em></a></span>
+                                            </div>
+                                            <ul class="page-publishes">
+                                                <li>
+                                                    <span><i class="ti-pencil-alt"></i>Publish</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="ti-camera"></i>Photo</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="ti-video-camera"></i>Live</span>
+                                                </li>
+                                                <li>
+                                                    <span><i class="fa fa-user-plus"></i>Invite</span>
+                                                </li>
+                                            </ul>
+                                            <div class="page-likes">
+                                                <ul class="nav nav-tabs likes-btn">
+                                                    <li class="nav-item"><a class="active" href="#link1" data-toggle="tab" data-ripple="">likes</a></li>
+                                                     <li class="nav-item"><a class="" href="#link2" data-toggle="tab" data-ripple="">views</a></li>
+                                                </ul>
+                                                <!-- Tab panes -->
+                                                <div class="tab-content">
+                                                  <div class="tab-pane active fade show" id="link1">
+                                                    <span><i class="ti-heart"></i>884</span>
+                                                      <a href="#" title="weekly-likes">35 new likes this week</a>
+                                                      <div class="users-thumb-list">
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Anderw">
+                                                            <img src="images/resources/userlist-1.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="frank">
+                                                            <img src="images/resources/userlist-2.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Sara">
+                                                            <img src="images/resources/userlist-3.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Amy">
+                                                            <img src="images/resources/userlist-4.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Ema">
+                                                            <img src="images/resources/userlist-5.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Sophie">
+                                                            <img src="images/resources/userlist-6.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Maria">
+                                                            <img src="images/resources/userlist-7.jpg" alt="">  
+                                                        </a>  
+                                                      </div>
+                                                  </div>
+                                                  <div class="tab-pane fade" id="link2">
+                                                      <span><i class="fa fa-eye"></i>440</span>
+                                                      <a href="#" title="weekly-likes">440 new views this week</a>
+                                                      <div class="users-thumb-list">
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Anderw">
+                                                            <img src="images/resources/userlist-1.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="frank">
+                                                            <img src="images/resources/userlist-2.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Sara">
+                                                            <img src="images/resources/userlist-3.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Amy">
+                                                            <img src="images/resources/userlist-4.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Ema">
+                                                            <img src="images/resources/userlist-5.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Sophie">
+                                                            <img src="images/resources/userlist-6.jpg" alt="">  
+                                                        </a>
+                                                        <a href="#" title="" data-toggle="tooltip" data-original-title="Maria">
+                                                            <img src="images/resources/userlist-7.jpg" alt="">  
+                                                        </a>  
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- page like widget -->
+                                    <div class="widget">
+                                        <div class="weather-widget low-opacity bluesh">
+                                            <div class="bg-image" style="background-image: url(images/resources/weather.jpg)"></div>
+                                            <span class="refresh-content"><i class="fa fa-refresh"></i></span>
+                                            <div class="weather-week">
+                                                <div class="icon sun-shower">
+                                                  <div class="cloud"></div>
+                                                  <div class="sun">
+                                                    <div class="rays"></div>
+                                                  </div>
+                                                  <div class="rain"></div>
+                                                </div>
+                                            </div>
+                                            <div class="weather-infos">
+                                                <span class="weather-tem">25</span>
+                                                <h3>Cloudy Skyes<i>Sicklervilte, New Jersey</i></h3>
+                                                <div class="weather-date skyblue-bg">
+                                                    <span>MAY<strong>21</strong></span>
+                                                </div>
+                                            </div>
+                                            <div class="monthly-weather">
+                                                <ul>
+                                                    <li>
+                                                        <span>Sun</span>
+                                                        <a href="#" title=""><i class="wi wi-day-sunny"></i></a>
+                                                        <em>40°</em>
+                                                    </li>
+                                                    <li>
+                                                        <span>Mon</span>
+                                                        <a href="#" title=""><i class="wi wi-day-cloudy"></i></a>
+                                                        <em>10°</em>
+                                                    </li>
+                                                    <li>
+                                                        <span>Tue</span>
+                                                        <a href="#" title=""><i class="wi wi-day-hail"></i></a>
+                                                        <em>20°</em>
+                                                    </li>
+                                                    <li>
+                                                        <span>Wed</span>
+                                                        <a href="#" title=""><i class="wi wi-day-lightning"></i></a>
+                                                        <em>34°</em>
+                                                    </li>
+                                                    <li>
+                                                        <span>Thu</span>
+                                                        <a href="#" title=""><i class="wi wi-day-showers"></i></a>
+                                                        <em>22°</em>
+                                                    </li>
+                                                    <li>
+                                                        <span>Fri</span>
+                                                        <a href="#" title=""><i class="wi wi-day-windy"></i></a>
+                                                        <em>26°</em>
+                                                    </li>
+                                                    <li>
+                                                        <span>Sat</span>
+                                                        <a href="#" title=""><i class="wi wi-day-sunny-overcast"></i></a>
+                                                        <em>30°</em>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div><!-- Weather Widget -->
+                                    </div><!-- weather-->
+                                    <div class="widget">
+                                        <h4 class="widget-title">Invite Friends <a class="see-all" href="#" title="">See All</a></h4>
+                                        <ul class="invitepage">
+                                            <li>
+                                                <figure>
+                                                    <img src="images/resources/friend-avatar.jpg" alt="">
+                                                    <a href="#">Jack carter</a>
+                                                </figure>
+                                                <a class="invited" href="#" title=""><i class="ti-check"></i></a>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="images/resources/friend-avatar2.jpg" alt="">
+                                                    <a href="#">Emma watson</a>
+                                                </figure>
+                                                <a href="#" title="">Invite</a>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="images/resources/friend-avatar3.jpg" alt="">
+                                                    <a href="#">Andrew</a>
+                                                </figure>
+                                                <a href="#" title="">Invite</a>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="images/resources/friend-avatar4.jpg" alt="">
+                                                    <a href="#">Moona Singh</a>
+                                                </figure>
+                                                <a class="invited" href="#" title=""><i class="ti-check"></i></a>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img src="images/resources/friend-avatar5.jpg" alt="">
+                                                    <a href="#">Harry pooter</a>
+                                                </figure>
+                                                <a href="#" title="">Invite</a>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div><!-- page invitation widget -->   
+                                    <div class="widget">
+                                        <div class="banner medium-opacity purple">
+                                            <div class="bg-image" style="background-image: url(images/resources/baner-widgetbg.jpg)"></div>
+                                            <div class="baner-top">
+                                                <span><img alt="" src="images/book-icon.png"></span>
+                                                <i class="fa fa-ellipsis-h"></i>
+                                            </div>
+                                            <div class="banermeta">
+                                                <p>
+                                                    create your own favourit page.
+                                                </p>
+                                                <span>like them all</span>
+                                                <a data-ripple="" title="" href="#">start now!</a>
+                                            </div>
+                                        </div>                                          
+                                    </div>
+                                    <div class="widget stick-widget">
+                                        <h4 class="widget-title">Profile intro</h4>
+                                        <ul class="short-profile">
+                                            <li>
+                                                <span>about</span>
+                                                <p>Hi, i am jhon kates, i am 32 years old and worked as a web developer in microsoft </p>
+                                            </li>
+                                            <li>
+                                                <span>fav tv show</span>
+                                                <p>Sacred Games, Spartcus Blood, Games of Theron </p>
+                                            </li>
+                                            <li>
+                                                <span>favourit music</span>
+                                                <p>Justin Biber, Shakira, Nati Natasah</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div><!-- sidebar -->
+                        </div>  
                     </div>
-                     <?php } } ?>
-
                 </div>
-        </div>
-    </div>
+            </div>
+        </div>  
+    </section>

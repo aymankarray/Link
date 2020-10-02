@@ -24,6 +24,14 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/color.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive.css">
+    <style type="text/css">
+    .alligator-event {
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        height: 200px;
+    }
+</style>
 
 </head>
 <body>
