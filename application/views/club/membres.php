@@ -144,7 +144,10 @@
 
                     <div class="col-lg-4 ">
                       <div class="friend-box">
-
+                        <figure>
+                          <img src="<?php echo base_url() ?>assets/images/resources/frnd-cover2.jpg" alt="">
+                          <span>Followers: 450</span>
+                        </figure>
                         <div class="frnd-meta">
                           <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $member->avatar ?>" class="alligator-profile" alt="">
                           <div class="frnd-name">
