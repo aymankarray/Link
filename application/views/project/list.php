@@ -56,18 +56,22 @@
 
                                                 <div class="event-box">
                                                     <div class="row merged20">
+
                                                         <div class="col-lg-4 col-md-4 col-sm-5">
-                                                            <figure class="event-thumb"><img src="<?php echo base_url() ?>uploads/projet/<?php echo $projet->banner ?>" alt=""></figure>
+                                                            <figure class="event-thumb"><img src="<?php echo base_url() ?>uploads/projet/<?php echo $projet->banner ?>" alt="">
+                                                                <span class="yellow"><?php echo $projet->tyoe ?></span></figure>
                                                         </div>
                                                         <div class="col-lg-6 col-md-6 col-sm-5">
                                                             <div class="event-title">
-                                                                <span><i class="fa fa-clock-o"></i> <?php echo $projet->startDate ?></span>
+                                                                <span class="ba"></span>
                                                                 <h4><a href="#" title=""><?php echo $projet->titre ?></a></h4>
+                                                                <span><i class="fa fa-clock-o"></i> <?php echo $projet->startDate ?></span>
+                                                                <span><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $projet->startDate ?></span>
+                                                                <span><i class="fa fa-money" aria-hidden="true"></i> <?php echo $projet->prix ?> DT</span>
                                                                 <ul class="sociaz-media">
                                                                     <li><a title="" href="<?php echo $projet->eventFB ?>" class="facebook"><i class="fa fa-facebook"></i></a></li>
                                                                 </ul>
-                                                                <span><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $projet->startDate ?></span>
-                                                                <span><i class="fa fa-money" aria-hidden="true"></i> <?php echo $projet->prix ?></span>
+                                                                
                                                                                                                                 
                                                             </div>
                                                         </div>
