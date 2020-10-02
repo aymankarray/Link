@@ -86,8 +86,8 @@
                         
                       </ul>
                       <ol class="folw-detail">
-                        <li><span>Projets</span><ins><?php echo $count($projectRecords) ?></ins></li>
-                        <li><span>Membres</span><ins><?php echo $count($members) ?></ins></li>
+                        <li><span>Projets</span><ins><?php echo count($projectRecords) ?></ins></li>
+                        <li><span>Membres</span><ins><?php echo count($members) ?></ins></li>
                         <li><span>Points</span><ins>0</ins></li>
                       </ol>
                     </div>
