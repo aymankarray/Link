@@ -1076,53 +1076,16 @@
 				</li>
 				
 				<li>
-					<a href="<?php echo base_url() ?>club" title="" data-toggle="tooltip" data-placement="right" data-original-title="Clubs">
-						<i class="ti-magnet"></i>
+					<a href="<?php echo base_url() ?>club" title="" data-toggle="tooltip" data-placement="right" data-original-title="liste des clubs">
+						<i class="ti-list"></i>
 					</a>
 				</li>
 				<li>
-					<a href="forum.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Forum">
-						<i class="fa fa-forumbee"></i>
-					</a>
-				</li>
-				<li>
-					<a href="timeline-friends.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Friends">
-						<i class="ti-user"></i>
-					</a>
-				</li>
-				<li>
-					<a href="fav-page.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Favourit page">
-						<i class="fa fa-star-o"></i>
-					</a>
-				</li>
-				<li>
-					<a href="chat-messenger.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Messages">
-						<i class="ti-comment-alt"></i>
-					</a>
-				</li>
-				<li>
-					<a href="notifications.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Notification">
-						<i class="fa fa-bell-o"></i>
+					<a href="<?php echo base_url() ?>project" title="" data-toggle="tooltip" data-placement="right" data-original-title="Forum">
+						<i class="ti-calendar"></i>
 					</a>
 				</li>
 				
-				<li>
-					<a href="statistics.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Account Stats">
-						<i class="ti-stats-up"></i>
-					</a>
-				</li>
-				
-				<li>
-					<a href="support-and-help.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Help">
-						<i class="fa fa-question-circle-o">
-						</i>
-					</a>
-				</li>
-				<li>
-					<a href="faq.html" title="" data-toggle="tooltip" data-placement="right" data-original-title="Faq's">
-						<i class="ti-light-bulb"></i>
-					</a>
-				</li>
 			<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 502px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 442px;"></div></div></ul>
 		</div>
 		<div class="left-menu-full">

@@ -11,12 +11,11 @@ class Project extends BaseController {
         parent::__construct();
         $this->load->model('user_model');
         $this->load->model('project_model');
-        $this->load->model('ressource_model');
-        $this->load->model('evaluation_model');
+
         $this->isLoggedIn();   
     }
 
-		public function projectListing()
+		public function index()
 		        {
 		               
 		                $searchText='' ;
