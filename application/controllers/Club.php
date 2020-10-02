@@ -60,12 +60,47 @@ class Club extends BaseController {
 					$this->load->model('user_model');
                     $data["members"] = $this->user_model->userListingByclub($this->vendorId,$clubId);
 			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
-			        
+
 			       	$this->global['pageTitle'] = 'Clubs';
 			        $this->loadViews("club/edit", $this->global, $data, NULL);
 		        }
 
+				        /**
+				     * This function is used to delete the user using userId
+				     * @return boolean $result : TRUE / FALSE
+				     */
+				    function edit($clubId)
+				    {
 
+				        $name = $this->input->post('name');
+				        $city = $this->input->post('city');
+				        $birthday = $this->input->post('birthday');
+				        $email = $this->input->post('email');
+				        $facebook = $this->input->post('facebook');
+				        $is_Actif = $this->input->post('is_Actif');
+				      
+
+				            
+				            $clubInfo = array('name'=> $name ,
+				                              'city'=>$city,
+				                               'birthday'=>$birthday,
+				                               'email'=>  $facebook  ,
+				                               'facebook'=>  $email ,
+				                               'is_Actif'=> $is_Actif ,
+
+				                             );
+				            
+				           if( $this->user_model->editClub($clubId , $clubInfo) ){
+
+				           		$this->session->set_flashdata('success', 'Mise à jour enregistrée ');
+				           }
+				            else
+				            {
+				                $this->session->set_flashdata('error', 'Mise à jour erronée ');
+				            }
+				          
+				          redirect('/Club/editClub/'.$clubId)  ;
+				    }
 		       
 
 }

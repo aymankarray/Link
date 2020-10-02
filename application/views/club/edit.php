@@ -11,7 +11,26 @@
                    <div class="widget">
                     <h4 class="widget-title">Modification du club <?php echo $clubInfo->name ?> </h4>
                     <ul class="faved-page">
-                     <
+                     <?php
+                                        $this->load->helper('form');
+                                        $error = $this->session->flashdata('error');
+                                        if($error)
+                                        {
+                                            ?>
+                                            <div class="alert alert-danger alert-dismissable">
+                                                
+                                                <?php echo $error; ?>                    
+                                            </div>
+                                        <?php }
+                                        $success = $this->session->flashdata('success');
+                                        if($success)
+                                        {
+                                            ?>
+                                            <div class="alert alert-success alert-dismissable">
+                                                
+                                                <?php echo $success; ?>                    
+                                            </div>
+                                      <?php } ?>
                               <?php $this->load->helper("form"); ?>
                     <form role="form"  id="editClub" action="<?php echo base_url() ?>Club/edit/<?php echo $clubInfo->clubID ?>" method="post" role="form"  enctype="multipart/form-data">
                         
