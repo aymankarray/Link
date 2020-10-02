@@ -47,22 +47,10 @@
                             <?php } ?>
                         </select>
 
-
-
-                            
-                            
-                           
-
-                           
-         
-                        
-    
-                        <div class="box-footer">
                             <input type="submit" class="btn btn-primary" value="Envoyer" />
-                            <input type="reset" class="btn btn-default" value="Reset" />
-                            <br>
-                            <br>
-                        </div>
+                            <input type="reset" class="btn btn-secondry" value="Reset" />
+                   
+                       
                     </form>
 
                     </ul>
