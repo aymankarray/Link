@@ -90,7 +90,7 @@ class Club extends BaseController {
 
 				                             );
 				            
-				           if( $this->user_model->editClub($clubId , $clubInfo) ){
+				           if( $this->club_model->editClub($clubId , $clubInfo) ){
 
 				           		$this->session->set_flashdata('success', 'Mise à jour enregistrée ');
 				           }
