@@ -74,7 +74,7 @@
                         </td>
                         <?php if($SA== 1){ ?>
                         <td>
-                             <a href="https://tunivisions.link/Club/editClub/<?php echo  $record->clubID ?>"> <i class="ri-edit-2-fill"></i>
+                             <a href="https://tunivisions.link/Club/editClub/<?php echo  $record->clubID ?>">   <i class="ti-pencil"></i>
                         </td>
                          <?php    }    ?> 
 
