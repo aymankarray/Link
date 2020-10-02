@@ -234,29 +234,17 @@
                 <?php $this->load->helper("form"); ?>
                 <form role="form"  id="addproject" action="<?php echo base_url() ?>Project/addNewP" method="post" role="form"  enctype="multipart/form-data">
                         
-
-
                            
-
-                    
-                            <div class="row">
-                                <div class="col-md-12">                                
-                                    <div class="form-group">
-                                        <label for="fname">Banner</label>
-                                      
-                                       
-                                            <input type="file" name="file" id="file" class="dropify" required/>
-                                       
-                                         
-                                                                           
-                                       <p >le format de fichier doit etre JPG ou JPEG avec une taile maximale de 500 ko </p>
-                                      <p id="error1" style="display:none; color:#FF0000;">
+                                    <label for="fname">Banner</label>
+                                    <input type="file" name="file" id="file" class="dropify" required/>                                                                          
+                                    <p >le format de fichier doit etre JPG ou JPEG avec une taile maximale de 500 ko </p>
+                                    <p id="error1" style="display:none; color:#FF0000;">
                                           Format d'image invalide! Le format d'image doit être JPG, JPEG.
                                           </p>
                                           <p id="error2" style="display:none; color:#FF0000;">
                                           La taille maximale du fichier est de 500 ko.
                                           </p>
-                                    </div>
+                                 
 
                                     <script type="text/javascript">
                                           $('#submitt').prop("disabled", true);
@@ -288,16 +276,13 @@
                                         });
                                     </script>
                                     
-                                </div>
-                            </div>
-                            <div class="row"> 
-                              <div class="col-md-12">                                
-                                    <div class="form-group">
-                                        <label for="fname">Cible  &nbsp; &nbsp; <br> </label>
+
+                           
+                                    <label for="fname">Cible  &nbsp; &nbsp; <br> </label>
                                         
-                                        <input type="radio" name="cible" id="Publique" value="Publique" required> Publique
-                                        <input type="radio" name="cible" id="prive" value="Privé"> Privé
-                                        <input type="radio" name="cible" id="Only" value="Only tunimateur" > Only tunimateur
+                                    <input type="radio" name="cible" id="Publique" value="Publique" required> Publique
+                                    <input type="radio" name="cible" id="prive" value="Privé"> Privé
+                                    <input type="radio" name="cible" id="Only" value="Only tunimateur" > Only tunimateur
                            
 
                                         <script type="text/javascript">
@@ -313,19 +298,13 @@
                                         </script>
 
 
-                                    </div>
-                                </div>
-                                <div class="col-md-12">                                
-                                    <div class="form-group">
-                                        <label for="fname">Lien d'évenement facebook : </label>
-                                        <input type="url" name="facebook" id="facebook" class="form-control" >
-                                    </div>
+                                    <label for="fname">Lien d'évenement facebook : </label>
+                                    <input type="url" name="facebook" id="facebook" class="form-control" >
+                            
                                     
-                                </div>
-                                <div class="col-md-4">                                
-                                    <div class="form-group">
-                                        <label for="fname">Type</label>
-                                        <select class="form-control" id="type" name="type" >
+
+                                    <label for="fname">Type</label>
+                                    <select class="form-control" id="type" name="type" >
                                             <option value="Evenement">Evenement</option>
                                             <option value="Formation">Formation</option>
                                             <option value="Conférence">Conférence</option>
@@ -333,79 +312,56 @@
                                             <option value="Couverture Mediatique">Couverture Mediatique</option>
                                             <option value="Compétition">Compétition</option>
                                             <option value="Soirée">Soirée</option>
-                                        </select>
-                                    </div>
-                                    
-                                </div>
+                                    </select>
+                          
 
 
-                                <div class="col-md-8">                                
-                                    <div class="form-group">
-                                        <label for="fname">Titre</label>
-                                        <input type="text" class="form-control required" id="Titre" name="Titre" maxlength="255" required >
-                                    </div>
+                               
+                                    <label for="fname">Titre</label>
+                                    <input type="text" class="form-control required" id="Titre" name="Titre" maxlength="255" required >
+                              
                                     
-                                </div>
-                                <div class="col-md-12">                                
-                                    <div class="form-group">
-                                        <label for="fname">Description</label>
-                                       <textarea class="form-control" name="description" id="tinymceExample" rows="20" required></textarea>
+                                                            
+                                   
+                                    <label for="fname">Description</label>
+                                    <textarea class="form-control" name="description" id="tinymceExample" rows="20" required></textarea>
 
-                                    </div>
+                               
                                     
-                                </div>
-                              <div class="col-md-6">                                
-                                    <div class="form-group">
-                                        <label for="fname">Date debut</label>
+
+                                    <label for="fname">Date debut</label>
                                         <!-- min="<?php echo date('Y-m-d').'T00:00' ?>" -->
-                                        <input type="datetime-local" class="form-control "  min="<?php echo date('Y-m-d').'T00:00' ?>"   id="debut" name="debut"  required >
-                                    </div>
-                                </div>
+                                    <input type="datetime-local" class="form-control "  min="<?php echo date('Y-m-d').'T00:00' ?>"   id="debut" name="debut"  required >
+ 
 
-                              <div class="col-md-6">                                
-                                    <div class="form-group">
-                                        <label for="fname">Date fin</label>
+                              
+                                    <label for="fname">Date fin</label>
                                         <!-- min="<?php echo date('Y-m-d').'T00:00' ?>" -->
-                                        <input type="datetime-local" class="form-control"  min="<?php echo date('Y-m-d').'T00:00' ?>"   id="fin" name="fin"  required >
-                                    </div>
-                              </div>
+                                    <input type="datetime-local" class="form-control"  min="<?php echo date('Y-m-d').'T00:00' ?>"   id="fin" name="fin"  required >
+
                             
 
-                              <div class="col-md-6">                                
-                                    <div class="form-group">
-                                        <label for="fname">Local</label>
-                                          <input type="text" class="form-control " id="local" name="local" maxlength="255" required >      
+                             
+                                    <label for="fname">Local</label>
+                                    <input type="text" class="form-control " id="local" name="local" maxlength="255" required >      
 
+                             
+                                    <label for="fname">Capacité</label>
+                                    <input type="number" class="form-control " id="capacite" name="capacite"  required >      
 
-                                    </div>
-                                </div>
-                                <div class="col-md-3">                                
-                                    <div class="form-group">
-                                        <label for="fname">Capacité</label>
-                                          <input type="number" class="form-control " id="capacite" name="capacite"  required >      
-
-
-                                    </div>
-                                </div>
-                                <div class="col-md-3">                                
-                                    <div class="form-group">
-                                        <label for="fname">Prix</label>
-                                          <input type="number" class="form-control" id="prix" name="prix"  required >      
-
-
-                                    </div>
-                                </div>
+                                    <label for="fname">Prix</label>
+                                    <input type="number" class="form-control" id="prix" name="prix"  required >      
 
 
 
-                            </div>
-                            <br>
-                            <br>
+
+
+
+                        </div>
                        
                             <input type="submit" class="btn btn-primary" value="Envoyer" />
                             <input type="reset" class="btn btn-secondary" value="Reset" />
-                            <br>
-                            <br>
+ 
                        
                     </form>
 
