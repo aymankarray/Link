@@ -149,7 +149,7 @@
                           <span>Followers: 450</span>
                         </figure>
                         <div class="frnd-meta">
-                          <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $member->avatar ?>" class="alligator-profile" alt="">
+                          <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $member->avatar ?>" class="alligator-profile-member" alt="">
                           <div class="frnd-name">
                             <a href="#" title=""><?php echo $member->name ?></a>
                             <span><?php echo $member->role ?></span>
