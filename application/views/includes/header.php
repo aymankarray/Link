@@ -1081,8 +1081,13 @@
 					</a>
 				</li>
 				<li>
-					<a href="<?php echo base_url() ?>project" title="" data-toggle="tooltip" data-placement="right" data-original-title="Forum">
+					<a href="<?php echo base_url() ?>project" title="" data-toggle="tooltip" data-placement="right" data-original-title="Projet">
 						<i class="ti-calendar"></i>
+					</a>
+				</li>
+				<li>
+					<a href="<?php echo base_url() ?>Club/myclub" title="" data-toggle="tooltip" data-placement="right" data-original-title="Mon club">
+						<i class="ti-heart"></i>
 					</a>
 				</li>
 				
