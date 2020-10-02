@@ -34,8 +34,8 @@
                         
                         <label>Actif</label>
                         <select name="is_Actif" class="form-control" >
-                          <option value="0">Actif</option>
-                          <option value="1">Inactif</option>
+                          <option value="1" <?php echo $clubInfo->is_Actif=="1"){ echo "selected"} ?> >Actif</option>
+                          <option value="0" <?php echo $clubInfo->is_Actif=="0"){ echo "selected"} ?> >Inactif</option>
                         </select>
 
 
