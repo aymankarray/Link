@@ -39,7 +39,7 @@ class Club extends BaseController {
 			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
 			        $data["bureauExe"] = $this->club_model->BureauListing($clubId);
 			        $data["ProjectByClub"] = $this->project_model->projectListingByClubPost($clubId);
-			        $data["CountProjectByClub"] = Count($this->project_model->projectListingByClub($clubId));
+			        
 
 			        $data["members"] = $this->user_model->userListingByclubINFO($clubId) ;
 			        $data["membersCount"] =count($this->user_model->userListingByclub($this->vendorId,$clubId)) ;

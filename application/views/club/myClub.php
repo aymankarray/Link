@@ -1125,8 +1125,8 @@
                   <div class="widget">
                     <h4 class="widget-title">Mon club</h4>
                     <ul class="fav-community">
-                      <li><i class="fa fa-address-card"></i> About <p>We are motel hotel from Los Angeles, now based in San Francisco, come and enjoy!</p></li>
-                      <li><i class="fa fa-users"></i><a href="#" title="">invite friends</a> pour rejoindre le club</li>
+                      <li><i class="fa fa-address-card"></i> <?php echo $clubInfo->birthday ?> </li>
+                      <li><i class="fa fa-users"></i><a href="#" title="">invitez vos amis</a> pour rejoindre le club</li>
                       <li><i class="fa fa-thumbs-up"></i>13 Membre actif</li>
                       <li><i class="fa fa-rss"></i>13 Tunifans</li>
                       <li><i class="fa fa-globe"></i><a href="<?php echo $clubInfo->email ?>" title="">club Tunivisions <?php echo $clubInfo->name ?></a></li>
