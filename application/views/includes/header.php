@@ -28,7 +28,7 @@
     .alligator-profile {
         object-fit: cover;
         object-position: 50% 50%;
-        width: 100%;
+        width: 40px;
         height: 40px;
     }
 </style>
