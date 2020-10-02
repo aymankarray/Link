@@ -1,23 +1,19 @@
-<div id="content-page" class="content-page">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="iq-card">
-                        <div class="iq-card-header d-flex justify-content-between">
-                           <div class="iq-header-title">
-                              <h4 class="card-title">Modification du club</h4>
-                           </div>
-                           <div class="iq-card-header-toolbar d-flex align-items-center">
-                              <div class="dropdown show">
-                                
-                                 
-                              </div>
-                           </div>
-                        </div>
-                        <div class="iq-card-body">
-                           <div class="table-responsive">
+
+                              
+<section>
+    <div class="gap gray-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row widget-page merged20">
+              <div class="col-lg-12 col-md-12 col-sm-6">
+                <aside class="sidebar">
+                   <div class="widget">
+                    <h4 class="widget-title">Modification du club <?php echo $clubInfo->name ?> </h4>
+                    <ul class="faved-page">
+                     <
                               <?php $this->load->helper("form"); ?>
-                    <form role="form"  id="editClub" action="<?php echo base_url() ?>Clube/edit<?php echo $clubInfo->clubID ?>" method="post" role="form"  enctype="multipart/form-data">
+                    <form role="form"  id="editClub" action="<?php echo base_url() ?>Club/edit/<?php echo $clubInfo->clubID ?>" method="post" role="form"  enctype="multipart/form-data">
                         
 
 
@@ -38,8 +34,8 @@
                         
                         <label>Actif</label>
                         <select name="is_Actif" class="form-control" >
-                          <option value="Actif">Actif</option>
-                          <option value="Actif">Inactif</option>
+                          <option value="0">Actif</option>
+                          <option value="1">Inactif</option>
                         </select>
 
 
@@ -68,18 +64,14 @@
                             <br>
                         </div>
                     </form>
-                              
-                           </div>
-                        </div>
-                     </div>
+
+                    </ul>
                   </div>
-               </div>
-            </div>
-         </div>
-
-
-<script type="text/javascript">
-    
-
-
-</script>
+                </aside>
+              </div><!-- sidebar -->
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>  
+  </section> 

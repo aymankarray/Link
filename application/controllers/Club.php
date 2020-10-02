@@ -60,7 +60,8 @@ class Club extends BaseController {
 					$this->load->model('user_model');
                     $data["members"] = $this->user_model->userListingByclub($this->vendorId,$clubId);
 			        $data["clubInfo"] = $this->club_model->getClubInfo($clubId);
-			       	
+			        
+			       	$this->global['pageTitle'] = 'Clubs';
 			        $this->loadViews("club/edit", $this->global, $data, NULL);
 		        }
 
