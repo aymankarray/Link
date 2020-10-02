@@ -102,7 +102,7 @@ class Club extends BaseController {
 				          redirect('/Club/editClub/'.$clubId)  ;
 				    }
 		       
-					    function userByClubListing()
+					    function members()
 					    {
 
 					          
