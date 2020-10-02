@@ -49,7 +49,8 @@
                    events: [
               {
                    title: 'All Day Event',
-                   start: new Date(y, m, 1)
+                   start: new Date(y, m, 1),
+                   end: new Date(y, m, 2)
               }
               ]
          });
