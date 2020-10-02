@@ -145,7 +145,7 @@
                     <div class="col-lg-4 ">
                       <div class="friend-box">
                         <figure>
-                          <img src="<?php echo base_url() ?>assets/images/resources/frnd-cover2.jpg" alt="">
+                          <img src="<?php echo base_url() ?>assets/images/resources/frnd-cover3.jpg" alt="">
                           <span>Followers: 450</span>
                         </figure>
                         <div class="frnd-meta">
