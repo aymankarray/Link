@@ -10,6 +10,7 @@ class Task extends BaseController {
     {
         parent::__construct();
         $this->load->model('user_model');
+        $this->load->model('project_model');
 
         $this->isLoggedInPub();   
     }
