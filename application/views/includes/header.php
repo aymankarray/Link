@@ -361,13 +361,15 @@
 	<div class="fixed-sidebar right">
 		<div class="chat-friendz">
 			<ul class="chat-users ps-container ps-theme-default ps-active-y" data-ps-id="fd5ebdca-9767-1b46-7fe2-89ffe41fb856">
+				
+				<?php foreach ($ConnrectedUser as $userCon ) {?>
 				<li>
 					<div class="author-thmb">
-						<img src="images/resources/side-friend1.jpg" alt="">
+						<img src="<?php echo base_url() ?>uploads/avatar/<?php echo $userCon->avatar ?>" class="alligator-profile" alt="">
 						<span class="status f-online"></span>
 					</div>
 				</li>
-				
+				<?php } ?>
 			<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div>
 			<div class="ps-scrollbar-y-rail" style="top: 0px; height: 502px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 424px;"></div></div>
 		</ul>
@@ -399,11 +401,7 @@
 						<i class="ti-heart"></i>
 					</a>
 				</li>
-				<li>
-					<a href="<?php echo base_url() ?>Club/clubInfo/<?php echo $clubID ?>" title="" data-toggle="tooltip" data-placement="right" data-original-title="Mon club">
-						<i class="ti-heart"></i>
-					</a>
-				</li>
+
 				
 			<div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps-scrollbar-y-rail" style="top: 0px; height: 502px; right: 0px;"><div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 442px;"></div></div></ul>
 		</div>
