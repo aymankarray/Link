@@ -60,7 +60,7 @@
                     <div class="col-lg-2">
                       <div class="profile-author">
                         <a class="profile-author-thumb" href="about.html">
-                          
+                          <img alt="author" src="images/resources/fav-dp.jpg">
                           <div class="edit-dp">
                             <label class="fileContainer">
                               <i class="fa fa-camera"></i>
