@@ -59,7 +59,7 @@
 
                                                         <div class="col-lg-4 col-md-4 col-sm-5">
                                                             <figure class="event-thumb"><img src="<?php echo base_url() ?>uploads/projet/<?php echo $projet->banner ?>" alt="">
-                                                                <span class="yellow"><?php echo $projet->tyoe ?></span></figure>
+                                                                <span class="yellow"><?php echo $projet->type ?></span></figure>
                                                         </div>
                                                         <div class="col-lg-6 col-md-6 col-sm-5">
                                                             <div class="event-title">
