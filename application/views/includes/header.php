@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/color.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive.css">
+	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/calendar.css"> 
+	
     <style type="text/css">
     .alligator-profile {
         object-fit: cover;
