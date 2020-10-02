@@ -80,7 +80,7 @@
                           <a class="active" href="<?php echo base_url() ?>Club/clubInfo/<?php echo $cl ?>">Projets</a>
                         </li>
                         <li>
-                          <a class="" href="<?php echo base_url() ?>Club/members/<?php echo $cl ?>">Membes</a>
+                          <a class="" href="<?php echo base_url() ?>Club/Members/<?php echo $cl ?>">Membes</a>
                         </li>
 
                         

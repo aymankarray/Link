@@ -103,7 +103,7 @@ class Club extends BaseController {
 				    }
 		       
 					
-					function members($clubID)
+					function Members($clubID)
 					    {
 
 					          
