@@ -25,7 +25,7 @@
          var y = date.getFullYear();
 
          var calendar = $('#calendar').fullCalendar({
-         	    eventClick: function(info) {
+         	eventClick: function(info) {
 		      var eventObj = info.event;
 
 		      if (eventObj.url) {
