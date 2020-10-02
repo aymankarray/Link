@@ -44,7 +44,7 @@
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <p class="classi-pst-des">
-                                                        <?php echo $projet->Titre ?>
+                                                        <?php echo $projet->titre ?>
                                                     </p>
                                                     <div class="we-video-info">
                                                         <ul>
