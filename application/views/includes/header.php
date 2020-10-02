@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/color.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive.css">
 	<link rel="stylesheet" href="<?php echo base_url() ?>assets/css/calendar.css"> 
-	
+
     <style type="text/css">
     .alligator-profile {
         object-fit: cover;
@@ -40,6 +40,11 @@
         height: 80px;
     }
 </style>
+
+  <script src="<?php echo base_url() ?>assets/js/main.min.js"></script>
+ 
+  <script src="<?php echo base_url() ?>assets/js/script.js"></script>
+  <script src="<?php echo base_url() ?>assets/js/calendar.js"></script>
 
 </head>
 <body>

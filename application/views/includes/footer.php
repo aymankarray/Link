@@ -117,10 +117,6 @@
   
   <!-- send message popup -->
   
-  <script src="<?php echo base_url() ?>assets/js/main.min.js"></script>
- 
-  <script src="<?php echo base_url() ?>assets/js/script.js"></script>
-  <script src="<?php echo base_url() ?>assets/js/calendar.js"></script>
    <script type="text/javascript">
         $(document).on('ready', function(){
         
