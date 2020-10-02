@@ -25,16 +25,16 @@
                                                         </div>
                                                         <div class="col-lg-4 col-md-4 col-sm-4">
                                                             <div class="select-options">
-                                                                <button type="button" class="main-btn2" data-toggle="modal" data-target="#myModal">Ajouter un projet</button>
+                                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Ajouter un projet</button>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-1 col-md-1 col-sm-1">
                                                             <div class="option-list">
                                                                 <i class="fa fa-ellipsis-v"></i>
                                                                 <ul>
+                                                                    <!--
                                                                     <li><a title="" href="#">Show Friends Public</a></li>
-                                                                    <li><a title="" href="#">Show Friends Private</a></li>
-                                                                    <li><a title="" href="#">Mute Notifications</a></li>
+                                                                    -->
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -82,9 +82,7 @@
                                                 
                                             </div>
                                         </div>
-                                        <div class="lodmore">
-                                            <button class="btn-view btn-load-more"></button>
-                                        </div>
+                                        
                                     </div>
                             </div><!-- centerl meta -->
                             <div class="col-lg-3">
@@ -245,13 +243,12 @@
                                 <div class="col-md-12">                                
                                     <div class="form-group">
                                         <label for="fname">Banner</label>
-                                        <br>
+                                      
                                        
                                             <input type="file" name="file" id="file" class="dropify" required/>
                                        
                                          
-                                        <br>  
-                                       
+                                                                           
                                        <p >le format de fichier doit etre JPG ou JPEG avec une taile maximale de 500 ko </p>
                                       <p id="error1" style="display:none; color:#FF0000;">
                                           Format d'image invalide! Le format d'image doit être JPG, JPEG.

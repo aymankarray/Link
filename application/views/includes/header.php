@@ -25,11 +25,11 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/color.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/responsive.css">
     <style type="text/css">
-    .alligator-event {
+    .alligator-profile {
         object-fit: cover;
         object-position: 50% 50%;
         width: 100%;
-        height: 200px;
+        height: 40px;
     }
 </style>
 
@@ -312,7 +312,7 @@
 			</ul>
 			<div class="user-img">
 				<h5><?php echo $name ?></h5>
-				<img src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>" width="25" alt="">
+				<img class="alligator-profile" src="<?php echo base_url() ?>uploads/avatar/<?php echo $avatar ?>"  alt="">
 				<span class="status f-online"></span>
 				<div class="user-setting">
 					<span class="seting-title">User setting <a href="#" title="">see all</a></span>
