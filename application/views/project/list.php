@@ -31,7 +31,7 @@
                                                                     <option>See All</option>
                                                                     <option>Newest</option>
                                                                     <option>oldest</option>
-                                                                </select><div class="chosen-container chosen-container-single" style="width: 72px;" title=""><a class="chosen-single"><span>Sort by</span><div><b></b></div></a><div class="chosen-drop"><div class="chosen-search"><input type="text" autocomplete="off"></div><ul class="chosen-results"><li class="active-result result-selected" data-option-array-index="0" style="">Sort by</li><li class="active-result" data-option-array-index="1" style="">A to Z</li><li class="active-result" data-option-array-index="2" style="">See All</li><li class="active-result" data-option-array-index="3" style="">Newest</li><li class="active-result" data-option-array-index="4" style="">oldest</li></ul></div></div>
+                                                                </select>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-1 col-md-1 col-sm-1">
