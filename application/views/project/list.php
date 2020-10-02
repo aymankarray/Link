@@ -64,7 +64,7 @@
                                                                 <span><i class="fa fa-clock-o"></i> <?php echo $projet->startDate ?></span>
                                                                 <h4><a href="#" title=""><?php echo $projet->titre ?></a></h4>
                                                                 <ul class="sociaz-media">
-                                                                    <li><a title="" href="<?php echo $projet->facebook ?>" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a title="" href="<?php echo $projet->eventFB ?>" class="facebook"><i class="fa fa-facebook"></i></a></li>
                                                                 </ul>
                                                                 <span><i class="fa fa-map-marker" aria-hidden="true"></i> <?php echo $projet->startDate ?></span>
                                                                 <span><i class="fa fa-money" aria-hidden="true"></i> <?php echo $projet->prix ?></span>
@@ -73,7 +73,7 @@
                                                         </div>
                                                         <div class="col-lg-2 col-md-2 col-sm-2">
                                                             <div class="event-time">
-                                                                <span class="event-date">29 Jul</span>
+                                                                <span class="event-date"><?php echo $projet->startDate ?></span>
                                                             </div>  
                                                         </div>
                                                     </div>
