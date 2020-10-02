@@ -799,7 +799,7 @@
 						<li><a href="setting.html" title=""><i class="ti-pencil-alt"></i>edit profile</a></li>
 						<li><a href="#" title=""><i class="ti-target"></i>activity log</a></li>
 						<li><a href="setting.html" title=""><i class="ti-settings"></i>account setting</a></li>
-						<li><a href="logout.html" title=""><i class="ti-power-off"></i>log out</a></li>
+						<li><a href="<?php echo base_url() ?>logout" title=""><i class="ti-power-off"></i>log out</a></li>
 					</ul>
 				</div>
 			</div>
@@ -1084,7 +1084,7 @@
 				</li>
 				
 				<li>
-					<a href="<?php echo base_url() ?>club" title="" data-toggle="tooltip" data-placement="right" data-original-title="liste des clubs">
+					<a href="<?php echo base_url() ?>Club" title="" data-toggle="tooltip" data-placement="right" data-original-title="liste des clubs">
 						<i class="ti-list"></i>
 					</a>
 				</li>
