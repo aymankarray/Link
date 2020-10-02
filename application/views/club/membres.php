@@ -146,7 +146,7 @@
                       <div class="friend-box">
 
                         <div class="frnd-meta">
-                          <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $member->avatar ?>" alt="">
+                          <img src="<?php echo base_url() ?>uploads/avatar/<?php echo $member->avatar ?>" class="alligator-profile" alt="">
                           <div class="frnd-name">
                             <a href="#" title=""><?php echo $member->name ?></a>
                             <span><?php echo $member->role ?></span>
