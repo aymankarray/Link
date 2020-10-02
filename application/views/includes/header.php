@@ -1109,30 +1109,21 @@
 		<div class="left-menu-full">
 			<ul class="menu-slide ps-container ps-theme-default" data-ps-id="c2e36ecf-88c9-df82-fa23-4f736ae2d32b">
 				<li><a class="closd-f-menu" href="#" title=""><i class="ti-close"></i> close Menu</a></li>
-				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-home"></i> Home Pages</a>
+				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-home"></i> Fondation</a>
 					<ul class="submenu">
-						<li><a href="index-2.html" title="">Pitnik Default</a></li>
-						<li><a href="company-landing.html" title="">Company Landing</a></li>
-						<li><a href="pitrest.html" title="">Pitrest</a></li>
-						<li><a href="redpit.html" title="">Redpit</a></li>
-						<li><a href="redpit-category.html" title="">Redpit Category</a></li>
-						<li><a href="soundnik.html" title="">Soundnik</a></li>
-						<li><a href="soundnik-detail.html" title="">Soundnik Single</a></li>
-						<li><a href="career.html" title="">Pitjob</a></li>
-						<li><a href="shop.html" title="">Shop</a></li>
-						<li><a href="classified.html" title="">Classified</a></li>
-						<li><a href="pitpoint.html" title="">PitPoint</a></li>
-						<li><a href="pittube.html" title="">Pittube</a></li>
-						<li><a href="chat-messenger.html" title="">Messenger</a></li>
+						<li><a href="<?php echo base_url() ?>Club/clubInfo/-1" title="">Board</a></li>
+						<li><a href="<?php echo base_url() ?>Club/clubInfo/0" title="">University</a></li>
+						<li><a href="<?php echo base_url() ?>Club/clubInfo/1" title="">High School</a></li>
+						<li><a href="<?php echo base_url() ?>Club/clubInfo/2" title="">Alumni</a></li>
+						<li><a href="<?php echo base_url() ?>Club" title="">Clubs</a></li>
 					</ul>
 				</li>
-				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-film"></i> Pittube</a>
+				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-film"></i> Projets</a>
 					<ul class="submenu">
-						<li><a href="pittube.html" title="">Pittube</a></li>
-						<li><a href="pittube-detail.html" title="">Pittube single</a></li>
-						<li><a href="pittube-category.html" title="">Pittube Category</a></li>
-						<li><a href="pittube-channel.html" title="">Pittube Channel</a></li>
-						<li><a href="pittube-search-result.html" title="">Pittube Search Result</a></li>
+						<li><a href="pittube.html" title="">Calendrier</a></li>
+						<li><a href="pittube-detail.html" title="">Nos projet</a></li>
+						<li><a href="pittube-category.html" title="">Taches</a></li>
+						<li><a href="pittube-channel.html" title="">Historiques</a></li>
 					</ul>
 				</li>
 				<li class="menu-item-has-children"><a class="" href="#" title=""><i class="fa fa-female"></i>PitPoint</a>
