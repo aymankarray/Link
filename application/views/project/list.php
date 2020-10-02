@@ -99,7 +99,7 @@
                                     <?php }  ?>
                                     </div>
                                 </div>
-                            <button class="btn-view btn-load-more" style="display: none;">Load More</button></div><!-- centerl meta -->
+
                             <div class="col-lg-3">
                                 <aside class="sidebar static right">
                                     <div class="widget">
