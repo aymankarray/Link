@@ -11,13 +11,14 @@
                             <div class="col-lg-9">
                                 
                                 <div class="load-more4">
+                                    <?php foreach ($projectRecords as $projet ) {  ?>
                                     <div class="central-meta item" style="display: inline-block;">
                                         <div class="classi-pst">
                                             <div class="row merged10">
                                                 <div class="col-lg-6">
                                                     <div class="image-bunch single">
-                                                        <figure><img src="images/resources/classic-bunch1.jpg" alt=""></figure>
-                                                        <span>New Post</span>
+                                                        <figure><img src="<?php echo base_url() ?>uplaods/projet/<?php echo $projet->banner ?>" alt=""></figure>
+                                                        <span><?php echo $projet->type ?>  </span>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
@@ -33,18 +34,17 @@
                                                     </div>
                                                     <div class="user-fig">
                                                         <img src="images/resources/tube-user2.jpg" alt="">
-                                                        <a href="#" title="">Xing Xong</a>
+                                                        <a href="#" title=""><?php echo $projet->ClubName ?> </a>
                                                     </div>
                                                     <div class="classi-pst-meta">
-                                                        <h6><a href="#" title="">White BMW 1998 Model for sale</a></h6>
-                                                        <span><i class="fa fa-map-marker"></i> Ontario, CA <ins><i>used</i> $700</ins></span>
-                                                        <em><i class="fa fa-cloud-upload"></i> Jan, 13 2020</em>
+                                                        <h6><a href="#" title=""><?php echo $projet->Titre ?></a></h6>
+                                                        <span><i class="fa fa-map-marker"></i> <?php echo $projet->local ?> <ins><i>Prix : </i> <?php echo $projet->local ?> </ins></span>
+                                                        <em><i class="fa fa-cloud-upload"></i> <?php echo $projet->startDate ?> au <?php echo $projet->descP ?>  </em>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <p class="classi-pst-des">
-                                                        A beautiful Iphone Mobile golden color 6 months used only A beautiful Iphone 
-                                                        Mobile golden color 6 months used only
+                                                        <?php echo $projet->Titre ?>
                                                     </p>
                                                     <div class="we-video-info">
                                                         <ul>
@@ -96,280 +96,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="central-meta item" style="display: inline-block;">
-                                        <div class="classi-pst">
-                                            <div class="row merged10">
-                                                <div class="col-lg-6">
-                                                    <div class="image-bunch two">
-                                                        <figure><img src="images/resources/classic-bunch2.jpg" alt=""></figure> 
-                                                        <figure>
-                                                            <img src="images/resources/classic-bunch3.jpg" alt="">
-                                                            <div class="more-photos">
-                                                                <span>2+</span>
-                                                            </div>
-                                                        </figure>
-                                                        <span class="yellow">featured</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="more">
-                                                        <div class="more-post-optns"><i class="ti-more-alt"></i>
-                                                            <ul>
-                                                                <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>
-                                                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                                                <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>
-                                                                <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user-fig">
-                                                        <img src="images/resources/tube-user2.jpg" alt="">
-                                                        <a href="#" title="">Xing Xong</a>
-                                                    </div>
-                                                    <div class="classi-pst-meta">
-                                                        <h6><a href="#" title="">Beautiful House at a good location</a></h6>
-                                                        <span><i class="fa fa-map-marker"></i> Ontario, CA <ins><i>New</i> $27000</ins></span>
-                                                        <em><i class="fa fa-cloud-upload"></i> Jan, 13 2020</em>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <p class="classi-pst-des">
-                                                        A beautiful Iphone Mobile golden color 6 months used only A beautiful Iphone 
-                                                        Mobile golden color 6 months used only
-                                                    </p>
-                                                    <div class="we-video-info">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="views" title="views">
-                                                                    <i class="fa fa-eye"></i>
-                                                                    <ins>1.2k</ins>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <div class="likes heart broken" title="Like/Dislike">❤ <span>0</span></div>
-                                                            </li>
-                                                            <li>
-                                                                <span class="comment" title="Comments">
-                                                                    <i class="fa fa-commenting"></i>
-                                                                    <ins>52</ins>
-                                                                </span>
-                                                            </li>
-
-                                                            <li>
-                                                                <span>
-                                                                    <a class="share-pst" href="#" title="Share">
-                                                                        <i class="fa fa-share-alt"></i>
-                                                                    </a>
-                                                                    <ins>20</ins>
-                                                                </span> 
-                                                            </li>
-                                                        </ul>
-                                                        <div class="users-thumb-list">
-                                                            <a data-original-title="Anderw" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-1.jpg">  
-                                                            </a>
-                                                            <a data-original-title="frank" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-2.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Sara" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-3.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Amy" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-4.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Ema" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-5.jpg">  
-                                                            </a>
-                                                            <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="central-meta item" style="display: inline-block;">
-                                        <div class="classi-pst">
-                                            <div class="row merged10">
-                                                <div class="col-lg-6">
-                                                    <div class="image-bunch three">
-                                                        <figure><img src="images/resources/classic-bunch4.jpg" alt=""></figure>
-                                                        <figure><img src="images/resources/classic-bunch5.jpg" alt=""></figure>
-                                                        <figure>
-                                                            <img src="images/resources/classic-bunch6.jpg" alt="">
-                                                            <div class="more-photos">
-                                                                <span>3+</span>
-                                                            </div>
-                                                        </figure>   
-                                                        <span class="red">Super Hot</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="more">
-                                                        <div class="more-post-optns"><i class="ti-more-alt"></i>
-                                                            <ul>
-                                                                <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>
-                                                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                                                <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>
-                                                                <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user-fig">
-                                                        <img src="images/resources/tube-user2.jpg" alt="">
-                                                        <a href="#" title="">Xing Xong</a>
-                                                    </div>
-                                                    <div class="classi-pst-meta">
-                                                        <h6><a href="#" title="">Beautiful iphone x 2020 in gold color</a></h6>
-                                                        <span><i class="fa fa-map-marker"></i> Ontario, CA <ins><i>used</i> $700</ins></span>
-                                                        <em><i class="fa fa-cloud-upload"></i> Jan, 13 2020</em>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <p class="classi-pst-des">
-                                                        A beautiful Iphone Mobile golden color 6 months used only A beautiful Iphone 
-                                                        Mobile golden color 6 months used only
-                                                    </p>
-                                                    <div class="we-video-info">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="views" title="views">
-                                                                    <i class="fa fa-eye"></i>
-                                                                    <ins>1.2k</ins>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <div class="likes heart broken" title="Like/Dislike">❤ <span>0</span></div>
-                                                            </li>
-                                                            <li>
-                                                                <span class="comment" title="Comments">
-                                                                    <i class="fa fa-commenting"></i>
-                                                                    <ins>52</ins>
-                                                                </span>
-                                                            </li>
-
-                                                            <li>
-                                                                <span>
-                                                                    <a class="share-pst" href="#" title="Share">
-                                                                        <i class="fa fa-share-alt"></i>
-                                                                    </a>
-                                                                    <ins>20</ins>
-                                                                </span> 
-                                                            </li>
-                                                        </ul>
-                                                        <div class="users-thumb-list">
-                                                            <a data-original-title="Anderw" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-1.jpg">  
-                                                            </a>
-                                                            <a data-original-title="frank" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-2.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Sara" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-3.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Amy" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-4.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Ema" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-5.jpg">  
-                                                            </a>
-                                                            <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="central-meta item" style="display: inline-block;">
-                                        <div class="classi-pst">
-                                            <div class="row merged10">
-                                                <div class="col-lg-6">
-                                                    <div class="image-bunch">
-                                                        <figure><img src="images/resources/classic-bunch7.jpg" alt=""></figure>
-                                                        <figure><img src="images/resources/classic-bunch8.jpg" alt=""></figure>
-                                                        <figure><img src="images/resources/classic-bunch9.jpg" alt=""></figure>
-                                                        <figure>
-                                                            <img src="images/resources/classic-bunch10.jpg" alt="">
-                                                            <div class="more-photos">
-                                                                <span>4+</span>
-                                                            </div>
-                                                        </figure>   
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="more">
-                                                        <div class="more-post-optns"><i class="ti-more-alt"></i>
-                                                            <ul>
-                                                                <li class="send-mesg"><i class="fa fa-comment"></i>Send Message</li>
-                                                                <li class="bad-report"><i class="fa fa-flag"></i>Report Post</li>
-                                                                <li class="share-pst"><i class="fa fa-share-alt"></i>Share</li>
-                                                                <li class="get-link"><i class="fa fa-link"></i>Copy Link</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="user-fig">
-                                                        <img src="images/resources/tube-user2.jpg" alt="">
-                                                        <a href="#" title="">Xing Xong</a>
-                                                    </div>
-                                                    <div class="classi-pst-meta">
-                                                        <h6><a href="#" title="">Dell Laptop Xp13"-14"-15"-17" Branded</a></h6>
-                                                        <span><i class="fa fa-map-marker"></i> Ontario, CA <ins><i>used</i> $1200</ins></span>
-                                                        <em><i class="fa fa-cloud-upload"></i> Jan, 13 2020</em>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <p class="classi-pst-des">
-                                                        A beautiful Iphone Mobile golden color 6 months used only A beautiful Iphone 
-                                                        Mobile golden color 6 months used only
-                                                    </p>
-                                                    <div class="we-video-info">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="views" title="views">
-                                                                    <i class="fa fa-eye"></i>
-                                                                    <ins>1.2k</ins>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <div class="likes heart broken" title="Like/Dislike">❤ <span>0</span></div>
-                                                            </li>
-                                                            <li>
-                                                                <span class="comment" title="Comments">
-                                                                    <i class="fa fa-commenting"></i>
-                                                                    <ins>52</ins>
-                                                                </span>
-                                                            </li>
-
-                                                            <li>
-                                                                <span>
-                                                                    <a class="share-pst" href="#" title="Share">
-                                                                        <i class="fa fa-share-alt"></i>
-                                                                    </a>
-                                                                    <ins>20</ins>
-                                                                </span> 
-                                                            </li>
-                                                        </ul>
-                                                        <div class="users-thumb-list">
-                                                            <a data-original-title="Anderw" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-1.jpg">  
-                                                            </a>
-                                                            <a data-original-title="frank" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-2.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Sara" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-3.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Amy" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-4.jpg">  
-                                                            </a>
-                                                            <a data-original-title="Ema" data-toggle="tooltip" title="" href="#">
-                                                                <img alt="" src="images/resources/userlist-5.jpg">  
-                                                            </a>
-                                                            <span><strong>You</strong>, <b>Sarah</b> and <a href="#" title="">24+ more</a> liked</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <?php }  ?>
                                     </div>
                                 </div>
                             <button class="btn-view btn-load-more" style="display: none;">Load More</button></div><!-- centerl meta -->
