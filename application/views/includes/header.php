@@ -282,7 +282,7 @@
 				</form>
 			</div>
 			<div class="page-name">
-			    <span>Search Results</span>
+			    <span><?php echo $pageTitle ?></span>
 			 </div>
 			<ul class="setting-area">
 				<li><a href="newsfeed.html" title="Home" data-ripple=""><i class="fa fa-home"></i></a></li>
