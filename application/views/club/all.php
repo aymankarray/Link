@@ -51,8 +51,8 @@
                         <td>
 
 
-                            <?php if ($record->SenJen == 3 ){ echo 'University' ; }?>
-                            <?php if ($record->SenJen == 3 ){ echo 'High School' ; }?>
+                            <?php if ($record->SenJun == 3 ){ echo 'University' ; }?>
+                            <?php if ($record->SenJun == 3 ){ echo 'High School' ; }?>
 
 
 
