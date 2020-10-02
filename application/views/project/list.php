@@ -221,7 +221,7 @@
 
 
 
-    <div class="modal fade" id="myModal">
+    <div class="modal fade" id="Ajout">
                                             <div class="modal-dialog">
                                               <div class="modal-content">
 
