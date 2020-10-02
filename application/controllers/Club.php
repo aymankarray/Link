@@ -102,5 +102,21 @@ class Club extends BaseController {
 				          redirect('/Club/editClub/'.$clubId)  ;
 				    }
 		       
+					    function userByClubListing()
+					    {
 
+					          
+					            $searchText = $this->security->xss_clean($this->input->post('searchText'));
+					            $data['searchText'] = $searchText;
+					            
+					            $this->load->library('pagination');
+					            
+					            $data['members'] = $this->user_model->userListingByclub($this->clubID);
+
+					            
+					            $this->global['pageTitle'] = 'CodeInsect : User Listing';
+					            $this->global['active'] = 'users';
+					            $this->loadViews("club/members", $this->global, $data, NULL);
+					        
+					    }
 }

@@ -115,26 +115,7 @@ class User extends BaseController
         
     }
 
-    function userByClubListing()
-    {
 
-          
-            $searchText = $this->security->xss_clean($this->input->post('searchText'));
-            $data['searchText'] = $searchText;
-            
-            $this->load->library('pagination');
-            
-            $count = $this->user_model->userListingByclub($this->vendorId,$this->clubID);
-            $data['count'] = count($count)  ; 
-            $data['userRecords'] = $this->user_model->userListingByclub($this->vendorId,$this->clubID);
-            $data['useraRecords'] = $this->user_model->userListingByclubToApprouve($this->vendorId,$this->clubID);
-            $data['userTRecords'] = $this->user_model->userListingByclub($this->vendorId,$this->clubID);
-            
-            $this->global['pageTitle'] = 'CodeInsect : User Listing';
-            $this->global['active'] = 'users';
-            $this->loadViews("club/members", $this->global, $data, NULL);
-        
-    }
 
 
 
