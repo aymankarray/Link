@@ -13,7 +13,7 @@
 	</section>
 
 
-
+ 	<script src="<?php echo base_url() ?>assets/js/calendar.js"></script>
 	<script type="text/javascript">
 		$(document).on('ready', function(){
     
