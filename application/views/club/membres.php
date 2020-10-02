@@ -159,7 +159,7 @@
                             <li><span>Anniversaire :</span> <?php echo $member->birthday ?></li>
                             <li><span>Sexe :</span> <?php echo $member->sexe ?></li>
                             <li><span>E-Mail:</span><?php echo $member->email ?></li>
-                            <li><span>Photos:</span> 144</li>
+                            <li><span>Photos:</span><?php echo $member->mobile ?></li>
                             
                           </ul>
                           <a class="send-mesg" href="#" title="">Message</a>
