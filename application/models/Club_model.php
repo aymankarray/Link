@@ -142,7 +142,7 @@ class Club_model extends CI_Model
      * @param number $segment : This is pagination limit
      * @return array $result : This is result
     */
-    function editClub($clubInfo, $clubID)
+    function editClub( $clubID, $clubInfo)
     {
         $this->db->where('ClubID', $clubID);
         $this->db->update('tbl_club', $clubInfo);
