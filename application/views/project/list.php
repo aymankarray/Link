@@ -57,7 +57,7 @@
                                                 <div class="event-box">
                                                     <div class="row merged20">
                                                         <div class="col-lg-4 col-md-4 col-sm-5">
-                                                            <figure class="event-thumb"><img src="images/resources/event4.jpg" alt=""></figure>
+                                                            <figure class="event-thumb"><img src="<?php echo base_url() ?>uploads/projet/<?php echo $projet->banner ?>" alt=""></figure>
                                                         </div>
                                                         <div class="col-lg-6 col-md-6 col-sm-5">
                                                             <div class="event-title">
